@@ -19,6 +19,7 @@ import {
   Moon,
   Menu,
   X,
+  Trash2,
 } from "lucide-react";
 import CloudflareTurnstile from "@/components/CloudflareTurnstile";
 import AuthModal from "@/components/AuthModal";
@@ -124,7 +125,93 @@ export default function Home() {
     if (savedUser) setUserEmail(savedUser);
   }, []);
 
-  // 4. Lắng nghe đăng nhập từ Supabase (tách riêng để không ảnh hưởng khởi tạo phiên chat)
+  // 4. Lắng nghe đăng nhập từ Supabase & Đồng bộ Cloud
+  const fetchSupabaseSessions = React.useCallback(async (email: string) => {
+    if (!supabase) return;
+    try {
+      const { data, error } = await supabase
+        .from("chat_sessions")
+        .select("*")
+        .eq("user_email", email)
+        .order("updated_at", { ascending: false });
+
+      if (error) {
+        if (error.code !== "PGRST205") {
+          console.warn("⚠️ [Supabase] Lỗi tải dữ liệu:", error.message);
+        }
+        return;
+      }
+
+      if (data && data.length > 0) {
+        const cloudSessions: ChatSession[] = data.map((row: any) => ({
+          id: row.id,
+          title: row.title || "Cuộc trò chuyện",
+          messages: Array.isArray(row.messages) ? row.messages : [],
+          createdAt: row.created_at ? new Date(row.created_at).getTime() : Date.now(),
+        }));
+        setSessions(cloudSessions);
+        if (cloudSessions.length > 0) {
+          setCurrentSessionId(cloudSessions[0].id);
+        }
+        console.log(`☁️ [Supabase] Đã tải ${cloudSessions.length} phiên chat từ đám mây!`);
+      }
+    } catch (e: any) {
+      console.warn("⚠️ [Supabase] Lỗi đồng bộ đám mây:", e.message);
+    }
+  }, []);
+
+  const syncSessionToSupabase = React.useCallback(
+    async (sessionId: string, sessionMessages: Message[], customTitle?: string) => {
+      if (!supabase || !userEmail) return;
+      try {
+        const target = sessions.find((s) => s.id === sessionId);
+        const title =
+          customTitle ||
+          target?.title ||
+          sessionMessages.find((m) => m.role === "user")?.content.slice(0, 30) ||
+          "Cuộc trò chuyện mới";
+
+        const { error } = await supabase.from("chat_sessions").upsert(
+          {
+            id: sessionId,
+            user_email: userEmail,
+            title: title,
+            messages: sessionMessages,
+            updated_at: new Date().toISOString(),
+          },
+          { onConflict: "id" }
+        );
+
+        if (error && error.code !== "PGRST205") {
+          console.warn("⚠️ [Supabase] Lỗi lưu phiên chat:", error.message);
+        }
+      } catch (e) {}
+    },
+    [userEmail, sessions]
+  );
+
+  async function deleteChat(sessionId: string) {
+    const remaining = sessions.filter((s) => s.id !== sessionId);
+    setSessions(remaining);
+    if (remaining.length > 0) {
+      if (currentSessionId === sessionId) {
+        setCurrentSessionId(remaining[0].id);
+      }
+    } else {
+      createNewChat();
+    }
+
+    if (supabase && userEmail) {
+      try {
+        await supabase
+          .from("chat_sessions")
+          .delete()
+          .eq("id", sessionId)
+          .eq("user_email", userEmail);
+      } catch (e) {}
+    }
+  }
+
   useEffect(() => {
     if (!supabase) return;
 
@@ -132,6 +219,7 @@ export default function Home() {
       if (session?.user?.email) {
         setUserEmail(session.user.email);
         localStorage.setItem("k12_user_email", session.user.email);
+        fetchSupabaseSessions(session.user.email);
       }
     });
 
@@ -141,6 +229,7 @@ export default function Home() {
       if ((event === "SIGNED_IN" || event === "INITIAL_SESSION") && session?.user?.email) {
         setUserEmail(session.user.email);
         localStorage.setItem("k12_user_email", session.user.email);
+        fetchSupabaseSessions(session.user.email);
       } else if (event === "SIGNED_OUT") {
         setUserEmail(null);
         localStorage.removeItem("k12_user_email");
@@ -150,7 +239,7 @@ export default function Home() {
     return () => {
       subscription.unsubscribe();
     };
-  }, []);
+  }, [fetchSupabaseSessions]);
 
   useEffect(() => {
     if (sessions.length > 0) {
@@ -191,11 +280,15 @@ export default function Home() {
     };
     setSessions((prev) => [newSession, ...prev]);
     setCurrentSessionId(newSession.id);
+    if (userEmail) {
+      syncSessionToSupabase(newSession.id, newSession.messages, newSession.title);
+    }
   }
 
   function handleLoginSuccess(email: string) {
     setUserEmail(email);
     localStorage.setItem("k12_user_email", email);
+    fetchSupabaseSessions(email);
   }
 
   async function handleLogout() {
@@ -258,9 +351,13 @@ export default function Home() {
           return s;
         })
       );
+      if (userEmail) {
+        syncSessionToSupabase(targetSessionId, [...updatedMessages, botMsg]);
+      }
       return;
     }
 
+    // Hiển thị tin nhắn người dùng và bật trạng thái tải
     setSessions((prev) =>
       prev.map((s) => {
         if (s.id === targetSessionId) {
@@ -288,26 +385,107 @@ export default function Home() {
         }),
       });
 
-      const data = await res.json();
-
       if (!res.ok) {
-        throw new Error(data.error || "Không thể kết nối đến máy chủ AI.");
+        let errorMsgText = "Không thể kết nối đến máy chủ AI.";
+        try {
+          const errData = await res.json();
+          if (errData.error) errorMsgText = errData.error;
+        } catch (e) {}
+        throw new Error(errorMsgText);
       }
 
-      // Lưu câu trả lời vào Client Cache để lần sau hỏi lại phản hồi trong 0.01 giây
-      clientCache.set(normalizedKey, { reply: data.reply, sources: data.sources });
-
-      const botMsg: Message = {
+      // Tạo trước tin nhắn bot rỗng để đón streaming
+      const initialBotMsg: Message = {
         role: "assistant",
-        content: data.reply,
-        sources: data.sources,
+        content: "",
+        sources: [],
       };
 
       setSessions((prev) =>
-        prev.map((s) =>
-          s.id === targetSessionId ? { ...s, messages: [...updatedMessages, botMsg] } : s
-        )
+        prev.map((s) => {
+          if (s.id === targetSessionId) {
+            return {
+              ...s,
+              messages: [...updatedMessages, initialBotMsg],
+            };
+          }
+          return s;
+        })
       );
+
+      const reader = res.body?.getReader();
+      const decoder = new TextDecoder();
+      let streamedReply = "";
+      let streamedSources: any[] = [];
+      let buffer = "";
+
+      if (reader) {
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+
+          buffer += decoder.decode(value, { stream: true });
+          const parts = buffer.split("\n\n");
+          buffer = parts.pop() || "";
+
+          let hasUpdated = false;
+
+          for (const part of parts) {
+            const lines = part.split("\n");
+            for (const line of lines) {
+              const trimmed = line.trim();
+              if (!trimmed.startsWith("data:")) continue;
+              const jsonStr = trimmed.replace(/^data:\s*/, "").trim();
+              if (!jsonStr || jsonStr === "[DONE]") continue;
+
+              try {
+                const parsed = JSON.parse(jsonStr);
+                if (parsed.type === "sources") {
+                  streamedSources = parsed.sources;
+                  hasUpdated = true;
+                } else if (parsed.type === "chunk") {
+                  streamedReply += parsed.text;
+                  hasUpdated = true;
+                } else if (parsed.type === "error") {
+                  throw new Error(parsed.error);
+                }
+              } catch (e) {}
+            }
+          }
+
+          if (hasUpdated) {
+            setLoading(false);
+            setSessions((prev) =>
+              prev.map((s) => {
+                if (s.id === targetSessionId) {
+                  const msgs = [...s.messages];
+                  const lastIdx = msgs.length - 1;
+                  if (lastIdx >= 0 && msgs[lastIdx].role === "assistant") {
+                    msgs[lastIdx] = {
+                      role: "assistant",
+                      content: streamedReply,
+                      sources: streamedSources,
+                    };
+                  }
+                  return { ...s, messages: msgs };
+                }
+                return s;
+              })
+            );
+          }
+        }
+      }
+
+      // Lưu câu trả lời vào Client Cache để lần sau hỏi lại phản hồi trong 0.01 giây
+      clientCache.set(normalizedKey, { reply: streamedReply, sources: streamedSources });
+
+      // ĐỒNG BỘ LÊN SUPABASE
+      if (userEmail) {
+        syncSessionToSupabase(targetSessionId, [
+          ...updatedMessages,
+          { role: "assistant", content: streamedReply, sources: streamedSources },
+        ]);
+      }
     } catch (err: any) {
       const errorMsg: Message = {
         role: "assistant",
@@ -397,10 +575,10 @@ export default function Home() {
               Lịch sử tra cứu của bạn
             </div>
             {sessions.map((s) => (
-              <button
+              <div
                 key={s.id}
                 onClick={() => setCurrentSessionId(s.id)}
-                className={`w-full text-left p-2.5 rounded-xl text-xs flex items-center gap-2.5 transition truncate ${
+                className={`group w-full p-2.5 rounded-xl text-xs flex items-center justify-between transition cursor-pointer ${
                   s.id === currentSessionId
                     ? isDarkMode
                       ? "bg-sky-600/15 text-sky-300 font-medium border border-sky-500/30"
@@ -410,9 +588,23 @@ export default function Home() {
                     : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
                 }`}
               >
-                <MessageSquare className="w-3.5 h-3.5 shrink-0 opacity-70" />
-                <span className="truncate">{s.title}</span>
-              </button>
+                <div className="flex items-center gap-2.5 flex-1 min-w-0">
+                  <MessageSquare className="w-3.5 h-3.5 shrink-0 opacity-70" />
+                  <span className="truncate">{s.title}</span>
+                </div>
+                {sessions.length > 1 && (
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      deleteChat(s.id);
+                    }}
+                    className="p-1 rounded opacity-0 group-hover:opacity-100 text-slate-400 hover:text-rose-400 hover:bg-slate-800/60 transition"
+                    title="Xóa cuộc trò chuyện này"
+                  >
+                    <Trash2 className="w-3.5 h-3.5" />
+                  </button>
+                )}
+              </div>
             ))}
           </div>
 
