@@ -23,6 +23,7 @@ import {
 import CloudflareTurnstile from "@/components/CloudflareTurnstile";
 import AuthModal from "@/components/AuthModal";
 import MarkdownRenderer from "@/components/MarkdownRenderer";
+import { supabase } from "@/lib/supabase";
 
 interface Message {
   role: "user" | "assistant";
@@ -96,9 +97,34 @@ export default function Home() {
       } catch (e) {}
     }
 
-    // 3. User email
+    // 3. User email & Lắng nghe đăng nhập từ Supabase
     const savedUser = localStorage.getItem("k12_user_email");
     if (savedUser) setUserEmail(savedUser);
+
+    if (supabase) {
+      supabase.auth.getSession().then(({ data: { session } }) => {
+        if (session?.user?.email) {
+          setUserEmail(session.user.email);
+          localStorage.setItem("k12_user_email", session.user.email);
+        }
+      });
+
+      const {
+        data: { subscription },
+      } = supabase.auth.onAuthStateChange((event, session) => {
+        if ((event === "SIGNED_IN" || event === "INITIAL_SESSION") && session?.user?.email) {
+          setUserEmail(session.user.email);
+          localStorage.setItem("k12_user_email", session.user.email);
+        } else if (event === "SIGNED_OUT") {
+          setUserEmail(null);
+          localStorage.removeItem("k12_user_email");
+        }
+      });
+
+      return () => {
+        subscription.unsubscribe();
+      };
+    }
 
     if (!savedSessions || JSON.parse(savedSessions).length === 0) {
       createNewChat();
@@ -151,9 +177,12 @@ export default function Home() {
     localStorage.setItem("k12_user_email", email);
   }
 
-  function handleLogout() {
+  async function handleLogout() {
     setUserEmail(null);
     localStorage.removeItem("k12_user_email");
+    if (supabase) {
+      await supabase.auth.signOut();
+    }
   }
 
   async function handleSendMessage(textToSend?: string) {

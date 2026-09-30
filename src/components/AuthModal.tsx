@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { LogIn, X, Mail, Sparkles, CheckCircle2 } from "lucide-react";
+import { LogIn, X, Mail, Sparkles, CheckCircle2, HelpCircle, ChevronDown, ChevronUp } from "lucide-react";
 import { supabase, isSupabaseConfigured } from "@/lib/supabase";
 
 interface AuthModalProps {
@@ -15,19 +15,20 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }: AuthModal
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   const [isSuccess, setIsSuccess] = useState(false);
+  const [showGuide, setShowGuide] = useState(false);
 
   if (!isOpen) return null;
 
   async function handleMagicLink(e: React.FormEvent) {
     e.preventDefault();
-    if (!email) return;
+    const cleanEmail = email.trim();
+    if (!cleanEmail) return;
 
     if (!isSupabaseConfigured || !supabase) {
-      // Chế độ Demo khi chưa cấu hình Supabase Key
       setIsSuccess(true);
-      setMessage(`Đã đăng nhập chế độ Demo với email: ${email}`);
+      setMessage(`Đã đăng nhập chế độ Demo với email: ${cleanEmail}`);
       setTimeout(() => {
-        onLoginSuccess(email);
+        onLoginSuccess(cleanEmail);
         onClose();
       }, 1000);
       return;
@@ -38,19 +39,21 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }: AuthModal
 
     try {
       const { error } = await supabase.auth.signInWithOtp({
-        email: email,
+        email: cleanEmail,
         options: {
-          emailRedirectTo: window.location.origin,
+          emailRedirectTo: typeof window !== "undefined" ? window.location.origin : undefined,
         },
       });
 
       if (error) throw error;
 
       setIsSuccess(true);
-      setMessage("Liên kết đăng nhập bảo mật đã được gửi tới hộp thư của bạn. Vui lòng kiểm tra email!");
+      setMessage(
+        "Liên kết đăng nhập bảo mật đã được gửi tới hộp thư của bạn! Vui lòng kiểm tra Email (cả mục Hộp thư đến và Hộp thư rác/Spam) rồi bấm vào link để đăng nhập."
+      );
     } catch (err: any) {
       setIsSuccess(false);
-      setMessage(err.message || "Đã xảy ra lỗi đăng nhập.");
+      setMessage(err.message || "Đã xảy ra lỗi khi gửi liên kết đăng nhập.");
     } finally {
       setLoading(false);
     }
@@ -58,22 +61,30 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }: AuthModal
 
   async function handleGoogleLogin() {
     if (!isSupabaseConfigured || !supabase) {
-      onLoginSuccess("giaovien@moet.edu.vn");
+      onLoginSuccess("user@example.com");
       onClose();
       return;
     }
 
-    await supabase.auth.signInWithOAuth({
-      provider: "google",
-      options: {
-        redirectTo: window.location.origin,
-      },
-    });
+    try {
+      const { error } = await supabase.auth.signInWithOAuth({
+        provider: "google",
+        options: {
+          redirectTo: typeof window !== "undefined" ? window.location.origin : undefined,
+        },
+      });
+      if (error) throw error;
+    } catch (err: any) {
+      setIsSuccess(false);
+      setMessage(
+        "Tính năng đăng nhập Google cần quản trị viên bật Google Provider trong Supabase Dashboard. Hiện tại bạn hãy đăng nhập thuận tiện bằng Email ở dưới nhé!"
+      );
+    }
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
-      <div className="relative w-full max-w-md p-6 bg-slate-900 border border-slate-700/80 rounded-2xl shadow-2xl">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm">
+      <div className="relative w-full max-w-md p-6 bg-slate-900 border border-slate-700/80 rounded-2xl shadow-2xl text-slate-100">
         <button
           onClick={onClose}
           className="absolute top-4 right-4 p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition"
@@ -92,9 +103,10 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }: AuthModal
         </div>
 
         <div className="space-y-4">
+          {/* Nút đăng nhập Google */}
           <button
             onClick={handleGoogleLogin}
-            className="w-full py-2.5 px-4 bg-white hover:bg-slate-100 text-slate-900 font-semibold rounded-xl flex items-center justify-center gap-2.5 shadow-sm transition"
+            className="w-full py-2.5 px-4 bg-white hover:bg-slate-100 text-slate-900 font-semibold rounded-xl flex items-center justify-center gap-2.5 shadow-sm transition text-sm"
           >
             <svg className="w-4 h-4" viewBox="0 0 24 24">
               <path
@@ -114,7 +126,7 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }: AuthModal
                 d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"
               />
             </svg>
-            Tiếp tục với Google (Email ngành)
+            Tiếp tục với Google
           </button>
 
           <div className="flex items-center my-3">
@@ -134,61 +146,67 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }: AuthModal
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="email@example.com..."
+                  placeholder="Nhập email của bạn..."
                   required
                   className="w-full pl-9 pr-3 py-2 bg-slate-800 border border-slate-700 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition"
                 />
               </div>
             </div>
 
-            <div className="flex gap-2">
-              <button
-                type="submit"
-                disabled={loading}
-                className="flex-1 py-2.5 px-3 bg-sky-600 hover:bg-sky-500 disabled:opacity-50 text-white font-medium rounded-xl transition text-xs flex items-center justify-center gap-1.5"
-              >
-                {loading ? "Đang gửi..." : "Gửi link qua Supabase"}
-              </button>
-              <button
-                type="button"
-                onClick={() => {
-                  const targetEmail = email.trim() || "user@k12assistant.vn";
-                  onLoginSuccess(targetEmail);
-                  onClose();
-                }}
-                className="py-2.5 px-3 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 rounded-xl transition text-xs font-medium"
-                title="Đăng nhập ngay lập tức để kích hoạt lưu lịch sử"
-              >
-                Đăng nhập nhanh
-              </button>
-            </div>
+            <button
+              type="submit"
+              disabled={loading}
+              className="w-full py-2.5 px-4 bg-sky-600 hover:bg-sky-500 disabled:opacity-50 text-white font-semibold rounded-xl transition text-sm flex items-center justify-center gap-2 shadow-sm"
+            >
+              {loading ? "Đang gửi liên kết..." : "Gửi liên kết đăng nhập"}
+            </button>
           </form>
 
+          {/* Nút mở Popup / Box hướng dẫn đăng nhập */}
+          <div className="pt-1">
+            <button
+              type="button"
+              onClick={() => setShowGuide(!showGuide)}
+              className="w-full py-1.5 px-2 flex items-center justify-between text-xs text-sky-400 hover:text-sky-300 transition rounded-lg hover:bg-slate-800/50"
+            >
+              <span className="flex items-center gap-1.5 font-medium">
+                <HelpCircle className="w-3.5 h-3.5" /> Hướng dẫn chi tiết cách đăng nhập
+              </span>
+              {showGuide ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
+            </button>
+
+            {showGuide && (
+              <div className="mt-2 p-3 bg-slate-800/80 rounded-xl border border-slate-700/60 text-xs text-slate-300 space-y-2 leading-relaxed animate-in fade-in">
+                <div className="font-semibold text-sky-300">Quy trình đăng nhập không cần mật khẩu:</div>
+                <div className="space-y-1.5 pl-1">
+                  <div>
+                    <strong>Bước 1:</strong> Nhập địa chỉ Email cá nhân của bạn và bấm <em>"Gửi liên kết đăng nhập"</em>.
+                  </div>
+                  <div>
+                    <strong>Bước 2:</strong> Mở hòm thư Email của bạn (vui lòng kiểm tra cả mục <strong>Hộp thư đến</strong> và <strong>Thư rác/Spam</strong>).
+                  </div>
+                  <div>
+                    <strong>Bước 3:</strong> Mở thư có tiêu đề xác nhận/đăng nhập từ hệ thống và bấm vào nút <strong>"Log In"</strong> hoặc đường link trong thư.
+                  </div>
+                  <div>
+                    <strong>Bước 4:</strong> Trình duyệt sẽ tự động kích hoạt tài khoản và đồng bộ toàn bộ lịch sử hỏi đáp của bạn.
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Thông báo kết quả gửi link */}
           {message && (
             <div
-              className={`p-3 rounded-xl text-xs flex items-start gap-2 ${
+              className={`p-3 rounded-xl text-xs flex items-start gap-2.5 ${
                 isSuccess
                   ? "bg-emerald-500/10 border border-emerald-500/20 text-emerald-300"
                   : "bg-rose-500/10 border border-rose-500/20 text-rose-300"
               }`}
             >
               {isSuccess && <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />}
-              <div className="flex-1">
-                <div>{message}</div>
-                {!isSuccess && (
-                  <button
-                    type="button"
-                    onClick={() => {
-                      const targetEmail = email.trim() || "user@k12assistant.vn";
-                      onLoginSuccess(targetEmail);
-                      onClose();
-                    }}
-                    className="mt-2 text-xs text-sky-400 hover:underline font-semibold"
-                  >
-                    👉 Bấm vào đây để bỏ qua và đăng nhập ngay
-                  </button>
-                )}
-              </div>
+              <span className="leading-relaxed">{message}</span>
             </div>
           )}
         </div>
