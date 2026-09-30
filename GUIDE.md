@@ -1,64 +1,82 @@
-# 📖 HƯỚNG DẪN CÀI ĐẶT & VẬN HÀNH (GUIDE) - K12ONLINE CHATBOT
+# 📖 CẨM NANG CÀI ĐẶT & VẬN HÀNH (GUIDE) - K12ONLINE CHATBOT
 
-Tài liệu hướng dẫn từng bước từ lúc tải mã nguồn đến khi triển khai hoàn chỉnh.
-
----
-
-## 1. Yêu cầu môi trường
-- Đã cài đặt **Node.js** phiên bản `>= 18.x` (máy bạn hiện tại là v24.18.0 rất tốt).
-- Tối thiểu 1 API Key từ [OpenRouter](https://openrouter.ai/keys) (hoàn toàn miễn phí).
+Tài liệu hướng dẫn chi tiết từ lúc khởi tạo mã nguồn, cấu hình các dịch vụ bên thứ ba (OpenRouter, Cloudflare, Upstash, Supabase) cho đến khi đưa lên môi trường Production.
 
 ---
 
-## 2. Các bước cấu hình ban đầu
+## 1. Yêu cầu Môi trường
+- Đã cài đặt **Node.js** phiên bản `>= 18.x`.
+- Trình quản lý gói **npm** đi kèm.
+- Công cụ **Git**.
 
-### Bước 1: Khai báo API Key vào file môi trường
-1. Mở file `.env.local` trong thư mục dự án bằng Notepad hoặc VS Code.
-2. Dán các API Key của bạn vào dòng `OPENROUTER_API_KEYS`:
+---
+
+## 2. Hướng dẫn Lấy Khóa & Cấu hình Biến Môi trường (.env.local)
+
+Tạo file `.env.local` tại thư mục gốc của dự án và điền các tham số sau:
+
+### 2.1. Cấu hình OpenRouter (Bộ não AI)
+1. Đăng ký tài khoản tại [openrouter.ai](https://openrouter.ai).
+2. Vào mục **Keys** tạo API Key mới.
+3. Nếu bạn có nhiều tài khoản Google, hãy tạo mỗi tài khoản 1 Key rồi dán cách nhau bằng dấu phẩy:
    ```env
-   # Nếu bạn có 1 key:
-   OPENROUTER_API_KEYS=sk-or-v1-abc123xxxx
-
-   # Nếu bạn có nhiều tài khoản clone để xoay tua chống Rate limit:
    OPENROUTER_API_KEYS=sk-or-v1-key1,sk-or-v1-key2,sk-or-v1-key3
    ```
-3. Lưu file lại.
 
-### Bước 2: Cài đặt thư viện & Khởi động
-Bạn chỉ cần nhấp đúp chuột vào file **`run.bat`** (hoặc mở Command Prompt gõ):
-```bash
+### 2.2. Cấu hình Upstash Redis (Bộ nhớ đệm & Chống spam)
+1. Đăng nhập [console.upstash.com](https://console.upstash.com) (hoàn toàn miễn phí).
+2. Bấm **Create Database** > Chọn khu vực Singapore hoặc gần nhất.
+3. Cuộn xuống mục **REST API**, chọn tab `.env` và copy 2 biến:
+   ```env
+   UPSTASH_REDIS_REST_URL=https://...upstash.io
+   UPSTASH_REDIS_REST_TOKEN=...
+   ```
+
+### 2.3. Cấu hình Cloudflare Turnstile (Xác minh chống bot)
+1. Đăng nhập [dash.cloudflare.com](https://dash.cloudflare.com) > Chọn mục **Turnstile** > **Add Widget**.
+2. Thêm domain của bạn (ví dụ: `k12onlinechatbot.thhoang.io.vn` và `localhost`).
+3. Lấy `Site Key` và `Secret Key`:
+   ```env
+   NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY=0x4AAAAAA...
+   CLOUDFLARE_TURNSTILE_SECRET_KEY=0x4AAAAAA...
+   ```
+
+### 2.4. Cấu hình Supabase (Đăng nhập & Lưu trữ)
+1. Đăng nhập [supabase.com](https://supabase.com) > Tạo project mới.
+2. Vào **Project Settings > API** copy `URL` và `anon public key`:
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=https://...supabase.co
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=...
+   ```
+
+---
+
+## 3. Khởi chạy dưới máy tính cá nhân (Localhost)
+
+```powershell
+# 1. Cài đặt các gói thư viện
 npm install
+
+# 2. Khởi chạy server phát triển
 npm run dev
 ```
 
-Sau khi màn hình hiện `Ready in ...ms`, mở trình duyệt truy cập:
-👉 **`http://localhost:3000`**
+Mở trình duyệt tại: 👉 **`http://localhost:3000`**
 
 ---
 
-## 3. Hướng dẫn thiết lập Supabase (Để lưu lịch sử chat qua Cloud)
+## 4. Triển khai lên Vercel & Gắn Tên miền Riêng (Custom Domain)
 
-*Nếu bạn chỉ muốn thử nghiệm Chế độ Khách (Guest Mode) thì bước này không bắt buộc.*
-
-1. Đăng ký tài khoản miễn phí tại [supabase.com](https://supabase.com).
-2. Tạo một **Project** mới (chọn khu vực Singapore để có tốc độ nhanh nhất về Việt Nam).
-3. Vào mục **Settings > API**, copy 2 thông số:
-   - `Project URL`
-   - `Project API anon key`
-4. Dán vào file `.env.local`:
-   ```env
-   NEXT_PUBLIC_SUPABASE_URL=https://your-id.supabase.co
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOi...
+1. Đẩy toàn bộ mã nguồn lên GitHub của bạn:
+   ```powershell
+   git add .
+   git commit -m "Deploy project"
+   git push origin main
    ```
-
----
-
-## 4. Hướng dẫn thiết lập Cloudflare Turnstile (Chống Bot độc hại)
-
-1. Đăng nhập [dash.cloudflare.com](https://dash.cloudflare.com).
-2. Vào mục **Turnstile** ở thanh menu bên trái > Bấm **Add Widget**.
-3. Đặt tên widget (Ví dụ: `K12-Chatbot`), nhập tên miền của bạn (hoặc `localhost` để test).
-4. Copy `Site Key` và dán vào `.env.local`:
-   ```env
-   NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY=0x4AAAAAA...
-   ```
+2. Đăng nhập [vercel.com](https://vercel.com) > Bấm **Add New... > Project** > Chọn kho mã nguồn `K12Online_Chatbot`.
+3. Trong phần **Environment Variables**, thêm đầy đủ các biến từ file `.env.local` ở bước 2.
+4. Bấm **Deploy**.
+5. Để gắn tên miền riêng:
+   - Vào mục **Settings > Domains** trên trang dự án Vercel.
+   - Thêm tên miền: `k12onlinechatbot.thhoang.io.vn`.
+   - Vào trang quản lý DNS tên miền của bạn, tạo bản ghi `CNAME` trỏ về: `cname.vercel-dns.com`.

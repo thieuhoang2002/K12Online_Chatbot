@@ -1,42 +1,75 @@
 # 🤝 TÀI LIỆU BÀN GIAO DỰ ÁN (HANDOVER) - K12ONLINE CHATBOT
 
-## 1. Tổng quan Dự án
-- **Tên dự án:** Trợ Lý AI Hỗ Trợ Nghiệp Vụ K12Online (Phi Lợi Nhuận).
-- **Mục tiêu:** Hỗ trợ Quý Thầy/Cô giáo và Cán bộ IT các trường phổ thông tra cứu, giải quyết nhanh các nghiệp vụ, thao tác khó trên phần mềm K12Online (Viettel).
-- **Vị trí thư mục:** `C:\Users\thhoang\Desktop\K12Online_Chatbot`
+## 1. Tổng quan Sản phẩm Bàn giao
+- **Tên dự án:** Trợ Lý AI Hỗ Trợ Nghiệp Vụ K12Online (Dự án Cộng đồng Phi Lợi Nhuận).
+- **Tên miền Production:** [https://k12onlinechatbot.thhoang.io.vn](https://k12onlinechatbot.thhoang.io.vn)
+- **Tên miền dự phòng Vercel:** [https://k12-online-chatbot.vercel.app](https://k12-online-chatbot.vercel.app)
+- **Kho mã nguồn GitHub:** `https://github.com/thieuhoang2002/K12Online_Chatbot.git` (Nhánh `main`)
+- **Mã nguồn cục bộ:** `C:\Users\thhoang\Desktop\K12Online_Chatbot`
 
 ---
 
-## 2. Kiến trúc & Thành phần cốt lõi
+## 2. Các Thành phần Hệ thống đã Hoàn thiện
 
-### 2.1. Bộ Não AI & Kỹ năng Xoay Key (OpenRouter Multi-Key Engine)
-- **File thực thi:** `src/lib/openrouter.ts`
-- **Cách hoạt động:**
-  - Nhận danh sách API Key thông qua biến `OPENROUTER_API_KEYS` trong `.env.local` (phân cách bằng dấu phẩy: `key1,key2,key3`).
-  - Phân phối theo thuật toán Round-Robin: Mỗi câu hỏi dùng 1 key khác nhau để chia nhỏ tải.
-  - **Tự động Failover:** Nếu Key hiện tại trả về mã HTTP `429` (Rate limit) hoặc `402` (Hết quota), engine ngay lập tức chuyển sang Key tiếp theo trong mảng mà người dùng không hề bị báo lỗi.
+### 2.1. Động cơ AI & Xoay Khóa Tự động
+- **Mã nguồn:** `src/lib/openrouter.ts`
+- **Tính năng:**
+  - Hỗ trợ xoay tua nhiều khóa API OpenRouter (`OPENROUTER_API_KEYS=key1,key2,key3`).
+  - Tự động nhận diện lỗi quá tải tài nguyên dùng chung (429 upstream pool) và chuyển đổi tức thì sang mô hình dự phòng `Nemotron 550B` hoặc `Gemma 31B` trong 0.1s.
 
-### 2.2. Dữ liệu Tri thức & Trích xuất (RAG Engine)
-- **File thực thi:** `src/lib/knowledge.ts`
-- **Dữ liệu nguồn:**
-  - `data/k12_knowledge.txt`: File tổng hợp toàn bộ 88+ bài viết nghiệp vụ K12Online đã được cào và làm sạch.
-  - `data/articles/`: Thư mục chứa từng bài viết riêng rẽ.
-- **Cơ chế tìm kiếm:** Bóc tách từ khóa thông minh, xếp hạng theo độ liên quan (BM25/Keyword scoring) để chỉ đưa 2–3 bài viết liên quan nhất vào ngữ cảnh, tiết kiệm token tối đa.
+### 2.2. Cơ sở Tri thức & Tìm kiếm Ngữ cảnh (RAG)
+- **Mã nguồn:** `src/lib/knowledge.ts`
+- **Thư mục dữ liệu:** `data/articles/` (chứa 88+ bài viết nghiệp vụ chuẩn của Viettel K12Online).
+- **Quy trình quản lý dữ liệu:** Xem chi tiết tại [DATA_MANAGEMENT.md](file:///C:/Users/thhoang/Desktop/K12Online_Chatbot/DATA_MANAGEMENT.md).
 
-### 2.3. Trải nghiệm Người Dùng (Frontend UX)
-- **Chế độ Khách (Guest Mode):** Vào web là tra cứu được ngay, không ép buộc đăng nhập.
-- **Chế độ Thành viên:** Đăng nhập qua Supabase Auth (Google / Magic link) để đồng bộ lịch sử chat vĩnh viễn trên đám mây.
-- **Bảo mật Cloudflare Turnstile:** Xác minh người thật, ngăn chặn bot cào ngược.
-- **Modal Ủng hộ (Donate ☕):** Kêu gọi hỗ trợ tiền server tự nguyện từ cộng đồng.
+### 2.3. Bộ nhớ Đệm & Tăng tốc (Hybrid Caching)
+- **Mã nguồn:** `src/lib/cache.ts`
+- **Dịch vụ sử dụng:** Upstash Redis Cloud (`UPSTASH_REDIS_REST_URL` & `UPSTASH_REDIS_REST_TOKEN`).
+- **Hiệu quả:** Phản hồi câu hỏi đã có sẵn trong 30ms, tiết kiệm 100% chi phí và hạn ngạch gọi AI.
+
+### 2.4. Hệ thống Phòng thủ & Chống Spam (Security)
+- **Mã nguồn:** `src/app/api/chat/route.ts` & `src/lib/ratelimit.ts`
+- **Các tầng bảo vệ:**
+  1. **Cloudflare Turnstile:** Bắt buộc xác minh hợp lệ phía server (trả về 403 Forbidden nếu cố tình vượt mặt giao diện).
+  2. **Rate Limiting:** Giới hạn 20 câu hỏi / phút cho mỗi địa chỉ IP thông qua Upstash Redis (trả về 429 Too Many Requests).
+  3. **Payload Limit:** Khống chế độ dài tối đa 1.500 ký tự / câu hỏi (trả về 400 Bad Request).
 
 ---
 
-## 3. Cách khởi chạy dự án
+## 3. Danh sách Biến Môi trường Cần thiết (.env.local)
 
-1. Mở thư mục `C:\Users\thhoang\Desktop\K12Online_Chatbot`.
-2. Mở file `.env.local` và dán OpenRouter API Key vào biến:
-   ```env
-   OPENROUTER_API_KEYS=sk-or-v1-key1,sk-or-v1-key2
+```env
+# OpenRouter API Keys (cách nhau bởi dấu phẩy)
+OPENROUTER_API_KEYS=sk-or-v1-key1,sk-or-v1-key2,sk-or-v1-key3
+
+# Upstash Redis Cloud Cache & Rate Limiting
+UPSTASH_REDIS_REST_URL=https://...upstash.io
+UPSTASH_REDIS_REST_TOKEN=...
+
+# Cloudflare Turnstile
+NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY=0x4AAAAAA...
+CLOUDFLARE_TURNSTILE_SECRET_KEY=0x4AAAAAA...
+
+# Supabase Auth & BaaS
+NEXT_PUBLIC_SUPABASE_URL=https://...supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=...
+```
+
+---
+
+## 4. Hướng dẫn Vận hành & Cập nhật Dự án
+
+1. **Khởi động chạy thử tại máy cục bộ:**
+   ```powershell
+   npm run dev
    ```
-3. Chạy file `run.bat` (hoặc mở terminal gõ `npm run dev`).
-4. Truy cập trình duyệt: `http://localhost:3000`.
+   Truy cập `http://localhost:3000`.
+
+2. **Cập nhật tính năng hoặc dữ liệu mới:**
+   Chỉnh sửa code hoặc thêm file trong `data/articles/`, sau đó chạy:
+   ```powershell
+   git add .
+   git commit -m "Nội dung cập nhật"
+   git push origin main
+   ```
+   Vercel sẽ tự động build và cập nhật trực tiếp lên trang web production sau 1 phút.
