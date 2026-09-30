@@ -125,6 +125,11 @@ export default function Home() {
     // 3. User email
     const savedUser = localStorage.getItem("k12_user_email");
     if (savedUser) setUserEmail(savedUser);
+
+    // 4. Tự động đóng sidebar trên thiết bị di động (màn hình < 768px)
+    if (window.innerWidth < 768) {
+      setIsSidebarOpen(false);
+    }
   }, []);
 
   // 4. Lắng nghe đăng nhập từ Supabase & Đồng bộ Cloud
@@ -269,6 +274,9 @@ export default function Home() {
 
   function createNewChat() {
     if (loading) return;
+    if (typeof window !== "undefined" && window.innerWidth < 768) {
+      setIsSidebarOpen(false);
+    }
     const newSession: ChatSession = {
       id: "chat_" + Date.now(),
       title: "Cuộc trò chuyện mới",
@@ -524,11 +532,19 @@ export default function Home() {
         isDarkMode ? "bg-slate-950 text-slate-100" : "bg-slate-100 text-slate-800"
       }`}
     >
+      {/* Lớp phủ mờ (Backdrop overlay) khi mở sidebar trên màn hình di động */}
+      {userEmail && isSidebarOpen && (
+        <div
+          onClick={() => setIsSidebarOpen(false)}
+          className="fixed inset-0 bg-black/60 z-40 md:hidden backdrop-blur-xs transition-opacity"
+        />
+      )}
+
       {/* SIDEBAR LỊCH SỬ CHAT: CHỈ HIỂN THỊ KHI ĐÃ ĐĂNG NHẬP */}
       {userEmail && isSidebarOpen && (
         <aside
-          className={`w-72 flex flex-col shrink-0 border-r transition-colors duration-200 ${
-            isDarkMode ? "bg-slate-900/90 border-slate-800" : "bg-white border-slate-200"
+          className={`fixed inset-y-0 left-0 z-50 md:static md:z-auto w-72 max-w-[80vw] flex flex-col shrink-0 border-r shadow-2xl md:shadow-none transition-colors duration-200 ${
+            isDarkMode ? "bg-slate-900 border-slate-800" : "bg-white border-slate-200"
           }`}
         >
           {/* Header Sidebar */}
@@ -593,6 +609,9 @@ export default function Home() {
                 onClick={() => {
                   if (loading) return;
                   setCurrentSessionId(s.id);
+                  if (typeof window !== "undefined" && window.innerWidth < 768) {
+                    setIsSidebarOpen(false);
+                  }
                 }}
                 className={`group w-full p-2.5 rounded-xl text-xs flex items-center justify-between transition ${
                   loading ? "cursor-not-allowed opacity-60" : "cursor-pointer"
@@ -670,18 +689,18 @@ export default function Home() {
       <main className="flex-1 flex flex-col h-full overflow-hidden">
         {/* TOP BAR */}
         <header
-          className={`h-14 border-b px-4 md:px-6 flex items-center justify-between backdrop-blur-md transition-colors duration-200 ${
+          className={`h-14 border-b px-2.5 sm:px-4 md:px-6 flex items-center justify-between backdrop-blur-md transition-colors duration-200 gap-1.5 ${
             isDarkMode
               ? "bg-slate-900/60 border-slate-800/80"
               : "bg-white/90 border-slate-200 shadow-xs"
           }`}
         >
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
             {/* Nút mở sidebar nếu đã đăng nhập và đang đóng */}
             {userEmail && !isSidebarOpen && (
               <button
                 onClick={() => setIsSidebarOpen(true)}
-                className={`p-1.5 rounded-lg border text-slate-400 hover:text-slate-600 dark:hover:text-white transition ${
+                className={`p-1.5 rounded-lg border text-slate-400 hover:text-slate-600 dark:hover:text-white transition shrink-0 ${
                   isDarkMode ? "border-slate-800 bg-slate-800/50" : "border-slate-200 bg-white"
                 }`}
                 title="Mở lịch sử chat"
@@ -692,32 +711,32 @@ export default function Home() {
 
             {/* Logo thu nhỏ khi ở chế độ khách */}
             {!userEmail && (
-              <div className="p-1.5 bg-gradient-to-tr from-sky-600 to-indigo-500 rounded-lg shadow-sm">
+              <div className="p-1.5 bg-gradient-to-tr from-sky-600 to-indigo-500 rounded-lg shadow-sm shrink-0">
                 <Bot className="w-4 h-4 text-white" />
               </div>
             )}
 
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1.5 sm:gap-2 min-w-0">
               <span
-                className={`text-sm font-semibold flex items-center gap-1.5 ${
+                className={`text-xs sm:text-sm font-semibold flex items-center gap-1 sm:gap-1.5 truncate ${
                   isDarkMode ? "text-slate-200" : "text-slate-800"
                 }`}
               >
-                <BookOpen className="w-4 h-4 text-sky-500" />
-                <span>Chatbot hỗ trợ K12Online</span>
+                <BookOpen className="w-4 h-4 text-sky-500 shrink-0" />
+                <span className="truncate">Chatbot K12Online</span>
               </span>
-              <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 font-semibold border border-emerald-500/20">
+              <span className="hidden sm:inline-block text-[10px] px-1.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 font-semibold border border-emerald-500/20 shrink-0">
                 Phi Lợi Nhuận
               </span>
             </div>
           </div>
 
-          <div className="flex items-center gap-2 md:gap-3">
+          <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3 shrink-0">
             {/* Nút Đoạn chat mới (luôn tiện lợi ở topbar) */}
             <button
               onClick={createNewChat}
               disabled={loading}
-              className={`flex items-center gap-1 px-2.5 py-1.5 rounded-full text-xs font-medium border transition ${
+              className={`flex items-center gap-1 px-2 sm:px-2.5 py-1.5 rounded-full text-xs font-medium border transition ${
                 loading ? "opacity-40 cursor-not-allowed" : ""
               } ${
                 isDarkMode
@@ -726,14 +745,14 @@ export default function Home() {
               }`}
               title={loading ? "Đang trả lời câu hỏi..." : "Tạo cuộc hội thoại mới"}
             >
-              <Plus className="w-3.5 h-3.5 text-sky-500" />
+              <Plus className="w-3.5 h-3.5 text-sky-500 shrink-0" />
               <span className="hidden md:inline">Đoạn chat mới</span>
             </button>
 
             {/* Nút chuyển đổi Chế độ Sáng / Tối */}
             <button
               onClick={toggleTheme}
-              className={`p-2 rounded-full border transition ${
+              className={`p-1.5 sm:p-2 rounded-full border transition shrink-0 ${
                 isDarkMode
                   ? "bg-slate-800/60 hover:bg-slate-700/60 border-slate-700/60 text-amber-300"
                   : "bg-white hover:bg-slate-100 border-slate-200 text-slate-700"
@@ -750,15 +769,15 @@ export default function Home() {
             {!userEmail ? (
               <button
                 onClick={() => setIsAuthOpen(true)}
-                className="flex items-center gap-1.5 px-3 py-1.5 bg-sky-600 hover:bg-sky-500 text-white rounded-full text-xs font-semibold shadow-sm transition"
+                className="flex items-center gap-1 px-2.5 sm:px-3 py-1.5 bg-sky-600 hover:bg-sky-500 text-white rounded-full text-xs font-semibold shadow-sm transition shrink-0"
               >
                 <LogIn className="w-3.5 h-3.5" />
-                <span>Đăng nhập</span>
+                <span className="hidden xs:inline">Đăng nhập</span>
               </button>
             ) : (
               <button
                 onClick={handleLogout}
-                className={`p-1.5 rounded-full border text-slate-400 hover:text-rose-500 transition ${
+                className={`p-1.5 rounded-full border text-slate-400 hover:text-rose-500 transition shrink-0 ${
                   isDarkMode ? "border-slate-800 bg-slate-800/40" : "border-slate-200 bg-white"
                 }`}
                 title="Đăng xuất"
@@ -770,26 +789,30 @@ export default function Home() {
         </header>
 
         {/* KHUNG CUỘN CHAT */}
-        <div className="flex-1 overflow-y-auto p-4 md:p-6 space-y-6 max-w-4xl w-full mx-auto">
+        <div className="flex-1 overflow-y-auto p-3 sm:p-4 md:p-6 space-y-4 sm:space-y-6 max-w-4xl w-full mx-auto">
           {messages.map((m, idx) => (
             <div
               key={idx}
-              className={`flex gap-3 text-sm leading-relaxed ${
+              className={`flex gap-2 sm:gap-3 text-sm leading-relaxed ${
                 m.role === "user" ? "flex-row-reverse" : "flex-row"
               }`}
             >
               <div
-                className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 font-bold text-xs ${
+                className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center shrink-0 font-bold text-xs ${
                   m.role === "user"
                     ? "bg-sky-600 text-white"
                     : "bg-emerald-600 text-white shadow-md shadow-emerald-900/30"
                 }`}
               >
-                {m.role === "user" ? <User className="w-4 h-4" /> : <Bot className="w-4 h-4" />}
+                {m.role === "user" ? (
+                  <User className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                ) : (
+                  <Bot className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                )}
               </div>
 
               <div
-                className={`relative group max-w-[85%] rounded-2xl p-4 transition-colors ${
+                className={`relative group max-w-[90%] sm:max-w-[85%] rounded-2xl p-3 sm:p-4 transition-colors ${
                   m.role === "user"
                     ? "bg-sky-600 text-white rounded-tr-none shadow-md shadow-sky-600/20"
                     : isDarkMode
@@ -924,24 +947,25 @@ export default function Home() {
 
         {/* GỢI Ý CÂU HỎI THƯỜNG GẶP */}
         <div
-          className={`px-4 md:px-6 py-2 border-t transition-colors ${
+          className={`px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 border-t transition-colors ${
             isDarkMode ? "bg-slate-950/80 border-slate-800/40" : "bg-slate-50/80 border-slate-200"
           }`}
         >
-          <div className="max-w-4xl mx-auto flex gap-2 overflow-x-auto pb-1 text-xs">
+          <div className="max-w-4xl mx-auto flex gap-1.5 sm:gap-2 overflow-x-auto pb-1 text-xs no-scrollbar">
             <span
-              className={`whitespace-nowrap self-center font-medium flex items-center gap-1 ${
+              className={`whitespace-nowrap shrink-0 self-center font-medium flex items-center gap-1 text-[11px] sm:text-xs ${
                 isDarkMode ? "text-slate-400" : "text-slate-500"
               }`}
             >
-              <Sparkles className="w-3.5 h-3.5 text-amber-500" /> Bạn có thể hỏi:
+              <Sparkles className="w-3.5 h-3.5 text-amber-500 shrink-0" />
+              <span className="hidden sm:inline">Bạn có thể hỏi:</span>
             </span>
             {QUICK_PROMPTS.map((q, qIdx) => (
               <button
                 key={qIdx}
                 disabled={loading}
                 onClick={() => handleSendMessage(q)}
-                className={`px-3 py-1 rounded-full whitespace-nowrap transition text-[11.5px] border ${
+                className={`px-2.5 sm:px-3 py-1 rounded-full whitespace-nowrap transition text-[11px] sm:text-[11.5px] border ${
                   loading ? "opacity-40 cursor-not-allowed" : ""
                 } ${
                   isDarkMode
@@ -957,7 +981,7 @@ export default function Home() {
 
         {/* KHUNG NHẬP LIỆU FOOTER */}
         <div
-          className={`p-4 md:p-6 border-t transition-colors ${
+          className={`p-2.5 sm:p-4 md:p-6 border-t transition-colors ${
             isDarkMode ? "bg-slate-900/60 border-slate-800/80" : "bg-white border-slate-200 shadow-sm"
           }`}
         >

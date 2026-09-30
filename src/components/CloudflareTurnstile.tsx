@@ -106,16 +106,19 @@ export default function CloudflareTurnstile({ onVerify }: TurnstileProps) {
   }, [siteKey]);
 
   return (
-    <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium border bg-slate-900/60 border-slate-700/60 dark:bg-slate-900/60 dark:border-slate-700/60 text-slate-300">
+    <div
+      className="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-full text-xs font-medium border bg-slate-900/60 border-slate-700/60 dark:bg-slate-900/60 dark:border-slate-700/60 text-slate-300 shrink-0"
+      title={verified ? "Được bảo vệ an toàn bởi Cloudflare Turnstile" : "Đang xác minh bảo mật..."}
+    >
       {verified ? (
         <>
-          <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-          <span className="text-emerald-400 dark:text-emerald-300 font-medium">Bảo vệ Cloudflare</span>
+          <ShieldCheck className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+          <span className="hidden sm:inline text-emerald-400 dark:text-emerald-300 font-medium text-[11.5px]">Bảo vệ Cloudflare</span>
         </>
       ) : (
         <>
-          <ShieldAlert className="w-3.5 h-3.5 text-amber-400 animate-pulse" />
-          <span className="text-amber-400 dark:text-amber-300">Đang xác minh...</span>
+          <ShieldAlert className="w-3.5 h-3.5 text-amber-400 animate-pulse shrink-0" />
+          <span className="hidden sm:inline text-amber-400 dark:text-amber-300 text-[11.5px]">Đang xác minh...</span>
         </>
       )}
       {/* Container ẩn mượt mà mà vẫn đảm bảo Turnstile có thể render */}
