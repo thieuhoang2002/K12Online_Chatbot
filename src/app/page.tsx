@@ -494,7 +494,7 @@ export default function Home() {
                 }`}
               >
                 <BookOpen className="w-4 h-4 text-sky-500" />
-                <span className="hidden sm:inline">Trung Tâm Hỗ Trợ Nghiệp Vụ</span> K12Online
+                <span>Chatbot hỗ trợ K12Online</span>
               </span>
               <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 font-semibold border border-emerald-500/20">
                 Phi Lợi Nhuận
