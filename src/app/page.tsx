@@ -45,10 +45,13 @@ const QUICK_PROMPTS = [
   "Cách nhà trường cấu hình phân công giám thị và quản lý vi phạm",
 ];
 
+// Bộ nhớ đệm Client-side lưu câu trả lời ngay trên trình duyệt (phản hồi 0.01 giây khi hỏi lại)
+const clientCache = new Map<string, { reply: string; sources: any }>();
+
 const AVAILABLE_MODELS = [
-  { id: "nvidia/nemotron-3-ultra-550b-a55b:free", name: "NVIDIA Nemotron 3 Ultra (550B - Free)", badge: "Khuyên dùng" },
-  { id: "qwen/qwen3.8-27b:free", name: "Qwen 3.8 27B (Tiếng Việt xuất sắc - Free)", badge: "Nhanh" },
-  { id: "google/gemma-4-31b-it:free", name: "Google Gemma 4 31B (Open-weight - Free)", badge: "Mới" },
+  { id: "qwen/qwen3.8-27b:free", name: "Qwen 3.8 27B (Phản hồi siêu tốc ~1.9s - Khuyên dùng)", badge: "Siêu tốc" },
+  { id: "nvidia/nemotron-3-ultra-550b-a55b:free", name: "NVIDIA Nemotron 3 Ultra (550B - Siêu chi tiết)", badge: "Chi tiết" },
+  { id: "google/gemma-4-31b-it:free", name: "Google Gemma 4 31B (Open-weight - Free)", badge: "Dự phòng" },
 ];
 
 export default function Home() {
@@ -195,6 +198,30 @@ export default function Home() {
     const userMsg: Message = { role: "user", content: query };
     const updatedMessages = [...messages, userMsg];
 
+    // KIỂM TRA BỘ NHỚ ĐỆM TỨC THÌ TRÊN TRÌNH DUYỆT (0 GIÂY)
+    const normalizedKey = query.toLowerCase();
+    const cachedResponse = clientCache.get(normalizedKey);
+    if (cachedResponse) {
+      const botMsg: Message = {
+        role: "assistant",
+        content: cachedResponse.reply,
+        sources: cachedResponse.sources,
+      };
+      setSessions((prev) =>
+        prev.map((s) => {
+          if (s.id === currentSession.id) {
+            return {
+              ...s,
+              title: s.messages.length <= 1 ? query.slice(0, 30) + "..." : s.title,
+              messages: [...updatedMessages, botMsg],
+            };
+          }
+          return s;
+        })
+      );
+      return;
+    }
+
     setSessions((prev) =>
       prev.map((s) => {
         if (s.id === currentSession.id) {
@@ -227,6 +254,9 @@ export default function Home() {
       if (!res.ok) {
         throw new Error(data.error || "Không thể kết nối đến máy chủ AI.");
       }
+
+      // Lưu câu trả lời vào Client Cache để lần sau hỏi lại phản hồi trong 0.01 giây
+      clientCache.set(normalizedKey, { reply: data.reply, sources: data.sources });
 
       const botMsg: Message = {
         role: "assistant",

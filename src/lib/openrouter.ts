@@ -38,9 +38,8 @@ class KeyRotator {
    * Danh sách model miễn phí chất lượng cao để tự động fallback khi model chính bị nghẽn
    */
   private fallbackModels = [
-    "nvidia/nemotron-3-ultra-550b-a55b:free",
-    "nvidia/nemotron-3.5-lightning:free",
     "qwen/qwen3.8-27b:free",
+    "nvidia/nemotron-3-ultra-550b-a55b:free",
     "google/gemma-4-31b-it:free",
   ];
 
@@ -49,7 +48,7 @@ class KeyRotator {
    */
   public async callChatCompletion(
     messages: ChatMessage[],
-    requestedModel: string = "nvidia/nemotron-3-ultra-550b-a55b:free"
+    requestedModel: string = "qwen/qwen3.8-27b:free"
   ): Promise<{ content: string; keyIndexUsed: number }> {
     if (this.keys.length === 0) {
       throw new Error("Chưa cấu hình OPENROUTER_API_KEYS trong file môi trường .env.local.");

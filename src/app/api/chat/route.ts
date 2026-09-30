@@ -9,13 +9,15 @@ export async function POST(req: NextRequest) {
     const {
       message,
       history = [],
-      model = "nvidia/nemotron-3-ultra-550b-a55b:free",
+      model = "qwen/qwen3.8-27b:free",
       turnstileToken,
     } = body;
 
     if (!message || typeof message !== "string") {
       return NextResponse.json({ error: "Vui lòng nhập nội dung câu hỏi." }, { status: 400 });
     }
+
+    const cacheKey = message.trim().toLowerCase();
 
     // 0. Xác minh Cloudflare Turnstile phía Server (siteverify)
     const turnstileSecret = process.env.CLOUDFLARE_TURNSTILE_SECRET_KEY;
@@ -49,20 +51,19 @@ export async function POST(req: NextRequest) {
     }
 
     // 1. KIỂM TRA BỘ NHỚ RAM CACHE (Nếu câu hỏi đã từng trả lời trước đó)
-    // Nếu chỉ có 1 câu hỏi độc lập (không phụ thuộc ngữ cảnh trò chuyện dài), lấy thẳng từ RAM
-    if (history.length === 0) {
-      const cached = responseCache.get(model, message);
-      if (cached) {
-        return NextResponse.json({
-          reply: cached.reply,
-          sources: cached.sources,
-          meta: {
-            cached: true,
-            keyIndexUsed: 0,
-            totalKeysInPool: keyRotator.getKeyCount(),
-          },
-        });
-      }
+    // Luôn luôn kiểm tra cache bất kể phiên chat dài hay ngắn
+    const cached = responseCache.get(model, cacheKey);
+    if (cached) {
+      console.log(`⚡ [RAM Cache] Trúng cache siêu tốc cho: "${message.slice(0, 35)}..."`);
+      return NextResponse.json({
+        reply: cached.reply,
+        sources: cached.sources,
+        meta: {
+          cached: true,
+          keyIndexUsed: 0,
+          totalKeysInPool: keyRotator.getKeyCount(),
+        },
+      });
     }
 
     // 2. Tìm kiếm dữ liệu liên quan từ kho tri thức K12Online
@@ -100,7 +101,7 @@ ${contextText || "Chưa có tài liệu phù hợp."}`;
     }));
 
     // 6. LƯU VÀO BỘ NHỚ RAM CACHE CHO CÁC LẦN HỎI SAU
-    responseCache.set(model, message, content, sources);
+    responseCache.set(model, cacheKey, content, sources);
 
     return NextResponse.json({
       reply: content,
