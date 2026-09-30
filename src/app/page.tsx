@@ -394,6 +394,11 @@ export default function Home() {
         }),
       });
 
+      // Kích hoạt sinh token Turnstile mới cho câu hỏi kế tiếp
+      if (typeof window !== "undefined") {
+        window.dispatchEvent(new CustomEvent("cf-turnstile-refresh"));
+      }
+
       if (!res.ok) {
         let errorMsgText = "Không thể kết nối đến máy chủ AI.";
         try {

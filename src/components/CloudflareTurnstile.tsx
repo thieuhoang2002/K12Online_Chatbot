@@ -52,6 +52,14 @@ export default function CloudflareTurnstile({ onVerify }: TurnstileProps) {
               clearTimeout(safetyTimer);
               setVerified(true);
             },
+            "expired-callback": () => {
+              // Tự động reset và cấp lại token mới khi token cũ hết hạn (300s)
+              try {
+                if (widgetIdRef.current && (window as any).turnstile) {
+                  (window as any).turnstile.reset(widgetIdRef.current);
+                }
+              } catch (e) {}
+            },
           });
           widgetIdRef.current = wId;
         } catch (e) {
@@ -59,6 +67,18 @@ export default function CloudflareTurnstile({ onVerify }: TurnstileProps) {
         }
       }
     };
+
+    // Lắng nghe sự kiện yêu cầu tạo token mới sau mỗi lần gửi tin nhắn
+    const handleRefresh = () => {
+      try {
+        if (widgetIdRef.current && typeof window !== "undefined" && (window as any).turnstile) {
+          (window as any).turnstile.reset(widgetIdRef.current);
+        }
+      } catch (e) {}
+    };
+    if (typeof window !== "undefined") {
+      window.addEventListener("cf-turnstile-refresh", handleRefresh);
+    }
 
     // Đăng ký callback trước khi tải script
     (window as any).onloadTurnstileCallback = renderWidget;
@@ -79,6 +99,9 @@ export default function CloudflareTurnstile({ onVerify }: TurnstileProps) {
 
     return () => {
       clearTimeout(safetyTimer);
+      if (typeof window !== "undefined") {
+        window.removeEventListener("cf-turnstile-refresh", handleRefresh);
+      }
     };
   }, [siteKey]);
 
