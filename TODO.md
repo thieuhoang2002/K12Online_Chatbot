@@ -29,15 +29,35 @@
 
 ---
 
-## Giai đoạn 4: Quản lý Phiên & Dữ liệu Người dùng (Supabase) - [ĐANG TRIỂN KHAI]
+## Giai đoạn 4: Quản lý Phiên & Dữ liệu Người dùng (Supabase) - [ĐANG HOÀN THIỆN]
 - [x] Tích hợp Supabase Client & Supabase Auth (Đăng nhập Email / Google).
 - [x] Sửa lỗi khởi tạo phiên chat ban đầu trên trình duyệt mới / chế độ ẩn danh.
-- [ ] Bật tiện ích `pgvector` trên PostgreSQL của Supabase để nâng cấp tìm kiếm ngữ nghĩa sâu (Semantic Vector Search).
 - [ ] Lưu trữ và đồng bộ hóa lịch sử hội thoại lên bảng `chat_sessions` trên Supabase Database.
+- [ ] Cho phép người dùng xuất (export) lịch sử trò chuyện ra file PDF / Word / Markdown.
 
 ---
 
-## Giai đoạn 5: Mở rộng Đa Kênh & Tương tác Cộng đồng - [KẾ HOẠCH TIẾP THEO]
-- [ ] Thêm nút đánh giá chất lượng câu trả lời (Hữu ích / Chưa chính xác) để tiếp tục tinh chỉnh dữ liệu.
-- [ ] Xây dựng Webhook kết nối Zalo OA / Zalo Bot để giáo viên nhắn tin hỏi trực tiếp qua điện thoại.
-- [ ] Cung cấp giao diện Admin nội bộ để quản trị viên có thể xem thống kê câu hỏi phổ biến và cập nhật bài viết trực tiếp từ trình duyệt.
+## Giai đoạn 5: Tối ưu Trải nghiệm Phản hồi & Tương tác (UX/UI) - [KẾ HOẠCH TIẾP THEO]
+- [ ] **Streaming Response (ReadableStream / SSE):** Hiệu ứng tuôn chữ từng từ ngay từ mili-giây thứ 300, giúp cảm giác phản hồi nhanh hơn gấp 4 lần.
+- [ ] **Gợi ý câu hỏi liên quan tiếp theo (Follow-up Prompts):** Tự động hiển thị 2-3 nút gợi ý câu hỏi liên quan dưới mỗi câu trả lời (thao tác 1 chạm).
+- [ ] **Bộ lọc câu hỏi xã giao (Intent Filter):** Nhận diện lời chào hỏi/cảm ơn ("Chào bạn", "Cảm ơn") để phản hồi tức thì trong 0.3s mà không tốn công quét RAG.
+- [ ] **Nút Đánh giá chất lượng (Like/Dislike Feedback):** Thu thập phản hồi về độ hữu ích của câu trả lời để cải thiện chất lượng dữ liệu.
+
+---
+
+## Giai đoạn 6: Nâng cấp Trí thông minh & Tìm kiếm Ngữ nghĩa (Advanced RAG)
+- [ ] **Từ điển đồng nghĩa Tiếng Việt (Synonym Mapping):** Ánh xạ các thuật ngữ phổ biến của giáo viên ("lập lịch dạy" -> "thời khóa biểu", "kiểm tra 15p" -> "đề thi").
+- [ ] **Phân cấp tài liệu theo Vai trò (Role-based RAG):** Lọc tri thức theo đối tượng [Giáo viên] / [Học sinh] / [Nhà trường].
+- [ ] **Semantic Vector Search:** Kích hoạt `pgvector` trên PostgreSQL của Supabase để tìm kiếm theo độ tương đồng ngữ nghĩa sâu.
+
+---
+
+## Giai đoạn 7: Mở rộng Đa Kênh & Lan tỏa Cộng đồng
+- [ ] **Widget nhúng Website trường học (Embeddable Script):** Cung cấp 1 đoạn mã `<script>` để các trường nhúng trực tiếp nút chat K12 vào website của trường.
+- [ ] **Tích hợp Zalo Bot / Zalo OA:** Cho phép thầy cô nhắn tin hỏi đáp trực tiếp qua ứng dụng Zalo trên điện thoại.
+
+---
+
+## Giai đoạn 8: Giám sát & Báo cáo Quản trị (Observability & Analytics)
+- [ ] **Bảng điều khiển Thống kê (Analytics Dashboard):** Tổng hợp danh sách các câu hỏi hay gặp nhất (ẩn danh) để định hướng bổ sung tài liệu.
+- [ ] **Cảnh báo lỗi tự động qua Telegram Webhook:** Thông báo tức thì khi danh sách API Key chạm ngưỡng giới hạn hoặc có đợt spam bị chặn.
