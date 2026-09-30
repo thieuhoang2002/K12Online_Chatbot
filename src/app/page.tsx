@@ -20,6 +20,7 @@ import {
   Menu,
   X,
   Trash2,
+  Github,
 } from "lucide-react";
 import CloudflareTurnstile from "@/components/CloudflareTurnstile";
 import AuthModal from "@/components/AuthModal";
@@ -1008,16 +1009,48 @@ export default function Home() {
               </button>
             </div>
 
-            {/* Dòng tuyên bố miễn trừ trách nhiệm & Bản quyền cộng đồng */}
+            {/* Dòng liên kết & tuyên bố bản quyền cộng đồng */}
             <div
-              className={`flex items-center justify-center text-[11px] px-1 gap-1 text-center ${
+              className={`flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] px-1 text-center sm:text-left ${
                 isDarkMode ? "text-slate-500" : "text-slate-500"
               }`}
             >
-              <span className="flex items-center gap-1">
-                <Info className="w-3.5 h-3.5 shrink-0" />
-                Dự án phi lợi nhuận độc lập của cộng đồng giáo dục. Không thuộc sở hữu chính thức của Tập đoàn Viettel.
-              </span>
+              <div className="flex items-center gap-1.5 flex-wrap justify-center sm:justify-start">
+                <span className="flex items-center gap-1">
+                  <Info className="w-3.5 h-3.5 shrink-0 text-slate-400" />
+                  Dự án cộng đồng độc lập (phi lợi nhuận)
+                </span>
+                <span>•</span>
+                <a
+                  href="https://hotro.k12online.vn"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={`inline-flex items-center gap-1 hover:underline transition ${
+                    isDarkMode ? "text-sky-400 hover:text-sky-300" : "text-sky-600 hover:text-sky-700"
+                  }`}
+                  title="Trung tâm Trợ giúp K12Online chính thức (Viettel)"
+                >
+                  <ExternalLink className="w-3 h-3" />
+                  <span>Trang hỗ trợ K12Online</span>
+                </a>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <a
+                  href="https://github.com/thieuhoang2002/K12Online_Chatbot"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={`inline-flex items-center gap-1.5 font-medium transition ${
+                    isDarkMode
+                      ? "text-slate-400 hover:text-slate-200"
+                      : "text-slate-600 hover:text-slate-900"
+                  }`}
+                  title="Mã nguồn mở trên GitHub"
+                >
+                  <Github className="w-3.5 h-3.5" />
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
