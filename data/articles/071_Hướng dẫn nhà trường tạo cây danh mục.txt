@@ -1,0 +1,75 @@
+### BÀI VIẾT [71]: Hướng dẫn nhà trường tạo cây danh mục
+- Chuyên mục: Trang chủ > Tính năng khác > Tin tức
+- Link gốc: https://hotro.k12online.vn/tin-tuc/huong-dan-nha-truong-tao-cay-danh-muc.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản Trường
+
+ Bước 2: Trang chủ > Click vào module Tin tức > Vào menu Quản lý khai báo > Click menu Cây danh mục
+
+ 1. Thêm mới
+ Bước 1: Click button Thêm mới
+
+ Bước 2: Hiển thị form > Nhập đầy đủ thông tin, chọn kiểu dữ liệu : Tin tức > Click Lưu thực hiện thêm thành công
+
+ Chú ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Chỉnh sửa
+ Bước 1: Click icon chỉnh sửa thực hiện chỉnh sửa bản ghi
+
+ Bước 2: Hiển thị form > Nhập đầy đủ thông tin > Click Lưu thực hiện chỉnh sửa thành công bản ghi cập nhật dữ liệu đã chỉnh sửa
+
+ Chú ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Tìm kiếm
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý:
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+
+ Xóa danh mục
+ C1 : Xóa 1 bản ghi
+
+ Bước 1 : Danh sách > Click icon xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ C2 : Xóa nhiều bản ghi
+
+ Bước 1 : Danh sách > Click checkbox all > click button Xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ Thêm danh mục con
+ Bước 1 Danh sách > Click dấu +
+
+ Bước 2: Hiển thị form > Nhập đầy đủ thông tin, chọn kiểu dữ liệu : Tin tức > Click Lưu thực hiện thêm thành công
+
+ Chú ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Ẩn hiện danh mục
+ Danh sách > Click icon off để hiển thị danh mục (Danh mục hiển thị trong trường danh mục ở form thêm mới / chỉnh sửa tin tức)
+
+ Danh sách click icon on để ẩn danh mục (Danh mục không hiển thị trong trường danh mục ở form thêm mới / chỉnh sửa tin tức)
+
+==================================================
+

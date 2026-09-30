@@ -1,0 +1,24 @@
+### BÀI VIẾT [63]: Hướng dẫn nhà trường, giáo viên, phụ huynh xem lịch sự kiện
+- Chuyên mục: Trang chủ > Tính năng khác > Sự kiện
+- Link gốc: https://hotro.k12online.vn/su-kien/huong-dan-nhjaf-truong-giao-vien-phu-huynh-xem-lich-su-kien.html
+
+**Nội dung:**
+Bước 1: Trang chủ > Click menu Lịch sự kiện > Xem danh sách sự kiện. Mặc định hiển thị dạng Tháng
+
+ Bước 2: Click Ngày / Tuần / Tháng / Danh sách để xem ở dạng
+
+ Bước 3: Click mũi tên > < để xem lịch trước đó và lịch tương lai
+
+ Xem chi tiết sự kiện
+ Danh sách > click 1 sự kiện để xem chi tiết sự kiện
+
+ + Nếu sự kiện gắn link thì link đến đường dẫn được gắn
+
+ + Nếu sự kiện không gắp link hiển thị màn hình chi tiết
+
+ + Nếu sự kiện tin tức khi click link đến bài viết tin tức đó
+
+ Tìm kiếm sự kiện
+
+==================================================
+

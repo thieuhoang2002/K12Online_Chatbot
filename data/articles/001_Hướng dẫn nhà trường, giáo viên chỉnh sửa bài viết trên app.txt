@@ -1,0 +1,23 @@
+### BÀI VIẾT [1]: Hướng dẫn nhà trường, giáo viên chỉnh sửa bài viết trên app
+- Chuyên mục: Trang chủ > Tính năng khác > Bảng tin
+- Link gốc: https://hotro.k12online.vn/05.-tinh-nang-khac/bang-tin/huong-dan-nha-truong-giao-vien-chinh-sua-bai-viet-tren-app.html
+
+**Nội dung:**
+Bước 1: Bảng tin > Click icon > Click Sửa bài viết
+
+ Bước 2: Hiển thị form chỉnh sửa > Nhập/ chọn các thông tin vào form (Ô có dấu (*) là biểu thị cho việc bắt buộc phải nhập) > Nhấn Đăng để chỉnh sửa bài viết thành công
+
+ Lưu ý :
+
+ + Người dùng có thể đăng bài theo nhiều dạng như viết bài, hình ảnh, video, tài liệu và bình chọn
+
+ + Nếu chọn quyền riêng tư là công khai thì tài khoản phụ huynh, giáo viên và tài khoản trường có thể xem bài viết  ( Còn bài viết ở chế độ thì mình tôi thì không hiển thị ở các tài khoản khác )
+
+ + Có thể giới hạn người xem là phụ huynh, học sinh hoặc giáo viên thông qua chọn đối tượng
+
+ + Tài khoản giáo viên chủ nhiệm đăng bài thì trường và học sinh thuộc lớp cô giáo chủ nhiệm sẽ xem được
+
+ + Tích chọn cho phép bình luận để mọi người có thể bình luận bài viết
+
+==================================================
+

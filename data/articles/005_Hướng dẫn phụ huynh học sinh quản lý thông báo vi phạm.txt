@@ -1,0 +1,21 @@
+### BÀI VIẾT [5]: Hướng dẫn phụ huynh học sinh quản lý thông báo vi phạm
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Quản lý vi phạm > 3. Phụ huynh
+- Link gốc: https://hotro.k12online.vn/3.-phu-huynh/huong-dan-phu-huynh-hoc-sinh-quan-ly-thong-bao-vi-pham.html
+
+**Nội dung:**
+Bước 1: Đăng nhập vào hệ thống bằng tài khoản phụ huynh
+
+ Bước 2: Click vào icon thông báo
+
+ Bước 3: Hiển thị danh sách thông báo > Xem các thông báo nhắc vi phạm
+
+ Xem chi tiết thông báo vi phạm
+
+ Bước 1: Click vào chi tiết 1 thông báo nhắc vi phạm
+
+ Bước 2: Hiển thị màn hình chi tiết thông báo
+
+ Bước 3: Click button Đóng để thực hiện đóng màn hình chi tiết thông báo
+
+==================================================
+

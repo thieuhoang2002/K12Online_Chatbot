@@ -1,0 +1,25 @@
+### BÀI VIẾT [45]: Hướng dẫn nhà trường khai báo tiết học
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Thời khóa biểu > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong2/huong-dan-nha-truong-khai-bao-tiet-hoc.html
+
+**Nội dung:**
+Ý nghĩa : Hiển thị danh sách tiết học được khai báo trên trang chung. Hệ thống đang khai báo là mỗi buổi có 5 tiết từ 1 đến 5. Nhà trường có thể chỉnh sửa thời gian tiết học theo mong muốn tại đây.
+ Bước 1: Click Danh mục thời khóa biểu > Tiết học
+
+ Bước 2: Click icon chỉnh sửa tiết học
+
+ Bước 3: Nhập thời gian bắt đầu, kết thúc > Lưu
+
+ Bước 4: Trong menu Thời khóa biểu sẽ có thêm cột thời gian tương ứng với tiết học
+
+ Ý nghĩa : Hiển thị danh sách tiết học được khai báo trên trang chung. Hệ thống đang khai báo là mỗi buổi có 5 tiết từ 1 đến 5. Nhà trường có thể chỉnh sửa thời gian tiết học theo mong muốn tại đây.
+ Bước 1: Click Danh mục thời khóa biểu > Tiết học
+
+ Bước 2: Click icon chỉnh sửa tiết học
+
+ Bước 3: Nhập thời gian bắt đầu, kết thúc > Lưu
+
+ Bước 4: Trong menu Thời khóa biểu sẽ có thêm cột thời gian tương ứng với tiết học
+
+==================================================
+

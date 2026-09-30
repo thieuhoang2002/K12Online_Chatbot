@@ -1,0 +1,21 @@
+### BÀI VIẾT [39]: Cấu hình hệ thống trước khi sử dụng
+- Chuyên mục: Trang chủ > Cấu hình chung > Cấu hình hệ thống
+- Link gốc: https://hotro.k12online.vn/nha-truong/cau-hinh-he-thong.html
+
+**Nội dung:**
+1. Cấu hình giao diện
+
+ Nhà trường có thể thay đổi logo của hệ thống bằng logo của trường mình tại đây.
+
+ - Vào Cấu hình hệ thống => Chọn Cấu hình giao diện => Thay logo của nhà trường
+
+ 2. Khung giờ học
+
+ Nhà trường vào thiết lập khung giờ học cho từng tiết học để thống nhất cho toàn bộ GV, HS.
+
+ - Vào Cấu hình hệ thống => Chọn Khung giờ học => Chỉnh sửa khung giờ cho từng tiết học theo thực tế của nhà trường.
+
+ Lưu ý: Nhà trường phải kiểm tra khung giờ học trên hệ thống xem đã đúng và phù hợp với trường mình chưa. Nếu chưa thì cập nhật lại trước khi cho GV sử dụng để GV không bị ảnh hưởng khi gán vào thời khoá biểu.
+
+==================================================
+

@@ -1,0 +1,57 @@
+### BÀI VIẾT [57]: Hướng dẫn phụ huynh học sinh đăng kí nghỉ học
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Điểm danh > Phụ huynh HS
+- Link gốc: https://hotro.k12online.vn/phu-huynh-hs2/huong-dan-phu-huynh-hoc-sinh-dang-ki-nghi-hoc.html
+
+**Nội dung:**
+1. Danh sách đăng kí nghỉ học
+
+ Trên thanh menu > Click Đăng ký nghỉ học > Hiển thị danh sách các phiếu đăng ký nghỉ học
+
+ Phân trang
+ Trên màn hình: hiển thị phân trang ở phía dưới bên phải màn khi danh sách có > 20 bản ghi
+ + Click icon << (>>) để chuyển đến trang trước đó (trang tiếp theo)
+
+ + Click icon << << (>> >>) để chuyển đến trang đầu tiên (trang cuối cùng)
+
+ 2. Thêm mới đăng kí nghỉ học
+
+ Bước 1: Danh sách > Click button Thêm mới
+
+ Bước 2: Hiển thị màn hình thêm mới đơn đăng ký nghỉ học. Thực hiện nhập vào các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Bước 3: Click Lưu để hoàn tất việc thêm mới đăng ký nghỉ học
+
+ 3. Chỉnh sửa đăng kí nghỉ học
+
+ Bước 1: Danh sách > Click icon chỉnh sửa để sửa đăng ký nghỉ học.
+
+ Bước 2: Hiển thị màn hình chỉnh sửa đơn đăng ký nghỉ học. Thực hiện nhập vào các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Bước 3: Click Lưu để hoàn thành việc chỉnh sửa đơn đăng ký nghỉ học.
+
+ 4. Xóa danh sách đăng kí nghỉ học
+
+ Lưu ý: Chỉ xóa được những đơn đăng ký chưa được duyệt
+
+ Xóa 1 bản ghi đăng ký nghỉ học
+ Bước 1: Danh sách > Click  icon Xóa
+
+ Bước 2: Hệ thống hiển thị popup xác nhận xóa
+ + Click Xóa để xác nhận xóa đơn đăng ký nghỉ học
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ Xóa nhiều bản ghi đăng ký nghỉ học
+ Bước 1: Danh sách > Tích chọn ô checkbox > Click button Xóa
+
+ Bước 2: Hệ thống hiển thị popup xác nhận xóa
+ + Click Xóa để xác nhận xóa đơn đăng ký nghỉ học
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ 5. Tìm kiếm tài khoản phân quyền
+
+ Danh sách : vùng tìm kiếm: nhập tiêu chí tìm kiếm > Click button tìm kiếm để thực hiện tìm kiếm đơn đăng ký nghỉ học.
+
+==================================================
+

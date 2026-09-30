@@ -1,0 +1,87 @@
+### BÀI VIẾT [79]: Hướng dẫn Nhà trường - Kế toán khai báo danh sách tài khoản ngân hàng
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Học phí > Nhà trường - Kế toán
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/hoc-phi/nha-truong-ke-toan/huong-dan-nha-truong-ke-toan-khai-bao-danh-sach-tai-khoan-ngan-hang.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản Nhà trường / Kế toán
+
+ Bước 2: Trang chủ  > Click vào module Học phí > Vào menu Quản lý khai báo  > Click Danh sách tài khoản ngân hàng
+
+ 1. Thêm mới danh sách tài khoản ngân hàng
+
+ Bước 1 : Danh sách > Click button Thêm mới
+
+ Bước 2 : Hiển thị form > Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường tên chủ tài khoản tối đa 50 ký tự và bao gồm chữ cái không dấu , phải viết hoa
+ Trường số tài khoản chỉ được nhập số
+ Khi chọn checkbox là tài khoản thu tiền thì tài khoản ngân hàng hiển thị ở dưới app phụ huynh (ngược lại không chọn thì tài khoản không phải là tài khoản thu tiền và không hiển thị tài khoản ở dưới app phụ huynh )
+ Trường trạng thái khi chọn hoạt động thì tài khoản sẽ hiển thị trong thêm mới phiếu thu / phiếu trả / ở dưới app phụ huynh ( ngược lại khi chọn không hoạt động thì tài khoản không hiển thị )
+
+ 2. Chỉnh sửa danh sách tài khoản ngân hàng
+
+ Bước 1 : Danh sách > Click icon chỉnh sửa
+
+ Bước 2 : Hiển thị form > Nhập đầy đủ thông tin > Click Lưu thực hiện chỉnh sửa thành công
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường tên chủ tài khoản tối đa 50 ký tự và bao gồm chữ cái không dấu , phải viết hoa
+ Trường số tài khoản chỉ được nhập số
+ Khi chọn checkbox là tài khoản thu tiền thì tài khoản ngân hàng hiển thị ở dưới app phụ huynh (ngược lại không chọn thì tài khoản không phải là tài khoản thu tiền và không hiển thị tài khoản ở dưới app phụ huynh )
+ Trường trạng thái khi chọn hoạt động thì tài khoản sẽ hiển thị trong thêm mới phiếu thu / phiếu trả / ở dưới app phụ huynh ( ngược lại khi chọn không hoạt động thì tài khoản không hiển thị )
+
+ ​​​​​​​3. Xóa danh sách tài khoản ngân hàng
+
+ C1 : Xóa 1 bản ghi
+
+ Bước 1 : Danh sách > Click icon xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ C2 : Xóa nhiều bản ghi
+
+ Bước 1 : Danh sách > Click checkbox all > click button Xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ Lưu ý:
+
+ Thực hiện xóa thành công với những tài khoản chưa được sử dụng
+ Thực hiện xóa không thành công đối với những tài khoản đã được sử dụng và hệ thống thông báo lỗi:“Tài khoản ngân hàng đang được sử dụng không được xóa”
+ Khi tài khoản mà bị xóa thành công sẽ không hiển thị ở dưới app phụ huynh / trong form thêm mới phiếu thu, phiếu trả
+
+ ​​​​​​​4. Tìm kiếm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý:
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+ 5. Xuất excel
+
+ Danh sách  Click button Xuất excel > File excel được tải về
+
+ Lưu ý:
+
+ Thực hiện xuất excel > File tải về hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với danh sách
+ Thực hiện Tìm kiếm tài khoản ngân hàng > sau click button Xuất excel > Thì hệ thống trả về file kết quả hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với trên danh sách
+ Thực hiện chọn kiểu sắp xếp danh sách> sau click button Xuất excel > Thì hệ thống trả về file kết quả hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với trên danh sách
+
+==================================================
+

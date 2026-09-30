@@ -1,0 +1,84 @@
+### BÀI VIẾT [48]: Hướng dẫn nhà trường cấu hình module và phân quyền tài khoản
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Điểm danh > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong3/huong-dan-nha-truong-cau-hinh-module-va-phan-quyen-tai-khoan.html
+
+**Nội dung:**
+Bước 1: Đăng nhập thành công vào hệ thống
+ Bước 2: Click module Điểm danh > Tổng quan
+
+ Bước 3: Hiển thị màn hình tổng quan
+
+ 1. Cấu hình module
+
+ Bước 1: Đăng nhập thành công vào hệ thống
+ Bước 2: Click module Điểm danh > Tổng quan
+
+ Bước 3: Click chọn cấu hình hiển thị > Lưu cấu hình
+
+ Bước 4: Hiển thị màn hình tổng quan
+ 2. Phân quyền
+
+ 2.1. Danh sách phân quyền
+
+ Trên thanh menu > Click Phân quyền > Hiển thị danh sách các tài khoản được phân quyền
+
+ Tải lại
+ Trên danh sách > click button Tải lại > Thực hiện tải lại danh sách.
+
+ Sắp xếp
+ Trên danh sách > click button Sắp xếp theo > Chọn kiểu sắp xếp> Hiển thị danh sách theo trạng thái sắp xếp.
+
+ Phân trang
+ Trên màn hình: hiển thị phân trang ở phía dưới bên phải màn khi danh sách có > 20 bản ghi
+ + Click icon << (>>) để chuyển đến trang trước đó (trang tiếp theo)
+
+ + Click icon << << (>> >>) để chuyển đến trang đầu tiên (trang cuối cùng)
+
+ 2.2. Thêm mới phân quyền
+
+ Bước 1: Danh sách > Click button Thêm mới
+
+ Bước 2: Hiển thị màn hình thêm mới phân quyền. Thực hiện nhập vào các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+ Tài khoản: Nhập tài khoản tồn tại trong đơn vị muốn phân quyền
+ Vai trò: Chọn vai trò muốn phân quyền cho tài khoản
+
+ Bước 3: Click Lưu để hoàn tất việc phân quyền
+
+ 2.3. Chỉnh sửa phân quyền
+
+ Bước 1: Danh sách > Click icon chỉnh sửa để sửa phân quyền.
+
+ Bước 2: Hiển thị màn hình chỉnh sửa phân quyền. Thực hiện nhập vào các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Bước 3: Click Lưu để hoàn thành việc chỉnh sửa phân quyền.
+
+ 2.4. Xóa phân quyền
+
+ Xóa 1 bản ghi phân quyền
+ Bước 1: Danh sách > Click  icon Xóa
+
+ Bước 2: Hệ thống hiển thị popup xác nhận xóa
+ + Click Xóa để xác nhận xóa tài khoản đã phân quyền, tài khoản không có quyền quản lý vai trò được phân quyền nữa
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ Xóa nhiều bản ghi phân quyền
+ Bước 1: Danh sách > Tích chọn ô checkbox > Click button Xóa
+
+ Bước 2: Hệ thống hiển thị popup xác nhận xóa
+ + Click Xóa để xác nhận xóa tài khoản đã được phân quyền, tài khoản không có quyền quản lý vai trò được phân quyền nữa
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ 2.5. Tìm kiếm tài khoản phân quyền
+
+ Danh sách : vùng tìm kiếm: nhập tiêu chí tìm kiếm > Click button tìm kiếm để thực hiện tìm kiếm tài khoản phân quyền.
+
+ 2.6. Xuất excel
+
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel > Thực hiện xuất excel thành công > Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+ Bước 2: Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+==================================================
+

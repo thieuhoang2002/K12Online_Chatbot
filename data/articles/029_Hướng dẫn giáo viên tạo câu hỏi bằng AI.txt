@@ -1,0 +1,41 @@
+### BÀI VIẾT [29]: Hướng dẫn giáo viên tạo câu hỏi bằng AI
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Giáo viên
+- Link gốc: https://hotro.k12online.vn/huong-dan-giao-vien-tao-cau-hoi-bang-ai.html
+
+**Nội dung:**
+I. Giới thiệu tính năng
+
+ - Tính năng Tạo câu hỏi bằng AI giúp giáo viên tự động sinh câu hỏi từ văn bản, tài liệu có sẵn, được K12Online tích hợp dựa trên công nghệ xử lý ngôn ngữ tự nhiên (NLP) và mô hình ngôn ngữ tiên tiến của Google.
+
+ - Giúp cho giáo viên: Phân tích nội dung, xác định ý chính và thông tin trọng tâm.
+
+ + Tự động sinh ra câu hỏi theo mong muốn và đưa trực tiếp vào K12Online .
+
+ + Gợi ý đáp án đúng và các lựa chọn nhiễu thông minh , giúp tiết kiệm thời gian biên soạn đề.
+
+ + Cho phép người dùng chỉnh sửa, tinh chỉnh và xuất bản trực tiếp sau khi hệ thống tạo ra tự động.
+
+ Lưu ý: Kết quả do Google AI có thể sai hoặc chưa chính xác, phụ thuộc vào cách giáo viên viết câu lệnh và độ chính xác của dữ liệu và cách xử lý của Google AI. Giáo viên lưu ý kiểm tra lại kết quả cuối cùng trước khi giao bài cho học sinh.
+
+ II. Quy trình thực hiện
+
+ 1. Giáo viên khai báo key từ Google AI (chỉ cần làm 1 lần duy nhất)
+
+ 2. Giáo viên tạo câu hỏi từ AI trong các tính năng mong muốn. Hiện tại, K12Online đã hỗ trợ trong 2 tính năng:
+
+ - Bài kiểm tra nhập tay dạng thường
+
+ - Đưa câu hỏi vào NHCH.
+
+ III. Hướng dẫn khai báo key từ Google AI
+
+ Bước 1: Truy cập vào link https://aistudio.google.com/api-keys và đăng nhập bằng tài khoản Google của mình.
+
+ Bước 2: Tạo key API mới, bằng cách nhấn vào nút Create a API key
+
+ Bước 3: Copy key vừa tạo
+
+ Nhãn
+
+==================================================
+

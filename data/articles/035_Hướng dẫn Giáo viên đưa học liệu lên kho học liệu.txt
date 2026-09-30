@@ -1,0 +1,41 @@
+### BÀI VIẾT [35]: Hướng dẫn Giáo viên đưa học liệu lên kho học liệu
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Kho học liệu số > Giáo viên
+- Link gốc: https://hotro.k12online.vn/kho-hoc-lieu/huong-dan-giao-vien-dua-hoc-lieu-len-kho-hoc-lieu.html
+
+**Nội dung:**
+Để đưa học liệu lên kho học liệu của nhà trường, giáo viên làm như sau:
+
+ Trường hợp 1: Thêm mới bài giảng
+
+ Bước 1: Thêm mới bài giảng
+
+ - Vào Học tập => Chọn Bài giảng => Chọn Thêm mới
+
+ - Nhập các thông tin cơ bản của bài giảng => Nhấn Lưu lại.
+
+ Bước 2: Thêm nội dung cho bài giảng
+
+ - Giáo viên tạo chuyên đề cho bài giảng để phân chia các nội dung một cách khoa học (Nếu muốn).
+
+ - Sau đó, thêm học liệu cho bài học. Có những dạng học liệu sau:
+
+ + Bài học dạng video
+
+ + Bài học dạng text
+
+ + Bài học chuẩn scorm
+
+ + Bài tập
+
+ + Tài liệu.
+
+ Bước 3: Xem trước bài giảng
+
+ - Sau khi đã xong hết nội dung rồi, giáo viên nhấn Xem trước bài giảng để xem bài giảng đã hoàn thiện. Thực hiện chỉnh sửa, nếu cần.
+
+ Bước 4: Xuất bản bài giảng
+
+ - Giáo viên xuất bản để gửi yêu cầu kiểm duyệt.
+
+==================================================
+

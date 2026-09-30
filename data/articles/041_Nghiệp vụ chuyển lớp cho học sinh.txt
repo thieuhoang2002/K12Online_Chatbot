@@ -1,0 +1,21 @@
+### BÀI VIẾT [41]: Nghiệp vụ chuyển lớp cho học sinh
+- Chuyên mục: Trang chủ > Cấu hình chung > Quản lý đào tạo
+- Link gốc: https://hotro.k12online.vn/nha-truong/nghiep-vu-chuyen-lop-cho-hoc-sinh.html
+
+**Nội dung:**
+1. Lưu ý khi thực hiện
+
+ - Chỉ áp dụng với những trường nào không tạo tài khoản bằng cách đồng bộ tài khoản từ SMAS (mà gửi thông tin tạo tài khoản theo file Excel cho Viettel) thì mới thực hiện chuyển lớp bằng cách này.
+
+ - Các trường đồng bộ tài khoản từ SMAS nếu muốn chuyển lớp thì nhà trường thực hiện thao tác chuyển lớp trên SMAS, sau đó liên hệ Viettel tỉnh/tp để được hướng dẫn đồng bộ lại tài khoản trên K12Online.
+
+ 2. Hướng dẫn thực hiện
+
+ Bước 1: Nhà trường vào Quản lý đào tạo => Chọn Quản lý lớp học => Danh sách lớp học -> Tìm lớp có học sinh cần chuyển -> chi tiết lớp đó
+
+ Bước 2: Tìm học sinh cần chuyển sang lớp khác => Chọn học sinh đó => Click vào nút Chuyển lớp
+
+ Bước 3: Chọn đúng năm học, học kỳ và lớp cần chuyển đến và nhấn Lưu để hoàn tất.
+
+==================================================
+

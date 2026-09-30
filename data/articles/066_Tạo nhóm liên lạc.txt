@@ -1,0 +1,29 @@
+### BÀI VIẾT [66]: Tạo nhóm liên lạc
+- Chuyên mục: Trang chủ > Tính năng khác > Liên lạc > Nhà trường
+- Link gốc: https://hotro.k12online.vn/tao-nhom-lien-lac.html
+
+**Nội dung:**
+Để tạo nhóm liên lạc mới, Nhà trường làm theo các bước sau:
+
+ Bước 1: Vào Danh sách nhóm => Chọn Thêm mới
+
+ Bước 2: Nhập các thông tin cơ bản của nhóm
+
+ - Tên nhóm (không được trùng nhau) (*):
+
+ - Trưởng nhóm (*)
+
+ - Phó nhóm
+
+ - Thành viên (*): thêm thủ công hoặc Nhập từ Excel
+
+ - Cấu hình nhóm:
+
+ + Hoạt động/Không hoạt động (mặc định là tick Hoạt động);
+
+ + Cho phép thành viên nhắn tin nhóm (mặc định là không cho phép).
+
+ Bước 3: Nhấn Lưu lại để kết thúc việc tạo nhóm.
+
+==================================================
+

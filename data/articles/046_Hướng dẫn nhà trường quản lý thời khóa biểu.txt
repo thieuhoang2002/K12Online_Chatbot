@@ -1,0 +1,56 @@
+### BÀI VIẾT [46]: Hướng dẫn nhà trường quản lý thời khóa biểu
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Thời khóa biểu > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong2/huong-dan-nha-truong-quan-ly-thoi-khoa-bieu.html
+
+**Nội dung:**
+1. Xem và xuất thời khóa biểu
+
+ Hiển thị lịch được duyệt mới nhất
+ 1.1. Xuất TKB theo giáo viên hoặc lớp
+
+ Bước 1: Lọc thời khóa biểu theo giáo viên hoặc lớp học hoặc tổ chuyên môn để xem
+
+ Bước 2: Có thể xuất excel thời khóa biểu theo lớp hoặc theo giáo viên hoặc theo tổ chuyên môn đã chọn
+
+ 1.2. Xuất TKB toàn trường
+
+ Không cần lọc theo tiêu chí nào, click xuất excel để xuất TKB của toàn trường
+
+ 2. Chỉnh sửa tiết dạy
+
+ Ý nghĩa : Sau khi hệ thống xếp lịch xong mà chưa đúng mong muốn thì có thể sử dụng chức năng này để hoán đổi tiết dạy
+ Bước 1: Trên màn hình TKB, click icon chỉnh sửa tiết giảng
+
+ Bước 2: Nhập X vào ô mong muốn chuyển tiết đến
+
+ Bước 3: Click Lưu
+
+ Nếu như tiết chuyển đến mà giáo viên chưa dạy lớp nào thì sẽ lưu thành công, ngược lại thì báo lỗi
+ Ví dụ: Giáo viên A dạy lớp 2A vào sáng thứ 2, tiết 1, môn Toán. Dạy lớp 2B vào sáng thứ 2, tiết 2, môn Toán. Thực hiện chuyển tiết 1 của lớp 2A sang tiết 2 trong cùng sáng thứ 2 sẽ báo lỗi là Giáo viên đã có tiết dạy trong lớp 2B rồi và không hoán đổi được. Ngược lại chuyển sang tiết 3 không dạy lớp nào thì thành công
+ Lưu ý : Khi xếp vào ngày nghỉ của lớp hoặc của giáo viên thì hệ thống không báo lỗi vì là xếp thủ công, còn ràng buộc tiết nghỉ của lớp và tiết nghỉ giáo viên là để phục vụ xếp tự động
+
+ 3. Kéo thả tiết dạy
+
+ Ý nghĩa : Sau khi hệ thống xếp lịch xong mà chưa đúng mong muốn thì có thể sử dụng chức năng này để hoán đổi tiết dạy bằng cách kéo thả ngay ngoài danh sách
+ Trên màn hình TKB, kéo và thả tiết dạy sang vị trí khác mong muốn
+
+ Lưu ý:
+ Chỉ kéo thả trong 1 lớp, kéo sang lớp khác sẽ báo lỗi
+ Kéo thả từ vị trí A sang B, nếu vị trí B trống và cùng tiết đó giáo viên không dạy lớp nào khác thì đổi tiết thành công. Nếu vị trí B trống nhưng tiết đó giáo viên đã dạy lớp khác thì hệ thống sẽ thông báo lỗi và không đổi tiết được
+ Kéo thả từ vị trí A sang B, nếu vị trí B đã có tiết và cùng tiết đó giáo viên không dạy lớp nào khác thì hoán đổi tiết giữa các giáo viên thành công. Ngược lại hoán đổi mà bị trùng tiết với lớp khác thì hệ thống báo lỗi.
+
+ 4. Xếp thủ công
+
+ Ý nghĩa : Chức năng này dùng để xếp các môn học chung của cả trường ví dụ như môn Chào cờ và chỉ xếp các môn là tự chọn
+ Bước 1: Trong menu thời khóa biểu > Click Xếp thủ công
+
+ Bước 2: Chọn lớp, được chọn 1 hoặc nhiều lớp. Chọn 1 môn
+ Bước 3: Nhập X vào tiết học muốn xếp lịch
+
+ Bước 4: Lưu. Hệ thống thực hiện xếp tất cả các lớp có môn đã chọn vào tiết đã nhập X
+ Lưu ý :
+ Muốn xếp tất cả các lớp học môn Chào cờ vào tiết 1 thứ 2 thì khi cấu hình tiết nghỉ của lớp, các lớp này phải cấu hình nghỉ tiết 1 thứ 2 thì khi xếp thủ công mới xếp được.
+ Khi xếp vào tiết đã có giáo viên dạy thì hệ thống sẽ cảnh báo .
+
+==================================================
+

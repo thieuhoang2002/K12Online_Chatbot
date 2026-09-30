@@ -1,0 +1,41 @@
+### BÀI VIẾT [13]: Một số lưu ý khi làm bài kiểm tra, thi trực tuyến trên K12Online
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Câu hỏi thường gặp
+- Link gốc: https://hotro.k12online.vn/cau-hoi-thuong-gap/mot-so-luu-y-khi-lam-bai-kiem-tra-thi-truc-tuyen-tren-k12online.html
+
+**Nội dung:**
+I. Một số lưu ý khi kiểm tra/thi trực tuyến
+
+ 1. Trước khi vào làm bài
+
+ 1.1. Trước khi vào bài kiểm tra/thi trực tuyến, học sinh kiểm tra hoặc nhờ phụ huynh kiểm tra hạ tầng thiết bị để tham gia kiểm tra trực tuyến một cách tốt nhất (nguồn điện, dây mạng, kết nối Internet,…).
+
+ 1.2. Chủ động chuẩn bị, kiểm tra thiết bị làm bài và và đảm bảo đã được kết nối Internet ổn định.
+
+ 1.3. Nếu làm bài trên điện thoại hoặc máy tính bảng, học sinh cài đặt ứng dụng K12Online sử dụng để được thuận tiện nhất và có trải nghiệm tốt nhất. Không sử dụng trình duyệt trên điện thoại hoặc máy tính bảng để làm bài kiểm tra, thi trực tuyến.
+
+ Lưu ý: Nếu học sinh đã cài trước đó, kiểm tra xem phiên bản đang dùng là phiên bản mới nhất chưa? Nếu chưa thì cập nhật phiên bản mới nhất trước khi làm bài.
+
+ 1.4. Nếu sử dụng máy tính để làm bài, học sinh nên sử dụng trình duyệt Google Chrome để có trải nghiệm tốt nhất. Một số lưu ý khi sử dụng trên trình duyệt:
+
+ - Không cài nhiều extension, đặc biệt là các extension mà liên quan đến hiển thị trình duyệt như chế độ Dark Mode (Chế độ ban đêm), sẽ làm hiển thị câu hỏi khó khăn.
+
+ - Lưu ý cho phép trình duyệt sử dụng Javascript, nếu không sẽ không hiển thị đếm ngược và hiển thị lựa chọn để học sinh lựa chọn được.
+
+ Bước 1: Trong trình duyệt Google Chrome, vào phần Cài đặt => Tìm kiếm từ khóa JavaScript
+
+ Sau đó, lưu ý chọn chế độ Các trang web có thể sử dụng Javascript .
+
+ 1.5. Nếu sử dụng điện thoại hoặc máy tính bảng để làm bài kiểm tra, kiểm tra chắc chắn pin còn đủ dung lượng trong suốt thời gian làm bài.
+
+ 1.6. Nếu điện thoại và máy tính bảng sử dụng Wifi thì nên để ở chế độ “máy bay” để không bị ảnh hưởng bởi các cuộc gọi hoặc tin nhắn đến để không ảnh hưởng đến quá trình làm bài.
+
+ 1.7. Nếu điện thoại và máy tính bảng sử dụng mạng dữ liệu di động (như 3G/4G…) thì nên cài đặt chặn tạm thời các cuộc gọi, tin nhắn đến để không ảnh hưởng đến quá trình làm bài.
+
+ 1.8. Tắt hết các ứng dụng không cần thiết trên máy tính (hoặc điện thoại, máy tính bảng) để không ảnh hưởng trong quá trình làm bài thi không tốn bộ nhớ, tốc độ xử lý chung của thiết bị.
+
+ 1.9. Trước khi diễn ra, học sinh kiểm tra thông tin cá nhân của tài khoản đã đúng hay chưa. Nếu chưa đúng thì báo cho giáo viên chủ nhiệm để tổng hợp và gửi nhà trường để được hỗ trợ.
+
+ 1.10. Không sử dụng mật khẩu mặc định. Đổi mật khẩu và bảo mật tài khoản của mình trong suốt quá trình sử dụng.
+
+==================================================
+

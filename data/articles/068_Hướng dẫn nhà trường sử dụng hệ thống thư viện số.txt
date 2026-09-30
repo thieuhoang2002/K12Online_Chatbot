@@ -1,0 +1,2331 @@
+### BÀI VIẾT [68]: Hướng dẫn nhà trường sử dụng hệ thống thư viện số
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Thư viện số > Nhà trường
+- Link gốc: https://hotro.k12online.vn/thu-vien-so/huong-dan-su-dung-he-thong-thu-vien-so.html
+
+**Nội dung:**
+HƯỚNG DẪN SỬ DỤNG CÁC CHỨC NĂNG HỆ THỐNG
+
+ Đăng nhập vào hệ thống
+
+ Bước 1: Vào trang trường
+
+ Bước 2: Nhập tên đăng nhập và mật khẩu
+
+ Bước 3: Click button đăng nhập
+
+ Tổng quan
+
+ Bước 1: Đăng nhập tài khoản quản trị trường vào hệ thống
+
+ Bước 2: Trang chủ > Click module Thư viện số
+
+ Hiển thị thống kê theo cấu hình lựa chọn
+
+ - Thống kê gồm các thông tin:
+
+ + Danh sách ứng dụng
+
+ + Thống kê lượt mượn theo thời gian
+
+ + Top người mượn nhiều nhất
+
+ + Thống kê chung
+
+ Tra cứu
+
+ Bước 1: Đăng nhập tài khoản quản trị trường vào hệ thống
+
+ Bước 2: Chọn menu Tra cứu
+
+ Tìm kiếm sách
+
+ Bước 1: Trên vùng tìm kiếm
+
+ Bước 2: Nhập / chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập / chọn.
+
+ Xem chi tiết sách
+
+ Bước 1: Trên màn hình danh sách > Click một quyển sách
+
+ Bước 2: Hiển thị màn hình chi tiết sách
+
+ + Click icon nếu cần thực hiện yêu thích sách/bỏ yêu thích sách
+
+ + Click nút Xem chi tiết nếu cần xem thông tin chi tiết sách
+
+ + Click nút Xem MARC nếu cần xem thông tin MARC
+
+ + Click nút Ebook nếu cần xem file sách (file .pdf)
+
+ + Click nút Audio nếu cần xem file audio của sách
+
+ + Click nút Link chi tiết nếu cần mở Link chi tiết của sách
+
+ + Click nút Lưu sách nếu cần thêm sách vào danh mục Sách đã lưu
+
+ + Click vào Chi tiết nếu muốn xem danh sách Tình trạng sách
+
+ Viết đánh giá sách
+
+ Bước 1: Trên màn hình chi tiết sách > Click button Viết đánh giá
+
+ Bước 2: Nhập/Chọn đầy đủ các thông tin bắt buộc (là các trường có dấu *) > Click button Gửi để gửi đánh giá
+
+ Chỉnh sửa đánh giá (Khi đã thực hiện đánh giá)
+
+ Bước 1: Trên màn hình chi tiết sách > Click button Chỉnh sửa đánh giá
+
+ Bước 2: Nhập/Chọn đầy đủ các thông tin bắt buộc (là các trường có dấu *) > Click nút Gửi để Chỉnh sửa đánh giá
+
+ Phản hồi đánh giá
+
+ Bước 1: Trên màn hình chi tiết > Click icon Phản hồi
+
+ Bước 2: Nhập đầy đủ trường bắt buộc (là các trường có dấu *) > Click button Gửi để gửi phản hồi
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Xóa đánh giá
+
+ Bước 1: Trên màn hình chi tiết > Click icon Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa đánh giá
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Mượn sách màn tra cứu
+
+ Cách 1: Mượn sách trong màn tra cứu
+
+ Bước 1: Trên màn hình danh sách > Hover vào một quyển sách > Click button Mượn sách
+
+ Bước 2: Nhập/Chọn đầy đủ các trường thông tin bắt buộc (là các trường có dấu *) > Click Lưu để thực hiện mượn sách
+
+ (Click nút +Thêm nếu muốn mượn nhiều quyển)
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Số lượng mượn, Ngày mượn, Ngày hẹn trả phải nằm trong quy định của thư viện đặt ra
+
+ Cách 2: Mượn sách trong màn Xem chi tiết sách
+
+ Bước 1: Trên màn hình danh sách > Click một quyển sách
+
+ Bước 2: Click nút Mượn sách
+
+ Bước 3: Nhập/Chọn các thông tin bắt buộc (là các trường có dấu *) > Click nút Lưu để Mượn sách. Click nút +Thêm nếu muốn mượn nhiều sách
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Số lượng mượn, Ngày mượn, Ngày hẹn trả phải nằm trong quy định của thư viện đặt ra
+
+ Lưu sách
+
+ Bước 1: Trên màn hình danh sách > Hover vào một quyển sách > Click button Lưu sách
+
+ Sách lưu được thêm vào danh mục Sách đã lưu
+
+ Phân quyền
+
+ Bước 1: Đăng nhập tài khoản quản trị trường vào hệ thống
+
+ Bước 2: Chọn menu Phân quyền
+
+ Thêm mới phân quyền
+
+ Bước 1: Trên màn hình danh sách > click button Thêm mới
+
+ Bước 2: Nhập/Chọn đầy đủ các trường bắt buộc > click Lưu để phần quyền cho tài khoản
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Chỉnh sửa phân quyền
+
+ Bước 1: Trên màn hình danh sách > click icon chỉnh sửa
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > click Lưu để chỉnh sửa phân quyền
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Tìm kiếm phân quyền
+
+ Bước 1: Tại menu phân quyền > Trên vùng tìm kiếm
+
+ Bước 2: Nhập / chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập / chọn.
+
+ Xem chi tiết phân quyền
+
+ Bước 1: Trên màn hình danh sách > click icon xem chi tiết
+
+ Bước 2: Hiển thị màn hình xem chi tiết
+
+ Xuất excel
+
+ Bước 1: Tại menu phân quyền
+
+ Bước 2: Trên danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Xóa phân quyền
+
+ Cách 1: Xóa 1 bản ghi
+
+ Bước 1: Trên màn hình danh sách > click icon xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa phân quyền
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều bản ghi
+
+ Bước 1: Click checkbox đầu danh sách > click button Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa phân quyền
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Quản lý khai báo
+
+ Bước 1: Đăng nhập tài khoản quản trị trường vào hệ thống
+
+ Bước 2: Chọn menu quản lý khai báo
+
+ Máy chủ z3950
+
+ Bước 1: Tại menu Quản lý khai báo > Click Máy chủ z3950
+
+ Bước 2: Hiển thị danh sách máy chủ z3950
+
+ Thêm mới máy chủ
+
+ Bước 1: Trên màn hình danh sách máy chủ > Click button +Thêm mới
+
+ Bước 2: Nhập/Chọn đầy đủ các thông tin bắt buộc > Click Lưu để Thêm mới máy chủ z3950
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Chỉnh sửa máy chủ z3950
+
+ Bước 1: Trên màn hình danh sách máy chủ z3950 > Click icon Chỉnh sửa
+
+ Bước 2: Nhập/Chọn đầy đủ các thông tin bắt buộc > Click Lưu để Chỉnh sửa máy chủ z3950
+
+ Tìm kiếm máy chủ z3950
+
+ Bước 1: Tại menu Máy chủ z3950 > Trên vùng tìm kiếm
+
+ Bước 2: Nhập/Chọn đầy đủ các thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn
+
+ Xuất excel
+
+ Bước 1: Trên danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Xóa máy chủ z3950
+
+ Cách 1: Xóa 1 bản ghi
+
+ Bước 1: Trên màn hình danh sách > Click icon Xóa máy chủ z3950
+
+ Bước 2: Hiển thị popup Xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa máy chủ z3950
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều bản ghi
+
+ Bước 1: Click checkbox đầu danh sách > click button Xóa
+
+ Bước 2: Hiển thị popup Xác nhận Xóa:
+
+ + Click button “Xóa” để thực hiện xóa nhiều máy chủ z3950
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa bản ghi
+
+ Loại sách
+
+ Bước 1: Tại menu Quản lý khai báo > click Loại sách
+
+ Bước 2: Hiển thị danh sách loại sách
+
+ Chỉnh sửa loại sách
+
+ Bước 1: Trên màn hình danh sách > Click icon chỉnh sửa
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click Lưu để chỉnh sửa loại sách
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Tìm kiếm loại sách
+
+ Bước 1: Tại menu Loại sách> Trên vùng tìm kiếm
+
+ Bước 2: Nhập / chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập / chọn.
+
+ Xuất excel
+
+ Bước 1: Trên danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Xóa loại sách
+
+ Cách 1: Xóa 1 bản ghi
+
+ Bước 1: Trên màn hình danh sách > Click icon xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa loại sách
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều bản ghi
+
+ Bước 1: Click checkbox đầu danh sách > Click button Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa loại sách
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Ký hiệu xếp giá
+
+ Bước 1: Tại menu Quản lý khai báo > Click Ký hiệu xếp giá
+
+ Loại vị trí
+
+ Bước 1: Tại menu Ký hiệu xếp giá > click Danh mục loại vị trí
+
+ Bước 2: Hiển thị danh sách loại vị trí
+
+ Thêm mới loại vị trí
+ Bước 1: Trên màn hình danh sách loại vị trí > click button Thêm mới
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc > Click Lưu để thêm mới loại vị trí
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Chỉnh sửa loại vị trí
+ Bước 1: Trên màn hình danh loại vị trí > Click icon chỉnh sửa
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click Lưu để chỉnh sửa loại vị trí
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Tìm kiếm loại vị trí
+ Bước 1: Tại menu Loại vị trí > Trên vùng tìm kiếm
+
+ Bước 2: Nhập / chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập / chọn.
+
+ Xóa loại vị trí
+ Cách 1: Xóa 1 bản ghi
+
+ Bước 1: Trên màn hình danh sách loại vị trí > Click icon xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa loại vị trí
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều bản ghi
+
+ Bước 1: Click checkbox đầu danh sách loại vị trí > Click button Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa loại vị trí
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Vị trí để
+
+ Bước 1: Tại menu Ký hiệu xếp giá > Click danh mục vị trí để
+
+ Bước 2: Hiển thị danh sách vị trí để
+
+ Thêm mới vị trí để
+ Bước 1: Trên màn hình danh sách vị trí để > Click button Thêm mới
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc > Click Lưu để thêm mới vị trí để
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Chỉnh sửa vị trí để
+ Bước 1: Trên màn hình danh sách vị trí để > Click icon chỉnh sửa
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click Lưu để chỉnh sửa vị trí để
+
+ Tìm kiếm vị trí để
+ Bước 1: Tại menu Vị trí để > Trên vùng tìm kiếm
+
+ Bước 2: Nhập / chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập / chọn.
+
+ Xóa vị trí để
+ Cách 1: Xóa 1 bản ghi
+
+ Bước 1: Trên màn hình danh sách vị trí để > Click icon xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa vị trí để
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều bản ghi
+
+ Bước 1: Click checkbox đầu danh sách vị trị để > Click button Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa vị trí để
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Khu vực đọc tại chỗ
+
+ Bước 1: Tại menu Quản lý khai báo > Click Khu vực đọc tại chỗ
+
+ Bước 2: Hiển thị danh sách khu vực đọc tại chỗ
+
+ Thêm mới khu vực đọc tại chỗ
+
+ Bước 1: Trên màn hình danh sách khu vực đọc tại chỗ > Click button Thêm mới
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc > Click Lưu để thêm mới khu vực đọc tại chỗ
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Chỉnh sửa khu vực đọc tại chỗ
+
+ Bước 1: Trên màn hình danh sách khu vực đọc tại chỗ > Click icon chỉnh sửa
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click Lưu để chỉnh sửa khu vực đọc tại chỗ
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Tìm kiếm khu vực đọc tại chỗ
+
+ Bước 1: Tại menu Khu vực đọc tại chỗ > Trên vùng tìm kiếm
+
+ Bước 2: Nhập / chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập / chọn.
+
+ Xóa khu vực đọc tại chỗ
+
+ Cách 1: Xóa 1 bản ghi
+
+ Bước 1: Trên màn hình danh sách khu vực đọc tại chỗ > Click icon xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa khu vực đọc tại chỗ
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều bản ghi
+
+ Bước 1: Click checkbox đầu danh sách khu vực đọc tại chỗ > Click button Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa khu vực đọc tại chỗ
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Hình thức vi phạm
+
+ Bước 1: Tại menu Quản lý khai báo > Click Hình thức vi phạm
+
+ Bước 2: Hiển thị danh sách hình thức vi phạm
+
+ Thêm mới hình thức vi phạm
+
+ Bước 1: Trên màn hình danh sách > click button Thêm mới
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc >click Lưu để thêm mới khu vực đọc tại chỗ
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Chỉnh sửa hình thức vi phạm
+
+ Bước 1: Trên màn hình danh sách hình thức vi phạm > Click icon chỉnh sửa
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click Lưu để chỉnh sửa hình thức vi phạm
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Tìm kiếm hình thức vi phạm
+
+ Bước 1: Tại menu Hình thức vi phạm > Trên vùng tìm kiếm
+
+ Bước 2: Nhập / chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập / chọn.
+
+ Xóa hình thức vi phạm
+
+ Cách 1: Xóa 1 bản ghi
+
+ Bước 1: Trên màn hình danh sách hình thức vi phạm > Click icon xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa hình thức vi phạm
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều bản ghi
+
+ Bước 1: Click checkbox đầu danh sách hình thức vi phạm > Click button Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa hình thức vi phạm
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Trạng thái sách
+
+ Bước 1: Tại menu Quản lý khai báo > Click Trạng thái sách
+
+ Bước 2: Hiển thị danh sách trạng thái sách
+
+ Tìm kiếm trạng thái sách
+
+ Bước 1: Tại menu Trạng thái sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập / chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập / chọn.
+
+ Quản lý bạn đọc
+
+ Bước 1: Đăng nhập tài khoản quản trị trường vào hệ thống
+
+ Bước 2: Chọn menu Quản lý người dung > Chọn menu Bạn đọc
+
+ Học sinh
+
+ Bước 1: Tại menu bạn đọc > Chọn Tab Học sinh
+
+ Bước 2: Hiển thị danh sách học sinh
+
+ Thêm mới thẻ bạn đọc
+
+ Bước 1: Trên màn hình danh sách học sinh > Click button Thêm mới
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc trong form (là các trường có dấu *) > Click Lưu
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Mã thẻ là duy nhất không được trùng, Ngày cấp thẻ phải nhỏ hơn Ngày hết hạn
+
+ Chỉnh sửa thẻ bạn đọc
+
+ Bước 1: Trên màn hình danh sách học sinh > Click icon chỉnh sửa
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click Lưu để chỉnh sửa thẻ bạn đọc
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Mã thẻ là duy nhất không được trùng. Ngày cấp thẻ phải nhỏ hơn Ngày hết hạn
+
+ Gia hạn thẻ bạn đọc
+
+ Bước 1: Trên màn hình danh sách học sinh > Click icon Gia hạn thẻ
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc trong form (là các trường có dấu *) > Click Lưu
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Ngày hết hạn mới không nhỏ hơn hoặc bằng ngày hết hạn cũ
+
+ Tìm kiếm
+
+ Bước 1: Tại menu Quản lý bạn đọc > Trên vùng tìm kiếm
+
+ Bước 2: Nhập / chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập / chọn.
+
+ Xuất excel
+
+ Bước 1: Trên màn hình danh sách học sinh > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Xem chi tiết thẻ bạn đọc
+
+ Bước 1: Trên màn hình danh sách học sinh > Click vào tên bạn đọc
+
+ Bước 2: Hiển thị màn hình chi tiết bạn đọc
+
+ Xóa thẻ bạn đọc
+
+ Cách 1: Xóa 1 bản ghi
+
+ Bước 1: Trên màn hình danh sách học sinh > Click icon xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa hình thức vi phạm
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều bản ghi
+
+ Bước 1: Click checkbox đầu danh sách học sinh > Click button Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa hình thức vi phạm
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ In thẻ bạn đọc
+
+ Bước 1: Click checkbox đầu danh sách học sinh > Click button icon in thẻ
+
+ Bước 2: Nhập/Chọn các thông tin bắt buộc (là các trường có *) > Click button in để in thẻ bạn đọc
+
+ Nhập excel
+
+ Bước 1: Trên màn hình danh sách > Click button Nhập excel
+
+ Bước 2: Tải xuống file mẫu trong form nhập excel
+
+ Bước 3: Nhập đầy đủ, hợp lệ các trường thông tin bắt buộc trong file mẫu > Tải file lên > Click button Nhập excel
+
+ Lưu ý:
+
+ Các trường có dấu *trong form bắt buộc phải nhập và không được bỏ trống
+
+ Tải lên file đúng định dạng file mẫu, đúng định dạng .xls, .xlsx
+
+ Tải lên file có dung lượng tối đa 10mb
+
+ Mã thẻ là duy nhất không được trùng. Ngày cấp thẻ phải nhỏ hơn Ngày hết hạn
+
+ Cập nhật ảnh thẻ
+
+ Bước 1: Trên màn hình danh sách > Click button Cập nhật ảnh thẻ
+
+ Bước 2: Tải file lên > Click button Lưu
+
+ Lưu ý:
+
+ Các trường có dấu *trong form bắt buộc phải nhập và không được bỏ trống
+
+ Tải lên file với file ảnh nằm trực tiếp trong file .zip với tên ảnh là mã thẻ (ảnh hỗ trợ .jpg, .png)
+
+ Tải lên file có dung lượng tối đa 50mb
+
+ Xem lịch sử gia hạn
+
+ Bước 1: Trên màn hình danh sách > Click icon Xem lịch sử gia hạn
+
+ Bước 2: Hiển thị thông tin lịch sử gia hạn
+
+ Giáo viên
+
+ Bước 1: Tại menu Quản lý bạn đọc > Click Tab Giáo viên
+
+ Thêm thẻ bạn đọc
+
+ Bước 1: Trên màn hình danh sách > Click button Thêm mới
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc trong form (là các trường có *) > Click Lưu
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Mã thẻ là duy nhất không được trùng. Ngày cấp thẻ phải nhỏ hơn Ngày hết hạn
+
+ Chỉnh sửa thẻ bạn đọc
+
+ Bước 1: Trên màn hình danh sách > Click icon chỉnh sửa
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click Lưu để chỉnh sửa thẻ bạn đọc
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Mã thẻ là duy nhất không được trùng. Ngày cấp thẻ phải nhỏ hơn Ngày hết hạn
+
+ Gia hạn thẻ bạn đọc
+
+ Bước 1: Trên màn hình danh sách > Click icon gia hạn thẻ
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc trong form (là các trường có *) > Click Lưu
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Ngày hết hạn mới không nhỏ hơn hoặc bằng ngày hết hạn cũ
+
+ Tìm kiếm
+
+ Bước 1: Tại màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập / chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập / chọn.
+
+ Xuất excel
+
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Xem chi tiết thẻ bạn đọc
+
+ Bước 1: Trên màn hình danh sách > Click vào tên bạn đọc
+
+ Bước 2: Hiển thị màn hình chi tiết bạn đọc
+
+ Xóa thẻ bạn đọc
+
+ Cách 1: Xóa 1 bản ghi
+
+ Bước 1: Trên màn hình danh sách > Click icon xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa hình thức vi phạm
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều bản ghi
+
+ Bước 1: Click checkbox đầu danh sách > Click button Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa hình thức vi phạm
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ In thẻ bạn đọc
+
+ Bước 1: Click checkbox đầu danh sách > Click button In thẻ
+
+ Bước 2: Nhập/Chọn các thông tin bắt buộc (là các trường có *) > Click button in để in thẻ bạn đọc
+
+ Nhập excel
+
+ Bước 1: Trên màn hình danh sách > Click button Nhập excel
+
+ Bước 2: Tải xuống file mẫu trong form nhập excel
+
+ Bước 3: Nhập đầy đủ, hợp lệ các trường thông tin bắt buộc trong file mẫu > Tải file lên > Click button Nhập excel
+
+ Lưu ý:
+
+ Các trường có dấu *trong form bắt buộc phải nhập và không được bỏ trống
+
+ Tải lên file đúng định dạng file mẫu, đúng định dạng .xls, .xlsx
+
+ Mã thẻ duy nhất nên không được trùng. Ngày cấp thẻ phải nhỏ hơn Ngày hết hạn
+
+ Tải lên file có dung lượng tối đa 10mb
+
+ Cập nhật ảnh thẻ
+
+ Bước 1: Trên màn hình danh sách > Click button Cập nhật ảnh thẻ
+
+ Bước 2: Tải file lên > Click button Lưu
+
+ Lưu ý:
+
+ Các trường có dấu *trong form bắt buộc phải nhập và không được bỏ trống
+
+ Tải lên file đúng định dạng .zip. Với file ảnh nằm trực tiếp trong file .zip và tên ảnh là mã thẻ (ảnh hỗ trợ .jpg, .png)
+
+ Tải lên file có dung lượng tối đa 50mb
+
+ Xem lịch sử gia hạn
+
+ Bước 1: Trên màn hình danh sách > Click vào icon Xem lịch sử gia hạn
+
+ Bước 2: Hiển thị thông tin lịch sử gia hạn
+
+ Danh mục tài liệu
+
+ Bước 1: Đăng nhập tài khoản quản trị trường vào hệ thống
+
+ Bước 2: Chọn menu Danh mục tài liệu
+
+ Sách in
+
+ Bước 1: Tại menu Danh mục tài liệu > Chọn mục Sách in
+
+ Bước 2: Hiển thị danh sách sách in
+
+ Thêm mới sách in
+
+ Bước 1: Trên màn hình danh sách > Click button Thêm mới
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc (là các trường có *) > Click Lưu để thêm mới sách in
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Mã ISBN là trường duy nhất không được trùng
+
+ Chỉnh sửa sách in
+
+ Bước 1: Trên màn hình danh sách > Click icon chỉnh sửa
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > click Lưu để chỉnh sửa sách in
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Mã ISBN là trường duy nhất không được trùng
+
+ Tìm kiếm sách in
+
+ Bước 1: Tại màn hình danh sách sách in > Trên vùng tìm kiếm
+
+ Bước 2: Nhập / chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập / chọn.
+
+ Xóa sách in
+
+ Cách 1: Xóa 1 bản ghi
+
+ Bước 1: Trên màn hình danh sách > Click icon xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa danh mục sách
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều bản ghi
+
+ Bước 1: Click checkbox đầu danh sách > Click button Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa danh mục sách
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Lưu ý:
+
+ Nếu sách in đã có trong kho thì không thực hiện xóa được
+
+ Cập nhật ảnh bìa
+
+ Bước 1: Trên màn hình danh sách > Click button Cập nhật ảnh bìa
+
+ Bước 2: Tải file lên > Click Lưu
+
+ Lưu ý:
+
+ Các trường có dấu *trong form bắt buộc phải nhập và không được bỏ trống
+
+ Tải lên file đúng định dạng .zip. Với file ảnh nằm trực tiếp trong file .zip và tên ảnh là mã thẻ (ảnh hỗ trợ .jpg, .png)
+
+ Tải lên file có dung lượng tối đa 50mb
+
+ Xuất excel
+
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Nhập excel
+
+ Bước 1: Trên màn hình danh sách > Click button Nhập excel
+
+ Bước 2: Tải xuống file mẫu trong form nhập excel
+
+ Bước 3: Nhập đầy đủ, hợp lệ các trường bắt buộc trong file mẫu > Tải file lên > Click button Nhập excel
+
+ Lưu ý:
+
+ Các trường có dấu *trong form bắt buộc phải nhập và không được bỏ trống
+
+ Tải lên file đúng định dạng file mẫu, đúng định dạng .xls, .xlsx
+
+ Tải lên file có dung lượng tối đa 10mb
+
+ Trường số ISBN là duy nhất nên không được nhập trùng
+
+ Nhập MARC
+
+ Bước 1: Trên màn hình danh sách > Click button Nhập MARC
+
+ Bước 2: Tải file lên > Click button Lưu
+
+ Lưu ý:
+
+ Các trường có dấu *trong form bắt buộc phải nhập và không được bỏ trống
+
+ Tải lên file đúng định dạng file mẫu, đúng định dạng mrc, .xml
+
+ Tải lên file có dung lượng tối đa 10mb
+
+ Trường số ISBN là duy nhất nên không được trùng, số lượng bản ghi là số lượng sách muốn lưu vào hệ thống có trong file upload (trong file có 3 sách nhưng chỉ muốn nhập 1 sách)
+
+ Xem MARC
+
+ Bước 1: Click checkbox đầu danh sách > Click button Xem MARC
+
+ Bước 2: Hiển thị thông tin MARC của sách
+
+ Báo, tạp chí
+
+ Bước 1: Tại menu Danh mục tài liệu > Chọn mục Báo, tạp chí
+
+ Bước 2: Hiển thị màn hình danh sách báo, tạp chí
+
+ Thêm mới Báo, tạp chí
+
+ Bước 1: Trên màn hình danh sách > Click button Thêm mới
+
+ Bước 2: Nhập/Chọn đầy đủ các trường bắt buộc (là các trường có *) > Click Lưu để thêm mới Báo, tạp chí
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Mã báo, tạp chí là trường duy nhất nên không được trùng
+
+ Chỉnh sửa Báo, tạp chí
+
+ Bước 1: Trên màn hình danh sách > Click icon Chỉnh sửa
+
+ Bước 2: Nhập/Chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click Lưu để chỉnh sửa báo, tạp chí
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Mã báo, tạp chí là trường duy nhất nên không được trùng
+
+ Nhập excel
+
+ Bước 1: Trên màn hình danh sách > Click button Nhập excel
+
+ Bước 2: Tải xuống file mẫu trong form nhập excel
+
+ Bước 3: Nhập đầy đủ, hợp lệ các trường bắt buộc trong file mẫu > Tải file lên > Click button Nhập excel
+
+ Lưu ý:
+
+ Các trường có dấu *trong form bắt buộc phải nhập và không được bỏ trống
+
+ Tải lên file đúng định dạng file mẫu, đúng định dạng .xls, .xlsx
+
+ Tải lên file có dung lượng tối đa 10mb
+
+ Mã báo, tạp chí là trường duy nhất nên không được trùng
+
+ Xóa Báo, tạp chí
+
+ Cách 1: Xóa 1 bản ghi
+
+ Bước 1: Trên màn hình danh sách > Click icon Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa Báo, tạp chí
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều bản ghi
+
+ Bước 1: Click checkbox đầu danh sách > Click button Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa danh mục sách
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Lưu ý: Nếu báo, tạp chí đã có trong kho thì không thực hiện xóa được
+
+ Tìm kiếm Báo, tạp chí
+
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập/Chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn.
+
+ Quản lý nhập, xuất sách
+
+ Bước 1: Đăng nhập tài khoản quản trị trường vào hệ thống
+
+ Bước 2: Chọn menu quản lý nhập, xuất sách
+
+ Kho sách
+
+ Biên mục sách
+
+ Bước 1: Click menu Kho sách > Tab Biên mục sách
+
+ Bước 2: Hiển thị danh sách biên mục sách
+
+ Nhập sách
+ Bước 1: Trên màn hình danh sách > Click button Nhập sách
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc trong form (là các trường có dấu *) > Click Lưu để nhập sách
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Xem chi tiết biên mục sách
+ Bước 1: Trên màn hình danh sách > Click icon xem chi tiết hoặc click vào nhan đề
+
+ Bước 2: Hiển thị màn hình chi tiết
+
+ + Chọn Tab Chứng từ để xem danh sách phiếu nhập
+
+ + Chọn Tab Thanh lý để xem danh sách phiếu xuất
+
+ + Chọn Tab Lịch sử mượn trả để xem danh sách lịch sử mượn trả
+
+ + Chọn Tab Mã ĐKCB/ĐKSGK để xem danh sách số ĐKCB
+
+ Tìm kiếm biên mục sách
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập / chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập / chọn
+
+ Xuất excel
+ Bước 1: Tại menu Kho sách Tab Biên mục sách
+
+ Bước 2: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Danh sách sách
+
+ Bước 1: Click menu Kho sách > Tab Danh sách sách
+
+ In mã vạch
+ Bước 1: Trên màn hình danh sách > Click checkbox đầu bản ghi > Click button in mã vạch
+
+ Bước 2: Nhập/Chọn các trường thông tin bắt buộc (là các trường có dấu *) > Click button in trong form in thông tin
+
+ Xem chi tiết danh sách sách
+ Bước 1: Trên màn hình danh sách > Click icon xem chi tiết
+
+ Bước 2: Hiển thị màn hình chi tiết
+
+ + Click Lịch sử mượn trả để xem danh sách lịch sử mượn trả
+
+ + Click Đọc tại chỗ để xem danh sách đọc tại chỗ
+
+ Tìm kiếm sách
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập / chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập / chọn
+
+ Xuất excel
+ Bước 1: Tại menu Kho sách > Tab Danh sách sách
+
+ Bước 2: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Biên mục Báo, tạp chí
+
+ Bước 1: Click menu Kho sách > Tab Biên mục báo, tạp chí
+
+ Bước 2: Hiển thị danh sách biên mục báo, tạp chí
+
+ Nhập báo, tạp chí
+ Bước 1: Trên màn hình danh sách > Click button Nhập báo, tạp chí
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc trong form (là các trường có dấu *) > Click Lưu để nhập báo, tạp chí
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Xem chi tiết biên mục báo, tạp chí
+ Bước 1: Trên màn hình danh sách > Click icon xem chi tiết hoặc click vào nhan đề
+
+ Bước 2: Hiển thị màn hình chi tiết
+
+ + Chọn Tab Chứng từ để xem danh sách phiếu nhập
+
+ + Chọn Tab Thanh lý để xem danh sách phiếu xuất
+
+ + Chọn Tab Mã ĐKCB/ĐKSGK để xem danh sách số ĐKCB
+
+ Tìm kiếm biên mục báo, tạp chí
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập / chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập / chọn
+
+ Xuất excel
+ Bước 1: Tại menu Kho sách Tab Biên mục sách
+
+ Bước 2: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Danh sách báo, tạp chí
+
+ Bước 1: Click menu Kho sách > Tab Danh sách báo, tạp chí
+
+ In mã vạch
+ Bước 1: Trên màn hình danh sách > Click checkbox đầu bản ghi > Click button in mã vạch
+
+ Bước 2: Nhập/Chọn các trường thông tin bắt buộc (là các trường có dấu *) > Click button in trong form in thông tin
+
+ Xem chi tiết danh sách báo, tạp chí
+ Bước 1: Trên màn hình danh sách > Click icon xem chi tiết
+
+ Bước 2: Hiển thị màn hình chi tiết
+
+ (chưa hiển thị thông tin)
+
+ Tìm kiếm sách
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập / chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập / chọn
+
+ Xuất excel
+ Bước 1: Tại menu Kho sách > Tab Danh sách báo, tạp chí
+
+ Bước 2: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Chứng từ
+
+ Bước 1: Đăng nhập tài khoản quản trị trường vào hệ thống
+
+ Bước 2: Chọn menu Chúng từ
+
+ Thêm mới phiếu nhập sách
+
+ Bước 1: Trên màn hình danh sách > click button Thêm mới > Click button Thêm mới nhập sách
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > click Lưu để thêm mới phiếu nhập sách
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Thêm mới phiếu nhập báo, tạp chí
+
+ Bước 1: Trên màn hình danh sách > click button Thêm mới > Click button Thêm mới nhập báo, tạp chí
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > click Lưu để thêm mới phiếu nhập báo, tạp chí
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Chỉnh sửa phiếu nhập
+
+ Bước 1: Trên màn hình danh sách > Click icon chỉnh sửa
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > click Lưu để chỉnh sửa phiếu nhập
+
+ Tìm kiếm phiếu nhập
+
+ Bước 1: Tại menu phiếu nhập > Trên vùng tìm kiếm
+
+ Bước 2: Nhập / chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập / chọn.
+
+ Duyệt phiếu nhập
+
+ Bước 1: Trên màn hình danh sách > Click icon Chờ duyệt > Click icon Duyệt phiếu nhập
+
+ Bước 2: Hiển thị popup xác nhận duyệt
+
+ + Click “Duyệt” để thực hiện duyệt phiếu nhập
+
+ + Click “Hủy bỏ” để thoát form xác nhận
+
+ Lưu ý: Nếu sô ĐKCB đã tồn tại thì không thực hiện duyệt được
+
+ Từ chối phiếu nhập
+
+ Bước 1: Trên màn hình danh sách > Click icon Chờ duyệt > Click icon Từ chối phiếu nhập
+
+ Bước 2: Nhập đầy đủ các trường thông tin bắt buộc (là các trường có dấu *) > Click button Từ chối phiếu nhập để từ chối phiếu nhập
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Xem chi tiết phiếu nhập
+
+ Bước 1: Trên màn hình danh sách > click vào icon xem chi tiết
+
+ Bước 2: Hiển thị màn hình xem chi tiết
+
+ Xuất excel
+
+ Bước 1: Trên danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Nhập excel
+
+ Bước 1: Trên màn hình danh sách > Click button Nhập excel
+
+ Bước 2: Tải xuống file mẫu trong form nhập excel
+
+ Bước 3: Nhập đầy đủ, hợp lệ các trường bắt buộc trong file mẫu > Tải file lên > Click button Nhập excel
+
+ Lưu ý:
+
+ Các trường có dấu *trong form bắt buộc phải nhập và không được bỏ trống
+
+ Tải lên file đúng định dạng file mẫu, đúng định dạng .xls, .xlsx
+
+ Tải lên file có dung lượng tối đa 10mb
+
+ Xóa phiếu nhập
+
+ Cách 1: Xóa 1 bản ghi
+
+ Bước 1: Trên màn hình danh sách > click icon xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa phiếu nhập
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều bản ghi
+
+ Bước 1: Click checkbox đầu danh sách > click button Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa phiếu nhập
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Thanh lý
+
+ Bước 1: Đăng nhập tài khoản quản trị trường vào hệ thống
+
+ Bước 2: Chọn menu Thanh lý
+
+ Thêm mới phiếu xuất sách
+
+ Bước 1: Trên màn hình danh sách > Click button Thêm mới > Click button Thêm phiếu xuất
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc > click button Thêm sách để thêm sách cần xuất > click Lưu để thêm mới phiếu xuất sách
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Thêm mới phiếu xuất báo, tạp chí
+
+ Bước 1: Trên màn hình danh sách > Click button Thêm mới > Click button Thêm phiếu xuất báo, tạp chí
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc > click button Thêm sách để thêm sách cần xuất > click Lưu để thêm mới phiếu xuất báo, tạp chí
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Chỉnh sửa phiếu xuất
+
+ Bước 1: Trên màn hình danh sách > Click icon chỉnh sửa
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > click Lưu để chỉnh sửa phiếu xuất
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo focus vào trường lỗi cụ thể
+
+ Tìm kiếm phiếu xuất
+
+ Bước 1: Tại màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập / chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập / chọn.
+
+ Duyệt phiếu xuất
+
+ Bước 1: Trên màn hình danh sách > Click icon Chờ duyệt > Click icon Duyệt phiếu xuất
+
+ Bước 2: Hiển thị popup xác nhận duyệt
+
+ + Click “Duyệt” để thực hiện duyệt phiếu xuất
+
+ + Click “Hủy bỏ” để thoát form xác nhận
+
+ Từ chối phiếu xuất
+
+ Bước 1: Trên màn hình danh sách > Click icon Chờ duyệt > Click icon Từ chối phiếu xuất
+
+ Bước 2: Nhập đầy đủ thông tin các trường bắt buộc (là các trường có dấu *) > Click icon Từ chối phiếu xuất để từ chối
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Xem chi tiết phiếu xuất
+
+ Bước 1: Trên màn hình danh sách > Click vào icon Xem chi tiết
+
+ Bước 2: Hiển thị màn hình xem chi tiết
+
+ Xuất excel
+
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Xóa phiếu xuất
+
+ Cách 1: Xóa 1 bản ghi
+
+ Bước 1: Trên màn hình danh sách > Click icon xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa phiếu xuất
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều bản ghi
+
+ Bước 1: Click checkbox đầu danh sách > Click button Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa phiếu xuất
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Xem lịch sử trạng thái kiểm duyệt
+
+ Bước 1: Trên màn hình danh sách > Click vào icon Xem lịch sử kiểm duyệt
+
+ Bước 2: Hiển thị màn hình lịch sử trạng thái kiểm duyệt
+
+ Phiếu kiểm kê
+
+ Bước 1: Đăng nhập tài khoản quản trị trường vào hệ thống
+
+ Bước 2: Chọn menu Kiểm kê
+
+ Thêm mới phiếu kiểm kê
+
+ Bước 1: Trên màn hình danh sách > click button Thêm mới
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc > click button Thêm sách để thêm sách cần kiểm kê > Sang tab Ban kiểm kê click button Thêm thành viên > chọn trưởng ban kiểm kê > click Lưu để thêm mới phiếu kiểm kê
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Chỉnh sửa phiếu kiểm kê
+
+ Bước 1: Trên màn hình danh sách > Click icon chỉnh sửa
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > click Lưu để chỉnh sửa phiếu kiểm kê
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Tìm kiếm phiếu kiểm kê
+
+ Bước 1: Tại menu phiếu kiểm kê > Trên vùng tìm kiếm
+
+ Bước 2: Nhập / chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập / chọn.
+
+ Duyệt phiếu kiểm kê
+
+ Bước 1: Trên màn hình danh sách > Click icon duyệt
+
+ Bước 2: Hiển thị popup xác nhận duyệt
+
+ + Click “Duyệt” để thực hiện duyệt phiếu kiểm kê
+
+ + Click “Hủy bỏ” để thoát form xác nhận
+
+ Xem chi tiết phiếu kiểm kê
+
+ Bước 1: Trên màn hình danh sách > Click vào icon xem chi tiết
+
+ Bước 2: Hiển thị màn hình xem chi tiết
+
+ Xuất excel
+
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Xóa phiếu kiểm kê
+
+ Cách 1: Xóa 1 bản ghi
+
+ Bước 1: Trên màn hình danh sách > Click icon xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa phiếu kiểm kê
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều bản ghi
+
+ Bước 1: Click checkbox đầu danh sách > Click button Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa phiếu kiểm kê
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Hồi cố
+
+ Bước 1: Đăng nhập tài khoản quản trị trường vào hệ thống
+
+ Bước 2: Chọn menu Hồi cố
+
+ Thêm mới hồi cố
+
+ Bước 1: Trên màn hình danh sách > click button Thêm mới
+
+ Bước 2: Nhập/Chọn các trường thông tin bắt buộc (là các trường có dấu *), có thể click button +Chọn sách để thêm sách hồi cố > Click Lưu để thêm mới hồi cố
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Tìm kiếm hồi cố
+
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập/Chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn.
+
+ Xuất excel
+
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Xóa hồi cố
+
+ Cách 1: Xóa 1 bản ghi
+
+ Bước 1: Trên màn hình danh sách > Click icon Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa phiếu xuất
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều bản ghi
+
+ Bước 1: Click checkbox đầu danh sách > Click button Xóa
+
+ Bước 2: Hiển thị popup xác nhận Xóa:
+
+ + Click button “Xóa” để thực hiện xóa hồi cố
+
+ + Click button “Hủy bỏ” để hủy bỏ tháo tác xóa
+
+ Quản lý mượn, trả
+
+ Bước 1: Đăng nhập tài khoản quản trị trường vào hệ thống
+
+ Bước 2: Chọn menu quản lý mượn, trả
+
+ Mượn sách
+
+ Bước 1: Đăng nhập tài khoản quản trị trường vào hệ thống
+
+ Bước 2: Chọn menu Mượn sách
+
+ Danh sách phiếu mượn
+
+ Bước 1: Tại mục Mượn sách > Click tab Danh sách phiếu mượn
+
+ Lập phiếu mượn
+ Bước 1: Trên màn hình danh sách > Click button Thêm mới
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click Lưu để thêm mới phiếu mượn
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Thẻ bạn đọc phải còn hạn, ngày mượn, ngày hẹn trả, số lượng mượn phải tuân theo quy định của thư viện
+
+ Tìm kiếm phiếu mượn
+ Bước 1: Trên màn hình danh sách phiếu mượn > Trên vùng tìm kiếm
+ Bước 2: Nhập/Chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn.
+
+ Xuất excel
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Duyệt mượn sách
+ Bước 1: Trên màn hình danh sách > Click icon duyệt
+
+ Bước 2: Nhập thông tin sách duyệt > Click Lưu để thực hiện duyệt
+
+ Từ chối mượn sách
+ Bước 1: Trên màn hình danh sách > Click icon từ chối
+
+ Bước 2: Nhập các thông tin bắt buộc (là các trường có dấu *) > Click button Từ chối duyệt để thực hiện từ chối duyệt phiếu mượn
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Xem chi tiết mượn sách
+ Bước 1: Trên màn hình danh sách > Click vào icon xem chi tiết
+
+ Bước 2: Hiển thị màn hình xem chi tiết
+
+ + Click Danh sách mượn để xem danh sách sách mượn
+
+ + Click Danh sách duyệt để xem danh sách sách đã duyệt
+
+ + Click Danh sách giao để xem danh sách sách đã giao
+
+ Xem lý do từ chối duyệt
+ Bước 1: Trên màn hình danh sách > Click vào icon Lý do từ chối duyệt
+
+ Bước 2: Hiển thị lý do từ chối duyệt
+
+ Xóa mượn sách
+ Cách 1: Xóa 1 bản ghi
+
+ Bước 1: Trên màn hình danh sách > Click icon xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa mượn sách
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều bản ghi
+
+ Bước 1: Click checkbox đầu danh sách > Click button Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa mượn sách
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Thu hồi duyệt
+ Bước 1: Trên màn hình danh sách > Click icon Thu hồi duyệt
+
+ Bước 2: Nhập thông tin trường bắt buộc (là trường có dấu *) > Click button Thu hồi duyệt để thực hiện thu hồi duyệt
+
+ Chỉnh sửa phiếu mượn
+ Bước 1: Trên màn hình danh sách > Click icon Chỉnh sửa
+
+ Bước 2: Nhập/Chọn đầy đủ các trường thông tin bắt buộc (là các trường có dấu *) > Click Lưu để chỉnh sửa phiếu mượn
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Giao sách
+ Bước 1: Trên màn hình danh sách > Click icon Giao sách
+
+ Bước 2: Nhập/Chọn đầy đủ thông tin các trường bắt buộc (là các trường có dấu *), click icon + để thêm số ĐKCB > Click Lưu để thực hiện Giao sách
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Số lượng sách giao phải nhỏ hơn hoặc bằng số lượng sách mượn
+
+ Quản lý lịch mượn trả
+
+ Bước 1: Tại menu Mượn sách > Click tab Quản lý lịch mượn trả
+
+ Trả sách
+ Cách 1: Trả 1 sách
+
+ Bước 1: Trên màn hình danh sách > Click icon trả sách
+
+ Bước 2: Nhập/Chọn các trường thông tin bắt buộc (là các trường thông tin có dấu *) > Click Lưu để thực hiện trả sách
+
+ Cách 2: Trả nhiều sách
+
+ Bước 1: Click checkbox đầu danh sách > Click button Trả sách
+
+ Bước 2: Nhập thông tin các trường bắt buộc (là các trường có dấu *) > Click Lưu để thực hiện trả sách
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Nhắc trả sách (Khi mượn sách quá hạn)
+ Bước 1: Trên màn hình danh sách > Click icon Nhắc trả sách
+
+ Bước 2: Hiển thị popup xác nhận nhắc trả sách
+
+ + Click “Nhắc trả” để thực hiển nhắc trả sách
+
+ + Click “Hủy bỏ” để thoát khỏi form xác nhận
+
+ Tìm kiếm lịch mượn trả
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập/Chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn.
+
+ Xuất excel
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Gia hạn sách
+
+ Bước 1: Đăng nhập tài khoản quản trị trường vào hệ thống
+
+ Bước 2: Chọn menu Gia hạn sách
+
+ Thêm phiếu gia hạn
+
+ Bước 1: Trên màn hình danh sách > Click button Gia hạn
+
+ Bước 2: Chọn bạn đọc > Nhập/Chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click Lưu để thêm mới gia hạn sách
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Gia hạn khi mượn sách ở trạng thái quá hạn
+
+ Tìm kiếm phiếu gia hạn
+
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập/Chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn.
+
+ Xuất excel
+
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Xem chi tiết phiếu gia hạn
+
+ Bước 1: Trên màn hình danh sách > Click vào icon Xem chi tiết
+
+ Bước 2: Hiển thị màn hình xem chi tiết
+
+ Duyệt phiếu gia hạn
+
+ Bước 1: Trên màn hình danh sách > Click vào icon Duyệt
+
+ Bước 2: Hiển thị popup xác nhận duyệt
+
+ + Click “Duyệt” để thực hiện duyệt gia hạn sách
+
+ + Click “Hủy bỏ” để thoát form xác nhận
+
+ Từ chối phiếu gia hạn
+
+ Bước 1: Trên màn hình danh sách > Click vào icon Từ chối
+
+ Bước 2: Nhập thông tin trường bắt buộc (là trường có dấu *) > Click button Từ chối để thực hiện từ chối gia hạn sách
+
+ Chỉnh sửa phiếu gia hạn
+
+ Bước 1: Trên màn hình danh sách > Click vào icon Chỉnh sửa phiếu gia hạn
+
+ Bước 2: Nhập/Chọn đầy đủ các trường thông tin bắt buộc (là các trường có dấu *) > Click button Gia hạn để chỉnh sửa phiếu gia hạn
+
+ Xem lý do từ chối gia hạn
+
+ Bước 1: Trên màn hình danh sách > Click vào icon Xem lý do từ chối
+
+ Bước 2: Hiển thị lý do từ chối duyệt
+
+ Xóa phiếu gia hạn
+
+ Cách 1: Xóa 1 bản ghi
+
+ Bước 1: Trên màn hình danh sách > Click icon Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa gia hạn
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều bản ghi
+
+ Bước 1: Click checkbox đầu danh sách > Click button Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa gia hạn sách
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Bạn đọc tại chỗ
+
+ Bước 1: Đăng nhập tài khoản quản trị trường vào hệ thống
+
+ Bước 2: Chọn menu Bạn đọc tại chỗ
+
+ Thêm lượt đọc tại chỗ
+
+ Bước 1: Trên màn hình danh sách > Click button Thêm lượt đọc tại chỗ
+
+ Bước 2: Nhập/Chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click Lưu để thêm mới lượt đọc tại chỗ
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Cập nhật thời gian đọc xong
+
+ Bước 1: Trên màn hình danh sách > Click vào icon Cập nhật thời gian đọc xong
+
+ Bước 2: Hiển thị popup xác nhận duyệt
+
+ + Click “Cập nhật” để thực hiện cập nhật thời gian đọc xong
+
+ + Click “Hủy” để thoát form xác nhận
+
+ Xem chi tiết bạn đọc tại chỗ
+
+ Bước 1: Trên màn hình danh sách > Click vào icon Xem chi tiết
+
+ Bước 2: Hiển thị màn hình xem chi tiết
+
+ Tìm kiếm bạn đọc tại chỗ
+
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập/Chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn.
+
+ Xuất excel
+
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữu liệu có trên danh sách
+
+ Phạt vi phạm
+
+ Bước 1: Đăng nhập tài khoản quản trị trường vào hệ thống
+
+ Bước 2: Chọn menu Phạt vi phạm
+
+ Thêm mới phạt vi phạm
+
+ Bước 1: Trên màn hình danh sách > Click button Thêm mới
+
+ Bước 2: Nhập/Chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click button Lưu để thêm phiếu phạt vi phạm
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Chỉnh sửa phạt vi phạm
+
+ Bước 1: Trên màn hình danh sách > Click vào icon Chỉnh sửa
+
+ Bước 2: Nhập/Chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click button Lưu để thực hiện chỉnh sửa phiếu phạt vi phạm
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Tìm kiếm phạt vi phạm
+
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập/Chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn.
+
+ Xóa phạt vi phạm
+
+ Cách 1: Xóa 1 bản ghi
+
+ Bước 1: Trên màn hình danh sách > Click vào icon Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa phạt vi phạm
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều bản ghi
+
+ Bước 1: Click checkbox đầu danh sách > Click button Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa phiếu phạt vi phạm
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Tiết đọc thư viện
+
+ Bước 1: Đăng nhập tài khoản quản trị trường vào hệ thống
+
+ Bước 2: Chọn menu Tiết đọc thư viện
+
+ Thêm mới tiết đọc thư viện
+
+ Bước 1: Trên màn hình danh sách > Click button Thêm mới
+
+ Bước 2: Nhập/Chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click Lưu để thêm mới tiết đọc thư viện
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Chỉnh sửa tiết đọc thư viện
+
+ Bước 1: Trên màn hình danh sách > Click vào icon Chỉnh sửa
+
+ Bước 2: Nhập/Chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click button Lưu để thực hiện chỉnh sửa tiết đọc thư viện
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Tìm kiếm tiết đọc thư viện
+
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập/Chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thức hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn.
+
+ Trả sách cho tiết đọc
+
+ Bước 1: Trên màn hình danh sách > Click vào icon Trả sách cho tiết đọc
+
+ Bước 2: Hiển thị popup xác nhận trả sách
+
+ + Click button “Trả sách” để thực hiện trả sách tiết đọc
+
+ + Click button “Hủy” để hủy bỏ thao tác trả sách
+
+ Xóa tiết đọc thư viện
+
+ Cách 1: Xóa 1 bản ghi
+
+ Bước 1: Trên màn hình danh sách > Click vào icon Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa tiết đọc thư viện
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều bản ghi
+
+ Bước 1: Click checkbox đầu danh sách > Click button Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa tiết đọc thư viện
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cấu hình nâng cao
+
+ Bước 1: Đăng nhập tài khoản quản trị trường vào hệ thống
+
+ Bước 2: Chọn menu Cấu hình nâng cao
+
+ Cấu hình thời gian mượn
+
+ Bước 1: Tại menu Cấu hình nâng cao > Click tab Cấu hình thời gian mượn
+
+ Bước 2: Nhập các thông tin cấu hình thời gian > Click Lưu để thực hiện cấu hình thời gian mượn
+
+ Cấu hình nội dung thư viện
+
+ Bước 1: Tại menu Cấu hình nâng cao > Click tab Cấu hình nội dung thư viện
+
+ Bước 2: Nhập thông tin nội dung thư viện > Click Lưu để thực hiện cấu hình nội dung thư viện
+
+ Báo cáo thống kê
+
+ Bước 1: Đăng nhập tài khoản quản trị trường vào hệ thống
+
+ Bước 2: Chọn menu Báo cáo thống kê
+
+ Sổ đăng ký
+
+ Bước 1: Tại menu Báo cáo thống kê > Chọn mục Sổ đăng ký
+
+ Sổ đăng ký tổng quát
+
+ Bước 1: Tại menu Sổ đăng ký > Click tab Sổ đăng ký tổng quát
+
+ Tìm kiếm Sổ đăng ký tổng quát
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập/Chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn.
+
+ Xuất excel
+ Bước 1: Tại menu Sổ đăng ký > Tab Sổ đăng ký tổng quát
+
+ Bước 2: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Sổ đăng ký cá biệt
+
+ Bước 1: Tại menu Sổ đăng ký > Click tab Sổ đăng ký cá biệt
+
+ Tìm kiếm Sổ đăng ký cá biệt
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập/Chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn.
+
+ Xuất excel
+ Bước 1: Tại menu Sổ đăng ký > Tab Sổ đăng ký cá biệt
+
+ Bước 2: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Sổ thống kê bạn đọc
+
+ Bước 1: Tại menu Báo cáo thống kê > Chọn mục Sổ thống kê bạn đọc
+
+ Tìm kiếm bạn đọc
+
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập/Chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn.
+
+ Xuất excel
+
+ Bước 1: Tại menu Sổ thống kê bạn đọc
+
+ Bước 2: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Báo cáo danh mục sách
+
+ Bước 1: Tại menu Báo cáo thống kê > Chọn mục Báo cáo danh mục sách
+
+ Tìm kiếm sách
+
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập/Chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn.
+
+ Xuất excel
+
+ Bước 1: Tại menu Báo cáo danh mục sách
+
+ Bước 2: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên dnah sách
+
+ Sổ mượn sách học sinh
+
+ Bước 1: Tại menu báo cáo thống kê > Chọn mục Sổ mượn sách học sinh
+
+ Tổng quan sổ mượn sách
+
+ Bước 1: Tại menu Sổ mượn sách học sinh > Click tab Tổng quan sổ mượn sách
+
+ Tìm kiếm
+ Bước 1: Tại tab Tổng quan sổ mượn sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập/Chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn.
+
+ Xuất excel
+ Bước 1: Tại menu Sổ mượn sách học sinh > Tab Tổng quan sổ mượn sách
+
+ Bước 2: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Chi tiết sổ mượn sách
+
+ Bước 1: Tại menu Sổ mượn sách học sinh > Click tab Chi tiết sổ mượn sách
+
+ Tìm kiếm
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập/Chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn.
+
+ Xuất excel
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữu liệu có trên danh sách
+
+ Sổ mượn sách giáo viên
+
+ Bước 1: Tại menu Báo cáo thống kê > Chọn mục Sổ mượn sách giáo viên
+
+ Tổng quan sổ mượn sách
+
+ Bước 1: Tại menu Sổ mượn sách giáo viên > Click tab Tổng quan sổ mượn sách
+
+ Tìm kiếm
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập/Chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn.
+
+ Xuất excel
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Chi tiết sổ mượn sách
+
+ Bước 1: Tại menu Sổ mượn sách giáo viên > Click tab Chi tiết sổ mượn sách
+
+ Tìm kiếm
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập/Chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn.
+
+ Xuất excel
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Khảo sát, góp ý
+
+ Bước 1: Đăng nhập tài khoản quản trị trường vào hệ thống
+
+ Bước 2: Chọn mục Khảo sát, góp ý
+
+ Bước 3: Nhập/Chọn các trường bắt buộc (là các trường có dấu *) > Click button Gửi để gửi ý kiến phản hồi
+
+ Quản lý ngân sách, chi phí
+
+ Bước 1: Đăng nhập tài khoản quản trị trường vào hệ thống
+
+ Bước 2: Chọn menu Quản lý ngân sách, chi phí
+
+ Ngân sách
+
+ Bước 1: Tại menu Quản lý ngân sách, chi phí > Chọn danh mục Ngân sách
+
+ Thêm mới ngân sách
+
+ Bước 1: Trên màn hình danh sách > Click button Thêm mới
+
+ Bước 2: Nhập/Chọn đầy đủ các trường thông tin bắt buộc (là các trường có dấu *) > Click Lưu để thực hiện thêm mới
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Chỉnh sửa ngân sách
+
+ Bước 1: Trên màn hình danh sách > Click vào icon Chỉnh sửa
+
+ Bước 2: Nhập/Chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click Lưu để thực hiện chỉnh sửa ngân sách
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Xóa ngân sách
+
+ Cách 1: Xóa 1 bản ghi
+
+ Bước 1: Trên màn hình danh sách > Click vào icon Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa ngân sách
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều bản ghi
+
+ Bước 1: Click checkbox đầu danh sách > Click button Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa ngân sách
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Tìm kiếm ngân sách
+
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập/Chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn.
+
+ Nhập excel
+
+ Bước 1: Trên màn hình danh sách > Click button Nhập excel
+
+ Bước 2: Tải xuống file mẫu tròn form nhập excel
+
+ Bước 3: Nhập đầy đủ, hợp lệ các trường bắt buộc trong file mẫu (là các trường có dấu *) > tải file lên > Click button Nhập excel
+
+ Lưu ý:
+
+ Các trường có dấu *trong form bắt buộc phải nhập và không được bỏ trống
+
+ Tải lên file đúng định dạng file mẫu, đúng định dạng .xls,.xlsx
+
+ Tải lên file có dung lượng tối đa 10mb
+
+ Xuất excel
+
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Xem chi tiết ngân sách
+
+ Bước 1: Trên màn hình danh sách > Click vào icon Xem chi tiết
+
+ Bước 2: Hiển thị màn hình xem chi tiết
+
+ Thu chi
+
+ Bước 1: Tại menu Quản lý ngân sách, chi phí > Chọn danh mục Thu chi
+
+ Thêm mới quản lý thu chi
+
+ Bước 1: Trên màn hình danh sách > Click button Thêm mới
+
+ Bước 2: Nhập/Chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click Lưu để thêm mới quản lý thu chi
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Chỉnh sửa quản lý thu chi
+
+ Bước 1: Trên màn hình danh sách > Click vào icon Chỉnh sửa
+
+ Bước 2: Nhập/Chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click Lưu để chỉnh sửa quản lý thu chi
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Xem chi tiết quản lý thu chi
+
+ Bước 1: Trên màn hình danh sách > Click vào icon Xem chi tiết
+
+ Bước 2: Hiển thị màn hình Xem chi tiết
+
+ Tìm kiếm quản lý thu chi
+
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập/Chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn.
+
+ Nhập excel
+
+ Bước 1: Trên màn hình danh sách > Click button Nhập excel
+
+ Bước 2: Tải xuống file mẫu trong form nhập excel
+
+ Bước 3: Nhập đầu đủ, hợp lệ các trường thông tin bắt buộc trong file mẫu > Tải file lên > Click button Nhập excel
+
+ Lưu ý:
+
+ Các trường có dấu *trong form bắt buộc phải nhập và không được bỏ trống
+
+ Tải lên file đúng định dạng file mẫu, đúng định dạng .xls,.xlsx
+
+ Tải lên file có dung lượng tối đa 10mb
+
+ Xuất excel
+
+ Bước 2: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Xóa quản lý thu chi
+
+ Cách 1: Xóa 1 bản ghi
+
+ Bước 1: Trên màn hình danh sách > Click vào icon Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa quản lý thu chi
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều bản ghi
+
+ Bước 1: Click checkbox đầu danh sách > Click button Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa quản lý thu chi
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Sổ theo dõi kinh phí
+
+ Bước 1: Tại menu Quản lý ngân sách, chi phí > Chọn danh mục Sổ theo dõi kinh phí
+
+ Thêm mới sổ theo dõi kinh phí
+
+ Bước 1: Trên màn hình danh sách > Click button Thêm mới
+
+ Bước 2: Nhập/Chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click Lưu để thực hiện thêm mới sổ theo dõi kinh phí
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Xem chi tiết sổ theo dõi kinh phí
+
+ Bước 1: Trên mà hình danh sách > Click vào icon Xem chi tiết
+
+ Bước 2: Hiển thị màn hình xem chi tiết
+
+ Có thể click button in sổ theo dõi kinh phí để thực hiện in sổ theo dõi kinh phí (.doc)
+
+ Chỉnh sửa sổ theo dõi kinh phí
+
+ Bước 1: Trên màn hình danh sách > Click icon Chỉnh sửa
+
+ Bước 2: Nhập/Chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click Lưu để thực hiện chỉnh sửa sổ theo dõi kinh phí
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Tìm kiếm sổ theo dõi kinh phí
+
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập/Chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn
+
+ Xuất excel
+
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Xóa sổ theo dõi kinh phí
+
+ Cách 1: Xóa 1 bản ghi
+
+ Bước 1: Trên màn hình danh sách > Click icon Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa sổ theo dõi kinh phí
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều bản ghi
+
+ Bước 1: Click checkbox đầu danh sách > Click button Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa sổ theo dõi kinh phí
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+==================================================
+

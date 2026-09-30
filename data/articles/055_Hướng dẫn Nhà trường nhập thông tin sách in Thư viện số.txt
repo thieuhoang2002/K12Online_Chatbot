@@ -1,0 +1,69 @@
+### BÀI VIẾT [55]: Hướng dẫn Nhà trường nhập thông tin sách in Thư viện số
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Thư viện số > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong8/huong-dan-nha-truong-nhap-thong-tin-sach-in-thu-vien-so.html
+
+**Nội dung:**
+Sau khi hoàn thành khai báo ban đầu cho thư viện tiến hành tạo Sách in/Ấn phẩm
+
+ 1. Thêm mới sách in
+
+ Cách 1: Thêm thủ công
+
+ Bước 1 : Vào Danh mục tài liệu > chọn Sách in > chọn Thêm mới
+
+ Bước 2 : Nhập thông tin sách hợp lệ
+
+ Hoặc nhập nhanh từ dữ liệu MARC21 của Thư viện quốc gia
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bước 3 : Click nút Lưu để lưu thông tin sách
+
+ Cách 2: Thêm bằng excel
+
+ Bước 1 : Tại danh sách chọn Nhập excel cập nhật sách
+
+ Bước 2 : Tải về file mẫu click nút Tải xuống
+
+ Bước 3 : Mở file nhập thông tin sách cần nhập hoặc sách chỉnh sửa > Lưu file
+
+ Bước 4 : Upload file lên hệ thống > chọn Nhập excel
+
+ Lưu ý:
+
+ Mã ấn phẩm đã tồn tại khi nhập bằng excel hệ thống sẽ cập nhật thông tin vào bản ghi hiện có
+
+ Cách 3: Nhập bằng MARC
+
+ Bước 1: Chuẩn bị sẵn file nhập MARC có định dạng .mrc hoặc .xml chứa thông tin sách
+
+ Bước 2: Chọn Nhập MARC trên danh sách > Upload file
+
+ Bước 3: Nhập số lượng bản ghi sách cần nhập > Lưu
+
+ Lưu ý:
+
+ Số lượng bản ghi là số lượng sách muốn lưu vào hệ thống có trong file upload
+
+ Ví dụ: Trong file upload có 10 sách nhưng chỉ muốn nhập 5 sách
+
+ 2. Cập nhật ảnh bìa cho sách
+
+ - Phục vụ cập nhật đồng thời nhiều ảnh bìa cho các sách in
+
+ Bước 1: Chuẩn bị file có thông tin ảnh bìa theo quy tắc sau:
+
+ Ảnh bìa chỉ hỗ trợ định dạng  .jpg và .png
+
+ Tên ảnh bìa phải trùng với số IBSN
+
+ Toàn bộ ảnh bìa được nén vào file .zip không được đặt trong thư mục
+
+ Bước 2: Chọn nút Cập nhật ảnh bìa > Upload file .zip
+
+ Bước 3: Click Lưu
+
+==================================================
+

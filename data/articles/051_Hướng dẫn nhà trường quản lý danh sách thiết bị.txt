@@ -1,0 +1,115 @@
+### BÀI VIẾT [51]: Hướng dẫn nhà trường quản lý danh sách thiết bị
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Cơ sở vật chất > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong4/huong-dan-nha-truong-quan-ly-danh-sach-thiet-bi.html
+
+**Nội dung:**
+Bước 1: Đăng nhập thành công vào hệ thống
+
+ Bước 2: Trang chủ > Click module Cơ sở vật chất
+
+ Bước 3: Click menu Quản lý CSVC
+
+ 1. Danh sách thiết bị
+
+ Bước 1: Menu Quản lý CSVC > Click tab Danh sách thiết bị
+
+ Bước 2: Hiển thị màn hình danh sách thiết bị
+
+ Click Sắp xếp theo > Chọn kiểu sắp xếp > Hiển thị danh sách theo trạng thái sắp xếp.
+ Click icon tăng thiết bị (+) để thực hiện tăng thiết bị con cho thiết bị đang chọn
+ Click icon chỉnh sửa để thực hiện chỉnh sửa thiết bị
+ Click icon xem chi tiết để thực hiện xem chi tiết thiết bị
+ Tải lại
+ Trên danh sách > click button Tải lại > Thực hiện tải lại danh sách.
+
+ Sắp xếp
+ Trên danh sách > click button Sắp xếp theo > Chọn kiểu sắp xếp> Hiển thị danh sách theo trạng thái sắp xếp.
+
+ Phân trang
+ Trên màn hình: hiển thị phân trang ở phía dưới bên phải màn khi danh sách có > 20 bản ghi
+ + Click icon << (>>) để chuyển đến trang trước đó (trang tiếp theo)
+
+ + Click icon << << (>> >>) để chuyển đến trang đầu tiên (trang cuối cùng)
+
+ Tổng số bản ghi
+ Bước 1: Trên màn hình danh sách > Xem tổng số bản ghi.
+
+ 2. Thêm mới thiết bị
+
+ Bước 1: Trên màn hình danh sách > Click Thêm mới
+
+ Bước 2: Hiển thị màn hình thêm mới > Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Tên thiết bị: Nhập tên thiết bị, độ dài không quá 255 ký tự
+ Phân loại thiết bị: Chọn phân loại thiết bị (list từ menu Quản lý khai báo > Phân loại thiết bị)
+ Đơn vị tính: Chọn đơn vị tính
+ SL tối thiểu: Nhập số lớn hơn 0 (Cho phép nhập số thập phân)
+ Khối lớp: Chọn khối lớp
+ Môn học: Chọn môn học, cho phép chọn một hoặc nhiều giá trị
+ Chủ đề: Chọn chủ đề list theo môn học đã chọn
+ Mô tả chi tiết: Nhập mô tả chi tiết
+ Checkbox Thuộc danh mục thiết bị tối thiểu: Xác định thiết bị thuộc trong danh mục phải có
+ Checkbox Là thiết bị tiêu hao: Xác định thiết bị thuộc trong danh mục phải có
+ Checkbox Là thiết bị tự làm: Xác định thiết bị thuộc trong danh mục tự làm
+
+ Bước 3:
+
+ + Click Lưu để hoàn thành việc thêm mới, bản ghi hiển thị bên ngoài danh sách.
+
+ + Click Hủy bỏ để quay về màn hình Danh sách thiết bị
+
+ 3. Tăng thiết bị
+
+ Bước 1: Trên màn hình danh sách > Click icon tăng thiết bị
+
+ Bước 2: Hiển thị màn hình thêm mới > Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Mã thiết bị, Tên thiết bị: Hiển thị dữ liệu của bản ghi đang chọn lên form, disable không cho chỉnh sửa.
+ Theo đề xuất: Chọn phiếu đề xuất mua mới đã được duyệt có chứa thiết bị này
+ Checkbox cho mượn: Xác định thiết bị được phép mượn
+ Serial: Nhập serial nếu muốn quản lý thiết bị theo serial (Chỉ được nhập số)
+ Đơn giá: Nhập đơn giá cho thiết bị
+ Số lượng: Nhập số lượng thiết bị cần tăng (Nếu nhập serial thì số lượng phải bằng 1)
+ Nguồn cấp: Chọn nguồn cấp (List từ menu Quản lý khai báo > Nguồn cấp ngân sách)
+ Cán bộ quản lý: Chọn cán bộ quản lý (List tài khoản giáo viên trên hệ thống)
+ Kho phòng: Chọn kho phòng
+ Quốc gia: Chọn quốc gia
+ Ngày nhập: Chọn ngày nhập
+ Hạn sử dụng: Chọn hạn sử dụng (Hạn sử dụng phải lớn hơn ngày nhập và lớn hơn thời gian hiện tại)
+ Tài liệu liên quan: Upload file tài liệu liên quan
+ Click button Thêm nếu muốn thêm lựa chọn
+
+ Bước 3:
+
+ + Click Lưu để hoàn thành việc tăng thiết bị, cập nhật thống kê số lượng thiết bị ở ngoài bảng danh sách
+
+ + Click Hủy bỏ để quay về màn hình Danh sách thiết bị
+
+ 4. Chỉnh sửa thiết bị
+
+ Bước 1: Trên màn hình danh sách > Click icon Chỉnh sửa kho phòng
+
+ Bước 2: Hiển thị màn hình chỉnh sửa: Hiển thị dữ liệu bản ghi lên form  > Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Bước 3:
+
+ + Click Lưu để hoàn thành việc chỉnh sửa, thông tin bản ghi được cập nhật thành công.
+
+ + Click Hủy bỏ để quay về danh sách Kho phòng
+
+ 5. Xem chi tiết thiết bị
+
+ Bước 1: Trên màn hình danh sách > Click icon Chi tiết thiết bị
+
+ Bước 2: Hiển thị màn hình chi tiết thiết bị thành công
+
+ Danh sách Thống kê thiết bị: Hiển thị danh sách thiết bị con của thiết bị đang xem chi tiết. Cho phép lọc, tìm kiếm bản ghi theo các tiêu chí.
+ Click button Chỉnh sửa để chỉnh sửa thông tin thiết bị
+ Click button Xuất excel để xuất excel danh sách thống kê thiết bị
+ Click button Tăng thiết bị để tăng thiết bị con cho thiết bị đang xem chi tiết
+ Click button Cấp thiết bị để thực hiện cấp thiết bị này cho cán bộ quản lý khác
+
+ Thống kê thiết bị
+
+==================================================
+

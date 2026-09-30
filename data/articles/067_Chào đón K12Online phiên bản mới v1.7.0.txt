@@ -1,0 +1,31 @@
+### BÀI VIẾT [67]: Chào đón K12Online phiên bản mới v1.7.0
+- Chuyên mục: Trang chủ > Câu hỏi thường gặp
+- Link gốc: https://hotro.k12online.vn/thong-bao/chao-don-k12online-phien-ban-moi-v1.7.0.html
+
+**Nội dung:**
+Kính gửi các thầy/cô và các em học sinh,
+
+ Dự kiến tối ngày 28-29/11/2021 , K12Online sẽ ra mắt phiên bản v1.7.0 trên iOS và Android
+
+ Các thầy/cô và các em học sinh hãy cùng chờ đón và đăng nhập hệ thống để tiến hành cập nhật ứng dụng K12Online để tiếp tục sử dụng nhé.
+
+ 1. Thông tin phiên bản mới
+
+ - Tên phiên bản: v1.7.0
+
+ - Ngày ra mắt: dự kiến 28-29/11/2021
+
+ - Hệ điều hành hỗ trợ: iOS; Android
+
+ 2. Các thay đổi, bổ sung trong phiên bản mới
+
+ - Tối ưu hiệu năng, trải nghiệm người dùng
+
+ - Bổ sung tính năng banner để hệ thống chủ động truyền tải các thông báo quan trọng từ hệ thống hoặc những lưu ý quan trọng khi sử dụng K12Online để người dùng dễ dàng cập nhật và theo dõi thuận tiện hơn.
+
+ - Bổ sung tính năng dự giờ cho Sở/Phòng/trường/GV trên mobile app
+
+ - Bổ sung một số tính năng cho Sở/Phòng
+
+==================================================
+

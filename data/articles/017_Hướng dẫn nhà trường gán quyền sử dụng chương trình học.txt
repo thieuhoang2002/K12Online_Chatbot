@@ -1,0 +1,21 @@
+### BÀI VIẾT [17]: Hướng dẫn nhà trường gán quyền sử dụng chương trình học
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Chương trình học > Nhà trường
+- Link gốc: https://hotro.k12online.vn/doi-tac-noi-dung/nha-truong-gan-quyen-su-dung-chuong-trinh-hoc.html
+
+**Nội dung:**
+Sau khi được đối tác chia sẻ, nhà trường thực hiện gán sử dụng cho giáo viên và học sinh trong trường để giáo viên và học sinh có thể sử dụng.
+
+ Bước 1 : Đăng nhập tài khoản quản trị trường => Chọn module Chương trình học
+
+ Bước 2 : Chọn menu Chương trình học => Chọn chương trình học cần chia sẻ
+
+ Bước 3: Gán sử dụng
+
+ - Cách 1 : Chọn loại tài khoản => Tích chọn tài khoản cần gán rồi click Gán sử dụng
+
+ - Cách 2 : Click nút Gán sử dụng nhanh => Hệ thống sẽ tự động gán sử dụng cho các học sinh có cùng khối học tương ứng với khối học của chương trình học.
+
+ Bước 5 : Click nút Gán để thực hiện gán sử dụng.
+
+==================================================
+

@@ -1,0 +1,41 @@
+### BÀI VIẾT [25]: Hướng dẫn học sinh đăng nhập hệ thống K12Online
+- Chuyên mục: Trang chủ > Cấu hình chung > Đăng nhập > Hướng dẫn đăng nhập
+- Link gốc: https://hotro.k12online.vn/hoc-sinh/dang-nhap-he-thong.html
+
+**Nội dung:**
+Trường hợp 1: Sử dụng máy tính
+
+ Để đăng nhập vào hệ thống, học sinh truy cập trình duyệt Google Chrome (phiên bản từ 88 trở lên)
+
+ Bước 1: Truy cập vào link k12online.vn hoặc link trực tiếp của trường trên hệ thống K12Online
+
+ Bước 2: Nhập tài khoản và mật khẩu và nhấn Đăng nhập bằng tài khoản SSO để thực hiện.
+
+ Nhập tài khoản tại ô Tài khoản;
+
+ Nhập mật khẩu tại ô Mật khẩu.
+
+ Nhấn Đăng nhập bằng tài khoản SSO để đăng nhập vào hệ thống.
+
+ Trường hợp 2: Sử dụng các thiết bị di động (tablet, smartphone...)
+
+ Bước 1: Lên chợ ứng dụng của hệ điều hành đang sử dụng, tìm kiếm và tải hoặc cập nhật phiên bản mới nhất của ứng dụng K12Online về máy.
+
+ Bước 2: Thực hiện tải về và cài đặt
+
+ Bước 3: Màn hình ra giao diện đăng nhập
+
+ Nhập tài khoản tại ô Tài khoản;
+
+ Nhập mật khẩu tại ô Mật khẩu;
+
+ Nhấn Đăng nhập để đăng nhập vào hệ thống.
+
+ Một số lưu ý khi đăng nhập, sử dụng K12Online
+
+ 1. Học sinh nên đổi mật khẩu mặc định ngay sau lần đầu tiên sử dụng để bảo mật tài khoản.
+
+ 2. Nếu học sinh đăng nhập sai mật khẩu 5 lần thì hệ thống sẽ yêu cầu nhập mã xác nhân. Học sinh điền mã xác nhận chính xác rồi thực hiện đăng nhập.
+
+==================================================
+

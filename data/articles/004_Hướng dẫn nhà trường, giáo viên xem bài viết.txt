@@ -1,0 +1,14 @@
+### BÀI VIẾT [4]: Hướng dẫn nhà trường, giáo viên xem bài viết
+- Chuyên mục: Trang chủ > Tính năng khác > Bảng tin > Giáo viên
+- Link gốc: https://hotro.k12online.vn/05.-tinh-nang-khac/bang-tin/huong-dan-nha-truong-giao-vien-xem-bai-viet.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản trường/ giáo viên
+
+ Bước 2 : Click module Bảng tin để thực hiện xem bảng tin
+
+ Click icon để thích bài viết , click icon để bỏ thích bài viết
+ Click xem kết quả để xem kết quả của cuộc bình chọn
+
+==================================================
+

@@ -1,0 +1,126 @@
+### BÀI VIẾT [50]: Hướng dẫn nhà trường khai báo khu vực
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Cơ sở vật chất > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong4/huong-dan-nha-truong-khai-bao-khu-vuc2.html
+
+**Nội dung:**
+1. Danh sách khu vực
+
+ Bước 1: Đăng nhập thành công vào hệ thống
+
+ Bước 2: Click Ứng dụng Cơ sở vật chất
+
+ Bước 3: Click menu Quản lý khai báo > Click Khu vực
+
+ Bước 4: Hiển thị danh sách khu vực
+
+ Click Sắp xếp theo > Chọn kiểu sắp xếp > Hiển thị danh sách theo trạng thái sắp xếp.
+ Click icon chỉnh sửa để thực hiện chỉnh sửa khu vực
+ Click icon xóa/tạm xóa để thực hiện xóa/tạm xóa khu vực
+ Click icon khôi phục để thực hiện khôi phục khu vực
+ Tải lại
+ Trên danh sách > click button Tải lại > Thực hiện tải lại danh sách.
+
+ Sắp xếp
+ Trên danh sách > click button Sắp xếp theo > Chọn kiểu sắp xếp> Hiển thị danh sách theo trạng thái sắp xếp.
+
+ Phân trang
+ Trên màn hình: hiển thị phân trang ở phía dưới bên phải màn khi danh sách có > 20 bản ghi
+
+ + Click icon << (>>) để chuyển đến trang trước đó (trang tiếp theo)
+
+ + Click icon  << << (>> >>) để chuyển đến trang đầu tiên (trang cuối cùng)
+
+ 2. Thêm mới khu vực
+
+ Bước 1: Trên màn hình danh sách> Click Thêm mới
+
+ Bước 2: Hiển thị màn hình thêm mới > Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ + Khu vực: Bắt buộc nhập, tối đa 255 ký tự và không nhập trùng khu vực đã tồn tại trên hệ thống
+
+ Bước 3:
+
+ + Click Lưu để hoàn thành việc thêm mới, bản ghi hiển thị ngoài danh sách.
+
+ + Click Hủy bỏ để quay về danh sách.
+
+ ​​​​​​​3. Chỉnh sửa khu vực
+
+ Bước 1: Trên màn hình danh sách> Click icon chỉnh sửa một bản ghi muốn chỉnh sửa
+
+ Bước 2: Hiển thị màn hình chỉnh sửa > Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Bước 3:
+
+ + Click Lưu để hoàn thành việc chỉnh sửa.
+
+ + Click Hủy bỏ để quay về danh sách.
+
+ ​​​​​​​4. Xóa khu vực
+
+ Xóa 1 bản ghi
+ Bước 1: Trên màn hình danh sách > Click icon xóa một bản ghi chưa sử dụng > Hệ thống hiển thị popup xác nhận xóa
+
+ Bước 2:
+
+ + Click Xóa để xác nhận xóa bản ghi, bản ghi sẽ bị xóa khỏi danh sách
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ Xóa nhiều bản ghi
+ Bước 1: Trên màn hình danh sách > tích chọn checkbox các bản ghi muốn xóa (chỉ có bản ghi đang hoạt động là có checkbox) > click Xóa > Hệ thống hiển thị popup xác nhận xóa
+
+ Bước 2:
+
+ + Click Xóa để xác nhận xóa các bản ghi, các bản ghi chưa sử dụng sẽ bị xóa khỏi danh sách
+
+ + Click Hủy bỏ để quay lại danh sách.
+
+ ​​​​​​​5. Tạm xóa khu vực
+
+ Tạm xóa 1 bản ghi
+ Bước 1: Trên màn hình danh sách > Click icon tạm xóa một bản ghi đã sử dụng > Hệ thống hiển thị popup xác nhận tạm xóa
+
+ Bước 2:
+
+ + Click Tạm xóa để xác nhận tạm xóa bản ghi, bản ghi sẽ chuyển sang trạng thái không hoạt động
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ Tạm xóa nhiều bản ghi
+ Bước 1: Trên màn hình danh sách > tích chọn checkbox các bản ghi muốn xóa (chỉ có bản ghi đang hoạt động là có checkbox) > click Tạm xóa > Hệ thống hiển thị popup xác nhận tạm xóa
+
+ Bước 2:
+
+ + Click Tạm xóa để xác nhận tạm xóa các bản ghi, các bản ghi sẽ chuyển sang trạng thái không hoạt động
+
+ + Click Hủy bỏ để quay lại danh sách.
+
+ ​​​​​​​6. Khôi phục khu vực
+
+ Bước 1: Trên màn hình danh sách > Click icon khôi phục một bản ghi đã sử dụng > Hệ thống hiển thị popup xác nhận khôi phục
+
+ Bước 2:
+
+ + Click Khôi phục để xác nhận khôi phục khu vực, bản ghi được chuyển về trạng thái hoạt động
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ ​​​​​​​7. Tìm kiếm khu vực
+
+ Bước 1: Trên màn hình danh sách> Tại vùng tìm kiếm: nhập tiêu chí tìm kiếm > Click button Tìm kiếm để thực hiện tìm kiếm khu vực
+
+ ​​​​​​​8. Xuất excel
+
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel > Thực hiện xuất excel thành công
+
+ Bước 2: Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+ ​​​​​​​9. Nhập excel
+
+ Bước 1: Trên màn hình danh sách > Click nhập excel > Tải file mẫu về > Nhập dữ liệu vào file mẫu > Upload file lên > Click Nhập excel thực hiện thêm mới bằng excel thành công.
+
+ Bước 2: Hệ thống hiển thị báo cáo kết quả nhập excel như hình dưới > click tải về để xem kết quả chi tiết
+
+==================================================
+

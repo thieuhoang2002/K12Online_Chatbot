@@ -1,0 +1,27 @@
+### BÀI VIẾT [42]: Phân công giảng dạy học kỳ II cho giáo viên
+- Chuyên mục: Trang chủ > Cấu hình chung > Quản lý đào tạo
+- Link gốc: https://hotro.k12online.vn/nha-truong/phan-cong-giang-day-hoc-ky-ii.html
+
+**Nội dung:**
+1. Lưu ý trước khi thực hiện
+
+ - Trước khi thời gian học kỳ II diễn ra trên hệ thống K12Online, nhà trường cần phân công giảng dạy cho giáo viên cho học kỳ II.
+
+ - Khi nào nhà trường phân công giảng dạy học kỳ II xong cho giáo viên thì giáo viên mới có quyền tạo học liệu và gán thời khóa biểu cho các lớp ở học kỳ II.
+
+ 2. Hướng dẫn thao tác
+
+ Bước 1: Nhà trường đăng nhập bằng tài khoản admin của trường và hệ thống K12Online của trường mình.
+
+ Bước 2: Nhà trường chuyển bộ lọc thời gian trên thanh tiêu đề từ Học kỳ I thành Học kỳ II để hệ thống hiển thị dữ liệu của Học kỳ II
+
+ Bước 3: Nhà trường vào menu Quản lý đào tạo => Chọn Kế hoạch đào tạo => Chọn Cập nhật kế hoạch đào tạo để hệ thống sinh ra dữ liệu của học kỳ II.
+
+ - Vui lòng đợi trong giây lát, sau đó tải lại trang (Refresh) để xem trạng thái Cập nhật hoàn thành lúc ..... và hệ thống tạo ra các kế hoạch cho các khối lớp trong học kỳ II.
+
+ Bước 4: Nhà trường vào menu Quản lý đào tạo => Chọn menu Phân công giảng dạy => Chọn Bước 2: Phân lớp giảng dạy
+
+ - Tại đây, nhà trường có thể phân công lại cho từng giáo viên hoặc không nhấn nút Đồng bộ phân lớp từ học kỳ I để hệ thống lấy giống kết quả phân lớp giảng dạy như Học kỳ I
+
+==================================================
+

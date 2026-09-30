@@ -1,0 +1,161 @@
+### BÀI VIẾT [10]: Câu hỏi thường gặp về hệ thống chủ đề trên K12Online
+- Chuyên mục: Trang chủ > Câu hỏi thường gặp > Dành cho Sở/Phòng
+- Link gốc: https://hotro.k12online.vn/cau-hoi-thuong-gap/he-thong-chu-de-tren-k12online.html
+
+**Nội dung:**
+1. Chủ đề trên K12Online là gì?
+
+ - Chủ đề trên hệ thống K12Online là hệ thống danh mục các chủ đề kiến thức được cập nhật theo đúng chương trình Giáo dục phổ thông do Bộ Giáo dục và Đào tạo ban hành.
+
+ - Chủ đề dùng để gán các học liệu trên hệ thống K12Online, phục vụ cho giáo viên, nhà trưởng tổ chức bài kiểm tra dạng ma trận dễ dàng hơn.
+
+ a) Tiểu học
+
+ Danh mục mã môn học cấp Tiểu học:
+
+ STT Mã danh mục Tên danh mục
+
+ 1 02 Tiếng Việt
+
+ 2 01 Toán
+
+ 3 04 Tự nhiên và Xã hội
+
+ 4 13 Khoa học
+
+ 5 05 Lịch sử và Địa lý
+
+ 6 11 Ngoại ngữ
+
+ 7 87 TH-CN (Công nghệ)
+
+ 8 88 Giáo dục thể chất
+
+ 9 89 Nghệ thuật (Âm nhạc)
+
+ 10 90 Nghệ thuật (Mĩ thuật)
+
+ 11 91 Hoạt động trải nghiệm
+
+ 12 12 TH-CN (Tin học)
+
+ 13 14 Tiếng dân tộc
+
+ 14 03 Đạo đức
+
+ 15 06 Âm nhạc
+
+ 16 07 Mỹ thuật
+
+ 17 08 Thủ công
+
+ 18 09 Kỹ thuật
+
+ 19 10 Thể dục
+
+ b) THCS
+
+ Danh mục mã môn học cấp THCS
+
+ STT Mã danh mục Tên danh mục
+
+ 1 15 Toán
+
+ 2 16 Vật lí
+
+ 3 17 Hóa học
+
+ 4 18 Sinh học
+
+ 5 19 Ngữ văn
+
+ 6 20 Lịch sử
+
+ 7 21 Địa lí
+
+ 8 69 Ngoại ngữ 1
+
+ 9 31 Ngoại ngữ 2
+
+ 10 26 GDCD
+
+ 11 27 Công nghệ
+
+ 12 28 Thể dục
+
+ 13 29 Âm nhạc
+
+ 14 30 Mỹ thuật
+
+ 15 32 Tin học
+
+ 16 33 Môn khác
+
+ 17 66 Khoa học Tự nhiên
+
+ 18 67 Khoa học Xã hội
+
+ 19 68 Hoạt động giáo dục
+
+ 20 71 Tiếng Pháp
+
+ 21 72 Toán Pháp
+
+ 22 73 Môn tự chọn song ngữ
+
+ 23 05 Lịch sử và địa lý
+
+ 24 92 Tự chọn 1
+
+ 25 93 Nghề PT
+
+ 26 88 Giáo dục thể chất
+
+ 27 97 Nghệ thuật
+
+ 28 91 HĐTN
+
+ 29 99 GDĐP
+
+ 30 14 Tiếng dân tộc thiểu số
+
+ c) THPT
+
+ Danh mục mã môn học cấp THPT
+
+ - Link tài liệu tham chiếu: https://www.moet.gov.vn/tintuc/Pages/CT-GDPT-Tong-The.aspx?ItemID=8421
+
+ 2. Tại sao chủ đề trên K12Online không giống mục lục SGK nhà trường đang sử dụng?
+
+ - Như đã đề cập ở trên, do hiện tại có nhiều bộ sách giáo khoa, nên việc phân chia các chủ đề theo mục lục sách giáo khoa là không chuẩn xác. Do vậy, các chủ đề trên K12Online sẽ tuân theo và bám sát chương trình giáo dục phổ thông do Bộ GD&ĐT đã ban hành.
+
+ 3. Giáo viên có được thêm mới chủ đề trên K12Online không?
+
+ - Có. Giáo viên có thể tạo thêm chủ đề con - là những chủ đề nhỏ trong từng chủ đề để tổ chức các bài kiểm tra thường xuyên trong quá trình dạy học.
+
+ Lưu ý:
+
+ - Chỉ tạo chủ đề mới khi thực sự cần thiết.
+
+ - Không nên tạo và chia quá nhỏ chủ đề, sẽ gây rối rắm và khó khăn để giáo viên quản lý.
+
+ - Nếu giáo viên thấy có 1 chủ đề lớn nào đó mà hệ thống thiếu, liên hệ Viettel để được cập nhật, bổ sung.
+
+ 4. Nhà trường có được thêm chủ đề mới trên K12Online không?
+
+ - Các chủ đề trên K12Online cơ bản đã được cập nhật đầy đủ theo đúng chương trình giáo dục phổ thông do Bộ Giáo dục và Đào tạo ban hành.  Nhà trường dùng được để tổ chức các bài thi theo quy định.
+
+ - Hiện tại, nhà trường không được thêm mới chủ đề trên K12Online, do việc thêm mới này sẽ ảnh hưởng tới toàn bộ danh mục chủ đề của giáo viên trong trường. Nếu nhà trường mà quản lý không chuẩn sẽ tạo ra "rác" trên hệ thống của nhà trường.
+
+ 5. Làm gì khi thấy các chủ đề trên K12Online chưa đúng?
+
+ - Khi thấy các chủ đề trên K12Online chưa đúng với Thông tư 32 của Bộ Giáo dục và Đào tạo ban hành. Thầy/cô vui lòng liên hệ Viettel bằng 1 trong các cách cách sau:
+
+ Cách 1: Liên hệ chuyên viên Viettel tỉnh/tp để được hỗ trợ.
+
+ Cách 2: Nhập thông tin vào form sau để được hỗ trợ.
+
+ Link khảo sát: https://docs.google.com/forms/d/e/1FAIpQLSeHpNyrFT1LaBSCla58-LFKughpZgwFLNfLaDVUh3nBQ5o3Ew/viewform
+
+==================================================
+

@@ -1,0 +1,23 @@
+### BÀI VIẾT [37]: Quy trình xây dựng và kiểm duyệt kho học liệu cấp trường
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Kho học liệu số > Nhà trường
+- Link gốc: https://hotro.k12online.vn/kho-hoc-lieu/quy-trinh-xay-dung-va-kiem-duyet-kho-hoc-lieu-cap-truong.html
+
+**Nội dung:**
+Dưới đây là quy trình xây dựng và kiểm duyệt kho học liệu cấp trường.
+
+ Bước 1: Giáo viên vào Học tập => Chọn Bài giảng => Chọn Thêm mới để tiến hành xây dựng bài giảng
+
+ Bước 2: Sau khi đã hoàn thành xây dựng xong nội dung học liệu. Giáo viên gửi yêu cầu kiểm duyệt bằng cách click vào biểu tượng Xuất bản ở cột Hành động
+ Bước 3: Nhà trường hoặc Tổ chuyên môn vào duyệt bài giảng của giáo viên tại menu Kiểm duyệt nội dung => Chọn Bài giảng => Xem và duyệt bài giảng.
+
+ Bước 4: Khi bài giảng đã được duyệt rồi, giáo viên chia sẻ lên kho học liệu chung của trường để trường kiểm duyệt.
+ -    Vào Học tập => Chọn Bài giảng => Chọn bài giảng muốn chia sẻ lên kho học liệu cấp trường => Tại cột Chia sẻ của bài giảng đó, giáo viên nhấn nút Chia sẻ và lựa chọn các thông tin theo hướng dẫn để thực hiện.
+
+ Lưu ý: Khi chia sẻ, giáo viên cần chọn danh mục chia sẻ, nếu trường chưa có danh mục thì báo cho quản trị của trường đó tạo trên K12Online. (Nhà trường vào menu Quản lý khai báo => Chọn Kho học liệu => Chọn Danh mục kho học liệu để thực hiện khai báo danh mục cho kho học liệu của trường).
+
+ Bước 5: Trường vào kiểm duyệt nội dung của kho học liệu cấp trường.
+ -    Vào Kho học liệu => Chọn Quản lý nội dung => Chọn bài giảng cần kiểm duyệt.
+ -    Tại cột Trạng thái => Chọn Duyệt để duyệt nội dung bài giảng.
+
+==================================================
+

@@ -1,0 +1,200 @@
+### BÀI VIẾT [28]: Hướng dẫn Giáo viên tạo bài giảng
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Giáo viên
+- Link gốc: https://hotro.k12online.vn/huong-dan-giao-vien-tao-bai-giang.html
+
+**Nội dung:**
+I. Các dạng bài giảng hiện có trên K12Online
+
+ K12Online hiện tại có 2 dạng bài giảng để thầy/cô linh hoạt sử dụng tùy mục đích của mình:
+
+ - Bài giảng gán thời khóa biểu
+
+ - Bài giảng tự do (không gán thời khóa biểu)
+
+ Cả 2 dạng này đều mục đích là giao nội dung cho học sinh tự học, tự nghiên cứu nội dung ở nhà, dưới sự hướng dẫn của giáo viên qua các nội dung mà giáo viên đưa lên. Chỉ khác nhau về hình thức hiển thị cho học sinh và thời gian mà học sinh được phép học.
+
+ 1. Bài giảng gán thời khoá biểu
+
+ - Bài giảng gán thời khoá biểu là dạng bài giảng mặc định trên K12Online. Sau khi tạo bài giảng xong, giáo viên có thể gán bài giảng này lên thời khoá biểu theo tiết cụ thể và ngày cụ thể để yêu cầu học sinh khi nào đúng tiết học đó thì mới vào học được.
+
+ Chú ý:
+
+ - Học sinh chỉ xem được bài giảng nếu giáo viên đã thực hiện gán vào thời khóa biểu và đến thời gian tiết học đó diễn ra.
+
+ - Bài giảng được gán thời khoá biểu thì học sinh có thể nhìn thấy ngay trên cả Thời khoá biểu và menu Học tập => chọn Bài giảng của học sinh.
+
+ - Nếu trong tiết học đó mà học sinh chưa học hết nội dung bài giảng, học sinh có thể học sau thời gian đó, hệ thống vẫn cập nhật tiến độ hoàn thành. Trừ khi giáo viên cấu hình yêu cầu học sinh phải hoàn thành trong thời gian đó thì hệ thống mới không ghi nhận.
+
+ 2. Bài giảng tự do
+
+ - Bài giảng tự do là loại bài giảng mà giáo viên không muốn yêu cầu bắt buộc học sinh hoàn thành trong một khoảng thời gian nào. Khi tạo bài giảng tự do, học sinh có thể vào học bất kỳ khi nào nếu muốn.
+
+ Chú ý:
+
+ - Sau khi bài giảng được duyệt, học sinh sẽ nhìn thấy luôn.
+
+ - Bài giảng tự do chỉ hiện trong menu Học tập => Bài giảng của học sinh, không nhìn thấy trên giao diện của phần thời khoá biểu.
+
+ II. Hướng dẫn tạo bài giảng trên K12Online
+
+ Để tạo bài giảng trực tuyến trên K12Online, giáo viên thực hiện theo các hướng dẫn sau:
+
+ Bước 1: Thêm mới bài giảng
+
+ - Vào Học tập => Chọn Bài giảng => Chọn Thêm mới
+
+ - Giáo viên nhập các thông tin cơ bản của bài giảng.
+
+ Các thông tin chung cần có của một bài giảng:
+
+ + Tên bài giảng (*): tên bài giảng học sinh sẽ nhìn thấy khi giáo viên giao bài
+
+ + Khối lớp (*):
+
+ + Môn học (*):
+
+ + Chủ đề (theo chương trình giáo dục phổ thông):
+
+ + Giới thiệu: giáo viên có thể nhập giới thiệu của bài giảng vào đây để học sinh biết khi học bài. Phần giới thiệu này chỉ là thông tin chung của bài học, không được tính là học liệu của bài học và không tính vào tiến độ học. Ví dụ: Giới thiệu bài giảng; Mục tiêu của bài giảng; Điều kiện tiên quyết...
+
+ Lưu ý:
+
+ Giáo viên có thể cấu hình yêu cầu học học lần lượt theo thứ tự các nội dung đưa lên bài giảng bằng cách bật tính năng Nội dung học theo thứ tự .
+ Giáo viên có thể cho phép học sinh vào học bài giảng bất cứ thời gian nào thì bật tính năng Bài giảng học tự do .
+
+ Bước 2: Thêm mới chuyên đề
+
+ Mỗi một bài giảng có thể có nhiều nội dung kiến thức khác nhau. Giáo viên có thể chia nội dung đó thành nhiều chuyên đề. Mỗi chuyên đề có thể gồm nhiều bài học nhỏ để học sinh tiện theo dõi và tra cứu.
+
+ - Mặc định, hệ thống sẽ tạo sẵn 1 chuyên đề đầu tiên của bài giảng sau khi tạo, đặt tên là Chuyên đề 1. Giáo viên có thể sửa lại tên chuyên đề này bằng cách nháy chuột phải vào tên chuyên đề đó, chọn Đổi tên .
+
+ - Để thêm một chuyên đề mới, giáo viên click vào biểu tượng Thêm mới chuyên đề ở phía trên thanh điều hướng của bài giảng.
+
+ - Nhập các thông tin cơ bản của bài giảng và nhấn Lưu lại để lưu lại thông tin bài giảng.
+
+ Bước 3: Thêm mới bài học
+
+ ​Để thêm các bài học trong chuyên đề, tại mỗi chuyên đề, nháy chuột phải và chọn Thêm mới => Chọn dạng học liệu muốn thêm vào trong chuyên đề đó.
+
+ Dạng 1: Bài học dạng video
+
+ Để thêm các bài học dạng video, chọn loại Bài học dạng video.
+
+ Bước 1: Nhập tên video
+
+ Bước 2: Đưa video vào bài giảng
+
+ Giáo viên có thể chọn video cần đưa vào bài giảng bằng 1 trong 2 cách sau:
+
+ - Cách 1: Với những video có sẵn trên máy tính, giáo viên click vào nút Chọn file tải lên => Nhấn Lưu lại .
+
+ Lưu ý: Định dạng hỗ trợ: .mp4
+
+ - Cách 2: Với những video có sẵn trên Youtube, dán đường dẫn video Youtube tại ô Link video Youtube trong tab Chọn video trên Youtube => Nhấn Lưu lại .
+
+ Lưu ý: Chỉ sử dụng những video được để ở chế độ công khai trên Youtube.
+
+ Bước 3: Chèn câu hỏi vào giữa video (nếu muốn)
+
+ - Nếu giáo viên muốn trong quá trình học sinh xem video, cần phải trả lời một số câu hỏi thì nhấn nút Thêm câu hỏi để thêm câu hỏi sẽ xuất hiện trong lúc xem video.
+
+ - Chọn dạng câu hỏi cần thêm => Nhập thời gian câu hỏi xuất hiện => Nhập nội dung cho câu hỏi và nhấn Lưu lại .
+
+ Dạng 2: Bài dạng dạng text
+
+ Để thêm các bài học dạng text, chọn loại Bài học dạng text.
+
+ - Nhập tiêu đề bài học
+
+ - Soạn thảo nội dung bài học theo hướng dẫn.
+
+ - Nhấn Lưu lại .
+
+ Dạng 3: Bài dạng chuẩn scorm
+
+ Để thêm các bài học chuẩn scorm (cái bài giảng elearning được soạn từ Storyline, Adobe Presenter, iSpring…), chọn loại Bài học chuẩn scorm
+
+ - Nhập tiêu đề cho bài giảng chuẩn scorm
+
+ - Nén bài giảng scorm lại file .zip và đưa lên hệ thống
+
+ - Nhấn Lưu lại .
+
+ Dạng 4: Bài tập
+
+ Để thêm các bài tập cho học sinh ôn tập, chọn loại Bài tập .
+
+ - Nhập tiêu đề bài tập và nhấn Lưu lại .
+
+ - Tạo câu hỏi cho bài tập bằng cách Thêm câu hỏi mới hoặc Thêm từ ngân hàng câu hỏi
+
+ Lưu ý:
+
+ Tính năng Bài tập ở trong Bài giảng chỉ phù hợp nếu giáo viên muốn tổ chức các phiếu bài tập cho học sinh tự luyện.
+ Nếu giáo viên muốn giao bài tập hoặc bài kiểm tra cho học sinh mang tính chất "bắt buộc" và nhiều yêu cầu chặt chẽ hơn cho học sinh thực hiện thì nên sử dụng tính năng Bài kiểm tra .
+ Dạng 5: Bài học dạng Nhúng
+
+ Để thêm các bài học được nhúng từ các hệ thống khác (như Canva, Wordwall...), chọn loại Bài học dạng nhúng.
+
+ - Nhập tiêu đề bài học
+
+ - Nhập link nhúng của từng hệ thống. Xem hướng dẫn tại đây: https://hotro.k12online.vn/cau-hoi-thuong-gap/huong-dan-chen-hoc-lieu-dang-nhung-link-tren-k12online.html
+
+ - Nhấn Lưu lại .
+
+ Dạng 6: Tài liệu
+
+ Để thêm các tài liệu cho học sinh ôn tập, chọn loại Tài liệu.
+
+ - Nhập tiêu đề tài liệu
+
+ - Tải file tài liệu cần tải lên (nên sử dụng định dạng .pdf).
+
+ - Nhấn Lưu lại .
+
+ Bước 4: Xem trước
+
+ - Xem trước trước khi gửi yêu cầu kiểm duyệt (nếu cần)
+
+ Bước 5: Xuất bản
+
+ Sau khi rà soát lại bài giảng đã đạt yêu cầu rồi. Giáo viên nhấn nút Xuất bản để gửi yêu cầu cho Tổ trưởng chuyên môn và Nhà trường kiểm duyệt (Nếu nhà trường yêu cầu kiểm duyệt)
+
+ Bước 6: Giao bài cho học sinh tự học
+
+ - Sau khi bài giảng được duyệt, giáo viên vào Lịch làm việc => Chọn Thời khóa biểu => Chọn tiết học mà cần học sinh học
+
+ - Giáo viên thực hiện gán bài giảng vào tiết học đó bằng cách chọn các thông tin của tiết học:
+
+ + Thời gian bắt đầu
+
+ + Thời gian kết thúc
+
+ + Tiết
+
+ + Lớp
+
+ + Môn học
+
+ + Loại học liệu: chọn Bài giảng
+
+ + Bài giảng: chọn bài giảng mà giáo viên cần giao cho học sinh tự học.
+
+ Lưu ý: Với bài giảng tự do, không cần làm bước này. Khi bài giảng tự do được duyệt thì học sinh sẽ nhìn thấy bài giảng luôn và học bất kỳ lúc nào cũng được.
+
+ III. Một số câu hỏi thường gặp về bài giảng trực tuyến trên K12Online
+
+ 1. Bài giảng gán thời khóa biểu mục đích để cho giáo viên muốn học sinh đúng thời gian tiết học đó vào học. Nếu trong tiết học đó học sinh không vào học thì sẽ không được tính điểm danh, vì học sinh không vào học đúng thời gian quy định.
+
+ 2. Việc điểm danh khi học bài giảng chỉ áp dụng với dạng bài giảng gán thời khóa biểu, không áp dụng với bài giảng tự do.
+
+ 3. Tính năng điểm danh khác với việc học sinh đó có học bài giảng đó hết hay không. Nó chỉ ghi nhận là thời điểm tiết học đó, học sinh có vào học.
+
+ 4. Để xem chính xác học sinh có học hoàn thành hết nội dung bài giảng hay chưa, giáo viên vào xem tại phần Báo cáo của từng bài giảng để xem chi tiết tiến độ.
+
+ 5. Bài giảng gán thời khóa biểu đã kết thúc rồi, học sinh vẫn xem lại bài giảng đó bình thường và vẫn ghi nhận tiến đọ hoàn thành cho học sinh trong trường hợp vào học ngoài tiết đó. Chỉ trừ khi giáo viên cấu hình là không ghi nhận hoàn thành khi tiết học kết thúc thì hệ thống mới không ghi nhận khi gán vào thời khóa biểu.
+
+ 6. Việc điểm danh bài giảng và tiến độ hoàn thành hoàn thành của bài giảng là 2 việc hoàn thành khác nhau. Học sinh có thể vào điểm danh bài giảng đã được gắn thời khóa biểu rồi nhưng chưa chắc đã hoàn thành hết bài giảng đó. 2 tính năng này là cung cấp thêm công cụ bổ để giúp giáo viên theo dõi quá trình học của học sinh được thuận tiện hơn.
+
+==================================================
+

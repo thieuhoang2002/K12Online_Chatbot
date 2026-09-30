@@ -1,0 +1,35 @@
+### BÀI VIẾT [36]: Hướng dẫn Nhà trường kiểm duyệt học liệu trên kho học liệu
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Kho học liệu số > Nhà trường
+- Link gốc: https://hotro.k12online.vn/kho-hoc-lieu/huong-dan-nha-truong-kiem-duyet-hoc-lieu-tren-kho-hoc-lieu.html
+
+**Nội dung:**
+Với chức năng là đối tượng quản lý, tài khoản nhà trường trên K12Online sẽ có tính năng để kiểm duyệt học liệu trên kho học liệu của trường.
+
+ 1. Hướng dẫn Nhà trường kiểm duyệt
+
+ Bước 1: Vào Kho học liệu => Chọn Quản lý nội dung
+
+ Bước 2: Chọn học liệu muốn kiểm duyệt => Nhà trường kiểm tra nội dung và hình thức của học liệu đó.
+
+ Bước 3: Sau khi đã kiểm tra xong, Nhà trường chọn hành động muốn kiểm duyệt.
+
+ Các hành động khi xét duyệt học liệu trên kho học liệu:
+
+ - Xét duyệt: Xét duyệt sơ bộ học liệu, nhưng vẫn chưa được hiển thị trên kho học liệu.
+
+ - Từ chối xét duyệt: Từ chối xét duyệt. Nhà trường cần cung cấp lý do từ chối.
+
+ - Duyệt: Đây là hành động cuối cùng để duyệt học liệu, sau khi học liệu được duyệt, học liệu sẽ hiển thị trên kho học liệu.
+
+ - Từ chối duyệt: Từ chối duyệt học liệu. Nhà trường cần cung cấp lý do từ chối.
+
+ 2. Hướng dẫn Nhà trường phân quyền cho giáo viên kiểm duyệt
+
+ - Ngoài việc tài khoản nhà trường duyệt học liệu ra, admin trường có thể phân công cho giáo viên khác xét duyệt/duyệt học liệu.
+
+ - Vào Quản lý tài khoản => Chọn Phân quyền => Chọn Thêm mới
+
+ - Chọn tài khoản và loại quyền mong muốn ( Xét duyệt kho học liệu/Duyệt kho học liệu ). Nhà trường có thể phân quyền theo từng khối, môn, danh mục.
+
+==================================================
+
