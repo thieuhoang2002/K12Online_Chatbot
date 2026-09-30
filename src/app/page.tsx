@@ -104,7 +104,7 @@ export default function Home() {
         {
           role: "assistant",
           content:
-            "Kính chào Quý Thầy/Cô giáo và Cán bộ IT nhà trường! Em là Trợ lý AI hỗ trợ nghiệp vụ K12Online.\n\nThầy/Cô có thể hỏi em bất kỳ vấn đề gì về: nhập đề thi từ Word, làm bài trực tuyến, quản lý bài tập K12Connect, điểm danh, xếp thời khóa biểu... Em sẽ hướng dẫn từng bước chi tiết nhất ạ!",
+            "Xin chào bạn! Mình là Trợ lý AI hỗ trợ nghiệp vụ K12Online.\n\nBạn có thể hỏi mình bất kỳ vấn đề gì về: nhập đề thi từ Word, làm bài trực tuyến, quản lý bài tập K12Connect, điểm danh, xếp thời khóa biểu... Mình sẽ hướng dẫn từng bước chi tiết nhất nhé!",
         },
       ],
       createdAt: Date.now(),
@@ -179,7 +179,7 @@ export default function Home() {
     } catch (err: any) {
       const errorMsg: Message = {
         role: "assistant",
-        content: `Dạ thưa Thầy/Cô, hệ thống đang gặp gián đoạn tạm thời: ${err.message}. Thầy/Cô vui lòng thử lại sau giây lát ạ.`,
+        content: `Hệ thống đang gặp gián đoạn tạm thời: ${err.message}. Bạn vui lòng thử lại sau giây lát nhé.`,
       };
       setSessions((prev) =>
         prev.map((s) =>
@@ -272,7 +272,7 @@ export default function Home() {
           ) : (
             <div className="space-y-2">
               <div className="p-2 rounded-lg bg-slate-800/30 border border-slate-700/40 text-slate-400 text-[11px] leading-relaxed">
-                Thầy/Cô đang ở <strong>Chế độ Khách</strong> (Tra cứu tự do không cần đăng nhập).
+                Bạn đang ở <strong>Chế độ Khách</strong> (Tra cứu tự do không cần đăng nhập).
               </div>
               <button
                 onClick={() => setIsAuthOpen(true)}
@@ -397,7 +397,7 @@ export default function Home() {
         <div className="px-6 py-2 bg-slate-950/80 border-t border-slate-800/40">
           <div className="max-w-4xl mx-auto flex gap-2 overflow-x-auto pb-1 text-xs">
             <span className="text-slate-500 whitespace-nowrap self-center font-medium flex items-center gap-1">
-              <Sparkles className="w-3.5 h-3.5 text-amber-400" /> Thầy/Cô hay hỏi:
+              <Sparkles className="w-3.5 h-3.5 text-amber-400" /> Bạn có thể hỏi:
             </span>
             {QUICK_PROMPTS.map((q, qIdx) => (
               <button
@@ -425,7 +425,7 @@ export default function Home() {
                   }
                 }}
                 rows={1}
-                placeholder="Thầy/Cô hãy nhập câu hỏi vào đây (Ví dụ: Cách duyệt bài tập về nhà trên K12Connect?)..."
+                placeholder="Bạn hãy nhập câu hỏi vào đây (Ví dụ: Cách duyệt bài tập về nhà trên K12Connect?)..."
                 className="flex-1 bg-transparent px-3 py-2 text-sm text-slate-100 placeholder-slate-400 focus:outline-none resize-none max-h-32"
               />
               <button

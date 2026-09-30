@@ -35,7 +35,7 @@ export default function DonateModal({ isOpen, onClose }: DonateModalProps) {
 
         <div className="space-y-3 text-sm text-slate-300 leading-relaxed">
           <p>
-            Dự án <strong className="text-sky-400">Trợ Lý K12Online</strong> được phát triển hoàn toàn vì cộng đồng giáo dục, phi lợi nhuận nhằm hỗ trợ Thầy/Cô và Cán bộ IT tra cứu nhanh chóng, chính xác.
+            Dự án <strong className="text-sky-400">Trợ Lý K12Online</strong> được phát triển hoàn toàn vì cộng đồng giáo dục, phi lợi nhuận nhằm hỗ trợ bạn tra cứu nhanh chóng, chính xác.
           </p>
           <p className="p-3 bg-slate-800/60 rounded-xl border border-slate-700/50 text-xs">
             Mọi sự ủng hộ (dù chỉ là 10.000đ - một ly trà đá) đều được dùng 100% để duy trì chi phí máy chủ, tên miền và kết nối API AI cho toàn thể cộng đồng sử dụng miễn phí.
@@ -58,7 +58,7 @@ export default function DonateModal({ isOpen, onClose }: DonateModalProps) {
 
         <div className="mt-5 flex items-center justify-between pt-3 border-t border-slate-800 text-xs text-slate-500">
           <span className="flex items-center gap-1 text-slate-400">
-            <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500" /> Trân trọng cảm ơn Quý Thầy/Cô!
+            <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500" /> Trân trọng cảm ơn bạn!
           </span>
           <button
             onClick={onClose}

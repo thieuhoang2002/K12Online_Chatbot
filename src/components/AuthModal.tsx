@@ -126,7 +126,7 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }: AuthModal
           <form onSubmit={handleMagicLink} className="space-y-3">
             <div>
               <label className="block text-xs font-semibold text-slate-300 mb-1">
-                Địa chỉ Email của Thầy/Cô:
+                Địa chỉ Email của bạn:
               </label>
               <div className="relative">
                 <Mail className="absolute left-3 top-3 w-4 h-4 text-slate-500" />
@@ -134,7 +134,7 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }: AuthModal
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="thayco@moet.edu.vn hoặc gmail..."
+                  placeholder="email@example.com..."
                   required
                   className="w-full pl-9 pr-3 py-2 bg-slate-800 border border-slate-700 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition"
                 />

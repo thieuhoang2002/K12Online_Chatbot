@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Trợ Lý K12Online - AI Hỗ Trợ Nghiệp Vụ Giáo Dục (Phi Lợi Nhuận)",
-  description: "Công cụ hỏi đáp thông minh dành cho Quý Thầy/Cô giáo và Cán bộ IT nhà trường tra cứu nghiệp vụ K12Online nhanh chóng, chính xác.",
+  description: "Công cụ hỏi đáp thông minh hỗ trợ tra cứu nghiệp vụ K12Online nhanh chóng, chính xác.",
 };
 
 export default function RootLayout({
