@@ -50,9 +50,9 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    // 1. KIỂM TRA BỘ NHỚ RAM CACHE (Nếu câu hỏi đã từng trả lời trước đó)
+    // 1. KIỂM TRA BỘ NHỚ RAM / REDIS CACHE (Nếu câu hỏi đã từng trả lời trước đó)
     // Luôn luôn kiểm tra cache bất kể phiên chat dài hay ngắn
-    const cached = responseCache.get(model, cacheKey);
+    const cached = await responseCache.get(model, cacheKey);
     if (cached) {
       console.log(`⚡ [RAM Cache] Trúng cache siêu tốc cho: "${message.slice(0, 35)}..."`);
       return NextResponse.json({
@@ -100,8 +100,8 @@ ${contextText || "Chưa có tài liệu phù hợp."}`;
       url: d.sourceUrl,
     }));
 
-    // 6. LƯU VÀO BỘ NHỚ RAM CACHE CHO CÁC LẦN HỎI SAU
-    responseCache.set(model, cacheKey, content, sources);
+    // 6. LƯU VÀO BỘ NHỚ CACHE (REDIS & RAM) CHO CÁC LẦN HỎI SAU
+    await responseCache.set(model, cacheKey, content, sources);
 
     return NextResponse.json({
       reply: content,
