@@ -267,6 +267,7 @@ export default function Home() {
   const messages = currentSession?.messages || [];
 
   function createNewChat() {
+    if (loading) return;
     const newSession: ChatSession = {
       id: "chat_" + Date.now(),
       title: "Cuộc trò chuyện mới",
@@ -560,11 +561,15 @@ export default function Home() {
           <div className="p-3">
             <button
               onClick={createNewChat}
+              disabled={loading}
               className={`w-full py-2.5 px-3 rounded-xl text-sm font-medium flex items-center justify-center gap-2 transition shadow-sm border ${
+                loading ? "opacity-40 cursor-not-allowed" : ""
+              } ${
                 isDarkMode
                   ? "bg-slate-800/80 hover:bg-slate-700/80 border-slate-700/60 text-slate-200"
                   : "bg-slate-50 hover:bg-slate-100 border-slate-200 text-slate-700"
               }`}
+              title={loading ? "Đang trả lời câu hỏi..." : "Tạo đoạn chat mới"}
             >
               <Plus className="w-4 h-4 text-sky-500" />
               Đoạn chat mới
@@ -579,8 +584,13 @@ export default function Home() {
             {sessions.map((s) => (
               <div
                 key={s.id}
-                onClick={() => setCurrentSessionId(s.id)}
-                className={`group w-full p-2.5 rounded-xl text-xs flex items-center justify-between transition cursor-pointer ${
+                onClick={() => {
+                  if (loading) return;
+                  setCurrentSessionId(s.id);
+                }}
+                className={`group w-full p-2.5 rounded-xl text-xs flex items-center justify-between transition ${
+                  loading ? "cursor-not-allowed opacity-60" : "cursor-pointer"
+                } ${
                   s.id === currentSessionId
                     ? isDarkMode
                       ? "bg-sky-600/15 text-sky-300 font-medium border border-sky-500/30"
@@ -700,12 +710,15 @@ export default function Home() {
             {/* Nút Đoạn chat mới (luôn tiện lợi ở topbar) */}
             <button
               onClick={createNewChat}
+              disabled={loading}
               className={`flex items-center gap-1 px-2.5 py-1.5 rounded-full text-xs font-medium border transition ${
+                loading ? "opacity-40 cursor-not-allowed" : ""
+              } ${
                 isDarkMode
                   ? "bg-slate-800/60 hover:bg-slate-700/60 border-slate-700/60 text-slate-300"
                   : "bg-white hover:bg-slate-50 border-slate-200 text-slate-700"
               }`}
-              title="Tạo cuộc hội thoại mới"
+              title={loading ? "Đang trả lời câu hỏi..." : "Tạo cuộc hội thoại mới"}
             >
               <Plus className="w-3.5 h-3.5 text-sky-500" />
               <span className="hidden md:inline">Đoạn chat mới</span>
@@ -879,8 +892,11 @@ export default function Home() {
                       {m.followUps.map((prompt, pIdx) => (
                         <button
                           key={pIdx}
+                          disabled={loading}
                           onClick={() => handleSendMessage(prompt)}
                           className={`text-left inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs transition border group/btn ${
+                            loading ? "opacity-40 cursor-not-allowed" : ""
+                          } ${
                             isDarkMode
                               ? "bg-slate-800/80 hover:bg-sky-950/60 border-slate-700/60 hover:border-sky-500/50 text-slate-300 hover:text-sky-300"
                               : "bg-slate-50 hover:bg-sky-50 border-slate-200 hover:border-sky-300 text-slate-700 hover:text-sky-700"
@@ -917,8 +933,11 @@ export default function Home() {
             {QUICK_PROMPTS.map((q, qIdx) => (
               <button
                 key={qIdx}
+                disabled={loading}
                 onClick={() => handleSendMessage(q)}
                 className={`px-3 py-1 rounded-full whitespace-nowrap transition text-[11.5px] border ${
+                  loading ? "opacity-40 cursor-not-allowed" : ""
+                } ${
                   isDarkMode
                     ? "bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white border-slate-800"
                     : "bg-white hover:bg-slate-100 text-slate-700 hover:text-slate-900 border-slate-200 shadow-xs"
@@ -946,16 +965,25 @@ export default function Home() {
             >
               <textarea
                 value={inputMessage}
+                disabled={loading}
                 onChange={(e) => setInputMessage(e.target.value)}
                 onKeyDown={(e) => {
                   if (e.key === "Enter" && !e.shiftKey) {
                     e.preventDefault();
-                    handleSendMessage();
+                    if (!loading) {
+                      handleSendMessage();
+                    }
                   }
                 }}
                 rows={1}
-                placeholder="Bạn hãy nhập câu hỏi vào đây (Ví dụ: Cách duyệt bài tập về nhà trên K12Connect?)..."
+                placeholder={
+                  loading
+                    ? "Trợ lý K12 đang soạn thảo câu trả lời, bạn vui lòng đợi trong giây lát..."
+                    : "Bạn hãy nhập câu hỏi vào đây (Ví dụ: Cách duyệt bài tập về nhà trên K12Connect?)..."
+                }
                 className={`flex-1 bg-transparent px-3 py-2 text-sm focus:outline-none resize-none max-h-32 ${
+                  loading ? "cursor-not-allowed opacity-60" : ""
+                } ${
                   isDarkMode
                     ? "text-slate-100 placeholder-slate-400"
                     : "text-slate-900 placeholder-slate-400"
@@ -964,9 +992,14 @@ export default function Home() {
               <button
                 onClick={() => handleSendMessage()}
                 disabled={loading || !inputMessage.trim()}
-                className="p-2.5 bg-sky-600 hover:bg-sky-500 disabled:opacity-30 disabled:hover:bg-sky-600 text-white rounded-xl transition shadow-md shrink-0 mr-1"
+                className="p-2.5 bg-sky-600 hover:bg-sky-500 disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-sky-600 text-white rounded-xl transition shadow-md shrink-0 mr-1"
+                title={loading ? "Đang xử lý câu hỏi..." : "Gửi câu hỏi"}
               >
-                <Send className="w-4 h-4" />
+                {loading ? (
+                  <Sparkles className="w-4 h-4 animate-spin text-amber-300" />
+                ) : (
+                  <Send className="w-4 h-4" />
+                )}
               </button>
             </div>
 
