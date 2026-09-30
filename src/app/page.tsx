@@ -359,14 +359,20 @@ export default function Home() {
       return;
     }
 
-    // Hiển thị tin nhắn người dùng và bật trạng thái tải
+    // Hiển thị tin nhắn người dùng và tạo ngay tin nhắn bot rỗng để kích hoạt hiệu ứng Thinking
+    const initialBotMsg: Message = {
+      role: "assistant",
+      content: "",
+      sources: [],
+    };
+
     setSessions((prev) =>
       prev.map((s) => {
         if (s.id === targetSessionId) {
           return {
             ...s,
             title: s.messages.length <= 1 ? query.slice(0, 30) + "..." : s.title,
-            messages: updatedMessages,
+            messages: [...updatedMessages, initialBotMsg],
           };
         }
         return s;
@@ -395,25 +401,6 @@ export default function Home() {
         } catch (e) {}
         throw new Error(errorMsgText);
       }
-
-      // Tạo trước tin nhắn bot rỗng để đón streaming
-      const initialBotMsg: Message = {
-        role: "assistant",
-        content: "",
-        sources: [],
-      };
-
-      setSessions((prev) =>
-        prev.map((s) => {
-          if (s.id === targetSessionId) {
-            return {
-              ...s,
-              messages: [...updatedMessages, initialBotMsg],
-            };
-          }
-          return s;
-        })
-      );
 
       const reader = res.body?.getReader();
       const decoder = new TextDecoder();
@@ -460,7 +447,6 @@ export default function Home() {
           }
 
           if (hasUpdated) {
-            setLoading(false);
             setSessions((prev) =>
               prev.map((s) => {
                 if (s.id === targetSessionId) {
@@ -793,7 +779,7 @@ export default function Home() {
                 }`}
               >
                 {/* Nút copy câu trả lời */}
-                {m.role === "assistant" && (
+                {m.role === "assistant" && m.content.trim().length > 0 && (
                   <button
                     onClick={() => copyToClipboard(m.content, idx)}
                     title="Sao chép nội dung"
@@ -812,15 +798,42 @@ export default function Home() {
                 )}
 
                 {m.role === "assistant" ? (
-                  <MarkdownRenderer content={m.content} isDarkMode={isDarkMode} />
+                  m.content.trim() === "" ? (
+                    /* HIỆU ỨNG THINKING KHI CHƯA CÓ NỘI DUNG */
+                    <div className="flex items-center gap-2.5 py-1 text-xs">
+                      <div className="flex space-x-1 items-center">
+                        <span className="w-2 h-2 rounded-full bg-sky-500 animate-bounce [animation-delay:-0.3s]"></span>
+                        <span className="w-2 h-2 rounded-full bg-sky-500 animate-bounce [animation-delay:-0.15s]"></span>
+                        <span className="w-2 h-2 rounded-full bg-sky-500 animate-bounce"></span>
+                      </div>
+                      <span className="font-medium text-sky-500 dark:text-sky-400 animate-pulse flex items-center gap-1.5">
+                        <Sparkles className="w-3.5 h-3.5 text-amber-400 animate-spin" />
+                        Trợ lý K12 đang suy nghĩ và tra cứu câu trả lời...
+                      </span>
+                    </div>
+                  ) : (
+                    <div>
+                      <MarkdownRenderer content={m.content} isDarkMode={isDarkMode} />
+                      {/* HIỆU ỨNG KHI ĐANG STREAM DỞ HOẶC TẠM DỪNG NỬA CHỪNG */}
+                      {loading && idx === messages.length - 1 && (
+                        <div className="flex items-center gap-2 mt-2 pt-2 border-t border-slate-200 dark:border-slate-800 text-xs text-sky-500 dark:text-sky-400 font-medium">
+                          <span className="inline-block w-2 h-3.5 bg-sky-500 rounded-sm animate-pulse" />
+                          <div className="flex items-center gap-1.5 animate-pulse">
+                            <Sparkles className="w-3 h-3 text-amber-400 animate-spin" />
+                            <span>Trợ lý đang suy nghĩ và tiếp tục viết...</span>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  )
                 ) : (
                   <div className="whitespace-pre-wrap font-sans text-[13.5px] leading-relaxed">
                     {m.content}
                   </div>
                 )}
 
-                {/* Danh sách nguồn tham khảo trích dẫn */}
-                {m.sources && m.sources.length > 0 && (
+                {/* Danh sách nguồn tham khảo trích dẫn - CHỈ HIỂN THỊ KHI ĐÃ CÓ NỘI DUNG */}
+                {m.sources && m.sources.length > 0 && m.content.trim().length > 0 && (
                   <div
                     className={`mt-3.5 pt-3 border-t text-xs ${
                       isDarkMode ? "border-slate-800/80" : "border-slate-100"
@@ -851,8 +864,8 @@ export default function Home() {
                   </div>
                 )}
 
-                {/* Gợi ý câu hỏi liên quan tiếp theo (Follow-up Prompts) */}
-                {m.role === "assistant" && m.followUps && m.followUps.length > 0 && !loading && (
+                {/* Gợi ý câu hỏi liên quan tiếp theo (Follow-up Prompts) - CHỈ HIỂN THỊ KHI HOÀN TẤT */}
+                {m.role === "assistant" && m.followUps && m.followUps.length > 0 && (!loading || idx < messages.length - 1) && (
                   <div
                     className={`mt-3 pt-3 border-t text-xs ${
                       isDarkMode ? "border-slate-800/80" : "border-slate-100"
@@ -883,24 +896,6 @@ export default function Home() {
               </div>
             </div>
           ))}
-
-          {loading && (
-            <div className="flex gap-3 text-sm">
-              <div className="w-8 h-8 rounded-full bg-emerald-600 flex items-center justify-center shrink-0">
-                <Bot className="w-4 h-4 text-white" />
-              </div>
-              <div
-                className={`p-4 border rounded-2xl rounded-tl-none flex items-center gap-2 text-xs ${
-                  isDarkMode
-                    ? "bg-slate-900 border-slate-800 text-slate-400"
-                    : "bg-white border-slate-200 text-slate-500"
-                }`}
-              >
-                <div className="w-2 h-2 rounded-full bg-sky-500 animate-ping"></div>
-                Đang tra cứu cơ sở tri thức K12Online và soạn thảo câu trả lời...
-              </div>
-            </div>
-          )}
 
           <div ref={messagesEndRef} />
         </div>
