@@ -64,6 +64,7 @@ export default function Home() {
   // Modals & User state
   const [isAuthOpen, setIsAuthOpen] = useState(false);
   const [userEmail, setUserEmail] = useState<string | null>(null);
+  const [turnstileToken, setTurnstileToken] = useState<string>("");
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -188,6 +189,7 @@ export default function Home() {
           message: query,
           history: updatedMessages.slice(0, -1).map((m) => ({ role: m.role, content: m.content })),
           model: selectedModel,
+          turnstileToken: turnstileToken,
         }),
       });
 
@@ -431,7 +433,7 @@ export default function Home() {
             </button>
 
             {/* Xác minh Cloudflare */}
-            <CloudflareTurnstile />
+            <CloudflareTurnstile onVerify={(token) => setTurnstileToken(token)} />
 
             {/* Nút Đăng nhập cho Chế độ khách */}
             {!userEmail ? (

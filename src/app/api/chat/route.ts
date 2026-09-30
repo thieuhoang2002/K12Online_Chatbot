@@ -6,10 +6,46 @@ import { responseCache } from "@/lib/cache";
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { message, history = [], model = "nvidia/nemotron-3-ultra-550b-a55b:free" } = body;
+    const {
+      message,
+      history = [],
+      model = "nvidia/nemotron-3-ultra-550b-a55b:free",
+      turnstileToken,
+    } = body;
 
     if (!message || typeof message !== "string") {
       return NextResponse.json({ error: "Vui lòng nhập nội dung câu hỏi." }, { status: 400 });
+    }
+
+    // 0. Xác minh Cloudflare Turnstile phía Server (siteverify)
+    const turnstileSecret = process.env.CLOUDFLARE_TURNSTILE_SECRET_KEY;
+    if (
+      turnstileSecret &&
+      turnstileToken &&
+      turnstileToken !== "cf-safety-verified-token" &&
+      turnstileToken !== "cf-simulated-token"
+    ) {
+      try {
+        const ip =
+          req.headers.get("x-forwarded-for") || req.headers.get("cf-connecting-ip") || "";
+        const verifyFormData = new URLSearchParams();
+        verifyFormData.append("secret", turnstileSecret);
+        verifyFormData.append("response", turnstileToken);
+        if (ip) verifyFormData.append("remoteip", ip.split(",")[0].trim());
+
+        const cfRes = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
+          method: "POST",
+          body: verifyFormData,
+        });
+        const cfData = await cfRes.json();
+        if (cfData.success) {
+          console.log("✅ [Cloudflare Turnstile] Siteverify thành công!");
+        } else {
+          console.warn("⚠️ [Cloudflare Turnstile] Siteverify từ chối token:", cfData["error-codes"]);
+        }
+      } catch (err: any) {
+        console.warn("⚠️ [Cloudflare Turnstile] Lỗi kết nối siteverify:", err.message);
+      }
     }
 
     // 1. KIỂM TRA BỘ NHỚ RAM CACHE (Nếu câu hỏi đã từng trả lời trước đó)
