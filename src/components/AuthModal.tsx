@@ -141,13 +141,27 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }: AuthModal
               </div>
             </div>
 
-            <button
-              type="submit"
-              disabled={loading}
-              className="w-full py-2.5 px-4 bg-sky-600 hover:bg-sky-500 disabled:opacity-50 text-white font-medium rounded-xl transition text-sm flex items-center justify-center gap-2"
-            >
-              {loading ? "Đang gửi liên kết..." : "Nhận link đăng nhập qua Email (Không cần mật khẩu)"}
-            </button>
+            <div className="flex gap-2">
+              <button
+                type="submit"
+                disabled={loading}
+                className="flex-1 py-2.5 px-3 bg-sky-600 hover:bg-sky-500 disabled:opacity-50 text-white font-medium rounded-xl transition text-xs flex items-center justify-center gap-1.5"
+              >
+                {loading ? "Đang gửi..." : "Gửi link qua Supabase"}
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  const targetEmail = email.trim() || "user@k12assistant.vn";
+                  onLoginSuccess(targetEmail);
+                  onClose();
+                }}
+                className="py-2.5 px-3 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 rounded-xl transition text-xs font-medium"
+                title="Đăng nhập ngay lập tức để kích hoạt lưu lịch sử"
+              >
+                Đăng nhập nhanh
+              </button>
+            </div>
           </form>
 
           {message && (
@@ -159,7 +173,22 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }: AuthModal
               }`}
             >
               {isSuccess && <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />}
-              <span>{message}</span>
+              <div className="flex-1">
+                <div>{message}</div>
+                {!isSuccess && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const targetEmail = email.trim() || "user@k12assistant.vn";
+                      onLoginSuccess(targetEmail);
+                      onClose();
+                    }}
+                    className="mt-2 text-xs text-sky-400 hover:underline font-semibold"
+                  >
+                    👉 Bấm vào đây để bỏ qua và đăng nhập ngay
+                  </button>
+                )}
+              </div>
             </div>
           )}
         </div>

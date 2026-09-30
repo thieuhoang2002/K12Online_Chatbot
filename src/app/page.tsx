@@ -14,10 +14,11 @@ import {
   BookOpen,
   Copy,
   Check,
-  RotateCcw,
   Info,
-  ShieldCheck,
-  ChevronDown,
+  Sun,
+  Moon,
+  Menu,
+  X,
 } from "lucide-react";
 import CloudflareTurnstile from "@/components/CloudflareTurnstile";
 import AuthModal from "@/components/AuthModal";
@@ -55,6 +56,10 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [selectedModel, setSelectedModel] = useState(AVAILABLE_MODELS[0].id);
 
+  // Theme & Layout state
+  const [theme, setTheme] = useState<"dark" | "light">("dark");
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+
   // Modals & User state
   const [isAuthOpen, setIsAuthOpen] = useState(false);
   const [userEmail, setUserEmail] = useState<string | null>(null);
@@ -62,8 +67,22 @@ export default function Home() {
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  // Khởi tạo phiên làm việc ban đầu
+  // Khởi tạo Theme & Phiên làm việc ban đầu
   useEffect(() => {
+    // 1. Theme
+    const savedTheme = localStorage.getItem("k12_theme") as "dark" | "light" | null;
+    if (savedTheme) {
+      setTheme(savedTheme);
+      if (savedTheme === "light") {
+        document.documentElement.classList.remove("dark");
+      } else {
+        document.documentElement.classList.add("dark");
+      }
+    } else {
+      document.documentElement.classList.add("dark");
+    }
+
+    // 2. Chat sessions
     const savedSessions = localStorage.getItem("k12_chat_sessions");
     if (savedSessions) {
       try {
@@ -75,6 +94,7 @@ export default function Home() {
       } catch (e) {}
     }
 
+    // 3. User email
     const savedUser = localStorage.getItem("k12_user_email");
     if (savedUser) setUserEmail(savedUser);
 
@@ -92,6 +112,17 @@ export default function Home() {
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [sessions, currentSessionId, loading]);
+
+  function toggleTheme() {
+    const nextTheme = theme === "dark" ? "light" : "dark";
+    setTheme(nextTheme);
+    localStorage.setItem("k12_theme", nextTheme);
+    if (nextTheme === "light") {
+      document.documentElement.classList.remove("dark");
+    } else {
+      document.documentElement.classList.add("dark");
+    }
+  }
 
   const currentSession = sessions.find((s) => s.id === currentSessionId) || sessions[0];
   const messages = currentSession?.messages || [];
@@ -197,112 +228,230 @@ export default function Home() {
     setTimeout(() => setCopiedIndex(null), 2000);
   }
 
+  const isDarkMode = theme === "dark";
+
   return (
-    <div className="flex h-screen w-screen overflow-hidden bg-slate-950 text-slate-100">
-      {/* SIDEBAR LỊCH SỬ CHAT */}
-      <aside className="w-72 bg-slate-900/90 border-r border-slate-800 flex flex-col shrink-0">
-        {/* Header Sidebar */}
-        <div className="p-4 border-b border-slate-800 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="p-2 bg-gradient-to-tr from-sky-600 to-indigo-500 rounded-xl shadow-md">
-              <Bot className="w-5 h-5 text-white" />
-            </div>
-            <div>
-              <h2 className="text-sm font-bold text-white tracking-tight">K12Online AI</h2>
-              <span className="text-[10px] px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-semibold border border-emerald-500/20">
-                Phi Lợi Nhuận
-              </span>
-            </div>
-          </div>
-        </div>
-
-        {/* Nút Tạo Hội Thoại Mới */}
-        <div className="p-3">
-          <button
-            onClick={createNewChat}
-            className="w-full py-2.5 px-3 bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700/60 rounded-xl text-sm font-medium text-slate-200 flex items-center justify-center gap-2 transition shadow-sm"
+    <div
+      className={`flex h-screen w-screen overflow-hidden transition-colors duration-200 ${
+        isDarkMode ? "bg-slate-950 text-slate-100" : "bg-slate-100 text-slate-800"
+      }`}
+    >
+      {/* SIDEBAR LỊCH SỬ CHAT: CHỈ HIỂN THỊ KHI ĐÃ ĐĂNG NHẬP */}
+      {userEmail && isSidebarOpen && (
+        <aside
+          className={`w-72 flex flex-col shrink-0 border-r transition-colors duration-200 ${
+            isDarkMode ? "bg-slate-900/90 border-slate-800" : "bg-white border-slate-200"
+          }`}
+        >
+          {/* Header Sidebar */}
+          <div
+            className={`p-4 border-b flex items-center justify-between ${
+              isDarkMode ? "border-slate-800" : "border-slate-200"
+            }`}
           >
-            <Plus className="w-4 h-4 text-sky-400" />
-            Đoạn chat mới
-          </button>
-        </div>
-
-        {/* Danh sách các đoạn chat */}
-        <div className="flex-1 overflow-y-auto px-3 space-y-1">
-          <div className="px-2 py-1 text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
-            Lịch sử tra cứu
-          </div>
-          {sessions.map((s) => (
+            <div className="flex items-center gap-2">
+              <div className="p-2 bg-gradient-to-tr from-sky-600 to-indigo-500 rounded-xl shadow-md">
+                <Bot className="w-5 h-5 text-white" />
+              </div>
+              <div>
+                <h2
+                  className={`text-sm font-bold tracking-tight ${
+                    isDarkMode ? "text-white" : "text-slate-900"
+                  }`}
+                >
+                  K12Online AI
+                </h2>
+                <span className="text-[10px] px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-500 font-semibold border border-emerald-500/20">
+                  Phi Lợi Nhuận
+                </span>
+              </div>
+            </div>
             <button
-              key={s.id}
-              onClick={() => setCurrentSessionId(s.id)}
-              className={`w-full text-left p-2.5 rounded-xl text-xs flex items-center gap-2.5 transition truncate ${
-                s.id === currentSessionId
-                  ? "bg-sky-600/15 text-sky-300 font-medium border border-sky-500/30"
-                  : "text-slate-400 hover:bg-slate-800/50 hover:text-slate-200"
+              onClick={() => setIsSidebarOpen(false)}
+              className={`p-1.5 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-white transition`}
+              title="Đóng sidebar"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
+
+          {/* Nút Tạo Hội Thoại Mới */}
+          <div className="p-3">
+            <button
+              onClick={createNewChat}
+              className={`w-full py-2.5 px-3 rounded-xl text-sm font-medium flex items-center justify-center gap-2 transition shadow-sm border ${
+                isDarkMode
+                  ? "bg-slate-800/80 hover:bg-slate-700/80 border-slate-700/60 text-slate-200"
+                  : "bg-slate-50 hover:bg-slate-100 border-slate-200 text-slate-700"
               }`}
             >
-              <MessageSquare className="w-3.5 h-3.5 shrink-0 opacity-70" />
-              <span className="truncate">{s.title}</span>
+              <Plus className="w-4 h-4 text-sky-500" />
+              Đoạn chat mới
             </button>
-          ))}
-        </div>
+          </div>
 
-        {/* Footer Sidebar: User / Login Status */}
-        <div className="p-3 border-t border-slate-800 bg-slate-900/60 text-xs">
-          {userEmail ? (
-            <div className="flex items-center justify-between p-2 rounded-lg bg-slate-800/50">
+          {/* Danh sách các đoạn chat */}
+          <div className="flex-1 overflow-y-auto px-3 space-y-1">
+            <div className="px-2 py-1 text-[11px] font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
+              Lịch sử tra cứu của bạn
+            </div>
+            {sessions.map((s) => (
+              <button
+                key={s.id}
+                onClick={() => setCurrentSessionId(s.id)}
+                className={`w-full text-left p-2.5 rounded-xl text-xs flex items-center gap-2.5 transition truncate ${
+                  s.id === currentSessionId
+                    ? isDarkMode
+                      ? "bg-sky-600/15 text-sky-300 font-medium border border-sky-500/30"
+                      : "bg-sky-50 text-sky-700 font-semibold border border-sky-200"
+                    : isDarkMode
+                    ? "text-slate-400 hover:bg-slate-800/50 hover:text-slate-200"
+                    : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+                }`}
+              >
+                <MessageSquare className="w-3.5 h-3.5 shrink-0 opacity-70" />
+                <span className="truncate">{s.title}</span>
+              </button>
+            ))}
+          </div>
+
+          {/* Footer Sidebar: User Profile & Logout */}
+          <div
+            className={`p-3 border-t text-xs ${
+              isDarkMode
+                ? "border-slate-800 bg-slate-900/60"
+                : "border-slate-200 bg-slate-50"
+            }`}
+          >
+            <div
+              className={`flex items-center justify-between p-2 rounded-lg ${
+                isDarkMode ? "bg-slate-800/50" : "bg-white border border-slate-200"
+              }`}
+            >
               <div className="flex items-center gap-2 truncate">
                 <div className="w-7 h-7 rounded-full bg-sky-600 flex items-center justify-center font-bold text-white text-xs">
                   {userEmail[0].toUpperCase()}
                 </div>
                 <div className="truncate">
-                  <div className="font-medium text-slate-200 truncate">{userEmail}</div>
-                  <div className="text-[10px] text-emerald-400">Đã đồng bộ lịch sử</div>
+                  <div
+                    className={`font-medium truncate ${
+                      isDarkMode ? "text-slate-200" : "text-slate-800"
+                    }`}
+                  >
+                    {userEmail}
+                  </div>
+                  <div className="text-[10px] text-emerald-500">Đã đồng bộ lịch sử</div>
                 </div>
               </div>
               <button
                 onClick={handleLogout}
                 title="Đăng xuất"
-                className="p-1 hover:text-rose-400 text-slate-400 transition"
+                className="p-1 hover:text-rose-500 text-slate-400 transition"
               >
                 <LogOut className="w-4 h-4" />
               </button>
             </div>
-          ) : (
-            <div className="space-y-2">
-              <div className="p-2 rounded-lg bg-slate-800/30 border border-slate-700/40 text-slate-400 text-[11px] leading-relaxed">
-                Bạn đang ở <strong>Chế độ Khách</strong> (Tra cứu tự do không cần đăng nhập).
-              </div>
-              <button
-                onClick={() => setIsAuthOpen(true)}
-                className="w-full py-2 px-3 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg font-medium flex items-center justify-center gap-1.5 transition text-xs"
-              >
-                <LogIn className="w-3.5 h-3.5 text-sky-400" />
-                Đăng nhập để lưu vĩnh viễn
-              </button>
-            </div>
-          )}
-        </div>
-      </aside>
+          </div>
+        </aside>
+      )}
 
       {/* KHUNG NỘI DUNG CHÍNH */}
-      <main className="flex-1 flex flex-col h-full bg-slate-950 overflow-hidden">
+      <main className="flex-1 flex flex-col h-full overflow-hidden">
         {/* TOP BAR */}
-        <header className="h-14 border-b border-slate-800/80 px-6 flex items-center justify-between bg-slate-900/40 backdrop-blur-md">
+        <header
+          className={`h-14 border-b px-4 md:px-6 flex items-center justify-between backdrop-blur-md transition-colors duration-200 ${
+            isDarkMode
+              ? "bg-slate-900/60 border-slate-800/80"
+              : "bg-white/90 border-slate-200 shadow-xs"
+          }`}
+        >
           <div className="flex items-center gap-3">
-            <span className="text-sm font-semibold text-slate-200 flex items-center gap-1.5">
-              <BookOpen className="w-4 h-4 text-sky-400" />
-              Trung Tâm Hỗ Trợ Nghiệp Vụ K12Online
-            </span>
-            <span className="hidden sm:inline-block text-[11px] px-2 py-0.5 rounded-full bg-sky-500/10 text-sky-400 font-medium border border-sky-500/20">
-              Cộng Đồng Giáo Dục
-            </span>
+            {/* Nút mở sidebar nếu đã đăng nhập và đang đóng */}
+            {userEmail && !isSidebarOpen && (
+              <button
+                onClick={() => setIsSidebarOpen(true)}
+                className={`p-1.5 rounded-lg border text-slate-400 hover:text-slate-600 dark:hover:text-white transition ${
+                  isDarkMode ? "border-slate-800 bg-slate-800/50" : "border-slate-200 bg-white"
+                }`}
+                title="Mở lịch sử chat"
+              >
+                <Menu className="w-4 h-4" />
+              </button>
+            )}
+
+            {/* Logo thu nhỏ khi ở chế độ khách */}
+            {!userEmail && (
+              <div className="p-1.5 bg-gradient-to-tr from-sky-600 to-indigo-500 rounded-lg shadow-sm">
+                <Bot className="w-4 h-4 text-white" />
+              </div>
+            )}
+
+            <div className="flex items-center gap-2">
+              <span
+                className={`text-sm font-semibold flex items-center gap-1.5 ${
+                  isDarkMode ? "text-slate-200" : "text-slate-800"
+                }`}
+              >
+                <BookOpen className="w-4 h-4 text-sky-500" />
+                <span className="hidden sm:inline">Trung Tâm Hỗ Trợ Nghiệp Vụ</span> K12Online
+              </span>
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 font-semibold border border-emerald-500/20">
+                Phi Lợi Nhuận
+              </span>
+            </div>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 md:gap-3">
+            {/* Nút Đoạn chat mới (luôn tiện lợi ở topbar) */}
+            <button
+              onClick={createNewChat}
+              className={`flex items-center gap-1 px-2.5 py-1.5 rounded-full text-xs font-medium border transition ${
+                isDarkMode
+                  ? "bg-slate-800/60 hover:bg-slate-700/60 border-slate-700/60 text-slate-300"
+                  : "bg-white hover:bg-slate-50 border-slate-200 text-slate-700"
+              }`}
+              title="Tạo cuộc hội thoại mới"
+            >
+              <Plus className="w-3.5 h-3.5 text-sky-500" />
+              <span className="hidden md:inline">Đoạn chat mới</span>
+            </button>
+
+            {/* Nút chuyển đổi Chế độ Sáng / Tối */}
+            <button
+              onClick={toggleTheme}
+              className={`p-2 rounded-full border transition ${
+                isDarkMode
+                  ? "bg-slate-800/60 hover:bg-slate-700/60 border-slate-700/60 text-amber-300"
+                  : "bg-white hover:bg-slate-100 border-slate-200 text-slate-700"
+              }`}
+              title={isDarkMode ? "Chuyển sang giao diện Sáng" : "Chuyển sang giao diện Tối"}
+            >
+              {isDarkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4 text-indigo-600" />}
+            </button>
+
             {/* Xác minh Cloudflare */}
             <CloudflareTurnstile />
+
+            {/* Nút Đăng nhập cho Chế độ khách */}
+            {!userEmail ? (
+              <button
+                onClick={() => setIsAuthOpen(true)}
+                className="flex items-center gap-1.5 px-3 py-1.5 bg-sky-600 hover:bg-sky-500 text-white rounded-full text-xs font-semibold shadow-sm transition"
+              >
+                <LogIn className="w-3.5 h-3.5" />
+                <span>Đăng nhập</span>
+              </button>
+            ) : (
+              <button
+                onClick={handleLogout}
+                className={`p-1.5 rounded-full border text-slate-400 hover:text-rose-500 transition ${
+                  isDarkMode ? "border-slate-800 bg-slate-800/40" : "border-slate-200 bg-white"
+                }`}
+                title="Đăng xuất"
+              >
+                <LogOut className="w-4 h-4" />
+              </button>
+            )}
           </div>
         </header>
 
@@ -326,10 +475,12 @@ export default function Home() {
               </div>
 
               <div
-                className={`relative group max-w-[85%] rounded-2xl p-4 ${
+                className={`relative group max-w-[85%] rounded-2xl p-4 transition-colors ${
                   m.role === "user"
-                    ? "bg-sky-600 text-white rounded-tr-none shadow-md shadow-sky-900/20"
-                    : "bg-slate-900/90 text-slate-200 border border-slate-800 rounded-tl-none shadow-sm"
+                    ? "bg-sky-600 text-white rounded-tr-none shadow-md shadow-sky-600/20"
+                    : isDarkMode
+                    ? "bg-slate-900/90 text-slate-200 border border-slate-800 rounded-tl-none shadow-sm"
+                    : "bg-white text-slate-800 border border-slate-200 rounded-tl-none shadow-sm"
                 }`}
               >
                 {/* Nút copy câu trả lời */}
@@ -337,10 +488,14 @@ export default function Home() {
                   <button
                     onClick={() => copyToClipboard(m.content, idx)}
                     title="Sao chép nội dung"
-                    className="absolute top-3 right-3 p-1 rounded-md text-slate-500 hover:text-slate-300 hover:bg-slate-800 transition opacity-0 group-hover:opacity-100"
+                    className={`absolute top-3 right-3 p-1 rounded-md transition opacity-0 group-hover:opacity-100 ${
+                      isDarkMode
+                        ? "text-slate-400 hover:text-slate-200 hover:bg-slate-800"
+                        : "text-slate-400 hover:text-slate-700 hover:bg-slate-100"
+                    }`}
                   >
                     {copiedIndex === idx ? (
-                      <Check className="w-3.5 h-3.5 text-emerald-400" />
+                      <Check className="w-3.5 h-3.5 text-emerald-500" />
                     ) : (
                       <Copy className="w-3.5 h-3.5" />
                     )}
@@ -353,8 +508,12 @@ export default function Home() {
 
                 {/* Danh sách nguồn tham khảo trích dẫn */}
                 {m.sources && m.sources.length > 0 && (
-                  <div className="mt-3.5 pt-3 border-t border-slate-800/80 text-xs">
-                    <div className="font-semibold text-sky-400 flex items-center gap-1 mb-1.5">
+                  <div
+                    className={`mt-3.5 pt-3 border-t text-xs ${
+                      isDarkMode ? "border-slate-800/80" : "border-slate-100"
+                    }`}
+                  >
+                    <div className="font-semibold text-sky-500 flex items-center gap-1 mb-1.5">
                       <ExternalLink className="w-3.5 h-3.5" />
                       Nguồn bài viết gốc K12Online (Viettel):
                     </div>
@@ -365,7 +524,11 @@ export default function Home() {
                           href={src.url}
                           target="_blank"
                           rel="noreferrer"
-                          className="inline-flex items-center gap-1 px-2.5 py-1 bg-slate-800 hover:bg-slate-700/80 border border-slate-700/50 rounded-lg text-slate-300 hover:text-sky-300 transition text-[11px]"
+                          className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg transition text-[11px] border ${
+                            isDarkMode
+                              ? "bg-slate-800 hover:bg-slate-700/80 border-slate-700/50 text-slate-300 hover:text-sky-300"
+                              : "bg-slate-100 hover:bg-slate-200/80 border-slate-200 text-slate-700 hover:text-sky-600"
+                          }`}
                         >
                           <span className="truncate max-w-[220px]">{src.title}</span>
                           <ExternalLink className="w-2.5 h-2.5 opacity-60" />
@@ -383,8 +546,14 @@ export default function Home() {
               <div className="w-8 h-8 rounded-full bg-emerald-600 flex items-center justify-center shrink-0">
                 <Bot className="w-4 h-4 text-white" />
               </div>
-              <div className="p-4 bg-slate-900 border border-slate-800 rounded-2xl rounded-tl-none flex items-center gap-2 text-slate-400 text-xs">
-                <div className="w-2 h-2 rounded-full bg-sky-400 animate-ping"></div>
+              <div
+                className={`p-4 border rounded-2xl rounded-tl-none flex items-center gap-2 text-xs ${
+                  isDarkMode
+                    ? "bg-slate-900 border-slate-800 text-slate-400"
+                    : "bg-white border-slate-200 text-slate-500"
+                }`}
+              >
+                <div className="w-2 h-2 rounded-full bg-sky-500 animate-ping"></div>
                 Đang tra cứu cơ sở tri thức K12Online và soạn thảo câu trả lời...
               </div>
             </div>
@@ -394,16 +563,28 @@ export default function Home() {
         </div>
 
         {/* GỢI Ý CÂU HỎI THƯỜNG GẶP */}
-        <div className="px-6 py-2 bg-slate-950/80 border-t border-slate-800/40">
+        <div
+          className={`px-4 md:px-6 py-2 border-t transition-colors ${
+            isDarkMode ? "bg-slate-950/80 border-slate-800/40" : "bg-slate-50/80 border-slate-200"
+          }`}
+        >
           <div className="max-w-4xl mx-auto flex gap-2 overflow-x-auto pb-1 text-xs">
-            <span className="text-slate-500 whitespace-nowrap self-center font-medium flex items-center gap-1">
-              <Sparkles className="w-3.5 h-3.5 text-amber-400" /> Bạn có thể hỏi:
+            <span
+              className={`whitespace-nowrap self-center font-medium flex items-center gap-1 ${
+                isDarkMode ? "text-slate-400" : "text-slate-500"
+              }`}
+            >
+              <Sparkles className="w-3.5 h-3.5 text-amber-500" /> Bạn có thể hỏi:
             </span>
             {QUICK_PROMPTS.map((q, qIdx) => (
               <button
                 key={qIdx}
                 onClick={() => handleSendMessage(q)}
-                className="px-3 py-1 bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-800 rounded-full whitespace-nowrap transition text-[11.5px]"
+                className={`px-3 py-1 rounded-full whitespace-nowrap transition text-[11.5px] border ${
+                  isDarkMode
+                    ? "bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white border-slate-800"
+                    : "bg-white hover:bg-slate-100 text-slate-700 hover:text-slate-900 border-slate-200 shadow-xs"
+                }`}
               >
                 {q}
               </button>
@@ -412,9 +593,19 @@ export default function Home() {
         </div>
 
         {/* KHUNG NHẬP LIỆU FOOTER */}
-        <div className="p-4 md:p-6 bg-slate-900/60 border-t border-slate-800/80">
+        <div
+          className={`p-4 md:p-6 border-t transition-colors ${
+            isDarkMode ? "bg-slate-900/60 border-slate-800/80" : "bg-white border-slate-200 shadow-sm"
+          }`}
+        >
           <div className="max-w-4xl mx-auto space-y-2">
-            <div className="relative flex items-center bg-slate-800/90 border border-slate-700/80 focus-within:border-sky-500 rounded-2xl shadow-inner transition p-1">
+            <div
+              className={`relative flex items-center border focus-within:border-sky-500 rounded-2xl shadow-inner transition p-1 ${
+                isDarkMode
+                  ? "bg-slate-800/90 border-slate-700/80"
+                  : "bg-slate-50 border-slate-300 focus-within:bg-white"
+              }`}
+            >
               <textarea
                 value={inputMessage}
                 onChange={(e) => setInputMessage(e.target.value)}
@@ -426,7 +617,11 @@ export default function Home() {
                 }}
                 rows={1}
                 placeholder="Bạn hãy nhập câu hỏi vào đây (Ví dụ: Cách duyệt bài tập về nhà trên K12Connect?)..."
-                className="flex-1 bg-transparent px-3 py-2 text-sm text-slate-100 placeholder-slate-400 focus:outline-none resize-none max-h-32"
+                className={`flex-1 bg-transparent px-3 py-2 text-sm focus:outline-none resize-none max-h-32 ${
+                  isDarkMode
+                    ? "text-slate-100 placeholder-slate-400"
+                    : "text-slate-900 placeholder-slate-400"
+                }`}
               />
               <button
                 onClick={() => handleSendMessage()}
@@ -438,13 +633,17 @@ export default function Home() {
             </div>
 
             {/* Dòng tuyên bố miễn trừ trách nhiệm & Bản quyền cộng đồng */}
-            <div className="flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 px-1 gap-1">
+            <div
+              className={`flex flex-col sm:flex-row items-center justify-between text-[11px] px-1 gap-1 ${
+                isDarkMode ? "text-slate-500" : "text-slate-500"
+              }`}
+            >
               <span className="flex items-center gap-1 text-center sm:text-left">
                 <Info className="w-3.5 h-3.5 shrink-0" />
                 Dự án phi lợi nhuận độc lập của cộng đồng giáo dục. Không thuộc sở hữu chính thức của Tập đoàn Viettel.
               </span>
-              <span className="text-slate-400">
-                Bộ não AI: <strong>OpenRouter Engine (Xoay Key Tự Động)</strong>
+              <span className={isDarkMode ? "text-slate-400" : "text-slate-600"}>
+                Bộ não AI: <strong>OpenRouter Engine (Tự động Xoay Key & Fallback)</strong>
               </span>
             </div>
           </div>

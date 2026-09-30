@@ -35,74 +35,116 @@ class KeyRotator {
   }
 
   /**
-   * Gọi OpenRouter API với cơ chế xoay vòng và tự động nhảy Key khi bị 429
+   * Danh sách model miễn phí chất lượng cao để tự động fallback khi model chính bị nghẽn
+   */
+  private fallbackModels = [
+    "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "nvidia/nemotron-3.5-lightning:free",
+    "qwen/qwen3.8-27b:free",
+    "google/gemma-4-31b-it:free",
+  ];
+
+  /**
+   * Gọi OpenRouter API với cơ chế xoay vòng Key và tự động fallback Model nếu dính 429 upstream
    */
   public async callChatCompletion(
     messages: ChatMessage[],
-    model: string = "nvidia/nemotron-3-ultra-550b-a55b:free"
+    requestedModel: string = "nvidia/nemotron-3-ultra-550b-a55b:free"
   ): Promise<{ content: string; keyIndexUsed: number }> {
     if (this.keys.length === 0) {
       throw new Error("Chưa cấu hình OPENROUTER_API_KEYS trong file môi trường .env.local.");
     }
 
+    const candidateModels = [
+      requestedModel,
+      ...this.fallbackModels.filter((m) => m !== requestedModel),
+    ];
+
     const totalKeys = this.keys.length;
-    let attempts = 0;
 
-    while (attempts < totalKeys) {
-      const activeIndex = this.currentIndex;
-      const apiKey = this.keys[activeIndex];
+    for (const modelToUse of candidateModels) {
+      let keyAttempts = 0;
 
-      // Di chuyển con trỏ sang key tiếp theo cho lượt sau (Round-Robin)
-      this.currentIndex = (this.currentIndex + 1) % totalKeys;
+      while (keyAttempts < totalKeys) {
+        const activeIndex = this.currentIndex;
+        const apiKey = this.keys[activeIndex];
+        this.currentIndex = (this.currentIndex + 1) % totalKeys;
+        keyAttempts++;
 
-      const maskedKey = apiKey.slice(0, 8) + "..." + apiKey.slice(-4);
-      console.log(`[OpenRouter] Sử dụng Key #${activeIndex + 1}/${totalKeys} (${maskedKey}) | Model: ${model}`);
+        const maskedKey = apiKey.slice(0, 8) + "..." + apiKey.slice(-4);
+        console.log(
+          `[OpenRouter] Đang thử Key #${activeIndex + 1}/${totalKeys} (${maskedKey}) | Model: ${modelToUse}`
+        );
 
-      try {
-        const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-          method: "POST",
-          headers: {
-            "Authorization": `Bearer ${apiKey}`,
-            "Content-Type": "application/json",
-            "HTTP-Referer": "https://k12online-assistant.edu.vn",
-            "X-Title": "K12Online Community AI Assistant",
-          },
-          body: JSON.stringify({
-            model: model,
-            messages: messages,
-            temperature: 0.3,
-          }),
-        });
+        try {
+          const controller = new AbortController();
+          const timeoutId = setTimeout(() => controller.abort(), 20000); // 20s timeout
 
-        // Nếu dính Rate Limit (429) hoặc Quota hết (402), tự động thử key kế tiếp
-        if (response.status === 429 || response.status === 402) {
-          console.warn(`⚠️ [OpenRouter] Key #${activeIndex + 1} bị Rate Limit (${response.status}). Tự động nhảy sang Key kế tiếp...`);
-          attempts++;
+          const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+            method: "POST",
+            signal: controller.signal,
+            headers: {
+              "Authorization": `Bearer ${apiKey}`,
+              "Content-Type": "application/json",
+              "HTTP-Referer": "https://k12online-assistant.edu.vn",
+              "X-Title": "K12Online Community AI Assistant",
+            },
+            body: JSON.stringify({
+              model: modelToUse,
+              messages: messages,
+              temperature: 0.3,
+            }),
+          });
+
+          clearTimeout(timeoutId);
+
+          if (response.status === 429 || response.status === 402) {
+            console.warn(
+              `⚠️ [OpenRouter] HTTP ${response.status} với Key #${activeIndex + 1}. Thử Key kế...`
+            );
+            continue;
+          }
+
+          if (!response.ok) {
+            const errText = await response.text();
+            console.warn(`⚠️ [OpenRouter] HTTP ${response.status}: ${errText.slice(0, 150)}`);
+            continue;
+          }
+
+          const data = await response.json();
+
+          // OpenRouter thường trả HTTP 200 nhưng bên trong có object error (429 upstream rate-limit)
+          if (data.error) {
+            console.warn(
+              `⚠️ [OpenRouter] Lỗi từ upstream cho ${modelToUse}:`,
+              data.error.message || JSON.stringify(data.error)
+            );
+            // Model này đang bị nghẽn upstream, thoát vòng lặp key để chuyển sang model kế tiếp
+            break;
+          }
+
+          const messageObj = data.choices?.[0]?.message;
+          const reply = (messageObj?.content || messageObj?.reasoning || "").trim();
+
+          if (!reply) {
+            console.warn(`⚠️ [OpenRouter] Model ${modelToUse} trả về nội dung trống, thử tiếp...`);
+            continue;
+          }
+
+          return {
+            content: reply,
+            keyIndexUsed: activeIndex + 1,
+          };
+        } catch (err: any) {
+          console.warn(`❌ [OpenRouter] Ngoại lệ khi gọi model ${modelToUse}:`, err.message);
           continue;
-        }
-
-        if (!response.ok) {
-          const errText = await response.text();
-          throw new Error(`OpenRouter trả về mã lỗi ${response.status}: ${errText}`);
-        }
-
-        const data = await response.json();
-        const reply = data.choices?.[0]?.message?.content || "Không có phản hồi từ mô hình.";
-
-        return {
-          content: reply,
-          keyIndexUsed: activeIndex + 1,
-        };
-      } catch (err: any) {
-        console.error(`❌ [OpenRouter] Lỗi khi gọi với Key #${activeIndex + 1}:`, err.message);
-        attempts++;
-        if (attempts >= totalKeys) {
-          throw new Error(`Tất cả ${totalKeys} API Key đều bị lỗi hoặc hết hạn mức: ${err.message}`);
         }
       }
     }
 
-    throw new Error("Không thể hoàn thành yêu cầu sau khi thử toàn bộ danh sách API Key.");
+    throw new Error(
+      "Các mô hình AI miễn phí hiện đang trong giờ cao điểm hoặc tạm thời nghẽn. Bạn vui lòng thử lại sau 1-2 phút nhé!"
+    );
   }
 }
 
