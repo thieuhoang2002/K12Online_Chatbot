@@ -82,6 +82,8 @@ export function loadKnowledgeBase(): ArticleDoc[] {
   return cachedArticles;
 }
 
+import { expandKeywordsWithSynonyms } from "./synonyms";
+
 /**
  * Tìm kiếm các bài viết liên quan nhất đến câu hỏi của người dùng
  */
@@ -90,11 +92,15 @@ export function searchKnowledge(query: string, topK: number = 3): SearchResult[]
   if (docs.length === 0) return [];
 
   // Tách từ khóa trong câu hỏi
-  const keywords = query
+  const rawKeywords = query
     .toLowerCase()
     .replace(/[?,.!;:]/g, " ")
     .split(/\s+/)
     .filter((w) => w.length > 1 && !["cách", "làm", "sao", "cho", "của", "và", "như", "thế", "nào", "được", "có"].includes(w));
+
+  // Tự động mở rộng từ khóa bằng Từ điển đồng nghĩa K12Online
+  const synonymKeywords = expandKeywordsWithSynonyms(query);
+  const keywords = Array.from(new Set([...rawKeywords, ...synonymKeywords]));
 
   const scoredDocs: SearchResult[] = docs.map((doc) => {
     let score = 0;

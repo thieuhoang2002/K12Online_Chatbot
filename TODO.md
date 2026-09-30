@@ -40,15 +40,15 @@
 ## Giai đoạn 5: Tối ưu Trải nghiệm Phản hồi & Tương tác (UX/UI) - [ĐANG HOÀN THIỆN]
 - [x] **Streaming Response (ReadableStream / SSE):** Hiệu ứng tuôn chữ từng từ theo thời gian thực (Server-Sent Events), phản hồi ngay tức thì và mượt mà.
 - [x] **Bộ lọc câu hỏi xã giao (Intent Filter):** Tự động nhận diện câu chào hỏi/cảm ơn ("Chào bạn", "Cảm ơn") để phản hồi tức thì (<10ms) mà không tốn công quét RAG.
-- [ ] **Gợi ý câu hỏi liên quan tiếp theo (Follow-up Prompts):** Tự động hiển thị 2-3 nút gợi ý câu hỏi liên quan dưới mỗi câu trả lời (thao tác 1 chạm).
+- [x] **Gợi ý câu hỏi liên quan tiếp theo (Follow-up Prompts):** Tự động hiển thị 2-3 nút gợi ý câu hỏi liên quan dưới mỗi câu trả lời (thao tác 1 chạm).
 - [ ] **Nút Đánh giá chất lượng (Like/Dislike Feedback):** Thu thập phản hồi về độ hữu ích của câu trả lời để cải thiện chất lượng dữ liệu.
 
 ---
 
-## Giai đoạn 6: Nâng cấp Trí thông minh & Tìm kiếm Ngữ nghĩa (Advanced RAG)
-- [ ] **Từ điển đồng nghĩa Tiếng Việt (Synonym Mapping):** Ánh xạ các thuật ngữ phổ biến của giáo viên ("lập lịch dạy" -> "thời khóa biểu", "kiểm tra 15p" -> "đề thi").
+## Giai đoạn 6: Nâng cấp Trí thông minh & Tìm kiếm Ngữ nghĩa (Advanced RAG) - [ĐÃ TRIỂN KHAI PHẦN LỚN]
+- [x] **Từ điển đồng nghĩa Tiếng Việt (Synonym Mapping):** Ánh xạ các thuật ngữ phổ biến của giáo viên ("lập lịch dạy" -> "thời khóa biểu", "kiểm tra 15p" -> "đề thi") trong `src/lib/synonyms.ts`.
 - [ ] **Phân cấp tài liệu theo Vai trò (Role-based RAG):** Lọc tri thức theo đối tượng [Giáo viên] / [Học sinh] / [Nhà trường].
-- [ ] **Semantic Vector Search:** Kích hoạt `pgvector` trên PostgreSQL của Supabase để tìm kiếm theo độ tương đồng ngữ nghĩa sâu.
+- [x] **Semantic Vector Search:** Kích hoạt `pgvector` trên PostgreSQL của Supabase (`supabase/schema_vector.sql` + `src/lib/vector.ts` với Hybrid Search).
 
 ---
 

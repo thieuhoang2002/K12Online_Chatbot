@@ -30,6 +30,7 @@ interface Message {
   role: "user" | "assistant";
   content: string;
   sources?: { title: string; category: string; url: string }[];
+  followUps?: string[];
 }
 
 interface ChatSession {
@@ -47,7 +48,7 @@ const QUICK_PROMPTS = [
 ];
 
 // Bộ nhớ đệm Client-side lưu câu trả lời ngay trên trình duyệt (phản hồi 0.01 giây khi hỏi lại)
-const clientCache = new Map<string, { reply: string; sources: any }>();
+const clientCache = new Map<string, { reply: string; sources: any; followUps?: string[] }>();
 
 const AVAILABLE_MODELS = [
   { id: "qwen/qwen3.8-27b:free", name: "Qwen 3.8 27B (Phản hồi siêu tốc ~1.9s - Khuyên dùng)", badge: "Siêu tốc" },
@@ -338,6 +339,7 @@ export default function Home() {
         role: "assistant",
         content: cachedResponse.reply,
         sources: cachedResponse.sources,
+        followUps: cachedResponse.followUps,
       };
       setSessions((prev) =>
         prev.map((s) => {
@@ -417,6 +419,7 @@ export default function Home() {
       const decoder = new TextDecoder();
       let streamedReply = "";
       let streamedSources: any[] = [];
+      let streamedFollowUps: string[] = [];
       let buffer = "";
 
       if (reader) {
@@ -446,6 +449,9 @@ export default function Home() {
                 } else if (parsed.type === "chunk") {
                   streamedReply += parsed.text;
                   hasUpdated = true;
+                } else if (parsed.type === "followUps") {
+                  streamedFollowUps = parsed.prompts || [];
+                  hasUpdated = true;
                 } else if (parsed.type === "error") {
                   throw new Error(parsed.error);
                 }
@@ -465,6 +471,7 @@ export default function Home() {
                       role: "assistant",
                       content: streamedReply,
                       sources: streamedSources,
+                      followUps: streamedFollowUps.length > 0 ? streamedFollowUps : undefined,
                     };
                   }
                   return { ...s, messages: msgs };
@@ -477,13 +484,22 @@ export default function Home() {
       }
 
       // Lưu câu trả lời vào Client Cache để lần sau hỏi lại phản hồi trong 0.01 giây
-      clientCache.set(normalizedKey, { reply: streamedReply, sources: streamedSources });
+      clientCache.set(normalizedKey, {
+        reply: streamedReply,
+        sources: streamedSources,
+        followUps: streamedFollowUps.length > 0 ? streamedFollowUps : undefined,
+      });
 
       // ĐỒNG BỘ LÊN SUPABASE
       if (userEmail) {
         syncSessionToSupabase(targetSessionId, [
           ...updatedMessages,
-          { role: "assistant", content: streamedReply, sources: streamedSources },
+          {
+            role: "assistant",
+            content: streamedReply,
+            sources: streamedSources,
+            followUps: streamedFollowUps.length > 0 ? streamedFollowUps : undefined,
+          },
         ]);
       }
     } catch (err: any) {
@@ -830,6 +846,36 @@ export default function Home() {
                           <span className="truncate max-w-[220px]">{src.title}</span>
                           <ExternalLink className="w-2.5 h-2.5 opacity-60" />
                         </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Gợi ý câu hỏi liên quan tiếp theo (Follow-up Prompts) */}
+                {m.role === "assistant" && m.followUps && m.followUps.length > 0 && !loading && (
+                  <div
+                    className={`mt-3 pt-3 border-t text-xs ${
+                      isDarkMode ? "border-slate-800/80" : "border-slate-100"
+                    }`}
+                  >
+                    <div className="font-semibold text-slate-400 dark:text-slate-400 flex items-center gap-1.5 mb-2">
+                      <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                      <span>Câu hỏi gợi ý liên quan:</span>
+                    </div>
+                    <div className="flex flex-wrap gap-1.5">
+                      {m.followUps.map((prompt, pIdx) => (
+                        <button
+                          key={pIdx}
+                          onClick={() => handleSendMessage(prompt)}
+                          className={`text-left inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs transition border group/btn ${
+                            isDarkMode
+                              ? "bg-slate-800/80 hover:bg-sky-950/60 border-slate-700/60 hover:border-sky-500/50 text-slate-300 hover:text-sky-300"
+                              : "bg-slate-50 hover:bg-sky-50 border-slate-200 hover:border-sky-300 text-slate-700 hover:text-sky-700"
+                          }`}
+                        >
+                          <span className="text-sky-500 group-hover/btn:translate-x-0.5 transition-transform font-bold">→</span>
+                          <span>{prompt}</span>
+                        </button>
                       ))}
                     </div>
                   </div>

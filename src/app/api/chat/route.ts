@@ -4,6 +4,7 @@ import { searchKnowledge } from "@/lib/knowledge";
 import { responseCache } from "@/lib/cache";
 import { checkRateLimit } from "@/lib/ratelimit";
 import { checkCasualIntent } from "@/lib/intent";
+import { generateFollowUpPrompts } from "@/lib/suggestions";
 
 /**
  * Tạo Stream giả lập mượt mà cho câu trả lời từ Cache hoặc câu xã giao
@@ -11,16 +12,20 @@ import { checkCasualIntent } from "@/lib/intent";
 function createTextStream(
   text: string,
   sources: any[] = [],
+  followUps: string[] = [],
   meta: any = { cached: true }
 ): ReadableStream<Uint8Array> {
   const encoder = new TextEncoder();
   return new ReadableStream({
     async start(controller) {
+      // 1. Gửi nguồn trước nếu có
       if (sources && sources.length > 0) {
         controller.enqueue(
           encoder.encode(`data: ${JSON.stringify({ type: "sources", sources })}\n\n`)
         );
       }
+
+      // 2. Gửi từng cụm từ nhỏ tạo hiệu ứng gõ chữ
       const words = text.split(" ");
       let i = 0;
       while (i < words.length) {
@@ -31,6 +36,15 @@ function createTextStream(
         i += 3;
         await new Promise((r) => setTimeout(r, 15));
       }
+
+      // 3. Gửi danh sách câu hỏi gợi ý tiếp theo
+      if (followUps && followUps.length > 0) {
+        controller.enqueue(
+          encoder.encode(`data: ${JSON.stringify({ type: "followUps", prompts: followUps })}\n\n`)
+        );
+      }
+
+      // 4. Kết thúc
       controller.enqueue(
         encoder.encode(`data: ${JSON.stringify({ type: "done", meta })}\n\n`)
       );
@@ -45,6 +59,7 @@ function createTextStream(
 function createOpenRouterStream(
   openRouterBody: ReadableStream<Uint8Array>,
   sources: any[],
+  followUps: string[],
   onComplete: (fullText: string) => Promise<void>
 ): ReadableStream<Uint8Array> {
   const encoder = new TextEncoder();
@@ -112,6 +127,14 @@ function createOpenRouterStream(
           }
         }
 
+        // Gửi danh sách gợi ý câu hỏi tiếp theo
+        if (followUps && followUps.length > 0) {
+          controller.enqueue(
+            encoder.encode(`data: ${JSON.stringify({ type: "followUps", prompts: followUps })}\n\n`)
+          );
+        }
+
+        // Gửi thông báo hoàn tất
         controller.enqueue(
           encoder.encode(`data: ${JSON.stringify({ type: "done", meta: { cached: false } })}\n\n`)
         );
@@ -215,7 +238,12 @@ export async function POST(req: NextRequest) {
     const casual = checkCasualIntent(message);
     if (casual.isCasual && casual.reply) {
       console.log(`💬 [Intent Filter] Bắt câu hỏi xã giao: "${message}"`);
-      const stream = createTextStream(casual.reply, [], { casual: true });
+      const casualFollowUps = [
+        "Làm sao để nhập câu hỏi trắc nghiệm từ file Word dạng ABCD?",
+        "Học sinh làm bài thi trực tuyến cần lưu ý những gì?",
+        "Hướng dẫn phụ huynh và học sinh nộp bài tập về nhà trên K12Connect",
+      ];
+      const stream = createTextStream(casual.reply, [], casualFollowUps, { casual: true });
       return new Response(stream, {
         headers: {
           "Content-Type": "text/event-stream; charset=utf-8",
@@ -229,7 +257,8 @@ export async function POST(req: NextRequest) {
     const cached = await responseCache.get(model, cacheKey);
     if (cached) {
       console.log(`⚡ [Cache Hit] Trúng cache: "${message.slice(0, 35)}..." (Phản hồi stream)`);
-      const stream = createTextStream(cached.reply, cached.sources, { cached: true });
+      const cachedFollowUps = generateFollowUpPrompts(message, cached.sources || []);
+      const stream = createTextStream(cached.reply, cached.sources, cachedFollowUps, { cached: true });
       return new Response(stream, {
         headers: {
           "Content-Type": "text/event-stream; charset=utf-8",
@@ -239,7 +268,7 @@ export async function POST(req: NextRequest) {
       });
     }
 
-    // 6. Tìm kiếm dữ liệu liên quan từ kho tri thức K12Online
+    // 6. Tìm kiếm dữ liệu liên quan từ kho tri thức K12Online (kèm Từ điển đồng nghĩa)
     const relevantDocs = searchKnowledge(message, 3);
     const contextText = relevantDocs
       .map((d, i) => `[TÀI LIỆU ${i + 1} - ${d.title} (Nguồn: ${d.sourceUrl})]\n${d.content}`)
@@ -250,6 +279,8 @@ export async function POST(req: NextRequest) {
       category: d.category,
       url: d.sourceUrl,
     }));
+
+    const followUps = generateFollowUpPrompts(message, relevantDocs);
 
     // 7. Xây dựng System Prompt chuẩn mực cho giáo dục
     const systemPrompt = `Bạn là Trợ lý AI Hỗ trợ Kỹ thuật K12Online - Một dự án phi lợi nhuận phục vụ cộng đồng.
@@ -276,6 +307,7 @@ ${contextText || "Chưa có tài liệu phù hợp."}`;
     const clientStream = createOpenRouterStream(
       responseStream,
       sources,
+      followUps,
       async (finalText: string) => {
         await responseCache.set(model, cacheKey, finalText, sources);
       }
