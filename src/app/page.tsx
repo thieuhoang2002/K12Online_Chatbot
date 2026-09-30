@@ -8,7 +8,6 @@ import {
   Sparkles,
   Bot,
   User,
-  Coffee,
   LogIn,
   LogOut,
   ExternalLink,
@@ -21,7 +20,6 @@ import {
   ChevronDown,
 } from "lucide-react";
 import CloudflareTurnstile from "@/components/CloudflareTurnstile";
-import DonateModal from "@/components/DonateModal";
 import AuthModal from "@/components/AuthModal";
 
 interface Message {
@@ -58,7 +56,6 @@ export default function Home() {
   const [selectedModel, setSelectedModel] = useState(AVAILABLE_MODELS[0].id);
 
   // Modals & User state
-  const [isDonateOpen, setIsDonateOpen] = useState(false);
   const [isAuthOpen, setIsAuthOpen] = useState(false);
   const [userEmail, setUserEmail] = useState<string | null>(null);
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
@@ -306,15 +303,6 @@ export default function Home() {
           <div className="flex items-center gap-3">
             {/* Xác minh Cloudflare */}
             <CloudflareTurnstile />
-
-            {/* Nút Ủng hộ duy trì server 0đ */}
-            <button
-              onClick={() => setIsDonateOpen(true)}
-              className="flex items-center gap-1.5 px-3 py-1.5 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 text-amber-300 text-xs font-medium rounded-full transition shadow-sm"
-            >
-              <Coffee className="w-3.5 h-3.5 text-amber-400" />
-              <span>Mời cà phê</span>
-            </button>
           </div>
         </header>
 
@@ -464,7 +452,6 @@ export default function Home() {
       </main>
 
       {/* CÁC CỬA SỔ MODAL */}
-      <DonateModal isOpen={isDonateOpen} onClose={() => setIsDonateOpen(false)} />
       <AuthModal
         isOpen={isAuthOpen}
         onClose={() => setIsAuthOpen(false)}
