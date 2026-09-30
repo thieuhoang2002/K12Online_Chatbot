@@ -164,6 +164,111 @@ class KeyRotator {
       "Các mô hình AI miễn phí hiện đang trong giờ cao điểm hoặc tạm thời nghẽn. Bạn vui lòng thử lại sau 1-2 phút nhé!"
     );
   }
+
+  /**
+   * Gọi OpenRouter API với chế độ STREAMING (gõ chữ thời gian thực)
+   * Tự động xoay Key và Fallback Model nếu gặp lỗi 429
+   */
+  public async callChatCompletionStream(
+    messages: ChatMessage[],
+    requestedModel: string = "qwen/qwen3.8-27b:free"
+  ): Promise<{ responseStream: ReadableStream<Uint8Array>; keyIndexUsed: number; modelUsed: string }> {
+    if (this.keys.length === 0) {
+      throw new Error("Chưa cấu hình OPENROUTER_API_KEYS trong file môi trường .env.local.");
+    }
+
+    const candidateModels = [
+      requestedModel,
+      ...this.fallbackModels.filter((m) => m !== requestedModel),
+    ];
+
+    const totalKeys = this.keys.length;
+
+    for (const modelToUse of candidateModels) {
+      let keyAttempts = 0;
+
+      while (keyAttempts < totalKeys) {
+        const activeIndex = this.currentIndex;
+        const apiKey = this.keys[activeIndex];
+        this.currentIndex = (this.currentIndex + 1) % totalKeys;
+        keyAttempts++;
+
+        const maskedKey = apiKey.slice(0, 8) + "..." + apiKey.slice(-4);
+        console.log(
+          `[OpenRouter Stream] Đang thử Key #${activeIndex + 1}/${totalKeys} (${maskedKey}) | Model: ${modelToUse}`
+        );
+
+        try {
+          const controller = new AbortController();
+          const timeoutId = setTimeout(() => controller.abort(), 12000); // 12s timeout
+
+          const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+            method: "POST",
+            signal: controller.signal,
+            headers: {
+              "Authorization": `Bearer ${apiKey}`,
+              "Content-Type": "application/json",
+              "HTTP-Referer": "https://k12online-assistant.edu.vn",
+              "X-Title": "K12Online Community AI Assistant",
+            },
+            body: JSON.stringify({
+              model: modelToUse,
+              messages: messages,
+              temperature: 0.3,
+              stream: true,
+            }),
+          });
+
+          clearTimeout(timeoutId);
+
+          if (response.status === 429 || response.status === 402) {
+            let isSharedPoolThrottled = false;
+            try {
+              const errBody = await response.json();
+              const rawMsg = errBody?.metadata?.raw || errBody?.message || "";
+              if (
+                errBody?.metadata?.limit_source === "upstream_provider_shared_pool" ||
+                rawMsg.toLowerCase().includes("rate-limited upstream")
+              ) {
+                isSharedPoolThrottled = true;
+              }
+            } catch (e) {}
+
+            if (isSharedPoolThrottled) {
+              console.warn(
+                `⚠️ [OpenRouter Stream] Model ${modelToUse} bị nghẽn upstream. Chuyển sang model dự phòng...`
+              );
+              break;
+            }
+
+            console.warn(
+              `⚠️ [OpenRouter Stream] HTTP ${response.status} với Key #${activeIndex + 1}. Thử Key kế...`
+            );
+            continue;
+          }
+
+          if (!response.ok || !response.body) {
+            const errText = await response.text();
+            console.warn(`⚠️ [OpenRouter Stream] HTTP ${response.status}: ${errText.slice(0, 150)}`);
+            continue;
+          }
+
+          return {
+            responseStream: response.body,
+            keyIndexUsed: activeIndex + 1,
+            modelUsed: modelToUse,
+          };
+        } catch (err: any) {
+          console.warn(`❌ [OpenRouter Stream] Ngoại lệ khi gọi ${modelToUse}:`, err.message);
+          continue;
+        }
+      }
+    }
+
+    throw new Error(
+      "Các mô hình AI miễn phí hiện đang trong giờ cao điểm hoặc tạm thời nghẽn. Bạn vui lòng thử lại sau 1-2 phút nhé!"
+    );
+  }
 }
 
 export const keyRotator = new KeyRotator();

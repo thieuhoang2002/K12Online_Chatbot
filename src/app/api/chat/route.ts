@@ -3,6 +3,176 @@ import { keyRotator, ChatMessage } from "@/lib/openrouter";
 import { searchKnowledge } from "@/lib/knowledge";
 import { responseCache } from "@/lib/cache";
 import { checkRateLimit } from "@/lib/ratelimit";
+import { checkCasualIntent } from "@/lib/intent";
+import { generateFollowUpPrompts } from "@/lib/suggestions";
+
+/**
+ * Tạo Stream giả lập mượt mà cho câu trả lời từ Cache hoặc câu xã giao
+ */
+function createTextStream(
+  text: string,
+  sources: any[] = [],
+  followUps: string[] = [],
+  meta: any = { cached: true }
+): ReadableStream<Uint8Array> {
+  const encoder = new TextEncoder();
+  return new ReadableStream({
+    async start(controller) {
+      // 1. Gửi nguồn trước nếu có
+      if (sources && sources.length > 0) {
+        controller.enqueue(
+          encoder.encode(`data: ${JSON.stringify({ type: "sources", sources })}\n\n`)
+        );
+      }
+
+      // 2. Gửi từng cụm từ nhỏ tạo hiệu ứng gõ chữ
+      const words = text.split(" ");
+      let i = 0;
+      while (i < words.length) {
+        const batch = words.slice(i, i + 3).join(" ") + (i + 3 < words.length ? " " : "");
+        controller.enqueue(
+          encoder.encode(`data: ${JSON.stringify({ type: "chunk", text: batch })}\n\n`)
+        );
+        i += 3;
+        await new Promise((r) => setTimeout(r, 15));
+      }
+
+      // 3. Gửi danh sách câu hỏi gợi ý tiếp theo
+      if (followUps && followUps.length > 0) {
+        controller.enqueue(
+          encoder.encode(`data: ${JSON.stringify({ type: "followUps", prompts: followUps })}\n\n`)
+        );
+      }
+
+      // 4. Kết thúc
+      controller.enqueue(
+        encoder.encode(`data: ${JSON.stringify({ type: "done", meta })}\n\n`)
+      );
+      controller.close();
+    },
+  });
+}
+
+/**
+ * Chuyển tiếp luồng SSE từ OpenRouter tới Client và lưu Cache khi hoàn tất
+ */
+function createOpenRouterStream(
+  openRouterBody: ReadableStream<Uint8Array>,
+  sources: any[],
+  followUps: string[],
+  onComplete: (fullText: string) => Promise<void>
+): ReadableStream<Uint8Array> {
+  const encoder = new TextEncoder();
+  const decoder = new TextDecoder();
+  let fullAccumulated = "";
+
+  return new ReadableStream({
+    async start(controller) {
+      if (sources && sources.length > 0) {
+        controller.enqueue(
+          encoder.encode(`data: ${JSON.stringify({ type: "sources", sources })}\n\n`)
+        );
+      }
+
+      const reader = openRouterBody.getReader();
+      let buffer = "";
+      let isThinking = false;
+
+      const processDelta = (rawDelta: string) => {
+        if (!rawDelta) return;
+        let cleanText = "";
+        let remaining = rawDelta;
+
+        while (remaining.length > 0) {
+          if (isThinking) {
+            const endIdx = remaining.indexOf("</think>");
+            if (endIdx !== -1) {
+              isThinking = false;
+              remaining = remaining.slice(endIdx + 8);
+            } else {
+              remaining = "";
+            }
+          } else {
+            const startIdx = remaining.indexOf("<think>");
+            if (startIdx !== -1) {
+              cleanText += remaining.slice(0, startIdx);
+              isThinking = true;
+              remaining = remaining.slice(startIdx + 7);
+            } else {
+              cleanText += remaining;
+              remaining = "";
+            }
+          }
+        }
+
+        if (cleanText) {
+          fullAccumulated += cleanText;
+          controller.enqueue(
+            encoder.encode(`data: ${JSON.stringify({ type: "chunk", text: cleanText })}\n\n`)
+          );
+        }
+      };
+
+      try {
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+
+          buffer += decoder.decode(value, { stream: true });
+          const lines = buffer.split("\n");
+          buffer = lines.pop() || "";
+
+          for (const rawLine of lines) {
+            const line = rawLine.trim();
+            if (!line || !line.startsWith("data:")) continue;
+            const dataStr = line.replace(/^data:\s*/, "");
+            if (dataStr === "[DONE]") continue;
+
+            try {
+              const parsed = JSON.parse(dataStr);
+              // CHỈ trích xuất content thực tế, loại bỏ hoàn toàn delta.reasoning để tránh lộ suy nghĩ nội tâm
+              const delta = parsed.choices?.[0]?.delta?.content || "";
+              processDelta(delta);
+            } catch (e) {}
+          }
+        }
+
+        if (buffer.trim().startsWith("data:")) {
+          const dataStr = buffer.trim().replace(/^data:\s*/, "");
+          if (dataStr !== "[DONE]") {
+            try {
+              const parsed = JSON.parse(dataStr);
+              const delta = parsed.choices?.[0]?.delta?.content || "";
+              processDelta(delta);
+            } catch (e) {}
+          }
+        }
+
+        // Gửi danh sách gợi ý câu hỏi tiếp theo
+        if (followUps && followUps.length > 0) {
+          controller.enqueue(
+            encoder.encode(`data: ${JSON.stringify({ type: "followUps", prompts: followUps })}\n\n`)
+          );
+        }
+
+        // Gửi thông báo hoàn tất
+        controller.enqueue(
+          encoder.encode(`data: ${JSON.stringify({ type: "done", meta: { cached: false } })}\n\n`)
+        );
+        controller.close();
+
+        if (fullAccumulated.trim()) {
+          onComplete(fullAccumulated).catch(() => {});
+        }
+      } catch (err: any) {
+        controller.enqueue(
+          encoder.encode(`data: ${JSON.stringify({ type: "error", error: err.message })}\n\n`)
+        );
+        controller.close();
+      }
+    },
+  });
+}
 
 export async function POST(req: NextRequest) {
   try {
@@ -85,49 +255,45 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    // 1. KIỂM TRA BỘ NHỚ RAM / REDIS CACHE (Nếu câu hỏi đã từng trả lời trước đó)
-    // Luôn luôn kiểm tra cache bất kể phiên chat dài hay ngắn
-    const cached = await responseCache.get(model, cacheKey);
-    if (cached) {
-      console.log(`⚡ [RAM Cache] Trúng cache siêu tốc cho: "${message.slice(0, 35)}..."`);
-      return NextResponse.json({
-        reply: cached.reply,
-        sources: cached.sources,
-        meta: {
-          cached: true,
-          keyIndexUsed: 0,
-          totalKeysInPool: keyRotator.getKeyCount(),
+    // 4. BỘ LỌC Ý ĐỊNH XÃ GIAO (Intent Filter): Phản hồi tức thì <10ms không cần tra cứu RAG hay gọi LLM
+    const casual = checkCasualIntent(message);
+    if (casual.isCasual && casual.reply) {
+      console.log(`💬 [Intent Filter] Bắt câu hỏi xã giao: "${message}"`);
+      const casualFollowUps = [
+        "Làm sao để nhập câu hỏi trắc nghiệm từ file Word dạng ABCD?",
+        "Học sinh làm bài thi trực tuyến cần lưu ý những gì?",
+        "Hướng dẫn phụ huynh và học sinh nộp bài tập về nhà trên K12Connect",
+      ];
+      const stream = createTextStream(casual.reply, [], casualFollowUps, { casual: true });
+      return new Response(stream, {
+        headers: {
+          "Content-Type": "text/event-stream; charset=utf-8",
+          "Cache-Control": "no-cache, no-transform",
+          "Connection": "keep-alive",
         },
       });
     }
 
-    // 2. Tìm kiếm dữ liệu liên quan từ kho tri thức K12Online
+    // 5. KIỂM TRA BỘ NHỚ RAM / REDIS CACHE
+    const cached = await responseCache.get(model, cacheKey);
+    if (cached) {
+      console.log(`⚡ [Cache Hit] Trúng cache: "${message.slice(0, 35)}..." (Phản hồi stream)`);
+      const cachedFollowUps = generateFollowUpPrompts(message, cached.sources || []);
+      const stream = createTextStream(cached.reply, cached.sources, cachedFollowUps, { cached: true });
+      return new Response(stream, {
+        headers: {
+          "Content-Type": "text/event-stream; charset=utf-8",
+          "Cache-Control": "no-cache, no-transform",
+          "Connection": "keep-alive",
+        },
+      });
+    }
+
+    // 6. Tìm kiếm dữ liệu liên quan từ kho tri thức K12Online (kèm Từ điển đồng nghĩa)
     const relevantDocs = searchKnowledge(message, 3);
     const contextText = relevantDocs
       .map((d, i) => `[TÀI LIỆU ${i + 1} - ${d.title} (Nguồn: ${d.sourceUrl})]\n${d.content}`)
       .join("\n\n---\n\n");
-
-    // 3. Xây dựng System Prompt chuẩn mực cho giáo dục
-    const systemPrompt = `Bạn là Trợ lý AI Hỗ trợ Kỹ thuật K12Online - Một dự án phi lợi nhuận phục vụ cộng đồng.
-QUY TẮC PHỤC VỤ:
-1. Xưng hô thân thiện, lịch sự: gọi người dùng là "bạn", xưng là "mình" hoặc "Trợ lý K12".
-2. Chỉ trả lời dựa trên CƠ SỞ TRI THỨC K12ONLINE được cung cấp dưới đây. Tuyệt đối không tự suy diễn hoặc bịa đặt tính năng không có thật.
-3. Hướng dẫn chi tiết, rõ ràng theo từng bước (Bước 1: ..., Bước 2: ...) để bạn dễ dàng thao tác theo.
-4. Ở cuối câu trả lời, LUÔN LUÔN đính kèm đường link bài viết gốc để bạn có thể bấm vào xem hình ảnh minh họa chi tiết.
-5. Nếu trong tài liệu không có thông tin, hãy thành thật trả lời: "Hiện tại trong tài liệu hướng dẫn chưa có thông tin về vấn đề này. Bạn vui lòng liên hệ bộ phận hỗ trợ kỹ thuật hoặc tổng đài 18008000 (nhánh 2) để được hỗ trợ trực tiếp nhé."
-
-CƠ SỞ TRI THỨC THAM KHẢO:
-${contextText || "Chưa có tài liệu phù hợp."}`;
-
-    // 4. Chuẩn bị hội thoại
-    const messages: ChatMessage[] = [
-      { role: "system", content: systemPrompt },
-      ...history.slice(-4), // Giữ lại 4 lượt chat gần nhất để nhớ ngữ cảnh
-      { role: "user", content: message },
-    ];
-
-    // 5. Gọi OpenRouter thông qua Engine Xoay Key (Round-Robin & Failover)
-    const { content, keyIndexUsed } = await keyRotator.callChatCompletion(messages, model);
 
     const sources = relevantDocs.map((d) => ({
       title: d.title,
@@ -135,16 +301,44 @@ ${contextText || "Chưa có tài liệu phù hợp."}`;
       url: d.sourceUrl,
     }));
 
-    // 6. LƯU VÀO BỘ NHỚ CACHE (REDIS & RAM) CHO CÁC LẦN HỎI SAU
-    await responseCache.set(model, cacheKey, content, sources);
+    const followUps = generateFollowUpPrompts(message, relevantDocs);
 
-    return NextResponse.json({
-      reply: content,
+    // 7. Xây dựng System Prompt chuẩn mực cho giáo dục
+    const systemPrompt = `Bạn là Trợ lý AI Hỗ trợ Kỹ thuật K12Online - Một dự án phi lợi nhuận phục vụ cộng đồng.
+QUY TẮC PHỤC VỤ:
+1. Xưng hô thân thiện, lịch sự: gọi người dùng là "bạn", xưng là "mình" hoặc "Trợ lý K12".
+2. Trả lời dựa trên CƠ SỞ TRI THỨC K12ONLINE được cung cấp dưới đây. Hướng dẫn chi tiết, rõ ràng theo từng bước (Bước 1: ..., Bước 2: ...) để người dùng dễ dàng thao tác theo.
+3. Ở cuối câu trả lời, LUÔN LUÔN đính kèm đường link bài viết gốc để bạn có thể bấm vào xem chi tiết nếu tài liệu có đường dẫn.
+4. Nếu trong tài liệu hoàn toàn không có thông tin và không thể giải đáp, hãy thành thật trả lời: "Hiện tại trong tài liệu hướng dẫn chưa có thông tin chi tiết về vấn đề này. Bạn vui lòng liên hệ bộ phận hỗ trợ kỹ thuật hoặc tổng đài 18008000 (nhánh 2) để được hỗ trợ trực tiếp nhé."
+5. QUAN TRỌNG: TUYỆT ĐỐI KHÔNG xuất các đoạn suy nghĩ nội tâm (reasoning/thought), không giải thích bằng tiếng Anh hay viết "The user is asking...". Chỉ trả lời trực tiếp nội dung bằng tiếng Việt chuẩn mực cho người dùng.
+
+CƠ SỞ TRI THỨC THAM KHẢO:
+${contextText || "Chưa có tài liệu phù hợp."}`;
+
+    // 8. Chuẩn bị hội thoại
+    const messages: ChatMessage[] = [
+      { role: "system", content: systemPrompt },
+      ...history.slice(-4),
+      { role: "user", content: message },
+    ];
+
+    // 9. Gọi OpenRouter STREAMING (Gõ chữ từng từ theo thời gian thực)
+    const { responseStream } = await keyRotator.callChatCompletionStream(messages, model);
+
+    const clientStream = createOpenRouterStream(
+      responseStream,
       sources,
-      meta: {
-        cached: false,
-        keyIndexUsed,
-        totalKeysInPool: keyRotator.getKeyCount(),
+      followUps,
+      async (finalText: string) => {
+        await responseCache.set(model, cacheKey, finalText, sources);
+      }
+    );
+
+    return new Response(clientStream, {
+      headers: {
+        "Content-Type": "text/event-stream; charset=utf-8",
+        "Cache-Control": "no-cache, no-transform",
+        "Connection": "keep-alive",
       },
     });
   } catch (error: any) {
