@@ -634,16 +634,13 @@ export default function Home() {
 
             {/* Dòng tuyên bố miễn trừ trách nhiệm & Bản quyền cộng đồng */}
             <div
-              className={`flex flex-col sm:flex-row items-center justify-between text-[11px] px-1 gap-1 ${
+              className={`flex items-center justify-center text-[11px] px-1 gap-1 text-center ${
                 isDarkMode ? "text-slate-500" : "text-slate-500"
               }`}
             >
-              <span className="flex items-center gap-1 text-center sm:text-left">
+              <span className="flex items-center gap-1">
                 <Info className="w-3.5 h-3.5 shrink-0" />
                 Dự án phi lợi nhuận độc lập của cộng đồng giáo dục. Không thuộc sở hữu chính thức của Tập đoàn Viettel.
-              </span>
-              <span className={isDarkMode ? "text-slate-400" : "text-slate-600"}>
-                Bộ não AI: <strong>OpenRouter Engine (Tự động Xoay Key & Fallback)</strong>
               </span>
             </div>
           </div>
