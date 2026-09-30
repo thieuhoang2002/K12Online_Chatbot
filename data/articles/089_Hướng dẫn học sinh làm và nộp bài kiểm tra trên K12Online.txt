@@ -1,0 +1,36 @@
+### BÀI VIẾT [89]: Hướng dẫn học sinh tham gia làm bài và nộp bài kiểm tra, thi trực tuyến trên K12Online
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Học sinh làm bài kiểm tra
+- Link gốc: https://hotro.k12online.vn/hoc-thi-truc-tuyen/huong-dan-hoc-sinh-lam-bai-kiem-tra-thi-truc-tuyen.html
+
+**Nội dung:**
+Quy trình dành cho học sinh khi tham gia làm bài kiểm tra (15 phút, 1 tiết, giữa kỳ, cuối kỳ) trên hệ thống K12Online:
+
+I. Các bước vào làm bài kiểm tra:
+1. Bước 1: Học sinh đăng nhập tài khoản K12Online (trên máy tính qua trình duyệt Google Chrome hoặc trên điện thoại/máy tính bảng qua ứng dụng K12Online).
+2. Bước 2: Tại màn hình chính, học sinh có thể vào làm bài theo 2 cách:
+   - Cách 1 (Theo Thời khóa biểu): Chọn mục "Thời khóa biểu" > Tìm đến tiết học/tiết kiểm tra tương ứng > Nhấn vào bài kiểm tra.
+   - Cách 2 (Theo menu Bài kiểm tra): Vào menu "Bài kiểm tra" (hoặc "Kỳ thi") ở cột bên trái > Chọn bài kiểm tra đang diễn ra (trạng thái: Đang diễn ra).
+3. Bước 3: Đọc kỹ các thông tin về bài thi: Tên bài kiểm tra, môn học, thời gian làm bài, số lượng câu hỏi, số lần được phép làm > Nhấn nút "Vào làm bài" (hoặc "Bắt đầu làm bài").
+
+II. Thao tác trong quá trình làm bài:
+1. Trả lời câu hỏi trắc nghiệm:
+   - Đọc câu hỏi và nhấp chọn đáp án đúng (A, B, C hoặc D).
+   - Hệ thống sẽ tự động lưu đáp án vừa chọn (câu hỏi đã chọn đáp án sẽ chuyển sang màu xanh trên bảng danh sách câu hỏi).
+   - Học sinh có thể xem lại hoặc đổi đáp án bất kỳ lúc nào trước khi nộp bài.
+2. Trả lời câu hỏi tự luận (nếu bài thi có phần tự luận):
+   - Nhập nội dung câu trả lời trực tiếp vào ô soạn thảo, hoặc:
+   - Làm bài ra giấy, sau đó chụp ảnh rõ nét và nhấn "Tải file đính kèm" / "Đính kèm ảnh bài làm" để tải lên hệ thống.
+3. Theo dõi đồng hồ đếm ngược: Luôn chú ý thời gian còn lại ở góc trên màn hình để căn chỉnh tốc độ làm bài.
+
+III. Các bước nộp bài kiểm tra:
+1. Bước 1: Sau khi hoàn thành tất cả các câu hỏi, học sinh nhìn sang danh sách câu hỏi ở bảng điều hướng bên phải (hoặc dưới cùng trên điện thoại) để đảm bảo không bỏ sót câu nào.
+2. Bước 2: Nhấn vào nút "Nộp bài" (nằm ở góc trên bên phải màn hình làm bài).
+3. Bước 3: Hệ thống sẽ hiển thị bảng thông báo xác nhận: "Bạn có chắc chắn muốn nộp bài thi không? (Đã làm X/Y câu)".
+4. Bước 4: Kiểm tra lại và nhấn "Đồng ý" (hoặc "Xác nhận nộp bài").
+5. Sau khi nộp bài thành công, hệ thống sẽ hiển thị thông báo nộp bài thành công. Tùy theo cấu hình của giáo viên, học sinh có thể xem được điểm số, đáp án đúng/sai ngay lập tức hoặc phải đợi giáo viên chấm xong phần tự luận / công bố điểm.
+
+*Lưu ý quan trọng:*
+- Nếu hết thời gian làm bài mà học sinh chưa kịp bấm nút "Nộp bài", hệ thống K12Online sẽ TỰ ĐỘNG THU BÀI và lưu lại toàn bộ các câu trả lời học sinh đã tích chọn trước đó.
+- Không tải lại trang (F5) hoặc mở tab khác trong lúc làm bài nếu bài thi có bật chế độ giám sát chống gian lận.
+
+==================================================

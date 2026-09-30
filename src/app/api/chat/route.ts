@@ -76,6 +76,42 @@ function createOpenRouterStream(
 
       const reader = openRouterBody.getReader();
       let buffer = "";
+      let isThinking = false;
+
+      const processDelta = (rawDelta: string) => {
+        if (!rawDelta) return;
+        let cleanText = "";
+        let remaining = rawDelta;
+
+        while (remaining.length > 0) {
+          if (isThinking) {
+            const endIdx = remaining.indexOf("</think>");
+            if (endIdx !== -1) {
+              isThinking = false;
+              remaining = remaining.slice(endIdx + 8);
+            } else {
+              remaining = "";
+            }
+          } else {
+            const startIdx = remaining.indexOf("<think>");
+            if (startIdx !== -1) {
+              cleanText += remaining.slice(0, startIdx);
+              isThinking = true;
+              remaining = remaining.slice(startIdx + 7);
+            } else {
+              cleanText += remaining;
+              remaining = "";
+            }
+          }
+        }
+
+        if (cleanText) {
+          fullAccumulated += cleanText;
+          controller.enqueue(
+            encoder.encode(`data: ${JSON.stringify({ type: "chunk", text: cleanText })}\n\n`)
+          );
+        }
+      };
 
       try {
         while (true) {
@@ -94,16 +130,9 @@ function createOpenRouterStream(
 
             try {
               const parsed = JSON.parse(dataStr);
-              const delta =
-                parsed.choices?.[0]?.delta?.content ||
-                parsed.choices?.[0]?.delta?.reasoning ||
-                "";
-              if (delta) {
-                fullAccumulated += delta;
-                controller.enqueue(
-                  encoder.encode(`data: ${JSON.stringify({ type: "chunk", text: delta })}\n\n`)
-                );
-              }
+              // CHỈ trích xuất content thực tế, loại bỏ hoàn toàn delta.reasoning để tránh lộ suy nghĩ nội tâm
+              const delta = parsed.choices?.[0]?.delta?.content || "";
+              processDelta(delta);
             } catch (e) {}
           }
         }
@@ -113,16 +142,8 @@ function createOpenRouterStream(
           if (dataStr !== "[DONE]") {
             try {
               const parsed = JSON.parse(dataStr);
-              const delta =
-                parsed.choices?.[0]?.delta?.content ||
-                parsed.choices?.[0]?.delta?.reasoning ||
-                "";
-              if (delta) {
-                fullAccumulated += delta;
-                controller.enqueue(
-                  encoder.encode(`data: ${JSON.stringify({ type: "chunk", text: delta })}\n\n`)
-                );
-              }
+              const delta = parsed.choices?.[0]?.delta?.content || "";
+              processDelta(delta);
             } catch (e) {}
           }
         }
@@ -286,10 +307,10 @@ export async function POST(req: NextRequest) {
     const systemPrompt = `Bạn là Trợ lý AI Hỗ trợ Kỹ thuật K12Online - Một dự án phi lợi nhuận phục vụ cộng đồng.
 QUY TẮC PHỤC VỤ:
 1. Xưng hô thân thiện, lịch sự: gọi người dùng là "bạn", xưng là "mình" hoặc "Trợ lý K12".
-2. Chỉ trả lời dựa trên CƠ SỞ TRI THỨC K12ONLINE được cung cấp dưới đây. Tuyệt đối không tự suy diễn hoặc bịa đặt tính năng không có thật.
-3. Hướng dẫn chi tiết, rõ ràng theo từng bước (Bước 1: ..., Bước 2: ...) để bạn dễ dàng thao tác theo.
-4. Ở cuối câu trả lời, LUÔN LUÔN đính kèm đường link bài viết gốc để bạn có thể bấm vào xem hình ảnh minh họa chi tiết.
-5. Nếu trong tài liệu không có thông tin, hãy thành thật trả lời: "Hiện tại trong tài liệu hướng dẫn chưa có thông tin về vấn đề này. Bạn vui lòng liên hệ bộ phận hỗ trợ kỹ thuật hoặc tổng đài 18008000 (nhánh 2) để được hỗ trợ trực tiếp nhé."
+2. Trả lời dựa trên CƠ SỞ TRI THỨC K12ONLINE được cung cấp dưới đây. Hướng dẫn chi tiết, rõ ràng theo từng bước (Bước 1: ..., Bước 2: ...) để người dùng dễ dàng thao tác theo.
+3. Ở cuối câu trả lời, LUÔN LUÔN đính kèm đường link bài viết gốc để bạn có thể bấm vào xem chi tiết nếu tài liệu có đường dẫn.
+4. Nếu trong tài liệu hoàn toàn không có thông tin và không thể giải đáp, hãy thành thật trả lời: "Hiện tại trong tài liệu hướng dẫn chưa có thông tin chi tiết về vấn đề này. Bạn vui lòng liên hệ bộ phận hỗ trợ kỹ thuật hoặc tổng đài 18008000 (nhánh 2) để được hỗ trợ trực tiếp nhé."
+5. QUAN TRỌNG: TUYỆT ĐỐI KHÔNG xuất các đoạn suy nghĩ nội tâm (reasoning/thought), không giải thích bằng tiếng Anh hay viết "The user is asking...". Chỉ trả lời trực tiếp nội dung bằng tiếng Việt chuẩn mực cho người dùng.
 
 CƠ SỞ TRI THỨC THAM KHẢO:
 ${contextText || "Chưa có tài liệu phù hợp."}`;

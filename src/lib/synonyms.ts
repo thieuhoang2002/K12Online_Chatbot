@@ -21,10 +21,12 @@ export const SYNONYM_GROUPS: SynonymGroup[] = [
   },
   // 2. Bài thi / Đề thi / Kiểm tra
   {
-    canonical: ["bài thi", "đề thi", "ngân hàng câu hỏi", "câu hỏi", "trắc nghiệm"],
+    canonical: ["bài thi", "đề thi", "bài kiểm tra", "làm bài", "nộp bài", "ngân hàng câu hỏi", "câu hỏi", "trắc nghiệm"],
     aliases: [
       "kiểm tra 15p", "kiểm tra 15 phút", "kiểm tra 1 tiết", "kiem tra",
       "bài kiểm tra", "thi học kỳ", "thi giữa kỳ", "thi thử", "khảo sát",
+      "nộp bài kiểm tra", "làm bài kiểm tra", "nộp bài thi", "làm bài thi",
+      "nop bai kiem tra", "lam bai kiem tra", "nop bai thi", "lam bai thi",
       "ma trận đề", "ngân hàng đề", "bo de"
     ],
   },
