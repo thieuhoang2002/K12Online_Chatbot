@@ -77,7 +77,7 @@ class KeyRotator {
 
         try {
           const controller = new AbortController();
-          const timeoutId = setTimeout(() => controller.abort(), 20000); // 20s timeout
+          const timeoutId = setTimeout(() => controller.abort(), 15000); // 15s timeout
 
           const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
             method: "POST",
@@ -98,6 +98,25 @@ class KeyRotator {
           clearTimeout(timeoutId);
 
           if (response.status === 429 || response.status === 402) {
+            let isSharedPoolThrottled = false;
+            try {
+              const errBody = await response.json();
+              const rawMsg = errBody?.metadata?.raw || errBody?.message || "";
+              if (
+                errBody?.metadata?.limit_source === "upstream_provider_shared_pool" ||
+                rawMsg.toLowerCase().includes("rate-limited upstream")
+              ) {
+                isSharedPoolThrottled = true;
+              }
+            } catch (e) {}
+
+            if (isSharedPoolThrottled) {
+              console.warn(
+                `⚠️ [OpenRouter] Model ${modelToUse} đang bị nghẽn upstream (shared pool). Tự động chuyển ngay sang model dự phòng kế tiếp!`
+              );
+              break;
+            }
+
             console.warn(
               `⚠️ [OpenRouter] HTTP ${response.status} với Key #${activeIndex + 1}. Thử Key kế...`
             );

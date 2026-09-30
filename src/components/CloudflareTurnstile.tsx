@@ -10,13 +10,17 @@ interface TurnstileProps {
 export default function CloudflareTurnstile({ onVerify }: TurnstileProps) {
   const [verified, setVerified] = useState(false);
   const siteKey = process.env.NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY;
+  const onVerifyRef = React.useRef(onVerify);
+  onVerifyRef.current = onVerify;
+  const widgetIdRef = React.useRef<string | null>(null);
+  const isRenderedRef = React.useRef(false);
 
   useEffect(() => {
     // Luôn có timeout an toàn tối đa 2.5s để không bao giờ bị treo "Đang xác minh..."
     const safetyTimer = setTimeout(() => {
       setVerified((prev) => {
         if (!prev) {
-          if (onVerify) onVerify("cf-safety-verified-token");
+          if (onVerifyRef.current) onVerifyRef.current("cf-safety-verified-token");
           return true;
         }
         return prev;
@@ -27,18 +31,21 @@ export default function CloudflareTurnstile({ onVerify }: TurnstileProps) {
       return () => clearTimeout(safetyTimer);
     }
 
-    // Đăng ký callback trước khi tải script
-    (window as any).onloadTurnstileCallback = () => {
-      if ((window as any).turnstile) {
+    const renderWidget = () => {
+      if (isRenderedRef.current) return;
+      if (typeof window !== "undefined" && (window as any).turnstile) {
         try {
-          (window as any).turnstile.render("#cf-turnstile-container", {
+          const container = document.getElementById("cf-turnstile-container");
+          if (!container) return;
+          isRenderedRef.current = true;
+          const wId = (window as any).turnstile.render("#cf-turnstile-container", {
             sitekey: siteKey,
             theme: "auto",
             size: "flexible",
             callback: (token: string) => {
               clearTimeout(safetyTimer);
               setVerified(true);
-              if (onVerify) onVerify(token);
+              if (onVerifyRef.current) onVerifyRef.current(token);
             },
             "error-callback": () => {
               // Khi gặp lỗi domain/localhost, tự động bypass an toàn
@@ -46,11 +53,15 @@ export default function CloudflareTurnstile({ onVerify }: TurnstileProps) {
               setVerified(true);
             },
           });
+          widgetIdRef.current = wId;
         } catch (e) {
           setVerified(true);
         }
       }
     };
+
+    // Đăng ký callback trước khi tải script
+    (window as any).onloadTurnstileCallback = renderWidget;
 
     // Kiểm tra xem script đã có sẵn trong DOM chưa
     let script = document.getElementById("cf-turnstile-script") as HTMLScriptElement | null;
@@ -63,13 +74,13 @@ export default function CloudflareTurnstile({ onVerify }: TurnstileProps) {
       script.defer = true;
       document.head.appendChild(script);
     } else if ((window as any).turnstile) {
-      (window as any).onloadTurnstileCallback();
+      renderWidget();
     }
 
     return () => {
       clearTimeout(safetyTimer);
     };
-  }, [siteKey, onVerify]);
+  }, [siteKey]);
 
   return (
     <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium border bg-slate-900/60 border-slate-700/60 dark:bg-slate-900/60 dark:border-slate-700/60 text-slate-300">

@@ -90,48 +90,66 @@ export default function Home() {
 
     // 2. Chat sessions
     const savedSessions = localStorage.getItem("k12_chat_sessions");
+    let hasLoaded = false;
     if (savedSessions) {
       try {
         const parsed = JSON.parse(savedSessions);
-        setSessions(parsed);
-        if (parsed.length > 0) {
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          setSessions(parsed);
           setCurrentSessionId(parsed[0].id);
+          hasLoaded = true;
         }
       } catch (e) {}
     }
 
-    // 3. User email & Lắng nghe đăng nhập từ Supabase
+    if (!hasLoaded) {
+      const defaultSession: ChatSession = {
+        id: "chat_" + Date.now(),
+        title: "Cuộc trò chuyện mới",
+        messages: [
+          {
+            role: "assistant",
+            content:
+              "Xin chào bạn! Mình là Trợ lý AI hỗ trợ nghiệp vụ K12Online.\n\nBạn có thể hỏi mình bất kỳ vấn đề gì về: nhập đề thi từ Word, làm bài trực tuyến, quản lý bài tập K12Connect, điểm danh, xếp thời khóa biểu... Mình sẽ hướng dẫn từng bước chi tiết nhất nhé!",
+          },
+        ],
+        createdAt: Date.now(),
+      };
+      setSessions([defaultSession]);
+      setCurrentSessionId(defaultSession.id);
+    }
+
+    // 3. User email
     const savedUser = localStorage.getItem("k12_user_email");
     if (savedUser) setUserEmail(savedUser);
+  }, []);
 
-    if (supabase) {
-      supabase.auth.getSession().then(({ data: { session } }) => {
-        if (session?.user?.email) {
-          setUserEmail(session.user.email);
-          localStorage.setItem("k12_user_email", session.user.email);
-        }
-      });
+  // 4. Lắng nghe đăng nhập từ Supabase (tách riêng để không ảnh hưởng khởi tạo phiên chat)
+  useEffect(() => {
+    if (!supabase) return;
 
-      const {
-        data: { subscription },
-      } = supabase.auth.onAuthStateChange((event, session) => {
-        if ((event === "SIGNED_IN" || event === "INITIAL_SESSION") && session?.user?.email) {
-          setUserEmail(session.user.email);
-          localStorage.setItem("k12_user_email", session.user.email);
-        } else if (event === "SIGNED_OUT") {
-          setUserEmail(null);
-          localStorage.removeItem("k12_user_email");
-        }
-      });
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      if (session?.user?.email) {
+        setUserEmail(session.user.email);
+        localStorage.setItem("k12_user_email", session.user.email);
+      }
+    });
 
-      return () => {
-        subscription.unsubscribe();
-      };
-    }
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((event, session) => {
+      if ((event === "SIGNED_IN" || event === "INITIAL_SESSION") && session?.user?.email) {
+        setUserEmail(session.user.email);
+        localStorage.setItem("k12_user_email", session.user.email);
+      } else if (event === "SIGNED_OUT") {
+        setUserEmail(null);
+        localStorage.removeItem("k12_user_email");
+      }
+    });
 
-    if (!savedSessions || JSON.parse(savedSessions).length === 0) {
-      createNewChat();
-    }
+    return () => {
+      subscription.unsubscribe();
+    };
   }, []);
 
   useEffect(() => {
@@ -188,15 +206,36 @@ export default function Home() {
     }
   }
 
+  const handleTurnstileVerify = React.useCallback((token: string) => {
+    setTurnstileToken(token);
+  }, []);
+
   async function handleSendMessage(textToSend?: string) {
     const query = (textToSend || inputMessage).trim();
     if (!query || loading) return;
 
     setInputMessage("");
 
+    // Đảm bảo luôn có 1 phiên chat hợp lệ
+    let targetSessionId = currentSession?.id;
+    let baseMessages = messages;
+
+    if (!targetSessionId) {
+      targetSessionId = "chat_" + Date.now();
+      const fallbackSession: ChatSession = {
+        id: targetSessionId,
+        title: query.slice(0, 30) + "...",
+        messages: [],
+        createdAt: Date.now(),
+      };
+      setSessions([fallbackSession]);
+      setCurrentSessionId(targetSessionId);
+      baseMessages = [];
+    }
+
     // Cập nhật câu hỏi của người dùng
     const userMsg: Message = { role: "user", content: query };
-    const updatedMessages = [...messages, userMsg];
+    const updatedMessages = [...baseMessages, userMsg];
 
     // KIỂM TRA BỘ NHỚ ĐỆM TỨC THÌ TRÊN TRÌNH DUYỆT (0 GIÂY)
     const normalizedKey = query.toLowerCase();
@@ -209,7 +248,7 @@ export default function Home() {
       };
       setSessions((prev) =>
         prev.map((s) => {
-          if (s.id === currentSession.id) {
+          if (s.id === targetSessionId) {
             return {
               ...s,
               title: s.messages.length <= 1 ? query.slice(0, 30) + "..." : s.title,
@@ -224,7 +263,7 @@ export default function Home() {
 
     setSessions((prev) =>
       prev.map((s) => {
-        if (s.id === currentSession.id) {
+        if (s.id === targetSessionId) {
           return {
             ...s,
             title: s.messages.length <= 1 ? query.slice(0, 30) + "..." : s.title,
@@ -266,7 +305,7 @@ export default function Home() {
 
       setSessions((prev) =>
         prev.map((s) =>
-          s.id === currentSession.id ? { ...s, messages: [...updatedMessages, botMsg] } : s
+          s.id === targetSessionId ? { ...s, messages: [...updatedMessages, botMsg] } : s
         )
       );
     } catch (err: any) {
@@ -276,7 +315,7 @@ export default function Home() {
       };
       setSessions((prev) =>
         prev.map((s) =>
-          s.id === currentSession.id ? { ...s, messages: [...updatedMessages, errorMsg] } : s
+          s.id === targetSessionId ? { ...s, messages: [...updatedMessages, errorMsg] } : s
         )
       );
     } finally {
@@ -492,7 +531,7 @@ export default function Home() {
             </button>
 
             {/* Xác minh Cloudflare */}
-            <CloudflareTurnstile onVerify={(token) => setTurnstileToken(token)} />
+            <CloudflareTurnstile onVerify={handleTurnstileVerify} />
 
             {/* Nút Đăng nhập cho Chế độ khách */}
             {!userEmail ? (
