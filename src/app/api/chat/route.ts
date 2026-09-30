@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { keyRotator, ChatMessage } from "@/lib/openrouter";
 import { searchKnowledge } from "@/lib/knowledge";
 import { responseCache } from "@/lib/cache";
+import { checkRateLimit } from "@/lib/ratelimit";
 
 export async function POST(req: NextRequest) {
   try {
@@ -13,40 +14,74 @@ export async function POST(req: NextRequest) {
       turnstileToken,
     } = body;
 
-    if (!message || typeof message !== "string") {
+    // 1. Kiểm tra đầu vào & giới hạn độ dài payload (chống flood token/memory)
+    if (!message || typeof message !== "string" || message.trim().length === 0) {
       return NextResponse.json({ error: "Vui lòng nhập nội dung câu hỏi." }, { status: 400 });
+    }
+
+    if (message.trim().length > 1500) {
+      return NextResponse.json(
+        { error: "Câu hỏi vượt quá giới hạn độ dài cho phép (tối đa 1.500 ký tự). Bạn vui lòng tóm tắt ngắn gọn hơn nhé!" },
+        { status: 400 }
+      );
     }
 
     const cacheKey = message.trim().toLowerCase();
 
-    // 0. Xác minh Cloudflare Turnstile phía Server (siteverify)
-    const turnstileSecret = process.env.CLOUDFLARE_TURNSTILE_SECRET_KEY;
-    if (
-      turnstileSecret &&
-      turnstileToken &&
-      turnstileToken !== "cf-safety-verified-token" &&
-      turnstileToken !== "cf-simulated-token"
-    ) {
-      try {
-        const ip =
-          req.headers.get("x-forwarded-for") || req.headers.get("cf-connecting-ip") || "";
-        const verifyFormData = new URLSearchParams();
-        verifyFormData.append("secret", turnstileSecret);
-        verifyFormData.append("response", turnstileToken);
-        if (ip) verifyFormData.append("remoteip", ip.split(",")[0].trim());
+    // 2. Trích xuất IP & Giới hạn tần suất gọi API (Rate Limit qua Upstash Redis / RAM)
+    const ip =
+      req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+      req.headers.get("cf-connecting-ip") ||
+      req.headers.get("x-real-ip") ||
+      "127.0.0.1";
 
-        const cfRes = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
-          method: "POST",
-          body: verifyFormData,
-        });
-        const cfData = await cfRes.json();
-        if (cfData.success) {
-          console.log("✅ [Cloudflare Turnstile] Siteverify thành công!");
-        } else {
-          console.warn("⚠️ [Cloudflare Turnstile] Siteverify từ chối token:", cfData["error-codes"]);
+    const rateLimit = await checkRateLimit(ip, 20, 60);
+    if (!rateLimit.allowed) {
+      return NextResponse.json(
+        {
+          error: `Bạn đang gửi câu hỏi quá nhanh. Vui lòng đợi ${rateLimit.resetInSeconds} giây trước khi gửi tiếp nhé!`,
+        },
+        { status: 429 }
+      );
+    }
+
+    // 3. Xác minh Cloudflare Turnstile nghiêm ngặt phía Server (siteverify)
+    const turnstileSecret = process.env.CLOUDFLARE_TURNSTILE_SECRET_KEY;
+    if (turnstileSecret) {
+      const isDevBypass =
+        process.env.NODE_ENV !== "production" &&
+        (turnstileToken === "cf-safety-verified-token" || turnstileToken === "cf-simulated-token");
+
+      if (!isDevBypass) {
+        if (!turnstileToken) {
+          return NextResponse.json(
+            { error: "Yêu cầu bị từ chối: Thiếu mã xác thực bảo mật Cloudflare Turnstile." },
+            { status: 403 }
+          );
         }
-      } catch (err: any) {
-        console.warn("⚠️ [Cloudflare Turnstile] Lỗi kết nối siteverify:", err.message);
+
+        try {
+          const verifyFormData = new URLSearchParams();
+          verifyFormData.append("secret", turnstileSecret);
+          verifyFormData.append("response", turnstileToken);
+          if (ip && ip !== "127.0.0.1") verifyFormData.append("remoteip", ip);
+
+          const cfRes = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
+            method: "POST",
+            body: verifyFormData,
+          });
+          const cfData = await cfRes.json();
+          if (!cfData.success) {
+            console.warn("⚠️ [Cloudflare Turnstile] Siteverify từ chối token:", cfData["error-codes"]);
+            return NextResponse.json(
+              { error: "Xác minh bảo mật Cloudflare không hợp lệ hoặc đã hết hạn. Vui lòng tải lại trang." },
+              { status: 403 }
+            );
+          }
+          console.log("✅ [Cloudflare Turnstile] Siteverify thành công!");
+        } catch (err: any) {
+          console.warn("⚠️ [Cloudflare Turnstile] Lỗi kết nối siteverify:", err.message);
+        }
       }
     }
 
