@@ -22,6 +22,7 @@ import {
 } from "lucide-react";
 import CloudflareTurnstile from "@/components/CloudflareTurnstile";
 import AuthModal from "@/components/AuthModal";
+import MarkdownRenderer from "@/components/MarkdownRenderer";
 
 interface Message {
   role: "user" | "assistant";
@@ -502,9 +503,13 @@ export default function Home() {
                   </button>
                 )}
 
-                <div className="whitespace-pre-wrap font-sans text-[13.5px] leading-relaxed">
-                  {m.content}
-                </div>
+                {m.role === "assistant" ? (
+                  <MarkdownRenderer content={m.content} isDarkMode={isDarkMode} />
+                ) : (
+                  <div className="whitespace-pre-wrap font-sans text-[13.5px] leading-relaxed">
+                    {m.content}
+                  </div>
+                )}
 
                 {/* Danh sách nguồn tham khảo trích dẫn */}
                 {m.sources && m.sources.length > 0 && (
