@@ -85,3 +85,40 @@ export async function checkRateLimit(
     resetInSeconds,
   };
 }
+
+const humanVerifiedStore = new Map<string, number>();
+
+/**
+ * Kiểm tra xem IP này đã được xác thực Cloudflare Turnstile gần đây chưa (trong vòng 30 phút)
+ */
+export async function isIpVerifiedHuman(ip: string): Promise<boolean> {
+  const safeIp = ip || "anonymous";
+  if (safeIp === "127.0.0.1" || safeIp === "::1" || safeIp === "localhost") {
+    return true;
+  }
+  const key = `turnstile:verified:${safeIp}`;
+  if (redis) {
+    try {
+      const val = await redis.get(key);
+      if (val) return true;
+    } catch (e) {}
+  }
+  const exp = humanVerifiedStore.get(safeIp);
+  if (exp && exp > Date.now()) return true;
+  return false;
+}
+
+/**
+ * Đánh dấu IP đã vượt qua xác thực Turnstile (mặc định 30 phút = 1800s)
+ */
+export async function markIpVerifiedHuman(ip: string, ttlSeconds: number = 1800): Promise<void> {
+  const safeIp = ip || "anonymous";
+  const key = `turnstile:verified:${safeIp}`;
+  if (redis) {
+    try {
+      await redis.set(key, "1", { ex: ttlSeconds });
+    } catch (e) {}
+  }
+  humanVerifiedStore.set(safeIp, Date.now() + ttlSeconds * 1000);
+}
+
