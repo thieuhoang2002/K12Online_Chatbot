@@ -24,11 +24,20 @@ import {
   PanelLeftClose,
   PanelLeft,
   PenSquare,
+  ShieldCheck,
+  ThumbsUp,
+  ThumbsDown,
+  Download,
 } from "lucide-react";
 import CloudflareTurnstile from "@/components/CloudflareTurnstile";
 import AuthModal from "@/components/AuthModal";
+import AdminPassModal from "@/components/AdminPassModal";
+import FeedbackModal from "@/components/FeedbackModal";
+import ExportModal from "@/components/ExportModal";
 import MarkdownRenderer from "@/components/MarkdownRenderer";
 import { supabase } from "@/lib/supabase";
+import { isAdminEmail } from "@/lib/zeroKnowledge";
+
 
 interface Message {
   role: "user" | "assistant";
@@ -128,6 +137,21 @@ export default function Home() {
   const [userEmail, setUserEmail] = useState<string | null>(null);
   const [turnstileToken, setTurnstileToken] = useState<string>("");
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
+
+  // Admin & Zero-Knowledge Vault Modal
+  const [isAdminPassModalOpen, setIsAdminPassModalOpen] = useState(false);
+  const isAdmin = isAdminEmail(userEmail);
+
+  // Feedback & Export state
+  const [isExportModalOpen, setIsExportModalOpen] = useState(false);
+  const [feedbackModalState, setFeedbackModalState] = useState<{
+    isOpen: boolean;
+    messageIndex: number;
+    query: string;
+    reply: string;
+  } | null>(null);
+  const [feedbackRatings, setFeedbackRatings] = useState<Record<number, "like" | "dislike">>({});
+
 
   // Ref cuộn độc lập bên trong container chat (CHỐNG LỖI MẤT HEADER TRÊN MOBILE)
   const chatScrollRef = useRef<HTMLDivElement>(null);
@@ -384,6 +408,73 @@ export default function Home() {
   const handleTurnstileVerify = React.useCallback((token: string) => {
     setTurnstileToken(token);
   }, []);
+
+  async function handleLike(idx: number, query: string, reply: string) {
+    setFeedbackRatings((prev) => ({ ...prev, [idx]: "like" }));
+    try {
+      await fetch("/api/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          sessionId: currentSessionId,
+          messageIndex: idx,
+          userEmail,
+          rating: "like",
+          query,
+          reply,
+        }),
+      });
+    } catch (e) {}
+  }
+
+  function handleDislikeClick(idx: number, query: string, reply: string) {
+    setFeedbackModalState({
+      isOpen: true,
+      messageIndex: idx,
+      query,
+      reply,
+    });
+  }
+
+  async function handleDislikeSubmit(reason: string, comment: string) {
+    if (!feedbackModalState) return;
+    const { messageIndex, query, reply } = feedbackModalState;
+    setFeedbackRatings((prev) => ({ ...prev, [messageIndex]: "dislike" }));
+    try {
+      await fetch("/api/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          sessionId: currentSessionId,
+          messageIndex,
+          userEmail,
+          rating: "dislike",
+          reason,
+          comment,
+          query,
+          reply,
+        }),
+      });
+    } catch (e) {}
+  }
+
+  function handleAdminButtonClick() {
+    // Kiểm tra xem đã mở khóa Zero-Knowledge trước đó chưa (phiên hợp lệ 4 tiếng)
+    const unlockData = sessionStorage.getItem("k12_admin_unlocked");
+    if (unlockData && userEmail) {
+      try {
+        const parsed = JSON.parse(unlockData);
+        const isExpired = Date.now() - parsed.unlockedAt > 4 * 60 * 60 * 1000;
+        if (parsed.email === userEmail.toLowerCase().trim() && !isExpired) {
+          window.location.href = "/admin";
+          return;
+        }
+      } catch (e) {}
+    }
+    // Chưa mở khóa -> Bật modal nhập/tạo Master Password
+    setIsAdminPassModalOpen(true);
+  }
+
 
   async function handleSendMessage(textToSend?: string) {
     const query = (textToSend || inputMessage).trim();
@@ -785,6 +876,27 @@ export default function Home() {
             </div>
           </button>
 
+          {/* Nút Admin trong Sidebar kích hoạt khi là Whitelist */}
+          {isAdmin && (
+            <button
+              onClick={handleAdminButtonClick}
+              className={`w-full py-2 px-3 rounded-xl text-xs font-semibold flex items-center justify-between transition border ${
+                isDarkMode
+                  ? "bg-sky-500/10 hover:bg-sky-500/20 border-sky-500/30 text-sky-400"
+                  : "bg-sky-50 hover:bg-sky-100 border-sky-200 text-sky-700"
+              }`}
+            >
+              <div className="flex items-center gap-2.5">
+                <ShieldCheck className="w-4 h-4 text-sky-500" />
+                <span>Bảng điều khiển Admin</span>
+              </div>
+              <span className="text-[10px] bg-sky-500/20 px-1.5 py-0.5 rounded font-mono">
+                AES-256
+              </span>
+            </button>
+          )}
+
+
           {/* Nút Đăng nhập hoặc Hồ sơ người dùng */}
           {!userEmail ? (
             <button
@@ -898,6 +1010,38 @@ export default function Home() {
               {isDarkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
             </button>
 
+            {/* Nút Xuất Cuộc Trò Chuyện (Markdown / TXT / PDF) */}
+            {messages.length > 0 && (
+              <button
+                onClick={() => setIsExportModalOpen(true)}
+                className={`p-2 rounded-full transition ${
+                  isDarkMode
+                    ? "hover:bg-[#1e1f20] text-slate-300 hover:text-white"
+                    : "hover:bg-slate-100 text-slate-600 hover:text-slate-900"
+                }`}
+                title="Xuất cuộc trò chuyện (Markdown, TXT, PDF)"
+              >
+                <Download className="w-4 h-4" />
+              </button>
+            )}
+
+            {/* Nút Admin kích hoạt khi đăng nhập tài khoản whitelist (thieuhoangent@gmail.com / thieuviethoang7b@gmail.com) */}
+            {isAdmin && (
+              <button
+                onClick={handleAdminButtonClick}
+                className={`p-1.5 sm:px-2.5 sm:py-1 rounded-full transition border flex items-center gap-1.5 text-xs font-semibold shadow-xs ${
+                  isDarkMode
+                    ? "bg-sky-500/10 hover:bg-sky-500/20 border-sky-500/40 text-sky-400"
+                    : "bg-sky-50 hover:bg-sky-100 border-sky-300 text-sky-700"
+                }`}
+                title="Bảng điều khiển Quản trị (Admin Zero-Knowledge)"
+              >
+                <ShieldCheck className="w-4 h-4 text-sky-500" />
+                <span className="hidden sm:inline">Admin</span>
+              </button>
+            )}
+
+
             {/* Cloudflare Turnstile vô hình */}
             <CloudflareTurnstile onVerify={handleTurnstileVerify} />
 
@@ -985,46 +1129,84 @@ export default function Home() {
                       m.content.startsWith("Xin chào bạn! Mình là Trợ lý AI")
                     )
                 )
-                .map((m, idx) => (
-                <div
-                  key={idx}
-                  className={`flex gap-3 text-sm leading-relaxed ${
-                    m.role === "user" ? "justify-end" : "justify-start"
-                  }`}
-                >
-                  {m.role === "assistant" && (
-                    <div className="w-8 h-8 rounded-full flex items-center justify-center shrink-0 mt-0.5">
-                      <K12Icon className="w-7 h-7" />
-                    </div>
-                  )}
+                .map((m, idx) => {
+                  const priorUserMsg = messages.slice(0, idx).reverse().find((msg) => msg.role === "user");
+                  const userQuestion = priorUserMsg?.content || "";
 
-                  <div
-                    className={`relative group max-w-[88%] sm:max-w-[82%] rounded-3xl p-4 transition-colors ${
-                      m.role === "user"
-                        ? isDarkMode
-                          ? "bg-[#282a2c] text-white rounded-tr-sm"
-                          : "bg-[#e9eef6] text-[#1f1f1f] rounded-tr-sm"
-                        : "text-inherit"
-                    }`}
-                  >
-                    {/* Nút Copy câu trả lời */}
-                    {m.role === "assistant" && m.content.trim().length > 0 && (
-                      <button
-                        onClick={() => copyToClipboard(m.content, idx)}
-                        title="Sao chép nội dung"
-                        className={`absolute top-2 right-2 p-1.5 rounded-lg transition opacity-0 group-hover:opacity-100 ${
-                          isDarkMode
-                            ? "text-slate-400 hover:text-white hover:bg-[#282a2c]"
-                            : "text-slate-500 hover:text-slate-900 hover:bg-slate-100"
+                  return (
+                    <div
+                      key={idx}
+                      className={`flex gap-3 text-sm leading-relaxed ${
+                        m.role === "user" ? "justify-end" : "justify-start"
+                      }`}
+                    >
+                      {m.role === "assistant" && (
+                        <div className="w-8 h-8 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                          <K12Icon className="w-7 h-7" />
+                        </div>
+                      )}
+
+                      <div
+                        className={`relative group max-w-[88%] sm:max-w-[82%] rounded-3xl p-4 transition-colors ${
+                          m.role === "user"
+                            ? isDarkMode
+                              ? "bg-[#282a2c] text-white rounded-tr-sm"
+                              : "bg-[#e9eef6] text-[#1f1f1f] rounded-tr-sm"
+                            : "text-inherit"
                         }`}
                       >
-                        {copiedIndex === idx ? (
-                          <Check className="w-4 h-4 text-emerald-500" />
-                        ) : (
-                          <Copy className="w-4 h-4" />
+                        {/* Thanh công cụ: Like, Dislike, Copy */}
+                        {m.role === "assistant" && m.content.trim().length > 0 && (
+                          <div className="absolute top-2 right-2 flex items-center gap-1 opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
+                            {/* Nút Like */}
+                            <button
+                              onClick={() => handleLike(idx, userQuestion, m.content)}
+                              title="Hài lòng với câu trả lời này"
+                              className={`p-1.5 rounded-lg transition border ${
+                                feedbackRatings[idx] === "like"
+                                  ? "bg-emerald-500/20 text-emerald-400 border-emerald-500/40"
+                                  : isDarkMode
+                                  ? "text-slate-400 hover:text-emerald-400 hover:bg-[#282a2c] border-transparent"
+                                  : "text-slate-500 hover:text-emerald-600 hover:bg-slate-100 border-transparent"
+                              }`}
+                            >
+                              <ThumbsUp className="w-3.5 h-3.5" />
+                            </button>
+
+                            {/* Nút Dislike */}
+                            <button
+                              onClick={() => handleDislikeClick(idx, userQuestion, m.content)}
+                              title="Chưa hài lòng / Góp ý câu trả lời"
+                              className={`p-1.5 rounded-lg transition border ${
+                                feedbackRatings[idx] === "dislike"
+                                  ? "bg-rose-500/20 text-rose-400 border-rose-500/40"
+                                  : isDarkMode
+                                  ? "text-slate-400 hover:text-rose-400 hover:bg-[#282a2c] border-transparent"
+                                  : "text-slate-500 hover:text-rose-600 hover:bg-slate-100 border-transparent"
+                              }`}
+                            >
+                              <ThumbsDown className="w-3.5 h-3.5" />
+                            </button>
+
+                            {/* Nút Copy */}
+                            <button
+                              onClick={() => copyToClipboard(m.content, idx)}
+                              title="Sao chép nội dung"
+                              className={`p-1.5 rounded-lg transition border ${
+                                isDarkMode
+                                  ? "text-slate-400 hover:text-white hover:bg-[#282a2c] border-transparent"
+                                  : "text-slate-500 hover:text-slate-900 hover:bg-slate-100 border-transparent"
+                              }`}
+                            >
+                              {copiedIndex === idx ? (
+                                <Check className="w-3.5 h-3.5 text-emerald-500" />
+                              ) : (
+                                <Copy className="w-3.5 h-3.5" />
+                              )}
+                            </button>
+                          </div>
                         )}
-                      </button>
-                    )}
+
 
                     {m.role === "assistant" ? (
                       m.content.trim() === "" ? (
@@ -1130,7 +1312,9 @@ export default function Home() {
                       )}
                   </div>
                 </div>
-              ))}
+              );
+            })}
+
 
               {/* Nếu tin nhắn cuối chưa có gợi ý chi tiết và không đang loading, hiển thị gợi ý câu hỏi phổ biến */}
               {(() => {
@@ -1292,6 +1476,37 @@ export default function Home() {
         onClose={() => setIsAuthOpen(false)}
         onLoginSuccess={handleLoginSuccess}
       />
+
+      {/* 6. MODAL MỞ KHÓA QUẢN TRỊ ZERO-KNOWLEDGE */}
+      {userEmail && (
+        <AdminPassModal
+          isOpen={isAdminPassModalOpen}
+          onClose={() => setIsAdminPassModalOpen(false)}
+          userEmail={userEmail}
+          isDarkMode={isDarkMode}
+          onUnlocked={() => {
+            setIsAdminPassModalOpen(false);
+            window.location.href = "/admin";
+          }}
+        />
+      )}
+
+      {/* 7. MODAL GÓP Ý PHẢN HỒI (DISLIKE) */}
+      <FeedbackModal
+        isOpen={Boolean(feedbackModalState?.isOpen)}
+        onClose={() => setFeedbackModalState(null)}
+        isDarkMode={isDarkMode}
+        onSubmit={handleDislikeSubmit}
+      />
+
+      {/* 8. MODAL XUẤT CUỘC TRÒ CHUYỆN (MARKDOWN, TXT, PDF) */}
+      <ExportModal
+        isOpen={isExportModalOpen}
+        onClose={() => setIsExportModalOpen(false)}
+        session={currentSession}
+        isDarkMode={isDarkMode}
+      />
     </div>
   );
 }
+

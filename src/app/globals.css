@@ -37,3 +37,39 @@ html, body {
 ::-webkit-scrollbar-thumb:hover {
   background: #475569;
 }
+
+/* Hiệu ứng rung lắc khi nhập sai mật khẩu */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+
+.animate-shake {
+  animation: shake 0.4s ease-in-out;
+}
+
+/* Định dạng in ấn sạch đẹp (Print to PDF) */
+@media print {
+  html, body {
+    overflow: visible !important;
+    position: static !important;
+    height: auto !important;
+    background: white !important;
+    color: black !important;
+  }
+
+  /* Ẩn sidebar, header, input bar, nút bấm khi in */
+  aside, header, footer, form, button, .no-print, [title="Sao chép nội dung"], [title="In hoặc Lưu ra PDF (.pdf)"] {
+    display: none !important;
+  }
+
+  /* Mở rộng khung chat để in toàn bộ */
+  main, .overflow-y-auto {
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+    padding: 0 !important;
+  }
+}
+

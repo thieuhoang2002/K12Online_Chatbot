@@ -34,7 +34,7 @@
 - [x] Tích hợp Supabase Client & Supabase Auth (Đăng nhập Email / Google).
 - [x] Sửa lỗi khởi tạo phiên chat ban đầu trên trình duyệt mới / chế độ ẩn danh.
 - [x] Lưu trữ và đồng bộ hóa lịch sử hội thoại lên bảng `chat_sessions` trên Supabase Database (kèm file schema `supabase/schema.sql`).
-- [ ] Cho phép người dùng xuất (export) lịch sử trò chuyện ra file PDF / Word / Markdown.
+- [x] Cho phép người dùng xuất (export) lịch sử trò chuyện ra file PDF / Word / Markdown (`src/components/ExportModal.tsx`).
 
 ---
 
@@ -44,7 +44,7 @@
 - [x] **Bộ lọc câu hỏi xã giao (Intent Filter):** Tự động nhận diện câu chào hỏi/cảm ơn ("Chào bạn", "Cảm ơn") để phản hồi tức thì (<10ms) mà không tốn công quét RAG.
 - [x] **Thẻ gợi ý thông minh 1 chạm (Contextual Follow-up Cards):** Gợi ý 2–3 câu hỏi tiếp theo theo từng chủ đề chuyên sâu, tự động cuộn chống tràn giao diện và không bị thanh nhập liệu che khuất.
 - [x] **Chuẩn hóa Link nguồn 100%:** Toàn bộ 383 bài viết trích dẫn đều có đường link `.html` trực tiếp dẫn tới cổng Viettel.
-- [ ] **Nút Đánh giá chất lượng (Like/Dislike Feedback):** Thu thập phản hồi về độ hữu ích của câu trả lời để cải thiện chất lượng dữ liệu.
+- [x] **Nút Đánh giá chất lượng (Like/Dislike Feedback):** Thu thập phản hồi về độ hữu ích của câu trả lời (`src/components/FeedbackModal.tsx` + `/api/feedback`) để cải thiện chất lượng dữ liệu.
 
 ---
 
@@ -65,5 +65,6 @@
 
 ## Giai đoạn 8: Giám sát & Báo cáo Quản trị (Observability & Analytics)
 - [x] **Chuyển tiếp Rate Limit Headers:** Forward các header `x-ratelimit-*` từ Google Gemini về client và console server để theo dõi hạn ngạch thực tế.
-- [ ] **Bảng điều khiển Thống kê (Analytics Dashboard):** Tổng hợp danh sách các câu hỏi hay gặp nhất (ẩn danh) để định hướng bổ sung tài liệu.
+- [x] **Bảng điều khiển Thống kê Quản trị (Admin Analytics Dashboard):** Trang `/admin` nội bộ bảo vệ đa tầng bằng **Zero-Knowledge (PBKDF2 100k + AES-256-GCM)**, thống kê phiên chat, like/dislike, AI engine status, và 383 bài viết.
 - [ ] **Cảnh báo lỗi tự động qua Telegram Webhook:** Thông báo tức thì khi danh sách API Key chạm ngưỡng giới hạn hoặc có đợt spam bị chặn.
+
