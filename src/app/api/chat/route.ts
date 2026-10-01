@@ -349,7 +349,7 @@ ${contextText || "Chưa có tài liệu phù hợp."}`;
     ];
 
     // 9. Gọi OpenRouter STREAMING (Gõ chữ từng từ theo thời gian thực)
-    const { responseStream } = await keyRotator.callChatCompletionStream(messages, model);
+    const { responseStream, rateLimitInfo } = await keyRotator.callChatCompletionStream(messages, model);
 
     const clientStream = createOpenRouterStream(
       responseStream,
@@ -360,13 +360,16 @@ ${contextText || "Chưa có tài liệu phù hợp."}`;
       }
     );
 
-    return new Response(clientStream, {
-      headers: {
-        "Content-Type": "text/event-stream; charset=utf-8",
-        "Cache-Control": "no-cache, no-transform",
-        "Connection": "keep-alive",
-      },
-    });
+    const resHeaders: Record<string, string> = {
+      "Content-Type": "text/event-stream; charset=utf-8",
+      "Cache-Control": "no-cache, no-transform",
+      "Connection": "keep-alive",
+    };
+    if (rateLimitInfo?.limit) resHeaders["x-ratelimit-limit"] = rateLimitInfo.limit;
+    if (rateLimitInfo?.remaining) resHeaders["x-ratelimit-remaining"] = rateLimitInfo.remaining;
+    if (rateLimitInfo?.reset) resHeaders["x-ratelimit-reset"] = rateLimitInfo.reset;
+
+    return new Response(clientStream, { headers: resHeaders });
   } catch (error: any) {
     console.error("Lỗi API Chat:", error);
     return NextResponse.json(

@@ -221,6 +221,16 @@ class KeyRotator {
 
           clearTimeout(timeoutId);
 
+          const rateLimitLimit = response.headers.get("x-ratelimit-limit");
+          const rateLimitRemaining = response.headers.get("x-ratelimit-remaining");
+          const rateLimitReset = response.headers.get("x-ratelimit-reset");
+
+          if (rateLimitLimit || rateLimitRemaining) {
+            console.log(
+              `📊 [OpenRouter RateLimit] Key #${activeIndex + 1}: Hạn mức=${rateLimitLimit || "N/A"} req/phút | Còn lại=${rateLimitRemaining || "N/A"} | Reset sau=${rateLimitReset || "N/A"}s`
+            );
+          }
+
           if (response.status === 429 || response.status === 402) {
             let isSharedPoolThrottled = false;
             try {
@@ -257,6 +267,11 @@ class KeyRotator {
             responseStream: response.body,
             keyIndexUsed: activeIndex + 1,
             modelUsed: modelToUse,
+            rateLimitInfo: {
+              limit: rateLimitLimit,
+              remaining: rateLimitRemaining,
+              reset: rateLimitReset,
+            },
           };
         } catch (err: any) {
           console.warn(`❌ [OpenRouter Stream] Ngoại lệ khi gọi ${modelToUse}:`, err.message);
