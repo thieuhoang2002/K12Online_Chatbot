@@ -155,8 +155,16 @@ export default function Home() {
       try {
         const parsed = JSON.parse(savedSessions);
         if (Array.isArray(parsed) && parsed.length > 0) {
-          setSessions(parsed);
-          setCurrentSessionId(parsed[0].id);
+          // Lọc bỏ tin nhắn chào mặc định cũ nếu phiên đó chưa có câu hỏi nào của người dùng
+          const cleaned = parsed.map((s: ChatSession) => {
+            const hasUserMsg = s.messages.some((m) => m.role === "user");
+            if (!hasUserMsg) {
+              return { ...s, messages: [] };
+            }
+            return s;
+          });
+          setSessions(cleaned);
+          setCurrentSessionId(cleaned[0].id);
           hasLoaded = true;
         }
       } catch (e) {}
@@ -594,7 +602,8 @@ export default function Home() {
   }
 
   const isDarkMode = theme === "dark";
-  const isNewChat = messages.length === 0;
+  // Một phiên được coi là Mới nếu người dùng CHƯA gửi câu hỏi nào -> Luôn hiển thị màn hình chào đón (Hình 1)
+  const isNewChat = !messages.some((m) => m.role === "user");
 
   return (
     <div
@@ -951,7 +960,16 @@ export default function Home() {
           ) : (
             /* TRƯỜNG HỢP 2: DANH SÁCH TIN NHẮN ĐANG TRÒ CHUYỆN */
             <div className="max-w-3xl w-full mx-auto space-y-6 pb-4">
-              {messages.map((m, idx) => (
+              {messages
+                .filter(
+                  (m, idx) =>
+                    !(
+                      idx === 0 &&
+                      m.role === "assistant" &&
+                      m.content.startsWith("Xin chào bạn! Mình là Trợ lý AI")
+                    )
+                )
+                .map((m, idx) => (
                 <div
                   key={idx}
                   className={`flex gap-3 text-sm leading-relaxed ${
