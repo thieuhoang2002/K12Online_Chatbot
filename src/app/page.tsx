@@ -28,7 +28,9 @@ import {
   ThumbsUp,
   ThumbsDown,
   Download,
+  ArrowDown,
 } from "lucide-react";
+
 import CloudflareTurnstile from "@/components/CloudflareTurnstile";
 import AuthModal from "@/components/AuthModal";
 import AdminPassModal from "@/components/AdminPassModal";
@@ -158,6 +160,13 @@ export default function Home() {
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
+  // Phát hiện người dùng chủ động cuộn chuột lên xem bài cũ (chống giật màn hình khi AI stream)
+  const isUserScrolledUpRef = useRef(false);
+  const [showScrollBottomButton, setShowScrollBottomButton] = useState(false);
+  const loadingRef = useRef(false);
+  loadingRef.current = loading;
+
+
   // Khởi tạo Theme & Phiên làm việc ban đầu
   useEffect(() => {
     // 1. Theme
@@ -230,17 +239,36 @@ export default function Home() {
       }
 
       if (data && data.length > 0) {
+        // NẾU ĐANG CÓ TIẾN TRÌNH STREAMING THÌ TUYỆT ĐỐI KHÔNG GHI ĐÈ LÀM MẤT TIN NHẮN
+        if (loadingRef.current) return;
+
         const cloudSessions: ChatSession[] = data.map((row: any) => ({
           id: row.id,
           title: row.title || "Cuộc trò chuyện",
           messages: Array.isArray(row.messages) ? row.messages : [],
           createdAt: row.created_at ? new Date(row.created_at).getTime() : Date.now(),
         }));
-        setSessions(cloudSessions);
-        if (cloudSessions.length > 0) {
-          setCurrentSessionId(cloudSessions[0].id);
-        }
+
+        setSessions((prev) => {
+          // Bảo lưu session hiện tại nếu local đang có tin nhắn mới hơn cloud
+          return cloudSessions.map((cs) => {
+            const localMatch = prev.find((p) => p.id === cs.id);
+            if (localMatch && localMatch.messages.length > cs.messages.length) {
+              return localMatch;
+            }
+            return cs;
+          });
+        });
+
+        // Chỉ đổi session ban đầu nếu chưa chọn session nào hoặc đang ở chat_init
+        setCurrentSessionId((prevId) => {
+          if (!prevId || prevId === "chat_init") {
+            return cloudSessions[0]?.id || prevId;
+          }
+          return prevId;
+        });
       }
+
     } catch (e: any) {
       console.warn("⚠️ [Supabase] Lỗi đồng bộ đám mây:", e.message);
     }
@@ -344,6 +372,15 @@ export default function Home() {
   const currentSession = sessions.find((s) => s.id === currentSessionId) || sessions[0];
   const messages = currentSession?.messages || [];
 
+  const handleChatScroll = React.useCallback(() => {
+    if (!chatScrollRef.current) return;
+    const { scrollTop, scrollHeight, clientHeight } = chatScrollRef.current;
+    // Nếu khoảng cách tới đáy > 100px, xác định người dùng đang chủ động cuộn lên xem nội dung
+    const isNearBottom = scrollHeight - scrollTop - clientHeight < 100;
+    isUserScrolledUpRef.current = !isNearBottom;
+    setShowScrollBottomButton(!isNearBottom);
+  }, []);
+
   const scrollToBottom = React.useCallback((behavior: ScrollBehavior = "smooth") => {
     if (chatScrollRef.current) {
       chatScrollRef.current.scrollTo({
@@ -354,13 +391,19 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    scrollToBottom("smooth");
+    // Chỉ tự động cuộn xuống đáy nếu người dùng KHÔNG chủ động cuộn lên
+    if (!isUserScrolledUpRef.current) {
+      scrollToBottom("smooth");
+    }
     // Chờ Markdown và các Chip gợi ý render hoàn tất kích thước trong DOM
     const timer = setTimeout(() => {
-      scrollToBottom("smooth");
+      if (!isUserScrolledUpRef.current) {
+        scrollToBottom("smooth");
+      }
     }, 150);
     return () => clearTimeout(timer);
   }, [messages.length, loading, scrollToBottom]);
+
 
   function toggleTheme() {
     const nextTheme = theme === "dark" ? "light" : "dark";
@@ -481,11 +524,14 @@ export default function Home() {
     if (!query || loading) return;
 
     setInputMessage("");
+    isUserScrolledUpRef.current = false;
+    setShowScrollBottomButton(false);
 
     // Reset textarea height
     if (textareaRef.current) {
       textareaRef.current.style.height = "auto";
     }
+
 
     const userMsg: Message = { role: "user", content: query };
     let targetSessionId = currentSessionId;
@@ -647,8 +693,8 @@ export default function Home() {
                 return s;
               })
             );
-            // Tự động cuộn theo luồng văn bản đang sinh
-            if (chatScrollRef.current) {
+            // Tự động cuộn theo luồng văn bản đang sinh CHỈ KHI người dùng KHÔNG chủ động cuộn lên
+            if (chatScrollRef.current && !isUserScrolledUpRef.current) {
               chatScrollRef.current.scrollTop = chatScrollRef.current.scrollHeight;
             }
           }
@@ -697,9 +743,12 @@ export default function Home() {
       );
     } finally {
       setLoading(false);
-      setTimeout(() => scrollToBottom("smooth"), 60);
-      setTimeout(() => scrollToBottom("smooth"), 200);
+      if (!isUserScrolledUpRef.current) {
+        setTimeout(() => scrollToBottom("smooth"), 60);
+        setTimeout(() => scrollToBottom("smooth"), 200);
+      }
     }
+
   }
 
   function copyToClipboard(text: string, index: number) {
@@ -1069,8 +1118,10 @@ export default function Home() {
         {/* CONTAINER NỘI DUNG CHAT: Cuộn độc lập, không làm ảnh hưởng Header */}
         <div
           ref={chatScrollRef}
-          className="flex-1 overflow-y-auto px-4 md:px-6 py-4 flex flex-col"
+          onScroll={handleChatScroll}
+          className="flex-1 overflow-y-auto px-4 md:px-6 py-4 flex flex-col relative"
         >
+
           {/* TRƯỜNG HỢP 1: CUỘC HỘI THOẠI MỚI (Trang chào đón) */}
           {isNewChat ? (
             <div className="flex-1 flex flex-col items-center justify-center max-w-2xl mx-auto w-full my-auto text-center px-4 animate-fade-in">
@@ -1357,7 +1408,28 @@ export default function Home() {
               <div ref={messagesEndRef} className="h-6 sm:h-8 shrink-0" />
             </div>
           )}
+
+          {/* Nút nổi 'Xuống mới nhất' khi người dùng chủ động cuộn lên đọc tài liệu */}
+          {showScrollBottomButton && messages.length > 0 && (
+            <button
+              onClick={() => {
+                isUserScrolledUpRef.current = false;
+                setShowScrollBottomButton(false);
+                scrollToBottom("smooth");
+              }}
+              className={`fixed bottom-24 right-6 sm:right-10 z-30 px-3.5 py-2 rounded-full shadow-2xl border transition-all animate-bounce flex items-center gap-1.5 text-xs font-semibold backdrop-blur-md cursor-pointer ${
+                isDarkMode
+                  ? "bg-[#282a2c]/95 hover:bg-[#333538] border-[#3e4042] text-sky-400"
+                  : "bg-white/95 hover:bg-slate-50 border-slate-300 text-sky-600 shadow-slate-300"
+              }`}
+              title="Cuộn xuống tin nhắn mới nhất"
+            >
+              <ArrowDown className="w-4 h-4 text-sky-500 animate-pulse" />
+              <span>Xuống mới nhất</span>
+            </button>
+          )}
         </div>
+
 
         {/* 4. KHUNG NHẬP LIỆU FLOATING CAPSULE */}
         <div className="shrink-0 px-3 md:px-6 pb-3 pt-1">
