@@ -27,6 +27,11 @@ import {
   Cpu,
   Layers,
   FileText,
+  Bell,
+  Code,
+  Copy,
+  Check,
+  Send,
 } from "lucide-react";
 import AdminPassModal from "@/components/AdminPassModal";
 import { isAdminEmail } from "@/lib/zeroKnowledge";
@@ -41,9 +46,17 @@ export default function AdminPage() {
 
   // Dữ liệu thống kê
   const [stats, setStats] = useState<any>(null);
-  const [activeTab, setActiveTab] = useState<"overview" | "feedback" | "sessions" | "knowledge" | "security">("overview");
+  const [activeTab, setActiveTab] = useState<
+    "overview" | "feedback" | "sessions" | "knowledge" | "widget" | "telegram" | "security"
+  >("overview");
   const [knowledgeSearch, setKnowledgeSearch] = useState("");
   const [allArticles, setAllArticles] = useState<any[]>([]);
+
+  // State cho Widget & Telegram
+  const [widgetCopied, setWidgetCopied] = useState(false);
+  const [telegramTesting, setTelegramTesting] = useState(false);
+  const [telegramTestResult, setTelegramTestResult] = useState<string | null>(null);
+
 
   // 1. Khởi tạo Theme & Xác thực phiên Admin
   useEffect(() => {
@@ -137,6 +150,37 @@ export default function AdminPage() {
       document.documentElement.classList.add("dark");
     }
   }
+
+  function copyWidgetCode() {
+    const code = `<script src="https://k12onlinechatbot.thhoang.io.vn/widget.js" defer></script>`;
+    navigator.clipboard.writeText(code);
+    setWidgetCopied(true);
+    setTimeout(() => setWidgetCopied(false), 2000);
+  }
+
+  async function handleTestTelegram() {
+    if (!userEmail) return;
+    setTelegramTesting(true);
+    setTelegramTestResult(null);
+    try {
+      const res = await fetch("/api/admin/telegram-test", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: userEmail }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setTelegramTestResult("✅ " + data.message);
+      } else {
+        setTelegramTestResult("⚠️ " + (data.error || "Gửi thất bại"));
+      }
+    } catch (err: any) {
+      setTelegramTestResult("❌ Lỗi kết nối mạng: " + err.message);
+    } finally {
+      setTelegramTesting(false);
+    }
+  }
+
 
   function handleLockVault() {
     sessionStorage.removeItem("k12_admin_unlocked");
@@ -344,8 +388,11 @@ export default function AdminPage() {
           { id: "feedback", label: "Đánh Giá (Like / Dislike)", icon: ThumbsUp },
           { id: "sessions", label: "Phiên Chat & Câu Hỏi", icon: MessageSquare },
           { id: "knowledge", label: "Kho Tri Thức (383 Bài)", icon: BookOpen },
+          { id: "widget", label: "Mã Nhúng Trường Học", icon: Code },
+          { id: "telegram", label: "Cảnh Báo Telegram", icon: Bell },
           { id: "security", label: "Bảo Mật Zero-Knowledge", icon: ShieldCheck },
         ].map((tab) => {
+
           const Icon = tab.icon;
           const isActive = activeTab === tab.id;
           return (
@@ -702,8 +749,217 @@ export default function AdminPage() {
           </div>
         )}
 
-        {/* TAB 5: BẢO MẬT ZERO-KNOWLEDGE */}
+        {/* TAB 5: MÃ NHÚNG WIDGET CHO WEBSITE TRƯỜNG HỌC */}
+        {activeTab === "widget" && (
+          <div className="space-y-6 animate-fade-in">
+            <div>
+              <h2 className="text-base font-bold">Mã Nhúng Widget Dành Cho Website Trường Học</h2>
+              <p className="text-xs text-slate-400">
+                Cho phép các trường THPT, THCS, Tiểu học nhúng bong bóng chat K12 vào website của trường chỉ với 1 dòng code
+              </p>
+            </div>
+
+            {/* Khối Copy mã nhúng */}
+            <div
+              className={`p-6 rounded-3xl border transition ${
+                isDarkMode ? "bg-[#1e1f20] border-[#2d2f31]" : "bg-white border-[#e3e3e3]"
+              }`}
+            >
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-xs font-semibold text-sky-400 flex items-center gap-1.5">
+                  <Code className="w-4 h-4" /> Đoạn mã HTML nhúng (Script Tag):
+                </span>
+                <button
+                  onClick={copyWidgetCode}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition ${
+                    widgetCopied
+                      ? "bg-emerald-500 text-white"
+                      : "bg-sky-600 hover:bg-sky-500 text-white"
+                  }`}
+                >
+                  {widgetCopied ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
+                  <span>{widgetCopied ? "Đã sao chép!" : "Sao chép mã"}</span>
+                </button>
+              </div>
+
+              <div className="p-3.5 rounded-2xl bg-[#131314] border border-[#2d2f31] font-mono text-xs text-amber-300 break-all select-all">
+                &lt;script src=&quot;https://k12onlinechatbot.thhoang.io.vn/widget.js&quot; defer&gt;&lt;/script&gt;
+              </div>
+
+              <div className="mt-4 text-xs text-slate-400 space-y-2 leading-relaxed">
+                <p>
+                  <strong>💡 Hướng dẫn cài đặt nhanh trong 30 giây:</strong>
+                </p>
+                <ol className="list-decimal list-inside space-y-1 text-slate-300">
+                  <li>Mở file template giao diện website trường (hoặc quản trị WordPress, Cổng thông tin điện tử của trường).</li>
+                  <li>Dán đoạn mã trên vào ngay trước thẻ đóng <code>&lt;/body&gt;</code> hoặc chèn vào khối <em>Custom HTML / Chân trang</em>.</li>
+                  <li>Lưu lại. Ở góc dưới cùng bên phải website sẽ xuất hiện biểu tượng K12 tròn nổi bật. Khi học sinh hoặc giáo viên bấm vào, cửa sổ tra cứu nghiệp vụ thông minh sẽ mở ra ngay lập tức!</li>
+                </ol>
+              </div>
+            </div>
+
+            {/* Xem trước Widget Demo */}
+            <div
+              className={`p-6 rounded-3xl border ${
+                isDarkMode ? "bg-[#1e1f20] border-[#2d2f31]" : "bg-white border-[#e3e3e3]"
+              }`}
+            >
+              <h3 className="text-sm font-bold mb-3 flex items-center gap-2">
+                <Layers className="w-4 h-4 text-indigo-400" />
+                Khung Nhúng Trực Tiếp (Iframe Preview - 380x500px)
+              </h3>
+              <div className="w-full max-w-sm mx-auto h-[500px] rounded-2xl overflow-hidden border border-[#2d2f31] shadow-2xl">
+                <iframe
+                  src="/embed"
+                  className="w-full h-full border-none"
+                  title="Widget Preview"
+                />
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* TAB 6: CẢNH BÁO TELEGRAM (TELEGRAM ALERT WEBHOOK) */}
+        {activeTab === "telegram" && (
+          <div className="space-y-6 animate-fade-in">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div>
+                <h2 className="text-base font-bold">Cảnh Báo Tự Động Qua Telegram Webhook</h2>
+                <p className="text-xs text-slate-400">
+                  Nhận tin nhắn báo động tức thì về điện thoại khi có sự cố, spam hoặc góp ý từ người dùng
+                </p>
+              </div>
+              <button
+                onClick={handleTestTelegram}
+                disabled={telegramTesting}
+                className="px-4 py-2 rounded-xl text-xs font-semibold bg-gradient-to-r from-sky-600 to-indigo-600 hover:from-sky-500 hover:to-indigo-500 text-white flex items-center gap-2 shadow-sm transition disabled:opacity-50"
+              >
+                {telegramTesting ? (
+                  <RefreshCw className="w-3.5 h-3.5 animate-spin" />
+                ) : (
+                  <Send className="w-3.5 h-3.5" />
+                )}
+                <span>Gửi Thử Nghiệm Thông Báo</span>
+              </button>
+            </div>
+
+            {telegramTestResult && (
+              <div
+                className={`p-3.5 rounded-2xl text-xs flex items-center gap-2 border ${
+                  telegramTestResult.startsWith("✅")
+                    ? "bg-emerald-500/10 border-emerald-500/20 text-emerald-400"
+                    : "bg-amber-500/10 border-amber-500/20 text-amber-400"
+                }`}
+              >
+                <span>{telegramTestResult}</span>
+              </div>
+            )}
+
+            {/* Các sự kiện tự động kích hoạt */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div
+                className={`p-5 rounded-2xl border ${
+                  isDarkMode ? "bg-[#1e1f20] border-[#2d2f31]" : "bg-white border-[#e3e3e3]"
+                }`}
+              >
+                <div className="flex items-center gap-2.5 mb-2">
+                  <div className="p-2 rounded-xl bg-amber-500/10 text-amber-400">
+                    <AlertTriangle className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h4 className="text-xs font-bold">Chặn Spam Rate Limit (&gt; 20 req/phút)</h4>
+                    <span className="text-[10px] text-slate-400">Bảo vệ API và hạ tầng</span>
+                  </div>
+                </div>
+                <p className="text-xs text-slate-400 leading-relaxed">
+                  Tự động gửi thông báo khi có IP gửi quá 20 yêu cầu trong 1 phút kèm địa chỉ IP và nội dung câu hỏi bị chặn HTTP 429.
+                </p>
+              </div>
+
+              <div
+                className={`p-5 rounded-2xl border ${
+                  isDarkMode ? "bg-[#1e1f20] border-[#2d2f31]" : "bg-white border-[#e3e3e3]"
+                }`}
+              >
+                <div className="flex items-center gap-2.5 mb-2">
+                  <div className="p-2 rounded-xl bg-sky-500/10 text-sky-400">
+                    <Zap className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h4 className="text-xs font-bold">Chuyển Vùng Gemini Quá Tải (Failover)</h4>
+                    <span className="text-[10px] text-slate-400">Đảm bảo Uptime 99.9%</span>
+                  </div>
+                </div>
+                <p className="text-xs text-slate-400 leading-relaxed">
+                  Báo động khi Gemini gặp mã 429 hoặc nghẽn mạng để bạn biết hệ thống đang kích hoạt Bể OpenRouter 5 Keys dự phòng.
+                </p>
+              </div>
+
+              <div
+                className={`p-5 rounded-2xl border ${
+                  isDarkMode ? "bg-[#1e1f20] border-[#2d2f31]" : "bg-white border-[#e3e3e3]"
+                }`}
+              >
+                <div className="flex items-center gap-2.5 mb-2">
+                  <div className="p-2 rounded-xl bg-rose-500/10 text-rose-400">
+                    <ThumbsDown className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h4 className="text-xs font-bold">Góp Ý Chưa Hài Lòng (Dislike)</h4>
+                    <span className="text-[10px] text-slate-400">Cải thiện tri thức AI</span>
+                  </div>
+                </div>
+                <p className="text-xs text-slate-400 leading-relaxed">
+                  Gửi trọn vẹn lý do, ý kiến đóng góp và câu hỏi của giáo viên về điện thoại để bạn kịp thời sửa đổi tài liệu K12.
+                </p>
+              </div>
+
+              <div
+                className={`p-5 rounded-2xl border ${
+                  isDarkMode ? "bg-[#1e1f20] border-[#2d2f31]" : "bg-white border-[#e3e3e3]"
+                }`}
+              >
+                <div className="flex items-center gap-2.5 mb-2">
+                  <div className="p-2 rounded-xl bg-indigo-500/10 text-indigo-400">
+                    <Server className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h4 className="text-xs font-bold">Báo Động Sự Cố 500 (Fatal Error)</h4>
+                    <span className="text-[10px] text-slate-400">Phát hiện lỗi tức thì</span>
+                  </div>
+                </div>
+                <p className="text-xs text-slate-400 leading-relaxed">
+                  Gửi chi tiết stack trace và ngữ cảnh tin nhắn khi máy chủ phát sinh ngoại lệ không mong muốn.
+                </p>
+              </div>
+            </div>
+
+            {/* Hướng dẫn cấu hình Telegram Bot */}
+            <div
+              className={`p-6 rounded-3xl border text-xs text-slate-400 space-y-2.5 ${
+                isDarkMode ? "bg-[#131314] border-[#2d2f31]" : "bg-slate-50 border-[#e3e3e3]"
+              }`}
+            >
+              <div className="font-semibold text-slate-200">
+                📲 Hướng dẫn kết nối Telegram Bot trong 2 phút (Biến môi trường):
+              </div>
+              <ol className="list-decimal list-inside space-y-1.5 leading-relaxed text-slate-300">
+                <li>Mở Telegram, tìm kiếm bot <code>@BotFather</code> và gửi lệnh <code>/newbot</code> để tạo Bot mới và lấy <strong>HTTP API Token</strong>.</li>
+                <li>Tìm kiếm bot <code>@userinfobot</code> và bấm <code>/start</code> để lấy <strong>Id</strong> (Chat ID cá nhân của bạn).</li>
+                <li>Thêm 2 dòng sau vào file <code>.env.local</code> (hoặc mục Environment Variables trên Vercel):
+                  <div className="mt-1 p-2 rounded-xl bg-[#1e1f20] font-mono text-[11px] text-sky-300">
+                    TELEGRAM_BOT_TOKEN=123456789:ABCdefGHI...<br />
+                    TELEGRAM_CHAT_ID=987654321
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        )}
+
+        {/* TAB 7: BẢO MẬT ZERO-KNOWLEDGE */}
         {activeTab === "security" && (
+
           <div className="space-y-4 animate-fade-in">
             <div>
               <h2 className="text-base font-bold">Kiến Trúc Mã Hóa Zero-Knowledge</h2>

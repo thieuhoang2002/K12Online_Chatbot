@@ -7,6 +7,8 @@ import { checkRateLimit, isIpVerifiedHuman, markIpVerifiedHuman } from "@/lib/ra
 import { checkCasualIntent } from "@/lib/intent";
 import { generateFollowUpPrompts } from "@/lib/suggestions";
 import { findPrebakedAnswer } from "@/lib/prebaked";
+import { sendTelegramAlert } from "@/lib/telegram";
+
 
 /**
  * Tạo Stream giả lập mượt mà cho câu trả lời từ Cache hoặc câu xã giao
@@ -261,14 +263,17 @@ function createOpenRouterStream(
 }
 
 export async function POST(req: NextRequest) {
+  let rawBody: any = null;
   try {
     const body = await req.json();
+    rawBody = body;
     const {
       message,
       history = [],
       model = "qwen/qwen3.8-27b:free",
       turnstileToken,
     } = body;
+
 
     // 1. Kiểm tra đầu vào & giới hạn độ dài payload (chống flood token/memory)
     if (!message || typeof message !== "string" || message.trim().length === 0) {
@@ -293,6 +298,17 @@ export async function POST(req: NextRequest) {
 
     const rateLimit = await checkRateLimit(ip, 20, 60);
     if (!rateLimit.allowed) {
+      sendTelegramAlert(
+        "Phát hiện Spam Rate Limit (HTTP 429)",
+        {
+          "Địa chỉ IP": ip,
+          "Hạn ngạch": "20 req/phút",
+          "Hành động": "Đã chặn HTTP 429",
+          "Câu hỏi spam": message.slice(0, 100),
+        },
+        "warning"
+      ).catch(() => {});
+
       return NextResponse.json(
         {
           error: `Bạn đang gửi câu hỏi quá nhanh. Vui lòng đợi ${rateLimit.resetInSeconds} giây trước khi gửi tiếp nhé!`,
@@ -300,6 +316,7 @@ export async function POST(req: NextRequest) {
         { status: 429 }
       );
     }
+
 
     // 3. Xác minh Cloudflare Turnstile thông minh (nhớ phiên người dùng đã xác thực 30 phút)
     const turnstileSecret = process.env.CLOUDFLARE_TURNSTILE_SECRET_KEY;
@@ -487,6 +504,15 @@ ${contextText || "Chưa có tài liệu phù hợp."}`;
         console.warn(
           `⚠️ [Multi-Provider Failover] Google Gemini tạm thời nghẽn (${geminiErr.message}). Tự động kích hoạt Bể OpenRouter dự phòng...`
         );
+        sendTelegramAlert(
+          "Gemini Chuyển Vùng Dự Phòng (Failover)",
+          {
+            "Lỗi Gemini": geminiErr.message || "429 Quá tải hạn ngạch",
+            "Động cơ chuyển tiếp": "OpenRouter Key Pool (Qwen/Nemotron)",
+            "Câu hỏi": message.slice(0, 100),
+          },
+          "warning"
+        ).catch(() => {});
       }
     }
 
@@ -516,9 +542,20 @@ ${contextText || "Chưa có tài liệu phù hợp."}`;
     return new Response(clientStream, { headers: resHeaders });
   } catch (error: any) {
     console.error("Lỗi API Chat:", error);
+    sendTelegramAlert(
+      "Sự Cố Hệ Thống Chatbot (HTTP 500)",
+      {
+        "Chi tiết lỗi": error.message || "Unknown error",
+        "Câu hỏi": (rawBody?.message || "").slice(0, 100),
+      },
+      "error"
+    ).catch(() => {});
+
     return NextResponse.json(
+
       { error: error.message || "Đã xảy ra lỗi trong quá trình xử lý yêu cầu." },
       { status: 500 }
     );
   }
+
 }

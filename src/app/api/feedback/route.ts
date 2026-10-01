@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { supabase } from "@/lib/supabase";
+import { sendTelegramAlert } from "@/lib/telegram";
 
 // Bộ nhớ đệm tạm thời cho feedback trên RAM server phòng trường hợp chưa chạy SQL Supabase
 const memoryFeedbacks: any[] = [];
@@ -56,7 +57,22 @@ export async function POST(req: NextRequest) {
       memoryFeedbacks.pop();
     }
 
+    // 3. Tự động gửi cảnh báo Telegram nếu là phản hồi Chưa hài lòng (Dislike)
+    if (rating === "dislike") {
+      sendTelegramAlert(
+        "Người dùng góp ý chưa hài lòng (Dislike)",
+        {
+          "Tài khoản": userEmail || "Khách",
+          "Lý do": reason || "Không nêu",
+          "Ý kiến chi tiết": comment || "Không có",
+          "Câu hỏi": (query || "").slice(0, 100),
+        },
+        "feedback"
+      ).catch(() => {});
+    }
+
     return NextResponse.json({ success: true, feedback: feedbackItem });
+
   } catch (err: any) {
     return NextResponse.json(
       { error: "Lỗi xử lý đánh giá: " + err.message },

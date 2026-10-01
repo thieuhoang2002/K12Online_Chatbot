@@ -58,13 +58,14 @@
 
 ## Giai đoạn 7: Đóng gói Bộ công cụ & Mở rộng (Tooling & Ecosystem) - [ĐÃ HOÀN THÀNH 100%]
 - [x] **Tách Bộ công cụ Khai thác Tri thức Độc lập:** Đóng gói toàn bộ crawler bypass TLS/WAF, analyzer, prebaked matcher thành repo riêng `k12online-knowledge-toolkit`.
-- [ ] **Widget nhúng Website trường học (Embeddable Script):** Cung cấp 1 đoạn mã `<script>` để các trường nhúng trực tiếp nút chat K12 vào website của trường.
-- [ ] **Tích hợp Zalo Bot / Zalo OA:** Cho phép thầy cô nhắn tin hỏi đáp trực tiếp qua ứng dụng Zalo trên điện thoại.
+- [x] **Widget nhúng Website trường học (Embeddable Script):** Cung cấp script độc lập `public/widget.js` và route `/embed` cho phép mọi website trường học nhúng bong bóng chat K12 bằng 1 dòng `<script>`.
+- [ ] **Tích hợp Zalo Bot / Zalo OA:** Cho phép thầy cô nhắn tin hỏi đáp trực tiếp qua ứng dụng Zalo trên điện thoại (Yêu cầu tài khoản Zalo Doanh nghiệp xác thực tick vàng).
 
 ---
 
-## Giai đoạn 8: Giám sát & Báo cáo Quản trị (Observability & Analytics)
+## Giai đoạn 8: Giám sát & Báo cáo Quản trị (Observability & Analytics) - [ĐÃ HOÀN THÀNH 100%]
 - [x] **Chuyển tiếp Rate Limit Headers:** Forward các header `x-ratelimit-*` từ Google Gemini về client và console server để theo dõi hạn ngạch thực tế.
 - [x] **Bảng điều khiển Thống kê Quản trị (Admin Analytics Dashboard):** Trang `/admin` nội bộ bảo vệ đa tầng bằng **Zero-Knowledge (PBKDF2 100k + AES-256-GCM)**, thống kê phiên chat, like/dislike, AI engine status, và 383 bài viết.
-- [ ] **Cảnh báo lỗi tự động qua Telegram Webhook:** Thông báo tức thì khi danh sách API Key chạm ngưỡng giới hạn hoặc có đợt spam bị chặn.
+- [x] **Cảnh báo lỗi tự động qua Telegram Webhook:** Tự động gửi cảnh báo HTML tức thì về điện thoại qua Telegram Bot (`src/lib/telegram.ts`) khi có IP spam rate limit, Gemini failover, góp ý Dislike, hoặc lỗi HTTP 500.
+
 
