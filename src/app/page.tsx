@@ -29,6 +29,8 @@ import {
   ThumbsDown,
   Download,
   ArrowDown,
+  Mic,
+  MicOff,
 } from "lucide-react";
 
 import CloudflareTurnstile from "@/components/CloudflareTurnstile";
@@ -165,6 +167,93 @@ export default function Home() {
   const [showScrollBottomButton, setShowScrollBottomButton] = useState(false);
   const loadingRef = useRef(false);
   loadingRef.current = loading;
+
+  // Voice Input (Web Speech API - 100% Client-side, 0đ, 0 API key)
+  const [isListening, setIsListening] = useState(false);
+  const [speechSupported, setSpeechSupported] = useState(false);
+  const recognitionRef = useRef<any>(null);
+  const inputPrefixRef = useRef("");
+
+  // Khởi tạo nhận diện giọng nói Web Speech API tiếng Việt
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const SpeechRecognition =
+        (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+      if (SpeechRecognition) {
+        setSpeechSupported(true);
+        const recognition = new SpeechRecognition();
+        recognition.continuous = false; // Tự động ngắt khi dứt câu
+        recognition.interimResults = true; // Phản hồi chữ theo thời gian thực
+        recognition.lang = "vi-VN"; // Tiếng Việt chuẩn
+
+        recognition.onstart = () => {
+          setIsListening(true);
+        };
+
+        recognition.onresult = (event: any) => {
+          let interimTranscript = "";
+          for (let i = event.resultIndex; i < event.results.length; i++) {
+            const transcript = event.results[i][0].transcript;
+            if (event.results[i].isFinal) {
+              inputPrefixRef.current += transcript + " ";
+            } else {
+              interimTranscript += transcript;
+            }
+          }
+          const fullText = (inputPrefixRef.current + interimTranscript).trim();
+          if (fullText) {
+            setInputMessage(fullText);
+            if (textareaRef.current) {
+              textareaRef.current.style.height = "auto";
+              textareaRef.current.style.height =
+                Math.min(textareaRef.current.scrollHeight, 120) + "px";
+            }
+          }
+        };
+
+        recognition.onerror = (event: any) => {
+          console.warn("Speech recognition error:", event.error);
+          setIsListening(false);
+        };
+
+        recognition.onend = () => {
+          setIsListening(false);
+        };
+
+        recognitionRef.current = recognition;
+      }
+    }
+  }, []);
+
+  function toggleListening() {
+    if (!speechSupported || !recognitionRef.current) {
+      alert(
+        "Trình duyệt hiện tại chưa hỗ trợ nhận diện giọng nói trực tiếp. Thầy/Cô hãy thử mở trên Google Chrome, Cốc Cốc hoặc Safari nhé."
+      );
+      return;
+    }
+
+    if (isListening) {
+      try {
+        recognitionRef.current.stop();
+      } catch (e) {}
+      setIsListening(false);
+    } else {
+      inputPrefixRef.current = inputMessage.trim() ? inputMessage.trim() + " " : "";
+      try {
+        recognitionRef.current.start();
+      } catch (err) {
+        try {
+          recognitionRef.current.stop();
+        } catch (e) {}
+        setTimeout(() => {
+          try {
+            recognitionRef.current.start();
+          } catch (e) {}
+        }, 150);
+      }
+    }
+  }
 
 
   // Khởi tạo Theme & Phiên làm việc ban đầu
@@ -1489,6 +1578,31 @@ export default function Home() {
                 }`}
               />
 
+              {/* Nút Micro thu âm câu hỏi bằng giọng nói (Web Speech API) */}
+              <button
+                type="button"
+                onClick={toggleListening}
+                disabled={loading}
+                className={`w-9 h-9 rounded-full flex items-center justify-center transition shrink-0 shadow-xs ${
+                  isListening
+                    ? "bg-rose-500 text-white animate-pulse shadow-md shadow-rose-500/30"
+                    : isDarkMode
+                    ? "hover:bg-[#282a2c] text-slate-400 hover:text-sky-400"
+                    : "hover:bg-slate-200 text-slate-500 hover:text-sky-600"
+                }`}
+                title={
+                  isListening
+                    ? "Đang lắng nghe... Bấm để dừng"
+                    : "Bấm để nói bằng giọng nói tiếng Việt"
+                }
+              >
+                {isListening ? (
+                  <MicOff className="w-4 h-4 text-white" />
+                ) : (
+                  <Mic className="w-4 h-4" />
+                )}
+              </button>
+
               {/* Nút gửi tin nhắn tròn màu xanh */}
               <button
                 onClick={() => handleSendMessage()}
@@ -1509,6 +1623,14 @@ export default function Home() {
                 )}
               </button>
             </div>
+
+            {/* Thanh trạng thái khi đang ghi âm */}
+            {isListening && (
+              <div className="mt-1.5 flex items-center justify-center gap-1.5 text-xs text-rose-500 font-medium animate-pulse">
+                <span className="w-2 h-2 rounded-full bg-rose-500 animate-ping" />
+                <span>Đang lắng nghe Thầy/Cô nói tiếng Việt... (Bấm micro lần nữa để dừng)</span>
+              </div>
+            )}
 
             {/* Dòng chữ gộp tham chiếu dữ liệu uy tín & link trang hỗ trợ K12Online */}
             <div className="mt-2 text-center text-[11px] sm:text-xs text-slate-400 dark:text-slate-500 flex items-center justify-center gap-1.5 flex-wrap">
