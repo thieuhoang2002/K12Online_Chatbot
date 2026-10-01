@@ -431,10 +431,10 @@ export default function AdminPage() {
         </div>
       </header>
 
-      {/* 2. THANH TAB ĐIỀU HƯỚNG */}
+      {/* 2. THANH TAB ĐIỀU HƯỚNG: Sticky dưới Header để dễ chuyển tab khi cuộn */}
       <div
-        className={`px-4 sm:px-8 border-b flex items-center gap-2 overflow-x-auto shrink-0 ${
-          isDarkMode ? "bg-[#18191a]/50 border-[#2d2f31]" : "bg-white/60 border-[#e3e3e3]"
+        className={`px-4 sm:px-8 border-b flex items-center gap-2 overflow-x-auto shrink-0 sticky top-16 z-20 backdrop-blur-md transition-colors ${
+          isDarkMode ? "bg-[#18191a]/95 border-[#2d2f31]" : "bg-white/95 border-[#e3e3e3]"
         }`}
       >
         {[
@@ -468,7 +468,7 @@ export default function AdminPage() {
       </div>
 
       {/* 3. NỘI DUNG CHÍNH (MAIN BODY) */}
-      <main className="flex-1 p-4 sm:p-8 max-w-7xl mx-auto w-full space-y-6">
+      <main className="flex-1 p-4 sm:p-8 max-w-7xl mx-auto w-full space-y-6 pb-28">
         {/* TAB 1: TỔNG QUAN (OVERVIEW) */}
         {activeTab === "overview" && (
           <div className="space-y-6 animate-fade-in">

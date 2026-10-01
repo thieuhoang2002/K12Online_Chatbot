@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi" suppressHydrationWarning>
-      <body className="antialiased bg-slate-950 text-slate-100 h-[100dvh] max-h-[100dvh] overflow-hidden">
+      <body className="antialiased bg-slate-950 text-slate-100 min-h-[100dvh]">
         {children}
       </body>
     </html>
