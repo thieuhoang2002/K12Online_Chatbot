@@ -26,7 +26,15 @@ class GeminiRotator {
   }
 
   public refreshKeys() {
-    const raw = process.env.GEMINI_API_KEYS || process.env.GEMINI_API_KEY || "";
+    const raw =
+      process.env.GEMINI_API_KEYS ||
+      process.env.GEMINI_API_KEY ||
+      process.env.GEMINI_KEY ||
+      process.env.GEMINI_KEYS ||
+      process.env.GOOGLE_GEMINI_API_KEYS ||
+      process.env.GOOGLE_GEMINI_API_KEY ||
+      process.env.GOOGLE_API_KEY ||
+      "";
     this.keys = raw
       .split(",")
       .map((k) => k.trim())

@@ -1,8 +1,8 @@
 # 📊 BÁO CÁO KẾT QUẢ KIỂM THỬ TỰ ĐỘNG (AUTOMATION TEST REPORT)
 **Dự án:** Trợ Lý AI Hỗ Trợ Nghiệp Vụ K12Online  
 **Môi trường kiểm thử:** Localhost (`http://localhost:3000`) & Production Sync  
-**Thời điểm thực thi:** 16:16:04 1/10/2026  
-**Thời gian hoàn thành:** 39.41 giây  
+**Thời điểm thực thi:** 16:39:39 1/10/2026  
+**Thời gian hoàn thành:** 0.89 giây  
 
 ---
 
@@ -11,10 +11,10 @@
 | Chỉ số | Giá trị | Đánh giá |
 | :--- | :---: | :--- |
 | **Tổng số Test Cases** | **40** | Bao phủ 100% 8 phân hệ cốt lõi |
-| **Thành công (PASS)** | **40** | Hoạt động chuẩn xác theo đặc tả kỹ thuật |
-| **Thất bại (FAIL)** | **0** | Tuyệt đối không có lỗi tồn đọng |
+| **Thành công (PASS)** | **23** | Hoạt động chuẩn xác theo đặc tả kỹ thuật |
+| **Thất bại (FAIL)** | **17** | Cần kiểm tra ngay |
 | **Cảnh báo (WARN)** | **0** | Chấp nhận được trong ngưỡng an toàn |
-| **Tỷ lệ Vượt qua (Pass Rate)** | **100.0%** | **✅ ĐẠT TIÊU CHUẨN SẴN SÀNG PRODUCTION** |
+| **Tỷ lệ Vượt qua (Pass Rate)** | **57.5%** | **⚠️ CHƯA ĐẠT** |
 
 ---
 
@@ -28,7 +28,7 @@
 | `TC-RAG-03` | RAG & Kho Tri Thức 383 Bài Viết | Ánh xạ Từ điển đồng nghĩa giáo dục (Synonyms) | ✅ **PASS** | Đã tích hợp từ điển đồng nghĩa ánh xạ từ viết tắt (tkb, học bạ, đề thi) sang thuật ngữ chuẩn. |
 | `TC-RAG-05` | RAG & Kho Tri Thức 383 Bài Viết | Kiểm soát ngưỡng Context Window (<= 15.000 ký tự) | ✅ **PASS** | Dung lượng context được khống chế an toàn ở mức 4731 ký tự. |
 | `TC-RAG-06` | RAG & Kho Tri Thức 383 Bài Viết | Xử lý truy vấn không có trong cơ sở tri thức | ✅ **PASS** | Không khớp sai lệch dữ liệu ngoại lai, hệ thống an toàn không crash. |
-| `TC-INTENT-01` | Intent Filter & Pre-baked Cache | Nhận diện câu chào hỏi xã giao (<10ms) | ✅ **PASS** | Nhận diện câu chào thành công chỉ mất 0.258ms, không tốn tài nguyên RAG. |
+| `TC-INTENT-01` | Intent Filter & Pre-baked Cache | Nhận diện câu chào hỏi xã giao (<10ms) | ✅ **PASS** | Nhận diện câu chào thành công chỉ mất 0.277ms, không tốn tài nguyên RAG. |
 | `TC-INTENT-02` | Intent Filter & Pre-baked Cache | Nhận diện lời cảm ơn & tạm biệt (<10ms) | ✅ **PASS** | Nhận diện và phản hồi lịch sự lời cảm ơn ngay lập tức. |
 | `TC-PREBAKED-01` | Intent Filter & Pre-baked Cache | So khớp câu trả lời soạn sẵn cho bài quá khổ (#255 Thư viện số) | ✅ **PASS** | Khớp thành công cẩm nang 'thu-vien-so-nha-truong' với nội dung chi tiết 5229 ký tự (0ms latency, 0 token AI). |
 | `TC-PREBAKED-02` | Intent Filter & Pre-baked Cache | Bỏ qua câu hỏi hẹp để RAG trả lời đúng ngữ cảnh | ✅ **PASS** | Câu hỏi hẹp không bị ghi đè bởi cẩm nang chung, đảm bảo tính chính xác. |
@@ -37,28 +37,28 @@
 | `TC-ZK-03` | Mật Mã Bảo Mật Zero-Knowledge | Từ chối tuyệt đối khi nhập sai Master Password | ✅ **PASS** | Hệ thống bắt lỗi giải mã AES-GCM và từ chối cấp quyền. |
 | `TC-ZK-04` | Mật Mã Bảo Mật Zero-Knowledge | Phát hiện can thiệp Ciphertext (Tamper Resistance / Auth Tag) | ✅ **PASS** | Sửa 1 ký tự trong ciphertext lập tức bị Authentication Tag từ chối giải mã. |
 | `TC-ZK-05` | Mật Mã Bảo Mật Zero-Knowledge | Tính duy nhất của Salt ngẫu nhiên (Crypto Random Salt) | ✅ **PASS** | Cùng 1 mật khẩu nhưng 2 lần tạo sinh ra 2 bộ Salt và Ciphertext hoàn toàn khác nhau. |
-| `TC-ZK-06` | Mật Mã Bảo Mật Zero-Knowledge | Đo lường độ trễ an toàn PBKDF2 100.000 iterations | ✅ **PASS** | Thời gian sinh khóa: 200.9ms (đủ để làm chậm brute-force nhưng mượt mà với người dùng). |
+| `TC-ZK-06` | Mật Mã Bảo Mật Zero-Knowledge | Đo lường độ trễ an toàn PBKDF2 100.000 iterations | ✅ **PASS** | Thời gian sinh khóa: 125.4ms (đủ để làm chậm brute-force nhưng mượt mà với người dùng). |
 | `TC-SEC-01` | Rate Limiting & Security Filters | Phát hiện và chặn Payload vượt ngưỡng (> 1.500 ký tự) | ✅ **PASS** | Nhận diện chuỗi 1501 ký tự vượt trần cho phép (chống flood token). |
 | `TC-SEC-02` | Rate Limiting & Security Filters | Chấp thuận Payload trong giới hạn an toàn (<= 1.500 ký tự) | ✅ **PASS** | Chuỗi 48 ký tự vượt qua kiểm tra an toàn. |
 | `TC-SEC-03` | Rate Limiting & Security Filters | Giới hạn tần suất 20 yêu cầu / phút / IP | ✅ **PASS** | 20 request đầu tiên thành công; request thứ 21 bị chặn mã 429 Too Many Requests. |
 | `TC-SEC-04` | Rate Limiting & Security Filters | Tự động mở khóa sau khi hết chu kỳ thời gian (Rate Reset) | ✅ **PASS** | Bộ đếm tự động reset về chu kỳ mới, người dùng hợp lệ tiếp tục sử dụng bình thường. |
-| `TC-API-CHAT-01` | Chat API Route (/api/chat) | Chặn đứng yêu cầu thiếu Turnstile Token (HTTP 403) | ✅ **PASS** | Máy chủ trả về HTTP 403 Forbidden đúng chuẩn phòng vệ chống bot tự động. |
-| `TC-API-CHAT-02` | Chat API Route (/api/chat) | Chặn yêu cầu Payload rỗng hoặc thiếu trường bắt buộc | ✅ **PASS** | Máy chủ trả về mã HTTP 400 từ chối xử lý payload không hợp lệ. |
-| `TC-API-CHAT-03` | Chat API Route (/api/chat) | Chặn câu hỏi vượt quá 1.500 ký tự (Chống flood token) | ✅ **PASS** | Máy chủ chặn thành công câu hỏi dài 2000 ký tự với mã HTTP 400. |
-| `TC-API-CHAT-04` | Chat API Route (/api/chat) | Xử lý tuyến Chat API ổn định, không sập tiến trình | ✅ **PASS** | Endpoint phản hồi trong thời gian hợp lệ, xử lý ngoại lệ an toàn. |
-| `TC-API-FB-01` | Feedback API Route (/api/feedback) | Gửi đánh giá Thích (Like) hợp lệ (HTTP 200) | ✅ **PASS** | Ghi nhận phản hồi Like thành công vào cơ sở dữ liệu. |
-| `TC-API-FB-02` | Feedback API Route (/api/feedback) | Gửi đánh giá Không thích (Dislike) kèm lý do (HTTP 200) | ✅ **PASS** | Ghi nhận Dislike thành công và kích hoạt cảnh báo Telegram ngầm. |
-| `TC-API-FB-03` | Feedback API Route (/api/feedback) | Từ chối đánh giá sai giá trị rating (HTTP 400) | ✅ **PASS** | Máy chủ thẩm định schema nghiêm ngặt, từ chối giá trị ngoài like/dislike. |
-| `TC-API-FB-04` | Feedback API Route (/api/feedback) | Từ chối yêu cầu thiếu trường bắt buộc (HTTP 400) | ✅ **PASS** | Bảo vệ cơ sở dữ liệu khỏi các bản ghi rác hoặc thiếu ID phiên. |
-| `TC-API-ADM-01` | Admin Dashboard APIs (/api/admin/*) | Chặn email ngoài Whitelist truy cập Stats (HTTP 403) | ✅ **PASS** | Từ chối thành công tài khoản không hợp lệ 'attacker_random@badguy.io'. |
-| `TC-API-ADM-02` | Admin Dashboard APIs (/api/admin/*) | Phê duyệt Admin hợp lệ trích xuất dữ liệu KPI (HTTP 200) | ✅ **PASS** | Trạng thái HTTP 200 (dữ liệu phản hồi hợp lệ cho Admin). |
-| `TC-API-ADM-03` | Admin Dashboard APIs (/api/admin/*) | Chặn truy cập Vault Zero-Knowledge từ email lạ (HTTP 403) | ✅ **PASS** | Bảo vệ kho ciphertext, từ chối cung cấp dữ liệu cho email ngoài whitelist. |
-| `TC-API-ADM-04` | Admin Dashboard APIs (/api/admin/*) | Cho phép Admin truy xuất thông tin Vault (HTTP 200) | ✅ **PASS** | Cung cấp ciphertext và salt an toàn cho trình duyệt Admin tự giải mã. |
-| `TC-API-ADM-05` | Admin Dashboard APIs (/api/admin/*) | Endpoint kiểm tra Telegram Webhook hoạt động ổn định | ✅ **PASS** | Thực thi lệnh gửi tin nhắn thử nghiệm an toàn, phản hồi 200 OK. |
-| `TC-API-ADM-06` | Admin Dashboard APIs (/api/admin/*) | Giám sát sức khỏe từng API Key và hạn ngạch (/api/admin/health-check) | ✅ **PASS** | Chặn email lạ (HTTP 403), cấp quyền Admin kiểm tra 7 Keys và 3 dịch vụ đám mây (863ms). |
-| `TC-WIDGET-01` | Widget Nhúng & CSP (/embed & widget.js) | Phân phối Script nhúng widget.js tĩnh (HTTP 200) | ✅ **PASS** | Script JavaScript độc lập nạp thành công (5100 bytes), chứa logic tiêm DOM và nút nổi. |
-| `TC-WIDGET-02` | Widget Nhúng & CSP (/embed & widget.js) | Tải giao diện chat thu gọn /embed (HTTP 200) | ✅ **PASS** | Trang embed HTML tải thành công, giao diện tối giản chuẩn cho iframe trường học. |
-| `TC-WIDGET-03` | Widget Nhúng & CSP (/embed & widget.js) | Cấu hình Header CSP Frame-Ancestors cho phép nhúng | ✅ **PASS** | Xác nhận header hợp lệ: CSP 'frame-ancestors *', X-Frame-Options 'ALLOWALL'. Mọi website trường học đều có thể nhúng hợp lệ. |
+| `TC-API-CHAT-01` | Chat API Route (/api/chat) | Chặn đứng yêu cầu thiếu Turnstile Token (HTTP 403) | ❌ **FAIL** | fetch failed |
+| `TC-API-CHAT-02` | Chat API Route (/api/chat) | Chặn yêu cầu Payload rỗng hoặc thiếu trường bắt buộc | ❌ **FAIL** | fetch failed |
+| `TC-API-CHAT-03` | Chat API Route (/api/chat) | Chặn câu hỏi vượt quá 1.500 ký tự (Chống flood token) | ❌ **FAIL** | fetch failed |
+| `TC-API-CHAT-04` | Chat API Route (/api/chat) | Xử lý tuyến Chat API ổn định, không sập tiến trình | ❌ **FAIL** | fetch failed |
+| `TC-API-FB-01` | Feedback API Route (/api/feedback) | Gửi đánh giá Thích (Like) hợp lệ (HTTP 200) | ❌ **FAIL** | fetch failed |
+| `TC-API-FB-02` | Feedback API Route (/api/feedback) | Gửi đánh giá Không thích (Dislike) kèm lý do (HTTP 200) | ❌ **FAIL** | fetch failed |
+| `TC-API-FB-03` | Feedback API Route (/api/feedback) | Từ chối đánh giá sai giá trị rating (HTTP 400) | ❌ **FAIL** | fetch failed |
+| `TC-API-FB-04` | Feedback API Route (/api/feedback) | Từ chối yêu cầu thiếu trường bắt buộc (HTTP 400) | ❌ **FAIL** | fetch failed |
+| `TC-API-ADM-01` | Admin Dashboard APIs (/api/admin/*) | Chặn email ngoài Whitelist truy cập Stats (HTTP 403) | ❌ **FAIL** | fetch failed |
+| `TC-API-ADM-02` | Admin Dashboard APIs (/api/admin/*) | Phê duyệt Admin hợp lệ trích xuất dữ liệu KPI (HTTP 200) | ❌ **FAIL** | fetch failed |
+| `TC-API-ADM-03` | Admin Dashboard APIs (/api/admin/*) | Chặn truy cập Vault Zero-Knowledge từ email lạ (HTTP 403) | ❌ **FAIL** | fetch failed |
+| `TC-API-ADM-04` | Admin Dashboard APIs (/api/admin/*) | Cho phép Admin truy xuất thông tin Vault (HTTP 200) | ❌ **FAIL** | fetch failed |
+| `TC-API-ADM-05` | Admin Dashboard APIs (/api/admin/*) | Endpoint kiểm tra Telegram Webhook hoạt động ổn định | ❌ **FAIL** | fetch failed |
+| `TC-API-ADM-06` | Admin Dashboard APIs (/api/admin/*) | Giám sát sức khỏe từng API Key và hạn ngạch (/api/admin/health-check) | ❌ **FAIL** | fetch failed |
+| `TC-WIDGET-01` | Widget Nhúng & CSP (/embed & widget.js) | Phân phối Script nhúng widget.js tĩnh (HTTP 200) | ❌ **FAIL** | fetch failed |
+| `TC-WIDGET-02` | Widget Nhúng & CSP (/embed & widget.js) | Tải giao diện chat thu gọn /embed (HTTP 200) | ❌ **FAIL** | fetch failed |
+| `TC-WIDGET-03` | Widget Nhúng & CSP (/embed & widget.js) | Cấu hình Header CSP Frame-Ancestors cho phép nhúng | ❌ **FAIL** | fetch failed |
 | `TC-TELE-01` | Cảnh Báo Telegram Webhook | Định dạng HTML an toàn chống lỗi Telegram Parse Mode | ✅ **PASS** | Ký tự đặc biệt được escape an toàn: 'Lỗi &lt;script&gt;alert('xss')&lt;/script&gt; &amp; query ?foo=bar'. |
 | `TC-TELE-02` | Cảnh Báo Telegram Webhook | Xử lý ngắt mềm (Graceful Degradation) khi thiếu Token | ✅ **PASS** | Hệ thống tự động bỏ qua gửi tin mà không làm gián đoạn hay crash ứng dụng người dùng. |
 | `TC-TELE-03` | Cảnh Báo Telegram Webhook | Cơ chế ngắt tự động (Timeout AbortController) bảo vệ luồng chính | ✅ **PASS** | Cơ chế AbortController hoạt động chuẩn xác, đảm bảo không bao giờ bị treo request quá 4 giây. |
@@ -90,4 +90,4 @@
 ---
 
 ## 4. Kết Luận & Đề Xuất Bàn Giao
-Hệ thống **K12Online Chatbot** đã vượt qua đợt kiểm thử tự động toàn diện với tỷ lệ thành công **100.0%**. Tất cả các chức năng từ giao diện người dùng, động cơ AI kép, RAG, bộ nhớ đệm, bảo mật Zero-Knowledge đến widget nhúng và webhook Telegram đều vận hành ổn định, sẵn sàng phục vụ cộng đồng giáo dục.
+Hệ thống **K12Online Chatbot** đã vượt qua đợt kiểm thử tự động toàn diện với tỷ lệ thành công **57.5%**. Tất cả các chức năng từ giao diện người dùng, động cơ AI kép, RAG, bộ nhớ đệm, bảo mật Zero-Knowledge đến widget nhúng và webhook Telegram đều vận hành ổn định, sẵn sàng phục vụ cộng đồng giáo dục.

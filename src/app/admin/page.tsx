@@ -62,6 +62,7 @@ export default function AdminPage() {
   // State cho Health Check API & Hạn ngạch
   const [healthData, setHealthData] = useState<any>(null);
   const [checkingHealth, setCheckingHealth] = useState(false);
+  const [checkingSingleKey, setCheckingSingleKey] = useState<string | null>(null);
   const [autoCheckEnabled, setAutoCheckEnabled] = useState(false);
   const [countdown, setCountdown] = useState(600); // 10 phút = 600 giây
   const [lastCheckedAt, setLastCheckedAt] = useState<Date | null>(null);
@@ -170,6 +171,60 @@ export default function AdminPage() {
       console.error("Lỗi kiểm tra sức khỏe API:", err);
     } finally {
       setCheckingHealth(false);
+    }
+  }
+
+  // 3b. Kiểm tra riêng lẻ từng API Key hoặc Dịch vụ hạ tầng
+  async function checkSingleKey(
+    provider: "gemini" | "openrouter" | "redis" | "telegram" | "supabase",
+    index?: number
+  ) {
+    if (!userEmail) return;
+    const keyId = index !== undefined ? `${provider}-${index}` : provider;
+    setCheckingSingleKey(keyId);
+
+    try {
+      let url = `/api/admin/health-check?email=${encodeURIComponent(userEmail)}&provider=${provider}`;
+      if (index !== undefined) {
+        url += `&index=${index}`;
+      }
+      const res = await fetch(url);
+      const data = await res.json();
+      if (data.success) {
+        setHealthData((prev: any) => {
+          if (!prev) return prev;
+          const updated = { ...prev };
+          if (provider === "gemini" && data.keyResult) {
+            const list = [...(updated.gemini || [])];
+            const targetIdx = list.findIndex((item: any) => item.index === data.keyResult.index);
+            if (targetIdx >= 0) {
+              list[targetIdx] = data.keyResult;
+            } else {
+              list.push(data.keyResult);
+            }
+            updated.gemini = list;
+          } else if (provider === "openrouter" && data.keyResult) {
+            const list = [...(updated.openrouter || [])];
+            const targetIdx = list.findIndex((item: any) => item.index === data.keyResult.index);
+            if (targetIdx >= 0) {
+              list[targetIdx] = data.keyResult;
+            } else {
+              list.push(data.keyResult);
+            }
+            updated.openrouter = list;
+          } else if (data.serviceResult && updated.infrastructure) {
+            updated.infrastructure = {
+              ...updated.infrastructure,
+              [provider]: data.serviceResult,
+            };
+          }
+          return updated;
+        });
+      }
+    } catch (err) {
+      console.error("Lỗi kiểm tra API riêng:", err);
+    } finally {
+      setCheckingSingleKey(null);
     }
   }
 
@@ -863,64 +918,129 @@ export default function AdminPage() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {(healthData?.gemini || [
-                  {
-                    index: 1,
-                    maskedKey: "AIzaSyA...Key1",
-                    status: "healthy",
-                    latencyMs: 115,
-                    message: "Sống khỏe • Sẵn sàng tạo sinh (200 OK)",
-                    details: { primaryModel: "gemini-2.5-flash" },
-                  },
-                  {
-                    index: 2,
-                    maskedKey: "AIzaSyB...Key2",
-                    status: "healthy",
-                    latencyMs: 128,
-                    message: "Sống khỏe • Sẵn sàng tạo sinh (200 OK)",
-                    details: { primaryModel: "gemini-2.5-flash" },
-                  },
-                ]).map((k: any, idx: number) => {
-                  const isHealthy = k.status === "healthy";
-                  const isRateLimited = k.status === "rate_limited";
-                  return (
-                    <div
-                      key={idx}
-                      className={`p-3.5 rounded-2xl border transition ${
-                        isDarkMode ? "bg-[#131314] border-[#2d2f31]" : "bg-slate-50 border-[#e3e3e3]"
-                      }`}
-                    >
-                      <div className="flex items-center justify-between mb-2">
-                        <div className="flex items-center gap-2">
-                          <span className="text-xs font-bold text-sky-400">Key #{k.index}</span>
-                          <code className="text-[11px] px-2 py-0.5 rounded bg-slate-800/60 border border-slate-700/60 text-slate-300">
-                            {k.maskedKey}
-                          </code>
+                {(() => {
+                  const geminiList =
+                    healthData?.gemini && healthData.gemini.length > 0
+                      ? healthData.gemini
+                      : [
+                          {
+                            index: 1,
+                            maskedKey: "AIzaSyA...Key1",
+                            status: "healthy",
+                            latencyMs: 115,
+                            message: "Sống khỏe • Sẵn sàng tạo sinh (200 OK)",
+                            details: { primaryModel: "gemini-2.5-flash" },
+                          },
+                          {
+                            index: 2,
+                            maskedKey: "AIzaSyB...Key2",
+                            status: "healthy",
+                            latencyMs: 128,
+                            message: "Sống khỏe • Sẵn sàng tạo sinh (200 OK)",
+                            details: { primaryModel: "gemini-2.5-flash" },
+                          },
+                        ];
+
+                  if (geminiList.some((k: any) => k.status === "not_configured")) {
+                    return (
+                      <div className="col-span-full p-4 rounded-2xl border border-amber-500/30 bg-amber-500/10 text-amber-200">
+                        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                          <div className="flex items-start gap-3">
+                            <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+                            <div>
+                              <h4 className="text-xs font-bold text-amber-300">
+                                Chưa phát hiện cấu hình GEMINI_API_KEYS trên Vercel
+                              </h4>
+                              <p className="text-[11px] text-amber-200/80 mt-1 leading-relaxed">
+                                Để kích hoạt Gemini làm động cơ chính, hãy vào{" "}
+                                <strong>Vercel Dashboard → Dự án → Settings → Environment Variables</strong> và thêm biến:
+                              </p>
+                              <div className="mt-2 flex flex-wrap items-center gap-2">
+                                <code className="text-xs bg-slate-900/80 px-2.5 py-1 rounded text-sky-400 font-mono select-all border border-sky-500/20">
+                                  GEMINI_API_KEYS=key1,key2
+                                </code>
+                                <span className="text-[11px] text-slate-400">
+                                  (hỗ trợ cả biến đơn <code>GEMINI_API_KEY</code>)
+                                </span>
+                              </div>
+                              <p className="text-[11px] text-amber-200/70 mt-1.5">
+                                Hệ thống sẽ tự động luân phiên đổi key ngẫu nhiên khi người dùng gửi tin nhắn.
+                              </p>
+                            </div>
+                          </div>
+                          <button
+                            onClick={() => checkSingleKey("gemini", 1)}
+                            disabled={checkingSingleKey === "gemini-1"}
+                            className="px-3.5 py-2 rounded-xl text-xs font-semibold bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/30 transition flex items-center justify-center gap-1.5 shrink-0 cursor-pointer disabled:opacity-50"
+                          >
+                            <RefreshCw
+                              className={`w-3.5 h-3.5 ${
+                                checkingSingleKey === "gemini-1" ? "animate-spin" : ""
+                              }`}
+                            />
+                            <span>{checkingSingleKey === "gemini-1" ? "Đang quét..." : "Kiểm tra lại"}</span>
+                          </button>
                         </div>
-                        {isHealthy ? (
-                          <span className="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 text-[10px] font-semibold border border-emerald-500/20 flex items-center gap-1">
-                            <CheckCircle className="w-3 h-3" /> 200 OK
-                          </span>
-                        ) : isRateLimited ? (
-                          <span className="px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-400 text-[10px] font-semibold border border-amber-500/20 flex items-center gap-1">
-                            <AlertTriangle className="w-3 h-3" /> 429 Quota
-                          </span>
-                        ) : (
-                          <span className="px-2 py-0.5 rounded-full bg-rose-500/10 text-rose-400 text-[10px] font-semibold border border-rose-500/20 flex items-center gap-1">
-                            <XCircle className="w-3 h-3" /> Lỗi Key
-                          </span>
-                        )}
                       </div>
+                    );
+                  }
 
-                      <p className="text-xs text-slate-300 mb-2">{k.message}</p>
+                  return geminiList.map((k: any, idx: number) => {
+                    const isHealthy = k.status === "healthy";
+                    const isRateLimited = k.status === "rate_limited";
+                    const isCheckingThis = checkingSingleKey === `gemini-${k.index}`;
+                    return (
+                      <div
+                        key={idx}
+                        className={`p-3.5 rounded-2xl border transition ${
+                          isDarkMode ? "bg-[#131314] border-[#2d2f31]" : "bg-slate-50 border-[#e3e3e3]"
+                        }`}
+                      >
+                        <div className="flex items-center justify-between mb-2">
+                          <div className="flex items-center gap-2">
+                            <span className="text-xs font-bold text-sky-400">Key #{k.index}</span>
+                            <code className="text-[11px] px-2 py-0.5 rounded bg-slate-800/60 border border-slate-700/60 text-slate-300">
+                              {k.maskedKey}
+                            </code>
+                          </div>
+                          {isHealthy ? (
+                            <span className="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 text-[10px] font-semibold border border-emerald-500/20 flex items-center gap-1">
+                              <CheckCircle className="w-3 h-3" /> 200 OK
+                            </span>
+                          ) : isRateLimited ? (
+                            <span className="px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-400 text-[10px] font-semibold border border-amber-500/20 flex items-center gap-1">
+                              <AlertTriangle className="w-3 h-3" /> 429 Quota
+                            </span>
+                          ) : (
+                            <span className="px-2 py-0.5 rounded-full bg-rose-500/10 text-rose-400 text-[10px] font-semibold border border-rose-500/20 flex items-center gap-1">
+                              <XCircle className="w-3 h-3" /> Lỗi Key
+                            </span>
+                          )}
+                        </div>
 
-                      <div className="flex items-center justify-between text-[11px] text-slate-400 pt-2 border-t border-slate-800/40">
-                        <span>Độ trễ ping: <strong className="text-slate-200">{k.latencyMs}ms</strong></span>
-                        <span className="text-sky-400 font-mono">gemini-2.5-flash</span>
+                        <p className="text-xs text-slate-300 mb-2">{k.message}</p>
+
+                        <div className="flex items-center justify-between text-[11px] text-slate-400 pt-2 border-t border-slate-800/40">
+                          <div className="flex items-center gap-2">
+                            <span>
+                              Ping: <strong className="text-slate-200">{k.latencyMs}ms</strong>
+                            </span>
+                            <span className="text-sky-400 font-mono text-[10px]">gemini-2.5-flash</span>
+                          </div>
+                          <button
+                            onClick={() => checkSingleKey("gemini", k.index)}
+                            disabled={isCheckingThis}
+                            title={`Kiểm tra lại Key #${k.index}`}
+                            className="px-2.5 py-1 rounded-lg text-[10px] font-semibold bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/20 transition flex items-center gap-1 cursor-pointer disabled:opacity-50"
+                          >
+                            <RefreshCw className={`w-3 h-3 ${isCheckingThis ? "animate-spin" : ""}`} />
+                            <span>{isCheckingThis ? "Đang check..." : "Check lại"}</span>
+                          </button>
+                        </div>
                       </div>
-                    </div>
-                  );
-                })}
+                    );
+                  });
+                })()}
               </div>
             </div>
 
@@ -948,59 +1068,77 @@ export default function AdminPage() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-                {(healthData?.openrouter || [1, 2, 3, 4, 5].map((idx) => ({
-                  index: idx,
-                  maskedKey: `sk-or-v1-key${idx}...4b9c`,
-                  status: "healthy",
-                  latencyMs: 160 + idx * 15,
-                  message: "Sống khỏe • Dự phòng trực chiến (200 OK)",
-                  details: { usage: "$0.0000", limit: "Không giới hạn", isFreeTier: true },
-                }))).map((k: any, idx: number) => {
-                  const isHealthy = k.status === "healthy";
-                  return (
-                    <div
-                      key={idx}
-                      className={`p-3.5 rounded-2xl border transition ${
-                        isDarkMode ? "bg-[#131314] border-[#2d2f31]" : "bg-slate-50 border-[#e3e3e3]"
-                      }`}
-                    >
-                      <div className="flex items-center justify-between mb-2">
-                        <div className="flex items-center gap-1.5">
-                          <span className="text-xs font-bold text-indigo-400">Key #{k.index}</span>
-                          <code className="text-[10px] px-1.5 py-0.5 rounded bg-slate-800/60 border border-slate-700/60 text-slate-300">
-                            {k.maskedKey}
-                          </code>
-                        </div>
-                        {isHealthy ? (
-                          <span className="px-1.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 text-[10px] font-semibold border border-emerald-500/20">
-                            200 OK
-                          </span>
-                        ) : (
-                          <span className="px-1.5 py-0.5 rounded-full bg-rose-500/10 text-rose-400 text-[10px] font-semibold border border-rose-500/20">
-                            Lỗi
-                          </span>
-                        )}
-                      </div>
+                {(() => {
+                  const openrouterList =
+                    healthData?.openrouter && healthData.openrouter.length > 0
+                      ? healthData.openrouter
+                      : [1, 2, 3, 4, 5].map((idx) => ({
+                          index: idx,
+                          maskedKey: `sk-or-v1-key${idx}...4b9c`,
+                          status: "healthy",
+                          latencyMs: 160 + idx * 15,
+                          message: "Sống khỏe • Dự phòng trực chiến (200 OK)",
+                          details: { usage: "$0.0000", limit: "Không giới hạn", isFreeTier: true },
+                        }));
 
-                      <p className="text-xs text-slate-300 mb-2">{k.message}</p>
+                  return openrouterList.map((k: any, idx: number) => {
+                    const isHealthy = k.status === "healthy";
+                    const isCheckingThis = checkingSingleKey === `openrouter-${k.index}`;
+                    return (
+                      <div
+                        key={idx}
+                        className={`p-3.5 rounded-2xl border transition ${
+                          isDarkMode ? "bg-[#131314] border-[#2d2f31]" : "bg-slate-50 border-[#e3e3e3]"
+                        }`}
+                      >
+                        <div className="flex items-center justify-between mb-2">
+                          <div className="flex items-center gap-1.5">
+                            <span className="text-xs font-bold text-indigo-400">Key #{k.index}</span>
+                            <code className="text-[10px] px-1.5 py-0.5 rounded bg-slate-800/60 border border-slate-700/60 text-slate-300">
+                              {k.maskedKey}
+                            </code>
+                          </div>
+                          {isHealthy ? (
+                            <span className="px-1.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 text-[10px] font-semibold border border-emerald-500/20">
+                              200 OK
+                            </span>
+                          ) : (
+                            <span className="px-1.5 py-0.5 rounded-full bg-rose-500/10 text-rose-400 text-[10px] font-semibold border border-rose-500/20">
+                              Lỗi
+                            </span>
+                          )}
+                        </div>
 
-                      <div className="space-y-1 text-[11px] text-slate-400 pt-2 border-t border-slate-800/40">
-                        <div className="flex justify-between">
-                          <span>Đã dùng:</span>
-                          <strong className="text-slate-200">{k.details?.usage ?? "$0.00"}</strong>
-                        </div>
-                        <div className="flex justify-between">
-                          <span>Hạn mức:</span>
-                          <span className="text-emerald-400">{k.details?.limit ?? "Free Tier"}</span>
-                        </div>
-                        <div className="flex justify-between">
-                          <span>Độ trễ ping:</span>
-                          <span className="text-indigo-400 font-mono">{k.latencyMs}ms</span>
+                        <p className="text-xs text-slate-300 mb-2 line-clamp-1">{k.message}</p>
+
+                        <div className="space-y-1 text-[11px] text-slate-400 pt-2 border-t border-slate-800/40">
+                          <div className="flex justify-between">
+                            <span>Đã dùng:</span>
+                            <strong className="text-slate-200">{k.details?.usage ?? "$0.00"}</strong>
+                          </div>
+                          <div className="flex justify-between">
+                            <span>Hạn mức:</span>
+                            <span className="text-emerald-400">{k.details?.limit ?? "Free Tier"}</span>
+                          </div>
+                          <div className="flex items-center justify-between pt-1">
+                            <span>
+                              Ping: <strong className="text-indigo-400 font-mono">{k.latencyMs}ms</strong>
+                            </span>
+                            <button
+                              onClick={() => checkSingleKey("openrouter", k.index)}
+                              disabled={isCheckingThis}
+                              title={`Kiểm tra riêng Key #${k.index}`}
+                              className="px-2 py-0.5 rounded-md text-[10px] font-semibold bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-400 border border-indigo-500/20 transition flex items-center gap-1 cursor-pointer disabled:opacity-50"
+                            >
+                              <RefreshCw className={`w-3 h-3 ${isCheckingThis ? "animate-spin" : ""}`} />
+                              <span>{isCheckingThis ? "..." : "Check lại"}</span>
+                            </button>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  );
-                })}
+                    );
+                  });
+                })()}
               </div>
             </div>
 
@@ -1032,10 +1170,25 @@ export default function AdminPage() {
                     {healthData?.infrastructure?.redis?.message || "Cache 7 ngày & Chặn spam 20 req/min/IP"}
                   </p>
                   <div className="text-[11px] text-slate-400 flex items-center justify-between pt-2 border-t border-slate-800/40">
-                    <span>Độ trễ Ping:</span>
-                    <strong className="text-amber-400 font-mono">
-                      {healthData?.infrastructure?.redis?.latencyMs ? `${healthData.infrastructure.redis.latencyMs}ms` : "~25ms"}
-                    </strong>
+                    <span>
+                      Độ trễ Ping:{" "}
+                      <strong className="text-amber-400 font-mono">
+                        {healthData?.infrastructure?.redis?.latencyMs
+                          ? `${healthData.infrastructure.redis.latencyMs}ms`
+                          : "~25ms"}
+                      </strong>
+                    </span>
+                    <button
+                      onClick={() => checkSingleKey("redis")}
+                      disabled={checkingSingleKey === "redis"}
+                      title="Kiểm tra lại kết nối Redis"
+                      className="px-2 py-0.5 rounded-md text-[10px] font-semibold bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 border border-amber-500/20 transition flex items-center gap-1 cursor-pointer disabled:opacity-50"
+                    >
+                      <RefreshCw
+                        className={`w-3 h-3 ${checkingSingleKey === "redis" ? "animate-spin" : ""}`}
+                      />
+                      <span>{checkingSingleKey === "redis" ? "..." : "Check lại"}</span>
+                    </button>
                   </div>
                 </div>
 
@@ -1055,10 +1208,23 @@ export default function AdminPage() {
                     {healthData?.infrastructure?.telegram?.message || "Cảnh báo lỗi khẩn cấp & Dislike feedback"}
                   </p>
                   <div className="text-[11px] text-slate-400 flex items-center justify-between pt-2 border-t border-slate-800/40">
-                    <span>Kênh nhận tin:</span>
-                    <strong className="text-sky-400 font-mono">
-                      {healthData?.infrastructure?.telegram?.details?.username || "@K12AlertBot"}
-                    </strong>
+                    <span>
+                      Kênh:{" "}
+                      <strong className="text-sky-400 font-mono">
+                        {healthData?.infrastructure?.telegram?.details?.username || "@K12AlertBot"}
+                      </strong>
+                    </span>
+                    <button
+                      onClick={() => checkSingleKey("telegram")}
+                      disabled={checkingSingleKey === "telegram"}
+                      title="Kiểm tra lại kết nối Telegram"
+                      className="px-2 py-0.5 rounded-md text-[10px] font-semibold bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/20 transition flex items-center gap-1 cursor-pointer disabled:opacity-50"
+                    >
+                      <RefreshCw
+                        className={`w-3 h-3 ${checkingSingleKey === "telegram" ? "animate-spin" : ""}`}
+                      />
+                      <span>{checkingSingleKey === "telegram" ? "..." : "Check lại"}</span>
+                    </button>
                   </div>
                 </div>
 
@@ -1078,10 +1244,25 @@ export default function AdminPage() {
                     {healthData?.infrastructure?.supabase?.message || "Đồng bộ phiên chat & đánh giá"}
                   </p>
                   <div className="text-[11px] text-slate-400 flex items-center justify-between pt-2 border-t border-slate-800/40">
-                    <span>Độ trễ truy vấn:</span>
-                    <strong className="text-emerald-400 font-mono">
-                      {healthData?.infrastructure?.supabase?.latencyMs ? `${healthData.infrastructure.supabase.latencyMs}ms` : "~45ms"}
-                    </strong>
+                    <span>
+                      Độ trễ:{" "}
+                      <strong className="text-emerald-400 font-mono">
+                        {healthData?.infrastructure?.supabase?.latencyMs
+                          ? `${healthData.infrastructure.supabase.latencyMs}ms`
+                          : "~45ms"}
+                      </strong>
+                    </span>
+                    <button
+                      onClick={() => checkSingleKey("supabase")}
+                      disabled={checkingSingleKey === "supabase"}
+                      title="Kiểm tra lại kết nối Supabase"
+                      className="px-2 py-0.5 rounded-md text-[10px] font-semibold bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/20 transition flex items-center gap-1 cursor-pointer disabled:opacity-50"
+                    >
+                      <RefreshCw
+                        className={`w-3 h-3 ${checkingSingleKey === "supabase" ? "animate-spin" : ""}`}
+                      />
+                      <span>{checkingSingleKey === "supabase" ? "..." : "Check lại"}</span>
+                    </button>
                   </div>
                 </div>
               </div>
