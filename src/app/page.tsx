@@ -994,11 +994,11 @@ export default function Home() {
           }`}
         >
           {/* Cụm bên trái: Nút mở sidebar & Tên ứng dụng */}
-          <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
+          <div className="flex items-center gap-1.5 sm:gap-2.5 min-w-0">
             {/* Trên Mobile/Tablet: Nút Menu Hamburger mở Drawer */}
             <button
               onClick={() => setIsSidebarOpen(true)}
-              className={`p-2 rounded-full transition lg:hidden ${
+              className={`p-1.5 sm:p-2 rounded-full transition lg:hidden ${
                 isDarkMode ? "hover:bg-[#1e1f20] text-slate-300" : "hover:bg-slate-100 text-slate-700"
               }`}
               title="Mở menu"
@@ -1019,21 +1019,22 @@ export default function Home() {
               </button>
             )}
 
-            {/* Tên ứng dụng K12Online AI Assistant */}
-            <div className="flex items-center gap-2 select-none">
+            {/* Tên ứng dụng K12Online (Rút gọn thông minh trên Mobile để tránh đè nút Đoạn chat mới) */}
+            <div className="flex items-center gap-1.5 sm:gap-2 select-none min-w-0">
               <K12Icon className="w-6 h-6 shrink-0 shadow-sm" />
               <span
                 className={`font-semibold text-sm sm:text-base tracking-tight truncate ${
                   isDarkMode ? "text-white" : "text-[#1f1f1f]"
                 }`}
               >
-                K12Online AI Assistant
+                <span>K12Online</span>
+                <span className="hidden sm:inline"> AI Assistant</span>
               </span>
             </div>
           </div>
 
           {/* Cụm bên phải: Nút Đoạn chat mới (Mobile), Nút Đổi Theme, Nút Đăng nhập */}
-          <div className="flex items-center gap-1.5 sm:gap-2">
+          <div className="flex items-center gap-1 sm:gap-2 shrink-0">
             {/* Nút Tạo đoạn chat mới nhanh */}
             <button
               onClick={createNewChat}
