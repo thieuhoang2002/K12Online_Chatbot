@@ -100,11 +100,17 @@ export default function EmbedChat() {
           message: query,
           history: updatedMessages.slice(-4),
           turnstileToken: "cf-safety-verified-token",
+          isWidget: true,
         }),
       });
 
       if (!res.ok) {
-        throw new Error("Lỗi kết nối máy chủ");
+        let errMsg = "Lỗi kết nối máy chủ";
+        try {
+          const errData = await res.json();
+          if (errData.error) errMsg = errData.error;
+        } catch (e) {}
+        throw new Error(errMsg);
       }
 
       const reader = res.body?.getReader();
@@ -131,8 +137,9 @@ export default function EmbedChat() {
 
             try {
               const parsed = JSON.parse(dataStr);
-              if (parsed.type === "chunk" && parsed.chunk) {
-                accumulated += parsed.chunk;
+              const textPiece = parsed.text ?? parsed.chunk;
+              if (textPiece !== undefined) {
+                accumulated += textPiece;
                 setMessages((prev) => {
                   const copy = [...prev];
                   const last = copy[copy.length - 1];
@@ -143,8 +150,8 @@ export default function EmbedChat() {
                 });
               } else if (parsed.type === "sources") {
                 parsedSources = parsed.sources || [];
-              } else if (parsed.type === "followUps") {
-                parsedFollowUps = parsed.prompts || parsed.followUps || [];
+              } else if (parsed.type === "followUps" || parsed.type === "follow_ups") {
+                parsedFollowUps = parsed.prompts || parsed.followUps || parsed.follow_ups || [];
               }
             } catch (e) {}
           }
