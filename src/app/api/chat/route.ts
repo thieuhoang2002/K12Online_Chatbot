@@ -1,10 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import { keyRotator, ChatMessage } from "@/lib/openrouter";
+import { geminiRotator } from "@/lib/gemini";
 import { searchKnowledge } from "@/lib/knowledge";
 import { responseCache } from "@/lib/cache";
 import { checkRateLimit, isIpVerifiedHuman, markIpVerifiedHuman } from "@/lib/ratelimit";
 import { checkCasualIntent } from "@/lib/intent";
 import { generateFollowUpPrompts } from "@/lib/suggestions";
+import { findPrebakedAnswer } from "@/lib/prebaked";
 
 /**
  * Tạo Stream giả lập mượt mà cho câu trả lời từ Cache hoặc câu xã giao
@@ -40,7 +42,9 @@ function createTextStream(
       // 3. Gửi danh sách câu hỏi gợi ý tiếp theo
       if (followUps && followUps.length > 0) {
         controller.enqueue(
-          encoder.encode(`data: ${JSON.stringify({ type: "followUps", prompts: followUps })}\n\n`)
+          encoder.encode(
+            `data: ${JSON.stringify({ type: "followUps", prompts: followUps, followUps: followUps })}\n\n`
+          )
         );
       }
 
@@ -49,6 +53,86 @@ function createTextStream(
         encoder.encode(`data: ${JSON.stringify({ type: "done", meta })}\n\n`)
       );
       controller.close();
+    },
+  });
+}
+
+/**
+ * Chuyển tiếp luồng SSE từ Google Gemini tới Client và lưu Cache khi hoàn tất
+ */
+function createGeminiStream(
+  geminiBody: ReadableStream<Uint8Array>,
+  sources: any[],
+  followUps: string[],
+  onComplete: (fullText: string) => Promise<void>
+): ReadableStream<Uint8Array> {
+  const encoder = new TextEncoder();
+  const decoder = new TextDecoder();
+  let fullAccumulated = "";
+
+  return new ReadableStream({
+    async start(controller) {
+      if (sources && sources.length > 0) {
+        controller.enqueue(
+          encoder.encode(`data: ${JSON.stringify({ type: "sources", sources })}\n\n`)
+        );
+      }
+
+      const reader = geminiBody.getReader();
+      let buffer = "";
+
+      try {
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+
+          buffer += decoder.decode(value, { stream: true });
+          const lines = buffer.split("\n");
+          buffer = lines.pop() || "";
+
+          for (const rawLine of lines) {
+            const line = rawLine.trim();
+            if (!line || !line.startsWith("data:")) continue;
+            const dataStr = line.replace(/^data:\s*/, "");
+            if (!dataStr) continue;
+
+            try {
+              const parsed = JSON.parse(dataStr);
+              const chunkText = parsed.candidates?.[0]?.content?.parts?.[0]?.text || "";
+              if (chunkText) {
+                fullAccumulated += chunkText;
+                controller.enqueue(
+                  encoder.encode(`data: ${JSON.stringify({ type: "chunk", text: chunkText })}\n\n`)
+                );
+              }
+            } catch (e) {}
+          }
+        }
+
+        // Gửi danh sách gợi ý câu hỏi tiếp theo
+        if (followUps && followUps.length > 0) {
+          controller.enqueue(
+            encoder.encode(
+              `data: ${JSON.stringify({ type: "followUps", prompts: followUps, followUps: followUps })}\n\n`
+            )
+          );
+        }
+
+        // Gửi thông báo hoàn tất
+        controller.enqueue(
+          encoder.encode(`data: ${JSON.stringify({ type: "done", meta: { cached: false, provider: "gemini" } })}\n\n`)
+        );
+        controller.close();
+
+        if (fullAccumulated.trim()) {
+          onComplete(fullAccumulated).catch(() => {});
+        }
+      } catch (err: any) {
+        controller.enqueue(
+          encoder.encode(`data: ${JSON.stringify({ type: "error", error: err.message })}\n\n`)
+        );
+        controller.close();
+      }
     },
   });
 }
@@ -151,7 +235,9 @@ function createOpenRouterStream(
         // Gửi danh sách gợi ý câu hỏi tiếp theo
         if (followUps && followUps.length > 0) {
           controller.enqueue(
-            encoder.encode(`data: ${JSON.stringify({ type: "followUps", prompts: followUps })}\n\n`)
+            encoder.encode(
+              `data: ${JSON.stringify({ type: "followUps", prompts: followUps, followUps: followUps })}\n\n`
+            )
           );
         }
 
@@ -296,6 +382,21 @@ export async function POST(req: NextRequest) {
       });
     }
 
+    // 4.5. BỘ LỌC CÂU HỎI LÀM SẴN (PRE-BAKED / WARM CACHE CHO BÀI VIẾT QUÁ DÀI)
+    // Giúp phản hồi ngay lập tức (0ms latency, 0 token) với đầy đủ cấu trúc chi tiết, tránh nghẽn/cắt cụt do bài viết 70k ký tự
+    const prebaked = findPrebakedAnswer(message);
+    if (prebaked) {
+      console.log(`⚡ [Pre-baked Hit] Bắn câu trả lời chuẩn bị sẵn cho bài viết lớn: "${message}"`);
+      const stream = createTextStream(prebaked.reply, prebaked.sources, prebaked.followUps, { prebaked: true });
+      return new Response(stream, {
+        headers: {
+          "Content-Type": "text/event-stream; charset=utf-8",
+          "Cache-Control": "no-cache, no-transform",
+          "Connection": "keep-alive",
+        },
+      });
+    }
+
     // 5. KIỂM TRA BỘ NHỚ RAM / REDIS CACHE
     const cached = await responseCache.get(model, cacheKey);
     if (cached) {
@@ -314,7 +415,14 @@ export async function POST(req: NextRequest) {
     // 6. Tìm kiếm dữ liệu liên quan từ kho tri thức K12Online (kèm Từ điển đồng nghĩa)
     const relevantDocs = searchKnowledge(message, 3);
     const contextText = relevantDocs
-      .map((d, i) => `[TÀI LIỆU ${i + 1} - ${d.title} (Nguồn: ${d.sourceUrl})]\n${d.content}`)
+      .map((d, i) => {
+        // Giới hạn 15.000 ký tự cho mỗi tài liệu để tránh tràn token prompt
+        const contentSnippet =
+          d.content.length > 15000
+            ? d.content.slice(0, 15000) + "\n\n...(Còn tiếp trong bài viết gốc)"
+            : d.content;
+        return `[TÀI LIỆU ${i + 1} - ${d.title} (Nguồn: ${d.sourceUrl})]\n${contentSnippet}`;
+      })
       .join("\n\n---\n\n");
 
     const sources = relevantDocs.map((d) => ({
@@ -329,7 +437,10 @@ export async function POST(req: NextRequest) {
     const systemPrompt = `Bạn là Trợ lý AI Hỗ trợ Kỹ thuật K12Online - Một dự án phi lợi nhuận phục vụ cộng đồng.
 QUY TẮC PHỤC VỤ:
 1. Xưng hô thân thiện, lịch sự: gọi người dùng là "bạn", xưng là "mình" hoặc "Trợ lý K12".
-2. Trả lời dựa trên CƠ SỞ TRI THỨC K12ONLINE được cung cấp dưới đây. Hướng dẫn chi tiết, rõ ràng theo từng bước (Bước 1: ..., Bước 2: ...) để người dùng dễ dàng thao tác theo.
+2. Trả lời dựa trên CƠ SỞ TRI THỨC K12ONLINE được cung cấp dưới đây:
+   - Với câu hỏi về một nghiệp vụ thao tác cụ thể: Hướng dẫn chi tiết, rõ ràng theo từng bước (Bước 1: ..., Bước 2: ...) để người dùng dễ dàng thao tác theo.
+   - Với câu hỏi bao quát về một hệ sinh thái lớn gồm nhiều phân hệ (như hệ thống Thư viện số, Quản lý trường học...): Hãy tóm tắt các tính năng cốt lõi một cách mạch lạc, súc tích, trình bày rõ ràng từng nhóm nghiệp vụ chính.
+   - ĐẶC BIỆT QUAN TRỌNG: LUÔN LUÔN kết thúc câu trả lời hoàn chỉnh, trọn vẹn ý tứ, TUYỆT ĐỐI KHÔNG dừng cụt lủn hay đứt gãy giữa chừng.
 3. Ở cuối câu trả lời, LUÔN LUÔN đính kèm đường link bài viết gốc để bạn có thể bấm vào xem chi tiết nếu tài liệu có đường dẫn.
 4. Nếu trong tài liệu hoàn toàn không có thông tin và không thể giải đáp, hãy thành thật trả lời: "Hiện tại trong tài liệu hướng dẫn chưa có thông tin chi tiết về vấn đề này. Bạn vui lòng liên hệ bộ phận hỗ trợ kỹ thuật hoặc tổng đài 18008000 (nhánh 2) để được hỗ trợ trực tiếp nhé."
 5. QUAN TRỌNG: TUYỆT ĐỐI KHÔNG xuất các đoạn suy nghĩ nội tâm (reasoning/thought), không giải thích bằng tiếng Anh hay viết "The user is asking...". Chỉ trả lời trực tiếp nội dung bằng tiếng Việt chuẩn mực cho người dùng.
@@ -344,8 +455,43 @@ ${contextText || "Chưa có tài liệu phù hợp."}`;
       { role: "user", content: message },
     ];
 
-    // 9. Gọi OpenRouter STREAMING (Gõ chữ từng từ theo thời gian thực)
-    const { responseStream } = await keyRotator.callChatCompletionStream(messages, model);
+    // 9. CHIẾN LƯỢC ĐA ĐỘNG CƠ AI (Multi-Provider Dual Engine)
+    // Ưu tiên #1: Gọi Google Gemini nếu đã cấu hình Key (siêu tốc, hạn ngạch ngày lớn)
+    if (geminiRotator.getKeyCount() > 0) {
+      try {
+        const geminiRes = await geminiRotator.callGeminiStream(
+          systemPrompt,
+          history.slice(-4),
+          message
+        );
+
+        const clientStream = createGeminiStream(
+          geminiRes.responseStream,
+          sources,
+          followUps,
+          async (finalText: string) => {
+            await responseCache.set("gemini", cacheKey, finalText, sources);
+          }
+        );
+
+        return new Response(clientStream, {
+          headers: {
+            "Content-Type": "text/event-stream; charset=utf-8",
+            "Cache-Control": "no-cache, no-transform",
+            "Connection": "keep-alive",
+            "X-AI-Provider": "google-gemini",
+            "X-AI-Model": geminiRes.modelUsed,
+          },
+        });
+      } catch (geminiErr: any) {
+        console.warn(
+          `⚠️ [Multi-Provider Failover] Google Gemini tạm thời nghẽn (${geminiErr.message}). Tự động kích hoạt Bể OpenRouter dự phòng...`
+        );
+      }
+    }
+
+    // Dự phòng #2: Bể 5 Key OpenRouter (Qwen)
+    const { responseStream, rateLimitInfo } = await keyRotator.callChatCompletionStream(messages, model);
 
     const clientStream = createOpenRouterStream(
       responseStream,
@@ -356,13 +502,18 @@ ${contextText || "Chưa có tài liệu phù hợp."}`;
       }
     );
 
-    return new Response(clientStream, {
-      headers: {
-        "Content-Type": "text/event-stream; charset=utf-8",
-        "Cache-Control": "no-cache, no-transform",
-        "Connection": "keep-alive",
-      },
-    });
+    const resHeaders: Record<string, string> = {
+      "Content-Type": "text/event-stream; charset=utf-8",
+      "Cache-Control": "no-cache, no-transform",
+      "Connection": "keep-alive",
+      "X-AI-Provider": "openrouter",
+      "X-AI-Model": model,
+    };
+    if (rateLimitInfo?.limit) resHeaders["x-ratelimit-limit"] = rateLimitInfo.limit;
+    if (rateLimitInfo?.remaining) resHeaders["x-ratelimit-remaining"] = rateLimitInfo.remaining;
+    if (rateLimitInfo?.reset) resHeaders["x-ratelimit-reset"] = rateLimitInfo.reset;
+
+    return new Response(clientStream, { headers: resHeaders });
   } catch (error: any) {
     console.error("Lỗi API Chat:", error);
     return NextResponse.json(

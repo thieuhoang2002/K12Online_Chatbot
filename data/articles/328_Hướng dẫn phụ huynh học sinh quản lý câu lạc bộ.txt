@@ -1,0 +1,83 @@
+### BÀI VIẾT [328]: Hướng dẫn phụ huynh học sinh quản lý câu lạc bộ
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Câu lạc bộ > Phụ huynh HS
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/clb/phu-huynh-hs/huong-dan-phu-huynh-hoc-sinh-quan-ly-cau-lac-bo2.html
+
+**Nội dung:**
+1. Xem danh sách câu lạc bộ
+
+ Bước 1: Đăng nhập tài khoản phụ huynh
+
+ Bước 2: Trang chủ  > Click vào module Câu lạc bộ > Vào menu Câu lạc bộ
+
+ Xem danh sách tất cả các câu lạc bộ
+
+ Lưu ý:
+
+ Nếu câu lạc bộ bị xóa ở tài khoản trường / quản lý câu lạc bộ thì câu lạc bộ cũng bị mất ở đây
+ 2. Tìm kiếm câu lạc bộ
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý:
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+ ​​​​​​​3. Xem chi tiết câu lạc bộ
+
+ Bước 1: Danh sách click tên câu lạc bộ or icon xem chi tiết
+
+ Bước 2: Hiển thị màn hình chi tiết
+
+ + Câu lạc bộ nào mà học sinh tham gia thì xem được cả 3tab Thông tin chung / Danh sách lớp / Thông tin hoạt động
+
+ + Câu lạc bộ nào mà học sinh không tham gia thì xem được tab Thông tin
+
+ ​​​​​​​4. Lớp câu lạc bộ
+
+ Bước 1: Đăng nhập tài khoản phụ huynh
+
+ Bước 2: Trang chủ  > Click vào module Câu lạc bộ > Vào menu Lớp câu lạc bộ
+
+ ​​​​​​​4.1. Xem danh sách lớp câu lạc bộ
+
+ Xem danh sách lớp câu lạc bộ mà học sinh tham gia
+
+ ​​​​​​​4.2. Tìm kiếm lớp câu lạc bộ
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý:
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+
+ ​​​​​​​4.3. Xem chi tiết lớp câu lạc bộ
+
+ Bước 1: Click tên lớp câu lạc bộ or click icon xem chi tiết
+
+ Bước 2: Hiển thị màn hình chi tiết
+
+ + Tab Thông tin chung: Xem thông tin lớp câu lạc bộ
+
+ + Tab Danh sách học sinh: Xem danh sách học sinh tham gia lớp câu lạc bộ
+
+ + Tab Lịch học: Xem lịch học câu lạc bộ
+
+ Click icon Đơn nghỉ học thực hiện gửi đơn nghỉ thành công
+
+ + Tab Điểm danh: Xem danh sách điểm danh
+
+ + Tab Thông tin hoạt động: Xem thông tin hoạt động trong lớp câu lạc bộ
+
+ + Tab Đánh giá lớp:
+
+ Chọn lịch học xem đánh giá lớp học
+
+ Chọn loại đánh giá để xem đánh giá tổng kết cuối khóa
+
+ ​​​​​​​
+
+ + Tab Kết quả học tập: Xem điểm tất cả các bài tập câu lạc bộ học sinh tham gia
+
+==================================================
+

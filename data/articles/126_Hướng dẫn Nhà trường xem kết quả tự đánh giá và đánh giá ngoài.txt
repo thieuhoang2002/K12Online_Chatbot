@@ -1,0 +1,17 @@
+### BÀI VIẾT [126]: Hướng dẫn Nhà trường xem kết quả tự đánh giá và đánh giá ngoài
+- Chuyên mục: Trang chủ > Tính năng khác > Hướng dẫn sử dụng DTI HCM EDU
+- Link gốc: https://hotro.k12online.vn/huong-dan-su-dung/huong-dan-su-dung-he-thong-danh-gia-muc-do-chuyen-doi-so/huong-dan-nha-truong-xem-ket-qua-tu-danh-gia-va-danh-gia-ngoai.html
+
+**Nội dung:**
+Nhà trường chủ động xem kết quả tự đánh giá và đánh giá ngoài trên hệ thống.
+
+ a) Xem kết quả tự đánh giá
+
+ - Vào menu Tự đánh giá => Xem các phiếu tự đánh giá đã được duyệt.
+
+ b) Xem kết quả đánh giá của đơn vị quản lý trực tiếp
+
+ - Vào menu Kết quả đánh giá => Xem các phiếu đánh giá ngoài đã được duyệt.
+
+==================================================
+

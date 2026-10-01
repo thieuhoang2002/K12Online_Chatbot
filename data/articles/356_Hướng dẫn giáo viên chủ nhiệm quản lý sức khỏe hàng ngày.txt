@@ -1,0 +1,81 @@
+### BÀI VIẾT [356]: Hướng dẫn giáo viên chủ nhiệm quản lý sức khỏe hàng ngày
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Y tế > Giáo viên CN
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/y-te/giao-vien-chu-nhiem/huong-dan-giao-vien-chu-nhiem-quan-ly-suc-khoe-hang-ngay.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản phân quyền giáo viên chủ nhiệm
+
+ Bước 2:Click menu Quản lý sức khỏe hàng ngày > hiển thị danh sách sức khỏe ngày
+
+ 1. Chi tiết sức khỏe hàng ngày
+
+ Bước 1: Click menu quản lý sức khỏe hàng ngày > click icon xem chi tiết
+
+ Bước 2 : Hiển thị màn hình xem chi tiết
+
+ 2. Thêm mới quản lý sức khỏe hàng ngày
+
+ Bước 1: Click menu quản lý sức khỏe hàng ngày > Click nút Thêm mới
+
+ Bước 2: Hiển thị form thêm mới
+
+ Đối tượng học sinh: Chỉ hiển hiển thị dữ liệu lớp mà giáo viên đang quản lý
+
+ Đối tượng Giáo viên: Mặc định hiển thị thông tin giáo viên hiện tại
+
+ Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công
+
+ Lưu ý
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo và focus vào trường lỗi cụ thể
+ Khi tích checkbox Đề nghị sử dụng thuốc sẽ hiển thị bảng danh sách đề nghị sử dụng dữ liệu lấy từ khai báo của trường > giáo viên chọn cập nhật nhập/ chọn thuốc hợp lệ. Click nút Thêm để thêm loại thuốc đề nghị sử dụng khác
+
+ 3. Chỉnh sửa quản lý sức khỏe hàng ngày
+
+ Bước 1: Click menu quản lý sức khỏe hàng ngày > Click icon chỉnh sửa
+
+ Bước 4: Hiển thị form chỉnh sửa
+
+ Đối tượng học sinh:
+
+ Đối tượng Giáo viên: Mặc định hiển thị thông tin giáo viên hiện tại
+
+ Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công
+
+ Lưu ý
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo và focus vào trường lỗi cụ thể
+ Khi tích checkbox Đề nghị sử dụng thuốc sẽ hiển thị bảng danh sách đề nghị sử dụng dữ liệu lấy từ khai báo của trường > giáo viên chọn cập nhật nhập/ chọn thuốc hợp lệ. Click nút Thêm để thêm loại thuốc đề nghị sử dụng khác
+ 4. Nhập excel
+
+ Bước 1: Click menu quản lý sức khỏe hàng ngày > Nhập excel > Click Tải xuống để tải file mẫu nhập excel
+
+ Bước 2: Chọn loại đối tượng hợp lệ > Click nút Tải xuống
+
+ Bước 3: Nhập đầy đủ thông tin vào file mẫu > Click Chọn file tải lên > chọn đúng file mẫu để tải lên > Click Nhập Excel
+
+ Bước 4: Nhập thành công hiển thị thông báo tương ứng
+
+ Lưu ý :
+
+ Upload file không đúng định dạng ,Upload file quá dung lượng tối đa , Upload file đúng file mẫu lên hệ thống đưa ra thông báo lỗi
+ Bỏ trống các trường bắt buộc upload file lên  hệ thống trả về 1 file kết quả và thông báo lỗi
+ 5. Xuất excel
+
+ Bước 1: Click menu quản lý sức khỏe hàng ngày > Xuất excel
+
+ Bước 2: File thống kê được tải hiển thị dữ liệu khớp với hệ thống
+
+ 6. Tìm kiếm
+
+ Bước 1: Click menu quản lý sức khỏe hàng ngày > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn .
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+
+==================================================
+

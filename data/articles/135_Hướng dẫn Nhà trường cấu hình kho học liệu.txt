@@ -1,0 +1,13 @@
+### BÀI VIẾT [135]: Hướng dẫn Nhà trường cấu hình kho học liệu
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Kho học liệu số > Nhà trường
+- Link gốc: https://hotro.k12online.vn/kho-hoc-lieu/huong-dan-nha-truong-cau-hinh-kho-hoc-lieu.html
+
+**Nội dung:**
+Trước khi triển khai kho học liệu cho toàn trường, nhà trường cần thiết lập một số cấu hình trước:
+
+ 1. Khai báo danh mục cho kho học liệu
+
+ - Vào Cấu hình khai báo => Chọn Kho học liệu => Chọn tab Danh mục kho học liệu
+
+==================================================
+

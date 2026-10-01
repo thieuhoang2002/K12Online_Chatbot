@@ -1,0 +1,48 @@
+### BÀI VIẾT [310]: Hướng dẫn phụ huynh học sinh quản lý lịch đón trả
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Bus > Phụ huynh HS
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/bus/phu-huynh-hs/huong-dan-phu-huynh-hoc-sinh-quan-ly-lich-don-tra.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản có quyền phụ huynh học sinh
+
+ Bước 2: Tại Trang chủ: chọn module Bus
+
+ Bước 3: Hiển thị màn hình các menu thuộc module Bus như hình
+
+ Trên thanh menu: Click menu Lịch đón trả
+
+ 1. Xem chi tiết lịch đón trả
+
+ Bước 1: Danh sách > Click Ngày tháng cần xem chi tiết lịch đón trả
+
+ Hiển thị thông tin bao gồm: Tên học sinh/ Trạng thái, Trạng thái tuyến đường, Giờ đón/ trả, Lái xe, Quản lý xe, Số ghế ngồi, Biển kiểm soát, Sự cố
+
+ 2. Xem thông tin quản lý xe
+
+ Bước 1: Danh sách > Click Ngày tháng cần xem chi tiết lịch đón trả > Click icon Xem chi tiết quản lý xe
+
+ Hiển thị đầy đủ thông tin bao gồm: Họ tên, giới tính, số điện thoại
+
+ 3. Xem thông tin lái xe
+
+ Bước 1: Danh sách > Click Ngày tháng cần xem chi tiết lịch đón trả > Click icon Xem chi tiết lái xe
+
+ Hiển thị đầy đủ thông tin bao gồm: Họ tên, giới tính, số điện thoại
+
+ 4. Xem danh sách sự cố
+
+ Bước 1: Danh sách > Click Ngày tháng cần xem chi tiết lịch đón trả > Click icon Xem chi tiết sự cố
+
+ Hiển thị thông tin chi tiết sự cố bao gồm: sự cố gặp phải, địa điểm, thời gian giải quyết sự cố
+
+ 5. Tìm kiếm lịch đón trả
+
+ Bước 1: Danh sách > Nhập / chọn dữ liệu muốn tìm kiếm > Click button Tìm kiếm > Hệ thống trả về kết quả tìm kiếm theo tiêu chí đã nhập
+
+ Lưu ý:
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ +            Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo dữ liệu tìm kiếm và theo giá trị sắp xếp đã chọn
+
+==================================================
+

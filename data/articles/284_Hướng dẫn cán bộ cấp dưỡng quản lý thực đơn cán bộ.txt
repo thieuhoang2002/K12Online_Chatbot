@@ -1,0 +1,81 @@
+### BÀI VIẾT [284]: Hướng dẫn cán bộ cấp dưỡng quản lý thực đơn cán bộ
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Bán trú > Cán bộ cấp dưỡng
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/ban-tru/phu-huynh/huong-dan-can-bo-cap-duong-quan-ly-thuc-don-can-bo.html
+
+**Nội dung:**
+Đăng nhập vào tài khoản cán bộ cấp dưỡng >  click module Bán trú
+
+ Trên thanh menu > Click menu Thực đơn > Click Tab Cán bộ
+
+ Thao tác ở tab Cán bộ giống với tab Học sinh
+
+ Thêm mới thực đơn : Click icon trên ngày muốn thêm thực đơn > nhập dữ liệu vào form và click Lưu
+ Chỉnh sửa : click icon trên ngày muốn thay đổi > nhập/chọn dữ liệu> click button Lưu
+ Xóa : click icon để xóa thực đơn
+ Duyệt thực đơn : click btn trên cột trạng thái > chọn duyệt để duyệt thực đơn thành công
+ Từ chối duyệt : click btn trên cột trạng thái > chọn Từ chối duyệt để từ chối duyệt thực đơn này
+ Lưu ý
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Món ăn list dữ liệu có trạng thái hoạt động từ menu khai báo Món ăn
+ Bữa ăn hiện dữ liệu hoạt động từ menu Loại bữa ăn
+ Trạng thái khi thêm mới/chỉnh sửa thay đổi thành chờ phê duyệt ( chỉ thêm được với những ngày tương lai)
+
+ 1. Xuất excel
+
+ Danh sách > Click button Xuất excel > Thực hiện xuất excel thành công > Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+ Lưu ý :
+
+ Thực hiện xuất excel > File tải về hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với danh sách
+ Thực hiện tìm kiếm dữ liệu > sau click button Xuất excel > Thì hệ thống trả về file kết quả hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với trên danh sách
+ Thực hiện chọn kiểu sắp xếp danh sách> sau click button Xuất excel > Thì hệ thống trả về file kết quả hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với trên danh sách
+
+ 2. Xuất ảnh thực đơn
+
+ Bước 1: Danh sách > Click button Xuất ảnh thực đơn
+
+ Bước 2:  Màn hình hiển thị form xuất ảnh thực đơn. Cần chọn các thông tin: Thời gian áp dụng, Mẫu để hiển thị ảnh thực đơn
+
+ Bước 3: sau khi chọn xong các thông tin, click button Tải xuống để tải ảnh thực đơn về
+
+ Lưu ý
+
+ Cần chọn đầy đủ thông tin để hiện thực đơn
+ file ảnh tải về có định dạng là .png
+
+ 3. Tìm kiếm
+
+ Trên thanh tìm kiếm > Nhập/chọn thông tin cần tìm > Nhấn enter
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+
+ 4. Lịch sử thay đổi thực đơn
+
+ Trên màn hình, click menu Thực đơn > Click Tab Lịch sử thay đổi thực đơn
+
+ 4.1. Xuất excel
+
+ Danh sách > Click button Xuất excel > Thực hiện xuất excel thành công > Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+ Lưu ý :
+
+ Thực hiện xuất excel > File tải về hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với danh sách
+ Thực hiện tìm kiếm dữ liệu > sau click button Xuất excel > Thì hệ thống trả về file kết quả hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với trên danh sách
+ Thực hiện chọn kiểu sắp xếp danh sách> sau click button Xuất excel > Thì hệ thống trả về file kết quả hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với trên danh sách
+
+ 4.2. Tìm kiếm
+
+ Trên thanh tìm kiếm > Nhập/chọn thông tin cần tìm > Nhấn enter
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+
+==================================================
+

@@ -1,0 +1,52 @@
+### BÀI VIẾT [339]: Hướng dẫn phụ huynh học sinh quản lý học phí (App)
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Học phí > Phụ huynh HS
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/hoc-phi/phu-huynh-hs/huong-dan-phu-huynh-hoc-sinh-quan-ly-hoc-phi-app-.html
+
+**Nội dung:**
+1. Đăng nhập tài khoản
+ Bước 1: Tải app k12 connect
+
+ Bước 2: Nhập tên đăng nhập và mật khẩu với  account PHHS / mật khẩu:
+
+ Bước 3: Click button đăng nhập
+
+ Sau khi đăng nhập, PHHS xem thu học phí của con
+
+ 2. Đăng xuất
+
+ Bước 1: Đăng nhập tài khoản vào app
+
+ Bước 2: Touch menu Tài khoản > Touch Đăng xuất thực hiện đăng xuất thành công
+
+ 3. Học phí
+
+ Bước 1: Đăng nhập tài khoản phụ huynh vào app
+
+ Bước 2: Touch menu dưới Tính năng> Phần Tiện ích  > Touch Học phí
+
+ ​​​​​​​3.1. Tab Cần thanh toán
+
+ Bước 1: Đăng nhập tài khoản phụ huynh vào app
+
+ Bước 2: Touch menu dưới Tính năng > Phần Tiện ích  > Touch Học phí
+
+ Bước 3: Tab Cần thanh toán > Hiển thị danh sách cần thanh toán
+
+ Bước 4: Chọn bản ghi muốn thanh toán  > Click button Thanh toán
+
+ Bước 5: Chọn tài khoản thanh toán
+
+ Bước 6: Hiển thị màn hình xác nhận  > Click Xác nhận thực hiện thanh toán thành công > Hiển thị 1 phiếu thu bên tab Theo dõi thanh toán
+
+ ​​​​​​​3.2. Tab Theo dõi thanh toán
+
+ Bước 1: Đăng nhập tài khoản phụ huynh vào app
+
+ Bước 2: Touch menu dưới Tính năng > Phần Tiện ích  > Touch Học phí
+
+ Bước 3: Tab Theo dõi thanh toán > Hiển thị danh sách theo dõi thanh toán
+
+ Bước 4: Touch bản ghi để xem chi tiết phiếu
+
+==================================================
+

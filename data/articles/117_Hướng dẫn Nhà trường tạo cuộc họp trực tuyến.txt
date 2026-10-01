@@ -1,0 +1,55 @@
+### BÀI VIẾT [117]: Hướng dẫn Nhà trường tạo cuộc họp trực tuyến
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Họp trực tuyến > Nhà trường
+- Link gốc: https://hotro.k12online.vn/huong-dan-nha-truong-tao-cuoc-hop-truc-tuyen.html
+
+**Nội dung:**
+Họp trực tuyến là tính năng giúp cho Nhà trường tổ chức các cuộc họp trực tuyến trên K12Online để tương tác trực tuyến đồng thời cùng với nhau. Đây là một tính năng hữu ích giúp cho các cơ sở giáo dục giúp có thể các cuộc họp trao đổi công việc, sinh hoạt chuyên môn hay tập huấn, đào tạo nội bộ... Với tính năng họp trực tuyến này, các cơ sở giáo dục có thể tiết kiệm được tối đa chi phí và thời gian.
+
+ Ảnh: Một cuộc họp trực tuyến do Sở Giáo dục và Đào tạo thành phố Hải Phòng tổ chức trên K12Online
+
+ QUY TRÌNH TẠO CUỘC HỌP CẤP TRƯỜNG
+
+ Bước 1: Tạo nhóm họp
+
+ - Vào menu Họp trực tuyến => Chọn tab Quản lý nhóm họp => Click vào ô Thêm mới => Nhập tên nhóm họp mới cần tạo => Nhấn Lưu lại để hoàn tất. - Vào nhóm vừa tạo => Click vào ô Thêm mới => Để chọn đối tượng và tài khoản cần thêm vào nhóm họp. - Nhấn Lưu lại để hoàn tất việc tạo nhóm họp.
+
+ Lưu ý: Đảm bảo tất cả các giáo viên tham gia cuộc họp đã có tài khoản và đăng nhập thành công trên hệ thống K12Online trước khi tạo nhóm họp.
+
+ Bước 2: Tạo cuộc họp
+
+ 2.1. Tạo cuộc họp
+
+ - Vào menu Họp trực tuyến => Chọn tab Quản lý cuộc họp
+
+ - Click vào ô Thêm cuộc họp mới => Nhập các thông tin cơ bản của cuộc họp cần tạo như:
+
+ + Tên cuộc họp: Nhập tên cuộc họp cần tạo;
+
+ + Người chủ trì: Tài khoản sẽ chủ trì cuộc họp (thường là admin Trường);
+
+ + Nhóm thành viên: Chọn nhóm thành viên tham gia họp (vừa tạo ở Bước 1);
+
+ + Mô tả: Mô tả ngắn về cuộc họp (nếu có);
+
+ + Ngày họp: ghi chính xác ngày diễn ra cuộc họp;
+
+ + Thời gian bắt đầu: ghi chính xác thời gian bắt đầu diễn ra cuộc họp;
+
+ + Thời lượng: nhập thời lượng của cuộc họp cần tạo;
+
+ - Sau khi tạo xong nhấn Lưu lại .
+
+ 2.2. Gửi thông báo cuộc họp tới các thành viên ham gia
+
+ - Vào menu Họp trực tuyến => Chọn tab Quản lý cuộc họp
+
+ - Sau khi cuộc họp được tạo xong, click vào nút Gửi thông báo để thông báo cho các thành viên tham gia trên hệ thống biết.
+
+ Lưu ý: Nếu Trường muốn tạo cuộc họp công khai, cho phép những người khác có thể tham gia ngoài danh sách thành viên trong nhóm học, thực hiện như sau:
+
+ - Tick ô Cho phép mọi người tham gia;
+
+ - Nhập mật khẩu của cuộc họp, từ 6-9 ký tự số.
+
+==================================================
+

@@ -1,0 +1,88 @@
+### BÀI VIẾT [275]: Hướng dẫn cán bộ cấp dưỡng cấu hình thực đơn
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Bán trú > Cán bộ cấp dưỡng
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/ban-tru/phu-huynh/huong-dan-can-bo-cap-duong-cau-hinh-thuc-don.html
+
+**Nội dung:**
+Đăng nhập vào tài khoản cán bộ cấp dưỡng >  click module Bán trú
+
+ Bước 1 : Trên màn hình, click menu Cấu hình thực đơn
+
+ Màn hình hiển thị danh sách cấu hình thực đơn cho cán bộ và học sinh
+
+ 1. Lên thực đơn
+
+ Bước 1 : Danh sách > Click button Lên thực đơn
+
+ Bước 2 : Hiển thị form > Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công
+
+ Click icon chỉnh sửa thực hiện chỉnh sửa bản ghi
+ Click icon xóa thực hiện xóa bản ghi
+ Click icon xem chi tiết xem chi tiết bản ghi
+ Click icon sao chép thực hiện sao chép bản ghi thành công
+ Click icon dừng thực đơn thực hiện dừng thực đơn thành công
+ Lưu ý
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Khi chọn đối tượng là Học sinh thì cần chọn thêm thông tin Lớp
+ Thời gian bắt đầu thực đơn không nhỏ hơn ngày hiện tại
+ Món ăn list dữ liệu có trạng thái hoạt động từ menu khai báo Món ăn
+ Bữa ăn hiển thị dữ liệu hoạt động từ menu khai báo Loại bữa ăn
+
+ 2. Chỉnh sửa thực đơn
+
+ Bước 1 : Danh sách > Click icon chỉnh sửa thực đơn
+
+ Bước 2 : Hiển thị form > Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công
+
+ Lưu ý: chỉ chỉnh sửa được những bản ghi ở trạng thái chờ phê duyệt
+
+ 3. Sao chép
+
+ Bước 1: Danh sách  > Click icon sao chép > Thực hiện sao chép thành công, hiển thị thêm 1 bản ghi ở danh sách
+
+ 4. Xem chi tiết
+
+ Danh sách > Click icon xem chi tiết : Xem chi tiết cấu hình thực đơn thành công
+
+ 5. Dừng thực đơn
+
+ Danh sách > Click icon dừng thực đơn >  thực hiện dừng thực đơn thành công
+
+ Lưu ý: chỉ thực hiện được với những bản ghi có trạng thái đang diễn ra
+
+ 6. Xóa cấu hình thực đơn
+
+ Lưu ý: chỉ xóa được thực đơn có trạng thái chờ phê duyệt
+
+ Cách 1: Xóa 1 cấu hình thực đơn
+
+ Bước 1: Danh sách > Click icon xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều cấu hình thực đơn
+
+ Bước 1: Danh sách > Click checkbox đầu danh sách > Click Xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa  thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ 7. Tìm kiếm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+
+==================================================
+

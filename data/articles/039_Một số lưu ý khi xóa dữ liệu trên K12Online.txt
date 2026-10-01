@@ -1,0 +1,24 @@
+### BÀI VIẾT [39]: Một số lưu ý khi xóa dữ liệu trên K12Online
+- Chuyên mục: Trang chủ > Câu hỏi thường gặp
+- Link gốc: https://hotro.k12online.vn/cau-hoi-thuong-gap/mot-so-luu-y-khi-xoa-du-lieu-tren-k12online.html
+
+**Nội dung:**
+I. Lưu ý chung
+
+ - Hạn chế tối đa việc xóa dữ liệu trên K12Online.
+
+ - Lưu ý kiểm tra kỹ và confirm trước khi thực hiện xóa dữ liệu. Vì nếu đã xóa rồi thì có thể sẽ không khôi phục lại được.
+
+ II. Một số lưu ý chi tiết
+
+ 1. Xóa bài giảng
+
+ - Nếu nhấn nút Xóa, hệ thống sẽ chuyển trạng thái của bài giảng, tiết học và báo cáo liên quan của bài giảng sang trạng thái tạm xóa, người dùng sẽ không xem được.
+ - Trong vòng 30 ngày kể từ ngày tạm xóa, nếu thầy/cô không khôi phục lại hệ thống sẽ XÓA VĨNH VIỄN các dữ liệu trên.
+
+ 2. Xóa lớp học ảo
+
+ - Nội dung đang được cập nhật...
+
+==================================================
+

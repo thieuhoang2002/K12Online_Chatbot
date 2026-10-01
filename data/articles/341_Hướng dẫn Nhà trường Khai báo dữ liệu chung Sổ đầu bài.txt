@@ -1,0 +1,53 @@
+### BÀI VIẾT [341]: Hướng dẫn Nhà trường Khai báo dữ liệu chung Sổ đầu bài
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Sổ đầu bài > Nhà trường
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/so-dau-bai/huong-dan-admin-truong-khai-bao-du-lieu-chung-so-dau-bai.html
+
+**Nội dung:**
+1. Tổng quan
+
+ 1.1. Khai báo chung
+
+ Trước khi thực hiện, cần khai báo 1 số dữ liệu sau để sử dụng:
+
+ - Dữ liệu từ module TKB:
+
+ + Cấu hình buổi, tiết
+
+ + Tạo dữ liệu TKB
+
+ - Tạo dữ liệu CSVC (mượn thiết bị, phòng)
+
+ 1.2. Vai trò: Quản trị Trường
+
+ - Cấu hình thời gian ký
+
+ - Tạo xếp loại
+
+ - Tạo chứng thư số
+
+ - Đồng bộ TKB
+
+ 2. Hướng dẫn chi tiết
+
+ 2.1. Khai báo chung dữ liệu Thời khóa biểu, Cơ sở vật chất
+
+ 2.1.1. Đăng nhập vào hệ thống
+
+ Bước 1:  Truy cập vào trang và chọn Đăng nhập
+
+ Bước 2: Nhập tài khoản và password của quản trị trường > Click button Đăng nhập để đăng nhập hệ thống thành công
+
+ Bước 3: Khi đăng nhập thành công > Hiển thị màn hình Trang chủ
+
+ Bước 4: Trên màn hình > Chọn Thời khóa biểu
+
+ 2.1.2. Module TKB
+
+ 2.1.2.1 Cấu hình buổi học
+
+ Bước 1: Trên màn hình, click menu Quản lý khai báo > Danh mục thời khóa biểu > Buổi học
+
+ Nhãn
+
+==================================================
+

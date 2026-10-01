@@ -42,6 +42,14 @@ export function generateFollowUpPrompts(query: string, docs: SuggestionSource[] 
     suggestions.push("Cách giới hạn quyền xem bài viết chỉ cho lớp mình?");
     suggestions.push("Làm sao để đính kèm file tài liệu và tạo bình chọn?");
     suggestions.push("Cách chỉnh sửa hoặc xóa bài viết đã đăng trên web?");
+  } else if (clean.includes("thư viện") || clean.includes("sách") || clean.includes("mượn trả") || clean.includes("thủ thư")) {
+    suggestions.push("Làm thế nào để biên mục sách và in mã vạch hàng loạt bằng file Excel?");
+    suggestions.push("Quy trình lập phiếu kiểm kê thư viện định kỳ trên K12Online?");
+    suggestions.push("Cách cấu hình số ngày mượn tối đa và xử lý sách quá hạn trả?");
+  } else if (clean.includes("học phí") || clean.includes("đợt thu") || clean.includes("kế toán") || clean.includes("khoản thu")) {
+    suggestions.push("Cách khai báo loại khoản thu và mức miễn giảm cho học sinh?");
+    suggestions.push("Làm sao để xuất danh sách học sinh chưa đóng học phí ra Excel?");
+    suggestions.push("Hướng dẫn phụ huynh thanh toán tiền học qua K12Connect");
   }
 
   // 2. Nếu chưa đủ 3 gợi ý, bổ sung từ tiêu đề các bài viết liên quan (docs)

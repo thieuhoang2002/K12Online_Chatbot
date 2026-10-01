@@ -1,0 +1,182 @@
+### BÀI VIẾT [34]: Hướng dẫn nhập liệu câu hỏi dạng Nhập từ Word (dạng ABCD)
+- Chuyên mục: Trang chủ > Câu hỏi thường gặp > Dành cho Giáo viên
+- Link gốc: https://hotro.k12online.vn/cau-hoi-thuong-gap/huong-dan-nhap-cau-hoi-tu-word-dang-abcd.html
+
+**Nội dung:**
+I. Cấu trúc file Word (Lưu ý: lưu dưới dạng .docx)
+
+ DANH SÁCH CÂU HỎI (hoặc QUESTIONS)
+
+ <Danh sách câu hỏi>
+
+ --- HẾT --- (hoặc --- THE END ---)
+
+ ĐÁP ÁN (hoặc ANSWERS)
+
+ <Đáp án của các câu hỏi ở phần DANH SÁCH CÂU HỎI>
+
+ 2. Bắt đầu mỗi câu hỏi
+
+ Dạng 1: Câu 1
+
+ Ví dụ:
+
+ Câu 1: Thủ đô của Việt Nam là tỉnh/thành phố nào?
+
+ A. Thành phố Hà Nội
+
+ B. Thành phố Hồ Chí Minh
+
+ C. Tỉnh Cà Mau
+
+ D. Thành phố Hải Phòng
+
+ Dạng 2: Question 1
+
+ Question 2: Good morning, David. How are you?
+
+ A. Hello. I'm fine
+
+ B. Goodbye
+
+ C. Bye
+
+ D. I'm 5 years old.
+
+ 3. Bắt đầu mỗi phương án
+
+ Dạng 1: Mỗi dòng 1 phương án
+
+ Ví dụ:
+
+ A. Hoa hồng
+
+ B. Hoa cúc
+
+ C. Hoa huệ
+
+ D. Hoa quả
+
+ Dạng 2: Mỗi dòng 2 phương án
+
+ Ví dụ:
+
+ A. Hoa hồng B. Hoa cúc
+
+ C. Hoa huệ D. Hoa quả
+
+ Dạng 3: Mỗi dòng 4 phương án
+
+ Ví dụ:
+ A. Hoa hồng B. Hoa cúc C. Hoa huệ D. Hoa quả
+
+ 4. Đáp án cho các câu hỏi
+
+ Dạng 1:
+
+ 1. D
+
+ 2. B
+
+ 3. C
+
+ 4. C
+
+ 6. D
+
+ 7. C
+
+ 8. D
+
+ 9. A
+
+ 10. A
+
+ 11. C
+
+ …
+
+ …
+
+ …
+
+ …
+
+ …
+
+ …
+
+ …
+
+ …
+
+ Dạng 2:
+
+ 1
+
+ D
+
+ 2
+
+ B
+
+ 3
+
+ D
+
+ …
+
+ …
+
+ Lưu ý:
+
+ 1. File lưu lại dưới dạng .docx
+
+ 2. Số thứ tự các câu hỏi và các đáp án KHÔNG DÙNG dạng đánh số tự động (Numbering)
+
+ 3. Hình ảnh (nếu có) cho vào dạng Inline with Text
+
+ 4. Nếu câu hỏi có nhiều đáp án thì cách nhau bằng dấu phẩy. Ví dụ: A,B,C
+
+ 5. Nếu muốn đưa câu hỏi tự luận lên thì chỉ cần không có các phương án lựa chọn A, B, C, D lên thì hệ thống sẽ hiểu đó là câu tự luận.
+
+ Lưu ý: Cấu hình điểm cho câu tự luận nếu không muốn hệ thống chia đều điểm cho các câu.
+
+ II. Một số lỗi thường gặp
+
+ 1. Không đưa file .doc lên được
+
+ Hiện tại, dạng Nhập câu hỏi từ Word (dạng ABCD) chỉ mới đang hỗ trợ file .docx thôi. Vui lòng lưu file dưới dạng .docx trước khi đưa lên hệ thống.
+
+ 2. Hệ thống đang chạy dữ liệu ngầm
+
+ - Vui lòng đợi xong Refresh lại trang.
+
+ - Nếu số lượng câu hỏi nhiều quá nên chia nhỏ rồi cho lên. Ví dụ, thử cho lên khoảng 20 câu hỏi/lần.
+
+ 3. Không nhận dạng được câu hỏi
+
+ a) Nguyên nhân:
+
+ - Kiểm tra lại xem đúng định dạng, cấu trúc chưa.
+
+ - Có thể do file Word đó đang chứa nhiều ký tự "lạ" mà mắt thường không thể phát hiện ra được dẫn đến hệ thống không nhận diện câu hỏi và đáp án được do định dạng không chuẩn.
+
+ b) Giải pháp:
+
+ - Hãy thử tạo 1 file Word mới rồi copy nội dung câu hỏi sang.
+
+ - Định dạng các câu hỏi trên Word đang không đồng nhất. Hãy thử xóa định dạng nội dung câu hỏi đó xem và cho lên lại.
+
+ 4. Hiển thị thiếu nội dung công thức, bảng biểu, biểu đồ
+
+ - Với những câu hỏi có công thức toán học kiểm tra lại xem có dùng Mathtype không? Nếu không phải Mathtype thì có thể bị lỗi khi tải lên.
+
+ - Với những câu hỏi là biểu đồ, bảng, hình vẽ, chuyển hết thành dạng ảnh đưa lên.
+
+ - Một số trường hợp ảnh đính kèm trong câu hỏi dung lượng và kích thước quá lớn có thể không cho lên được. Kiểm tra lại xem và hạn chế dung lượng, kích thước của ảnh lại.
+
+ Các thông tin khác vẫn đang liên tục được cập nhật...
+
+==================================================
+

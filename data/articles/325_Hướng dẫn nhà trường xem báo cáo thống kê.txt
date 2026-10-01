@@ -1,0 +1,53 @@
+### BÀI VIẾT [325]: Hướng dẫn nhà trường xem báo cáo thống kê
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Câu lạc bộ > Nhà trường
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/clb/nha-truong/huong-dan-nha-truong-xem-bao-cao-thong-ke.html
+
+**Nội dung:**
+Bước 1: Danh sách báo cáo > Click Thống kê hoạt động câu lạc bộ
+
+ Bước 2: Hiển thị màn hình thống kê
+
+ + Click button Thêm để so sánh > hiển thị form > chọn dữ liệu muốn so sánh > Click bt áp dụng thực hiện so sánh theo điều kiện đã chọn
+
+ + Click button Xuất excel thực hiện xuất excel
+
+ + Click đấu + màn thông tin chi tiết để thêm thứ nguyên thống kê ở danh sách
+
+ 1. Thống kê kế hoạch tổ chức câu lạc bộ
+
+ Bước 1: Danh sách báo cáo > Click Thống kê kế hoạch tổ chức câu lạc bộ
+
+ Bước 2: Hiển thị màn hình thống kê
+
+ + Click button Thêm để so sánh > hiển thị form > chọn dữ liệu muốn so sánh > Click bt áp dụng thực hiện so sánh theo điều kiện đã chọn
+
+ + Click button Xuất excel thực hiện xuất excel
+
+ + Click đấu + màn thông tin chi tiết để thêm thứ nguyên thống kê ở danh sách
+
+ 2. Thống kê đơn đăng ký câu lạc bộ
+
+ Bước 1: Danh sách báo cáo > Click Thống kê đơn đăng ký  câu lạc bộ
+
+ Bước 2: Hiển thị màn hình thống kê
+
+ + Click button Thêm để so sánh > hiển thị form > chọn dữ liệu muốn so sánh > Click bt áp dụng thực hiện so sánh theo điều kiện đã chọn
+
+ + Click button Xuất excel thực hiện xuất excel
+
+ + Click đấu + màn thông tin chi tiết để thêm thứ nguyên thống kê ở danh sách
+
+ 3. Thống kê câu lạc bộ
+
+ Bước 1: Danh sách báo cáo > Click Thống kê câu lạc bộ
+
+ Bước 2: Hiển thị màn hình thống kê
+
+ + Click button Thêm để so sánh > hiển thị form > chọn dữ liệu muốn so sánh > Click bt áp dụng thực hiện so sánh theo điều kiện đã chọn
+
+ + Click button Xuất excel thực hiện xuất excel
+
+ + Click đấu + màn thông tin chi tiết để thêm thứ nguyên thống kê ở danh sách
+
+==================================================
+

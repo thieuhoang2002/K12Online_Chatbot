@@ -1,0 +1,74 @@
+### BÀI VIẾT [28]: Câu hỏi thường gặp dành dành cho Sở, Phòng, trường
+- Chuyên mục: Trang chủ > Câu hỏi thường gặp > Dành cho Nhà trường
+- Link gốc: https://hotro.k12online.vn/cau-hoi-thuong-gap/cau-hoi-thuong-gap-danh-danh-cho-so-phong-truong.html
+
+**Nội dung:**
+Câu 1: Làm thế nào để có tài khoản sử dụng trên K12Online?
+
+ Trả lời:
+
+ Sau khi đăng ký sử dụng K12Online với Viettel, nhà trường liên hệ Viettel tỉnh/thành phố để được hướng dẫn và hỗ trợ.
+
+ Câu 2: Làm thế nào để đăng nhập trên K12Online
+
+ Trả lời:
+
+ Cách 1: Truy cập link trực tiếp của trường do Viettel cung cấp => Nhập tài khoản và mật khẩu để đăng nhập hệ thống.
+
+ Cách 2: Truy cập link k12online.vn => Nhập tài khoản và mật khẩu để đăng nhập hệ thống.
+
+ Lưu ý:
+
+ - Đối với các trường đăng nhập tài khoản do Sở GD&ĐT thành phố Hồ Chí Minh cung cấp thì sử dụng Cách 1 .
+
+ Câu 3: Người dùng quên mật khẩu thì làm như thế nào?
+
+ Trả lời:
+
+ Admin trường chủ động vào tính năng Quản lý tài khoản => Chọn Danh sách tài khoản => Tìm tài khoản đó và tiến hành reset mật khẩu của học sinh đó.
+
+ Câu 4: HS báo không đăng nhập được thì Nhà trường/GV xử lý như thế nào?
+
+ Trả lời:
+
+ Khi gặp các trường hợp HS báo không đăng nhập được, Nhà trường/GV xử lý như sau:
+
+ 1. Tại thời điểm đó, các HS khác có phản ánh không đăng nhập được không hay chỉ mình em ấy phản ánh?
+
+ - Nếu các HS khác không phản ánh, nghĩa là phần lớn lý do không vào được do em ấy (có thể quên tài khoản/mật khẩu, mạng, thiết bị có vấn đề, thao tác sai...);
+
+ 2. GV mượn tài khoản của HS để thử đăng nhập xem có được không? Nếu:
+ - GV thử đăng nhập mà vẫn được thì GV hướng dẫn lại thao tác đăng nhập cho HS.
+
+ - Không được => Có thể do HS đó đã đổi mật khẩu, GV yêu cầu nhà trường reset mật khẩu để thử đăng nhập lại.
+
+ 3. Nếu thử hết các cách rồi mà vấn không được thì liên hệ Viettel để được kiểm tra và hỗ trợ.
+
+ Câu 5: Muốn xoá tài khoản trên K12Online thì làm như thế nào?
+
+ Trả lời:
+
+ Nhà trường liên hệ trực tiếp với Viettel tỉnh/thành phố để xác nhận xoá và được hỗ trợ:
+
+ 1. Cung cấp lý do tại sao lại phải xoá tài khoản:
+
+ - Nếu là sai thông tin GV, HS thì chỉ cần cung cấp thông tin đúng để Viettel tỉnh/thành phố cập nhật lại.
+
+ - Nếu xoá do nhầm dữ liệu hoặc học sinh đã nghỉ học/bỏ học thì mới cần yêu cầu xoá.
+
+ 2. Xác nhận với Viettel có chắc chắn là muốn xoá tài khoản đó không? Nếu đồng ý xoá thì đồng nghĩa với mất hết dữ liệu của tài khoản đó, không thể khôi phục lại được.
+
+ 3. Sau khi đã chắc chắn 2 thông tin trên và thực sự cần xoá thì gửi lại các thông tin sau Viettel hỗ trợ xoá:
+
+ - Link trường trên K12Online:
+
+ - Danh sách tài khoản cần xoá:
+
+ - Lý do cần xoá:
+
+ Câu 6: Nhà trường thực hiện phân lớp giảng dạy cho giáo viên nhưng không hiện ra lớp?
+
+ Trả lời:
+
+==================================================
+

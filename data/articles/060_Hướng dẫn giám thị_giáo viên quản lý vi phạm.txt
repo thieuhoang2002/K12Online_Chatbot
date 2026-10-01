@@ -1,0 +1,67 @@
+### BÀI VIẾT [60]: Hướng dẫn giám thị/giáo viên quản lý vi phạm
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Quản lý vi phạm > Giám thị/Giáo viên
+- Link gốc: https://hotro.k12online.vn/giam-thi-giao-vien/huong-dan-giam-thi-giao-vien-quan-ly-vi-pham.html
+
+**Nội dung:**
+Bước 1: Đăng nhập bằng tài khoản giám thị/giáo viên
+
+ Bước 2: Hệ thống link vào trang chủ  > Danh sách ứng dụng > Click module Quản lý học sinh
+
+ Bước 3: Menu Quản lý học sinh > Chọn Quản lý vi phạm
+
+ 1. Danh sách vi phạm
+
+ Menu Quản lý học sinh > Chọn Quản lý vi phạm > Click Tab Danh sách vi phạm
+
+ 1.1. Thêm mới vi phạm
+
+ Bước 1: Click button Thêm mới
+
+ Bước 2: Nhập đầy đủ thông tin vào form > Click Lưu thực hiện thêm mới thành công
+
+ 1.2. Nhắc vi phạm
+
+ Danh sách > Click icon Nhắc vi phạm > Hiển thị popup xác nhận > Click Nhắc vi phạm thực hiện thành công
+
+ 1.3. Xem chi tiết vi phạm
+
+ Danh sách > Click icon xem chi tiết > Hiển thị màn hình chi tiết
+
+ 1.4. Xóa vi phạm
+
+ ( Giám thị, giáo viên không được xóa vi phạm bên ngoài danh sách)
+ Danh sách > Click icon xóa > Hiển thị form xác nhận > click Xóa thực hiện xóa thành công
+
+ 1.5. Xuất excel
+
+ Danh sách > Click button Xuất excel thực hiện xuất excel
+
+ 1.6. Tìm kiếm vi phạm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ 2. Danh sách học sinh vi phạm
+
+ Menu Quản lý học sinh > Chọn Quản lý vi phạm > Click Tab Danh sách học sinh vi phạm
+
+ 2.1. Xem chi tiết học sinh vi phạm
+
+ Danh sách > click icon xem chi tiết > Hiển thị form xem chi tiết
+
+ 2.2. Xóa học sinh vi phạm
+
+ (Giám thị, giáo viên không được xóa vi phạm bên ngoài danh sách)
+ Danh sách > Click icon xóa > Hiển thị form xác nhận > click Xóa thực hiện xóa thành công
+
+ 2.3. Xuất excel
+
+ Danh sách > Click button Xuất excel thực hiện xuất thành công
+
+ 2.4. Tìm kiếm học sinh vi phạm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ ​
+
+==================================================
+

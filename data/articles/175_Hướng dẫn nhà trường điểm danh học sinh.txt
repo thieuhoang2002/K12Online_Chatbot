@@ -1,0 +1,20 @@
+### BÀI VIẾT [175]: Hướng dẫn nhà trường điểm danh học sinh
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Điểm danh > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong3/huong-dan-nha-truong-diem-danh-hoc-sinh.html
+
+**Nội dung:**
+1. Xem danh sách điểm danh
+
+ Bước 1: Truy cập menu Điểm danh học sinh
+
+ Bước 2: Hiển thị màn hình danh sách điểm danh các khối lớp
+ Bước 3: Click vào tiêu đề lớp học để xem chi tiết danh sách điểm danh học sinh lớp học
+
+ Bước 4: Hiển thị danh sách điểm danh học sinh của lớp học
+
+ 2. Tìm kiếm học sinh điểm danh
+
+ Bước 1: Tại vùng tìm kiếm: nhập/ chọn tiêu chí tìm kiếm > Click button Tìm kiếm/ nhấn Enter để thực hiện tìm kiếm học sinh điểm danh
+
+==================================================
+

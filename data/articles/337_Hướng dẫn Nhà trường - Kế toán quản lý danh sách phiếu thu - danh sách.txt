@@ -1,0 +1,87 @@
+### BÀI VIẾT [337]: Hướng dẫn Nhà trường - Kế toán quản lý danh sách phiếu thu - danh sách phiếu trả
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Học phí > Nhà trường - Kế toán
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/hoc-phi/nha-truong-ke-toan/huong-dan-nha-truong-ke-toan-quan-ly-danh-sach-phieu-thu-danh-sach-phieu-tra.html
+
+**Nội dung:**
+1. Danh sách phiếu thu
+
+ Bước 1: Đăng nhập tài khoản Nhà trường / Kế toán
+
+ Bước 2: Trang chủ  > Click vào module Học phí > Vào menu Quản lý thu  > Click Thu học sinh > Click Danh sách phiếu thu
+
+ 1.1. Thêm mới phiếu thu
+
+ Bước 1 : Danh sách > Click button Thêm phiếu thu > Click Thêm phiếu thu học sinh
+
+ Bước 2 : Hiển thị form > Nhập đầy đủ thông tin > Click Tạo phiếu thu thực hiện thêm mới thành công
+
+ 1.2. Chỉnh sửa phiếu thu
+
+ Bước 1 : Danh sách > Click icon chỉnh sửa
+
+ Bước 2 : Hiển thị form > Nhập đầy đủ thông tin > Click Lưu thực hiện chỉnh sửa thành công
+
+ 1.3. Xóa phiếu thu
+
+ Bước 1 : Danh sách > Click icon xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ 1.4. In phiếu thu
+
+ Danh sách > Click icon In
+
+ 1.5. Xem chi tiết phiếu thu
+
+ Danh sách > Click icon Chi tiết
+
+ 1.6. Xuất excel
+
+ Danh sách  Click button Xuất excel > File excel được tải về
+
+ 2. Danh sách phiếu trả
+
+ Bước 1: Đăng nhập tài khoản Nhà trường / Kế toán
+
+ Bước 2: Trang chủ  > Click vào module Học phí > Vào menu Quản lý thu  > Click Thu học sinh > Click Danh sách phiếu trả
+
+ 2.1. Thêm mới phiếu trả
+
+ Bước 1 : Danh sách > Click button mới > Click Thêm mới phiếu trả
+
+ Bước 2 : Hiển thị form > Nhập đầy đủ thông tin > Click Tạo phiếu thu thực hiện thêm mới thành công
+
+ 2.2. Chỉnh sửa phiếu trả
+
+ Bước 1 : Danh sách > Click icon chỉnh sửa
+
+ Bước 2 : Hiển thị form > Nhập đầy đủ thông tin > Click Lưu thực hiện chỉnh sửa thành công
+
+ 2.3. Xóa phiếu trả
+
+ Bước 1 : Danh sách > Click icon xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ 2.4. In phiếu trả
+
+ Danh sách > Click icon In
+
+ 2.5. Xem chi tiết phiếu trả
+
+ Danh sách > Click icon xem chi tiết : Hiển thị màn xem chi tiết thành công
+
+ 2.6. Xuất excel
+
+ Danh sách  Click button Xuất excel > File excel được tải về
+
+==================================================
+

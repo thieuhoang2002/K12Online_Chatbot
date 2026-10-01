@@ -1,0 +1,33 @@
+### BÀI VIẾT [171]: Hướng dẫn nhà trường tạo lịch, duyệt lịch
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Thời khóa biểu > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong2/huong-dan-nha-truong-tao-lich-duyet-lich3.html
+
+**Nội dung:**
+1. Tạo lịch không theo ràng buộc nào
+
+ Chỉ cần cấu hình tiết dạy, buổi dạy cho giáo viên xong là có thể tạo lịch.
+ Nếu đã tạo các ràng buộc thì off tất cả các ràng buộc đi
+ Bước 1: Vào mục thời khóa biểu > chọn xếp lịch
+
+ Bước 2: Click tạo lịch > click tạo
+
+ Bước 3: Hệ thống thực hiện tạo theo cấu hình tiết dạy, buổi dạy của giáo viên. Mất ít phút để tạo, f5 lại trang để cập nhật kết quả. Nếu hệ thống trả về trạng thái Thành công hoặc Thất bại thì là đã xếp xong, trạng thái Đang xếp lịch thì là chưa xong, cần F5 lại trang để xem kết quả.
+ Bước 4: Click icon xem chi tiết để xem kết quả xếp lịch
+
+ 2. Tạo lịch theo ràng buộc
+
+ Có thể tạo lịch theo từng ràng buộc hoặc kết hợp các ràng buộc với nhau
+ Trường hợp kết hợp các ràng buộc thì các ràng buộc đó không được mẫu thuẫn nhau.
+ Nếu không muốn xếp lịch theo ràng buộc nào thì off hoặc xóa ràng buộc đó khỏi danh sách
+ Sau khi có ràng buộc thì thực hiện tạo lịch như mục 3.3.1
+ 3. Duyệt lịch
+
+ Sau khi tạo lịch thành công mà muốn công bố lịch đó cho giáo viên và phụ huynh học sinh thì thực hiện duyệt lịch
+ Bước 1: Trong phần Xếp lịch > Click icon duyệt
+
+ Bước 2: Click Duyệt
+
+ Bước 3: Hiển thị lịch được duyệt trong thời khóa biểu
+
+==================================================
+

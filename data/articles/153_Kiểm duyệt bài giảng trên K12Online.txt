@@ -1,0 +1,11 @@
+### BÀI VIẾT [153]: Kiểm duyệt bài giảng trên K12Online
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong/kiem-duyet-bai-giang.html
+
+**Nội dung:**
+Hệ thống K12Online có đầy đủ tính năng kiểm duyệt để giúp nhà trường có thể thực hiện được nghiệp vụ kiểm duyệt bài giảng của GV trước khi dạy.
+
+ Vào Kiểm duyệt nội dung => Chọn Bài giảng => Chọn bài giảng cần kiểm duyệt => Click Duyệt/Từ chối .
+
+==================================================
+

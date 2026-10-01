@@ -1,0 +1,31 @@
+### BÀI VIẾT [131]: Thêm lượt làm bài cho đề thi cấp trường
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Nhà trường
+- Link gốc: https://hotro.k12online.vn/khao-thi/nha-truong/them-luot-lam-bai-cho-de-thi-cap-truong.html
+
+**Nội dung:**
+Trường hợp 1. Với bài thi đang diễn ra:
+
+ Bước 1: Vào Khảo thí => Chọn Quản lí kì thi => Chọn Kì thi => Chọn Báo cáo
+
+ Bước 2: Chọn đề thi muốn thêm lượt => Chọn Báo cáo chi tiết
+
+ Bước 3: Tại tab Bảng điểm => Thêm lượt cho học sinh
+
+ Trường hợp 2. Với bài thi đã kết thúc
+
+ 2.1. Nếu học sinh chưa vào làm
+
+ Bước 1: Vào Khảo thí => Chọn Quản lí kì thi => Chọn Kì thi => Chọn Báo cáo => Chọn Đề thi => Chọn Báo cáo chi tiết
+
+ Bước 2: Tại tab Danh sách học sinh => Chọn Tiện ích => đánh dấu học sinh => Chọn Lưu lại
+
+ 2.2. Nếu học sinh đã làm bài
+
+ Bước 1: Vào Khảo thí => Chọn Quản lí kì thi => Chọn Kì thi => Chọn Báo cáo  => Chọn đề thi cần thêm lượt => Báo cáo chi tiết
+
+ Bước 2: Tại tab Bảng điểm => Chọn Thêm lượt cho học sinh
+
+ Bước 3 : Vào tab Danh sách học sinh -> Tiện ích đánh dấu học sinh => Chọn Lưu lại
+
+==================================================
+

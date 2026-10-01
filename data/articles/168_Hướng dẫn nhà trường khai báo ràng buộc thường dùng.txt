@@ -1,0 +1,78 @@
+### BÀI VIẾT [168]: Hướng dẫn nhà trường khai báo ràng buộc thường dùng
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Thời khóa biểu > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong2/huong-dan-nha-truong-khai-bao-rang-buoc-thuong-dung.html
+
+**Nội dung:**
+1. Cấu hình ngày dạy, buổi dạy giáo viên
+
+ Ý nghĩa : Ràng buộc này dùng để cấu hình số ngày dạy, số buổi dạy tối thiểu hoặc tối đa của giáo viên trong tuần
+ Bước 1: Click vào ràng buộc thường dùng > chọn cấu hình ngày dạy, buổi dạy giáo viên
+
+ Bước 2: Click Thêm mới
+
+ Bước 3: Chọn giáo viên và nhập ngày dạy, buổi dạy
+ Giáo viên: Cho phép chọn 1 hoặc chọn nhiều
+ Ngày dạy tối thiểu/tối đa: Cho nhập trong khoảng từ 1 đến 5, tối thiểu phải nhỏ hơn tối đa
+ Buổi dạy tối thiểu/tối đa: Cho nhập trong khoảng từ 1 đến 10, tối thiểu phải nhỏ hơn tối đa
+
+ Bước 4: Click lưu lại. Sau khi lưu thành công bản ghi ở trạng thái Hoạt động, khi xếp lịch hệ thống sẽ xét đến ràng buộc của giáo viên.
+ Lưu ý :
+ Phải cấu hình tiết dạy, buổi dạy cho giáo viên trước rồi mới tạo ràng buộc này
+ Khi thêm mới có thể nhập 1 số hoặc tất cả ràng buộc
+ Khi thêm mới mà chọn giáo viên đã tồn tại thì khi lưu hệ thống sẽ update lại thông tin cho giáo viên đó
+ Nếu không muốn xét ràng buộc của giáo viên nào khi xếp lịch thì off bản ghi của giáo viên đó.
+
+ ​​​​​​​2. Cấu hình tiết bận giáo viên
+
+ Ý nghĩa : Ràng buộc này dùng để cấu hình tiết nghỉ của giáo viên trong tuần
+ Bước 1: Click vào ràng buộc thường dùng > chọn Tạo thời gian bận GV
+
+ Bước 2: Click Thêm mới
+
+ Bước 3: Chọn giáo viên và nhập X vào các ô mà giáo viên được nghỉ trong tuần
+ Giáo viên: Cho phép chọn 1 hoặc chọn nhiều
+ Nhập X: Cần lưu ý không nhập mâu thuẫn với các ràng buộc khác. Ví dụ giáo viên này cấu hình số buổi tối đa là 10 (trong cấu hình ngày dạy, buổi dạy) thì cần có 10 buổi không được nhập tiết nghỉ
+
+ Bước 4: Click lưu lại. Sau khi lưu thành công bản ghi ở trạng thái Hoạt động, khi xếp lịch hệ thống sẽ xét đến ràng buộc tiết nghỉ của giáo viên.
+ Lưu ý :
+ Phải cấu hình tiết dạy, buổi dạy cho giáo viên trước rồi mới tạo ràng buộc này
+ Khi thêm mới mà chọn giáo viên đã tồn tại thì khi lưu hệ thống sẽ update lại thông tin cho giáo viên đó
+ Nếu không muốn xét ràng buộc của giáo viên nào khi xếp lịch thì off bản ghi của giáo viên đó.
+ ​​​​​​​3. ​​​​​​​ Cấu hình tiết nghỉ của lớp
+
+ Ý nghĩa : Ràng buộc này dùng để cấu hình tiết nghỉ của lớp trong tuần
+ Bước 1: Click vào ràng buộc thường dùng > chọn Tạo tiết nghỉ của lớp
+
+ Bước 2: Click Thêm mới
+
+ Bước 3: Chọn lớp và nhập X vào các ô mà lớp được nghỉ trong tuần
+ Lớp: Cho phép chọn 1 hoặc chọn nhiều
+ Nhập X: Nhập X vào các ô mà lớp được nghỉ, ngoài ra các tiết chung mà có nhiều lớp tham gia như Chào cờ thì có thể cấu hình nghỉ tiết đó để xếp tiết Chào cờ vào sau.
+ Ví dụ: Tiết 1 sáng thứ 2 thường là tiết Chào cờ thì có thể cấu hình thêm tiết nghỉ vào sáng thứ 2 tiết 1 để xếp tiết Chào cờ vào sau
+
+ Bước 4: Click lưu lại. Sau khi lưu thành công bản ghi ở trạng thái Hoạt động, khi xếp lịch hệ thống sẽ xét đến ràng buộc tiết nghỉ của lớp
+ Lưu ý :
+ Khi thêm mới mà chọn lớp đã tồn tại thì khi lưu hệ thống sẽ update lại thông tin cho lớp đó
+ Nếu không muốn xét ràng buộc của lớp nào khi xếp lịch thì off bản ghi của lớp đó.
+ ​​​​​​​4. ​​​​​​​ Cấu hình tiết cố định
+
+ Ý nghĩa : Ràng buộc này dùng để cấu hình tiết cố định của giáo viên trong tuần
+ Bước 1: Click vào ràng buộc thường dùng > chọn Tạo tiết cố định
+
+ Bước 2: Click Thêm mới
+
+ Bước 3: Chọn thông tin và nhập X vào các ô mà giáo viên dạy trong tuần
+ Lớp: Cho phép chọn 1
+ Môn: List theo lớp đã chọn, cho chọn 1
+ Giáo viên: List giáo viên được phân công theo lớp và môn đã chọn, cho chọn 1
+ Nhập X: Nhập X vào các ô mà giáo viên dạy cố định trong tuần. Phải nhập bằng số tiết số buổi đã cấu hình. Ví dụ bên cấu hình tiết dạy, buổi dạy của giáo viên là Tuấn Kiệt dạy môn Đạo đức lớp 1/1 là 3 tiết 2 buổi trong tuần thì khi nhập X phải nhập là 3 tiết 2 buổi.
+
+ Bước 4: Click lưu lại. Sau khi lưu thành công bản ghi ở trạng thái Hoạt động, khi xếp lịch hệ thống sẽ xét đến ràng buộc tiết cố định của giáo viên
+ Lưu ý :
+ Phải cấu hình tiết dạy, buổi dạy cho giáo viên trước rồi mới tạo ràng buộc này
+ Khi thêm mới mà chọn lớp, môn, giáo viên đã tồn tại thì khi lưu hệ thống sẽ báo lỗi Đã tồn tại cấu hình lớp cho môn học này
+ Nếu không muốn xét ràng buộc của lớp nào khi xếp lịch thì off bản ghi của lớp đó.
+ Khi cấu hình tiết cố định cho các môn cùng 1 lớp thì cần cấu hình đúng. Ví dụ môn Toán lớp 1/1 cấu hình vào tiết 1 thứ 3 thì khi cấu hình môn khác của lớp 1/1 không được xếp vào tiết 1 thứ 3 nữa
+
+==================================================
+

@@ -1,0 +1,9 @@
+### BÀI VIẾT [132]: Giới thiệu tính năng Kho học liệu
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Kho học liệu số > Học sinh
+- Link gốc: https://hotro.k12online.vn/kho-hoc-lieu/gioi-thieu-tinh-nang-kho-hoc-lieu.html
+
+**Nội dung:**
+Kho học liệu là phân hệ dùng để phân phối và quản lý các nội dung học liệu điện tử trên môi trường số của các Sở GD&ĐT, Phòng GD&ĐT, trường học (sau đây gọi tắt là các đơn vị) để cho người dùng tiện tra cứu.
+
+==================================================
+

@@ -1,0 +1,78 @@
+### BÀI VIẾT [372]: Hướng dẫn nhà trường quản lý bệnh mãn tính
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Y tế > Nhà trường
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/y-te/nha-truong/huong-dan-nha-truong-quan-ly-benh-man-tinh.html
+
+**Nội dung:**
+1. Xem danh sách bệnh mãn tính
+
+ Bước 1: Đăng nhập tài khoản quản lý trường /Cán bộ y tế học đường
+
+ Bước 2 : Click Quản lý bệnh > Tab bệnh mãn tính
+
+ Bước 3 : Hiển thị màn hình danh sách
+
+ 2. Tìm kiếm bệnh mãn tính
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn
+
+ Lưu ý :
+
+ +  Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+
+ + Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo điều kiện tìm kiếm
+
+ ​​​​​​​3. Thêm bệnh mãn tính
+
+ Bước 1: Trên màn hình danh sách > click button Thêm mới
+
+ Bước 2: Nhâp/chọn hợp lệ, đầy đủ các trường bắt buộc > click lưu để thêm mới bệnh mãn tính
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường ngày nhỏ hơn hoặc bằng hiện tại
+ Trường ngày ra viện nhỏ hơn hoặc bằng ngày ra viện
+ Click Lưu bản ghi hiển thị bên ngoài danh sách
+
+ 4. Chỉnh sửa bệnh mãn tính
+
+ Bước 1: Trên màn hình danh sách > click icon chỉnh sửa
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường thời điểm phát hiện bệnh nhỏ hơn hoặc bằng thời gian khám
+ Trường ngày ra viện nhỏ hơn hoặc bằng ngày ra viện
+ Click Lưu bản ghi hiển thị bên ngoài danh sách
+
+ ​​​​​​​5. Xóa bệnh mãn tính
+
+ Bước 1: Danh sách > click icon xóa or click checkbox all > chọn button xóa
+
+ Bước 2: Hiển thị pupop xác nhận xóa
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy thao tác xóa
+
+ ​​​​​​​6. Xuất excel
+
+ Bước 1 : Trên màn hình danh sách > click button Xuất excel
+
+ ​​​​​​​7. Nhập excel
+
+ Bước 1 : Danh sách > Click button Nhập excel
+
+ Bước 2 : Hiển thị form > Nhập đầy đủ thông tin > Click button Nhập excel thực hiện thành công
+
+ Lưu ý :
+
+ Tải file không đúng định dạng ,Tải file quá dung lượng tối đa , Tải file đúng file mẫu lên hệ thống đưa ra thông báo lỗi
+ Bỏ trống các trường bắt buộc upload file lên  hệ thống trả về 1 file kết quả và thông báo lỗi
+ Tải file với trường thời điểm phát hiện bệnh nhỏ hơn hoặc bằng thời gian khám hệ thống báo lỗi và trả về file kết quả
+ Tải file với trường ngày ra viện nhỏ hơn hoặc bằng ngày ra viện hệ thống báo lỗi và trả về file kết quả lỗi
+
+==================================================
+

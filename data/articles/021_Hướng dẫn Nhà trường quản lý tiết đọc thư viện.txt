@@ -1,0 +1,49 @@
+### BÀI VIẾT [21]: Hướng dẫn Nhà trường quản lý tiết đọc thư viện
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Thư viện số > Nhà trường
+- Link gốc: https://hotro.k12online.vn/article/news/huong-dan-nha-truong-quan-ly-tiet-doc-thu-vien.html
+
+**Nội dung:**
+1. Hướng dẫn nhà trường tạo tiết đọc thư viện
+
+ Mục đích tạo tiết đọc cho lớp tham gia tiết đọc sách
+
+ Bước 1: Tại ứng dụng Quản lý thư viện số > chọn menu Quản lý mượn, trả > Chọn menu Tiết đọc thư viện
+
+ Bước 2: Chọn nút Thêm mới > Nhập/ chọn thông tin hợp lệ
+
+ Lưu ý:
+
+ Số lượng mượn phải nhỏ hơn số lượng sẵn có trong thư viện
+
+ Số lượng tham gia cần nhỏ hơn hoặc bằng số chỗ của khu vực đọc
+
+ Bước 3: Click nút Lưu > Hệ thống tạo tiết đọc thành công tiết đọc có trạng thái Chưa mượn sách
+
+ 2. Thực hiện cấp sách cho tiết đọc
+
+ Bước 1: Tại ứng dụng Quản lý thư viện số > chọn menu Quản lý mượn, trả > Chọn menu Tiết đọc thư viện
+
+ Bước 2: Click icon Cấp sách cho tiết đọc > Chọn bạn đọc hợp lệ > chọn Lưu
+
+ Hệ thống cấp sách tương ứng số lượng đã nhập cho tiết đọc cho bạn đọc
+
+ Hiển thị trạng thái Đã mượn sách
+
+ Bước 3: Click vào tiêu đề tiết đọc để xem thông tin sách đang mượn của tiết đọc
+
+ 3. Thực hiện trả sách
+
+ Sau khi kết thúc tiết đọc cần trả sách về thư viện
+
+ Bước 1: Tại ứng dụng Quản lý thư viện số > chọn menu Quản lý mượn, trả > Chọn menu Tiết đọc thư viện
+
+ Bước 2: Click icon Trả sách cho tiết đọc > chọn nút Trả sách trên cửa sổ xác nhận
+
+ Hệ thống ghi nhận tiết đọc trả sách đã mượn về thư viện
+
+ + Nếu thời gian trả sách lớn hơn thời gian kết thúc trạng thái là Quá hạn
+
+ + Nếu thời gian trả sách nhỏ hơn thời gian kết thúc trạng thái là Đúng hạn
+
+==================================================
+

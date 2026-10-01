@@ -1,0 +1,63 @@
+### BÀI VIẾT [151]: Hướng dẫn Nhà trường tạo kỳ thi chính quy (không xếp phòng)
+- Chuyên mục: Trang chủ
+- Link gốc: https://hotro.k12online.vn/nha-truong/huong-dan-nha-truong-tao-ky-thi-chinh-quy-khong-xep-phong.html
+
+**Nội dung:**
+I. Hướng dẫn thao tác
+
+ 1. Tạo kỳ thi
+
+ Vào Khảo thí => Chọn Tổ chức kỳ thi => Chọn Thêm mới => Nhập các thông tin cơ bản cùa kỳ thi.
+
+ - Tên kỳ thi;
+
+ - Loại kỳ thi;
+
+ - Hình thức tổ chức: Kỳ thi chính quy;
+
+ - Thời gian bắt đầu;
+
+ - Khối lớp;
+
+ - Môn học;
+
+ Lưu ý:
+
+ - Thông tin kỳ thi có thể được sửa nếu chưa diễn ra. Nếu đang diễn ra hoặc kết thúc rồi, không được phép sửa.
+
+ - Không nên để thời gian bắt đầu của kỳ thi sát với thời gian mà nhà trường tạo kỳ thi. Vì khi cần sửa sẽ không sửa được.
+
+ 2. Tạo đề thi
+
+ Xem hướng dẫn chi tiết tại đây:
+
+ https://hotro.k12online.vn/nha-truong/tao-de-thi-cap-truong.html
+
+ 3. Phiếu đăng ký dự thi
+
+ - Tại menu của kỳ thi vừa tạo, nhà trường vào menu Phiếu đăng ký dự thi => Chọn Thêm mới để thực hiện đăng ký dự thi cho HS trong trường.
+
+ - Trong trường hợp đăng ký bổ sung, chọn Phiếu bổ sung .
+
+ Lưu ý: Sau khi đăng ký dự thi xong, nhà trường kiểm tra lại xem có sót/thừa, số lượng học sinh và đề thi đã chính xác chưa. Nếu chưa thì thực hiện điều chỉnh.
+
+ 4. Duyệt thí sinh
+
+ - Sau khi đăng ký dự thi xong, nhà trường chuyển xuống menu Duyệt thí sinh
+
+ - Nhà trường tiến hành rà soát lại nếu thiếu/sai sót thì đăng ký dự thi lại => Nếu đã đúng và đủ tiến hành duyệt để chốt danh sách thí sinh chính thức.
+
+ Lưu ý: Sau khi nhà trường duyệt thí sinh xong, yêu cầu học sinh vào hệ thống kiểm tra xem đã nhìn thấy kỳ thi và đề thi chưa. Nếu chưa thì báo lại nhà trường để kiểm tra và cập nhật.
+
+ 5. Cho học sinh thi
+
+ - Nhà trường phổ biến lịch thi và hướng dẫn học sinh vào thi trước 1-2 ngày khi đề thi diễn ra.
+
+ - Xem một số lưu ý khi làm bài thi tại đây: https://hotro.k12online.vn/tai-lieu/mot-so-luu-y-khi-lam-bai-kiem-tra-thi-truc-tuyen-tren-k12online.html
+
+ 6. Đánh phách (nếu đề thi có câu tự luận)
+
+ Nếu có đề thi tự luận, sau khi đề thi đã kết thúc và kết thúc quá trình thi, nhà trường sẽ tiến hành đánh phách cho bài thi.
+
+==================================================
+

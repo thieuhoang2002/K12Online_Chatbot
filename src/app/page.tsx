@@ -21,6 +21,9 @@ import {
   X,
   Trash2,
   Github,
+  PanelLeftClose,
+  PanelLeft,
+  PenSquare,
 } from "lucide-react";
 import CloudflareTurnstile from "@/components/CloudflareTurnstile";
 import AuthModal from "@/components/AuthModal";
@@ -42,27 +45,79 @@ interface ChatSession {
 }
 
 const QUICK_PROMPTS = [
-  "Làm sao để nhập câu hỏi trắc nghiệm từ file Word dạng ABCD?",
-  "Học sinh làm bài thi trực tuyến trên K12Online cần lưu ý những gì?",
-  "Hướng dẫn phụ huynh và học sinh nộp bài tập về nhà trên K12Connect",
-  "Cách nhà trường cấu hình phân công giám thị và quản lý vi phạm",
+  {
+    title: "Quên mật khẩu & Đăng nhập",
+    desc: "Cách lấy lại mật khẩu tài khoản học sinh, giáo viên khi bị quên",
+    prompt: "Làm thế nào để lấy lại mật khẩu hoặc đổi mật khẩu tài khoản K12Online khi bị quên?",
+  },
+  {
+    title: "Nhập đề thi từ Word ABCD",
+    desc: "Chuẩn hóa câu hỏi và đáp án đưa nhanh lên ngân hàng đề",
+    prompt: "Hướng dẫn nhập câu hỏi trắc nghiệm từ file Word dạng ABCD lên K12Online",
+  },
+  {
+    title: "Lưu ý kiểm tra & thi trực tuyến",
+    desc: "Quy chế làm bài, nộp bài và cách xử lý khi bị mất mạng",
+    prompt: "Một số lưu ý quan trọng khi học sinh làm bài kiểm tra, thi trực tuyến trên K12Online",
+  },
+  {
+    title: "Nộp bài tập trên K12Connect",
+    desc: "Hướng dẫn phụ huynh và học sinh nộp bài tập về nhà trên app",
+    prompt: "Hướng dẫn phụ huynh và học sinh nộp bài tập về nhà trên K12Connect",
+  },
 ];
 
 // Bộ nhớ đệm Client-side lưu câu trả lời ngay trên trình duyệt (phản hồi 0.01 giây khi hỏi lại)
 const clientCache = new Map<string, { reply: string; sources: any; followUps?: string[] }>();
 
-const AVAILABLE_MODELS = [
-  { id: "qwen/qwen3.8-27b:free", name: "Qwen 3.8 27B (Phản hồi siêu tốc ~1.9s - Khuyên dùng)", badge: "Siêu tốc" },
-  { id: "nvidia/nemotron-3-ultra-550b-a55b:free", name: "NVIDIA Nemotron 3 Ultra (550B - Siêu chi tiết)", badge: "Chi tiết" },
-  { id: "google/gemma-4-31b-it:free", name: "Google Gemma 4 31B (Open-weight - Free)", badge: "Dự phòng" },
-];
+// Model mặc định chạy ngầm (hệ thống tự động xoay key và dự phòng, không cần hiển thị gây rối người dùng)
+const DEFAULT_MODEL = "qwen/qwen3.8-27b:free";
+
+// Biểu tượng nhận diện thương hiệu riêng biệt cho K12Online AI Assistant (Mũ cử nhân số hóa + Tia sáng tri thức AI)
+function K12Icon({ className = "w-6 h-6" }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="k12-bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#0284c7" />
+          <stop offset="50%" stopColor="#2563eb" />
+          <stop offset="100%" stopColor="#4f46e5" />
+        </linearGradient>
+        <linearGradient id="k12-spark-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#38bdf8" />
+          <stop offset="100%" stopColor="#ffffff" />
+        </linearGradient>
+      </defs>
+      {/* Nền bo góc mềm mại */}
+      <rect width="32" height="32" rx="9" fill="url(#k12-bg-grad)" />
+      {/* Mũ cử nhân / Cuốn sách thông minh */}
+      <path
+        d="M16 6.8L6.5 11.8L16 16.8L25.5 11.8L16 6.8Z"
+        fill="white"
+        fillOpacity="0.95"
+      />
+      <path
+        d="M9 13.8V18.8C9 21.5 12.1 23.8 16 23.8C19.9 23.8 23 21.5 23 18.8V13.8L16 17.5L9 13.8Z"
+        fill="white"
+        fillOpacity="0.85"
+      />
+      {/* Tia sáng tri thức AI */}
+      <circle cx="24.5" cy="8.5" r="2.2" fill="url(#k12-spark-grad)" />
+      <path
+        d="M24.5 4.5V6.5M24.5 10.5V12.5M20.5 8.5H22.5M26.5 8.5H28.5"
+        stroke="#38bdf8"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
 
 export default function Home() {
   const [sessions, setSessions] = useState<ChatSession[]>([]);
   const [currentSessionId, setCurrentSessionId] = useState<string>("");
   const [inputMessage, setInputMessage] = useState("");
   const [loading, setLoading] = useState(false);
-  const [selectedModel, setSelectedModel] = useState(AVAILABLE_MODELS[0].id);
 
   // Theme & Layout state
   const [theme, setTheme] = useState<"dark" | "light">("dark");
@@ -74,7 +129,10 @@ export default function Home() {
   const [turnstileToken, setTurnstileToken] = useState<string>("");
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
 
+  // Ref cuộn độc lập bên trong container chat (CHỐNG LỖI MẤT HEADER TRÊN MOBILE)
+  const chatScrollRef = useRef<HTMLDivElement>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   // Khởi tạo Theme & Phiên làm việc ban đầu
   useEffect(() => {
@@ -98,36 +156,34 @@ export default function Home() {
       try {
         const parsed = JSON.parse(savedSessions);
         if (Array.isArray(parsed) && parsed.length > 0) {
-          setSessions(parsed);
-          setCurrentSessionId(parsed[0].id);
+          // Lọc bỏ tin nhắn chào mặc định cũ nếu phiên đó chưa có câu hỏi nào của người dùng
+          const cleaned = parsed.map((s: ChatSession) => {
+            const hasUserMsg = s.messages.some((m) => m.role === "user");
+            if (!hasUserMsg) {
+              return { ...s, messages: [] };
+            }
+            return s;
+          });
+          setSessions(cleaned);
+          setCurrentSessionId(cleaned[0].id);
           hasLoaded = true;
         }
       } catch (e) {}
     }
 
     if (!hasLoaded) {
-      const defaultSession: ChatSession = {
-        id: "chat_" + Date.now(),
+      const initialSession: ChatSession = {
+        id: "chat_init",
         title: "Cuộc trò chuyện mới",
-        messages: [
-          {
-            role: "assistant",
-            content:
-              "Xin chào bạn! Mình là Trợ lý AI hỗ trợ nghiệp vụ K12Online.\n\nBạn có thể hỏi mình bất kỳ vấn đề gì về: nhập đề thi từ Word, làm bài trực tuyến, quản lý bài tập K12Connect, điểm danh, xếp thời khóa biểu... Mình sẽ hướng dẫn từng bước chi tiết nhất nhé!",
-          },
-        ],
+        messages: [],
         createdAt: Date.now(),
       };
-      setSessions([defaultSession]);
-      setCurrentSessionId(defaultSession.id);
+      setSessions([initialSession]);
+      setCurrentSessionId(initialSession.id);
     }
 
-    // 3. User email
-    const savedUser = localStorage.getItem("k12_user_email");
-    if (savedUser) setUserEmail(savedUser);
-
-    // 4. Tự động đóng sidebar trên thiết bị di động (màn hình < 768px)
-    if (window.innerWidth < 768) {
+    // 3. Responsive: Trên màn hình nhỏ thì đóng sidebar mặc định
+    if (window.innerWidth < 1024) {
       setIsSidebarOpen(false);
     }
   }, []);
@@ -160,7 +216,6 @@ export default function Home() {
         if (cloudSessions.length > 0) {
           setCurrentSessionId(cloudSessions[0].id);
         }
-        console.log(`☁️ [Supabase] Đã tải ${cloudSessions.length} phiên chat từ đám mây!`);
       }
     } catch (e: any) {
       console.warn("⚠️ [Supabase] Lỗi đồng bộ đám mây:", e.message);
@@ -199,13 +254,20 @@ export default function Home() {
 
   async function deleteChat(sessionId: string) {
     const remaining = sessions.filter((s) => s.id !== sessionId);
-    setSessions(remaining);
     if (remaining.length > 0) {
+      setSessions(remaining);
       if (currentSessionId === sessionId) {
         setCurrentSessionId(remaining[0].id);
       }
     } else {
-      createNewChat();
+      const freshSession: ChatSession = {
+        id: "chat_" + Date.now(),
+        title: "Cuộc trò chuyện mới",
+        messages: [],
+        createdAt: Date.now(),
+      };
+      setSessions([freshSession]);
+      setCurrentSessionId(freshSession.id);
     }
 
     if (supabase && userEmail) {
@@ -254,9 +316,27 @@ export default function Home() {
     }
   }, [sessions]);
 
+  // Cuộn mượt bên trong container chat, TUYỆT ĐỐI KHÔNG làm cuộn Window (giúp Header không bao giờ mất trên mobile)
+  const currentSession = sessions.find((s) => s.id === currentSessionId) || sessions[0];
+  const messages = currentSession?.messages || [];
+
+  const scrollToBottom = React.useCallback((behavior: ScrollBehavior = "smooth") => {
+    if (chatScrollRef.current) {
+      chatScrollRef.current.scrollTo({
+        top: chatScrollRef.current.scrollHeight,
+        behavior,
+      });
+    }
+  }, []);
+
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [sessions, currentSessionId, loading]);
+    scrollToBottom("smooth");
+    // Chờ Markdown và các Chip gợi ý render hoàn tất kích thước trong DOM
+    const timer = setTimeout(() => {
+      scrollToBottom("smooth");
+    }, 150);
+    return () => clearTimeout(timer);
+  }, [messages.length, loading, scrollToBottom]);
 
   function toggleTheme() {
     const nextTheme = theme === "dark" ? "light" : "dark";
@@ -269,24 +349,15 @@ export default function Home() {
     }
   }
 
-  const currentSession = sessions.find((s) => s.id === currentSessionId) || sessions[0];
-  const messages = currentSession?.messages || [];
-
   function createNewChat() {
     if (loading) return;
-    if (typeof window !== "undefined" && window.innerWidth < 768) {
+    if (typeof window !== "undefined" && window.innerWidth < 1024) {
       setIsSidebarOpen(false);
     }
     const newSession: ChatSession = {
       id: "chat_" + Date.now(),
       title: "Cuộc trò chuyện mới",
-      messages: [
-        {
-          role: "assistant",
-          content:
-            "Xin chào bạn! Mình là Trợ lý AI hỗ trợ nghiệp vụ K12Online.\n\nBạn có thể hỏi mình bất kỳ vấn đề gì về: nhập đề thi từ Word, làm bài trực tuyến, quản lý bài tập K12Connect, điểm danh, xếp thời khóa biểu... Mình sẽ hướng dẫn từng bước chi tiết nhất nhé!",
-        },
-      ],
+      messages: [],
       createdAt: Date.now(),
     };
     setSessions((prev) => [newSession, ...prev]);
@@ -320,30 +391,37 @@ export default function Home() {
 
     setInputMessage("");
 
-    // Đảm bảo luôn có 1 phiên chat hợp lệ
-    let targetSessionId = currentSession?.id;
-    let baseMessages = messages;
+    // Reset textarea height
+    if (textareaRef.current) {
+      textareaRef.current.style.height = "auto";
+    }
+
+    const userMsg: Message = { role: "user", content: query };
+    let targetSessionId = currentSessionId;
 
     if (!targetSessionId) {
       targetSessionId = "chat_" + Date.now();
-      const fallbackSession: ChatSession = {
-        id: targetSessionId,
-        title: query.slice(0, 30) + "...",
-        messages: [],
-        createdAt: Date.now(),
-      };
-      setSessions([fallbackSession]);
       setCurrentSessionId(targetSessionId);
-      baseMessages = [];
     }
 
-    // Cập nhật câu hỏi của người dùng
-    const userMsg: Message = { role: "user", content: query };
-    const updatedMessages = [...baseMessages, userMsg];
+    const updatedMessages = [...messages, userMsg];
 
-    // KIỂM TRA BỘ NHỚ ĐỆM TỨC THÌ TRÊN TRÌNH DUYỆT (0 GIÂY)
-    const normalizedKey = query.toLowerCase();
-    const cachedResponse = clientCache.get(normalizedKey);
+    // Cập nhật câu hỏi người dùng lên UI
+    setSessions((prev) =>
+      prev.map((s) => {
+        if (s.id === targetSessionId) {
+          return {
+            ...s,
+            title: s.messages.length === 0 ? query.slice(0, 30) : s.title,
+            messages: updatedMessages,
+          };
+        }
+        return s;
+      })
+    );
+
+    // Kiểm tra cache client
+    const cachedResponse = clientCache.get(query.toLowerCase());
     if (cachedResponse) {
       const botMsg: Message = {
         role: "assistant",
@@ -356,7 +434,7 @@ export default function Home() {
           if (s.id === targetSessionId) {
             return {
               ...s,
-              title: s.messages.length <= 1 ? query.slice(0, 30) + "..." : s.title,
+              title: s.messages.length <= 1 ? query.slice(0, 30) : s.title,
               messages: [...updatedMessages, botMsg],
             };
           }
@@ -369,7 +447,7 @@ export default function Home() {
       return;
     }
 
-    // Hiển thị tin nhắn người dùng và tạo ngay tin nhắn bot rỗng để kích hoạt hiệu ứng Thinking
+    // Tạo tin nhắn bot rỗng để kích hoạt hiệu ứng Thinking
     const initialBotMsg: Message = {
       role: "assistant",
       content: "",
@@ -381,7 +459,7 @@ export default function Home() {
         if (s.id === targetSessionId) {
           return {
             ...s,
-            title: s.messages.length <= 1 ? query.slice(0, 30) + "..." : s.title,
+            title: s.messages.length <= 1 ? query.slice(0, 30) : s.title,
             messages: [...updatedMessages, initialBotMsg],
           };
         }
@@ -398,12 +476,12 @@ export default function Home() {
         body: JSON.stringify({
           message: query,
           history: updatedMessages.slice(0, -1).map((m) => ({ role: m.role, content: m.content })),
-          model: selectedModel,
+          model: DEFAULT_MODEL,
           turnstileToken: turnstileToken,
         }),
       });
 
-      // Kích hoạt sinh token Turnstile mới cho câu hỏi kế tiếp
+      // Refresh Turnstile ngầm
       if (typeof window !== "undefined") {
         window.dispatchEvent(new CustomEvent("cf-turnstile-refresh"));
       }
@@ -448,14 +526,12 @@ export default function Home() {
                 if (parsed.type === "sources") {
                   streamedSources = parsed.sources;
                   hasUpdated = true;
-                } else if (parsed.type === "chunk") {
+                } else if (parsed.type === "follow_ups" || parsed.type === "followUps") {
+                  streamedFollowUps = parsed.followUps || parsed.prompts || parsed.follow_ups || [];
+                  hasUpdated = true;
+                } else if (parsed.type === "text" || parsed.text !== undefined) {
                   streamedReply += parsed.text;
                   hasUpdated = true;
-                } else if (parsed.type === "followUps") {
-                  streamedFollowUps = parsed.prompts || [];
-                  hasUpdated = true;
-                } else if (parsed.type === "error") {
-                  throw new Error(parsed.error);
                 }
               } catch (e) {}
             }
@@ -472,7 +548,7 @@ export default function Home() {
                       role: "assistant",
                       content: streamedReply,
                       sources: streamedSources,
-                      followUps: streamedFollowUps.length > 0 ? streamedFollowUps : undefined,
+                      followUps: streamedFollowUps,
                     };
                   }
                   return { ...s, messages: msgs };
@@ -480,18 +556,23 @@ export default function Home() {
                 return s;
               })
             );
+            // Tự động cuộn theo luồng văn bản đang sinh
+            if (chatScrollRef.current) {
+              chatScrollRef.current.scrollTop = chatScrollRef.current.scrollHeight;
+            }
           }
         }
       }
 
-      // Lưu câu trả lời vào Client Cache để lần sau hỏi lại phản hồi trong 0.01 giây
-      clientCache.set(normalizedKey, {
-        reply: streamedReply,
-        sources: streamedSources,
-        followUps: streamedFollowUps.length > 0 ? streamedFollowUps : undefined,
-      });
+      // Lưu cache client
+      if (streamedReply.trim().length > 0) {
+        clientCache.set(query.toLowerCase(), {
+          reply: streamedReply,
+          sources: streamedSources,
+          followUps: streamedFollowUps,
+        });
+      }
 
-      // ĐỒNG BỘ LÊN SUPABASE
       if (userEmail) {
         syncSessionToSupabase(targetSessionId, [
           ...updatedMessages,
@@ -499,22 +580,34 @@ export default function Home() {
             role: "assistant",
             content: streamedReply,
             sources: streamedSources,
-            followUps: streamedFollowUps.length > 0 ? streamedFollowUps : undefined,
+            followUps: streamedFollowUps,
           },
         ]);
       }
     } catch (err: any) {
-      const errorMsg: Message = {
-        role: "assistant",
-        content: `Hệ thống đang gặp gián đoạn tạm thời: ${err.message}. Bạn vui lòng thử lại sau giây lát nhé.`,
-      };
+      console.error("Chat error:", err);
+      const fallbackReply = `⚠️ **Lỗi:** ${err.message || "Hệ thống gặp gián đoạn tạm thời. Bạn vui lòng thử lại sau giây lát nhé."}`;
       setSessions((prev) =>
-        prev.map((s) =>
-          s.id === targetSessionId ? { ...s, messages: [...updatedMessages, errorMsg] } : s
-        )
+        prev.map((s) => {
+          if (s.id === targetSessionId) {
+            const msgs = [...s.messages];
+            const lastIdx = msgs.length - 1;
+            if (lastIdx >= 0 && msgs[lastIdx].role === "assistant") {
+              msgs[lastIdx] = {
+                role: "assistant",
+                content: fallbackReply,
+                sources: [],
+              };
+            }
+            return { ...s, messages: msgs };
+          }
+          return s;
+        })
       );
     } finally {
       setLoading(false);
+      setTimeout(() => scrollToBottom("smooth"), 60);
+      setTimeout(() => scrollToBottom("smooth"), 200);
     }
   }
 
@@ -525,153 +618,197 @@ export default function Home() {
   }
 
   const isDarkMode = theme === "dark";
+  // Một phiên được coi là Mới nếu người dùng CHƯA gửi câu hỏi nào -> Luôn hiển thị màn hình chào đón (Hình 1)
+  const isNewChat = !messages.some((m) => m.role === "user");
 
   return (
     <div
-      className={`flex h-screen w-screen overflow-hidden transition-colors duration-200 ${
-        isDarkMode ? "bg-slate-950 text-slate-100" : "bg-slate-100 text-slate-800"
+      className={`fixed inset-0 h-[100dvh] max-h-[100dvh] w-full overflow-hidden flex transition-colors duration-200 ${
+        isDarkMode ? "bg-[#131314] text-[#e3e3e3]" : "bg-[#ffffff] text-[#1f1f1f]"
       }`}
     >
-      {/* Lớp phủ mờ (Backdrop overlay) khi mở sidebar trên màn hình di động */}
-      {userEmail && isSidebarOpen && (
+      {/* 1. LỚP PHỦ MỜ (Backdrop) khi mở Drawer trên màn hình nhỏ */}
+      {isSidebarOpen && (
         <div
           onClick={() => setIsSidebarOpen(false)}
-          className="fixed inset-0 bg-black/60 z-40 md:hidden backdrop-blur-xs transition-opacity"
+          className="fixed inset-0 bg-black/60 z-40 lg:hidden backdrop-blur-xs transition-opacity"
         />
       )}
 
-      {/* SIDEBAR LỊCH SỬ CHAT: CHỈ HIỂN THỊ KHI ĐÃ ĐĂNG NHẬP */}
-      {userEmail && isSidebarOpen && (
-        <aside
-          className={`fixed inset-y-0 left-0 z-50 md:static md:z-auto w-72 max-w-[80vw] flex flex-col shrink-0 border-r shadow-2xl md:shadow-none transition-colors duration-200 ${
-            isDarkMode ? "bg-slate-900 border-slate-800" : "bg-white border-slate-200"
-          }`}
-        >
-          {/* Header Sidebar */}
-          <div
-            className={`p-4 border-b flex items-center justify-between ${
-              isDarkMode ? "border-slate-800" : "border-slate-200"
+      {/* 2. SIDEBAR (Tối giản: Chứa Đoạn chat mới, Đăng nhập lưu hoạt động, Đổi theme sáng/tối) */}
+      <aside
+        className={`fixed inset-y-0 left-0 z-50 lg:static lg:z-auto flex flex-col shrink-0 transition-all duration-300 ease-in-out border-r ${
+          isDarkMode
+            ? "bg-[#1e1f20] border-[#2d2f31]"
+            : "bg-[#f0f4f9] border-[#e3e3e3]"
+        } ${
+          isSidebarOpen
+            ? "w-72 max-w-[85vw] translate-x-0"
+            : "-translate-x-full lg:w-0 lg:translate-x-0 lg:border-none lg:overflow-hidden"
+        }`}
+      >
+        {/* Header Sidebar */}
+        <div className="h-14 px-4 flex items-center justify-between shrink-0">
+          <div className="flex items-center gap-2.5">
+            <K12Icon className="w-6 h-6 shrink-0 shadow-sm" />
+            <span
+              className={`font-semibold text-base tracking-tight truncate ${
+                isDarkMode ? "text-white" : "text-[#1f1f1f]"
+              }`}
+            >
+              K12Online AI Assistant
+            </span>
+          </div>
+          <button
+            onClick={() => setIsSidebarOpen(false)}
+            className={`p-2 rounded-full transition ${
+              isDarkMode
+                ? "hover:bg-[#2d2f31] text-slate-400 hover:text-white"
+                : "hover:bg-slate-200 text-slate-600 hover:text-slate-900"
+            }`}
+            title="Thu gọn thanh bên"
+          >
+            <PanelLeftClose className="w-5 h-5" />
+          </button>
+        </div>
+
+        {/* Nút Tạo Cuộc Trò Chuyện Mới */}
+        <div className="p-3">
+          <button
+            onClick={createNewChat}
+            disabled={loading}
+            className={`w-full py-2.5 px-4 rounded-full text-sm font-medium flex items-center gap-3 transition shadow-xs ${
+              loading ? "opacity-40 cursor-not-allowed" : ""
+            } ${
+              isDarkMode
+                ? "bg-[#131314] hover:bg-[#282a2c] text-white border border-[#2d2f31]"
+                : "bg-white hover:bg-slate-50 text-slate-800 border border-[#e3e3e3]"
             }`}
           >
-            <div className="flex items-center gap-2">
-              <div className="p-2 bg-gradient-to-tr from-sky-600 to-indigo-500 rounded-xl shadow-md">
-                <Bot className="w-5 h-5 text-white" />
-              </div>
+            <Plus className="w-4 h-4 text-sky-500" />
+            <span>Cuộc trò chuyện mới</span>
+          </button>
+        </div>
+
+        {/* Thân Sidebar: Thông báo "Đăng nhập để lưu hoạt động" HOẶC Lịch sử chat nếu đã đăng nhập */}
+        <div className="flex-1 overflow-y-auto px-3 py-2 space-y-1">
+          {!userEmail ? (
+            <div
+              onClick={() => setIsAuthOpen(true)}
+              className={`p-3 rounded-2xl cursor-pointer transition border text-xs flex items-start gap-2.5 ${
+                isDarkMode
+                  ? "bg-[#131314]/60 hover:bg-[#131314] border-[#2d2f31] text-slate-300"
+                  : "bg-white hover:bg-slate-50 border-[#e3e3e3] text-slate-700"
+              }`}
+            >
+              <Info className="w-4 h-4 text-sky-500 shrink-0 mt-0.5" />
               <div>
-                <h2
-                  className={`text-sm font-bold tracking-tight ${
-                    isDarkMode ? "text-white" : "text-slate-900"
+                <div className="font-semibold underline decoration-dotted underline-offset-2">
+                  Đăng nhập để lưu hoạt động
+                </div>
+                <div className="text-[11px] text-slate-400 mt-1 leading-relaxed">
+                  Lưu trữ lịch sử câu hỏi trên đám mây để xem lại mọi lúc mọi nơi.
+                </div>
+              </div>
+            </div>
+          ) : (
+            <div>
+              <div className="px-2 py-1.5 text-[11px] font-semibold text-slate-400 uppercase tracking-wider">
+                Gần đây
+              </div>
+              {sessions.map((s) => (
+                <div
+                  key={s.id}
+                  onClick={() => {
+                    if (loading) return;
+                    setCurrentSessionId(s.id);
+                    if (typeof window !== "undefined" && window.innerWidth < 1024) {
+                      setIsSidebarOpen(false);
+                    }
+                  }}
+                  className={`group w-full p-2.5 rounded-xl text-xs flex items-center justify-between transition ${
+                    loading ? "cursor-not-allowed opacity-60" : "cursor-pointer"
+                  } ${
+                    s.id === currentSessionId
+                      ? isDarkMode
+                        ? "bg-[#282a2c] text-sky-400 font-medium"
+                        : "bg-slate-200 text-sky-700 font-medium"
+                      : isDarkMode
+                      ? "text-slate-300 hover:bg-[#282a2c]/60"
+                      : "text-slate-700 hover:bg-slate-100"
                   }`}
                 >
-                  K12Online AI
-                </h2>
-                <span className="text-[10px] px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-500 font-semibold border border-emerald-500/20">
-                  Phi Lợi Nhuận
-                </span>
-              </div>
-            </div>
-            <button
-              onClick={() => setIsSidebarOpen(false)}
-              className={`p-1.5 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-white transition`}
-              title="Đóng sidebar"
-            >
-              <X className="w-4 h-4" />
-            </button>
-          </div>
-
-          {/* Nút Tạo Hội Thoại Mới */}
-          <div className="p-3">
-            <button
-              onClick={createNewChat}
-              disabled={loading}
-              className={`w-full py-2.5 px-3 rounded-xl text-sm font-medium flex items-center justify-center gap-2 transition shadow-sm border ${
-                loading ? "opacity-40 cursor-not-allowed" : ""
-              } ${
-                isDarkMode
-                  ? "bg-slate-800/80 hover:bg-slate-700/80 border-slate-700/60 text-slate-200"
-                  : "bg-slate-50 hover:bg-slate-100 border-slate-200 text-slate-700"
-              }`}
-              title={loading ? "Đang trả lời câu hỏi..." : "Tạo đoạn chat mới"}
-            >
-              <Plus className="w-4 h-4 text-sky-500" />
-              Đoạn chat mới
-            </button>
-          </div>
-
-          {/* Danh sách các đoạn chat */}
-          <div className="flex-1 overflow-y-auto px-3 space-y-1">
-            <div className="px-2 py-1 text-[11px] font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
-              Lịch sử tra cứu của bạn
-            </div>
-            {sessions.map((s) => (
-              <div
-                key={s.id}
-                onClick={() => {
-                  if (loading) return;
-                  setCurrentSessionId(s.id);
-                  if (typeof window !== "undefined" && window.innerWidth < 768) {
-                    setIsSidebarOpen(false);
-                  }
-                }}
-                className={`group w-full p-2.5 rounded-xl text-xs flex items-center justify-between transition ${
-                  loading ? "cursor-not-allowed opacity-60" : "cursor-pointer"
-                } ${
-                  s.id === currentSessionId
-                    ? isDarkMode
-                      ? "bg-sky-600/15 text-sky-300 font-medium border border-sky-500/30"
-                      : "bg-sky-50 text-sky-700 font-semibold border border-sky-200"
-                    : isDarkMode
-                    ? "text-slate-400 hover:bg-slate-800/50 hover:text-slate-200"
-                    : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
-                }`}
-              >
-                <div className="flex items-center gap-2.5 flex-1 min-w-0">
-                  <MessageSquare className="w-3.5 h-3.5 shrink-0 opacity-70" />
-                  <span className="truncate">{s.title}</span>
+                  <div className="flex items-center gap-2.5 flex-1 min-w-0">
+                    <MessageSquare className="w-3.5 h-3.5 shrink-0 opacity-70" />
+                    <span className="truncate">{s.title || "Cuộc trò chuyện"}</span>
+                  </div>
+                  {sessions.length > 1 && (
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        deleteChat(s.id);
+                      }}
+                      className="p-1 rounded opacity-0 group-hover:opacity-100 text-slate-400 hover:text-rose-400 transition"
+                      title="Xóa cuộc trò chuyện này"
+                    >
+                      <Trash2 className="w-3.5 h-3.5" />
+                    </button>
+                  )}
                 </div>
-                {sessions.length > 1 && (
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      deleteChat(s.id);
-                    }}
-                    className="p-1 rounded opacity-0 group-hover:opacity-100 text-slate-400 hover:text-rose-400 hover:bg-slate-800/60 transition"
-                    title="Xóa cuộc trò chuyện này"
-                  >
-                    <Trash2 className="w-3.5 h-3.5" />
-                  </button>
-                )}
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
+        </div>
 
-          {/* Footer Sidebar: User Profile & Logout */}
-          <div
-            className={`p-3 border-t text-xs ${
+        {/* Chân Sidebar: Nút Sáng/Tối, Đăng nhập / Profile */}
+        <div
+          className={`p-3 border-t flex flex-col gap-2 shrink-0 ${
+            isDarkMode ? "border-[#2d2f31]" : "border-[#e3e3e3]"
+          }`}
+        >
+          {/* Nút bật tắt Chế độ Sáng / Tối */}
+          <button
+            onClick={toggleTheme}
+            className={`w-full py-2 px-3 rounded-xl text-xs font-medium flex items-center justify-between transition ${
               isDarkMode
-                ? "border-slate-800 bg-slate-900/60"
-                : "border-slate-200 bg-slate-50"
+                ? "hover:bg-[#282a2c] text-slate-300"
+                : "hover:bg-slate-200 text-slate-700"
             }`}
           >
+            <div className="flex items-center gap-2.5">
+              {isDarkMode ? (
+                <Sun className="w-4 h-4 text-amber-400" />
+              ) : (
+                <Moon className="w-4 h-4 text-indigo-500" />
+              )}
+              <span>Giao diện: {isDarkMode ? "Chế độ Tối" : "Chế độ Sáng"}</span>
+            </div>
+          </button>
+
+          {/* Nút Đăng nhập hoặc Hồ sơ người dùng */}
+          {!userEmail ? (
+            <button
+              onClick={() => setIsAuthOpen(true)}
+              className={`w-full py-2 px-3 rounded-xl text-xs font-medium flex items-center gap-2.5 transition ${
+                isDarkMode
+                  ? "bg-[#282a2c] hover:bg-[#333538] text-white"
+                  : "bg-slate-200 hover:bg-slate-300 text-slate-900"
+              }`}
+            >
+              <LogIn className="w-4 h-4 text-sky-500" />
+              <span>Đăng nhập</span>
+            </button>
+          ) : (
             <div
-              className={`flex items-center justify-between p-2 rounded-lg ${
-                isDarkMode ? "bg-slate-800/50" : "bg-white border border-slate-200"
+              className={`p-2 rounded-xl flex items-center justify-between text-xs ${
+                isDarkMode ? "bg-[#131314]" : "bg-white border border-[#e3e3e3]"
               }`}
             >
               <div className="flex items-center gap-2 truncate">
-                <div className="w-7 h-7 rounded-full bg-sky-600 flex items-center justify-center font-bold text-white text-xs">
+                <div className="w-6 h-6 rounded-full bg-sky-600 flex items-center justify-center font-bold text-white text-[11px]">
                   {userEmail[0].toUpperCase()}
                 </div>
-                <div className="truncate">
-                  <div
-                    className={`font-medium truncate ${
-                      isDarkMode ? "text-slate-200" : "text-slate-800"
-                    }`}
-                  >
-                    {userEmail}
-                  </div>
-                  <div className="text-[10px] text-emerald-500">Đã đồng bộ lịch sử</div>
-                </div>
+                <div className="truncate font-medium">{userEmail}</div>
               </div>
               <button
                 onClick={handleLogout}
@@ -681,322 +818,397 @@ export default function Home() {
                 <LogOut className="w-4 h-4" />
               </button>
             </div>
-          </div>
-        </aside>
-      )}
+          )}
+        </div>
+      </aside>
 
-      {/* KHUNG NỘI DUNG CHÍNH */}
-      <main className="flex-1 flex flex-col h-full overflow-hidden">
-        {/* TOP BAR */}
+      {/* 3. KHU VỰC CHÍNH (MAIN AREA) */}
+      <div className="flex-1 flex flex-col h-full min-w-0 overflow-hidden relative">
+        {/* TOP BAR: Dính chặt cố định (Sticky top-0), KHÔNG BAO GIỜ bị cuộn mất trên Mobile/Tablet */}
         <header
-          className={`h-14 border-b px-2.5 sm:px-4 md:px-6 flex items-center justify-between backdrop-blur-md transition-colors duration-200 gap-1.5 ${
+          className={`h-14 shrink-0 border-b flex items-center justify-between px-3 md:px-6 z-30 transition-colors ${
             isDarkMode
-              ? "bg-slate-900/60 border-slate-800/80"
-              : "bg-white/90 border-slate-200 shadow-xs"
+              ? "bg-[#131314]/95 border-[#2d2f31] backdrop-blur-md"
+              : "bg-white/95 border-[#e3e3e3] backdrop-blur-md"
           }`}
         >
-          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
-            {/* Nút mở sidebar nếu đã đăng nhập và đang đóng */}
-            {userEmail && !isSidebarOpen && (
+          {/* Cụm bên trái: Nút mở sidebar & Tên ứng dụng */}
+          <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
+            {/* Trên Mobile/Tablet: Nút Menu Hamburger mở Drawer */}
+            <button
+              onClick={() => setIsSidebarOpen(true)}
+              className={`p-2 rounded-full transition lg:hidden ${
+                isDarkMode ? "hover:bg-[#1e1f20] text-slate-300" : "hover:bg-slate-100 text-slate-700"
+              }`}
+              title="Mở menu"
+            >
+              <Menu className="w-5 h-5" />
+            </button>
+
+            {/* Trên Desktop: Nút mở thanh bên khi thanh bên đang đóng */}
+            {!isSidebarOpen && (
               <button
                 onClick={() => setIsSidebarOpen(true)}
-                className={`p-1.5 rounded-lg border text-slate-400 hover:text-slate-600 dark:hover:text-white transition shrink-0 ${
-                  isDarkMode ? "border-slate-800 bg-slate-800/50" : "border-slate-200 bg-white"
+                className={`hidden lg:flex p-2 rounded-full transition ${
+                  isDarkMode ? "hover:bg-[#1e1f20] text-slate-300" : "hover:bg-slate-100 text-slate-700"
                 }`}
-                title="Mở lịch sử chat"
+                title="Mở thanh bên"
               >
-                <Menu className="w-4 h-4" />
+                <PanelLeft className="w-5 h-5" />
               </button>
             )}
 
-            {/* Logo thu nhỏ khi ở chế độ khách */}
-            {!userEmail && (
-              <div className="p-1.5 bg-gradient-to-tr from-sky-600 to-indigo-500 rounded-lg shadow-sm shrink-0">
-                <Bot className="w-4 h-4 text-white" />
-              </div>
-            )}
-
-            <div className="flex items-center gap-1.5 sm:gap-2 min-w-0">
+            {/* Tên ứng dụng K12Online AI Assistant */}
+            <div className="flex items-center gap-2 select-none">
+              <K12Icon className="w-6 h-6 shrink-0 shadow-sm" />
               <span
-                className={`text-xs sm:text-sm font-semibold flex items-center gap-1 sm:gap-1.5 truncate ${
-                  isDarkMode ? "text-slate-200" : "text-slate-800"
+                className={`font-semibold text-sm sm:text-base tracking-tight truncate ${
+                  isDarkMode ? "text-white" : "text-[#1f1f1f]"
                 }`}
               >
-                <BookOpen className="w-4 h-4 text-sky-500 shrink-0" />
-                <span className="truncate">Chatbot K12Online</span>
-              </span>
-              <span className="hidden sm:inline-block text-[10px] px-1.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 font-semibold border border-emerald-500/20 shrink-0">
-                Phi Lợi Nhuận
+                K12Online AI Assistant
               </span>
             </div>
           </div>
 
-          <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3 shrink-0">
-            {/* Nút Đoạn chat mới (luôn tiện lợi ở topbar) */}
+          {/* Cụm bên phải: Nút Đoạn chat mới (Mobile), Nút Đổi Theme, Nút Đăng nhập */}
+          <div className="flex items-center gap-1.5 sm:gap-2">
+            {/* Nút Tạo đoạn chat mới nhanh */}
             <button
               onClick={createNewChat}
               disabled={loading}
-              className={`flex items-center gap-1 px-2 sm:px-2.5 py-1.5 rounded-full text-xs font-medium border transition ${
-                loading ? "opacity-40 cursor-not-allowed" : ""
-              } ${
-                isDarkMode
-                  ? "bg-slate-800/60 hover:bg-slate-700/60 border-slate-700/60 text-slate-300"
-                  : "bg-white hover:bg-slate-50 border-slate-200 text-slate-700"
+              className={`p-2 rounded-full transition ${
+                isDarkMode ? "hover:bg-[#1e1f20] text-slate-300" : "hover:bg-slate-100 text-slate-700"
               }`}
-              title={loading ? "Đang trả lời câu hỏi..." : "Tạo cuộc hội thoại mới"}
+              title="Cuộc trò chuyện mới"
             >
-              <Plus className="w-3.5 h-3.5 text-sky-500 shrink-0" />
-              <span className="hidden md:inline">Đoạn chat mới</span>
+              <PenSquare className="w-5 h-5 text-sky-500" />
             </button>
 
-            {/* Nút chuyển đổi Chế độ Sáng / Tối */}
+            {/* Nút bật tắt Chế độ Sáng / Tối tiện lợi trên Topbar */}
             <button
               onClick={toggleTheme}
-              className={`p-1.5 sm:p-2 rounded-full border transition shrink-0 ${
+              className={`p-2 rounded-full transition ${
                 isDarkMode
-                  ? "bg-slate-800/60 hover:bg-slate-700/60 border-slate-700/60 text-amber-300"
-                  : "bg-white hover:bg-slate-100 border-slate-200 text-slate-700"
+                  ? "hover:bg-[#1e1f20] text-amber-300"
+                  : "hover:bg-slate-100 text-indigo-600"
               }`}
               title={isDarkMode ? "Chuyển sang giao diện Sáng" : "Chuyển sang giao diện Tối"}
             >
-              {isDarkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4 text-indigo-600" />}
+              {isDarkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
             </button>
 
-            {/* Xác minh Cloudflare */}
+            {/* Cloudflare Turnstile vô hình */}
             <CloudflareTurnstile onVerify={handleTurnstileVerify} />
 
-            {/* Nút Đăng nhập cho Chế độ khách */}
+            {/* Nút Đăng nhập dạng Pill màu xanh */}
             {!userEmail ? (
               <button
                 onClick={() => setIsAuthOpen(true)}
-                className="flex items-center gap-1 px-2.5 sm:px-3 py-1.5 bg-sky-600 hover:bg-sky-500 text-white rounded-full text-xs font-semibold shadow-sm transition shrink-0"
+                className={`flex items-center gap-1.5 px-3 sm:px-4 py-1.5 rounded-full text-xs font-semibold transition shadow-xs ${
+                  isDarkMode
+                    ? "bg-[#c2e7ff] hover:bg-[#a6d5f7] text-[#001d35]"
+                    : "bg-[#0b57d0] hover:bg-[#0842a0] text-white"
+                }`}
               >
                 <LogIn className="w-3.5 h-3.5" />
                 <span className="hidden xs:inline">Đăng nhập</span>
               </button>
             ) : (
-              <button
-                onClick={handleLogout}
-                className={`p-1.5 rounded-full border text-slate-400 hover:text-rose-500 transition shrink-0 ${
-                  isDarkMode ? "border-slate-800 bg-slate-800/40" : "border-slate-200 bg-white"
-                }`}
-                title="Đăng xuất"
-              >
-                <LogOut className="w-4 h-4" />
-              </button>
+              <div className="w-8 h-8 rounded-full bg-sky-600 flex items-center justify-center font-bold text-white text-xs shadow-xs">
+                {userEmail[0].toUpperCase()}
+              </div>
             )}
           </div>
         </header>
 
-        {/* KHUNG CUỘN CHAT */}
-        <div className="flex-1 overflow-y-auto p-3 sm:p-4 md:p-6 space-y-4 sm:space-y-6 max-w-4xl w-full mx-auto">
-          {messages.map((m, idx) => (
-            <div
-              key={idx}
-              className={`flex gap-2 sm:gap-3 text-sm leading-relaxed ${
-                m.role === "user" ? "flex-row-reverse" : "flex-row"
-              }`}
-            >
-              <div
-                className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center shrink-0 font-bold text-xs ${
-                  m.role === "user"
-                    ? "bg-sky-600 text-white"
-                    : "bg-emerald-600 text-white shadow-md shadow-emerald-900/30"
-                }`}
-              >
-                {m.role === "user" ? (
-                  <User className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                ) : (
-                  <Bot className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                )}
+        {/* CONTAINER NỘI DUNG CHAT: Cuộn độc lập, không làm ảnh hưởng Header */}
+        <div
+          ref={chatScrollRef}
+          className="flex-1 overflow-y-auto px-4 md:px-6 py-4 flex flex-col"
+        >
+          {/* TRƯỜNG HỢP 1: CUỘC HỘI THOẠI MỚI (Trang chào đón) */}
+          {isNewChat ? (
+            <div className="flex-1 flex flex-col items-center justify-center max-w-2xl mx-auto w-full my-auto text-center px-4 animate-fade-in">
+              {/* Logo nhận diện thương hiệu K12Online AI ở chính giữa */}
+              <div className="mb-5">
+                <K12Icon className="w-14 h-14 sm:w-16 sm:h-16 shadow-lg shadow-sky-500/20" />
               </div>
 
-              <div
-                className={`relative group max-w-[90%] sm:max-w-[85%] rounded-2xl p-3 sm:p-4 transition-colors ${
-                  m.role === "user"
-                    ? "bg-sky-600 text-white rounded-tr-none shadow-md shadow-sky-600/20"
-                    : isDarkMode
-                    ? "bg-slate-900/90 text-slate-200 border border-slate-800 rounded-tl-none shadow-sm"
-                    : "bg-white text-slate-800 border border-slate-200 rounded-tl-none shadow-sm"
+              {/* Tiêu đề chào đón */}
+              <h1
+                className={`text-xl sm:text-3xl font-medium tracking-tight mb-2.5 ${
+                  isDarkMode ? "text-white" : "text-[#1f1f1f]"
                 }`}
               >
-                {/* Nút copy câu trả lời */}
-                {m.role === "assistant" && m.content.trim().length > 0 && (
+                {userEmail
+                  ? `Tôi có thể giúp gì cho bạn, ${userEmail.split("@")[0]}?`
+                  : "K12Online AI Assistant có thể giúp gì cho bạn hôm nay?"}
+              </h1>
+
+              <p className="text-xs sm:text-sm text-slate-400 mb-8 max-w-md">
+                Trợ lý thông minh hỗ trợ tra cứu nghiệp vụ giáo viên, nhà trường và học sinh.
+              </p>
+
+              {/* Lưới các gợi ý câu hỏi thường gặp (Quick Prompt Cards) */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full text-left">
+                {QUICK_PROMPTS.map((item, idx) => (
                   <button
-                    onClick={() => copyToClipboard(m.content, idx)}
-                    title="Sao chép nội dung"
-                    className={`absolute top-3 right-3 p-1 rounded-md transition opacity-0 group-hover:opacity-100 ${
+                    key={idx}
+                    disabled={loading}
+                    onClick={() => handleSendMessage(item.prompt)}
+                    className={`p-3.5 rounded-2xl border transition-all text-xs flex flex-col justify-between group ${
                       isDarkMode
-                        ? "text-slate-400 hover:text-slate-200 hover:bg-slate-800"
-                        : "text-slate-400 hover:text-slate-700 hover:bg-slate-100"
+                        ? "bg-[#1e1f20]/60 hover:bg-[#1e1f20] border-[#2d2f31] hover:border-slate-600 text-slate-200"
+                        : "bg-slate-50 hover:bg-white border-[#e3e3e3] hover:border-slate-400 text-slate-800 shadow-xs"
                     }`}
                   >
-                    {copiedIndex === idx ? (
-                      <Check className="w-3.5 h-3.5 text-emerald-500" />
-                    ) : (
-                      <Copy className="w-3.5 h-3.5" />
-                    )}
-                  </button>
-                )}
-
-                {m.role === "assistant" ? (
-                  m.content.trim() === "" ? (
-                    /* HIỆU ỨNG THINKING KHI CHƯA CÓ NỘI DUNG */
-                    <div className="flex items-center gap-2.5 py-1 text-xs">
-                      <div className="flex space-x-1 items-center">
-                        <span className="w-2 h-2 rounded-full bg-sky-500 animate-bounce [animation-delay:-0.3s]"></span>
-                        <span className="w-2 h-2 rounded-full bg-sky-500 animate-bounce [animation-delay:-0.15s]"></span>
-                        <span className="w-2 h-2 rounded-full bg-sky-500 animate-bounce"></span>
-                      </div>
-                      <span className="font-medium text-sky-500 dark:text-sky-400 animate-pulse flex items-center gap-1.5">
-                        <Sparkles className="w-3.5 h-3.5 text-amber-400 animate-spin" />
-                        Trợ lý K12 đang suy nghĩ và tra cứu câu trả lời...
-                      </span>
+                    <div className="font-semibold text-sm mb-1 group-hover:text-sky-500 transition-colors">
+                      {item.title}
                     </div>
-                  ) : (
-                    <div>
-                      <MarkdownRenderer content={m.content} isDarkMode={isDarkMode} />
-                      {/* HIỆU ỨNG KHI ĐANG STREAM DỞ HOẶC TẠM DỪNG NỬA CHỪNG */}
-                      {loading && idx === messages.length - 1 && (
-                        <div className="flex items-center gap-2 mt-2 pt-2 border-t border-slate-200 dark:border-slate-800 text-xs text-sky-500 dark:text-sky-400 font-medium">
-                          <span className="inline-block w-2 h-3.5 bg-sky-500 rounded-sm animate-pulse" />
-                          <div className="flex items-center gap-1.5 animate-pulse">
-                            <Sparkles className="w-3 h-3 text-amber-400 animate-spin" />
-                            <span>Trợ lý đang suy nghĩ và tiếp tục viết...</span>
+                    <div className="text-[11.5px] text-slate-400 leading-relaxed">
+                      {item.desc}
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </div>
+          ) : (
+            /* TRƯỜNG HỢP 2: DANH SÁCH TIN NHẮN ĐANG TRÒ CHUYỆN */
+            <div className="max-w-3xl w-full mx-auto space-y-6 pb-4">
+              {messages
+                .filter(
+                  (m, idx) =>
+                    !(
+                      idx === 0 &&
+                      m.role === "assistant" &&
+                      m.content.startsWith("Xin chào bạn! Mình là Trợ lý AI")
+                    )
+                )
+                .map((m, idx) => (
+                <div
+                  key={idx}
+                  className={`flex gap-3 text-sm leading-relaxed ${
+                    m.role === "user" ? "justify-end" : "justify-start"
+                  }`}
+                >
+                  {m.role === "assistant" && (
+                    <div className="w-8 h-8 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                      <K12Icon className="w-7 h-7" />
+                    </div>
+                  )}
+
+                  <div
+                    className={`relative group max-w-[88%] sm:max-w-[82%] rounded-3xl p-4 transition-colors ${
+                      m.role === "user"
+                        ? isDarkMode
+                          ? "bg-[#282a2c] text-white rounded-tr-sm"
+                          : "bg-[#e9eef6] text-[#1f1f1f] rounded-tr-sm"
+                        : "text-inherit"
+                    }`}
+                  >
+                    {/* Nút Copy câu trả lời */}
+                    {m.role === "assistant" && m.content.trim().length > 0 && (
+                      <button
+                        onClick={() => copyToClipboard(m.content, idx)}
+                        title="Sao chép nội dung"
+                        className={`absolute top-2 right-2 p-1.5 rounded-lg transition opacity-0 group-hover:opacity-100 ${
+                          isDarkMode
+                            ? "text-slate-400 hover:text-white hover:bg-[#282a2c]"
+                            : "text-slate-500 hover:text-slate-900 hover:bg-slate-100"
+                        }`}
+                      >
+                        {copiedIndex === idx ? (
+                          <Check className="w-4 h-4 text-emerald-500" />
+                        ) : (
+                          <Copy className="w-4 h-4" />
+                        )}
+                      </button>
+                    )}
+
+                    {m.role === "assistant" ? (
+                      m.content.trim() === "" ? (
+                        /* Hiệu ứng Thinking khi đang suy nghĩ */
+                        <div className="flex items-center gap-2.5 py-1 text-xs">
+                          <div className="flex space-x-1 items-center">
+                            <span className="w-2 h-2 rounded-full bg-sky-500 animate-bounce [animation-delay:-0.3s]"></span>
+                            <span className="w-2 h-2 rounded-full bg-sky-500 animate-bounce [animation-delay:-0.15s]"></span>
+                            <span className="w-2 h-2 rounded-full bg-sky-500 animate-bounce"></span>
+                          </div>
+                          <span className="font-medium text-sky-500 dark:text-sky-400 animate-pulse flex items-center gap-1.5">
+                            <Sparkles className="w-3.5 h-3.5 text-amber-400 animate-spin" />
+                            Trợ lý K12 đang suy nghĩ và tra cứu câu trả lời...
+                          </span>
+                        </div>
+                      ) : (
+                        <div>
+                          <MarkdownRenderer content={m.content} isDarkMode={isDarkMode} />
+                          {/* Đang stream dở */}
+                          {loading && idx === messages.length - 1 && (
+                            <div className="flex items-center gap-2 mt-2 pt-2 text-xs text-sky-500 dark:text-sky-400 font-medium">
+                              <span className="inline-block w-2 h-3.5 bg-sky-500 rounded-sm animate-pulse" />
+                              <div className="flex items-center gap-1.5 animate-pulse">
+                                <Sparkles className="w-3 h-3 text-amber-400 animate-spin" />
+                                <span>Trợ lý đang tiếp tục viết...</span>
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      )
+                    ) : (
+                      <div className="whitespace-pre-wrap font-sans text-sm leading-relaxed">
+                        {m.content}
+                      </div>
+                    )}
+
+                    {/* Danh sách nguồn bài viết gốc */}
+                    {m.sources && m.sources.length > 0 && m.content.trim().length > 0 && (
+                      <div
+                        className={`mt-4 pt-3 border-t text-xs ${
+                          isDarkMode ? "border-[#2d2f31]" : "border-[#e3e3e3]"
+                        }`}
+                      >
+                        <div className="font-semibold text-sky-500 flex items-center gap-1 mb-2">
+                          <ExternalLink className="w-3.5 h-3.5" />
+                          Nguồn bài viết gốc K12Online (Viettel):
+                        </div>
+                        <div className="flex flex-wrap gap-1.5">
+                          {m.sources.map((src, sIdx) => (
+                            <a
+                              key={sIdx}
+                              href={src.url}
+                              target="_blank"
+                              rel="noreferrer"
+                              className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg transition text-[11px] border ${
+                                isDarkMode
+                                  ? "bg-[#1e1f20] hover:bg-[#282a2c] border-[#2d2f31] text-slate-300 hover:text-sky-300"
+                                  : "bg-slate-100 hover:bg-slate-200 border-[#e3e3e3] text-slate-700 hover:text-sky-600"
+                              }`}
+                            >
+                              <span className="truncate max-w-[200px]">{src.title}</span>
+                              <ExternalLink className="w-2.5 h-2.5 opacity-60" />
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Câu hỏi gợi ý tiếp theo (Follow-ups) */}
+                    {m.role === "assistant" &&
+                      m.followUps &&
+                      m.followUps.length > 0 &&
+                      (!loading || idx < messages.length - 1) && (
+                        <div
+                          className={`mt-4 pt-3.5 border-t text-xs ${
+                            isDarkMode ? "border-[#2d2f31]" : "border-[#e3e3e3]"
+                          }`}
+                        >
+                          <div className="font-medium text-slate-400 flex items-center gap-1.5 mb-2.5">
+                            <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                            <span>Câu hỏi gợi ý liên quan:</span>
+                          </div>
+                          <div className="flex flex-wrap gap-2">
+                            {m.followUps.map((prompt, pIdx) => (
+                              <button
+                                key={pIdx}
+                                disabled={loading}
+                                onClick={() => handleSendMessage(prompt)}
+                                className={`text-left inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs transition border ${
+                                  loading ? "opacity-40 cursor-not-allowed" : ""
+                                } ${
+                                  isDarkMode
+                                    ? "bg-[#1e1f20] hover:bg-[#282a2c] border-[#2d2f31] hover:border-sky-500/50 text-slate-200 hover:text-sky-300"
+                                    : "bg-slate-50 hover:bg-white border-[#e3e3e3] hover:border-sky-400 text-slate-700 hover:text-sky-600 shadow-xs"
+                                }`}
+                              >
+                                <span className="text-sky-500 font-bold shrink-0">→</span>
+                                <span>{prompt}</span>
+                              </button>
+                            ))}
                           </div>
                         </div>
                       )}
-                    </div>
-                  )
-                ) : (
-                  <div className="whitespace-pre-wrap font-sans text-[13.5px] leading-relaxed">
-                    {m.content}
                   </div>
-                )}
+                </div>
+              ))}
 
-                {/* Danh sách nguồn tham khảo trích dẫn - CHỈ HIỂN THỊ KHI ĐÃ CÓ NỘI DUNG */}
-                {m.sources && m.sources.length > 0 && m.content.trim().length > 0 && (
-                  <div
-                    className={`mt-3.5 pt-3 border-t text-xs ${
-                      isDarkMode ? "border-slate-800/80" : "border-slate-100"
-                    }`}
-                  >
-                    <div className="font-semibold text-sky-500 flex items-center gap-1 mb-1.5">
-                      <ExternalLink className="w-3.5 h-3.5" />
-                      Nguồn bài viết gốc K12Online (Viettel):
+              {/* Nếu tin nhắn cuối chưa có gợi ý chi tiết và không đang loading, hiển thị gợi ý câu hỏi phổ biến */}
+              {(() => {
+                const lastMsg = messages[messages.length - 1];
+                const hasFollowUps =
+                  lastMsg?.role === "assistant" && lastMsg.followUps && lastMsg.followUps.length > 0;
+                if (!hasFollowUps && !loading) {
+                  return (
+                    <div className="pt-2">
+                      <div className="text-xs font-medium text-slate-400 mb-2 flex items-center gap-1.5">
+                        <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                        <span>Gợi ý câu hỏi phổ biến:</span>
+                      </div>
+                      <div className="flex flex-wrap gap-2">
+                        {QUICK_PROMPTS.slice(0, 3).map((q, qIdx) => (
+                          <button
+                            key={qIdx}
+                            disabled={loading}
+                            onClick={() => handleSendMessage(q.prompt)}
+                            className={`px-3 py-1.5 rounded-full text-xs transition border shrink-0 ${
+                              loading ? "opacity-40 cursor-not-allowed" : ""
+                            } ${
+                              isDarkMode
+                                ? "bg-[#1e1f20] hover:bg-[#282a2c] text-slate-300 border-[#2d2f31] hover:border-sky-500/50"
+                                : "bg-slate-50 hover:bg-white text-slate-700 border-[#e3e3e3] hover:border-sky-400 shadow-xs"
+                            }`}
+                          >
+                            <span className="text-sky-500 mr-1.5">→</span>
+                            {q.title}
+                          </button>
+                        ))}
+                      </div>
                     </div>
-                    <div className="flex flex-wrap gap-1.5">
-                      {m.sources.map((src, sIdx) => (
-                        <a
-                          key={sIdx}
-                          href={src.url}
-                          target="_blank"
-                          rel="noreferrer"
-                          className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg transition text-[11px] border ${
-                            isDarkMode
-                              ? "bg-slate-800 hover:bg-slate-700/80 border-slate-700/50 text-slate-300 hover:text-sky-300"
-                              : "bg-slate-100 hover:bg-slate-200/80 border-slate-200 text-slate-700 hover:text-sky-600"
-                          }`}
-                        >
-                          <span className="truncate max-w-[220px]">{src.title}</span>
-                          <ExternalLink className="w-2.5 h-2.5 opacity-60" />
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-                )}
+                  );
+                }
+                return null;
+              })()}
 
-                {/* Gợi ý câu hỏi liên quan tiếp theo (Follow-up Prompts) - CHỈ HIỂN THỊ KHI HOÀN TẤT */}
-                {m.role === "assistant" && m.followUps && m.followUps.length > 0 && (!loading || idx < messages.length - 1) && (
-                  <div
-                    className={`mt-3 pt-3 border-t text-xs ${
-                      isDarkMode ? "border-slate-800/80" : "border-slate-100"
-                    }`}
-                  >
-                    <div className="font-semibold text-slate-400 dark:text-slate-400 flex items-center gap-1.5 mb-2">
-                      <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-                      <span>Câu hỏi gợi ý liên quan:</span>
-                    </div>
-                    <div className="flex flex-wrap gap-1.5">
-                      {m.followUps.map((prompt, pIdx) => (
-                        <button
-                          key={pIdx}
-                          disabled={loading}
-                          onClick={() => handleSendMessage(prompt)}
-                          className={`text-left inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs transition border group/btn ${
-                            loading ? "opacity-40 cursor-not-allowed" : ""
-                          } ${
-                            isDarkMode
-                              ? "bg-slate-800/80 hover:bg-sky-950/60 border-slate-700/60 hover:border-sky-500/50 text-slate-300 hover:text-sky-300"
-                              : "bg-slate-50 hover:bg-sky-50 border-slate-200 hover:border-sky-300 text-slate-700 hover:text-sky-700"
-                          }`}
-                        >
-                          <span className="text-sky-500 group-hover/btn:translate-x-0.5 transition-transform font-bold">→</span>
-                          <span>{prompt}</span>
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
+              {/* Khoảng đệm chân trang để nội dung và gợi ý không bao giờ bị thanh nhập liệu che mất */}
+              <div ref={messagesEndRef} className="h-6 sm:h-8 shrink-0" />
             </div>
-          ))}
-
-          <div ref={messagesEndRef} />
+          )}
         </div>
 
-        {/* GỢI Ý CÂU HỎI THƯỜNG GẶP */}
-        <div
-          className={`px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 border-t transition-colors ${
-            isDarkMode ? "bg-slate-950/80 border-slate-800/40" : "bg-slate-50/80 border-slate-200"
-          }`}
-        >
-          <div className="max-w-4xl mx-auto flex gap-1.5 sm:gap-2 overflow-x-auto pb-1 text-xs no-scrollbar">
-            <span
-              className={`whitespace-nowrap shrink-0 self-center font-medium flex items-center gap-1 text-[11px] sm:text-xs ${
-                isDarkMode ? "text-slate-400" : "text-slate-500"
-              }`}
-            >
-              <Sparkles className="w-3.5 h-3.5 text-amber-500 shrink-0" />
-              <span className="hidden sm:inline">Bạn có thể hỏi:</span>
-            </span>
-            {QUICK_PROMPTS.map((q, qIdx) => (
-              <button
-                key={qIdx}
-                disabled={loading}
-                onClick={() => handleSendMessage(q)}
-                className={`px-2.5 sm:px-3 py-1 rounded-full whitespace-nowrap transition text-[11px] sm:text-[11.5px] border ${
-                  loading ? "opacity-40 cursor-not-allowed" : ""
-                } ${
-                  isDarkMode
-                    ? "bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white border-slate-800"
-                    : "bg-white hover:bg-slate-100 text-slate-700 hover:text-slate-900 border-slate-200 shadow-xs"
-                }`}
-              >
-                {q}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* KHUNG NHẬP LIỆU FOOTER */}
-        <div
-          className={`p-2.5 sm:p-4 md:p-6 border-t transition-colors ${
-            isDarkMode ? "bg-slate-900/60 border-slate-800/80" : "bg-white border-slate-200 shadow-sm"
-          }`}
-        >
-          <div className="max-w-4xl mx-auto space-y-2">
+        {/* 4. KHUNG NHẬP LIỆU FLOATING CAPSULE */}
+        <div className="shrink-0 px-3 md:px-6 pb-3 pt-1">
+          <div className="max-w-3xl w-full mx-auto">
+            {/* Thanh Capsule bo tròn floating */}
             <div
-              className={`relative flex items-center border focus-within:border-sky-500 rounded-2xl shadow-inner transition p-1 ${
+              className={`rounded-full border shadow-sm transition-all flex items-center px-3.5 py-2 ${
                 isDarkMode
-                  ? "bg-slate-800/90 border-slate-700/80"
-                  : "bg-slate-50 border-slate-300 focus-within:bg-white"
+                  ? "bg-[#1e1f20] border-[#2d2f31] focus-within:border-sky-500"
+                  : "bg-[#f0f4f9] border-[#e3e3e3] focus-within:border-sky-500 focus-within:bg-white"
               }`}
             >
+              {/* Nút cộng bên trái */}
+              <button
+                onClick={createNewChat}
+                className={`p-1.5 rounded-full transition mr-1 shrink-0 ${
+                  isDarkMode
+                    ? "hover:bg-[#282a2c] text-slate-400 hover:text-white"
+                    : "hover:bg-slate-200 text-slate-600 hover:text-slate-900"
+                }`}
+                title="Tạo cuộc trò chuyện mới"
+              >
+                <Plus className="w-5 h-5 text-sky-500" />
+              </button>
+
+              {/* Ô gõ tin nhắn */}
               <textarea
+                ref={textareaRef}
                 value={inputMessage}
                 disabled={loading}
-                onChange={(e) => setInputMessage(e.target.value)}
+                onChange={(e) => {
+                  setInputMessage(e.target.value);
+                  e.target.style.height = "auto";
+                  e.target.style.height = Math.min(e.target.scrollHeight, 120) + "px";
+                }}
                 onKeyDown={(e) => {
                   if (e.key === "Enter" && !e.shiftKey) {
                     e.preventDefault();
@@ -1008,22 +1220,30 @@ export default function Home() {
                 rows={1}
                 placeholder={
                   loading
-                    ? "Trợ lý K12 đang soạn thảo câu trả lời, bạn vui lòng đợi trong giây lát..."
-                    : "Bạn hãy nhập câu hỏi vào đây (Ví dụ: Cách duyệt bài tập về nhà trên K12Connect?)..."
+                    ? "Trợ lý K12 đang soạn thảo câu trả lời..."
+                    : "Hỏi K12Online..."
                 }
-                className={`flex-1 bg-transparent px-3 py-2 text-sm focus:outline-none resize-none max-h-32 ${
+                className={`flex-1 bg-transparent px-2.5 py-1 text-sm focus:outline-none resize-none max-h-28 ${
                   loading ? "cursor-not-allowed opacity-60" : ""
                 } ${
                   isDarkMode
-                    ? "text-slate-100 placeholder-slate-400"
-                    : "text-slate-900 placeholder-slate-400"
+                    ? "text-white placeholder-slate-400"
+                    : "text-slate-900 placeholder-slate-500"
                 }`}
               />
+
+              {/* Nút gửi tin nhắn tròn màu xanh */}
               <button
                 onClick={() => handleSendMessage()}
                 disabled={loading || !inputMessage.trim()}
-                className="p-2.5 bg-sky-600 hover:bg-sky-500 disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-sky-600 text-white rounded-xl transition shadow-md shrink-0 mr-1"
-                title={loading ? "Đang xử lý câu hỏi..." : "Gửi câu hỏi"}
+                className={`w-9 h-9 rounded-full flex items-center justify-center transition shrink-0 ml-1 shadow-xs ${
+                  loading || !inputMessage.trim()
+                    ? isDarkMode
+                      ? "bg-[#282a2c] text-slate-600 cursor-not-allowed"
+                      : "bg-slate-200 text-slate-400 cursor-not-allowed"
+                    : "bg-sky-600 hover:bg-sky-500 text-white"
+                }`}
+                title={loading ? "Đang xử lý..." : "Gửi câu hỏi"}
               >
                 {loading ? (
                   <Sparkles className="w-4 h-4 animate-spin text-amber-300" />
@@ -1033,54 +1253,40 @@ export default function Home() {
               </button>
             </div>
 
-            {/* Dòng liên kết & tuyên bố bản quyền cộng đồng */}
-            <div
-              className={`flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] px-1 text-center sm:text-left ${
-                isDarkMode ? "text-slate-500" : "text-slate-500"
-              }`}
-            >
-              <div className="flex items-center gap-1.5 flex-wrap justify-center sm:justify-start">
-                <span className="flex items-center gap-1">
-                  <Info className="w-3.5 h-3.5 shrink-0 text-slate-400" />
-                  Dự án cộng đồng độc lập (phi lợi nhuận)
-                </span>
-                <span>•</span>
+            {/* Dòng chữ gộp tham chiếu dữ liệu uy tín & link trang hỗ trợ K12Online */}
+            <div className="mt-2 text-center text-[11px] sm:text-xs text-slate-400 dark:text-slate-500 flex items-center justify-center gap-1.5 flex-wrap">
+              <span>Dự án cộng đồng (phi lợi nhuận)</span>
+              <span>•</span>
+              <span>
+                Dữ liệu được tham chiếu trực tiếp từ{" "}
                 <a
                   href="https://hotro.k12online.vn"
                   target="_blank"
                   rel="noreferrer"
-                  className={`inline-flex items-center gap-1 hover:underline transition ${
-                    isDarkMode ? "text-sky-400 hover:text-sky-300" : "text-sky-600 hover:text-sky-700"
-                  }`}
-                  title="Trung tâm Trợ giúp K12Online chính thức (Viettel)"
+                  className="text-sky-500 hover:text-sky-400 font-medium hover:underline inline-flex items-center gap-0.5"
+                  title="Cổng thông tin Trợ giúp K12Online chính thức (Viettel)"
                 >
-                  <ExternalLink className="w-3 h-3" />
                   <span>Trang hỗ trợ K12Online</span>
+                  <ExternalLink className="w-2.5 h-2.5" />
                 </a>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <a
-                  href="https://github.com/thieuhoang2002/K12Online_Chatbot"
-                  target="_blank"
-                  rel="noreferrer"
-                  className={`inline-flex items-center gap-1.5 font-medium transition ${
-                    isDarkMode
-                      ? "text-slate-400 hover:text-slate-200"
-                      : "text-slate-600 hover:text-slate-900"
-                  }`}
-                  title="Mã nguồn mở trên GitHub"
-                >
-                  <Github className="w-3.5 h-3.5" />
-                  <span>GitHub Repository</span>
-                </a>
-              </div>
+              </span>
+              <span>•</span>
+              <a
+                href="https://github.com/thieuhoang2002/K12Online_Chatbot"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-slate-300 transition-colors inline-flex items-center gap-0.5"
+                title="Mã nguồn mở trên GitHub"
+              >
+                <span>GitHub</span>
+                <Github className="w-2.5 h-2.5" />
+              </a>
             </div>
           </div>
         </div>
-      </main>
+      </div>
 
-      {/* CÁC CỬA SỔ MODAL */}
+      {/* 5. CỬA SỔ ĐĂNG NHẬP / ĐĂNG KÝ MODAL */}
       <AuthModal
         isOpen={isAuthOpen}
         onClose={() => setIsAuthOpen(false)}

@@ -1,0 +1,99 @@
+[
+  {
+    "id": "thu-vien-so-nha-truong",
+    "triggers": [
+      "cách nhà trường sử dụng hệ thống thư viện số",
+      "cách nhà trường sử dụng hệ thống thư viện số?",
+      "hướng dẫn nhà trường sử dụng hệ thống thư viện số",
+      "hướng dẫn nhà trường sử dụng hệ thống thư viện số?",
+      "hướng dẫn sử dụng hệ thống thư viện số",
+      "hướng dẫn sử dụng hệ thống thư viện số?",
+      "cách sử dụng hệ thống thư viện số",
+      "cách sử dụng hệ thống thư viện số?",
+      "sử dụng hệ thống thư viện số k12online",
+      "quản lý hệ thống thư viện số cho nhà trường",
+      "các chức năng của hệ thống thư viện số",
+      "hệ thống thư viện số k12online gồm những gì",
+      "thư viện số nhà trường sử dụng như thế nào"
+    ],
+    "keywords_combination": [
+      ["thư viện số", "nhà trường"],
+      ["thư viện số", "sử dụng"],
+      ["thư viện số", "chức năng"],
+      ["thư viện số", "quản trị"]
+    ],
+    "reply": "### 📚 Hướng dẫn toàn diện cách Nhà trường sử dụng Hệ thống Thư viện số trên K12Online\n\nPhân hệ **Thư viện số** trên K12Online là giải pháp chuyển đổi số toàn diện công tác quản lý thư viện trường học, tuân thủ đầy đủ nghiệp vụ thư viện theo quy định của Bộ Giáo dục & Đào tạo (chuẩn biên mục **MARC 21**, khung phân loại thập phân **DDC**, và mã định danh cá biệt **ĐKCB**).\n\nDưới đây là quy trình chi tiết từng bước giúp Nhà trường, Cán bộ quản lý và Thủ thư vận hành hệ thống hiệu quả:\n\n---\n\n#### 1. 🔑 Đăng nhập & Màn hình Tổng quan (Dashboard)\n- **Đăng nhập**: Truy cập cổng K12Online của trường > Đăng nhập bằng tài khoản Quản trị trường hoặc Cán bộ thư viện.\n- **Truy cập**: Tại thanh menu chính > Nhấn chọn phân hệ **Thư viện số**.\n- **Màn hình Tổng quan**: Cung cấp bức tranh toàn cảnh gồm:\n  + Thống kê số lượng đầu sách, cuốn sách hiện có và sách điện tử (Ebook/Audio).\n  + Biểu đồ lượt mượn - trả theo ngày, tuần, tháng.\n  + Bảng xếp hạng Top bạn đọc (giáo viên, học sinh) mượn sách nhiều nhất.\n  + Cảnh báo số lượng sách sắp đến hạn hoặc đang quá hạn cần thu hồi.\n\n---\n\n#### 2. ⚙️ Phân quyền & Thiết lập quy chế thư viện\n- **Phân quyền cán bộ**: Vào menu **Phân quyền** > Nhấn **Thêm mới** > Gán vai trò cho Thủ thư, Giáo viên kiêm nhiệm phụ trách kho sách, hoặc người có thẩm quyền phê duyệt phiếu mượn/kiểm kê.\n- **Cấu hình mượn - trả**: Thiết lập quy định mượn sách cho từng nhóm độc giả:\n  + Số lượng sách tối đa được mượn cùng lúc (ví dụ: Học sinh 3 cuốn, Giáo viên 5 cuốn).\n  + Thời hạn mượn tối đa (ví dụ: 7 ngày, 14 ngày hoặc theo học kỳ).\n  + Cài đặt gửi thông báo nhắc nhở tự động qua app K12Online/K12Connect khi đến hạn trả.\n\n---\n\n#### 3. 📖 Quản lý Danh mục & Biên mục tài liệu\nNhà trường có thể quản lý cả **Sách truyền thống (sách giấy)** và **Sách điện tử (Ebook, Audio)**:\n- **Biên mục sách / Báo, Tạp chí**:\n  + **Cách 1 - Thêm thủ công từng cuốn**: Vào **Biên mục sách** > Nhấn **Thêm mới** > Điền các thông tin bắt buộc có dấu sao (`*`): Tên sách, Tác giả, Nhà xuất bản, Năm xuất bản, Mã DDC, Mã MARC 21, Kho sách, Số lượng > Bấm **Lưu**.\n  + **Cách 2 - Nhập nhanh hàng loạt bằng Excel**: Nhấn **Tải file mẫu** > Dán dữ liệu danh mục sách hiện có của thư viện vào file Excel > Nhấn **Nhập khẩu**. Hệ thống tự động tạo hàng ngàn mã đăng ký cá biệt (ĐKCB) chỉ trong vài giây.\n- **In mã vạch & Nhãn gáy sách**: Chọn các đầu sách trong danh sách > Nhấn **In mã vạch / In nhãn gáy** > Xuất file in để dán trực tiếp lên gáy và bìa sách, phục vụ quét mã vạch bằng máy quét Barcode cầm tay.\n\n---\n\n#### 4. 🔍 Tra cứu & Đọc sách trực tuyến\n- **Bộ lọc tìm kiếm thông minh**: Vào menu **Tra cứu** > Tìm kiếm theo tên sách, tác giả, thể loại, môn học, khối lớp hoặc từ khóa.\n- **Đọc tài liệu số**: Nhấn vào sách để xem chi tiết:\n  + Nhấn **Ebook** để đọc trực tiếp file PDF chất lượng cao có chống sao chép.\n  + Nhấn **Audio** để nghe sách nói (nếu có).\n  + Độc giả có thể bấm **Lưu sách**, viết **Đánh giá / Bình luận** và cho điểm sao về cuốn sách.\n\n---\n\n#### 5. 🔄 Quy trình Quản lý Mượn - Trả sách\n- **Lập phiếu mượn**:\n  + *Mượn cá nhân*: Cán bộ thư viện quét mã thẻ bạn đọc hoặc tìm tên học sinh/giáo viên > Quét mã vạch sách cần mượn > Bấm **Lập phiếu mượn**.\n  + *Mượn trực tuyến*: Độc giả tìm sách trên app/web và gửi yêu cầu mượn > Thủ thư vào mục **Duyệt mượn sách** để phê duyệt hoặc từ chối kèm lý do.\n  + *Mượn theo lớp (Tiết đọc thư viện)*: Lập phiếu mượn tập thể cho giáo viên chủ nhiệm hoặc lớp để mượn sách sử dụng tại phòng đọc/lớp học.\n- **Quản lý Trả sách**:\n  + Vào menu **Trả sách** > Quét mã sách hoặc nhập mã phiếu mượn > Kiểm tra tình trạng sách thực tế (Bình thường / Hư hỏng / Mất sách) > Nhấn **Xác nhận trả**.\n- **Xử lý quá hạn & Sổ mượn**:\n  + Hệ thống tự động phân loại vào danh sách **Mượn quá hạn** và hỗ trợ nút **Nhắc trả sách** gửi tin nhắn về tài khoản độc giả.\n  + Theo dõi chi tiết tại **Sổ mượn sách giáo viên** và **Sổ mượn sách học sinh**.\n\n---\n\n#### 6. 📋 Kiểm kê & Thanh lý tài sản thư viện\n- **Kiểm kê định kỳ**:\n  + Vào menu **Phiếu kiểm kê** > Nhấn **Thêm mới** > Khai báo thành phần Hội đồng kiểm kê, thời gian kiểm kê, kho sách.\n  + Cán bộ dùng máy quét mã vạch để quét từng cuốn sách tại giá sách. Hệ thống tự động đối chiếu dữ liệu tồn kho trên phần mềm với số lượng thực tế kiểm kê.\n  + Sau khi hoàn tất đối soát > Nhấn **Duyệt phiếu kiểm kê** để cập nhật trạng thái kho.\n- **Thanh lý sách**:\n  + Vào menu **Thanh lý** > Lập danh sách tài liệu hao mòn, rách nát, sách cũ lỗi thời không còn giá trị sử dụng > Xuất biên bản đề nghị thanh lý theo mẫu chuẩn của cơ quan quản lý.\n\n---\n\n#### 7. 📊 Báo cáo & Thống kê phục vụ kiểm tra, đánh giá\n- Vào menu **Báo cáo thống kê**:\n  + Báo cáo danh mục sách theo từng kho, môn học, phân loại DDC.\n  + Báo cáo số lượt bạn đọc, vòng quay của sách theo tháng, học kỳ và năm học.\n  + Xuất file Excel / PDF báo cáo số liệu chuẩn để gửi Phòng/Sở GD&ĐT và phục vụ hồ sơ công nhận Thư viện chuẩn / Thư viện tiên tiến.\n\n---\n\n> 💡 **Lưu ý hữu ích cho Thủ thư:**\n> - Khi nhập sách số lượng lớn, bạn luôn nên sử dụng đúng file Excel mẫu tải từ hệ thống K12Online để đảm bảo không bị lỗi định dạng cột.\n> - Các trường có ký hiệu dấu hoa thị đỏ (`*`) là trường dữ liệu bắt buộc của ngành thư viện, không được để trống khi biên mục.",
+    "sources": [
+      {
+        "title": "Hướng dẫn nhà trường sử dụng hệ thống thư viện số",
+        "category": "Thư viện số > Nhà trường",
+        "url": "https://hotro.k12online.vn/thu-vien-so/huong-dan-su-dung-he-thong-thu-vien-so.html"
+      }
+    ],
+    "followUps": [
+      "Làm thế nào để biên mục sách và in mã vạch hàng loạt bằng file Excel?",
+      "Quy trình lập phiếu kiểm kê thư viện định kỳ trên K12Online?",
+      "Cách cấu hình số ngày mượn tối đa và xử lý sách quá hạn trả?"
+    ]
+  },
+  {
+    "id": "muon-tra-sach-thu-vien-so",
+    "triggers": [
+      "quy trình mượn trả sách trong thư viện số",
+      "quy trình mượn trả sách trong thư viện số?",
+      "hướng dẫn mượn trả sách trên k12online",
+      "cách lập phiếu mượn sách thư viện số",
+      "duyệt mượn sách thư viện số k12online",
+      "cách xử lý khi học sinh mượn sách quá hạn",
+      "trả sách cho tiết đọc thư viện số"
+    ],
+    "keywords_combination": [
+      ["thư viện số", "mượn trả"],
+      ["thư viện", "phiếu mượn"],
+      ["thư viện", "duyệt mượn"]
+    ],
+    "reply": "### 🔄 Hướng dẫn Quy trình Quản lý Mượn - Trả sách trong Thư viện số K12Online\n\nNghiệp vụ Mượn - Trả sách là khâu vận hành trọng tâm của Thư viện trường học. Trên K12Online, quy trình này được số hóa hoàn toàn từ khâu lập phiếu, phê duyệt, theo dõi hạn trả đến xử lý quá hạn.\n\n---\n\n#### 1. Lập phiếu mượn sách\nCó 3 hình thức lập phiếu mượn sách trên hệ thống:\n- **Cách 1: Thủ thư lập phiếu trực tiếp tại quầy**:\n  1. Vào menu **Quản lý mượn, trả** > Chọn **Lập phiếu mượn**.\n  2. Quét thẻ thư viện của độc giả (hoặc tìm theo Tên / Mã định danh học sinh / giáo viên).\n  3. Quét mã vạch cuốn sách (Barcode) hoặc tìm kiếm theo tên sách.\n  4. Chọn hình thức mượn (*Đọc tại chỗ* hoặc *Mượn về nhà*) > Nhập ngày hẹn trả > Nhấn **Lưu**.\n- **Cách 2: Độc giả đăng ký mượn trực tuyến qua Web/App**:\n  + Học sinh/Giáo viên vào menu **Tra cứu** > Tìm sách ưng ý > Bấm **Mượn sách** > Gửi yêu cầu đăng ký mượn đến thư viện.\n- **Cách 3: Mượn theo lớp phục vụ Tiết đọc thư viện**:\n  + Thủ thư tạo phiếu mượn tập thể cho lớp học hoặc giáo viên chủ nhiệm, cho phép xuất cùng lúc nhiều đầu sách mà không cần tạo từng phiếu lẻ.\n\n---\n\n#### 2. Phê duyệt phiếu mượn đăng ký Online\n1. Thủ thư vào menu **Duyệt mượn sách**.\n2. Xem danh sách các yêu cầu mượn đang chờ duyệt.\n3. Nhấn vào từng phiếu để kiểm tra xem sách trong kho còn khả dụng hay không:\n   - Nếu đồng ý: Bấm **Duyệt mượn** (sách tự động chuyển trạng thái sang *Đang cho mượn*).\n   - Nếu không đồng ý (sách hỏng, quá số lượng quy định): Bấm **Từ chối** và nhập lý do phản hồi cho bạn đọc.\n\n---\n\n#### 3. Quy trình Trả sách & Thu hồi tài liệu\n1. Vào menu **Trả sách** > Nhập tên độc giả hoặc quét mã vạch trên cuốn sách được trả.\n2. Kiểm tra hiện trạng vật lý của sách:\n   - **Nguyên vẹn**: Bấm xác nhận **Đã trả** (sách tự động cộng lại vào kho khả dụng).\n   - **Hư hỏng / Mất**: Chọn trạng thái tương ứng, ghi chú mức độ bồi thường hoặc ghi biên bản xử lý vi phạm.\n\n---\n\n#### 4. Nhắc nhở và Xử lý sách mượn quá hạn\n- Hệ thống tự động phân loại các phiếu mượn quá hạn vào danh sách **Mượn sách quá hạn**.\n- Thủ thư chỉ cần bấm nút **Nhắc trả sách**, hệ thống sẽ tự động gửi thông báo trực tiếp đến tài khoản K12Online/K12Connect của người mượn hoặc phụ huynh học sinh.\n- Có thể tra cứu lịch sử mượn trả của từng cá nhân trong **Sổ mượn sách giáo viên** và **Sổ mượn sách học sinh**.",
+    "sources": [
+      {
+        "title": "Hướng dẫn nhà trường sử dụng hệ thống thư viện số",
+        "category": "Thư viện số > Mượn trả",
+        "url": "https://hotro.k12online.vn/thu-vien-so/huong-dan-su-dung-he-thong-thu-vien-so.html"
+      }
+    ],
+    "followUps": [
+      "Làm sao để cấu hình số ngày mượn tối đa cho học sinh?",
+      "Cách kiểm kê kho sách định kỳ bằng máy quét mã vạch?",
+      "Thủ tục thanh lý sách rách nát, hư hỏng thực hiện như thế nào?"
+    ]
+  },
+  {
+    "id": "ke-toan-quan-ly-dot-thu",
+    "triggers": [
+      "hướng dẫn nhà trường kế toán quản lý đợt thu",
+      "hướng dẫn nhà trường kế toán quản lý đợt thu?",
+      "hướng dẫn kế toán quản lý đợt thu",
+      "kế toán quản lý đợt thu k12online",
+      "cách tạo đợt thu học phí k12online",
+      "quản lý đợt thu học phí",
+      "cách kế toán lập đợt thu tiền học"
+    ],
+    "keywords_combination": [
+      ["kế toán", "đợt thu"],
+      ["nhà trường", "đợt thu"],
+      ["quản lý đợt thu", "k12online"]
+    ],
+    "reply": "### 💰 Hướng dẫn Kế toán Nhà trường Quản lý Đợt thu trên K12Online\n\nPhân hệ **Quản lý thu học phí** trên K12Online giúp Nhà trường và Bộ phận Kế toán tổ chức, phát hành và đối soát các khoản thu học phí, tiền ăn bán trú, đồng phục... một cách minh bạch, kết nối thanh toán không dùng tiền mặt qua cổng Viettel Money/Ngân hàng.\n\n---\n\n#### 1. Điều kiện tiên quyết trước khi tạo đợt thu\nTrước khi tạo một đợt thu mới, Kế toán cần đảm bảo đã hoàn tất các bước cấu hình danh mục:\n1. **Khai báo Loại khoản thu**: (Ví dụ: Học phí chính khóa, Tiền ăn trưa, Quỹ ban đại diện cha mẹ học sinh, Nước uống...).\n2. **Khai báo Đối tượng miễn giảm**: (Con thương binh, hộ nghèo, học sinh diện chính sách giảm 50% hoặc 100%).\n3. **Cấu hình Tài khoản ngân hàng / Cổng thanh toán**: Liên kết tài khoản thụ hưởng của Nhà trường.\n\n---\n\n#### 2. Các bước tạo mới một Đợt thu\n- **Bước 1**: Đăng nhập tài khoản **Kế toán** hoặc **Quản trị trường** > Chọn phân hệ **Quản lý thu** > Vào menu **Đợt thu**.\n- **Bước 2**: Nhấn nút **Thêm mới đợt thu**.\n- **Bước 3**: Khai báo các thông tin chung của đợt thu:\n  + **Tên đợt thu**: (Ví dụ: *Thu học phí & bán trú Tháng 10/2026*).\n  + **Thời gian thu**: Chọn *Từ ngày* đến *Đến ngày* (hạn chót phụ huynh hoàn thành nộp tiền).\n  + **Phạm vi áp dụng**: Chọn toàn trường hoặc các khối lớp cụ thể.\n- **Bước 4**: Thêm các khoản thu vào đợt:\n  + Chọn các khoản thu áp dụng cho đợt này.\n  + Nhập định mức tiền hoặc chọn tính theo số ngày thực tế (đối với tiền ăn, bán trú).\n  + Gán chính sách miễn giảm cho các học sinh thuộc diện chính sách.\n- **Bước 5**: Nhấn **Lưu** hoặc **Xuất bản đợt thu** để gửi thông báo học phí tới tài khoản phụ huynh học sinh trên ứng dụng **K12Connect**.\n\n---\n\n#### 3. Theo dõi, Thu tiền & Đối soát công nợ\n- **Theo dõi tiến độ nộp tiền**: Tại màn hình danh sách đợt thu, kế toán xem tỷ lệ hoàn thành thu tiền (% đã nộp, chưa nộp).\n- **Ghi nhận thu tiền mặt (nếu phụ huynh nộp trực tiếp tại trường)**:\n  + Vào chi tiết đợt thu > Tìm kiếm tên học sinh > Bấm **Thu tiền** > Chọn hình thức *Tiền mặt* > Bấm **Xác nhận & In biên lai/phiếu thu**.\n- **Thanh toán trực tuyến**: Phụ huynh thanh toán qua Viettel Money hoặc QR-Code ngân hàng thì hệ thống tự động gạch nợ tức thì theo thời gian thực.\n- **Báo cáo & Xuất file**: Kế toán có thể xuất danh sách công nợ, sổ theo dõi thu nộp theo lớp ra file Excel để lưu trữ và báo cáo Ban Giám Hiệu.",
+    "sources": [
+      {
+        "title": "Hướng dẫn Nhà trường - Kế toán quản lý đợt thu",
+        "category": "Quản lý thu > Kế toán",
+        "url": "https://hotro.k12online.vn/quan-ly-thu/huong-dan-nha-truong-ke-toan-quan-ly-dot-thu.html"
+      }
+    ],
+    "followUps": [
+      "Cách khai báo loại khoản thu và mức miễn giảm cho học sinh?",
+      "Làm sao để xuất danh sách học sinh chưa đóng học phí ra Excel?",
+      "Hướng dẫn phụ huynh thanh toán tiền học qua K12Connect"
+    ]
+  }
+]

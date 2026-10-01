@@ -1,0 +1,29 @@
+### BÀI VIẾT [225]: Hướng dẫn nhà trường tạo tài khoản phụ huynh
+- Chuyên mục: Trang chủ > Hướng dẫn sử dụng > Dành cho phụ huynh
+- Link gốc: https://hotro.k12online.vn/phu-huynh/huong-dan-nha-truong-tao-tai-khoan-phu-huynh.html
+
+**Nội dung:**
+Tính năng tài khoản Phụ huynh chỉ được kích hoạt nếu những trường nằm trong danh sách đăng ký dịch vụ của K12Online.
+
+ Để khởi tạo tài khoản Phụ huynh, nhà trường làm theo hướng dẫn sau:
+
+ Bước 1: Nhà trường vào menu Quản lý tài khoản => Chọn Danh sách tài khoản
+
+ Bước 2: Nhà trường chọn Thêm mới => Chọn loại tài khoản Phụ huynh
+
+ Bước 3: Nhập các thông tin cơ bản của phụ huynh, bao gồm:
+
+ - Họ và tên
+
+ - Giới tính
+
+ - Ngày sinh
+
+ - Số điện thoại (Lưu ý: Số điện thoại chính là tài khoản để đăng nhập.Vui lòng nhập chính xác)
+
+ - Chọn học sinh.
+
+ Bước 4: Nhấn Lưu để hoàn tất.
+
+==================================================
+

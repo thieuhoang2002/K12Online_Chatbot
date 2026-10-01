@@ -1,0 +1,48 @@
+### BÀI VIẾT [305]: Hướng dẫn nhà trường quản lý lịch đưa đón
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Bus > Nhà trường
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/bus/nha-truong/huong-dan-nha-truong-quan-ly-lich-dua-don.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản quản lý trường
+
+ Bước 2: Tại Trang chủ: chọn module Bus
+
+ Bước 3: Hiển thị màn hình các menu thuộc module Bus như hình
+
+ Bước 1: Trên thanh menu > Chọn menu Lịch đưa đón
+
+ 1. Tự động thêm lịch đưa đón
+
+ Bước 1: Danh sách > Click button Tự động thêm lịch đưa đón
+
+ Bước 2: Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công, bản ghi ở trạng thái Chưa bắt đầu
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Tuyến đường list dữ liệu theo loại tuyến đã chọn
+ Biển kiểm soát, lái xe, quản lý xe hiển thị mặc định theo tuyến đường đã chọn, nếu thay đổi so với mặc định cũ của tuyến đường sẽ cập nhật tương ứng tại các bản ghi theo ngày hôm đó của Lịch đưa đón
+
+ 2. Xem danh sách sự cố
+
+ Danh sách > Click icon danh sách sự cố
+
+ Hiển thị màn hình danh sách sự cố như sau
+
+ 3. Xem danh sách học sinh
+
+ Danh sách > Click icon danh sách học sinh
+
+ Hiển thị màn hình danh sách học sinh như sau
+
+ 4. Xem lộ trình tuyến đường
+
+ Bước 1: Danh sách: Click icon Lộ trình tuyến đường - chặng
+
+ Bước 2: Hiển thị màn hình như sau > Click icon danh sách học sinh
+
+ Bước 3: Hiển thị màn hình như sau
+
+==================================================
+

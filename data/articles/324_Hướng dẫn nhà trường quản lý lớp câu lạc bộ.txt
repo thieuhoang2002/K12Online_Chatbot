@@ -1,0 +1,231 @@
+### BÀI VIẾT [324]: Hướng dẫn nhà trường quản lý lớp câu lạc bộ
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Câu lạc bộ > Nhà trường
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/clb/nha-truong/huong-dan-nha-truong-quan-ly-lop-cau-lac-bo3.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản Nhà trường
+
+ Bước 2: Trang chủ  > Click vào module Câu lạc bộ > Vào menu Quản lớp câu lạc bộ
+
+ Xem danh sách lớp câu lạc bộ
+
+ 1. Thêm mới
+
+ Bước 1: Danh sách > Click button thêm mới
+
+ Bước 2: Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công
+
+ Khi cấu hình lịch học thì Lịch học trong tab Lịch học hiển thị tương ứng lịch học đã cấu hình
+
+ Chú ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường Danh sách giáo viên phụ trách : List tất cả các tổ chuyên môn ở menu Tổ chuyên môn . Trường giáo viên sẽ list theo tổ chuyên  môn được chọn
+ Thời gian bắt đầu phải là thời gian hiện tại hoặc tương lai
+ Thời gian kết thúc phải lớn hơn thời gian bắt đầu
+ Khi cấu hình lịch học thì Lịch học trong tab Lịch học hiển thị tương ứng lịch học đã cấu hình
+ 2. Chỉnh sửa
+
+ Click icon chỉnh sửa thực hiện chỉnh sửa bản ghi
+
+ 3. Tìm kiếm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý:
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+ 4. Thay đổi trạng thái
+
+ Bước 1: Danh sách > Cột trạng thái > Click chọn trạng thái muốn thay đổi
+
+ Bước 2: Click Đồng ý thực hiện đổi trạng thái thành công . Bản ghi mang trạng thái đã chọn
+
+ Xem chi tiết
+
+ Bước 1: Danh sách > Click icon xem chi tiết
+
+ Bước 2: Hiển thị màn hình chi tiết
+
+ 5. Tab Thông tin chung
+
+ Xem thông tin chung lớp câu lạc bộ
+
+ 6. Tab Danh sách học sinh
+
+ 6.1. Thêm mới học sinh
+
+ Bước 1: Danh sách > Click button thêm mới
+
+ Bước 2: Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường Học sinh list dữ liệu theo Khối lớp đã chọn
+ Ngày đăng ký không nhỏ hơn thời gian hiện tại
+ Trạng thái : Tham gia ( học sinh tham gia lớp câu lạc bộ ) còn Không tham gia ( Học sinh không tham gia lớp câu lạc bộ )
+
+ 6.2. Sửa/ Xóa học sinh
+
+ Click icon chỉnh sửa thực hiện chỉnh sửa bản ghi
+
+ Click icon xóa thực hiện xóa bản ghi
+
+ 6.3. Tìm kiếm học sinh
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ ​​​​​​​7. Tab Lịch học
+
+ 7.1. Xem danh sách lịch học
+
+ Hiển thị lịch học đã cấu hình khi thêm mới lớp câu lạc bộ
+
+ ​​​​​​​7.2. Chỉnh sửa/ Xóa lịch học
+
+ Click icon chỉnh sửa thực hiện chỉnh sửa lịch học
+
+ Click icon xóa thực hiện xóa lịch học
+
+ ​​​​​​​8. Tab Điểm danh
+
+ Hiển thị dữ liệu điểm danh học sinh
+
+ ​​​​​​​8.1. Xác nhận không tham gia
+
+ Click tích bỏ checkbox > Nhập lý do > Click Lưu thực hiện xác nhận học sinh không tham gia thành công
+
+ ​​​​​​​8.2. Xem lý do không tham gia
+
+ Sau khi xác nhận thành công checkbox bỏ tích chọn > Click icon chấm than xem lý do không tham gia
+
+ ​​​​​​​8.3. Tìm kiếm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý:
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo: Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+
+ ​​​​​​​9. Tab Thông tin hoạt động
+
+ 9.1. Thêm mới
+
+ Bước 1: Danh sách > Click button thêm mới
+
+ Bước 2: Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công
+
+ Chú ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Thời gian bắt đầu phải là thời gian hiện tại hoặc tương lai
+ Thời gian kết thúc phải lớn hơn thời gian bắt đầu
+ Giáo viên phụ trách là list theo danh sách tài khoản giáo viên
+ Trường học sinh : sẽ list theo lớp câu lạc bộ đã chọn ( hiển thị những học sinh đăng ký lớp câu lạc bộ đó )
+
+ ​​​​​​​9.2. Chỉnh sửa/ xóa / xem chi tiết
+
+ Click icon chỉnh sửa thực hiện chỉnh sửa bản ghi
+
+ Click icon xóa thực hiện xóa bản ghi
+
+ Click icon xem chi tiết xem chi tiết bản ghi
+
+ ​​​​​​​9.3. Thay đổi trạng thái
+
+ Bước 1: Danh sách > Cột trạng thái > Click chọn trạng thái muốn thay đổi
+
+ Bước 2: Click Đồng ý thực hiện đổi trạng thái thành công . Bản ghi mang trạng thái đã chọn
+
+ ​​​​​​​9.4. Tìm kiếm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ ​​​​​​​10. Tab Đánh giá lớp học
+
+ 10.1. Đánh giá lớp chung
+
+ Bước 1: Danh sách > Click button thêm mới
+
+ Bước 2: Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công. Đánh giá tương ứng ngày được chọn
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ ​​​​​​​10.2. Cập nhật đánh giá từng học sinh
+
+ Bước 1: Chọn lịch học
+
+ Bước 2: Click icon chỉnh sửa danh sách học sinh > Thực hiện cập nhật đánh giá cho từng học sinh
+
+ ​​​​​​​10.3. Giao bài tập
+
+ Bước 1: Danh sách > Click button thêm mới
+
+ Bước 2: Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công . Đánh giá tương ứng ngày được chọn
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường Lịch học sẽ list lịch học trong Tab Lịch học
+ Trường Thời gian hết hạn nộp bài tập không cho nhập / chọn thời gian là quá khứ
+ Khi tích chọn vào checkbox Có tính điểm thì Bài tập được chấm điểm và nếu không tích chọn sẽ không được tính điểm
+ Khi thêm xong bản ghi ở trạng thái Chưa gửi
+
+ ​​​​​​​10.4. Chỉnh sửa giao bài tập
+
+ Bước 1: Chọn 1 lịch học > Danh sách bài tập > Click icon chỉnh sửa
+
+ Bước 2: Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công . Đánh giá tương ứng ngày được chọn
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường Lịch học sẽ list lịch học trong Tab Lịch học
+ Trường Thời gian hết hạn nộp bài tập không cho nhập / chọn thời gian là quá khứ
+ Khi tích chọn vào checkbox Có tính điểm thì Bài tập được chấm điểm và nếu không tích chọn sẽ không được tính điểm
+ Khi thêm xong bản ghi ở trạng thái Chưa gửi
+ + Danh sách bài tập:
+
+ Click icon xóa thực hiện xóa bài tập
+
+ Click icon xem chi tiết thực hiện xem chi tiết bài tập
+
+ Click icon gửi thực hiện gửi bài tập bản ghi chuyển sang trạng thái Đã gửi . Đồng thời tài khoản phụ huynh menu Bài tập cũng hiển thị bài tập đã gửi
+
+ Danh sách đánh giá học sinh: nếu bài tập có tích chọn tính điểm thì hiển thị icon cập nhật điểm
+
+ Thực hiện nhập điểm vào ô > click dấu V thực hiện lưu điểm đã nhập
+
+ ​​​​​​​10.5. Tìm kiếm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+
+ ​​​​​​​11. Tab kết quả học tập
+
+ Danh sách hiển thị tất cả học tập của học sinh có điểm bài tập câu lạc bộ
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+
+==================================================
+

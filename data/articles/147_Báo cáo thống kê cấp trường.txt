@@ -1,0 +1,27 @@
+### BÀI VIẾT [147]: Báo cáo thống kê cấp trường
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong/bao-cao-thong-ke-cap-truong.html
+
+**Nội dung:**
+K12Online cung cấp nhiều mẫu báo cáo, thống kê cho nhà trường có số liệu thống kê, báo cáo, phục vụ cho việc nắm bắt tính hinh và điều hành việc dạy học trực tuyến của nhà trường.
+
+ 1. Báo cáo người dùng: Danh sách tài khoản trường, GV, HS có trên hệ thống.
+
+ 2. Báo cáo truy cập: Thống kê số lần truy cập và lần truy cập gần nhất của từng tài khoản GV, HS có trên hệ thống.
+
+ 3. Báo cáo bài giảng: Thống kê bài giảng của GV có trên hệ thống.
+
+ 4. Báo cáo bài kiểm tra: Thống kê bài kiểm tra của GV có trên hệ thống.
+
+ 5. Báo cáo NHCH: Thống kê NHCH và số câu hỏi GV đã tạo trên hệ thống.
+
+ 6. Báo cáo lớp học ảo: Thống kê số lớp học ảo và báo cáo chi tiết từng lớp học ảo GV đã tạo trên hệ thống.
+
+ 7. Báo cáo kiểm duyệt: Thống kê tình hình kiểm duyệt bài giảng của nhà trường trên hệ thống.
+
+ 8. Báo cáo kế hoạch bài dạy: Thống kê tình hình kiểm duyệt kế hoạch bài dạy của nhà trường trên hệ thống.
+
+ 9. Báo cáo khác: Các mẫu báo cáo, thống kê đặc thù khác tùy theo thực tế và yêu cầu của ngành.
+
+==================================================
+

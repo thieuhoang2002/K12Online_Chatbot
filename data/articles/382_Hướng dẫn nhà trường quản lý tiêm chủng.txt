@@ -1,0 +1,37 @@
+### BÀI VIẾT [382]: Hướng dẫn nhà trường quản lý tiêm chủng
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Y tế > Nhà trường
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/y-te/nha-truong/huong-dan-nha-truong-quan-ly-tiem-chung.html
+
+**Nội dung:**
+1. Xem danh sách tiêm chủng
+
+ Bước 1: Đăng nhập tài khoản quản lý trường /Cán bộ y tế học đường /Cán bộ y tế học đường
+
+ Bước 2 : click menu Tiêm chủng , bảo hiểm y tế > tab Quản lý tiêm chủng
+
+ 2. Tìm kiếm tiêm chủng
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý :
+
+ +   Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+
+ + Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo điều kiện tìm kiếm
+
+ 3. Cập nhật tiêm chủng
+
+ Bước 1 : Trên màn hình danh sách > Click icon chỉnh sửa hoặc button cập nhật hoặc click icon chỉnh sửa
+
+ Bước 2: Nhập/chọn đầy đủ , hợp lệ các trường bắt buộc > click Lưu
+
+ Lưu ý
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Chọn loại vắc xin , mũi tiêm , trạng thái “ đã tiêm” để hiển thị các trường dữ liệu về thông tin tiêm chủng
+ Trường ngày giờ tiêm không lớn hơn thời gian hiện tại
+ Cập nhật thông tin tiêm chủng thành công chuyển trạng thái từ “Chưa tiêm” sang “Đã tiêm”
+
+==================================================
+

@@ -1,0 +1,93 @@
+### BÀI VIẾT [191]: Hướng dẫn nhà trường quản lý lịch mượn trả thiết bị
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Cơ sở vật chất > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong4/huong-dan-nha-truong-quan-ly-lich-muon-tra-thiet-bi.html
+
+**Nội dung:**
+Bước 1: Đăng nhập thành công vào hệ thống
+
+ ​​​​ Bước 2: Trang chủ > Click module Cơ sở vật chất
+
+ Bước 3: Menu Cơ sở vật chất> Click Mượn tài sản
+
+ 1. Danh sách quản lý lịch mượn trả thiết bị
+
+ Bước 1: Menu mượn tài sản> Chọn tab Quản lý lịch mượn trả thiết bị
+
+ Bước 2: Hiển thị danh sách lịch mượn trả thiết bị
+
+ Click Sắp xếp theo > Chọn kiểu sắp xếp > Hiển thị danh sách theo trạng thái sắp xếp.
+ Click icon trả để thực hiện trả thiết bị
+ Click icon nhắc nhở về thực hiện nhắc trả thiết bị (áp dụng đối với những thiết bị ở tình trạng quá hạn)
+
+ Tải lại
+ Bước 1: Trên danh sách > click button Tải lại > Thực hiện tải lại danh sách.
+
+ Sắp xếp
+ Trên danh sách > click button Sắp xếp theo > Chọn kiểu sắp xếp> Hiển thị danh sách theo trạng thái sắp xếp.
+
+ Tổng số bản ghi
+ Bước 1: Trên màn hình danh sách> Xem tổng số bản ghi
+
+ Phân trang
+ Trên màn hình: hiển thị phân trang ở phía dưới bên phải màn khi danh sách có > 20 bản ghi
+
+ + Click icon << (>>) để chuyển đến trang trước đó (trang tiếp theo)
+
+ + Click icon  << << (>> >>) để chuyển đến trang đầu tiên (trang cuối cùng)
+
+ 2. Trả thiết bị
+
+ 2.1. Trả 1 thiết bị
+
+ Bước 1: Trên màn hình danh sách > Click icon trả
+
+ Bước 2: Hệ thống hiển thị popup xác nhận
+
+ + Click có để xác nhận trả thiết bị
+
+ + Click không để quay lại danh sách
+
+ 2.2. Trả nhiều thiết bị
+
+ Bước 1: Trên màn hình danh sách > Tích chọn checkbox > Click button trả thiết bị
+
+ Bước 2: Hệ thống hiển thị popup xác nhận
+
+ + Click Đồng ý để xác nhận trả thiết bị
+
+ + Click hủy bỏ để quay lại danh sách
+
+ ​​​​​​​3. Tìm kiếm lịch mượn trả thiết bị
+
+ Bước 1: Tại vùng tìm kiếm: nhập/ chọn tiêu chí tìm kiếm > Click button Tìm kiếm/ nhấn Enter để thực hiện tìm kiếm lịch mượn trả thiết bị
+
+ ​​​​​​​4. Xuất excel
+
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel > Thực hiện xuất excel thành công
+
+ Bước 2: Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+ 5. Nhắc nhở trả thiết bị
+
+ 5.1. Nhắc trả 1 thiết bị
+
+ Bước 1: Trên màn hình danh sách > Click icon nhắc nhở trả thiết bị
+
+ Bước 2: Hệ thống hiển thị popup xác nhận
+
+ + Click có để xác nhận nhắc nhở trả thiết bị (sau khi nhắc nhở trả thiết bị thành công thông báo sẽ gửi đến tài khoản giáo viên đang mượn thiết bị)
+
+ + Click không để quay lại danh sách
+
+ 5.2. Nhắc nhở trả nhiều thiết bị
+
+ Bước 1: Trên màn hình danh sách > Click button nhắc trả thiết bị
+
+ Bước 2: Hệ thống hiển thị popup xác nhận
+
+ + Click đồng ý để xác nhận nhắc nhở trả thiết bị (sau khi nhắc nhở trả thiết bị thành công thông báo sẽ gửi đến toàn bộ tài khoản giáo viên đang mượn thiết bị)
+
+ + Click hủy bỏ để quay lại danh sách
+
+==================================================
+

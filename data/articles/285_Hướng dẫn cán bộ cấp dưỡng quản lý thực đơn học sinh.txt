@@ -1,0 +1,80 @@
+### BÀI VIẾT [285]: Hướng dẫn cán bộ cấp dưỡng quản lý thực đơn học sinh
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Bán trú > Cán bộ cấp dưỡng
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/ban-tru/phu-huynh/huong-dan-can-bo-cap-duong-quan-ly-thuc-don-hoc-sinh.html
+
+**Nội dung:**
+Đăng nhập vào tài khoản cán bộ cấp dưỡng >  click module Bán trú
+
+ Trên thanh menu > Click menu Thực đơn > Click Tab Học sinh
+
+ 1. Thêm thực đơn
+
+ Bước 1: Danh sách > Chọn Lớp bán trú > Click icon trên ngày muốn thêm thực đơn.
+
+ Bước 2: Màn hình hiển thị form thêm mới > Nhập/chọn dữ liệu hợp lệ > click button Lưu
+
+ Lưu ý
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Món ăn list dữ liệu có trạng thái hoạt động từ menu khai báo Món ăn
+ Bữa ăn hiển thị theo Quy định bán trú của lớp
+ Trạng thái thay đổi thành chờ phê duyệt ( chỉ thêm được với những ngày tương lai)
+
+ 2. Chỉnh sửa thực đơn
+
+ Bước 1: Danh sách > Chọn Lớp bán trú > Click icon chỉnh sửa trên ngày cần sửa thực đơn
+
+ Bước 2: Màn hình hiển thị form chỉnh sửa > Nhập/chọn dữ liệu hợp lệ > click button Lưu
+
+ 3. Xóa thực đơn
+
+ Bước 1: Danh sách > Click icon xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa bản ghi  thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ 4. Duyệt/Từ chối thực đơn
+
+ Duyệt thực đơn: click button trên cột trạng thái > chọn duyệt để duyệt thực đơn thành công
+
+ Từ chối duyệt: click button trên cột trạng thái > chọn Từ chối duyệt để từ chối duyệt thực đơn này
+
+ 5. Xuất excel
+
+ Danh sách > Click button Xuất excel > Thực hiện xuất excel thành công > Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+ Lưu ý :
+
+ Thực hiện xuất excel > File tải về hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với danh sách
+ Thực hiện tìm kiếm dữ liệu > sau click button Xuất excel > Thì hệ thống trả về file kết quả hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với trên danh sách
+ Thực hiện chọn kiểu sắp xếp danh sách> sau click button Xuất excel > Thì hệ thống trả về file kết quả hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với trên danh sách
+
+ 6. Xuất ảnh thực đơn
+
+ Bước 1: Danh sách > Click button Xuất ảnh thực đơn
+
+ Bước 2:  Màn hình hiển thị form xuất ảnh thực đơn. Cần chọn các thông tin: Thời gian áp dụng, Lớp, Mẫu để hiển thị ảnh thực đơn
+
+ Bước 3: sau khi chọn xong các thông tin, click button Tải xuống để tải ảnh thực đơn về
+
+ Lưu ý
+
+ Cần chọn đầy đủ thông tin để hiện thực đơn
+ Khi chọn đối tượng là học sinh cần chọn thêm Lớp muốn xuất ảnh thực đơn
+ file ảnh tải về có định dạng là .png
+
+ 7. Tìm kiếm thực đơn
+
+ Trên thanh tìm kiếm > Nhập/chọn thông tin cần tìm > Nhấn enter
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+
+==================================================
+

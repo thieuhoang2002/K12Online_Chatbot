@@ -1,0 +1,43 @@
+### BÀI VIẾT [57]: Hướng dẫn giám thị/giáo viên khai báo loại vi phạm
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Quản lý vi phạm > Giám thị/Giáo viên
+- Link gốc: https://hotro.k12online.vn/giam-thi-giao-vien/huong-dan-giam-thi-giao-vien-khai-bao-loai-vi-pham.html
+
+**Nội dung:**
+​
+
+ Bước 1: Đăng nhập bằng tài khoản quản trị trường, giám thị trưởng, giám thị, giáo viên
+
+ Bước 2: Hệ thống link vào trang chủ  > Danh sách ứng dụng > Click module Quản lý học sinh
+
+ Bước 3: Menu Quản lý khai báo > Click menu Loại vi phạm
+
+ 1. Thêm mới loại vi phạm
+
+ Bước 1 : Danh sách > Click button Thêm mới
+
+ Bước 2 : Hiển thị form > Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công
+
+ 2. Chỉnh sửa loại vi phạm
+
+ Bước 1 : Danh sách > Click icon chỉnh sửa
+
+ Bước 2 : Hiển thị form > Nhập đầy đủ thông tin > Click Lưu thực hiện thành công
+
+ 3. Xóa loại vi phạm
+
+ Bước 1: Danh sách > Click icon xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ 4. Tìm kiếm loại vi phạm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ ​
+
+==================================================
+

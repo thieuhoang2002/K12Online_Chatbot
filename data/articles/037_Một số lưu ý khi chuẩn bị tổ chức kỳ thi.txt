@@ -1,0 +1,49 @@
+### BÀI VIẾT [37]: Một số lưu ý khi chuẩn bị tổ chức kỳ thi
+- Chuyên mục: Trang chủ > Câu hỏi thường gặp
+- Link gốc: https://hotro.k12online.vn/cau-hoi-thuong-gap/mot-so-luu-y-khi-chuan-bi-to-chuc-ky-thi.html
+
+**Nội dung:**
+1) Chuẩn bị thật tốt và cẩn thận
+
+ - Khâu tổ chức và thiết lập kỳ thi, đề thi của Nhà trường rất quan trọng vì sẽ quyết định hình thức thi sẽ diễn ra như thế nào và những gì học sinh có thể làm trong quá trình thi.
+
+ 2) Các thông tin nhà trường có thể thiết lập
+
+ Dưới đây là các thông tin mà nhà trường có thể thiết lập được trên hệ thống K12Online cấp trường:
+
+ - Quy mô thi: thi tự do (HS trong khối của toàn trường là được thi) hay thi chính quy (chỉ HS nào mà nhà trường đăng ký được thi thì mới được thi);
+
+ - Hình thức thi: Thi tập trung (tất cả thí sinh làm bài cùng 1 lúc) hay thi phân tán (học sinh tuỳ ý thi miễn trong khoảng thời gian cho phép);
+
+ - Khi nào HS được xem đáp án, lời giải: ngay sau khi nộp bài hay khi nào đề thi kết thúc.
+
+ 3) Yêu cầu học sinh kiểm tra đã nhìn thấy đề thi trước khi diễn ra
+
+ Với kỳ thi tổ chức dạng chính quy, nhà trường lưu ý kiểm tra lại thật kỹ phiếu đăng ký dự thi, nếu phiếu đăng ký dự thi của học sinh nào chưa được duyệt thì học sinh đó sẽ không nhìn thấy đề thi và không thể thực hiện bài thi đó.
+
+ 4) Kiểm tra thật kỹ câu hỏi
+
+ - Kiểm tra lại thật kỹ nội dung câu hỏi, đáp án và toàn bộ nội dung đề thi để tránh các sai sót có thể xảy ra.
+
+ 5) Lưu ý khi tạo bộ mã đề
+
+ Nên tạo sẵn ra bộ mã đề (tùy quy mô và mục đính thi, khuyến nghị chỉ nên tạo từ 3-10 mã đề thi/đề thi để cho dễ kiểm tra và theo dõi).
+
+ Lưu ý: Luôn luôn nhớ phải tạo lại bộ mã đề nếu có bất kỳ thay đổi nào liên quan đến cấu hình điểm và nội dung của đề thi.
+
+ 6) Lưu ý với đề thi có câu tự luận
+
+ - Với những đề thi có câu tự luận, lưu ý phần cấu hình điểm cho từng câu. Nếu không nhập điểm, hệ thống mặc định sẽ chia đều.
+
+ - Với các bài thi tự luận, nhà trường có thể phân công cho GV nào được chấm thi trên hệ thống. Việc phân công chấm thi sẽ hoàn toàn khách quan, công bằng do thông tin cá nhân của học sinh trên bài thi đã bị ẩn.
+
+ 7) Kiểm tra lại cấu hình điểm cho từng câu
+
+ - Với đề có sử dụng các câu phức, đọc hiểu. Mỗi 1 câu đó hệ thống đang hiểu  là 1 câu, chứ không phải tổng số câu hỏi nhỏ trong câu đó. Do vậy, kiểm tra lại cấu hình điểm để tránh sai sót.
+
+ 8) Luôn chuẩn bị phương án dự phòng
+
+ - Luôn chuẩn bị phương án dự phòng để cho các trường hợp học sinh không tham gia thi được vì các lý do khách quan như mất kết nối; trục trặc máy móc...
+
+==================================================
+

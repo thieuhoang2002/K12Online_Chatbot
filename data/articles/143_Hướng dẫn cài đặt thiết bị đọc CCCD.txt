@@ -1,0 +1,11 @@
+### BÀI VIẾT [143]: Hướng dẫn cài đặt thiết bị đọc CCCD
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Thi online xác thực CCCD > Nhà trường
+- Link gốc: https://hotro.k12online.vn/mo-hinh-21/huong-dan-cai-dat-thiet-bi-doc-cccd.html
+
+**Nội dung:**
+Bước 1: Cài đặt môi trường
+
+ - Download và cài runtime-desktop
+
+==================================================
+

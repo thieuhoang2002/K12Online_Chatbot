@@ -1,0 +1,74 @@
+### BÀI VIẾT [320]: Hướng dẫn nhà trường khai báo trạng thái câu lạc bộ
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Câu lạc bộ > Nhà trường
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/clb/nha-truong/huong-dan-nha-truong-khai-bao-trang-thai-cau-lac-bo.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản Nhà trường
+
+ Bước 2: Trang chủ  > Click vào module Câu lạc bộ > Vào menu Quản lý khai báo  > Click Trạng thái câu lạc bộ
+
+ 1. Thêm mới trạng thái CLB
+
+ Bước 1 : Danh sách > Click button Thêm mới
+
+ Bước 2 : Hiển thị form > Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công
+
+ 2. Chỉnh sửa trạng thái CLB
+
+ Bước 1 : Danh sách > Click icon chỉnh sửa
+
+ Bước 2 : Hiển thị form > Nhập đầy đủ thông tin > Click Lưu thực hiện chỉnh sửa thành công
+
+ 3. Xóa trạng thái CLB
+
+ C1 : Xóa 1 bản ghi
+
+ Bước 1 : Danh sách > Click icon xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ C2 : Xóa nhiều bản ghi
+
+ Bước 1 : Danh sách > Click checkbox all > click button Xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ ​​​​​​​4. Tìm kiếm trạng thái CLB
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+ ​​​​​​​5. Xuất excel
+
+ Danh sách  Click button Xuất excel > File excel được tải về
+
+ Lưu ý :
+
+ Thực hiện xuất excel > File tải về hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với danh sách
+ + Thực hiện chọn kiểu sắp xếp danh sách> sau click button Xuất excel > Thì hệ thống trả về file kết quả hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với trên danh sách
+
+ ​​​​​​​6. Nhập excel
+
+ Bước 1: Danh sách > Click button Nhập excel
+
+ Bước 2: Hiển thị form nhập > Tải file lên > Click button Nhập excel thực hiện thêm mới excel thành công.
+
+ Lưu ý :
+
+ Tải file không đúng định dạng , Tải file đúng file mẫu lên hệ thống đưa ra thông báo lỗi
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc upload file lên  hệ thống trả về 1 file kết quả và thông báo lỗi
+
+==================================================
+

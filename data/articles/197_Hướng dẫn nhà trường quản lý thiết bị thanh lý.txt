@@ -1,0 +1,54 @@
+### BÀI VIẾT [197]: Hướng dẫn nhà trường quản lý thiết bị thanh lý
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Cơ sở vật chất > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong4/huong-dan-nha-truong-quan-ly-thiet-bi-thanh-ly.html
+
+**Nội dung:**
+​​​​​​ Bước 1: Menu Quản lý CSVC > Click tab Thiết bị thanh lý
+
+ Bước 2: Hiển thị màn hình danh sách thiết bị
+
+ Click Sắp xếp theo > Chọn kiểu sắp xếp > Hiển thị danh sách theo trạng thái sắp xếp.
+ Click icon chi tiết thiết bị để xem chi tiết thiết bị
+ Click icon xem chi tiết phiếu đề xuất liên quan để thực hiện xem chi tiết phiếu đề xuất liên quan
+ Tải lại
+ Trên danh sách > click button Tải lại > Thực hiện tải lại danh sách.
+
+ Sắp xếp
+ Trên danh sách > click button Sắp xếp theo > Chọn kiểu sắp xếp> Hiển thị danh sách theo trạng thái sắp xếp.
+
+ Phân trang
+ Trên màn hình: hiển thị phân trang ở phía dưới bên phải màn khi danh sách có > 20 bản ghi
+ + Click icon << (>>) để chuyển đến trang trước đó (trang tiếp theo)
+
+ + Click icon << << (>> >>) để chuyển đến trang đầu tiên (trang cuối cùng)
+
+ Tổng số bản ghi
+ Bước 1: Trên màn hình danh sách > Xem tổng số bản ghi.
+
+ 2. Xem chi tiết thiết bị
+
+ Bước 1: Trên màn hình danh sách > Click icon Chi tiết thiết bị
+
+ Bước 2: Hiển thị màn hình chi tiết thiết bị thành công
+
+ Thông tin thiết bị: Hiển thị thông tin của thiết bị đang xem chi tiết.
+ Lịch sử thiết bị: Hiển thị lịch sử tác động thiết bị đang xem chi tiết.
+
+ 3. Xem phiếu liên quan
+
+ Bước 1: Trên màn hình danh sách > Click icon xem phiếu liên quan
+
+ Bước 2: Hiển thị chi tiết phiếu liên quan thành công
+
+ ​​​​​​​4. Tìm kiếm
+
+ Bước 1: Trên màn hình danh sách > Tại vùng tìm kiếm: Nhập/Chọn tiêu chí tìm kiếm > Click button Tìm kiếm để thực hiện tìm kiếm
+
+ ​​​​​​​5. Xuất excel
+
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel > Thực hiện xuất excel thành công > Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+ Bước 2: Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+==================================================
+

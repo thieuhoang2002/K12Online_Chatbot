@@ -1,0 +1,19 @@
+### BÀI VIẾT [212]: Hướng dẫn phụ huynh điểm danh học sinh
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Điểm danh > Phụ huynh HS
+- Link gốc: https://hotro.k12online.vn/phu-huynh-hs2/huong-dan-phu-huynh-diem-danh-hoc-sinh.html
+
+**Nội dung:**
+1. Xem danh sách điểm danh
+
+ Bước 1: Truy cập menu Điểm danh
+
+ Bước 2: Hiển thị màn hình danh sách điểm danh của học sinh
+ Tải lại
+ Trên danh sách > click button Tải lại > Thực hiện tải lại danh sách.
+
+ 2. Tìm kiếm học sinh điểm danh
+
+ Bước 1: Tại vùng tìm kiếm: nhập/ chọn tiêu chí tìm kiếm > Click button Tìm kiếm/ nhấn Enter để thực hiện tìm kiếm học sinh điểm danh
+
+==================================================
+

@@ -1,0 +1,81 @@
+### BÀI VIẾT [114]: Hướng dẫn Nhà trường khởi tạo và quản lý tài khoản K12Online
+- Chuyên mục: Trang chủ > Cấu hình chung > Tài khoản > Nhà trường
+- Link gốc: https://hotro.k12online.vn/huong-dan-nha-truong-khoi-tao-va-quan-ly-tai-khoan.html
+
+**Nội dung:**
+1. Khởi tạo, đăng ký sử dụng dịch vụ
+
+ Các đơn vị có nhu cầu sử dụng hệ thống K12Online, vui lòng liên hệ nhân viên Viettel tỉnh/tp để được khởi tạo và hỗ trợ. Thông tin cần cung cấp như sau;
+
+ - Tên trường;
+
+ - Mã trường (theo Bộ GD&ĐT quy định);
+
+ - Đơn vị trực thuộc;
+
+ - Tỉnh/thành phố trực thuộc.
+
+ Để tạo tài khoản cho giáo viên và học sinh, nhà trường làm theo hướng dẫn sau:
+
+ 2. Nghiệp vụ tạo tài khoản (với các trường dùng SMAS)
+
+ Bước 1: Chuẩn hoá thông tin tài khoản
+
+ - Nhà trường lưu ý chuẩn hóa lại thông tin giáo viên, học sinh trên hệ thống SMAS trước khi nộp dữ liệu SSO.
+
+ 1.1. Giáo viên:
+
+ - Họ và tên (*);
+
+ - Giới tính (*);
+
+ - Ngày sinh (*);
+
+ - Email (*): Lưu ý, nhập chính xác email của giáo viên và địa chỉ email là duy nhất vì đây sẽ là tài khoản K12Online của giáo viên đó;
+
+ - Điện thoại;
+
+ - Địa chỉ;
+
+ - CMND/CCCD (*).
+
+ 1.2. Học sinh:
+
+ - Họ và tên (*);
+
+ - Giới tính (*);
+
+ - Lớp (*);
+
+ - Ngày sinh (*);
+
+ - Họ và tên mẹ;
+
+ - Năm sinh của mẹ;
+
+ - Số điện thoại của mẹ;
+
+ - Họ và tên người giám hộ;
+
+ - Năm sinh người giám hộ.
+
+ Lưu ý: Học sinh bắt buộc phải có thông tin họ và tên và năm sinh của mẹ hoặc người giám hộ mới tạo được tài khoản.
+
+ Bước 2: Nộp dữ liệu từ SMAS
+
+ - Vào mục Hệ thống => Chọn Nộp dữ liệu SSO và tiến hành nộp dữ liệu:
+
+ - Nộp dữ liệu lớp học (Lưu ý: Nộp dữ liệu lớp học trước rồi mới nộp học sinh);
+
+ - Nộp dữ liệu học sinh;
+
+ - Nộp dữ liệu giáo viên.
+
+ Lưu ý: SSO chỉ khởi tạo tài khoản cho những học sinh có đầy đủ thông tin hợp lệ và trạng thái đang học.
+
+ Bước 3: Đồng bộ tài khoản về K12Online:
+
+ - Nhà trường vào K12Online => Chọn module Tài khoản
+
+==================================================
+

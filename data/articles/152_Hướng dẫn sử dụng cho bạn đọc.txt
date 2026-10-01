@@ -1,0 +1,328 @@
+### BÀI VIẾT [152]: Hướng dẫn sử dụng cho bạn đọc
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Thư viện số > Học sinh
+- Link gốc: https://hotro.k12online.vn/nha-truong/huong-dan-su-dung-ban-doc.html
+
+**Nội dung:**
+HƯỚNG DẪN SỬ DỤNG CÁC CHỨC NĂNG HỆ THỐNG
+
+ Đăng nhập vào hệ thống
+
+ Bước 1: Vào trang
+
+ Bước 2: Nhập tên đăng nhập và mật khẩu
+
+ Bước 3: Click button đăng nhập
+
+ Tra cứu
+
+ Bước 1: Đăng nhập tài khoản giáo viên/học sinh vào hệ thống
+
+ Bước 2: Chọn menu Tra cứu
+
+ Tìm kiếm
+
+ Bước 1: Trên vùng tìm kiếm
+
+ Bước 2: Nhập / chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn.
+
+ Xem chi tiết sách
+
+ Bước 1: Trên màn hình danh sách > Click 1 quyển sách
+
+ Bước 2: Hiển thị màn hình chi tiết sách
+
+ + Click icon để thực hiện yêu thích sách/bỏ yêu thích sách
+
+ + Click nút Xem chi tiết để xem thông tin chi tiết sách
+
+ + Click nút Xem MARC để xem thông tin MARC
+
+ + Click nút Ebook để xem file sách (file .pdf)
+
+ + Click nút Audio để xem file audio của sách
+
+ + Click nút Link chi tiết để mở Link chi tiết của sách
+
+ + Click nút Lưu sách để thêm sách vào danh mục Sách đã lưu
+
+ + Click vào Chi tiết để xem danh sách Tình trạng sách
+
+ Viết đánh giá sách
+
+ Bước 1: Trên màn hình chi tiết sách > Click button Viết đánh giá
+
+ Bước 2: Nhập/Chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click button Gửi để gửi đánh giá
+
+ Chỉnh sửa đánh giá (Khi đã thực hiện đánh giá)
+
+ Bước 1: Trên màn hình danh sách > Click button Chỉnh sửa đánh giá
+
+ Bước 2: Nhập/Chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click Gửi để chỉnh sửa đánh giá
+
+ Phản hồi đánh giá
+
+ Bước 1: Trên màn hình chi tiết > Click icon Phản hồi
+
+ Bước 2: Nhập đầy đủ trường bắt buộc (là cá trường có dấu *) > Click button Gửi để gửi phản hồi
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Xóa đánh giá
+
+ Bước 1: Trên màn hình chi tiết > Click icon Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa đánh giá
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Mượn sách màn tra cứu
+
+ Cách 1: Mượn sách trong màn tra cứu
+
+ Bước 1: Trên màn hình danh sách > Hover vào 1 quyển sách > Click button Mượn sách
+
+ Bước 2: Nhập/Chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click Lưu để thực hiện mượn sách
+
+ (Click nút +Thêm nếu muốn mượn nhiều quyển)
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Số lượng mượn, Ngày mượn, Ngày hẹn trả phải nằm trong quy định của thư viện đặt ra
+
+ Cách 2: Mượn sách trong màn Xem chi tiết sách
+
+ Bước 1: Trên màn hình danh sách > Click 1 quyển sách
+
+ Bước 2: Click button Mượn sách
+
+ Bước 3: Nhập/Chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click Lưu để mượn sách. Click nút +Thêm nếu muốn mượn nhiều sách
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Số lượng mượn, Ngày mượn, Ngày hẹn trả phải nằm trong quy định của thư viện đặt ra
+
+ Yêu thích sách
+
+ Bước 1: Trên màn hình danh sách > Click icon hình trái tim trên học liệu
+
+ Bước 2: Sách được thêm vào danh mục Sách yêu thích
+
+ Để bỏ yêu thích sách click lại vào icon hình trái tim trên sách đã yêu thích
+
+ Quản lý mượn, trả
+
+ Bước 1: Đăng nhập tài khoản giáo viên/học sinh vào hệ thống
+
+ Bước 2: Chọn menu quản lý mượn, trả
+
+ Mượn sách
+
+ Bước 1: Tại menu Quản lý mượn trả > Chọn danh mục Mượn sách
+
+ Bước 2: Hiển thị màn hình danh sách
+
+ Danh sách phiếu mượn
+
+ Bước 1: Tại mục Mượn sách > Click tab Danh sách phiếu mượn
+
+ Thêm mới phiếu mượn
+ Bước 1: Trên màn hình danh sách > Click button Thêm mới
+
+ Bước 2: Nhập/Chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > Click Lưu để thực hiện thêm phiếu mượn
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Ngày mượn, ngày hẹn trả, số lượng mượn phải tuân theo quy định của thư viện
+
+ Chỉnh sửa phiếu mượn
+ Bước 1: Trên màn hình danh sách > Click icon chỉnh sửa
+
+ Bước 2: Nhập/chọn đầy đủ các trường bắt buộc (là các trường có dấu *) > click Lưu để chỉnh sửa phiếu mượn
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Ngày mượn, ngày hẹn trả, số lượng mượn phải tuân theo quy định của thư viện
+
+ Xem chi tiết phiếu mượn
+ Bước 1: Trên màn hình danh sách > Click vào icon Xem chi tiết
+
+ Bước 2: Hiển thị màn hình xem chi tiết
+
+ Tìm kiếm phiếu mượn
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập/Chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn
+
+ Xuất excel
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Hủy mượn
+ Bước 1: Trên màn hình danh sách > Click vào icon Hủy mượn
+
+ Bước 2: Nhập đầy đủ trường bắt buộc (là các trường có dấu *) > Click button Hủy mượn để thực hiện hủy mượn
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Hủy mượn hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Xóa phiếu mượn
+ Cách 1: Xóa 1 bản ghi
+
+ Bước 1: Trên màn hình danh sách > Click icon Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa phiếu mượn
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều bản ghi
+
+ Bước 1: Click checkbox đầu danh sách > Click button Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa phiếu mượn
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Quản lý lịch mượn trả
+
+ Bước 1: Tại mục mượn sách > Click tab Quản lý lịch mượn trả
+
+ Tìm kiếm lịch mượn trả
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập/Chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn
+
+ Xuất excel
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Bạn đọc tại chỗ
+
+ Bước 1: Tại menu Quản lý mượn trả > Chọn mục Bạn đọc tại chỗ
+
+ Bước 2: Hiển thị danh sách lượt đọc tại chỗ
+
+ Tìm kiếm lượt đọc tại chỗ
+
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập/Chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn.
+
+ Xuất excel
+
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Gia hạn sách
+
+ Bước 1: Tại menu Quản lý mượn trả > Click mục Gia hạn sách
+
+ Bước 2: Hiển thị danh sách phiếu gia hạn
+
+ Gia hạn sách
+
+ Bước 1: Trên màn hình danh sách > Click button Gia hạn
+
+ Bước 2: Nhập/Chọn đầy đủ các trường bắt buộc (là các trường co dấu *) > Click button Gia hạn để thêm mới gia hạn
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Hủy mượn hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Ngày hẹn trả mới phải lớn hơn ngày hẹn trả cũ (nếu tồn tại phiếu gia hạn đang chờ duyệt rồi thì không gia hạn được)
+
+ Gia hạn khi bản ghi mượn sách đang ở trạng thái quá hạn
+
+ Chỉnh sửa gia hạn sách
+
+ Bước 1: Trên màn hình danh sách > Click icon Chỉnh sửa
+
+ Bước 2: Nhập/Chọn các trường bắt buộc (là trường có dấu *) > Click button Gia hạn để thực hiện chỉnh sửa gia hạn
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+
+ Bỏ trống các trường bắt buộc khi click button Hủy mượn hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+
+ Ngày hẹn trả mới phải lớn hơn ngày hẹn trả cũ (nếu tồn tại phiếu gia hạn đang chờ duyệt rồi thì không gia hạn được)
+
+ Xem chi tiết gia hạn sách
+
+ Bước 1: Trên màn hình danh sách > Click icon Xem chi tiết
+
+ Bước 2: Hiển thị màn hình xem chi tiết
+
+ Tìm kiếm gia hạn sách
+
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập/Chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn.
+
+ Xuất excel
+
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel => Thực hiện xuất excel thành công. Dữ liệu được xuất ra khớp với dữ liệu có trên danh sách
+
+ Xóa gia hạn sách
+
+ Cách 1: Xóa 1 bản ghi
+
+ Bước 1: Trên màn hình danh sách > Click icon Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa gia hạn sách
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Cách 2: Xóa nhiều bản ghi
+
+ Bước 1: Click checkbox đầu danh sách > Click button Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa:
+
+ + Click button “Xóa” để thực hiện xóa gia hạn sách
+
+ + Click button “Hủy bỏ” để hủy bỏ thao tác xóa
+
+ Phạt vi phạm
+
+ Bước 1: Tại menu Quản lý mượn trả > Chọn mục Phạt vi phạm
+
+ Bước 2: Hiển thị danh sách phạt vi phạm
+
+ Tìm kiếm phạt vi phạm
+
+ Bước 1: Trên màn hình danh sách > Trên vùng tìm kiếm
+
+ Bước 2: Nhập/Chọn đầy đủ thông tin lên trường bộ lọc > Click button Tìm kiếm, thực hiện tìm kiếm thành công => Danh sách trả về kết quả tìm kiếm theo tiêu chí đã nhập/chọn
+
+==================================================
+

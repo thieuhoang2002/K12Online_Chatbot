@@ -1,0 +1,151 @@
+### BÀI VIẾT [374]: Hướng dẫn nhà trường quản lý hồ sơ sức khỏe cán bộ
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Y tế > Nhà trường
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/y-te/nha-truong/huong-dan-nha-truong-quan-ly-ho-so-suc-khoe-can-bo.html
+
+**Nội dung:**
+1. Xem danh sách hồ sơ sức khỏe cán bộ
+
+ Bước 1 : Click xem danh sách hồ sơ sức khỏe > tab Hồ sơ sức khỏe cán bộ
+
+ 2. Tìm kiếm hồ sơ sức khỏe cán bộ
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn
+
+ 3. Xem chi tiết hồ sơ sức khỏe cán bộ
+
+ Bước 1: Trên màn hình danh sách > click icon xem chi tiết
+
+ Bước 2: Hiển thị chi tiết hồ sơ sức khỏe cán bộ
+
+ 3.1. Thông tin chung
+
+ Trên màn hình danh sách > click icon xem chi tiết > click tab Thông tin chung
+
+ 3.2. Thông tin BHYT
+
+ Trên màn hình danh sách > click icon xem chi tiết > click tab Thông tin BHYT
+
+ ​​​​​​​3.3. Thông tin tiêm chủng
+
+ Bước 1:Trên màn hình danh sách > click icon xem chi tiết > click tab Thông tin tiêm chủng
+
+ 3.2.1. Cập nhật thông tin tiêm chủng
+
+ Bước 1:Click button Cập nhật hoặc icon chỉnh sửa
+
+ Bước 2: Bước 2: Nhập/chọn đầy đủ , hợp lệ các trường bắt buộc > Click Lưu để cập nhật tông tin bảo hiểm
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường thời gian khám bệnh thuộc thời gian đợt khám và không lớn hơn thời gian hiện tại
+ Click Lưu bản ghi hiển thị bên ngoài danh sách
+ 3.2.2. Tìm kiếm thông tin tiêm chủng
+
+ Bước 1 : Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn
+
+ Lưu ý : +  Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+
+ + Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo điều kiện tìm kiếm
+
+ ​​​​​​​4. Thông tin bệnh
+
+ Bước 1:Trên màn hình danh sách > click icon xem chi tiết > click tab Thông bệnh
+
+ ​​​​​​​
+
+ 4.1. Bệnh mãn tính
+
+ 4.1.1. Thêm mới bệnh mãn tính
+
+ Bước 1: Click button thêm mới > thêm mới bệnh mãn tính
+
+ Bước 2: Nhâp/chọn hợp lệ, đầy đủ các trường bắt buộc > click lưu để thêm mới bệnh mãn tính
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường thời điểm phát hiện bệnh nhỏ hơn hoặc bằng thời gian khám
+ Trường ngày ra viện nhỏ hơn hoặc bằng ngày ra viện
+ Click Lưu bản ghi hiển thị bên ngoài danh sách
+ 4.1.2. Chỉnh sửa bệnh mãn tính
+
+ Bước 1:Click icon chỉnh sửa > chỉnh sửa bệnh mãn tính
+
+ Bước 2: Nhập/chọn đầy đủ , hợp lệ các trường bắt buộc > click Lưu để chỉnh sửa
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường thời điểm phát hiện bệnh nhỏ hơn hoặc bằng thời gian khám
+ Trường ngày ra viện nhỏ hơn hoặc bằng ngày ra viện
+ Click Lưu bản ghi hiển thị bên ngoài danh sách
+ 4.1.3. Xóa bệnh mãn tính
+
+ Cách 1: Click icon xóa > hiển thị popup xóa
+
+ Cách 2: Click checkbox đầu bản ghi > click button xóa > hiển thị popup xóa
+
+ 4.1.4. Tìm kiếm bệnh mãn tính
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn
+
+ Lưu ý :
+
+ +  Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+
+ + Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo điều kiện tìm kiếm
+
+ 4.2. Bệnh truyền nhiễm
+
+ 4.2.1. Thêm mới bệnh truyền nhiễm
+
+ Bước 1: Click button thêm mới > thêm mới bệnh  truyền nhiễm
+
+ Bước 2: Bước 2: Nhâp/chọn hợp lệ, đầy đủ các trường bắt buộc > click lưu để thêm mới bệnh truyền nhiễm
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường thời điểm phát hiện bệnh nhỏ hơn hoặc bằng thời gian khám
+ Trường ngày ra viện nhỏ hơn hoặc bằng ngày ra viện
+ Click Lưu bản ghi hiển thị bên ngoài danh sách
+ 4.2.2. Chỉnh sửa bệnh truyền nhiễm
+
+ Bước 1:Click icon chỉnh sửa > chỉnh sửa bệnh truyền nhiễm
+
+ Bước 2: Nhập/chọn đầy đủ , hợp lệ các trường bắt buộc > click Lưu để chỉnh sửa
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường thời điểm phát hiện bệnh nhỏ hơn hoặc bằng thời gian khám
+ Trường ngày ra viện nhỏ hơn hoặc bằng ngày ra viện
+ Click Lưu bản ghi hiển thị bên ngoài danh sách
+ 4.2.3. Xóa bệnh truyền nhiễm
+
+ Cách 1: Click icon xóa > hiển thị popup xóa
+
+ Cách 2: Click checkbox đầu bản ghi > click button xóa > hiển thị popup xóa
+
+ 4.2.4. Tìm kiếm bệnh truyền nhiễm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn
+
+ Lưu ý :
+
+ +  Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+
+ + Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo điều kiện tìm kiếm
+
+ ​​​​​​​5. Kết quả khám
+
+ Click xem chi tiết hồ sơ sức khỏe cán bộ> click tab kết quả khám
+
+==================================================
+

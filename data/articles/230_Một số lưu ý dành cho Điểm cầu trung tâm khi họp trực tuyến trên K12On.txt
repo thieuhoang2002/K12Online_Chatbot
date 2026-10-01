@@ -1,0 +1,51 @@
+### BÀI VIẾT [230]: Một số lưu ý dành cho Điểm cầu trung tâm khi họp trực tuyến trên K12Online
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Họp trực tuyến
+- Link gốc: https://hotro.k12online.vn/so-phong/luu-y-danh-cho-diem-cau-trung-tam-khi-hop-truc-tuyen-tren-k12online.html
+
+**Nội dung:**
+Dưới đây là một số lưu ý dành cho điểm cầu trung tâm khi tham gia chủ trì, điều hành cuộc họp trực tuyến trên K12Online.
+
+ 1. Micro
+
+ - Check lại micro của tại chỗ ngồi của các đại biểu ngồi mà sẽ phát biểu trong cuộc họp sắp tới (Đặc biệt là vị trí của chủ trì cuộc họp và các đại biểu liên quan tại điểm cầu trung tâm mà sẽ phát biểu, chỉ đạo):
+
+ - Kiểm tra micro đã kết nối OK chưa, bắt âm thanh tốt chưa, có bị rè, vang, nhỏ, khó nghe không.
+
+ - Nếu chưa OK thì điều chỉnh hoặc cần nhắn trước để các lãnh đạo chú ý nói điều chỉnh âm lượng phù hợp để các điểm cầu tham gia nghe rõ hơn.
+
+ 2. Webcam
+
+ - Check lại camera của điểm cầu trung tâm xem đã chiếu chính diện vị trí ngồi của chủ trì cuộc họp chưa.
+
+ 3. Slide trình chiếu
+
+ - Đảm bảo tất cả slide trình bày, video trình chiếu đã được copy và lưu về máy tính điều khiển cuộc họp của điểm cầu trung tâm.
+
+ - Các slide, video đánh số thứ tự từ 01 đến tăng dần theo timeline của chương trình họp.
+
+ - Khi cần kỹ thuật viên của điểm cầu trung tâm bật lên là xong.
+
+ 4. Lưu ý khi trình chiếu slide
+
+ - Đảm bảo file trình chiếu không có các font chữ đặc biệt mà máy tính của người điều khiển không có.
+
+ - Nếu không có font đó, thì người điều khiển yêu cầu người gửi slide gửi font để cài bổ sung, không lỗi hiển thị khi trình chiếu.
+
+ - Mở sẵn file trình chiếu trước 5-10 phút trước khi đến phần cần trình chiếu slide;
+
+ - Khi nào người điều hành cuộc họp bảo bật chỉ việc nhấn Trình chiếu là xong. Hạn chế thời gian chờ đợi, thời gian trống.
+
+ - Chuyển lên màn hình thứ 2 để các điểm cầu tham gia nhìn thấy, và màn hình của máy điều khiển vẫn hiện các thao tác liên quan đến điều hành các điểm cầu tham gia.
+
+ 5. Lưu ý khi trình chiếu video
+
+ - Mở sẵn file video trên máy tính.
+
+ - Khi nào người điều hành cuộc họp bảo bật chỉ việc chia sẻ nhấn Play là xong. Hạn chế thời gian chờ đợi, thời gian trống.
+
+ - Khi chia sẻ video, nhớ chọn đúng tab chia sẻ và tick chọn chế "Tối ưu chia sẻ màn hình đối với chia sẻ video" và "Chia sẻ âm thanh máy tính"
+
+ - Khi video sắp kết thúc. Căn thời gian để nhấn Stop luôn và Dừng chia sẻ video .
+
+==================================================
+

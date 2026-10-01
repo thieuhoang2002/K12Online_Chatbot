@@ -1,0 +1,31 @@
+### BÀI VIẾT [160]: Tạo kỳ thi cấp trường trên K12Online
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong/tao-ky-thi-cap-truong.html
+
+**Nội dung:**
+Tính năng khảo thí là tính năng cho phép Nhà trường tổ chức những kỳ thi kiểm tra, đánh giá cấp trường một cách độc lập, khách quan với quy mô cấp trường.
+
+ I. Giới thiệu các dạng kỳ thi trên K12Online
+
+ Hệ thống K12Online có nhiều dạng kỳ thi với nhiều loại cấu hình linh hoạt để có thể đáp ứng được tối đa nhu cầu của nhà trường khi muốn tổ chức một kỳ thi khảo thí độc lập.
+
+ Có 2 loại kỳ thi chính trên K12Online:
+
+ 1. Kỳ thi chính quy
+
+ Kỳ thi chính quy là kỳ thi yêu cầu nhà trường phải thực hiện
+
+ a) Ưu điểm
+
+ - Nhà trường tổ chức thi cho đúng đối tượng học sinh mà mình mong muốn.
+
+ - Có menu Danh sách học sinh để kiểm soát được học sinh đã làm bài hay chưa làm bài.
+
+ - Có tính năng Xếp phòng thi nếu nhà trường muốn tổ chức thi trực tuyến theo phòng khác nhau, phù hợp với những trường muốn tổ chức thi trực tuyến tập trung và có phân công giám thị coi thi trực tiếp.
+
+ b) Hạn chế
+
+ - Nhà trường cần phải đăng ký và duyệt thí sinh dự thi trước khi diễn ra. Nếu không, học sinh sẽ không được phép dự thi.
+
+==================================================
+

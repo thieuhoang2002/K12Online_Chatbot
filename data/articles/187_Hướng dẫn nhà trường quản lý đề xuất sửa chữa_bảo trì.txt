@@ -1,0 +1,85 @@
+### BÀI VIẾT [187]: Hướng dẫn nhà trường quản lý đề xuất sửa chữa/bảo trì
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Cơ sở vật chất > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong4/huong-dan-nha-truong-quan-ly-de-xuat-sua-chua-bao-tri.html
+
+**Nội dung:**
+1. Danh sách phiếu đề xuất sửa chữa/bảo trì
+
+ Bước 1: Menu Quản lý đề xuất > Chọn tab Đề xuất sửa chữa/bảo trì
+
+ Bước 2: Hiển thị danh sách đề xuất sửa chữa/bảo trì
+
+ Click Sắp xếp theo > Chọn kiểu sắp xếp > Hiển thị danh sách theo trạng thái sắp xếp.
+ Click icon xem chi tiết để thực hiện xem chi tiết phiếu đề xuất
+ Click icon duyệt để thực hiện duyệt phiếu đề xuất
+ Click icon không duyệt để thực hiện từ chối duyệt phiếu đề xuất
+ Tải lại
+ Trên danh sách > click button Tải lại > Thực hiện tải lại danh sách.
+
+ Sắp xếp
+ Trên danh sách > click button Sắp xếp theo > Chọn kiểu sắp xếp> Hiển thị danh sách theo trạng thái sắp xếp.
+
+ Phân trang
+ Trên màn hình: hiển thị phân trang ở phía dưới bên phải màn khi danh sách có > 20 bản ghi
+ + Click icon << (>>) để chuyển đến trang trước đó (trang tiếp theo)
+
+ + Click icon << << (>> >>) để chuyển đến trang đầu tiên (trang cuối cùng)
+
+ Tổng số bản ghi
+ Bước 1: Trên màn hình danh sách > Xem tổng số bản ghi.
+
+ 2. Duyết phiếu đề xuất sửa chữa/bảo trì
+
+ Bước 1: Trên danh sách > Click icon duyệt
+
+ Bước 2: Hiển thị màn hình duyệt phiếu đề xuất sửa chữa/bảo trì.
+
+ Bước 3: Chọn người phụ trách sửa chữa: Hiển thị danh sách giáo viên
+ Bước 4: Click chọn Ý kiến: Đồng ý sửa/Không đồ ý sửa
+ Bước 5: Click button Duyệt để duyệt phiếu đề xuất sửa chữa/bảo trì
+ Bước 6: Hệ thống hiển thị popup xác nhận
+
+ Click Xác nhận duyệt để duyệt phiếu đề xuất sửa chữa/bảo trì, phiếu chuyển sang trạng thái đã duyệt
+ Click Hủy bỏ để đóng popup Xác nhận duyệt
+
+ ​​​​​​​3. Từ chối phiếu đề xuất sửa chữa/bảo trì
+
+ Cách 1:
+
+ Bước 1: Trên danh sách > Click icon từ chối duyệt phiếu đề xuất
+
+ Bước 2: Hệ thống hiển thị popup xác nhận
+
+ Bước 3: Nhập lý do từ chối đề xuất sửa chữa/bảo trì
+ Bước 3: Click Xác nhận từ chối để hoàn thành việc từ chối đề xuất sửa chữa/bảo trì, phiếu đề xuất chuyển sang trạng thái không duyệt
+ Click Đóng để quay lại màn hình danh sách
+ Cách 2:
+
+ Bước 1: Trên danh sách > Click icon duyệt
+
+ Bước 2: Hiển thị màn hình duyệt phiếu đề xuất sửa chữa/bảo trì.
+
+ Bước 3: Hệ thống hiển thị popup xác nhận
+
+ Bước 3: Nhập lý do từ chối đề xuất sửa chữa/bảo trì
+ Bước 4: Click Xác nhận từ chối để hoàn thành việc từ chối đề xuất sửa chữa/bảo trì, phiếu đề xuất chuyển sang trạng thái không duyệt
+ Click Đóng để quay lại màn hình danh sách
+
+ ​​​​​​​4. Xem chi tiết phiếu đề xuất sửa chữa/bảo trì
+
+ Bước 1: Trên màn hình danh sách > Click icon xem chi tiết phiếu đề xuất
+
+ Bước 2: Màn hình hiển thị chi tiết phiếu đề xuất
+
+ ​​​​​​​5. Tìm kiếm phiếu đề xuất sửa chữa/bảo trì
+
+ Bước 1: Tại vùng tìm kiếm: nhập/ chọn tiêu chí tìm kiếm > Click button Tìm kiếm/ nhấn Enter để thực hiện tìm kiếm phiếu đề xuất
+
+ ​​​​​​​6. Xuất excel phiếu đề xuất sửa chữa/bảo trì
+
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel > Thực hiện xuất excel thành công > Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+ Bước 2: Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+==================================================
+

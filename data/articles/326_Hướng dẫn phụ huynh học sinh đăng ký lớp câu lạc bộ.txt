@@ -1,0 +1,54 @@
+### BÀI VIẾT [326]: Hướng dẫn phụ huynh học sinh đăng ký lớp câu lạc bộ
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Câu lạc bộ > Phụ huynh HS
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/clb/phu-huynh-hs/huong-dan-phu-huynh-hoc-sinh-dang-ky-lop-cau-lac-bo.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản phụ huynh
+
+ Bước 2: Trang chủ  > Click vào module Câu lạc bộ > Vào menu Đăng ký lớp câu lạc bộ
+
+ 1. Thêm mới đơn đăng ký
+
+ Bước 1: Danh sách > Click button Tạo đơn
+
+ Bước 2: Hiển thị form Nhập đầy đủ thông tin > Click Lưu lại thực hiện đăng ký thành công
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo và focus vào trường lỗi cụ thể
+ Ngày đăng ký là hiện tại hoặc tương lai
+ Chọn Tên câu lạc bộ > Click button Chọn lớp > danh sách Lớp câu lạc bộ list tất cả lớp có trạng thái Đang hoạt động / Chưa bắt đầu của câu lạc  bộ đã chọn > Khi chọn lớp câu lạc bộ  xong sẽ list danh sách lớp câu lạc bộ tham gia
+ Click Lưu bản ghi hiển thị ở danh sách và trạng thái Chờ duyệt
+ ​​​​​​​2. Chỉnh sửa / xem chi tiết
+
+ Click icon chỉnh sửa thực hiện chỉnh sửa đơn đăng ký
+
+ Click icon xem chi tiết xem chi tiết bản ghi
+
+ ​​​​​​​3. Xóa đơn đăng ký
+
+ Bước 1: Danh sách > Click icon xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa bản ghi thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ ​​​​​​​4. Tìm kiếm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+ ​​​​​​​5. Xem lý do từ chối
+
+ Bước 1: Danh sách > Click icon xem lý do từ chối
+
+ Bước 2: Hiển thị form lý do từ chối
+
+==================================================
+

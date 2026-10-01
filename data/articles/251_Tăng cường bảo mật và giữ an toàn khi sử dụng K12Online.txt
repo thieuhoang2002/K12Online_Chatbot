@@ -1,0 +1,19 @@
+### BÀI VIẾT [251]: Tăng cường bảo mật và giữ an toàn khi sử dụng K12Online
+- Chuyên mục: Trang chủ > Cấu hình chung > Đăng nhập > Một số lưu ý khi đăng nhập
+- Link gốc: https://hotro.k12online.vn/tang-cuong-tinh-bao-mat-va-an-toan-khi-su-dung-k12online.html
+
+**Nội dung:**
+Cẩm nang sử dụng K12Online an toàn:
+
+ 1. Đổi mật khẩu mặc định
+
+ 2. Không sử dụng các mật khẩu thông dụng, dễ đoán
+
+ 3. Đổi mật khẩu định kỳ 3-6 tháng/lần
+
+ 4. Hạn chế chia sẻ tài khoản, mật khẩu cho người khác
+
+ 5. Liên hệ nhà trường/GVCN để được hỗ trợ đổi mật khẩu trong trường hợp quên mật khẩu.
+
+==================================================
+

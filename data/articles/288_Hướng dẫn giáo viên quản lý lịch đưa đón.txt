@@ -1,0 +1,35 @@
+### BÀI VIẾT [288]: Hướng dẫn giáo viên quản lý lịch đưa đón
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Bus > Giáo viên
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/bus/giao-vien/huong-dan-giao-vien-quan-ly-lich-dua-don.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản được phân quyền giáo viên chủ nhiệm
+
+ Bước 2: Trang chủ > Click module Bus
+
+ Hiển thị màn hình Bus học đường
+
+ Bước 1: Trên thanh menu > Click menu Lịch đưa đón
+
+ 1. Xem danh sách sự cố
+
+ Danh sách >Click icon danh sách sự cố
+
+ Hiển thị màn hình danh sách sự cố như sau
+
+ 2. Xem danh sách học sinh
+
+ D anh sách > Click icon danh sách học sinh
+
+ Hiển thị màn hình danh sách học sinh như sau
+
+ 3. Xem lộ trình tuyến đường
+
+ Bước 1:  Danh sách > Click icon Lộ trình tuyến đường - chặng
+
+ Bước 2: Hiển thị màn hình như sau > Click icon danh sách học sinh
+
+ Bước 3: Hiển thị màn hình như sau
+
+==================================================
+

@@ -1,0 +1,13 @@
+### BÀI VIẾT [150]: Đồng bộ phân công giảng dạy từ SMAS sang K12Online
+- Chuyên mục: Trang chủ > Cấu hình chung > Quản lý đào tạo
+- Link gốc: https://hotro.k12online.vn/nha-truong/dong-bo-phan-cong-giang-day-tu-smas-sang-k12online.html
+
+**Nội dung:**
+Với những trường đang sử dụng hệ thống K12Online mà cùng sử dụng SMAS của Viettel, nhà trường có thêm lựa chọn nữa là có thể đồng bộ phân công giảng dạy từ SMAS sang K12Online luôn. Bài viết này sẽ hướng dẫn chi tiết nhà trường cách thực hiện:
+
+ 1. Đối tượng áp dụng
+
+ - Chỉ áp dùng với các trường THCS, THPT đang sử dụng hệ thống SMAS của Viettel;
+
+==================================================
+

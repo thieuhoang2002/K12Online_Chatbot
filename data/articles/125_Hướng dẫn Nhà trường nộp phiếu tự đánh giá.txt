@@ -1,0 +1,26 @@
+### BÀI VIẾT [125]: Hướng dẫn Nhà trường nộp phiếu tự đánh giá
+- Chuyên mục: Trang chủ > Tính năng khác > Hướng dẫn sử dụng DTI HCM EDU
+- Link gốc: https://hotro.k12online.vn/huong-dan-su-dung/huong-dan-su-dung-he-thong-danh-gia-muc-do-chuyen-doi-so/huong-dan-nha-truong-nop-phieu-tu-danh-gia.html
+
+**Nội dung:**
+Sau khi đã hoàn thành việc tự đánh giá, Nhà trường xem lại kỹ thông tin và điều chỉnh (nếu có). Sau đó, Nhà trường thực hiện nộp phiếu đánh giá để gửi kết quả tự đánh giá cho đơn vị quản trị trực tiếp của mình.
+
+ Bước 1: Vào menu Tự đánh giá
+
+ Bước 2: Chọn các phiếu báo cáo cần nộp => Tại cột Hành động , nhấn vào biểu tượng Nộp phiếu để thực hiện nộp phiếu tự đánh giá cho Sở/Phòng GD&ĐT. Khi đó, trạng thái của phiếu tự đánh giá chuyển sang Chờ duyệt.
+
+ Lưu ý:
+
+ 1. Khi Nhà trường thực hiện hành đồng nộp phiếu tự đánh giá và phiếu tự đánh giá đang ở trạng thái Chờ duyệt thì Nhà trường không thể sửa, cập nhật phiếu.
+
+ 2. Trong trường hợp phiếu tự đánh giá đã nộp và nếu cơ quản quản lý trực tiếp CHƯA DUYỆT kết quả tự đánh giá, Nhà trường có thể thực hiện thao tác Thu hồi phiếu để sửa/cập nhật lại phiếu tự đánh giá.
+
+ 3. Do vậy, Nhà trường kiểm tra lại kỹ thông tin phiếu tự đánh giá trước khi thực hiện hành động Nộp phiếu .
+
+ Bước 3: Nhà trường theo dõi kết quả nộp phiếu tự đánh giá. Sẽ có 2 tình huống có thể xảy ra:
+
+ Bị từ chối và yêu cầu nhập lại: Nếu đơn vị quản lý trực tiếp kiểm tra và đánh giá phiếu tự đánh giá của Nhà trường chưa đạt yêu cầu sẽ thực hiện từ chối và yêu cầu Nhà trường nhập lại. Nhà trường vui lòng làm lại các bước tự đánh giá ở trên theo hướng dẫn của đơn vị quản lý trực tiếp.
+ Đã duyệt: Khi phiếu đánh giá được đơn vị được đơn vị quản lý trực tiếp duyệt và trạng thái của phiếu tự đánh giá là Đã duyệt , lúc đó kết thúc quá trình tự đánh giá của đơn vị.
+
+==================================================
+

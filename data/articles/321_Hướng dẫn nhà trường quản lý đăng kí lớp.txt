@@ -1,0 +1,97 @@
+### BÀI VIẾT [321]: Hướng dẫn nhà trường quản lý đăng kí lớp
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Câu lạc bộ > Nhà trường
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/clb/nha-truong/huong-dan-nha-truong-quan-ly-dang-ki-lop3.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản Nhà trường
+
+ Bước 2: Trang chủ  > Click vào module Câu lạc bộ > Vào menu Quản lý đăng ký lớp
+
+ Xem danh sách đăng ký lớp của phụ huynh
+
+ Lưu ý:
+
+ Bản ghi phụ huynh đăng ký sẽ hiển thị ở trạng thái Chờ duyệt
+ Bản ghi mà  nhà trường duyệt ở trạng thái Đã duyệt
+ Bản ghi mà nhà trường từ chối ở trạng thái Từ chối (Xem được lý do từ chối)
+ 1. Tạo đơn
+
+ Bước 1: Danh sách > click button Tạo đơn
+
+ Bước 2: Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công . Khi thêm mới xong bản ghi trạng thái Đã duyệt
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường Học sinh sẽ list theo Khối lớp đã chọn
+ Trường ngày đăng ký không được nhỏ hơn hiện tại
+ Trường Tên câu lạc bộ list dữ liệu ở menu Câu lạc bộ
+ Trường Tên lớp câu lạc bộ dữ liệu sẽ list theo Câu lạc bộ đã chọn
+ Trường trạng thái khi nhà trường thêm dữ liệu mặc định là Đã duyệt
+ Khi thêm xong cũng hiển thị 1 bản ghi tương ứng ở trạng thái đã duyệt ở menu Đăng ký lớp câu lạc bộ ở tài khoản phụ huynh đồng thời học sinh đó được đăng ký thành công
+
+ ​​​​​​​2. Chỉnh sửa/ Xem chi tiết
+
+ Click icon chỉnh sửa thực hiện chỉnh sửa bản ghi
+
+ Click icon xem chi tiết xem chi tiết đơn
+
+ ​​​​​​​3. Duyệt / Từ chối đơn
+
+ 3.1. Duyệt đơn
+
+ Bước 1: Danh sách > click icon duyệt or click checkbox all > Chọn hành động duyệt
+
+ Bước 2: Click Duyệt thực hiện duyệt đơn thành công
+
+ Lưu ý:
+
+ Khi duyệt đơn thành công bản ghi ở trạng thái Đã duyệt  và đồng thời học sinh đó được hiển thị ở tab Danh sách học sinh của lớp câu lạc bộ đã đăng ký
+ 3.2. Từ chối duyệt đơn
+
+ Bước 1: Danh sách > click icon từ chối or click checkbox all > chọn hành động từ chối
+
+ Bước 2: Nhập lý do từ chối > Click Từ chối thực hiện từ chối duyệt đơn thành công
+
+ Lưu ý:
+
+ Khi Từ chối đơn thành công bản ghi ở trạng thái Từ chối  và đồng thời học sinh đó không được hiển thị ở tab Danh sách học sinh của lớp câu lạc bộ đã đăng ký
+
+ ​​​​​​​​​​​​​​4. Xóa đơn
+
+ C1: Xóa 1 bản ghi
+
+ Bước 1: Danh sách > Click icon xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa bản ghi  thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ C2: Xóa nhiều bản ghi
+
+ Bước 1: Danh sách > Click checkbox all > chọn button xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ Lưu ý
+
+ Thực hiện xóa thành công bản ghi không hiển thị ở danh sách
+ Nếu bản ghi ở trạng thái Chờ duyệt mà xóa thì đồng thời dữ liệu đăng ký lớp ở tài khoản phụ huynh cũng bị xóa
+ 5. Tìm kiếm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý:
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+
+==================================================
+

@@ -1,0 +1,105 @@
+### BÀI VIẾT [102]: Hướng dẫn Giáo viên tạo lớp học ảo
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Giáo viên
+- Link gốc: https://hotro.k12online.vn/huong-dan-giao-vien-tao-lop-hoc-ao.html
+
+**Nội dung:**
+Lớp học ảo là tính năng giúp cho giáo viên có thể tạo các lớp học trực tuyến tương tác đồng thời với HS. Hệ thống có nhiều tính năng để hỗ trợ tối đa GV tổ chức và quản lý lớp học như hiển thị màn hình nhiều chế độ; chia sẻ màn hình của GV; nhắn tin; giơ tay phát biểu; bật/tắt micro của toàn bộ/một số HS; chia phòng thảo luận…
+
+ 1. Điều kiện để sử dụng tính năng lớp học ảo
+
+ - Giáo viên đã được phân công giảng dạy trên K12Online (đã được phân môn giảng dạy và phân lớp giảng dạy);
+
+ - Yêu cầu về thiết bị: sử dụng máy tính có cấu hình tối thiểu sau (hoặc tương đương):
+
+ Core i3
+ RAM 4Gb
+ Lưu ý: Các máy tính cấu hình thấp hơn vẫn có thể sử dụng được, tuy nhiên có thể trải nghiệm sẽ tốt như trên, dẫn đến hiện tượng chậm hoặc kết nối không ổn định khi chia sẻ màn hình.
+
+ - Máy tính được kết nối với micro và camera;
+
+ - Máy tính được kết nối Internet ổn định, băng thông tối thiểu 20Mbps;
+
+ Khuyến nghị: Các máy tính nếu đang sử dụng hệ điều hành Windows 7 thì nên nâng cấp lên Windows 10. Vì hiện nay đã có phiên bản Windows 11 rồi, Windows 7 đã cũ và Microsoft không còn hỗ trợ từ năm 2020 rồi.
+
+ 2. Hướng dẫn tạo lớp học ảo
+
+ Dưới đây là quy trình giáo viên tạo lớp học ảo trên K12Online.
+
+ Bước 1: Giáo viên tạo lớp học ảo
+
+ - Vào module Học thi trực tuyến => Thời khoá biểu => Click vào ô tiết học muốn tạo lớp học ảo => Nhập các thông tin để khởi tạo lớp học ảo:
+
+ + Thời gian bắt đầu: thời gian mà GV muốn lớp học ảo sẽ bắt đầu;
+
+ + Tiết học: chọn tiết học mà lớp học ảo sẽ diễn ra;
+
+ + Lớp học: chọn lớp/nhóm học mà GV muốn tạo lớp học ảo cho lớp/nhóm học đó;
+
+ + Môn học: môn học mà lớp học ảo đó sẽ dạy;
+
+ + Loại học liệu: chọn Lớp học ảo;
+
+ + Tên lớp học ảo: nhập tên lớp học ảo cần tạo;
+
+ + Thời lượng: nhập thời lượng của lớp học ảo cần tạo;
+
+ - Nhấn Lưu lại để hoàn tất việc tạo lớp học ảo.
+
+ Bước 2: Giáo viên vào lớp học ảo
+
+ - Cách 1: Vào Thời khoá biểu => Vào ô tiết học chứa lớp học ảo => Chọn Vào dạy để tiến hành vào dạy trong lớp học ảo.
+
+ - Cách 2: Vào Học liệu => Chọn Lớp học ảo => Tìm lớp học ảo muốn vào dạy => Click vào biểu tượng Vào dạy hoặc Mở Zoom để tiến hành vào dạy trong lớp học ảo.
+
+ Bước 3: Giáo viên tổ chức các hoạt động dạy học
+
+ Trong đó, các tính năng tương ứng như sau, tương tự như khi giáo viên sử dụng Zoom:
+
+ 1. Bật/Tắt micro máy tính của GV đang sử dụng
+
+ 2. Bật/Tắt camera máy tính của GV đang sử dụng
+
+ 3. GV lựa chọn chế độ hiển thị màn hình tuỳ theo mong muốn:
+
+ - Người trình bày (Speaker View): chế độ này thì màn hình của lớp học ảo sẽ hiển thị người đang trình bày ở 1 phần diện tích trung tâm lớn hơn hẳn so với những người còn lại.
+
+ - Xem toàn bộ (Gallery View): chế độ hiển thị này thì sẽ hiển thị toàn bộ những người tham gia trên slide sắp xếp các màn hình của những người tham gia theo tỉ lệ 3x3.
+
+ 4. Người tham gia: xem danh sách học sinh đang tham gia trong lớp học ảo
+
+ 5. Nhắn tin: tính năng cho GV/HS nhắn tin thảo luận ngay trên hệ thống.
+
+ 6. Chia sẻ màn hình: tính năng cho phép GV chia sẻ màn hình trên hệ thống, có 3 chế độ chia sẻ màn hình trên K12Online:
+
+ - Your Entire Screen (Toàn bộ màn hình);
+
+ - Application Window (Cửa sổ ứng dụng);
+
+ - Chrome Tab (1 tab nào đó của trình duyệt Google Chrome);
+
+ 7. Bảo mật: các tính năng tuỳ chọn để GV có thể cấu hình các tuỳ chọn bảo mật lớp học ảo:
+
+ - Tắt toàn bộ micro của người tham gia;
+
+ - Khoá học học: không cho HS vào lớp học nữa;
+
+ - Kích hoạt phòng chờ: HS vào phòng chờ, GV cho phép vào lớp.
+
+ - Cho phép/Không cho phép HS chia sẻ màn hình, nhắn tin, bật micro/camera…
+
+ 8. Chia nhóm thảo luận
+
+ 9. Kết thúc: Nếu GV nhấn Kết thúc để kết thúc lớp học ảo ngay lập tức mà không thể vào lại được.
+
+ Bước 4: Xem báo cáo lớp học ảo
+
+ - GV vào menu Học tập => Chọn Lớp học ảo => Tìm lớp học ảo cần xem báo cáo => Click vào biểu tượng Báo cáo ở cột Hành động .
+
+ - Hệ thống sẽ ghi lại danh sách người tham gia, thời gian vào đầu tiên/ra cuối cùng, số lần ra vào và thời gian học của từng người.
+
+ 3. Điểm danh và quản lý lớp học ảo
+
+ - Hệ thống có tính năng Điểm danh để hỗ trợ giáo viên điểm danh học sinh.
+
+==================================================
+

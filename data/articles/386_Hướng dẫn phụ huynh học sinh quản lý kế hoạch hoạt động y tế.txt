@@ -1,0 +1,23 @@
+### BÀI VIẾT [386]: Hướng dẫn phụ huynh học sinh quản lý kế hoạch hoạt động y tế
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Y tế > Phụ huynh HS
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/y-te/phu-huynh-hoc-sinh/huong-dan-phu-huynh-quan-ly-ke-hoach-hoat-dong-y-te.html
+
+**Nội dung:**
+1. Danh sách kế hoạch hoạt động y tế
+
+ Bước 1: Đăng nhập tài khoản phụ huynh
+
+ Bước 2: Click menu Kế hoạch hoạt động y tế> Hiển thị màn hình danh sách
+
+ 2. Tìm kiếm kế hoạch hoạt động y tế
+
+ Trên màn hình > Bộ lọc: Nhập / chọn dữ liệu > Click icon Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý :
+
+ +  Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+
+ + Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo điều kiện tìm kiếm
+
+==================================================
+

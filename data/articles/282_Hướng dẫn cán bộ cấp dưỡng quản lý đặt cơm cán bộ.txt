@@ -1,0 +1,70 @@
+### BÀI VIẾT [282]: Hướng dẫn cán bộ cấp dưỡng quản lý đặt cơm cán bộ
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Bán trú > Cán bộ cấp dưỡng
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/ban-tru/phu-huynh/huong-dan-can-bo-cap-duong-quan-ly-dat-com-can-bo.html
+
+**Nội dung:**
+Đăng nhập vào tài khoản cán bộ cấp dưỡng >  click module Bán trú
+
+ Trên danh sách> click menu Quản lý đặt cơm > Tab Cán bộ
+
+ 1. Đặt cơm
+
+ Bước 1: Danh sách > Click icon button Đặt cơm
+
+ Bước 2: Hiển thị form Đặt cơm > Nhập đầy đủ thông tin > Click Lưu
+
+ Lưu ý
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Lớp chỉ hiển thị những bản ghi thuộc học kỳ đang chọn
+ Học sinh hiển thị danh sách các học sinh có trong lớp bán trú đã chọn
+ Thời gian báo cơm không nhỏ hơn ngày hiện tại và không quá thời gian được phép đặt cơm
+ thời gian báo cơm kết thúc lớn hơn thời gian báo cơm bắt đầu
+
+ 2. Hủy đặt cơm
+
+ Bước 1: Danh sách > Click icon button Hủy đặt cơm
+
+ Bước 2: Hiển thị form Hủy đặt cơm > Nhập đầy đủ thông tin > Click Lưu
+
+ Lưu ý
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Lớp chỉ hiển thị những bản ghi thuộc học kỳ đang chọn
+ Học sinh hiển thị danh sách các học sinh có trong lớp bán trú đã chọn
+ Thời gian báo cơm không nhỏ hơn ngày hiện tại và không quá thời gian được phép đặt cơm
+ thời gian báo cơm kết thúc lớn hơn thời gian báo cơm bắt đầu
+
+ 3. Cấu hình đặt cơm
+
+ Bước 1: Danh sách > Click icon button Cấu hình đặt cơm
+
+ Bước 2: Hiển thị form Cấu hình > Nhập đầy đủ thông tin > Click Lưu thực hiện cấu hình thành công
+
+ 4. Xuất excel
+
+ Danh sách > Click button Xuất excel > Thực hiện xuất excel thành công > Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+ Lưu ý :
+
+ Thực hiện xuất excel > File tải về hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với danh sách
+ Thực hiện tìm kiếm dữ liệu > sau click button Xuất excel > Thì hệ thống trả về file kết quả hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với trên danh sách
+ Thực hiện chọn kiểu sắp xếp danh sách> sau click button Xuất excel > Thì hệ thống trả về file kết quả hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với trên danh sách
+
+ 5. Tìm kiếm
+
+ Trên thanh tìm kiếm > Nhập/chọn thông tin cần tìm > Nhấn enter
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+
+ 6. Xem chi tiết
+
+ Danh sách > Click icon xem chi tiết > Hiển thị màn hình chi tiết
+
+==================================================
+

@@ -1,0 +1,43 @@
+### BÀI VIẾT [88]: Hướng dẫn học sinh làm bài kiểm tra trên K12Online
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Học sinh
+- Link gốc: https://hotro.k12online.vn/hoc-sinh/lam-bai-kiem-tra-truc-tuyen.html
+
+**Nội dung:**
+Có 2 dạng bài kiểm tra trên hệ thống K12Online:
+
+ - Bài kiểm tra tập trung
+
+ - Bài kiểm tra phân tán.
+
+ 1. Một số lưu ý khi làm bài kiểm tra trực tuyến
+
+ Xem hướng dẫn chi tiết tại đây:
+
+ https://hotro.k12online.vn/tai-lieu/mot-so-luu-y-khi-lam-bai-kiem-tra-thi-truc-tuyen-tren-k12online.html
+
+ 2. Hướng dẫn làm bài kiểm tra trực tuyến
+
+ Cách 1: Học sinh vào menu Bài kiểm tra
+
+ Trường hợp 1: Học sinh làm trên máy tính
+
+ Bước 1: Học sinh vào module Học thi trực tuyến => Chọn menu Kiểm tra, đánh giá => Chọn menu Bài kiểm tra => Xem bài kiểm tra cần làm
+
+ Bước 2: Khi đến thời gian bài kiểm tra => Nhấn nút Làm bài
+
+ Trường hợp 2: Học sinh làm trên điện thoại, máy tính bảng
+
+ Bước 1: Học sinh vào menu Bài kiểm tra => Xem bài kiểm tra cần làm
+
+ Bước 2: Khi đến thời gian bài kiểm tra => Nhấn nút Làm bài
+
+ Cách 2: Vào từ menu Thời khóa biểu
+
+ Bước 1: Học sinh vào menu Thời khóa biểu => Xem bài kiểm tra tập trung mà giáo viên đã gán vào từng tiết học ở trên hệ thống.
+
+ Bước 2: Khi đến thời gian bài kiểm tra => Nhấn nút Làm bài
+
+ Lưu ý: Cách này chỉ áp dụng với bài kiểm tra dạng tập trung .
+
+==================================================
+

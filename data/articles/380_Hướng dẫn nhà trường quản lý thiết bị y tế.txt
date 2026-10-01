@@ -1,0 +1,29 @@
+### BÀI VIẾT [380]: Hướng dẫn nhà trường quản lý thiết bị y tế
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Y tế > Nhà trường
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/y-te/nha-truong/huong-dan-nha-truong-quan-ly-thiet-bi-y-te.html
+
+**Nội dung:**
+1. Danh sách thiết bị y tế
+
+ Bước 1: Đăng nhập tài khoản quản lý trường /Cán bộ y tế học đường
+
+ Bước 2 : Click menu Quản lý thiết bị y tế  > tab Danh sách thiết bị y tế
+
+ 2. Xem thống kê danh sách thiết bị y tế
+
+ Trên màn hình danh sách > hiển thị danh sách thống kê thiết bị y tế
+
+ ​​​​​​​3. Xem chi tiết thống kê  thiết bị y tế
+
+ Bước 1 :Trên màn hình danh sách > click icon xem chi tiết
+
+ Bước 2: Hiển thị màn hình chi tiết
+
+ ​​​​​​​
+
+ ​​​​​​​​​​​​​​4. Lịch sử chung
+
+ Click menu Quản lý thiết bị y tế  > click tab lịch sử chung > xem lịch sử nhập/sử dụng/hủy thiết bị y tế
+
+==================================================
+

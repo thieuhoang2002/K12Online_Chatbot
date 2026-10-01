@@ -1,0 +1,63 @@
+### BÀI VIẾT [164]: Tổ chức kỳ thi Offline trên K12Online
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong/to-chuc-thi-offline-tren-k12online.html
+
+**Nội dung:**
+1. Tạo kỳ thi
+
+ Vào Khảo thí => Chọn Quản lý kỳ thi => Chọn Thêm mới => Nhập các thông tin cơ bản cùa kỳ thi
+
+ 2. Tạo đề thi
+
+ Thêm mới đề thi: Tại tab Đề thi => Chọn Thêm mới để tạo 1 đề thi mới => Nhập các thông tin cơ bản của đề thi.
+
+ Lưu ý: Trong quá trình tạo đề thi, tại mục Hình thức làm bài chọn hình thức Offline (thi trên giấy) .
+
+ Có 3 dạng đề thi có thể tạo:
+
+ Dạng 1: Nhập tay - Nhập các thông tin cơ bản của đề thi và câu hỏi cho đề thi. - Thêm lần lượt từng câu hỏi lên hệ thống.
+
+ Dạng 2: PDF - Nhập các thông tin cơ bản của đề thi và câu hỏi cho đề thi. - Thêm file đề thi dạng pdf lên hệ thống và nhập đáp án cho đề thi.
+
+ Dạng 3: Ma trận - Nhập các thông tin cơ bản của đề thi và câu hỏi cho đề thi. - Chọn NHCH sử dụng cho đề thi - Tại phần Ma trận câu hỏi, chọn số lượng câu hỏi cần lấy ở từng chủ đề và cấp độ trong NHCH đã chọn để hệ thống tự động lấy ra tạo đề thi.
+
+ Với bài thi theo cấu trúc mới của năm 2025 gồm 3 phần, nhà trường chọn các đề mẫu của 2025.
+
+ Lưu ý: Khi tạo đề thi, hệ thống sẽ yêu cầu mẫu phiếu TLTN mà GV sẽ dùng để cho HS tô, GV chọn đúng phiếu TLTN mà mình sẽ sử dụng để sau này hệ thống nhận dạng được chính xác.
+
+ => Nếu GV chọn sai mẫu phiếu so với mẫu phiếu HS tô thì sẽ không nhận dạng và chấm được.
+
+ 3. Đăng ký dự thi
+
+ Tại menu của kỳ thi vừa tạo, nhà trường vào menu Đăng ký dự thi => Chọn Thêm mới để thực hiện đăng ký dự thi cho HS trong trường.
+
+ 4. Duyệt thí sinh
+
+ Sau khi đăng ký dự thi xong, nhà trường chuyển xuống menu Duyệt thí sinh => Rà soát lại nếu thiếu/sai sót thì đăng ký dự thi lại => Nếu đã đúng và đủ tiến hành duyệt để chốt danh sách thí sinh chính thức.
+
+ 5. Đánh số báo danh
+
+ Trong trường hợp kỳ thi tổ chức thi trên giấy, HS phải tô vào phiếu TLTN để hệ thống K12Online chấm điểm qua máy scan/điện thoại thì sau khi duyệt danh sách thí sinh chính thức, nhà trường vào menu Duyệt thí sinh để thực hiện Đánh số báo danh cho HS.
+
+ 6. Chấm thi
+
+ Bước 1: Vào Khảo thí => Chọn Kì thi đã tạo => Chọn Đề thi chấm scan đã tạo và click vào icon Báo cáo
+
+ Bước 2: Chọn tab Scan bài kiểm tra và Click Nhập ảnh bài kiểm tra
+
+ Bước 3: Sau khi tải toàn bộ bài làm của học sinh lên, Click Đọc kết quả và ấn Load lại như hình mô tả
+
+ Bước 4: Kiểm tra kết quả đọc
+
+ - Trạng thái Thành công: Đã nhận diện được toàn bộ
+
+ - Trạng thái Sai số báo danh: Số báo danh không khớp với hệ thống
+
+ - Trạng thái Sai mã đề: Mã đề không tồn tại trên hệ thống
+
+ - Click để xem chi tiết bài và đọc lại kết quả
+
+ Bước 5: Duyệt kết quả và kiểm tra điểm
+
+==================================================
+

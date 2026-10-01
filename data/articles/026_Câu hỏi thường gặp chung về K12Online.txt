@@ -1,0 +1,77 @@
+### BÀI VIẾT [26]: Câu hỏi thường gặp chung về K12Online
+- Chuyên mục: Trang chủ > Câu hỏi thường gặp > Dành cho Sở/Phòng
+- Link gốc: https://hotro.k12online.vn/cau-hoi-thuong-gap/cau-hoi-thuong-gap-chung-ve-k12online.html
+
+**Nội dung:**
+I. TÌM HIỂU HỆ THỐNG K12ONLINE
+
+ Câu 1: K12Online là gì?
+
+ Trả lời:
+
+ Hệ thống Quản lý Học và thi trực tuyến (K12Online.vn) là hệ thống hỗ trợ toàn trình hoạt động quản lý + dạy học + thi và đánh giá trực tuyến với nhiều những tính năng ưu việt, dành riêng cho các cơ sở giáo dục phổ thông và giáo dục thường xuyên.
+
+ Hệ thống được thiết kế và xây dựng dựa trên định hướng của Chính phủ và các yêu cầu về quản lý hoạt động dạy học trực tuyến của Bộ Giáo dục và Đào tạo.
+
+ Câu 2: K12Online khác gì so với các hệ thống dạy học trực tuyến khác?
+
+ Trả lời:
+
+ Câu 3: Nhà trường muốn sử dụng hệ thống K12Online thì cần làm gì?
+
+ Trả lời:
+
+ Nhà trường cung cấp các thông tin sau để chuyển cho đội ngũ tư vấn giải pháp giáo dục tại Viettel tỉnh/thành phố đó để được tư vấn và giải đáp:
+
+ - Tên trường (*):
+ - Mã trường (*):
+ - Cấp học (*):
+ - Đơn vị trực thuộc (*):
+ - Họ và tên người liên hệ (*):
+ - Chức vụ (*):
+ - Điện thoại (*):
+
+ Câu 4: K12Online có ứng dụng cho điện thoại thông minh và máy tính bảng không?
+
+ Trả lời:
+
+ Có. Vào AppStore/CH Play, tìm kiếm với từ khoá K12Online để tải ứng dụng về.
+
+ Câu 5: Làm thế nào để biết ứng dụng K12Online đã cài đặt là phiên bản mới nhất?
+
+ Trả lời:
+
+ Cách 1: Vào AppStore/CH Play, tìm ứng dụng K12Online, kiểm tra xem nút là nút Open (Mở) hay Update (Cập nhật). Nếu là Update (Cập nhật) thì người dùng nhấn Update (Cập nhật) ứng dụng.
+
+ Cách 2: Gỡ ứng dụng K12Online đi và lên AppStore/CH Play để tải và cài đặt lại ứng dụng.
+
+ II. K12ONLINE HỖ TRỢ NHƯ THẾ NÀO?
+
+ Câu 1: Khi có vấn đề liên hệ tới K12Online cần hỗ trợ thì làm thế nào?
+
+ Trả lời:
+
+ Ưu tiên theo lần lượt theo các cách sau:
+
+ Cách 1: Tìm hiểu kỹ các tài liệu trên hệ thống tại địa chỉ:
+
+ - Trao đổi cùng với đồng nghiệp xem vấn đề mình đang gặp phải họ đã gặp chưa và giải quyết như thế nào.
+
+ - Đọc và tra cứu trên HDSD nhanh và một số câu hỏi thường gặp (public): http://hotro.k12online.vn
+
+ - Xem video giới thiệu và HDSD: http://bit.ly/videogioithieuK12Online
+
+ Cách 2: Liên hệ Nhân viên Viettel Tỉnh/thành phố cung cấp dịch vụ để được hỗ trợ trực tiếp.
+
+ Cách 3: Gọi lên tổng đài 18008000, nhánh số 2 để được hỗ trợ miễn phí (Lưu ý: Tổng đài chỉ hỗ trợ từ 7h00 đến 22h00; khi gọi lên báo cho nhân viên tổng đài rõ ràng là cần hỗ trợ về Hệ thống Quản lý học và thi trực tuyến K12Online).
+
+ Câu 2: Khi có vấn đề cần kỹ thuật kiểm tra trực tiếp máy thì tôi có cần cài đặt gì không?
+
+ Trả lời:
+
+ Máy tính nên được cài đặt sẵn phần mềm Ultraviewer nếu cần đội ngũ kỹ thuật check và hỗ trợ.
+
+ Link tải về: https://ultraviewer.net/en/download.html
+
+==================================================
+

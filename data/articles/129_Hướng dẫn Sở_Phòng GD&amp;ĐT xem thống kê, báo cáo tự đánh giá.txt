@@ -1,0 +1,17 @@
+### BÀI VIẾT [129]: Hướng dẫn Sở/Phòng GD&amp;ĐT xem thống kê, báo cáo tự đánh giá
+- Chuyên mục: Trang chủ > Tính năng khác > Hướng dẫn sử dụng DTI HCM EDU
+- Link gốc: https://hotro.k12online.vn/huong-dan-su-dung/huong-dan-su-dung-he-thong-danh-gia-muc-do-chuyen-doi-so/huong-dan-so-phong-gd-dt-xem-thong-ke-bao-cao-tu-danh-gia.html
+
+**Nội dung:**
+Bước 1: Vào menu Tổng quan => Chọn loại dữ liệu Tự đánh giá
+
+ Bước 2: Hệ thống sẽ hiển thị ra các thống kê và biểu đồ của dữ liệu các trường đã tự đánh giá và được Sở/Phòng GD&ĐT duyệt. Sở/Phòng GD&ĐT có thể xem chi tiết kết quả tự đánh giá của các trường trên hệ thống.
+
+ Thông tin tổng quan kết quả: giúp Sở/Phòng GD&ĐT nắm được thông tin của loại báo cáo đánh giá trong kỳ hiện tại.
+
+ Biểu đồ thống kê theo tiêu chí: giúp Sở/Phòng GD&ĐT xem, theo dõi được các chỉ số của từng tiêu chí theo mức độ đạt được.
+
+ Biểu đồ thống kê theo Phòng/trường: Giúp Sở/Phòng GD&ĐT xem và so sánh được kết quả tự đánh giá của các Phòng GD&ĐT/trường theo các tiêu chí chung.
+
+==================================================
+

@@ -1,0 +1,74 @@
+### BÀI VIẾT [367]: Hướng dẫn nhà trường khai báo thuốc
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Y tế > Nhà trường
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/y-te/nha-truong/huong-dan-nha-truong-khai-bao-thuoc.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản quản lý trường /Cán bộ y tế học đường
+
+ Bước 2 : Click menu quản lý khai báo > Click Thuốc
+
+ 1. Thêm mới thuốc
+
+ Bước 1 : Trên màn hình danh sách > click button Thêm mới
+
+ Bước 2: Nhập/Chọn đầy đủ , hợp lệ các trường bắt buộc > click lưu để thêm mới
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Click Lưu bản ghi hiển thị bên ngoài danh sách
+ Thêm mới thành công hiển thị dữ liệu Thuốc trong form thêm mới/chỉnh sửa Quản lý sức khỏe ngày , Quản lý thuốc
+
+ 2. Chỉnh sửa thuốc
+
+ Bước 1 : Trên màn hình danh sách > click icon chỉnh sửa > chỉnh sửa thuốc
+
+ Bước 2: Nhập đầy đủ , hợp lệ các trường bắt buộc > click Lưu
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Click Lưu bản ghi hiển thị bên ngoài danh sách
+ Chỉnh sửa thành công hiển thị dữ liệu Thuốc trong form thêm mới/chỉnh sửa Quản lý thuốc, Quản lý sức khỏe ngày
+
+ 3. Tìm kiếm thuốc
+
+ Trên thanh menu: Nhập / chọn dữ liệu muốn tìm kiếm > Click button Tìm kiếm > Hệ thống trả về kết quả tìm kiếm theo tiêu chí đã nhập
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo tiêu chí tìm kiếm
+
+ ​​​​​​​​​​​​​​4. Xóa thuốc
+
+ Bước 1: Trên màn hình danh sách > click icon  xóa
+
+ Bước 2: Hiển thị pupop xác nhận xóa
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy thao tác  xóa
+
+ 5. Xuất excel thuốc
+
+ Danh sách > Click button Xuất excel thực hiện xuất thành công
+
+ Lưu ý: Thực hiện xuất excel > File tải về hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với danh sách
+
+ 6. Nhập excel thuốc
+
+ Bước 1 : Danh sách > Click button Nhập excel
+
+ Bước 2 : Hiển thị form > Nhập đầy đủ thông tin > Click button Nhập excel thực hiện thành công bản ghi hiển thị ở danh sách đúng thứ tự ở trong file excel đã nhập
+
+ Lưu ý :
+
+ Tải file không đúng định dạng , Tải file đúng file mẫu lên hệ thống đưa ra thông báo lỗi
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc upload file lên  hệ thống trả về 1 file kết quả và thông báo lỗi
+
+==================================================
+

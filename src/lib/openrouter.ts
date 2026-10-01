@@ -92,6 +92,7 @@ class KeyRotator {
               model: modelToUse,
               messages: messages,
               temperature: 0.3,
+              max_tokens: 4096,
             }),
           });
 
@@ -172,7 +173,12 @@ class KeyRotator {
   public async callChatCompletionStream(
     messages: ChatMessage[],
     requestedModel: string = "qwen/qwen3.8-27b:free"
-  ): Promise<{ responseStream: ReadableStream<Uint8Array>; keyIndexUsed: number; modelUsed: string }> {
+  ): Promise<{
+    responseStream: ReadableStream<Uint8Array>;
+    keyIndexUsed: number;
+    modelUsed: string;
+    rateLimitInfo?: { limit: string | null; remaining: string | null; reset: string | null };
+  }> {
     if (this.keys.length === 0) {
       throw new Error("Chưa cấu hình OPENROUTER_API_KEYS trong file môi trường .env.local.");
     }
@@ -215,11 +221,22 @@ class KeyRotator {
               model: modelToUse,
               messages: messages,
               temperature: 0.3,
+              max_tokens: 4096,
               stream: true,
             }),
           });
 
           clearTimeout(timeoutId);
+
+          const rateLimitLimit = response.headers.get("x-ratelimit-limit");
+          const rateLimitRemaining = response.headers.get("x-ratelimit-remaining");
+          const rateLimitReset = response.headers.get("x-ratelimit-reset");
+
+          if (rateLimitLimit || rateLimitRemaining) {
+            console.log(
+              `📊 [OpenRouter RateLimit] Key #${activeIndex + 1}: Hạn mức=${rateLimitLimit || "N/A"} req/phút | Còn lại=${rateLimitRemaining || "N/A"} | Reset sau=${rateLimitReset || "N/A"}s`
+            );
+          }
 
           if (response.status === 429 || response.status === 402) {
             let isSharedPoolThrottled = false;
@@ -257,6 +274,11 @@ class KeyRotator {
             responseStream: response.body,
             keyIndexUsed: activeIndex + 1,
             modelUsed: modelToUse,
+            rateLimitInfo: {
+              limit: rateLimitLimit,
+              remaining: rateLimitRemaining,
+              reset: rateLimitReset,
+            },
           };
         } catch (err: any) {
           console.warn(`❌ [OpenRouter Stream] Ngoại lệ khi gọi ${modelToUse}:`, err.message);

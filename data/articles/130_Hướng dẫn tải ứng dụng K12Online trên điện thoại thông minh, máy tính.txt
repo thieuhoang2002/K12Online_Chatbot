@@ -1,0 +1,43 @@
+### BÀI VIẾT [130]: Hướng dẫn tải ứng dụng K12Online trên điện thoại thông minh, máy tính bảng
+- Chuyên mục: Trang chủ > Cấu hình chung > Đăng nhập > Hướng dẫn đăng nhập
+- Link gốc: https://hotro.k12online.vn/huong-dan-tai-ung-dung-k12online-tren-dien-thoai-thong-minh-may-tinh-bang.html
+
+**Nội dung:**
+Ngoài sử dụng trực tiếp trên trình duyệt web ra, K12Online có cả ứng dụng trên điện thoại thông minh mà người dùng có thể cài đặt và sử dụng.
+
+ 1. Đối tượng sử dụng
+
+ - Giáo viên
+
+ - Học sinh
+
+ 2. Yêu cầu
+
+ 2.1. Hệ điều hành Android
+
+ - Phiên bản Android 10 trở lên
+
+ - RAM 2Gb trở lên
+
+ 2.2. Hệ điều hành iOS
+
+ - Phiên bản iOS 12 trở lên
+
+ - RAM 2Gb trở lên
+
+ 3. Hướng dẫn cài đặt
+
+ 3.1. Các máy sử dụng hệ điều hành Android
+
+ Bước 1: Mở ứng dụng CH Play (Play Store) => Tìm kiếm với từ khoá K12Online
+
+ Bước 2: Chọn ứng dụng có logo K12Online do đơn vị phát hành là Viettel Business Solutions Corporation và nhấn Cài đặt (Install) để thực hiện cài đặt về máy hoặc nhấn Update (Cập nhật) để thực hiện cập nhật lên phiên bản mới nhất (nếu đã cài trước đó). .
+
+ 3.2. Các máy sử dụng hệ điều hành iOS
+
+ Bước 1: Mở ứng dụng App Store => Tìm kiếm với từ khoá K12Online
+
+ Bước 2: Chọn ứng dụng có logo K12Online do đơn vị phát hành là Viettel Information and Communication Technology Solutions và nhấn Get (Tải về) để thực hiện cài đặt về máy hoặc nhấn Update (Cập nhật) để thực hiện cập nhật lên phiên bản mới nhất (nếu đã cài trước đó).
+
+==================================================
+

@@ -1,0 +1,51 @@
+### BÀI VIẾT [122]: Hướng dẫn Sở Giáo dục và Đào tạo xây dựng khóa học
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Bình dân học vụ số > Sở GD&amp;ĐT
+- Link gốc: https://hotro.k12online.vn/huong-dan-so-giao-duc-dao-tao-xay-dung-khoa-hoc.html
+
+**Nội dung:**
+I. Giới thiệu chung
+
+ - Module Bình dân học vụ số là module hỗ trợ cho Sở Giáo dục và Đào tạo tổ chức các khóa học theo chủ trương "bình dân học vụ số" cho đối tượng giáo viên, học sinh của ngành giáo dục.
+
+ II. Quy trình thực hiện
+
+ I. Xây dựng nội dung đào tạo
+
+ 1. Tạo bài giảng
+
+ Sở vào tạo bài giảng để áp dụng cho các khóa học.
+
+ - Bước 1: Vào menu Nội dung đào tạo => Chọn menu Bài giảng => Chọn Thêm mới .
+
+ Lưu ý: Nghiệp vụ tạo bài giảng tương tự như giáo viên tạo bài giảng.
+
+ - Bước 2: Sau khi tạo xong bài giảng và gán các học liệu vào, Sở thực hiện kiểm duyệt bài giảng.
+
+ 2. Tạo chương trình học
+
+ Sau khi đã xây dựng bài giảng xong, Sở tiến hành tạo khung nội dung chương trình học.
+
+ - Bước 1: Vào menu Nội dung đào tạo => Chọn menu Chương trình học => Chọn Thêm mới
+
+ - Bước 2: Thêm nội dung (các bài giảng) vào chương trình học vừa tạo
+
+ II. Tổ chức khóa học
+
+ - Sau khi đã chuẩn bị xong nội dung đào tạo, Sở tổ chức khóa học.
+
+ 1. Tạo khóa học
+
+ - Bước 1: Vào menu Tổ chức đào tạo => Chọn Quản lý khóa học => Chọn Thêm mới
+
+ - Bước 2: Nhập thông tin khóa học cần tạo.
+
+ - Bước 3: Gán khung chương trình học cho khóa học
+
+ - Bước 4: Thiết lập khung tiêu chí cần đạt cho khóa học.
+
+ 2. Duyệt khóa học
+
+ - Sở duyệt khóa học.
+
+==================================================
+

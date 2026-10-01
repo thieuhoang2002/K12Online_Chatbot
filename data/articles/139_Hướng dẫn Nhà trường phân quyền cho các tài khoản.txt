@@ -1,0 +1,13 @@
+### BÀI VIẾT [139]: Hướng dẫn Nhà trường phân quyền cho các tài khoản
+- Chuyên mục: Trang chủ > Cấu hình chung > Tài khoản > Nhà trường
+- Link gốc: https://hotro.k12online.vn/khoi-tao-va-cau-hinh-he-thong/nha-truong/nha-truong/huong-dan-nha-truong-phan-quyen-cho-cac-tai-khoan.html
+
+**Nội dung:**
+Nhà trường có thể phân quyền cho các giáo viên có các quyền khác nhau trên hệ thống K12Online. Thao tác như sau:
+
+ - Vào module Tài khoản => Chọn Phân quyền => Chọn Thêm mới . Sau đó nhà trường nhập tài khoản và vai trò cần phân quyền.
+
+ - Lưu ý: Danh sách loại quyền sẽ hiển thị tùy vào từng trường được sử dụng các module nào trên hệ thống.
+
+==================================================
+

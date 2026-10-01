@@ -1,0 +1,23 @@
+### BÀI VIẾT [263]: Hướng dẫn nhà trường sử dụng chương trình ôn luyện thi tốt nghiệp THPT quốc gia môn tiếng Anh
+- Chuyên mục: Trang chủ > Nội dung tham khảo > Ôn thi THPT quốc gia môn Tiếng Anh
+- Link gốc: https://hotro.k12online.vn/tieng-anh-thpt/huong-dan-nha-truong-su-dung-chuong-trinh-on-luyen-thi-tot-nghiep-thpt-quoc-gia.html
+
+**Nội dung:**
+1. Đăng ký sử dụng
+
+ - Các trường có nhu cầu sử dụng, liên hệ Nhân viên tư vấn giải pháp giáo dục Viettel tỉnh/tp để được tư vấn và hỗ trợ.
+
+ - Thông tin cung cấp bao gồm các thông tin sau:
+
+ STT Tên trường (*) Mã trường (*) Số lượng sử dụng (*) Thời gian bắt đầu (dd/mm/yyyy) (*)
+
+ 1
+
+ Lưu ý: Trước mỗi một năm học, nhà trường chốt số lượng học sinh đăng ký sử dụng trước khi gửi cho nhân viên Viettel tỉnh/tp để thực hiện gán quyền. Tránh phát sinh hoặc thay đổi số lượng.
+
+ 2. Tiếp nhận và phân bổ license cho học sinh
+
+ - Sau khi được Viettel cấp quyền sử dụng, nhà trường vào menu Kiểm duyệt nội dung => Chọn Chương trình học và tìm chương trình học được chia sẻ => Click vào nút Tiếp nhận để thực hiện tiếp nhận nội dung chương trình được chia sẻ.
+
+==================================================
+

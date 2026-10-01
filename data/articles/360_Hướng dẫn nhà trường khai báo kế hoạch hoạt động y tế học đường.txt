@@ -1,0 +1,65 @@
+### BÀI VIẾT [360]: Hướng dẫn nhà trường khai báo kế hoạch hoạt động y tế học đường
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Y tế > Nhà trường
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/y-te/nha-truong/huong-dan-nha-truong-khai-bao-ke-hoach-hoat-dong-y-te-hoc-duong.html
+
+**Nội dung:**
+1. Xem danh sách kế hoạch hoạt động y tế học đường
+
+ Bước 1 : Đăng nhập tài khoản quản lý trường /Cán bộ y tế học đường /Cán bộ y tế học đường
+
+ Bước 2 : Click menu Kế hoạch y tế > click Tab Kế hoạch hoạt động y tế học đường
+
+ 2. Tìm kiếm kế hoạch hoạt động y tế học đường
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo tiêu chí tìm kiếm
+ 3. Thêm mới kế hoạch hoạt động y tế học đường
+
+ Bước 1 : Trên màn hình dánh sách > click button thêm mới
+
+ Bước 2 : Nhập/Chọn đầy đủ hợp lệ các trường dữ liệu bắt buộc để thêm mới
+
+ Lưu ý
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường  tên kế hoạch tối đa 255 ký tự
+ Trường thời gian kết thúc không nhỏ hơn thời gian bắt đầu
+ Click Lưu bản ghi hiển thị bên ngoài danh sách
+ ​​​​​​​4. Chỉnh sửa kế hoạch hoạt động y tế học đường
+
+ Bước 1 : Trên màn hình danh sách > click icon chỉnh sửa để chỉnh sửa kế hoạch hoạt động y tế học đường
+
+ Bước 2:Nhâp/chọn hợp lệ, đầy đủ các trường bắt buộc > click Lưu để chỉnh sửa (Ô có dấu (*) là biểu thị cho việc bắt buộc phải nhập)
+
+ Lưu ý
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường  tên kế hoạch tối đa 255 ký tự
+ Trường thời gian kết thúc không nhỏ hơn thời gian bắt đầu
+ Click Lưu bản ghi hiển thị bên ngoài danh sách
+ ​​​​​​​5. Xóa kế hoạch hoạt động y tế học đường
+
+ Bước 1 : Trên màn hình danh sách > click icon xóa
+
+ Bước 2 : Hiển thị popup xác nhận xóa
+
+ + Click “Xóa” thực hiện xóa bản ghi  thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ ​​​​​​​
+
+ ​​​​​​​6. Xem chi tiết kế hoạch hoạt động y tế học đường
+
+ Bước 1: Trên màn hình danh sách > click icon xem chi tiết
+
+ Bước 2: Hiển thị màn hình xem chi tiết
+
+==================================================
+

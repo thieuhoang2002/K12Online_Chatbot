@@ -1,0 +1,41 @@
+### BÀI VIẾT [327]: Hướng dẫn phụ huynh học sinh đăng ký nghỉ học câu lạc bộ
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Câu lạc bộ > Phụ huynh HS
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/clb/phu-huynh-hs/huong-dan-phu-huynh-hoc-sinh-dang-ky-nghi-hoc-cau-lac-bo.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản phụ huynh
+
+ Bước 2: Trang chủ  > Click vào module Câu lạc bộ > Vào menu Đăng ký nghỉ học
+
+ 1. Thêm mới
+
+ Bước 1: Danh sách > Click button Thêm mới
+
+ Bước 2:  Nhập đầy đủ thông tin > Click Lưu thực hiện đăng ký nghỉ câu lạc bộ thành công
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo và focus vào trường lỗi cụ thể
+ Thời gian bắt đầu là hiện tại hoặc tương lai
+ Thời gian bắt đầu nhỏ hơn Thời gian kết thúc
+ Chọn Khoảng thời gian không thuộc lịch học hệ thống thông báo lỗi
+ Trường Lớp câu lạc bộ list những câu lạc bộ học sinh tham gia
+ Click Lưu bản ghi hiển thị ở danh sách
+ ​​​​​​​​​​​​​​2. Xem chi tiết
+
+ Bước 1: Danh sách > Click icon xem chi tiết
+
+ Bước 2: Hiển thị màn hình chi tiết
+
+ ​​​​​​​​​​​​​​3. Tìm kiếm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+
+==================================================
+

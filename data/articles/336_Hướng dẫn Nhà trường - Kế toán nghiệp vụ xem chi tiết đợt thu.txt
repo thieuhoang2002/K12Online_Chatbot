@@ -1,0 +1,168 @@
+### BÀI VIẾT [336]: Hướng dẫn Nhà trường - Kế toán nghiệp vụ xem chi tiết đợt thu
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Học phí > Nhà trường - Kế toán
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/hoc-phi/nha-truong-ke-toan/huong-dan-nha-truong-ke-toan-nghiep-vu-xem-chi-tiet-dot-thu2.html
+
+**Nội dung:**
+Bước 1 : Trang chủ  > Click vào module Học phí > Click Đợt thu > Click icon Xem chi tiết
+
+ Bước 2 : Thực hiện xem chi tiết thành công
+
+ 1. Tab thông tin chi tiết
+
+ Hiển thị danh sách học sinh và khoản thu công nợ học sinh trong đợt thu
+
+ 1.1. Nhập tính tồn
+
+ ( hiển thị button này khi đợt thu có khoản thu tính tồn)
+
+ Bước 1 : Danh sách > Click button Cập nhật tính tồn > Click Nhập tính tồn
+
+ Bước 2 : Hiển thị form > Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công
+
+ 1.2. Sửa nhanh
+
+ Bước 1 : Danh sách > Click button Sửa nhanh
+
+ Bước 2 : Nhập đầy đủ thông tin trên danh sách > Click Lưu thực hiện chỉnh sửa thành công
+
+ 1.3. Xuất excel
+
+ Danh sách  Click button Xuất excel > File excel được tải về
+
+ 1.4. Tìm kiếm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ 1.5. Xóa
+
+ Bước 1 : Danh sách > Click icon xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ 1.6. Cập nhật tồn ăn
+
+ ( xuất hiện button này khi đợt thu có khoản thu tính tồn)
+ Bước 1: Danh sách > Click button Cập nhật tính tồn > Click Cập nhật tồn ăn
+
+ Bước 2: Hiển thị form > Nhập đầy đủ thông tin > Click Cập nhật thực hiện cập nhật thành công
+
+ 1.7. Nhập tính tồn
+
+ ( xuất hiện button này khi đợt thu có khoản thu tính tồn)
+
+ Bước 1: Danh sách > Click button Nhập tính tồn
+
+ Bước 2: Hiển thị form > Chọn thông tin > Tải file lên  > Click Nhập excel  thực hiện cập nhật thành công
+
+ 1.8. Nhập công nợ
+
+ Bước 1: Danh sách > Click button Nhập công nợ
+
+ Bước 2: Nhập đầy đủ vào form > Click button Nhập excel thực hiện thành công
+
+ 1.9. Khôi phục
+
+ Bước 1: Danh sách > Click button Khôi phục
+
+ Bước 2: Hiển thị form> Nhập đầy đủ thông tin > Click button Lưu thực hiện khôi phục thành công
+
+ 1.10. Chi tiết khoản thu
+
+ Danh sách > Click icon xem chi tiết
+
+ 1.10.1. Danh sách khoản thu
+
+ Tìm kiếm
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Sửa nhanh
+ Bước 1 : Danh sách > Click button Sửa nhanh
+
+ Bước 2 : Nhập đầy đủ thông tin trên danh sách > Click Lưu thực hiện chỉnh sửa  thành công
+
+ Xóa
+ Bước 1 : Danh sách > Click icon xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ Xuất excel
+ Danh sách  Click button Xuất excel > File excel được tải về
+
+ 1.10.2. Tính tồn
+
+ ( Đợt thu có khoản thu tính tồn thì hiển thị tab tính tồn )
+
+ Tìm kiếm
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Sửa nhanh
+ Bước 1 : Danh sách > Click button Sửa nhanh
+
+ Bước 2 : Nhập đầy đủ thông tin trên danh sách > Click Lưu thực hiện chỉnh sửa thành công
+
+ Xóa
+ Bước 1 : Danh sách > Click icon xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ Xuất excel
+ Danh sách  Click button Xuất excel > File excel được tải về
+
+ Cập nhật tồn
+ Bước 1: Danh sách > click button Cập nhật tồn
+
+ Bước 2: Hiển thị form > Nhập đầy đủ thông tin > Click Lưu thực hiện cập nhật thành công
+
+ 1.10.3. Danh sách phiếu thu
+
+ Tìm kiếm
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Xóa
+ Bước 1: Danh sách > Click checkbox all >  Chọn button xóa ( Bản ghi thêm mới phiếu thu mới có hành động xóa )
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ Chỉnh sửa
+ Danh sách click icon chỉnh sửa > Hiển thị form chỉnh sửa > Nhập đầy đủ thông tin > Click Lưu chỉnh sửa thành công ( Bản ghi thêm mới phiếu thu mới có hành động chỉnh sửa )
+
+ In phiếu
+ Danh sách > click icon in > thực hiện in thành công
+
+ Gửi thông báo
+ Danh sách > click icon gửi thông báo > thực hiện gửi thành công
+
+ ​​​​​​​ 1.10.4. Lịch sử chỉnh sửa
+
+ Hiển thị lịch sử chỉnh sửa khoản thu của học sinh
+
+ 2. Tab lịch sử chỉnh sửa
+
+ Hiển thị bản ghi chỉnh sửa trong đợt thu
+
+ ​​​​​​​2.1. Tìm kiếm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ 2.2. Xem chi tiết
+
+ Danh sách > click icon xem chi tiết > Hệ thống hiển thị màn hình chi tiết
+
+==================================================
+

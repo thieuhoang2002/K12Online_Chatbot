@@ -1,0 +1,113 @@
+### BÀI VIẾT [106]: Hướng dẫn nhà trường khai báo dinh dưỡng theo nhóm tuổi
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Bán trú > Nhà trường
+- Link gốc: https://hotro.k12online.vn/huong-dan-nha-truong-khai-bao-dinh-duong-theo-nhom-tuoi.html
+
+**Nội dung:**
+Bước 1: Click menu Quản lý khai báo > Chọn menu Dinh dưỡng theo nhóm tuổi
+
+ Bước 2:  Hệ thống hiển thị trang Dinh dưỡng theo nhóm tuổi đầy đủ thông tin như hình
+
+ Click Sắp xếp theo > Chọn kiểu sắp xếp > Hiển thị danh sách theo trạng thái sắp xếp.
+
+ Lưu ý:
+
+ - Danh sách hiển thị thông tin đã được khai báo sắp xếp theo thời gian tạo giảm dần, hiển thị các thuộc tính thực phẩm ở trạng thái Hoạt động
+
+ - Trạng thái bản ghi ở trạng thái hoạt động sẽ được hiển thị tại menu Cấu hình thực đơn ngày
+
+ - Một khung dinh dưỡng chỉ được phép hoạt động đối với một đối tượng
+
+ 1. Thêm mới khung dinh dưỡng
+
+ Bước 1: Trên danh sách Dinh dưỡng theo nhóm tuổi > Click nút Thêm mới
+
+ Bước 2: Hiển thị màn nhập thông tin thêm mới dinh dưỡng theo nhóm tuổi > Nhập/ chọn đầy đủ thông tin vào form (Ô có dấu (*) là biểu thị cho việc bắt buộc phải nhập) > Click Lưu
+
+ Lưu ý:
+
+ + Chọn đối tượng là học sinh cần phải chọn lớp bán trú áp dụng
+
+ + Năng lượng tối đa khuyến cáo phải lớn hơn năng lượng tối thiểu khuyến cáo
+
+ + Tỷ lệ thành phần dinh dưỡng tối đa phải lớn hơn tỷ lệ thành phần dinh dưỡng tối thiểu
+
+ + Giá trị quy đổi thỏa mãn tối đã lớn hơn tối thiểu
+
+ + Tỷ lệ phần trăm tối đa của bữa ăn phải lớn hơn tỷ lệ phần trăm tối thiểu của bữa ăn
+
+ + Giá trị năng lượng bữa ăn thỏa mãn tối đã lớn hơn tối thiểu
+
+ Bước 3: Lưu thành công bản ghi hiển thị tương ứng lên danh sách
+
+ Nếu chọn trạng thái hoạt động, đối tượng bị trùng lặp với bản ghi đã có thì hệ thống tự động chuyển trạng thái bản ghi cũ sang không hoạt động và thiết lập bản ghi mới lưu là Hoạt động
+
+ 2. Chỉnh sửa dinh dưỡng theo nhóm tuổi
+
+ Bước 1: Trên danh sách click vào icon Chỉnh sửa
+
+ Bước 2: Hiển thị màn hình chỉnh sửa
+
+ Bước 3: Nhập/ chọn đầy đủ thông tin vào form (Ô có dấu (*) là biểu thị cho việc bắt buộc phải nhập) > Click Lưu
+
+ Bước 4: Lưu thành công bản ghi hiển thị tương ứng lên danh sách
+
+ 3. Xóa dinh dưỡng theo nhóm tuổi
+
+ Xóa 1 bản ghi
+
+ Bước 1: Trên danh sách click vào icon Xóa
+
+ Bước 2: Popup xác nhận Xóa hiển thị
+
+ + Nếu bản ghi đã được sử dụng tại Cấu hình thực đơn ngày hiển thị Popup:
+
+ + Nếu bản ghi chưa được sử dụng tại Cấu hình thực đơn ngày pupop hiển thị
+
+ Bước 3: Click nút Xóa trên popup xác nhận
+
+ + Nếu tạm xóa bản ghi chuyển sang trạng thái không hoạt động, danh sách tại bản ghi hiển thị icon khôi phục để khôi phục lại nếu cần
+
+ + Nếu xóa bản ghi sẽ hóa khỏi danh sách, không thể khôi phục
+
+ Xóa nhiều bản ghi
+
+ Bước 1: Trên danh sách click checkbox bản ghi > Click nút xóa
+
+ Bước 2: màn hình hiển thị popup xác nhận xóa
+
+ Bước 3: Click icon Xóa để xóa dinh dưỡng theo nhóm tuổi đã chọn
+
+ Bước 4: Xóa thành công, bản ghị đã xóa không hiển thị trên danh sách
+
+ Lưu ý: Hành động xóa khi tích chọn checkbox là xóa vĩnh viễn không thể khôi phục cần phải xác nhận kỹ trước khi xóa
+
+ Tạm xóa nhiều bản ghi
+
+ Bước 1: Trên danh sách click checkbox bản ghi > Click nút Tạm xóa
+
+ Bước 2 Popup xác nhận tạm xóa hiển thị
+
+ Bước 3: Click nút Tạm xóa trên popup để tạm xóa
+
+ Lưu ý: Tạm xóa thành công bản ghi chuyển sang trạng thái Không hoạt động
+
+ 4. Khôi phục dinh dưỡng theo nhóm tuổi
+
+ Bước 1: Trên danh sách click icon khôi phục
+
+ Bước 2: Hiển thị popup xác nhận khôi phục
+
+ Bước 3: Click nút khôi phục trên popup xác nhận để khôi phục
+
+ Lưu ý: Nếu bản ghi chọn khôi phục có đối tượng là đối trượng thuộc bản ghi khác đang ở trạng thái Hoạt động thì sẽ không thể khôi phục được
+
+ 5. Tìm kiếm dinh dưỡng theo nhóm tuổi
+
+ Bước 1: Trên danh sách tới vùng tìm kiếm > Nhập/ chọn giá trị tìm kiếm
+
+ Bước 2: Click nút Tìm kiếm
+
+ Bước 3: Hệ thống hiển thị danh sách khớp với tiêu chí tìm kiếm
+
+==================================================
+

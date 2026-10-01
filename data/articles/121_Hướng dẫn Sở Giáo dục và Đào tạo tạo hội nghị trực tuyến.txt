@@ -1,0 +1,29 @@
+### BÀI VIẾT [121]: Hướng dẫn Sở Giáo dục và Đào tạo tạo hội nghị trực tuyến
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Họp trực tuyến > Sở/Phòng
+- Link gốc: https://hotro.k12online.vn/huong-dan-so-giao-duc-dao-tao-tao-hoi-nghi-truc-tuyen.html
+
+**Nội dung:**
+1. Giới thiệu chung
+
+ - Hội nghị trực tuyến là tính năng giúp cho Sở tổ chức các cuộc họp trực tuyến trên K12Online để tổ chức các cuộc họp lớn với quy mô lên tới 3000 điểm tương tác trực tuyến đồng thời cùng với nhau.
+
+ 2. Các điểm cần lưu ý
+
+ - Đơn vị cần đăng ký dịch vụ và liên hệ Viettel tỉnh/tp để được kích hoạt và hướng dẫn trước khi sử dụng.
+
+ - Tính năng hội nghị trực tuyến (webinar) chỉ hỗ trợ với cuộc họp tối thiểu hơn 300 điểm cầu và tối đa 3000 điểm cầu.
+
+ - Các điểm cầu vào tham gia mặc định chỉ có quyền dự thính: chỉ xem và nghe âm thanh của điểm cầu của trung tâm, không có có quyền bật micro và video.
+
+ - Có câu hỏi cần hỏi thì sử dụng tính năng Hỏi đáp (Q&A) trên hệ thống.
+
+ - Nếu chủ trì cần cấp quyền bật micro và video thì chọn điểm cầu mới có quyền. Tối đa 100 điểm cầu có quyền diễn giả (panelist) này. Việc cấp quyền này có thể thay đổi luôn phiên, tùy vào chủ trì mong muốn.
+
+ 3. Hướng dẫn thực hiện
+
+ Bước 1: Đăng ký sử dụng
+
+ - Các đơn vị có nhu cầu liên hệ Viettel để đăng ký sử dụng dịch vụ.
+
+==================================================
+

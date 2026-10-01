@@ -1,0 +1,95 @@
+### BÀI VIẾT [63]: Các dạng câu hỏi trên K12Online
+- Chuyên mục: Trang chủ
+- Link gốc: https://hotro.k12online.vn/giao-vien/cac-dang-cau-hoi-tren-k12online.html
+
+**Nội dung:**
+Dạng 1: Câu hỏi lựa chọn 1 đáp án
+
+ Bước 1: Người dùng click vào phần chữ mờ “Nhập nội dung” để nhập nội dung của câu hỏi
+
+ Bước 2: Người dùng click vào phần chữ mờ “Đáp án 1,2,3...” để nhập đáp án của câu hỏi
+
+ Bước 3: Nhấn nút “thêm đáp án ” nếu muốn bổ xung thêm đáp án cho câu hỏi. Hệ thống đang để mặc đinh là 4 đáp án. Hoặc nhấn vào icon xóa để xóa bớt các đáp án
+
+ Bước 4: Tick chọn vào đáp án đúng
+
+ Bước 5: Nhập nội dung lời giải (nếu có).
+
+ Dạng 2: Câu hỏi lựa chọn nhiều đáp án
+
+ Tương tự cách nhập như câu 1 đáp án. Đối với đáp án người dùng bắt buộc phải tick chọn số đáp án đúng từ 2 đáp án trở lên.
+
+ Dạng 3: Câu hỏi lựa chọn đúng sai
+
+ Bước 1: Click chuột vào phần chữ mờ “Nhập nội dung” để nhập nội dung câu hỏi
+
+ Bước 2: Click chuột vào phần chữ mờ “Tiều đề lựa chọn” để nhập nội dung câu lựa chọn. Có thể nhập lời giải ở phần “lời giải chi tiết’’ (nếu có)
+
+ Bước 3: Tick chọn đáp án Đúng/Sai. Hệ thống đang để mặc định đáp án là Đúng
+
+ Bước 4: Nhấn nút “Thêm đáp án” nếu muốn thêm đáp án cho câu hỏi hoặc click vào biểu tượng xóa để xóa bớt các câu lựa chọn.
+
+ Ví dụ
+
+ Dạng 4: Câu điền từ vào chỗ trống
+
+ Bước 1: Click chuột vào phần chữ mờ “Nhập nội dung” để nhập nội dung của câu hỏi. Cách nhập kí hiệu chỗ : [số thự tự chỗ trống 1,2….] tương ứng với đáp án 1,2..
+
+ Bước 2: Click chuột vào phần chữ mờ “Đáp án 1,2..” Để nhập nội dung đáp án
+
+ Bước 3: Click nút Thêm đáp án để bổ xung đáp án cho câu hỏi hoặc click biểu tượng xóa để xóa đáp án hoặc câu hỏi
+
+ Bước 4: Nhập nội dung lời giải vào ô lời giải (nếu có).
+
+ Ví dụ:
+
+ Dạng 5: Câu hỏi dạng nối chéo
+
+ Bước 1: Click vào phần chữ mờ “Nhập nội dung” để nhập nội dung của đề
+
+ Bước 2: Click vào phần chữ mờ “Câu hỏi 1” để nhập nội dụng của câu hỏi=> Click vào phần chữ mờ “Câu trả lời 1” để nhập đán án của câu hỏi 1
+
+ Bước 3: Nhấn nút Thêm đáp án để thêm những câu hỏi mới. Hoặc nhấn vào biểu tượng xóa để xóa
+
+ Bước 4: Nhập lời giải vào ô Nhập lời giải (nếu có).
+
+ Ví dụ:
+
+ Dạng 6: Câu hỏi đọc hiểu
+
+ Bước 1: Click chuột vào phần chữ mờ “Nhập nội dung” Để nhập tiêu đề cho câu hỏi
+
+ Bước 2: Click chuột vào phân chữ mờ “Câu hỏi 1” để nhập nội dung câu hỏi 1 => Click vào phần chữ mờ “Lựa chọn 1” để nhập đán án
+
+ Bước 3: Click vào biểu tượng dấu “+” để thêm đáp án hoặc biểu tượng dấu “-” để xóa bớt đáp án
+
+ Bước 4: Tick chọn đáp án đúng
+
+ Bước 5: Nhấn nút Thêm câu hỏi để bổ xung thêm câu hỏi.
+
+ Ví dụ:
+
+ Dạng 7: Câu hỏi tự luận
+
+ Bước 1: Click chuột vào phần chữ mờ “Nhập nội dung” để nhập nội dung của câu hỏi
+
+ Bước 2: Click vào nút “Thêm lời giải” hệ thống sẽ hiển thị ô nhập lời giải
+
+ Bước 3: Nhập điểm tối đa cho câu.
+
+ Dạng 8: Câu hỏi dạng gạch chân
+
+ Bước 1: Click chuột vào phần chữ mờ “Nhập nội dung” để nhập nội dung của câu hỏi
+
+ Bước 2: Click chuột vào phần chữ mờ “Danh sách từ” để nhập danh sách các từ, câu lựa chọn. và ngăn cách nhau bởi dấu @
+
+ Bước 3: Nhập đáp án => nhập thứ tự của vị trí đáp án đúng
+
+ Bước 4: Nhấn nút “Thêm đáp án” bổ xung thêm các câu lựa chọn khác hoặc nhấn vào biểu tượng xóa để xóa các câu lựa chọn
+
+ Bước 5: Nhập lời giải vào ô lời giải (nếu có).
+
+ Ví dụ:
+
+==================================================
+

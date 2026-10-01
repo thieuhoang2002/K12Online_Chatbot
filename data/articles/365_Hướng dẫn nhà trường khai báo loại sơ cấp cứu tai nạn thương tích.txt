@@ -1,0 +1,69 @@
+### BÀI VIẾT [365]: Hướng dẫn nhà trường khai báo loại sơ cấp cứu tai nạn thương tích
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Y tế > Nhà trường
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/y-te/nha-truong/huong-dan-nha-truong-khai-bao-loai-so-cap-cuu-tai-nan-thuong-tich.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản quản lý trường /Cán bộ y tế học đường
+
+ Bước 2 : Click menu quản lý khai báo > Click Loại sơ cấp cứu tai nạn thương tích
+
+ 1. Thêm mới loại sơ cấp cứu tai nạn thương tích
+
+ Bước 1 : Trên màn hình danh sách > click button Thêm mới
+
+ Bước 2: Nhập/Chọn đầy đủ , hợp lệ các trường bắt buộc > click lưu để thêm loại sơ cấp cứu tai nạn thương tích
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Click Lưu bản ghi hiển thị bên ngoài danh sách
+ Thêm mới thành công hiển thị dữ liệu loại sơ cứu tai nạn thương tích trong form thêm mới/chỉnh sửa Quản lý sức khỏe hàng ngày
+ 2. Chỉnh sửa loại sơ cấp cứu tai nạn thương tích
+
+ Bước 1 : Trên màn hình danh sách > click icon chỉnh sửa > chỉnh sửa loại sơ cấp cứu tai nạn thương tích
+
+ Bước 2: Nhập/Chọn đầy đủ , hợp lệ các trường bắt buộc > click lưu để thêm loại sơ cấp cứu tai nạn thương tích
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Click Lưu bản ghi hiển thị bên ngoài danh sách
+ Chỉnh sửa thành công hiển thị dữ liệu loại sơ cứu tai nạn thương tích trong form thêm mới/chỉnh sửa Quản lý sức khỏe hàng ngày
+ 3. Tìm kiếm loại sơ cấp cứu tai nạn thương tích
+
+ Trên thanh menu: Nhập / chọn dữ liệu muốn tìm kiếm > Click button Tìm kiếm > Hệ thống trả về kết quả tìm kiếm theo tiêu chí đã nhập.
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo tiêu chí tìm kiếm
+ 4. Xóa loại sơ cấp cứu tai nạn thương tích
+
+ 4.1. Tạm xóa loại sơ cấp cứu tai nạn thương tích
+
+ Bước 1: Trên màn hình danh sách > click icon tạm xóa
+
+ Bước 2: Hiển thị pupop xác nhận tạm xóa
+
+ + Click “Tạm xóa” thực hiện tạm xóa thành công , chuyển bản ghi về trạng thái không hoạt động
+
+ + Click “Hủy bỏ” hủy thao tác tạm  xóa
+
+ Lưu ý : Chỉ tạm xóa các bản ghi đã sử dụng , sau khi tạm xóa bản ghi chuyển trạng thái không hoạt động
+
+ 4.2. Xóa vĩnh viễn loại mục khám
+
+ Bước 1: Trên màn hình danh sách > click icon  xóa
+
+ Bước 2: Hiển thị pupop xác nhận xóa
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy thao tác  xóa
+
+ Lưu ý : Chỉ xóa vĩnh viễn các bản ghi chưa được sử dụng
+
+==================================================
+

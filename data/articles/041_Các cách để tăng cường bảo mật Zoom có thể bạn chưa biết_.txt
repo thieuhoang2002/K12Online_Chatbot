@@ -1,0 +1,43 @@
+### BÀI VIẾT [41]: Các cách để tăng cường bảo mật Zoom có thể bạn chưa biết?
+- Chuyên mục: Trang chủ > Câu hỏi thường gặp > Dành cho Giáo viên
+- Link gốc: https://hotro.k12online.vn/cau-hoi-thuong-gap/tang-cuong-bao-mat-khi-su-dung-zoom.html
+
+**Nội dung:**
+Dưới đây là một số những cách để giúp các thầy/cô bảo mật lớp học của mình hơn với Zoom.
+
+ 1. Kích hoạt chế độ Phòng Chờ (Waiting Room)
+
+ Giáo viên hoặc chủ trì cuộc họp kích hoạt chế độ phòng chờ (waiting room) trên Zoom để khi nào có người tham gia thì được sự cho phép của giáo viên và chủ trì cuộc họp thì mới được phép vào.
+
+ Vào Sercurity => Chọn Enable Waiting Room
+
+ 2. Tắt chế độ chia sẻ màn hình cho người tham gia
+
+ Giáo viên có thể không cho phép học sinh không được chia sẻ được màn hình khi mình đang giảng bài bằng cách tắt chế độ này đi.
+
+ Vào Sercurity => Tại mục Allow Participants to , bỏ chọn Share Screen
+
+ 3. Tắt chế độ cho phép người tham gia nhắn tin
+
+ Giáo viên có thể không cho phép học sinh không được nhắn tin khi mình đang giảng bài bằng cách tắt chế độ này đi.
+
+ Vào Sercurity => Tại mục Allow Participants to , bỏ chọn Chat
+
+ 4. Tắt chế độ không cho người tham gia đổi tên
+
+ Giáo viên có thể không cho phép học sinh được tự ý đổi tên.
+
+ Vào Sercurity => Tại mục Allow Participants to , bỏ chọn Rename Themselves
+
+ 5. Tắt chế độ không cho người tham gia vẽ chú thích
+
+ Trong khi giáo viên đang chia sẻ màn hình, giáo viên tắt chế độ không cho phép người tham gia chú thích vào màn hình chia sẻ của mình.
+
+ Tại thanh công cụ khi giáo viên chia sẻ màn hình, giáo viên click vào biểu tượng ba chấm (...) => Chọn chế độ Disable Annotation for Others .
+
+ 6. Tắt chế độ Mở Zoom dành cho học sinh
+
+ - Nhà trường có thể liên hệ Viettel tỉnh/tp để được kích hoạt tính năng tắt chế độ Mở Zoom khi học sinh tham gia học trực tuyến trên K12Online.
+
+==================================================
+

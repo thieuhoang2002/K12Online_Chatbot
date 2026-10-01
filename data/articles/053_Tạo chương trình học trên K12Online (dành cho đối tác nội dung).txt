@@ -1,0 +1,21 @@
+### BÀI VIẾT [53]: Tạo chương trình học trên K12Online (dành cho đối tác nội dung)
+- Chuyên mục: Trang chủ > Hướng dẫn sử dụng > Dành cho đối tác nội dung
+- Link gốc: https://hotro.k12online.vn/doi-tac-noi-dung/tao-chuong-trinh-hoc-tren-k12online-danh-cho-doi-tac-noi-dung-.html
+
+**Nội dung:**
+Để tạo chương trình học trên K12Online, thực hiện theo bước sau:
+
+ Bước 1: Vào menu Chương trình học => Chọn Thêm mới để thực hiện thêm mới chương trình học
+
+ Bước 2 : Nhập thông tin cho chương trình học. Lưu ý các trường có dấu * là trường bắt buộc
+
+ Bước 3: Click Lưu lại để lưu thông tin
+
+ Bước 4: Chọn Thêm mới để gán các bài giảng vào Chương trình học
+
+ Bước 5: Click icon để thêm bài giảng
+
+ Lưu ý : Nếu muốn xóa bài giảng đã chọn thì click icon thùng  rác bên Bài giảng đã thêm để xóa.
+
+==================================================
+

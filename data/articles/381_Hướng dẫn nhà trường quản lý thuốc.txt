@@ -1,0 +1,27 @@
+### BÀI VIẾT [381]: Hướng dẫn nhà trường quản lý thuốc
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Y tế > Nhà trường
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/y-te/nha-truong/huong-dan-nha-truong-quan-ly-thuoc.html
+
+**Nội dung:**
+1. Danh sách thuốc
+
+ Bước 1: Đăng nhập tài khoản quản lý trường /Cán bộ y tế học đường
+
+ Bước 2 : Click menu Quản lý thuốc > tab Danh sách thuốc
+
+ 2. Xem thống kê danh sách thuốc
+
+ Trên màn hình danh sách > hiển thị danh sách thống kê thuốc
+
+ 3. Xem chi tiết thống kê thuốc
+
+ Bước 1 :Trên màn hình danh sách > click icon xem chi tiết
+
+ Bước 2: Hiển thị màn hình chi tiết
+
+ 4. Lịch sử chung
+
+ Click menu Quản lý thuốc > click tab lịch sử chung > xem lịch sử nhập/sử dụng/hủy thuốc
+
+==================================================
+

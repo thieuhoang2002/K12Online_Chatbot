@@ -1,0 +1,79 @@
+### BÀI VIẾT [112]: Hướng dẫn nhà trường khai báo thông tin món ăn
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Bán trú > Nhà trường
+- Link gốc: https://hotro.k12online.vn/huong-dan-nha-truong-khai-bao-thong-tin-mon-an.html
+
+**Nội dung:**
+Trên thanh menu > Click Menu Quản lý khai báo > Chọn Danh mục bán trú > Click Món ăn
+
+ 1. Thêm thực phẩm
+
+ Bước 1:Trên màn hình thêm mới món ăn > click button Thêm
+
+ Bước 2: Hiển thị màn hình thêm mới thực phẩm
+
+ Bước 3: Click checkbox đầu bản ghi > click button Chọn thực phẩm để thêm thực phẩm
+
+ 2. Chỉnh sửa món ăn
+
+ Bước 1: Trên màn hình danh sách > click icon chỉnh sửa
+
+ Bước 2: Hiển thị màn hình chỉnh sửa món ăn. Thực hiện nhập vào các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Bước 3: Click Lưu lại để hoàn thành việc chỉnh sửa
+
+ 3. Tìm kiếm thực phẩm
+
+ Danh sách > Tại vùng tìm kiếm: nhập tiêu chí tìm kiếm > Click button Tìm kiếm để thực hiện tìm kiếm món ăn
+
+ 4. Nhập excel
+
+ Bước 1: Trên màn hình danh sách > click button Nhập excel
+
+ Bước 2: Thực hiện tải xuống file mẫu > Nhập đầy đủ thông tin trong file
+
+ Bước 3: Chọn file tải lên > click Nhập excel để thêm mới món ăn
+
+ Lưu ý:
+
+ + Tải file đúng định dạng file mẫu
+
+ + File tải lên tối đa 10mb
+
+ 5. Xuất excel
+
+ Danh sách > Click button Xuất excel > Thực hiện xuất excel thành công > Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+ 6. Xóa món ăn
+
+ Xóa 1 món ăn
+ Bước 1: Trên màn hình danh sách > Click icon xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa
+
+ + Click “Xóa” để thực hiện xóa món ăn
+ + Click “Hủy bỏ” để hủy thao tác xóa
+
+ Xóa nhiều món ăn
+ Bước 1: Trên màn hình danh sách > Click checkbox đầu bản ghi > click button Xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa
+
+ + Click “Xóa” để thực hiện xóa món ăn
+ + Click “Hủy bỏ” để hủy thao tác xóa
+
+ Lưu ý:
+ + Với món ăn đang được sử dụng cho thực đơn sẽ không thể xóa
+ 7. Tạm xóa món ăn
+
+ Tạm xóa  món ăn
+ Bước 1: Trên màn hình danh sách > Click checkbox đầu bản ghi > click button tạm xóa
+
+ Bước 2: Hiển thị popup xác nhận tạm xóa
+
+ + Click “Tạm xóa” để thực hiện tạm xóa món ăn
+ + Click “Hủy bỏ” để hủy thao tác tạm xóa
+
+ Sau khi tạm xóa thực phẩm bản ghi sẽ không bị xóa mà chuyển trạng thái không hoạt động
+
+==================================================
+

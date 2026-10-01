@@ -1,0 +1,27 @@
+### BÀI VIẾT [99]: Hướng dẫn Giáo viên tạo bài kiểm tra
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Giáo viên
+- Link gốc: https://hotro.k12online.vn/huong-dan-giao-vien-tao-bai-kiem-tra.html
+
+**Nội dung:**
+Vào Kiểm tra, đánh giá => Chọn Bài kiểm tra => Chọn Thêm mới . Giáo viên có thể lựa chọn 1 trong 3 dạng bài kiểm tra trên hệ thống.
+
+ I. Các dạng bài kiểm tra và hình thức kiểm tra
+
+ 1.1. Các dạng bài kiểm tra hiện có trên K12Online:
+
+ - Nhập tay: giáo viên vào nhập câu hỏi trực tiếp;
+
+ - PDF: giáo viên đưa file đề thi dạng .pdf lên
+
+ - Ma trận: giáo viên tạo bài kiểm tra từ NHCH đã có sẵn.
+
+ 1.2. Các hình thức kiểm tra:
+
+ - Tập trung: bài kiểm tra gán vào thời khóa biểu; học sinh làm trong thời gian tiết học mà giáo viên gán lên thời khóa biểu.
+
+ - Phân tán: giáo viên không cần gán lên thời khóa biểu; học sinh làm trong khoảng thời gian mà giáo viên cho phép.
+
+ II. Quy trình tạo bài kiểm tra
+
+==================================================
+

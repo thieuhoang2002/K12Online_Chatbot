@@ -1,0 +1,17 @@
+### BÀI VIẾT [115]: Hướng dẫn nhà trường lấy danh sách tài khoản GV, HS do Sở GD&amp;ĐT TP HCM cấp
+- Chuyên mục: Trang chủ > Cấu hình chung > Tài khoản > Khác
+- Link gốc: https://hotro.k12online.vn/huong-dan-nha-truong-lay-danh-sach-tai-khoan.html
+
+**Nội dung:**
+1. Hướng dẫn lấy tài khoản học sinh
+
+ Bước 1: Nhà trường đăng nhập vào hệ thống truong.hcm.edu.vn bằng tài khoản quản trị trường do Sở GD&ĐT TP.HCM cấp.
+
+ Bước 2: Chọn module Quản lý học và thi
+
+ Bước 3: Chọn 1. Hệ thống => Chọn 1.2. Quản lý tài khoản thí sinh
+
+ Bước 4: Hệ thống hiển thị danh sách tài khoản của học sinh. Chọn Xuất Excel để xuất danh sách tài khoản học sinh của trường.
+
+==================================================
+

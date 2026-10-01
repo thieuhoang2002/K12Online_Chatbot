@@ -1,0 +1,23 @@
+### BÀI VIẾT [64]: Các tính năng dành cho Tổ trưởng chuyên môn
+- Chuyên mục: Trang chủ > Cấu hình chung > Tài khoản
+- Link gốc: https://hotro.k12online.vn/giao-vien/cac-tinh-nang-danh-cho-to-truong-chuyen-mon.html
+
+**Nội dung:**
+1. Kiểm duyệt Bài giảng của các giáo viên trong tổ
+
+ Bước 1: Tổ trưởng chuyên môn và Quản lý đào tạo => Chọn tên tổ của mình
+
+ Bước 2: Chọn bộ lọc Bài giảng
+
+ Bước 3: Xem và kiểm duyệt các bài giảng của giáo viên trong tổ đưa lên.
+
+ 2. Kiểm duyệt Kế hoạch bài dạy của các giáo viên trong tổ
+
+ Bước 1: Tổ trưởng chuyên môn và Quản lý đào tạo => Chọn tên tổ của mình
+
+ Bước 2: Chọn bộ lọc Kế hoạch bài dạy
+
+ Bước 3: Xem và kiểm duyệt các bài giảng của giáo viên trong tổ đưa lên.
+
+==================================================
+

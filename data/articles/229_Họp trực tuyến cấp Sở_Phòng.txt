@@ -1,0 +1,130 @@
+### BÀI VIẾT [229]: Họp trực tuyến cấp Sở/Phòng
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Họp trực tuyến
+- Link gốc: https://hotro.k12online.vn/so-phong/hop-truc-tuyen-cap-so-phong.html
+
+**Nội dung:**
+Họp trực tuyến là tính năng giúp cho Sở/Phòng tổ chức các cuộc họp trực tuyến trên K12Online để tương tác trực tuyến đồng thời cùng với nhau. Đây là một tính năng hữu ích giúp cho các cơ sở giáo dục giúp có thể các cuộc họp trao đổi công việc, sinh hoạt chuyên môn hay tập huấn, đào tạo nội bộ... Với tính năng họp trực tuyến này, các cơ sở giáo dục có thể tiết kiệm được tối đa chi phí và thời gian.
+
+ Ảnh: Một cuộc họp trực tuyến do Sở Giáo dục và Đào tạo thành phố Hải Phòng tổ chức trên K12Online
+
+ I. MỘT SỐ LƯU Ý CẦN NẮM RÕ TRƯỚC KHI TỔ CHỨC CUỘC HỌP
+
+ 1. Lưu ý khi sử dụng máy tính
+
+ a) Lưu ý cấu hình máy tối thiểu sử dụng
+
+ - Cấu hình tối thiểu Core i3, RAM 4Gb trở lên (khuyến khích từ 8Gb trở lên, nếu có điều kiện);
+
+ - Thiết bị kết nối đường truyền Internet (sử dụng dây LAN riêng), băng thông tối thiểu 20Mbps.
+
+ Lưu ý: Nếu điểm cầu đó là điểm cầu trung tâm hoặc có kết nối với hệ thống TV, màn hình led nhiều hoặc có độ phân giải cao và hệ thống âm thanh chuyên dụng thì cần băng thông cao hơn để đảm bảo chất lượng và sự ổn định.
+
+ b) Lưu ý khi sử dụng ứng dụng K12Online
+
+ - Nếu sử dụng hệ điều hành Windows 10, vui lòng cài đặt ứng dụng K12Online về để sử dụng để có trải nghiệm tốt nhất.
+
+ - Tắt bớt các ứng dụng không cần thiết để không ảnh hưởng.
+
+ - Link download: tại đây
+
+ - Hướng dẫn cài đặt (cài lần lượt các file được đánh số từ 01 đến 03. Sau đó restart lại máy).
+
+ c) Lưu ý khi sử dụng bằng trình duyệt
+
+ - Nếu không sử dụng hệ điều hành Windows 10 thì dùng trực tiếp trên web. Tuy nhiên, chất lượng và độ ổn định sẽ không bằng trên ứng dụng K12Online được cài đặt trên máy.
+
+ - Truy cập bằng trình duyệt Google Chrome (nên cập nhật phiên bản mới nhất hoặc tối thiểu từ version 88 trở lên) để có đầy đủ tính năng và trải nghiệm tốt nhất (không sử dụng trên các trình duyệt khác như Firefox, Cốc Cốc…).
+
+ - Gỡ bỏ các extension (tiện ích mở rộng) không cần thiết trên trình duyệt, vì sẽ ảnh hưởng tới bộ nhớ và tiến trình xử lý RAM của trình duyệt Google Chrome, ảnh hưởng đến chất lượng.
+
+ - Tắt bớt những tab trình duyệt không cần thiết trong quá trình sử dụng.
+
+ - Trong lần đầu tiên sử dụng, trình duyệt Google Chrome sẽ yêu cầu bật micro và webcam của máy tính, vui lòng cho phép.
+
+ - Link tải về Google Chrome phiên bản mới nhất: https://www.google.com/chrome
+
+ => Cách kiểm tra phiên bản đang sử dụng:
+
+ - Click vào hình ba chấm dọc ở bên góc phải trên cùng của trình duyệt Google Chrome;
+
+ - Chọn Help (Trợ giúp) ;
+
+ - Chọn About Google Chrome (Giới thiệu về Google Chrome) ;
+
+ - Đảm bảo phiên bản Google Chrome đang sử dụng đã được cập nhật bản mới nhất, như hình:
+
+ 2. Lưu ý chuẩn bị các điều kiện đảm bảo trước khi tham gia họp trực tuyến
+
+ Các điểm cầu chuẩn bị kỹ các điều kiện đảm bảo sau trước khi tham gia họp trực tuyến như:
+
+ - Thiết bị sử dụng được kết nối Internet ổn định (như Hướng dẫn ở mục 1 );
+
+ - Thiết bị sử dụng đã sạc pin đủ duy trì trong suốt thời gian họp;
+
+ - Tắt hết các ứng dụng, phần mềm không cần thiết của thiết bị để tránh ảnh hưởng trong quá trình họp và tốn tài nguyên, thời gian xử lý của thiết bị.
+
+ - Nên tìm nơi yên tĩnh trong quá trình họp trực tuyến, hạn chế các yếu tố xung quanh làm ảnh hưởng như những nơi có nhiều tiếng ồn, xe cộ đi lại…
+
+ 3. Chủ động để vào họp đúng giờ
+
+ - Các điểm cầu đăng nhập hệ thống K12Online trước 5 phút để chủ động kiểm tra hệ thống và có phương án xử lý nếu có sự cố xảy ra.
+
+ 4. Tuân thủ nội quy họp trực tuyến
+
+ - Các điểm cầu khi tham gia họp trực tuyến tuyệt đối tuân theo các yêu cầu và hướng dẫn của điểm cầu trung tâm, không sử dụng hệ thống để trao đổi các nội dung không liên quan và ảnh hưởng đến các điểm cầu khác.
+
+ II. HƯỚNG DẪN TẠO CUỘC HỌP CẤP SỞ/PHÒNG
+
+ Bước 1: Tạo nhóm họp
+
+ - Vào menu Họp trực tuyến => Chọn tab Quản lý nhóm họp
+
+ - Click vào ô Thêm mới => Nhập tên nhóm họp mới cần tạo => Nhấn Lưu lại để hoàn tất.
+
+ - Vào nhóm vừa tạo => Click vào ô Thêm mới => Để chọn đối tượng và tài khoản cần thêm vào nhóm họp.
+
+ - Nhấn Lưu lại để hoàn tất việc tạo nhóm họp.
+
+ Lưu ý: Đảm bảo tất cả các đơn vị tham gia cuộc họp đã được khởi tạo hệ thống và có tài khoản quản trị trên hệ thống K12Online trước khi tạo nhóm họp.
+
+ Bước 2: Tạo cuộc họp
+
+ 2.1. Tạo cuộc họp
+
+ - Vào menu Họp trực tuyến => Chọn tab Quản lý cuộc họp => Click vào ô Thêm cuộc họp mới => Nhập các thông tin cơ bản của cuộc họp cần tạo như:
+
+ Tên cuộc họp: Nhập tên cuộc họp cần tạo;
+ Người chủ trì: Tài khoản sẽ chủ trì cuộc họp (thường là admin Sở/Phòng);
+ Nhóm thành viên: Chọn nhóm thành viên tham gia họp (vừa tạo ở Bước 1);
+ Mô tả: Mô tả ngắn về cuộc họp (nếu có);
+ Ngày họp: ghi chính xác ngày diễn ra cuộc họp;
+ Thời gian bắt đầu: ghi chính xác thời gian bắt đầu diễn ra cuộc họp;
+ Thời lượng: nhập thời lượng của cuộc họp cần tạo;
+ - Sau khi tạo xong nhấn Lưu lại .
+
+ 2.2. Gửi thông báo cuộc họp tới các điểm cầu tham gia
+
+ - Vào menu Họp trực tuyến => Chọn tab Quản lý cuộc họp => Sau khi cuộc họp được tạo xong, click vào nút Gửi thông báo để thông báo cho các đơn vị tham gia trên hệ thống biết.
+
+ Lưu ý: Nếu Sở/Phòng muốn tạo cuộc họp công khai, cho phép những người khác có thể tham gia ngoài danh sách thành viên trong nhóm học, thực hiện như sau:
+
+ Tick ô Cho phép mọi người tham gia;
+ Nhập mật khẩu của cuộc họp, từ 6-9 ký tự số.
+ Bước 3: Vào họp
+
+ Vào menu Họp trực tuyến => Chọn tab Quản lý cuộc họp => Tìm cuộc họp cần vào => Tại cột Hành động , click Tham gia .
+
+ III. HƯỚNG DẪN CÁC ĐƠN VỊ THAM GIA CUỘC HỌP TRỰC TUYẾN DO SỞ/PHÒNG TỔ CHỨC
+
+ Cách 1: Tham gia ứng dụng K12Online được cài đặt trên máy tính
+
+ Bước 1: Tải về và cài đặt ứng dụng K12Online trên máy tính
+
+ Bước 2: Mở ứng dụng K12Online trên máy tính và đăng nhập
+
+ Bước 3: Vào menu Họp trực tuyến trên ứng dụng K12Online => Cuộc họp do Sở/Phòng tổ chức mà có trạng thái đang/sắp diễn ra mà yêu cầu tham gia sẽ được hiện trong phần này.
+
+ Bước 4: Tìm cuộc họp muốn tham gia, click vào biểu tượng Tham gia .
+
+==================================================
+

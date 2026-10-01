@@ -1,0 +1,33 @@
+### BÀI VIẾT [124]: Chia sẻ chương trình học cho các trường
+- Chuyên mục: Trang chủ > Hướng dẫn sử dụng > Dành cho đối tác nội dung
+- Link gốc: https://hotro.k12online.vn/huong-dan-su-dung/doi-tac/chia-se-chuong-trinh-hoc-cho-cac-truong.html
+
+**Nội dung:**
+Để chia sẻ các chương trình cho các đơn vị nhà trường, thực hiện như sau:
+
+ Cách 1: Chia sẻ ngoài danh sách chương trình học
+
+ Bước 1: Vào menu Chương trình học => Chọn icon chia sẻ
+
+ Bước 2: Nhập thông tin đơn vị cần chia sẻ.
+
+ Bước 3 : Chọn Lưu để lưu lại thông tin
+
+ Cách 2: Chia sẻ trong chi tiết chương trình học
+
+ Bước 1: Vào menu Chương trình học => Click vào tên chương trình học
+
+ Bước 2 : Chọn tab Lịch sử chia sẻ => Chọn Thêm mới
+
+ Bước 3 : Nhập thông tin đơn vị được chia sẻ
+
+ Bước 4: Chia sẻ chương trình học cho các cơ sở giáo dục đăng ký. Có 2 cách chia sẻ chương trình học:
+
+ - Chia sẻ thủ công:
+
+ - Chia sẻ theo file Excel.
+
+ Bước 5 : Chọn Lưu để lưu lại thông tin
+
+==================================================
+

@@ -1,0 +1,119 @@
+### BÀI VIẾT [80]: Hướng dẫn giáo viên quản lý thiết bị
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Cơ sở vật chất > Giáo viên
+- Link gốc: https://hotro.k12online.vn/giao-vien4/huong-dan-giao-vien-quan-ly-thiet-bi2.html
+
+**Nội dung:**
+1. Danh sách thiết bị
+
+ Bước 1: Truy cập menu Quản lý thiết bị
+
+ Bước 2: Hiển thị màn hình danh sách Tất cả thiết bị
+
+ Click Sắp xếp theo > Chọn kiểu sắp xếp > Hiển thị danh sách theo trạng thái sắp xếp.
+ Click icon Chi tiết thiết bị để thực hiện xem chi tiết thiết bị
+ Click Báo cáo tình trạng để thực hiện Báo hỏng/ Báo hết/ Báo mất (Chỉ hiển thị với thiết bị cán bộ đó được phân công quản lý hoặc thiết bị cán bộ đó đang mượn)
+ Tải lại
+ Trên danh sách > click button Tải lại > Thực hiện tải lại danh sách.
+
+ Sắp xếp
+ Trên danh sách > click button Sắp xếp theo > Chọn kiểu sắp xếp> Hiển thị danh sách theo trạng thái sắp xếp.
+
+ Phân trang
+
+ Trên màn hình: hiển thị phân trang ở phía dưới bên phải màn khi danh sách có > 20 bản ghi
+ + Click icon << (>>) để chuyển đến trang trước đó (trang tiếp theo)
+
+ + Click icon << << (>> >>) để chuyển đến trang đầu tiên (trang cuối cùng)
+
+ 2. Xem chi tiết thiết bị
+
+ Bước 1: Trên màn hình danh sách > Click icon Chi tiết thiết bị
+
+ Bước 2: Hiển thị màn hình chi tiết thiết bị thành công
+
+ Lịch sử thiết bị: Hiển thị lịch sử thay đổi tình trạng của thiết bị
+ Tài liệu đính kèm: Hiển thị danh sách tài liệu đính kèm
+ Click button Báo mất để báo mất thiết bị
+ Click button Báo hỏng để báo hỏng thiết bị
+ Click button Báo hết để báo hết thiết bị
+
+ 2.1. Báo mất
+
+ Bước 1: Trên màn hình Xem chi tiết thiết bị > Click button Báo mất
+
+ Bước 2: Hệ thống hiển thị popup điền lý do báo mất > Thực hiện nhập lý do báo mất, trường có dấu (*) là bắt buộc nhập.
+
+ Click Gửi để thực hiện báo mất > Thiết bị chuyển về tỉnh trạng Mất và ở trạng thái Không sử dụng. Thêm lịch sử báo mất tại danh sách Lịch sử thiết bị ở màn hình xem chi tiết
+ Click Hủy bỏ để quay lại danh sách
+
+ ​​​​​​​​​​​​​​2.2. Báo hỏng
+
+ Bước 1: Trên màn hình Xem chi tiết thiết bị > Click button Báo hỏng
+
+ Bước 2: Hệ thống hiển thị popup xác nhận báo hỏng
+
+ + Click Xác nhận báo hỏng để báo hỏng > Thiết bị chuyển về tỉnh trạng Hỏng và ở trạng thái Không sử dụng. Thêm lịch sử báo hỏng tại danh sách Lịch sử thiết bị ở màn hình xem chi tiết.
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ ​​​​​​​​​​​​​​2.3. Báo hết
+
+ (Lưu ý: Báo hết chỉ hiển thị với thiết bị thuộc thiết bị cha được tích Là thiết bị tiêu hao)
+
+ Bước 1: Trên màn hình Xem chi tiết thiết bị > Click button Báo hết
+
+ Bước 3: Hệ thống hiển thị popup xác nhận báo hết
+
+ + Click Xác nhận báo hết để thực hiện báo hết > Thiết bị chuyển về tỉnh trạng Hết và ở trạng thái Không sử dụng. Thêm lịch sử báo hết tại danh sách Lịch sử thiết bị ở màn hình xem chi tiết.
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ ​​​​​​​3. Báo cáo tình trạng
+
+ 3.1. Báo hỏng
+
+ Bước 1: Trên màn hình danh sách > Click icon Báo cáo tình trạng
+
+ ​​​​​​​
+
+ Bước 2: Click Báo hỏng tại droplist
+
+ Bước 3: Hệ thống hiển thị popup xác nhận báo hỏng
+
+ + Click Xác nhận báo hỏng để báo hỏng > Thiết bị chuyển về tỉnh trạng Hỏng và ở trạng thái Không sử dụng
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ ​​​​​​​​​​​​​​3.2. Báo hết
+
+ (Lưu ý: Báo hết chỉ hiển thị với thiết bị thuộc thiết bị cha được tích Là thiết bị tiêu hao)
+
+ Bước 1: Trên màn hình danh sách > Click icon Báo cáo tình trạng
+
+ Bước 2: Click Báo hết tại droplist
+
+ Bước 3: Hệ thống hiển thị popup xác nhận báo hết
+
+ + Click Xác nhận báo hết để thực hiện báo hết > Thiết bị chuyển về tỉnh trạng Hết và ở trạng thái Không sử dụng
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ ​​​​​​​3.3. Báo mất
+
+ Bước 1: Trên màn hình danh sách > Click icon Báo cáo tình trạng
+
+ Bước 2: Click Báo mất tại droplist
+
+ Bước 3: Hệ thống hiển thị popup điền lý do báo mất > Thực hiện nhập lý do báo mất, trường có dấu (*) là bắt buộc nhập.
+
+ Click Gửi để thực hiện báo mất > Thiết bị chuyển về tỉnh trạng Mất và ở trạng thái Không sử dụng
+ Click Hủy bỏ để quay lại danh sách
+
+ ​​​​​​​4. Xuất excel
+
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel > Thực hiện xuất excel thành công > Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+ Bước 2: Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+==================================================
+

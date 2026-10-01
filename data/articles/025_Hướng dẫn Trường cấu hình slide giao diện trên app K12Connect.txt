@@ -1,0 +1,13 @@
+### BÀI VIẾT [25]: Hướng dẫn Trường cấu hình slide giao diện trên app K12Connect
+- Chuyên mục: Trang chủ > Cấu hình chung > Cấu hình hệ thống
+- Link gốc: https://hotro.k12online.vn/cau-hinh-he-thong/huong-dan-truong-cau-hinh-slide-giao-dien-tren-app-k12connect.html
+
+**Nội dung:**
+Hướng dẫn Trường cấu hình slide giao diện trên ứng dụng K12Connect
+
+ Để nhà trường thay đổi cấu hình slide ảnh trên ứng dụng K12Connect để đối với từng vai trò có thể sử dụng các ảnh thể hiện khác nhau theo từng giai đoạn mong muốn
+
+ Bước 1: User Admin trường đăng nhập vào hệ thống K12 của trường và vào module Cấu hình hệ thống
+
+==================================================
+

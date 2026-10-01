@@ -1,0 +1,53 @@
+### BÀI VIẾT [104]: Hướng dẫn Học sinh tham gia Kỳ thi mô phỏng bài thi TN THPT  2025
+- Chuyên mục: Trang chủ > Nội dung tham khảo > Kỳ thi mô phỏng bài thi tốt nghiệp THPT 2025
+- Link gốc: https://hotro.k12online.vn/huong-dan-hoc-sinh-tham-gia-ky-thi-mo-phong-bai-thi-tn-thpt-quoc-gia-2025.html
+
+**Nội dung:**
+1. Đăng nhập
+
+ Bước 1: Truy cập vào trình duyệt Google Chrome trên máy tính và vào địa chỉ https://k12online.vn
+
+ Bước 2: Nhập Tài khoản và Mật khẩu được Nhà trường cấp và nhấn Đăng nhập .
+
+ 2. Vào thi
+
+ Bước 1: Sau khi đăng nhập xong, màn hình hiện ra như hình. Kéo xuống phía dưới chọn chương trình học tên là “Kỳ thi mô phỏng kỳ thi TN THPT 2025” được gán.
+
+ Lưu ý: Nếu học sinh không nhìn thấy nghĩa là do Nhà trường chưa gán. Vui lòng liên hệ Nhà trường để được kiểm tra và hỗ trợ trước khi diễn ra bài thi.
+
+ Bước 2: Tại menu Nội dung chương trình , học sinh tìm đề thi cần vào làm bài.
+
+ Bước 3: Đến thời gian làm bài, nút Làm bài sẽ hiện lên, học sinh nhấn nút Làm bài để thực hiện.
+
+ - Học sinh vào màn hình làm bài. Hệ thống sẽ hiển thị toàn bộ màn hình.
+
+ - Học sinh đọc kỹ nội dung bài làm, chọn các đáp án theo hướng dẫn ở trên màn hình.
+
+ Lưu ý:
+
+ 1. Học sinh vào đúng bài thi cần làm.
+
+ 2. Nếu thi trên máy tính: thi trên trình duyệt web, khuyến nghị sử dụng Google Chrome.
+
+ 3. Nếu thi trên điện thoại: cài đặt ứng dụng K12Online, cập nhật phiên bản mới nhất (không dùng trình duyệt trên điện thoại), hỗ trợ các phiên bản hệ điều hành sau:
+
+ - Android 7.0 trở lên
+
+ - iOS 12 trở lên.
+
+ Có 3 dạng câu hỏi trong bài thi TN THPT Quốc gia 2025:
+
+ - Câu hỏi chọn 1 đáp án: Học sinh tick chọn vào đáp án.
+
+ - Câu hỏi đúng sai: Học sinh chọn vào biểu tượng dấu tick xanh để chọn Đúng, hoặc dấu X đỏ tương ứng với Sai.
+
+ - Câu hỏi điền vào chỗ trống:
+
+ + Học sinh nhập mỗi ô trống 1 ký tự. Tối đa 4 ký tự, là số (từ 0 đến 9), dấu gạch ngang (thể hiện phần âm) và dấy phẩy (thể hiện phần thập phân).
+
+ + Với những đáp án ít hơn 4 ký tự: học sinh viết từ trái qua phải, để trống các ô không có ký tự cần điền.
+
+ Bước 4: Sau khi làm xong, nhấn nút Nộp bài để nộp bài và kết thúc quá trình làm bài. Nếu chưa nhấn Nộp bài , hệ thống tự động nộp bài sau khi đã hết thời gian do hệ thống thiết lập.
+
+==================================================
+

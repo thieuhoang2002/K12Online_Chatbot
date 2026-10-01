@@ -1,0 +1,29 @@
+### BÀI VIẾT [55]: Hướng dẫn Nhà trường tự đánh giá
+- Chuyên mục: Trang chủ > Tính năng khác > Hướng dẫn sử dụng DTI HCM EDU
+- Link gốc: https://hotro.k12online.vn/dti-hcm/huong-dan-nha-truong-tu-danh-gia.html
+
+**Nội dung:**
+Nhà trường thực hiện tự đánh giá trên 3 mẫu phiếu:
+
+ 1. Cơ sở vật chất, hạ tầng đáp ứng chuyển đổi số
+
+ 2. Chuyển đổi số trong dạy, học
+
+ 3. Chuyển đổi số trong quản trị cơ sở giáo dục.
+
+ Bước 1: Vào menu Tự đánh giá
+
+ Bước 2: Chọn các báo cáo => Tại cột Hành động , nhấn vào biểu tượng Làm phiếu đánh giá (hình cái bút) để thực hiện tự đánh giá theo các nhóm tiêu chí.
+
+ Bước 3: Hệ thống hiển thị chi tiết của phiếu đánh giá, Nhà trường vào thực hiện tự đánh giá và cung cấp minh chứng cho từng tiêu chí của phiếu tự đánh giá.
+
+ Với mỗi tiêu chí có tính điểm, nhà trường thực hiện tự chấm điểm không vượt quá điểm tối đa của tiêu chí đó. Nhà trường có thể xem điểm tối đa của mỗi tiêu chí trên giao diện hướng dẫn của hệ thống hoặc trong Quyết định đã được ban hành.
+ Với những tiêu chí nhà trường tự đánh giá, nhà trường vào thực hiện và làm theo hướng dẫn của đơn vị đánh giá trực tiếp của đơn vị mình (như nhập ghi chú minh chứng, tải file minh chứng lên hệ thống….)
+ Với những tiêu chí được thu thập minh chứng từ các hệ thống khác, Nhà trường vào hệ thống đấy nhấn đồng bộ dữ liệu sang hệ thống DTI EDU trước khi vào hệ thống DTI EDU để thực hiện tự đánh giá. Kết quả đồng bộ thành công thì phiếu tự đánh giá của đơn vị sẽ có thông tin minh chứng.
+
+ Bước 4: Nhà trường nhấn Lưu để lưu lại kết quả tự đánh giá của đơn vị.
+
+ Lưu ý: Hành động Lưu chỉ lưu lại kết quả tính đến thời điểm hiện tại của trường tự đánh giá và đây chưa phải là kết quả tự đánh giá cuối cùng. Khi nhà trường chưa thực hiện nộp phiếu tự đánh giá thì nhà trường có thể vào chỉnh sửa, cập nhật được kết quả tự đánh giá của đơn vị.
+
+==================================================
+

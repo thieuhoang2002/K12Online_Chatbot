@@ -1,0 +1,31 @@
+### BÀI VIẾT [65]: Hướng dẫn giáo viên chấm thi tự luận kỳ thi cấp Sở/Phòng
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Giáo viên
+- Link gốc: https://hotro.k12online.vn/giao-vien/cham-thi-tu-luan-ky-thi-cap-so-phong.html
+
+**Nội dung:**
+QUY TRÌNH DÀNH CHO GIÁO VIÊN CHẤM THI
+
+ 1. Lưu ý thực hiện
+
+ - Giáo viên được phân công chấm thi vui lòng chấm hết các bài thi đã được phân công trong thời gian yêu cầu của Sở/Phòng.
+
+ 2. Hướng dẫn thao tác
+
+ Bước 1: Giáo viên vào menu Kiểm tra, đánh giá => Chọn Nghiệp vụ thi thi => Chọn Chấm thi
+
+ Bước 2: Giáo viên tìm đề thi được phân công chấm và xem báo cáo chấm thi.
+
+ Bước 3: Giáo viên vào chấm lần lượt từng bài thi.
+
+ Bước 4: Giáo viên vào chi tiết bài làm của học sinh. Với những bài làm mà có chụp ảnh câu trả lời, giáo viên có thể click vào ảnh để xem chi tiết hoặc click vào tính năng Ghi chú ảnh để có thể nhiều tùy chọn khác như nhận xét lên bài của học sinh, dán sticker...
+
+ - Với mỗi một câu hỏi đều có phần Cho điểm , giáo viên nhập số điểm cho câu hỏi đó và nhấn nút Cho điểm để hệ thống ghi nhận điểm cho bài thi.
+
+ - Nếu điểm thập phân thì nhập bằng ký tự "dấu phẩy" để hệ thống ghi nhận. Ví dụ: 9,5 (chín phẩy năm)
+
+ Bước 5: Sau khi đã chấm xong, giáo viên rà soát và check lại lần cuối các câu và điểm cho từng câu. Nếu có sai sót thì chỉnh sửa, cho điểm lại.
+
+ Bước 6: Nếu đã chính xác hết rồi, giáo viên nhấn vào nút Hoàn thành chấm bài (ở góc bên phải trên cùng) để kết thúc quá trình chấm thi cho bài đó.
+
+==================================================
+

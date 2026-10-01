@@ -1,0 +1,134 @@
+### BÀI VIẾT [311]: Hướng dẫn giáo viên chủ nhiệm/phó chủ nhiệm quản lý câu lạc bộ
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Câu lạc bộ > Giáo viên
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/clb/giao-vien/huong-dan-giao-vien-chu-nhiem-pho-chu-nhiem-quan-ly-cau-lac-bo2.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản chủ nhiệm/ phó chủ nhiệm câu lạc bộ
+
+ Bước 2: Trang chủ  > Click vào module Câu lạc bộ > Vào menu Câu lạc bộ
+
+ Bước 3: Hiển thị danh sách câu lạc bộ
+
+ Trường số lượng dự kiến: hiển thị số lượng dự kiến khi thêm mới mình nhập
+ Trường số lớp thực tế: Hiển thị thống kê số lớp thực tế trong câu lạc bộ
+ Trường tổng số học sinh: Hiển thị thống kê tất cả các học sinh tham gia các lớp thuộc câu lạc bộ
+ Lưu ý : Tài khoản Chủ nhiệm câu lạc bộ / Phó chủ nhiệm câu lạc bộ chỉ có quyền xem những câu lạc bộ được phân công phụ trách và không có hành động thêm / xóa câu lạc bộ
+
+ 1. Chỉnh sửa
+
+ Bước 1: Click icon chỉnh sửa thực hiện chỉnh sửa bản ghi
+
+ Bước 2: Hiển thị form > Nhập đầy đủ thông tin > Click Lưu thực hiện chỉnh sửa thành công bản ghi cập nhật dữ liệu đã chỉnh sửa
+
+ Chú ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Không được sửa các trường chủ nhiệm / phó chủ nhiệm / phụ trách câu lạc bộ
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường loại hình câu lạc bộ list dữ liệu bản ghi có trạng thái hoạt động ở menu Loại hình câu lạc bộ khi khai báo (Khi xóa dữ liệu bản ghi menu Loại hình câu lạc bộ đồng thời dữ liệu đây cũng bị mất)
+ Trường loại câu lạc bộ list dữ liệu theo Loại hình câu lạc bộ đã chọn (Khi xóa dữ liệu bản ghi menu Loại câu lạc bộ đồng thời dữ liệu đây cũng bị mất)
+ Trường Chủ nhiệm / Phó chủ nhiệm / Phụ trách là list dữ liệu tài khoản giáo viên
+ Trường trạng thái list dữ liệu bản ghi có trạng thái hoạt động ở menu Trạng thái câu lạc bộ khi khai báo Khi xóa dữ liệu bản ghi menu Trạng thái câu lạc bộ đồng thời dữ liệu đây cũng bị mất)
+ 2. Tìm kiếm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý:
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+ Xem chi tiết câu lạc bộ
+
+ Bước 1 Danh sách > Click icon xem chi tiết
+
+ Bước 2: Hiển thị màn hình chi tiết
+
+ ​​​​​​​3. Tab Thông tin chung
+
+ Hiển thị thông tin chung câu lạc bộ
+
+ ​​​​​​​4. Tab Danh sách lớp
+
+ 4.1. Thêm mới lớp học
+
+ Bước 1: Danh sách > Click button thêm mới
+
+ Bước 2: Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công
+
+ Chú ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường Danh sách giáo viên phụ trách : List tất cả các tổ chuyên môn ở menu Tổ chuyên môn . Trường giáo viên sẽ list theo tổ chuyên  môn được chọn
+ Thời gian bắt đầu phải là thời gian hiện tại hoặc tương lai
+ Thời gian kết thúc phải lớn hơn thời gian bắt đầu
+ Khi cấu hình lịch học thì Lịch học trong tab Lịch học hiển thị tương ứng lịch học đã cấu hình
+
+ ​​​​​​​​​​​​​​4.2. Chỉnh sửa/ Xóa
+
+ Click icon chỉnh sửa thực hiện chỉnh sửa bản ghi
+
+ Click icon xóa thực hiện xóa bản ghi => Xóa xong bản ghi không còn hiển thị ở danh sách
+
+ ​​​​​​​4.3. Tìm kiếm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý:
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+ 4.4. Thay đổi trạng thái
+
+ Bước 1: Danh sách > Cột trạng thái > Click chọn trạng thái muốn thay đổi
+
+ Bước 2: Click Đồng ý thực hiện đổi trạng thái thành công . Bản ghi mang trạng thái đã chọn
+
+ ​​​​​​​5. Tab Thông tin hoạt động
+
+ 5.1. Thêm mới hoạt động
+
+ Bước 1: Danh sách > Click button thêm mới
+
+ Bước 2: Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công
+
+ Chú ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Khi chọn đơn vị tổ chức thuộc nhà trường thì hệ thống cho chọn Lớp câu lạc bộ theo Câu lạc bộ hiện tại => đồng thời hiển thị 1 bản ghi ở tab Thông tin hoạt động trong Lớp câu lạc bộ đã chọn
+ Khi chọn đơn vị tổ chức là khác thì hiển thị trường textbox Đơn vị tổ chức khác cho người dùng nhập => Không hiển thị bản ghi trong lớp câu lạc bộ nào
+ Thời gian bắt đầu phải là thời gian hiện tại hoặc tương lai
+ Thời gian kết thúc phải lớn hơn thời gian bắt đầu
+ Giáo viên phụ trách là list theo danh sách tài khoản giáo viên
+ Trường học sinh: nếu chọn đơn vị tổ chức là nhà trường thì học sinh sẽ list theo lớp câu lạc bộ đã chọn ( hiển thị những học sinh đăng ký lớp câu lạc bộ đó ) . Ngược lại nếu chọn đơn vị tổ chức là khác thì học sinh sẽ list theo danh sách học sinh của toàn trường
+
+ ​​​​​​​5.2. Chỉnh sửa/ Xóa/ Xem chi tiết
+
+ Click icon chỉnh sửa thực hiện chỉnh sửa bản ghi
+
+ Click icon xóa thực hiện xóa bản ghi
+
+ Click icon xem chi tiết xem chi tiết bản ghi
+
+ ​​​​​​​​​​​​​​5.3. Tìm kiếm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý:
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo: Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+
+ ​​​​​​​5.4. Thay đổi trạng thái
+
+ ​​​​​​​ Bước 1: Danh sách > Cột trạng thái > Click chọn trạng thái muốn thay đổi
+
+ Bước 2: Click xác nhận thực hiện đổi trạng thái thành công . Bản ghi mang trạng thái đã chọn
+
+ Lưu ý:
+
+ Thông tin hoạt động ở trạng thái Chờ thực hiện / Hoàn thành / Hủy sẽ được gửi thông báo về cho phụ huynh có học sinh trong thông tin hoạt động đó
+
+==================================================
+

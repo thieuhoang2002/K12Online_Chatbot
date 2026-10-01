@@ -1,0 +1,64 @@
+### BÀI VIẾT [98]: Hướng dẫn Giáo viên tạo bài kiểm tra offline
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Giáo viên
+- Link gốc: https://hotro.k12online.vn/huong-dan-giao-vien-tao-bai-kiem-tra-offline.html
+
+**Nội dung:**
+1. Giới thiệu dạng bài kiểm tra offline
+
+ - Cách tổ chức thiết lập dạng bài kiểm tra offline tương tự với bài kiểm tra thi bằng hình thức trực tuyến. Tuy nhiên, chỉ áp dụng với các đề có các câu hỏi trắc nghiệm 4 phương án chọn 1.
+
+ - Học sinh làm bài bằng cách tô trên phiếu trả lời trắc nghiệm (TLTN) theo mẫu mà Bộ GD&ĐT quy định. Sau đó giáo viên sẽ chấm/scan phiếu trả lời đó và đưa lên K12Online để hệ thống thực hiện nhận dạng và chấm tự động.
+
+ 2. Hướng dẫn thực hiện
+
+ Bước 1: Vào Kiểm tra, đánh giá => Chọn Bài kiểm tra => Chọn Thêm mới
+ Bước 2: Nhập thông tin cơ bản của bài kiểm tra
+
+ - Tại Hình thức làm bài => Chọn Offline (Thi trên giấy)
+
+ - Chọn mẫu phiếu TLTN:
+
+ Lưu ý: Giáo viên đã chọn mẫu phiếu TLTN rồi thì không được đổi mẫu nữa (khuyên dùng mẫu 120 câu của Bộ GD&ĐT).
+
+ Bước 3: Nhập câu hỏi cho bài kiểm tra (Nhập tay, PDF)
+
+ - Chỉ hỗ trợ loại câu hỏi 1 đáp án.
+
+ Bước 4: Tạo bộ mã đề (bắt buộc để hệ thống sinh ra mã đề, học sinh sẽ tô mã đề này)
+
+ Bước 5: Gán BKT vào thời khóa biểu (nếu bài kiểm tra dạng tập trung).
+
+ Bước 6: Tổ chức cho học sinh làm bài ngoài thực tế
+
+ - In đề thi
+
+ - In phiếu TLTN
+
+ Bước 7: Sau khi thi xong, giáo viên tiến hành scan/chụp bài kiểm tra và đưa lên hệ thống
+
+ Cách 1: Trên máy tính
+
+ Vào tab Scan bài kiểm tra => Chọn Tải ảnh lên để tải các ảnh chụp phiếu TLTN của thí sinh đưa lên hệ thống.
+
+ - Chọn Đọc ảnh
+
+ - Chọn Duyệt kết quả
+
+ Cách 2: Chụp ảnh bằng điện thoại
+
+ - Vào app K12Online => Chọn icon Bài kiểm tra
+
+ - Tìm bài kiểm tra offline cần chấm => Chọn biểu tượng máy ảnh
+
+ - Nhấn nút Chụp để gửi ảnh lên hệ thống
+
+ - Sau khi đưa ảnh lên => Nhấn Đọc kết quả
+
+ - Sau khi hệ thống nhận dạng được kết quả từ Phiếu TLTN xong => Nhấn Duyệt kết quả để hệ thống tự động chấm điểm.
+
+ Bước 8: Rà soát lại kết quả chấm của hệ thống
+
+ Bước 9: Xem kết quả chấm tại tab Bảng điểm .
+
+==================================================
+

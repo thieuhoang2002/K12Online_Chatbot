@@ -1,0 +1,13 @@
+### BÀI VIẾT [144]: Hướng dẫn quy trình tổ chức thi online xác thực bằng CCCD gắn chip
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Thi online xác thực CCCD > Nhà trường
+- Link gốc: https://hotro.k12online.vn/mo-hinh-21/huong-dan-quy-trinh-to-chuc-thi-online-xac-thuc-bang-cccd-gan-chip.html
+
+**Nội dung:**
+I. Khởi tạo hệ thống và tài khoản
+
+ 1. Khởi tạo hệ thống
+
+ - Nhà trường liên hệ Viettel tỉnh/tp để được đồng bộ tài khoản, mật khẩu.
+
+==================================================
+

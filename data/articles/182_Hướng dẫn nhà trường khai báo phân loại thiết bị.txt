@@ -1,0 +1,132 @@
+### BÀI VIẾT [182]: Hướng dẫn nhà trường khai báo phân loại thiết bị
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Cơ sở vật chất > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong4/huong-dan-nha-truong-khai-bao-phan-loai-thiet-bi.html
+
+**Nội dung:**
+1. Danh sách phân loại thiết bị
+
+ Bước 1: Đăng nhập thành công vào hệ thống
+
+ Bước 2: Click Ứng dụng Cơ sở vật chất
+
+ Bước 3: Click menu Quản lý khai báo > Click Phân loại thiết bị
+
+ Bước 4: Hiển thị danh sách phân loại thiết bị
+
+ Click icon chỉnh sửa để thực hiện chỉnh sửa phân loại thiết bị
+ Click icon xóa để thực hiện xóa phân loại thiết bị
+ Click icon chuyển trạng thái để thực hiện chuyển trạng thái phân loại thiết bị
+ Tải lại
+ Trên danh sách > click button Tải lại > Thực hiện tải lại danh sách.
+
+ Tổng số bản ghi
+ Bước 1: Click Quản lý khai báo > Click Phân loại thiết bị > Xem tổng số bản ghi.
+
+ 2. Thêm mới phân loại thiết bị
+
+ 2.1. Thêm mới nhóm thiết bị
+
+ Bước 1: Trên màn hình danh sách > Click Thêm mới
+
+ Bước 2: Hiển thị màn hình thêm mới > click chọn option Thêm nhóm: Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ +Tên nhóm thiết bị: Bắt buộc nhập, tối đa 255 ký tự và không nhập trùng tên nhóm đã tồn tại trên hệ thống
+
+ Bước 3:
+
+ + Click Lưu để hoàn thành việc thêm mới, bản ghi hiển thị bên ngoài danh sách.
+
+ + Click Hủy bỏ để quay về danh sách phân loại thiết bị
+
+ 2.2. Thêm mới loại thiết bị
+
+ Bước 1: Trên màn hình danh sách> Click Thêm mới
+
+ Bước 2: Hiển thị màn hình thêm mới > click chọn option Thêm loại: Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ + Nhóm thiết bị: chọn nhóm thiết bị là danh mục cha của loại thiết bị đang thêm mới
+
+ + Tên loại thiết bị: Bắt buộc nhập, tối đa 255 ký tự và không nhập trùng tên loại thiết bị đã tồn tại trong nhóm thiết bị đã chọn
+
+ Bước 3:
+
+ + Click Lưu để hoàn thành việc thêm mới, bản ghi hiển thị là mục con của nhóm thiết bị đã chọn ngoài danh sách.
+
+ + Click Hủy bỏ để quay về danh sách phân loại thiết bị.
+
+ 2.3. Thêm mới kiểu thiết bị
+
+ Bước 1: Trên màn hình danh sách> Click Thêm mới
+
+ Bước 2: Hiển thị màn hình thêm mới > click chọn option Thêm kiểu: Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ + Nhóm thiết bị: chọn nhóm thiết bị là danh mục cha của loại thiết bị.
+
+ + Loại thiết bị: chọn loại thiết bị là danh mục cha của kiểu thiết bị đang thêm mới.
+
+ + Tên kiểu thiết bị: Bắt buộc nhập, tối đa 255 ký tự và không nhập trùng tên kiểu thiết bị đã tồn tại trong loại thiết bị đã chọn
+
+ Bước 3:
+
+ + Click Lưu để hoàn thành việc thêm mới, bản ghi hiển thị là mục con của loại thiết bị đã chọn ngoài danh sách.
+
+ + Click Hủy bỏ để quay về danh sách phân loại thiết bị.
+
+ ​​​​​​​3. Chỉnh sửa phân loại thiết bị
+
+ ​​​​​​​3.1. Chỉnh sửa nhóm thiết bị
+
+ Bước 1: Trên màn hình danh sách> Click icon chỉnh sửa một bản ghi nhóm thiết bị muốn chỉnh sửa
+
+ Bước 2: Hiển thị màn hình chỉnh sửa > Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Bước 3:
+
+ + Click Lưu để hoàn thành việc chỉnh sửa.
+
+ + Click Hủy bỏ để quay về danh sách phân loại thiết bị.
+
+ ​​​​​​​3.2. Chỉnh sửa loại thiết bị
+
+ Bước 1: Trên màn hình danh sách> Click icon chỉnh sửa một bản ghi loại thiết bị muốn chỉnh sửa
+
+ Bước 2: Hiển thị màn hình chỉnh sửa > Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Bước 3:
+
+ + Click Lưu để hoàn thành việc chỉnh sửa.
+
+ + Click Hủy bỏ để quay về danh sách phân loại thiết bị.
+
+ ​​​​​​​3.3. Chỉnh sửa kiểu thiết bị
+
+ Bước 1: Trên màn hình danh sách> Click icon chỉnh sửa một bản ghi nhóm thiết bị muốn chỉnh sửa
+
+ Bước 2: Hiển thị màn hình chỉnh sửa > Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Bước 3:
+
+ + Click Lưu để hoàn thành việc chỉnh sửa.
+
+ + Click Hủy bỏ để quay về danh sách phân loại thiết bị.
+
+ ​​​​​​​ 4. Xóa phân loại thiết bị
+
+ Bước 1: Trên màn hình danh sách > Click icon xóa một phân loại thiết bị > Hệ thống hiển thị popup xác nhận xóa
+
+ Bước 2:
+
+ + Click Xóa để xác nhận xóa phân loại thiết bị, bản ghi sẽ bị xóa khỏi danh sách
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ ​​​​​​​5. Chuyển trạng thái phân loại thiết bị
+
+ Bước 1: Trên màn hình danh sách > Click icon chuyển trạng thái một phân loại thiết bị > trạng thái bản ghi sẽ thay đổi
+
+ ​​​​​​​ 6. Tìm kiếm phân loại thiết bị
+
+ Bước 1: Trên màn hình danh sách> Tại vùng tìm kiếm: nhập tiêu chí tìm kiếm > Click button Tìm kiếm để thực hiện tìm kiếm phân loại thiết bị
+
+==================================================
+

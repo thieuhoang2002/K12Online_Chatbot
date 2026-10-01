@@ -1,0 +1,27 @@
+### BÀI VIẾT [226]: Hướng dẫn Phụ huynh cài đặt và sử dụng ứng dụng
+- Chuyên mục: Trang chủ > Hướng dẫn sử dụng > Dành cho phụ huynh
+- Link gốc: https://hotro.k12online.vn/phu-huynh/huong-dan-phu-huynh-cai-dat-va-su-dung-ung-dung.html
+
+**Nội dung:**
+Để sử dụng tài khoản phụ huynh theo dõi các hoạt động của con trên K12Online, phụ huynh làm theo các hướng dẫn sau đây:
+
+ Bước 1: Vào Play Store (với hệ điều hành Android) hoặc App Store (với hệ điều hành iOS) để tải ứng dụng K12Connect
+
+ Bước 2: Đăng nhập bằng tài khoản và mật khẩu được nhà trường cấp
+
+ Bước 3: Chọn học sinh muốn xem thông tin.
+
+ Bước 4: Xem các thông tin học tập của học sinh trên hệ thống K12Online. Hiện tại có các thông tin sau:
+
+ - Xem thời khóa biểu trên K12Online
+
+ - Xem bài kiểm tra trên K12Online
+
+ - Xem lịch thi cấp trường trên K12Online
+
+ - Xem kết quả học tập trên K12Online...
+
+ Lưu ý: Phụ huynh chỉ xem được các thông tin học tập của học sinh, không được vào làm bài, vào học hoặc xem chi tiết nội dung của học sinh.
+
+==================================================
+

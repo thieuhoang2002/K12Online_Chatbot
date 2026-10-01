@@ -1,0 +1,173 @@
+### BÀI VIẾT [188]: Hướng dẫn nhà trường quản lý kho phòng
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Cơ sở vật chất > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong4/huong-dan-nha-truong-quan-ly-kho-phong.html
+
+**Nội dung:**
+Bước 1: Đăng nhập thành công vào hệ thống
+
+ Bước 2: Trang chủ > Click module Cơ sở vật chất
+
+ Bước 3: Click menu Quản lý CSVC
+
+ 1. Danh sách kho phòng
+
+ Bước 1: Menu Quản lý CSVC > Chọn tab Kho phòng
+
+ Bước 2: Hiển thị danh sách Kho phòng
+
+ Click Sắp xếp theo > Chọn kiểu sắp xếp > Hiển thị danh sách theo trạng thái sắp xếp.
+ Click icon chỉnh sửa để thực hiện chỉnh sửa Kho phòng
+ Click icon xem chi tiết để thực hiện xem chi tiết Kho phòng
+ Click icon xóa để thực hiện xóa Kho phòng
+ Click icon On/Off đề thay đổi tình trạng Hoạt động/Không hoạt động của Kho phòng
+ Tải lại
+ Trên danh sách > click button Tải lại > Thực hiện tải lại danh sách.
+
+ Sắp xếp
+ Trên danh sách > click button Sắp xếp theo > Chọn kiểu sắp xếp> Hiển thị danh sách theo trạng thái sắp xếp.
+
+ Phân trang
+ Trên màn hình: hiển thị phân trang ở phía dưới bên phải màn khi danh sách có > 20 bản ghi
+ + Click icon << (>>) để chuyển đến trang trước đó (trang tiếp theo)
+
+ + Click icon << << (>> >>) để chuyển đến trang đầu tiên (trang cuối cùng)
+
+ Tổng số bản ghi
+ Bước 1: Trên màn hình danh sách > Xem tổng số bản ghi.
+
+ 2. Thêm mới kho phòng
+
+ Bước 1: Trên màn hình danh sách > Click Thêm mới
+
+ Bước 2: Hiển thị màn hình thêm mới > Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Mã phòng: Mã kho phòng, là trường duy nhất
+ Tên phòng:
+ Checkbox Là phòng kho: Xác định kho phòng là phòng kho
+ Checkbox Được phép mượn: Xác định kho phòng Được phép/Không được phép mượn. Nếu tích chọn, kho phòng khi thêm mới sẽ ở trạng thái Sẵn sàng mượn. Không tích chọn, kho phòng khi thêm mới sẽ ở trạng thái Sẵn sàng sử dụng.
+ Cán bộ quản lý: Chọn cán bộ quản lý cho Kho phòng (chỉ các tài khoản có quyền quản lý kho)
+ Diện tích: Nhập số lớn hơn hoặc bằng 1 (Cho phép nhập số thập phân)
+ Khối phòng: Chọn khối phòng (list từ menu Quản lý khai báo > Khối phòng)
+ Khu vực: Chọn khu vực (list từ menu Quản lý khai báo > Khu vực)
+ Lớp học: Chọn lớp học
+ Sức chứa tối thiểu: Nhập số nguyên lớn hơn 1
+ Sức chứa tối đa:  Nhập số nguyên lớn hơn 1 và lớn hơn sức chứa tối thiểu
+ Xếp loại: Đạt chuẩn/ Không đạt chuẩn
+ Tình trạng: Chọn tình trạng hoạt động/ Không hoạt động
+
+ Bước 3:
+
+ + Click Lưu để hoàn thành việc thêm mới, bản ghi hiển thị bên ngoài danh sách.
+
+ + Click Hủy bỏ để quay về danh sách Kho phòng
+
+ ​​​​​​​3. Chỉnh sửa kho phòng
+
+ Bước 1: Trên màn hình danh sách > Click icon Chỉnh sửa kho phòng
+
+ Bước 2: Hiển thị màn hình chỉnh sửa: Hiển thị dữ liệu bản ghi lên form  > Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Bước 3:
+
+ + Click Lưu để hoàn thành việc chỉnh sửa, thông tin bản ghi được cập nhật thành công.
+
+ + Click Hủy bỏ để quay về danh sách Kho phòng
+
+ ​​​​​​​4. Xem chi tiết kho phòng
+
+ Bước 1: Trên màn hình danh sách > Click icon Chi tiết kho phòng
+
+ Bước 2: Hiển thị màn hình chi tiết Kho phòng thành công
+
+ Chi tiết kho phòng > Tab Theo số lượng
+
+ Chi tiết kho phòng > Tab Theo từng thiết bị:
+
+ Bước 3:
+
+ + Click Chọn thiết bị để chọn thiết bị cho kho phòng
+
+ + Click Chỉnh sửa đề chỉnh sửa thông tin kho phòng
+
+ ​​​​​​​4.1. Chọn thiết bị kho phòng
+
+ Bước 1: Tại màn hình chi tiết > Click Chọn thiết bị
+
+ Bước 2: Hiển thị popup Chọn thiết bị > Click Chọn thiết bị
+
+ Bước 2: Hiển thị màn hình danh sách thiết bị
+
+ Bước 3: Tại màn hình danh sách thiết bị > Click checkbox đầu bản ghi > Click Chọn thiết bị để thêm thiết bị vào Kho phòng/ Click Bỏ chọn để bỏ chọn check box
+
+ ​​​​​​​4.2. Chỉnh sửa kho phòng
+
+ Bước 1: Tại màn hình chi tiết > Click Chỉnh sửa
+
+ Bước 2: Hiển thị màn hình chỉnh sửa  > Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Bước 3:
+
+ + Click Lưu để hoàn thành việc chỉnh sửa, thông tin bản ghi được cập nhật thành công.
+
+ + Click Hủy bỏ để quay về màn hình chi tiết Kho phòng
+
+ ​​​​​​​5. Tìm kiếm kho phòng
+
+ Tìm kiếm theo selectbox
+ Bước 1: Trên màn hình danh sách > Tại các selectbox: Chọn tiêu chí tìm kiếm
+
+ Bước 2:  Hệ thống hiển thị kết quả tìm kiểm theo tiêu chí đã chọn
+
+ Tìm kiếm theo textbox
+ Bước 1: Trên màn hình danh sách > Tại vùng tìm kiếm: nhập tiêu chí tìm kiếm > Click button Tìm kiếm để thực hiện tìm kiếm
+
+ Bước 2:  Hệ thống hiển thị kết quả tìm kiếm theo tiêu chí đã chọn
+
+ ​​​​​​​6. Xóa kho phòng
+
+ Xóa 1 bản ghi
+ Cách 1:
+
+ Bước 1: Trên màn hình danh sách > Click icon xóa
+
+ Bước 2: Hệ thống hiển thị popup xác nhận
+
+ + Click Xóa để xác nhận xóa phiếu đề xuất
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ Cách 2:
+
+ Bước 1: Trên màn hình danh sách > Tích chọn 1 checkbox tại dầu 1 bản ghi > Click button Xóa
+
+ Bước 2: Hệ thống hiển thị popup xác nhận
+
+ + Click Xóa để xác nhận xóa phiếu đề xuất
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ Xóa nhiều bản ghi
+ Bước 1: Trên màn hình danh sách > Tích chọn checkbox > Click button Xóa
+
+ Bước 2: Hệ thống hiển thị popup xác nhận
+
+ + Click Xóa để xác nhận xóa phiếu đề xuất
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ ​​​​​​​7. Nhập excel
+
+ Bước 1: Trên màn hình danh sách > Click button Nhập excel
+
+ Bước 2: Hiển thị dropdown nhập excel >Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Bước 3: Click Lưu lại để hoàn thành việc nhập excel. Trường hợp nhập excel không thành công sẽ hiển thị dropdown báo cáo có chứa file kết quả nhập excel > Click Tải về để tải về file kết quả.
+
+ ​​​​​​​8. Xuất excel
+
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel > Thực hiện xuất excel thành công > Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+ Bước 2: Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+==================================================
+

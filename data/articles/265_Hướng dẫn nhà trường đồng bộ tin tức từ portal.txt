@@ -1,0 +1,28 @@
+### BÀI VIẾT [265]: Hướng dẫn nhà trường đồng bộ tin tức từ portal
+- Chuyên mục: Trang chủ > Tính năng khác > Tin tức > Nhà trường
+- Link gốc: https://hotro.k12online.vn/tin-tuc/huong-dan-nha-truong-dong-bo-tin-tuc-tu-portal.html
+
+**Nội dung:**
+Bước 1: Danh sách > Click button Đồng bộ dữ liệu tin tức từ portal
+
+ Bước 2: Hiển thị form Đồng bộ dữ liệu tin tức
+
+ + Chọn loại đồng bộ là bỏ qua tin tức hay cập nhật tin tức
+
+ Bước 3: Ở form đồng bộ dữ liệu tin tức > click button Chọn tin tức
+
+ Bước 4: Hệ thống hiển thị danh sách tin tức của trang portal tương ứng với từng đơn vị (hiển thị tin tức trạng thái xuất bản và đang hoạt động)
+
+ Bước 5: Click checkbox đầu các tin tức muốn đồng bộ về > click button Chọn tin tức > những bản tin được chọn hiển thị ở danh sách
+
+ Bước 6: Click button Đồng bộ thực hiện đồng bộ tin tức thành công, các tin được đồng bộ sẽ hiển thị ở danh sách Tin tức và bản ghi ở trạng thái Chờ xuất bản.
+
+ Ngày xuất bản là hiển thị ngày xuất bản tương ứng với bài viết tin tức của portal
+ Người xuất bản: lấy tên người đồng bộ tin tức về.
+ Khi chọn loại đồng bộ bỏ qua tin tức thì những tin đã đồng bộ về không đồng bộ tiếp nữa khi bản tin đồng bộ về có thay đổi.
+ Khi chọn loại đồng bộ là cập nhật tin tức thì những tin đã đồng bộ về được cập nhật lại dữ liệu của bản tin khi có thay đổi.
+ Trường danh mục lấy danh mục bản tin của portal
+ Bản tin đồng bộ về vẫn có trạng thái: xem chi tiết, sửa, xóa, xuất bản
+
+==================================================
+

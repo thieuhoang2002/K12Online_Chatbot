@@ -1,0 +1,45 @@
+### BÀI VIẾT [22]: Hướng dẫn Nhà trường thêm mới thẻ bạn đọc
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Thư viện số > Nhà trường
+- Link gốc: https://hotro.k12online.vn/article/news/huong-dan-nha-truong-them-moi-the-ban-doc.html
+
+**Nội dung:**
+1. Nhà trường thực hiện thêm thẻ bạn đọc cho Học sinh/ Giáo viên
+
+ Cách 1: Nhập thủ công
+
+ Bước 1: Chọn menu Quản lý người dùng > Chọn Bạn đọc
+
+ Chọn tab Học Sinh hoặc Giáo viên
+
+ Bước 2: Chọn Thêm mới > Nhập/ chọn thông tin hợp lệ
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập - không được bỏ trống
+
+ Bước 3: Chọn Lưu
+
+ Cách 2: Nhập excel
+
+ Bước 1 : Tại danh sách chọn Nhập excel
+
+ Bước 2 : Tải về file mẫu click nút Tải xuống
+
+ Bước 3 : Mở file nhập thông tin sách cần nhập hoặc sách chỉnh sửa > Lưu file
+
+ Bước 4 : Upload file lên hệ thống > chọn Nhập excel
+
+ 2. Nhà trường gia hạn thẻ bạn đọc khi bạn đọc có nhu cầu gia hạn
+
+ Bước 1: Click icon Gia hạn thẻ
+
+ Bước 2: Nhập/ chọn ngày hết hạn mới
+
+ Lưu ý:
+
+ Ngày hết hạn mới phải lớn hơn ngày hết hạn hiện tại
+
+ Bước 3: Chọn Lưu
+
+==================================================
+
