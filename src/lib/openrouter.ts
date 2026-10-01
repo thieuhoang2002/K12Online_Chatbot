@@ -172,7 +172,12 @@ class KeyRotator {
   public async callChatCompletionStream(
     messages: ChatMessage[],
     requestedModel: string = "qwen/qwen3.8-27b:free"
-  ): Promise<{ responseStream: ReadableStream<Uint8Array>; keyIndexUsed: number; modelUsed: string }> {
+  ): Promise<{
+    responseStream: ReadableStream<Uint8Array>;
+    keyIndexUsed: number;
+    modelUsed: string;
+    rateLimitInfo?: { limit: string | null; remaining: string | null; reset: string | null };
+  }> {
     if (this.keys.length === 0) {
       throw new Error("Chưa cấu hình OPENROUTER_API_KEYS trong file môi trường .env.local.");
     }

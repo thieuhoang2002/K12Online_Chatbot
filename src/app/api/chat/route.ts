@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { keyRotator, ChatMessage } from "@/lib/openrouter";
+import { geminiRotator } from "@/lib/gemini";
 import { searchKnowledge } from "@/lib/knowledge";
 import { responseCache } from "@/lib/cache";
 import { checkRateLimit, isIpVerifiedHuman, markIpVerifiedHuman } from "@/lib/ratelimit";
@@ -51,6 +52,86 @@ function createTextStream(
         encoder.encode(`data: ${JSON.stringify({ type: "done", meta })}\n\n`)
       );
       controller.close();
+    },
+  });
+}
+
+/**
+ * Chuyển tiếp luồng SSE từ Google Gemini tới Client và lưu Cache khi hoàn tất
+ */
+function createGeminiStream(
+  geminiBody: ReadableStream<Uint8Array>,
+  sources: any[],
+  followUps: string[],
+  onComplete: (fullText: string) => Promise<void>
+): ReadableStream<Uint8Array> {
+  const encoder = new TextEncoder();
+  const decoder = new TextDecoder();
+  let fullAccumulated = "";
+
+  return new ReadableStream({
+    async start(controller) {
+      if (sources && sources.length > 0) {
+        controller.enqueue(
+          encoder.encode(`data: ${JSON.stringify({ type: "sources", sources })}\n\n`)
+        );
+      }
+
+      const reader = geminiBody.getReader();
+      let buffer = "";
+
+      try {
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+
+          buffer += decoder.decode(value, { stream: true });
+          const lines = buffer.split("\n");
+          buffer = lines.pop() || "";
+
+          for (const rawLine of lines) {
+            const line = rawLine.trim();
+            if (!line || !line.startsWith("data:")) continue;
+            const dataStr = line.replace(/^data:\s*/, "");
+            if (!dataStr) continue;
+
+            try {
+              const parsed = JSON.parse(dataStr);
+              const chunkText = parsed.candidates?.[0]?.content?.parts?.[0]?.text || "";
+              if (chunkText) {
+                fullAccumulated += chunkText;
+                controller.enqueue(
+                  encoder.encode(`data: ${JSON.stringify({ type: "chunk", text: chunkText })}\n\n`)
+                );
+              }
+            } catch (e) {}
+          }
+        }
+
+        // Gửi danh sách gợi ý câu hỏi tiếp theo
+        if (followUps && followUps.length > 0) {
+          controller.enqueue(
+            encoder.encode(
+              `data: ${JSON.stringify({ type: "followUps", prompts: followUps, followUps: followUps })}\n\n`
+            )
+          );
+        }
+
+        // Gửi thông báo hoàn tất
+        controller.enqueue(
+          encoder.encode(`data: ${JSON.stringify({ type: "done", meta: { cached: false, provider: "gemini" } })}\n\n`)
+        );
+        controller.close();
+
+        if (fullAccumulated.trim()) {
+          onComplete(fullAccumulated).catch(() => {});
+        }
+      } catch (err: any) {
+        controller.enqueue(
+          encoder.encode(`data: ${JSON.stringify({ type: "error", error: err.message })}\n\n`)
+        );
+        controller.close();
+      }
     },
   });
 }
@@ -348,7 +429,42 @@ ${contextText || "Chưa có tài liệu phù hợp."}`;
       { role: "user", content: message },
     ];
 
-    // 9. Gọi OpenRouter STREAMING (Gõ chữ từng từ theo thời gian thực)
+    // 9. CHIẾN LƯỢC ĐA ĐỘNG CƠ AI (Multi-Provider Dual Engine)
+    // Ưu tiên #1: Gọi Google Gemini nếu đã cấu hình Key (siêu tốc, hạn ngạch ngày lớn)
+    if (geminiRotator.getKeyCount() > 0) {
+      try {
+        const geminiRes = await geminiRotator.callGeminiStream(
+          systemPrompt,
+          history.slice(-4),
+          message
+        );
+
+        const clientStream = createGeminiStream(
+          geminiRes.responseStream,
+          sources,
+          followUps,
+          async (finalText: string) => {
+            await responseCache.set("gemini", cacheKey, finalText, sources);
+          }
+        );
+
+        return new Response(clientStream, {
+          headers: {
+            "Content-Type": "text/event-stream; charset=utf-8",
+            "Cache-Control": "no-cache, no-transform",
+            "Connection": "keep-alive",
+            "X-AI-Provider": "google-gemini",
+            "X-AI-Model": geminiRes.modelUsed,
+          },
+        });
+      } catch (geminiErr: any) {
+        console.warn(
+          `⚠️ [Multi-Provider Failover] Google Gemini tạm thời nghẽn (${geminiErr.message}). Tự động kích hoạt Bể OpenRouter dự phòng...`
+        );
+      }
+    }
+
+    // Dự phòng #2: Bể 5 Key OpenRouter (Qwen)
     const { responseStream, rateLimitInfo } = await keyRotator.callChatCompletionStream(messages, model);
 
     const clientStream = createOpenRouterStream(
@@ -364,6 +480,8 @@ ${contextText || "Chưa có tài liệu phù hợp."}`;
       "Content-Type": "text/event-stream; charset=utf-8",
       "Cache-Control": "no-cache, no-transform",
       "Connection": "keep-alive",
+      "X-AI-Provider": "openrouter",
+      "X-AI-Model": model,
     };
     if (rateLimitInfo?.limit) resHeaders["x-ratelimit-limit"] = rateLimitInfo.limit;
     if (rateLimitInfo?.remaining) resHeaders["x-ratelimit-remaining"] = rateLimitInfo.remaining;
