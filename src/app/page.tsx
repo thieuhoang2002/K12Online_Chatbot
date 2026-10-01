@@ -46,24 +46,24 @@ interface ChatSession {
 
 const QUICK_PROMPTS = [
   {
+    title: "Quên mật khẩu & Đăng nhập",
+    desc: "Cách lấy lại mật khẩu tài khoản học sinh, giáo viên khi bị quên",
+    prompt: "Làm thế nào để lấy lại mật khẩu hoặc đổi mật khẩu tài khoản K12Online khi bị quên?",
+  },
+  {
     title: "Nhập đề thi từ Word ABCD",
-    desc: "Cách chuẩn hóa định dạng câu hỏi và đáp án",
-    prompt: "Làm sao để nhập câu hỏi trắc nghiệm từ file Word dạng ABCD?",
+    desc: "Chuẩn hóa câu hỏi và đáp án đưa nhanh lên ngân hàng đề",
+    prompt: "Hướng dẫn nhập câu hỏi trắc nghiệm từ file Word dạng ABCD lên K12Online",
   },
   {
     title: "Lưu ý kiểm tra & thi trực tuyến",
-    desc: "Cần chuẩn bị gì trước khi học sinh làm bài thi",
-    prompt: "Học sinh làm bài thi trực tuyến trên K12Online cần lưu ý những gì?",
+    desc: "Quy chế làm bài, nộp bài và cách xử lý khi bị mất mạng",
+    prompt: "Một số lưu ý quan trọng khi học sinh làm bài kiểm tra, thi trực tuyến trên K12Online",
   },
   {
     title: "Nộp bài tập trên K12Connect",
-    desc: "Hướng dẫn phụ huynh và học sinh nộp bài tập",
+    desc: "Hướng dẫn phụ huynh và học sinh nộp bài tập về nhà trên app",
     prompt: "Hướng dẫn phụ huynh và học sinh nộp bài tập về nhà trên K12Connect",
-  },
-  {
-    title: "Phân công giám thị & ký duyệt sổ",
-    desc: "Quy trình cấu hình và quản trị nhà trường",
-    prompt: "Cách nhà trường cấu hình phân công giám thị và quản lý vi phạm",
   },
 ];
 
