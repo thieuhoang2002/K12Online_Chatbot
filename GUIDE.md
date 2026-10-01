@@ -150,3 +150,19 @@ Hệ thống CI/CD của Vercel sẽ tự động:
 1. Chạy lệnh `prebuild` (`node scripts/build_knowledge_json.js`) để nạp 383 bài viết vào file JSON.
 2. Chạy `next build` tối ưu hóa static pages và serverless routes.
 3. Xuất bản phiên bản mới lên tên miền [https://k12onlinechatbot.thhoang.io.vn](https://k12onlinechatbot.thhoang.io.vn).
+
+---
+
+## 7. Hướng dẫn Chạy Kiểm thử Tự động (Automation Testing)
+
+Để kiểm tra độ ổn định và tính toàn vẹn của toàn bộ hệ thống sau mỗi lần nâng cấp code hoặc cập nhật dữ liệu:
+
+```powershell
+npm test
+# hoặc
+node tests/run_all_tests.js
+```
+
+- Hệ thống sẽ tự động thực thi **39 Test Cases** bao phủ từ RAG, Mật mã Zero-Knowledge, Rate Limiting, API Routes, nhúng Widget đến Webhook Telegram.
+- Báo cáo kết quả kiểm thử chuẩn Markdown với đầy đủ thông số đo lường độ trễ (latency benchmarks) sẽ tự động được cập nhật tại [tests/test_report.md](file:///C:/Users/thhoang/Desktop/K12Online_Chatbot/tests/test_report.md).
+

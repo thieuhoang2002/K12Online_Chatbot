@@ -1,8 +1,8 @@
 # 📊 BÁO CÁO KẾT QUẢ KIỂM THỬ TỰ ĐỘNG (AUTOMATION TEST REPORT)
 **Dự án:** Trợ Lý AI Hỗ Trợ Nghiệp Vụ K12Online  
 **Môi trường kiểm thử:** Localhost (`http://localhost:3000`) & Production Sync  
-**Thời điểm thực thi:** 15:38:38 1/10/2026  
-**Thời gian hoàn thành:** 31.85 giây  
+**Thời điểm thực thi:** 15:43:03 1/10/2026  
+**Thời gian hoàn thành:** 61.38 giây  
 
 ---
 
@@ -28,7 +28,7 @@
 | `TC-RAG-03` | RAG & Kho Tri Thức 383 Bài Viết | Ánh xạ Từ điển đồng nghĩa giáo dục (Synonyms) | ✅ **PASS** | Đã tích hợp từ điển đồng nghĩa ánh xạ từ viết tắt (tkb, học bạ, đề thi) sang thuật ngữ chuẩn. |
 | `TC-RAG-05` | RAG & Kho Tri Thức 383 Bài Viết | Kiểm soát ngưỡng Context Window (<= 15.000 ký tự) | ✅ **PASS** | Dung lượng context được khống chế an toàn ở mức 4731 ký tự. |
 | `TC-RAG-06` | RAG & Kho Tri Thức 383 Bài Viết | Xử lý truy vấn không có trong cơ sở tri thức | ✅ **PASS** | Không khớp sai lệch dữ liệu ngoại lai, hệ thống an toàn không crash. |
-| `TC-INTENT-01` | Intent Filter & Pre-baked Cache | Nhận diện câu chào hỏi xã giao (<10ms) | ✅ **PASS** | Nhận diện câu chào thành công chỉ mất 0.192ms, không tốn tài nguyên RAG. |
+| `TC-INTENT-01` | Intent Filter & Pre-baked Cache | Nhận diện câu chào hỏi xã giao (<10ms) | ✅ **PASS** | Nhận diện câu chào thành công chỉ mất 0.256ms, không tốn tài nguyên RAG. |
 | `TC-INTENT-02` | Intent Filter & Pre-baked Cache | Nhận diện lời cảm ơn & tạm biệt (<10ms) | ✅ **PASS** | Nhận diện và phản hồi lịch sự lời cảm ơn ngay lập tức. |
 | `TC-PREBAKED-01` | Intent Filter & Pre-baked Cache | So khớp câu trả lời soạn sẵn cho bài quá khổ (#255 Thư viện số) | ✅ **PASS** | Khớp thành công cẩm nang 'thu-vien-so-nha-truong' với nội dung chi tiết 5229 ký tự (0ms latency, 0 token AI). |
 | `TC-PREBAKED-02` | Intent Filter & Pre-baked Cache | Bỏ qua câu hỏi hẹp để RAG trả lời đúng ngữ cảnh | ✅ **PASS** | Câu hỏi hẹp không bị ghi đè bởi cẩm nang chung, đảm bảo tính chính xác. |
@@ -37,7 +37,7 @@
 | `TC-ZK-03` | Mật Mã Bảo Mật Zero-Knowledge | Từ chối tuyệt đối khi nhập sai Master Password | ✅ **PASS** | Hệ thống bắt lỗi giải mã AES-GCM và từ chối cấp quyền. |
 | `TC-ZK-04` | Mật Mã Bảo Mật Zero-Knowledge | Phát hiện can thiệp Ciphertext (Tamper Resistance / Auth Tag) | ✅ **PASS** | Sửa 1 ký tự trong ciphertext lập tức bị Authentication Tag từ chối giải mã. |
 | `TC-ZK-05` | Mật Mã Bảo Mật Zero-Knowledge | Tính duy nhất của Salt ngẫu nhiên (Crypto Random Salt) | ✅ **PASS** | Cùng 1 mật khẩu nhưng 2 lần tạo sinh ra 2 bộ Salt và Ciphertext hoàn toàn khác nhau. |
-| `TC-ZK-06` | Mật Mã Bảo Mật Zero-Knowledge | Đo lường độ trễ an toàn PBKDF2 100.000 iterations | ✅ **PASS** | Thời gian sinh khóa: 91.1ms (đủ để làm chậm brute-force nhưng mượt mà với người dùng). |
+| `TC-ZK-06` | Mật Mã Bảo Mật Zero-Knowledge | Đo lường độ trễ an toàn PBKDF2 100.000 iterations | ✅ **PASS** | Thời gian sinh khóa: 98.4ms (đủ để làm chậm brute-force nhưng mượt mà với người dùng). |
 | `TC-SEC-01` | Rate Limiting & Security Filters | Phát hiện và chặn Payload vượt ngưỡng (> 1.500 ký tự) | ✅ **PASS** | Nhận diện chuỗi 1501 ký tự vượt trần cho phép (chống flood token). |
 | `TC-SEC-02` | Rate Limiting & Security Filters | Chấp thuận Payload trong giới hạn an toàn (<= 1.500 ký tự) | ✅ **PASS** | Chuỗi 48 ký tự vượt qua kiểm tra an toàn. |
 | `TC-SEC-03` | Rate Limiting & Security Filters | Giới hạn tần suất 20 yêu cầu / phút / IP | ✅ **PASS** | 20 request đầu tiên thành công; request thứ 21 bị chặn mã 429 Too Many Requests. |

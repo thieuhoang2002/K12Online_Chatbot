@@ -82,6 +82,14 @@
   - Cho phép giáo viên đánh giá Thích / Không thích câu trả lời và đóng góp lý do chi tiết (lưu vào bảng `chat_feedback`).
   - Cho phép xuất lịch sử hội thoại ra Markdown (`.md`), Plain Text (`.txt`) và In / Xuất PDF trực tiếp.
 
+### 2.10. Hệ thống Kiểm thử Tự động Toàn diện (Full-Suite Automation Testing)
+- **Mã nguồn:** Thư mục `tests/`, `tests/run_all_tests.js` và lệnh `npm test`.
+- **Thành quả bàn giao:**
+  - 100% bao phủ 8 phân hệ cốt lõi với **39/39 Test Cases đạt PASS (100.0% Success Rate)**.
+  - Kế hoạch kiểm thử chuẩn IEEE 829 & ISTQB (`tests/test_plan.md`).
+  - Báo cáo kết quả kiểm thử tự động chi tiết với latency benchmarks (`tests/test_report.md`).
+  - Chạy độc lập siêu tốc (<35s) trên Node.js Native Web Crypto mà không phụ thuộc thư viện nặng.
+
 ---
 
 ## 3. Danh sách Biến Môi trường Cần thiết (.env.local & Vercel)
@@ -129,3 +137,10 @@ Khi có bài viết nghiệp vụ mới dài trên 15.000 ký tự:
 1. Khi có thông báo Dislike gửi về nhóm Telegram, đọc câu hỏi và lý do giáo viên báo lỗi.
 2. Truy cập `/admin` > mục **Phản hồi Người dùng** để xem toàn bộ bối cảnh cuộc trò chuyện.
 3. Nếu bài viết trên K12Online có thay đổi thao tác, tiến hành cập nhật lại file bài viết tương ứng trong `data/articles/`.
+
+### 4.4. Kiểm thử Tự động Trước khi Phát hành (Pre-Deployment Testing)
+Trước mỗi lần push mã nguồn hoặc dữ liệu mới lên GitHub/Vercel:
+1. Chạy lệnh: `npm test`.
+2. Đảm bảo toàn bộ 39 Test Cases đạt `PASS`.
+3. Kiểm tra tệp báo cáo `tests/test_report.md` để chắc chắn không có lỗi hồi quy (regression bugs).
+

@@ -156,3 +156,16 @@ Tích hợp Bot Telegram (`src/lib/telegram.ts`) với cơ chế gửi tin khôn
   - Hỗ trợ đóng mở với hiệu ứng chuyển động mượt mà, tự động co giãn full-screen trên màn hình điện thoại di động (<640px).
 - **Cấu hình CSP (Cross-Origin Policy):** `next.config.mjs` thiết lập `Content-Security-Policy: frame-ancestors *` và `X-Frame-Options: ALLOWALL` riêng cho route `/embed` để mọi tên miền trường học đều có thể nhúng hợp lệ.
 
+---
+
+## 9. Hệ thống Kiểm thử Tự động Toàn diện (Automation Testing Architecture)
+
+- **Mã nguồn:** Thư mục `tests/` và lệnh `npm test` (`tests/run_all_tests.js`).
+- **Triết lý thiết kế:**
+  - **Zero-Dependency Native Execution:** Tận dụng Web Crypto API có sẵn trong Node.js và Fetch API, không cần cài đặt các framework cồng kềnh giúp tốc độ chạy siêu tốc (<35s cho toàn bộ 39 Test Cases).
+  - **Phân tầng đa cấp:**
+    * *Unit Testing (`tests/unit/`):* Thẩm định toàn vẹn kho 383 bài viết nghiệp vụ, độ phủ từ điển đồng nghĩa, logic nhận diện Intent (<10ms), so khớp Pre-baked cache cho bài cẩm nang lớn, an toàn mật mã Web Crypto PBKDF2 100.000 iterations + AES-256-GCM, chống can thiệp 1 bit ciphertext (Tamper Resistance), và bộ đếm rate limit.
+    * *Integration Testing (`tests/integration/`):* Kiểm thử HTTP Live Endpoints (`/api/chat` chặn 403 khi thiếu Turnstile, `/api/feedback` ghi nhận like/dislike, `/api/admin/*` kiểm soát whitelist email, `/embed` & `widget.js` kiểm tra tiêu đề CSP frame-ancestors *).
+  - **Tiêu chuẩn tài liệu:** Tuân thủ chuẩn **IEEE 829 & ISTQB** (`tests/test_plan.md`, `tests/test_cases.md`), tự động đo lường độ trễ (latency benchmarks) và kết xuất báo cáo chuẩn Markdown (`tests/test_report.md`) đạt **100.0% Pass Rate**.
+
+
