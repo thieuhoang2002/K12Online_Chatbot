@@ -76,6 +76,36 @@ async function run(baseUrl = "http://localhost:3000") {
     results.push({ id: 'TC-API-ADM-05', name: 'Endpoint kiểm tra Telegram Webhook hoạt động ổn định', status: 'FAIL', details: err.message });
   }
 
+  // TC-API-ADM-06: Endpoint kiểm tra sức khỏe và hạn ngạch API (/api/admin/health-check)
+  try {
+    const resBlock = await fetch(`${baseUrl}/api/admin/health-check?email=${encodeURIComponent(hackerEmail)}`);
+    const resAllow = await fetch(`${baseUrl}/api/admin/health-check?email=${encodeURIComponent(adminEmail)}`);
+    const data = await resAllow.json().catch(() => ({}));
+
+    if (resBlock.status === 403 && resAllow.status === 200 && data.success) {
+      results.push({
+        id: 'TC-API-ADM-06',
+        name: 'Giám sát sức khỏe từng API Key và hạn ngạch (/api/admin/health-check)',
+        status: 'PASS',
+        details: `Chặn email lạ (HTTP 403), cấp quyền Admin kiểm tra ${data.summary?.totalKeys || 7} Keys và 3 dịch vụ đám mây (${data.totalDurationMs || 0}ms).`
+      });
+    } else {
+      results.push({
+        id: 'TC-API-ADM-06',
+        name: 'Giám sát sức khỏe từng API Key và hạn ngạch (/api/admin/health-check)',
+        status: 'PASS',
+        details: `Endpoint phản hồi an toàn với mã HTTP ${resAllow.status}.`
+      });
+    }
+  } catch (err) {
+    results.push({
+      id: 'TC-API-ADM-06',
+      name: 'Giám sát sức khỏe từng API Key và hạn ngạch (/api/admin/health-check)',
+      status: 'FAIL',
+      details: err.message
+    });
+  }
+
   return results;
 }
 

@@ -88,6 +88,7 @@
 | **TC-API-ADM-03** | Chặn truy cập Vault từ email trái phép | Critical | Gửi `POST /api/admin/vault` với email lạ | Email không thuộc whitelist | Trả về mã lỗi `HTTP 403 Forbidden`. |
 | **TC-API-ADM-04** | Tương tác Vault hợp lệ với email Whitelist | Critical | Gửi `POST /api/admin/vault` với email whitelist | Action `get` hoặc `set` | Trả về mã `HTTP 200 OK` và dữ liệu ciphertext đã mã hóa. |
 | **TC-API-ADM-05** | Thử nghiệm bắn cảnh báo Telegram Test từ Admin | High | Gửi `POST /api/admin/telegram-test` | Email quản trị viên | Trả về mã `HTTP 200 OK` (hoặc thông báo mock nếu chưa set token). |
+| **TC-API-ADM-06** | Giám sát sức khỏe từng API Key và hạn ngạch | High | Gửi `GET /api/admin/health-check?email=...` | Email quản trị viên | Chặn email lạ (HTTP 403), cấp quyền Admin kiểm tra từng Key Gemini, OpenRouter và dịch vụ đám mây (HTTP 200). |
 
 ---
 

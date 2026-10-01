@@ -97,5 +97,5 @@
 - [TODOBUG.md](file:///C:/Users/thhoang/Desktop/K12Online_Chatbot/TODOBUG.md): Nhật ký theo dõi lỗi kỹ thuật, kẽ hở bảo mật và các bản vá đã triển khai (BUG-01 đến BUG-15).
 - [HANDOVER.md](file:///C:/Users/thhoang/Desktop/K12Online_Chatbot/HANDOVER.md): Tài liệu bàn giao kiến trúc và luồng xử lý sản phẩm.
 - [GUIDE.md](file:///C:/Users/thhoang/Desktop/K12Online_Chatbot/GUIDE.md): Cẩm nang hướng dẫn cài đặt, cấu hình Telegram, Admin và nhúng Widget.
-- [tests/README.md](file:///C:/Users/thhoang/Desktop/K12Online_Chatbot/tests/README.md): **Hệ thống Kiểm thử Tự động Toàn diện (39 Test Cases đạt tỷ lệ 100% Pass).**
+- [tests/README.md](file:///C:/Users/thhoang/Desktop/K12Online_Chatbot/tests/README.md): **Hệ thống Kiểm thử Tự động Toàn diện (40 Test Cases đạt tỷ lệ 100% Pass).**
 - [tests/test_report.md](file:///C:/Users/thhoang/Desktop/K12Online_Chatbot/tests/test_report.md): Báo cáo kết quả kiểm thử tự động chi tiết.

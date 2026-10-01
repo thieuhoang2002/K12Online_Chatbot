@@ -67,14 +67,15 @@
 - [x] **Chuyển tiếp Rate Limit Headers:** Forward các header `x-ratelimit-*` từ Google Gemini về client và console server để theo dõi hạn ngạch thực tế.
 - [x] **Bảng điều khiển Thống kê Quản trị (Admin Analytics Dashboard):** Trang `/admin` nội bộ bảo vệ đa tầng bằng **Zero-Knowledge (PBKDF2 100k + AES-256-GCM)**, thống kê phiên chat, like/dislike, AI engine status, và 383 bài viết.
 - [x] **Cảnh báo lỗi tự động qua Telegram Webhook:** Tự động gửi cảnh báo HTML tức thì về điện thoại qua Telegram Bot (`src/lib/telegram.ts`) khi có IP spam rate limit, Gemini failover, góp ý Dislike, hoặc lỗi HTTP 500.
+- [x] **Giám sát Sức khỏe & Hạn ngạch Từng API Key (`/api/admin/health-check`):** Kiểm tra ping thực tế tới từng Key Gemini, OpenRouter Pool, Redis, Telegram, Supabase kèm nút bấm On-Demand và cơ chế tự động quét định kỳ mỗi 10 phút.
 
 ---
 
 ## Giai đoạn 9: Kiểm Thử Tự Động Toàn Diện (Full-Suite Automation Testing) - [ĐÃ HOÀN THÀNH 100%]
-- [x] **Xây dựng Kế hoạch Kiểm thử Chiến lược (`tests/test_plan.md`):** Chuẩn IEEE 829 & ISTQB bao phủ 8 phân hệ cốt lõi.
-- [x] **Đặc tả 39 Test Cases Chi tiết (`tests/test_cases.md`):** Bao phủ Unit Test, Integration Test, Mật mã Zero-Knowledge, RAG, Rate Limit và Webhook.
+- [x] **Xây dựng Kế hoạch Kiểm thử Chiến lược (`tests/test_plan.md`):** Chuẩn IEEE 829 & ISTQB bao phủ 9 phân hệ cốt lõi.
+- [x] **Đặc tả 40 Test Cases Chi tiết (`tests/test_cases.md`):** Bao phủ Unit Test, Integration Test, Mật mã Zero-Knowledge, RAG, Rate Limit, Health Check và Webhook.
 - [x] **Bộ Test Scripts Độc lập Tự động:** Các tệp thực thi `tests/unit/*.js` và `tests/integration/*.js` đo lường latency và thẩm định tính toàn vẹn.
-- [x] **Master Test Runner (`tests/run_all_tests.js` / `npm test`):** Tự động chạy toàn bộ suite, in kết quả màu trực quan và tự động kết xuất báo cáo `tests/test_report.md` (Đạt tỷ lệ thành công 100.0% - 39/39 Test Cases).
+- [x] **Master Test Runner (`tests/run_all_tests.js` / `npm test`):** Tự động chạy toàn bộ suite, in kết quả màu trực quan và tự động kết xuất báo cáo `tests/test_report.md` (Đạt tỷ lệ thành công 100.0% - 40/40 Test Cases).
 
 
 

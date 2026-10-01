@@ -10,7 +10,7 @@ Thư mục này chứa toàn bộ tài liệu kiểm thử, ma trận testcase, 
 tests/
 ├── README.md                      # Tài liệu tổng quan về bộ kiểm thử
 ├── test_plan.md                   # Kế hoạch chiến lược kiểm thử toàn diện (IEEE 829 / ISTQB)
-├── test_cases.md                  # Danh sách chi tiết 39 Test Cases chuẩn mực
+├── test_cases.md                  # Danh sách chi tiết 40 Test Cases chuẩn mực
 ├── test_report.md                 # Báo cáo kết quả kiểm thử tự động mới nhất
 ├── run_all_tests.js               # Master Runner tự động thực thi và xuất báo cáo
 ├── unit/                          # Các bài kiểm thử đơn vị độc lập
