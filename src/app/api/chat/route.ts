@@ -40,7 +40,9 @@ function createTextStream(
       // 3. Gửi danh sách câu hỏi gợi ý tiếp theo
       if (followUps && followUps.length > 0) {
         controller.enqueue(
-          encoder.encode(`data: ${JSON.stringify({ type: "followUps", prompts: followUps })}\n\n`)
+          encoder.encode(
+            `data: ${JSON.stringify({ type: "followUps", prompts: followUps, followUps: followUps })}\n\n`
+          )
         );
       }
 
@@ -151,7 +153,9 @@ function createOpenRouterStream(
         // Gửi danh sách gợi ý câu hỏi tiếp theo
         if (followUps && followUps.length > 0) {
           controller.enqueue(
-            encoder.encode(`data: ${JSON.stringify({ type: "followUps", prompts: followUps })}\n\n`)
+            encoder.encode(
+              `data: ${JSON.stringify({ type: "followUps", prompts: followUps, followUps: followUps })}\n\n`
+            )
           );
         }
 

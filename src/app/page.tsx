@@ -131,6 +131,7 @@ export default function Home() {
 
   // Ref cuộn độc lập bên trong container chat (CHỐNG LỖI MẤT HEADER TRÊN MOBILE)
   const chatScrollRef = useRef<HTMLDivElement>(null);
+  const messagesEndRef = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   // Khởi tạo Theme & Phiên làm việc ban đầu
@@ -319,14 +320,23 @@ export default function Home() {
   const currentSession = sessions.find((s) => s.id === currentSessionId) || sessions[0];
   const messages = currentSession?.messages || [];
 
-  useEffect(() => {
+  const scrollToBottom = React.useCallback((behavior: ScrollBehavior = "smooth") => {
     if (chatScrollRef.current) {
       chatScrollRef.current.scrollTo({
         top: chatScrollRef.current.scrollHeight,
-        behavior: "smooth",
+        behavior,
       });
     }
-  }, [messages.length, loading]);
+  }, []);
+
+  useEffect(() => {
+    scrollToBottom("smooth");
+    // Chờ Markdown và các Chip gợi ý render hoàn tất kích thước trong DOM
+    const timer = setTimeout(() => {
+      scrollToBottom("smooth");
+    }, 150);
+    return () => clearTimeout(timer);
+  }, [messages.length, loading, scrollToBottom]);
 
   function toggleTheme() {
     const nextTheme = theme === "dark" ? "light" : "dark";
@@ -516,8 +526,8 @@ export default function Home() {
                 if (parsed.type === "sources") {
                   streamedSources = parsed.sources;
                   hasUpdated = true;
-                } else if (parsed.type === "follow_ups") {
-                  streamedFollowUps = parsed.followUps;
+                } else if (parsed.type === "follow_ups" || parsed.type === "followUps") {
+                  streamedFollowUps = parsed.followUps || parsed.prompts || parsed.follow_ups || [];
                   hasUpdated = true;
                 } else if (parsed.type === "text" || parsed.text !== undefined) {
                   streamedReply += parsed.text;
@@ -546,6 +556,10 @@ export default function Home() {
                 return s;
               })
             );
+            // Tự động cuộn theo luồng văn bản đang sinh
+            if (chatScrollRef.current) {
+              chatScrollRef.current.scrollTop = chatScrollRef.current.scrollHeight;
+            }
           }
         }
       }
@@ -592,6 +606,8 @@ export default function Home() {
       );
     } finally {
       setLoading(false);
+      setTimeout(() => scrollToBottom("smooth"), 60);
+      setTimeout(() => scrollToBottom("smooth"), 200);
     }
   }
 
@@ -909,7 +925,7 @@ export default function Home() {
         {/* CONTAINER NỘI DUNG CHAT: Cuộn độc lập, không làm ảnh hưởng Header */}
         <div
           ref={chatScrollRef}
-          className="flex-1 overflow-y-auto px-4 md:px-6 py-6 flex flex-col justify-between"
+          className="flex-1 overflow-y-auto px-4 md:px-6 py-4 flex flex-col"
         >
           {/* TRƯỜNG HỢP 1: CUỘC HỘI THOẠI MỚI (Trang chào đón) */}
           {isNewChat ? (
@@ -1083,29 +1099,29 @@ export default function Home() {
                       m.followUps.length > 0 &&
                       (!loading || idx < messages.length - 1) && (
                         <div
-                          className={`mt-3.5 pt-3 border-t text-xs ${
+                          className={`mt-4 pt-3.5 border-t text-xs ${
                             isDarkMode ? "border-[#2d2f31]" : "border-[#e3e3e3]"
                           }`}
                         >
-                          <div className="font-medium text-slate-400 flex items-center gap-1.5 mb-2">
+                          <div className="font-medium text-slate-400 flex items-center gap-1.5 mb-2.5">
                             <Sparkles className="w-3.5 h-3.5 text-amber-400" />
                             <span>Câu hỏi gợi ý liên quan:</span>
                           </div>
-                          <div className="flex flex-wrap gap-1.5">
+                          <div className="flex flex-wrap gap-2">
                             {m.followUps.map((prompt, pIdx) => (
                               <button
                                 key={pIdx}
                                 disabled={loading}
                                 onClick={() => handleSendMessage(prompt)}
-                                className={`text-left inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs transition border ${
+                                className={`text-left inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs transition border ${
                                   loading ? "opacity-40 cursor-not-allowed" : ""
                                 } ${
                                   isDarkMode
-                                    ? "bg-[#1e1f20] hover:bg-[#282a2c] border-[#2d2f31] text-slate-300 hover:text-sky-400"
-                                    : "bg-slate-100 hover:bg-slate-200 border-[#e3e3e3] text-slate-700 hover:text-sky-600"
+                                    ? "bg-[#1e1f20] hover:bg-[#282a2c] border-[#2d2f31] hover:border-sky-500/50 text-slate-200 hover:text-sky-300"
+                                    : "bg-slate-50 hover:bg-white border-[#e3e3e3] hover:border-sky-400 text-slate-700 hover:text-sky-600 shadow-xs"
                                 }`}
                               >
-                                <span className="text-sky-500 font-bold">→</span>
+                                <span className="text-sky-500 font-bold shrink-0">→</span>
                                 <span>{prompt}</span>
                               </button>
                             ))}
@@ -1115,28 +1131,46 @@ export default function Home() {
                   </div>
                 </div>
               ))}
-            </div>
-          )}
 
-          {/* Gợi ý câu hỏi trôi nổi (khi đã có chat) */}
-          {!isNewChat && (
-            <div className="max-w-3xl w-full mx-auto my-2 overflow-x-auto flex gap-1.5 no-scrollbar py-1">
-              {QUICK_PROMPTS.slice(0, 3).map((q, qIdx) => (
-                <button
-                  key={qIdx}
-                  disabled={loading}
-                  onClick={() => handleSendMessage(q.prompt)}
-                  className={`px-3 py-1 rounded-full whitespace-nowrap transition text-xs border shrink-0 ${
-                    loading ? "opacity-40 cursor-not-allowed" : ""
-                  } ${
-                    isDarkMode
-                      ? "bg-[#1e1f20] hover:bg-[#282a2c] text-slate-300 border-[#2d2f31]"
-                      : "bg-slate-100 hover:bg-slate-200 text-slate-700 border-[#e3e3e3]"
-                  }`}
-                >
-                  {q.title}
-                </button>
-              ))}
+              {/* Nếu tin nhắn cuối chưa có gợi ý chi tiết và không đang loading, hiển thị gợi ý câu hỏi phổ biến */}
+              {(() => {
+                const lastMsg = messages[messages.length - 1];
+                const hasFollowUps =
+                  lastMsg?.role === "assistant" && lastMsg.followUps && lastMsg.followUps.length > 0;
+                if (!hasFollowUps && !loading) {
+                  return (
+                    <div className="pt-2">
+                      <div className="text-xs font-medium text-slate-400 mb-2 flex items-center gap-1.5">
+                        <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                        <span>Gợi ý câu hỏi phổ biến:</span>
+                      </div>
+                      <div className="flex flex-wrap gap-2">
+                        {QUICK_PROMPTS.slice(0, 3).map((q, qIdx) => (
+                          <button
+                            key={qIdx}
+                            disabled={loading}
+                            onClick={() => handleSendMessage(q.prompt)}
+                            className={`px-3 py-1.5 rounded-full text-xs transition border shrink-0 ${
+                              loading ? "opacity-40 cursor-not-allowed" : ""
+                            } ${
+                              isDarkMode
+                                ? "bg-[#1e1f20] hover:bg-[#282a2c] text-slate-300 border-[#2d2f31] hover:border-sky-500/50"
+                                : "bg-slate-50 hover:bg-white text-slate-700 border-[#e3e3e3] hover:border-sky-400 shadow-xs"
+                            }`}
+                          >
+                            <span className="text-sky-500 mr-1.5">→</span>
+                            {q.title}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                }
+                return null;
+              })()}
+
+              {/* Khoảng đệm chân trang để nội dung và gợi ý không bao giờ bị thanh nhập liệu che mất */}
+              <div ref={messagesEndRef} className="h-6 sm:h-8 shrink-0" />
             </div>
           )}
         </div>
