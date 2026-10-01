@@ -6,6 +6,7 @@ import { responseCache } from "@/lib/cache";
 import { checkRateLimit, isIpVerifiedHuman, markIpVerifiedHuman } from "@/lib/ratelimit";
 import { checkCasualIntent } from "@/lib/intent";
 import { generateFollowUpPrompts } from "@/lib/suggestions";
+import { findPrebakedAnswer } from "@/lib/prebaked";
 
 /**
  * Tạo Stream giả lập mượt mà cho câu trả lời từ Cache hoặc câu xã giao
@@ -372,6 +373,21 @@ export async function POST(req: NextRequest) {
         "Hướng dẫn phụ huynh và học sinh nộp bài tập về nhà trên K12Connect",
       ];
       const stream = createTextStream(casual.reply, [], casualFollowUps, { casual: true });
+      return new Response(stream, {
+        headers: {
+          "Content-Type": "text/event-stream; charset=utf-8",
+          "Cache-Control": "no-cache, no-transform",
+          "Connection": "keep-alive",
+        },
+      });
+    }
+
+    // 4.5. BỘ LỌC CÂU HỎI LÀM SẴN (PRE-BAKED / WARM CACHE CHO BÀI VIẾT QUÁ DÀI)
+    // Giúp phản hồi ngay lập tức (0ms latency, 0 token) với đầy đủ cấu trúc chi tiết, tránh nghẽn/cắt cụt do bài viết 70k ký tự
+    const prebaked = findPrebakedAnswer(message);
+    if (prebaked) {
+      console.log(`⚡ [Pre-baked Hit] Bắn câu trả lời chuẩn bị sẵn cho bài viết lớn: "${message}"`);
+      const stream = createTextStream(prebaked.reply, prebaked.sources, prebaked.followUps, { prebaked: true });
       return new Response(stream, {
         headers: {
           "Content-Type": "text/event-stream; charset=utf-8",
