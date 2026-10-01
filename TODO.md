@@ -45,6 +45,8 @@
 - [x] **Thẻ gợi ý thông minh 1 chạm (Contextual Follow-up Cards):** Gợi ý 2–3 câu hỏi tiếp theo theo từng chủ đề chuyên sâu, tự động cuộn chống tràn giao diện và không bị thanh nhập liệu che khuất.
 - [x] **Chuẩn hóa Link nguồn 100%:** Toàn bộ 383 bài viết trích dẫn đều có đường link `.html` trực tiếp dẫn tới cổng Viettel.
 - [x] **Nút Đánh giá chất lượng (Like/Dislike Feedback):** Thu thập phản hồi về độ hữu ích của câu trả lời (`src/components/FeedbackModal.tsx` + `/api/feedback`) để cải thiện chất lượng dữ liệu.
+- [x] **Nhập liệu bằng giọng nói (Voice Input - Web Speech API):** Tích hợp nút Micro thu âm tiếng Việt trực tiếp ngay ô chat, miễn phí 100%, 0 token, chuyển đổi thành văn bản theo thời gian thực.
+- [x] **Tối ưu hóa Responsive Header Mobile:** Tự động rút gọn tiêu đề `K12Online` trên màn hình nhỏ (<640px) và khóa `shrink-0` cụm nút, loại bỏ hoàn toàn lỗi đè nút 'Đoạn chat mới'.
 
 ---
 
@@ -67,7 +69,7 @@
 - [x] **Chuyển tiếp Rate Limit Headers:** Forward các header `x-ratelimit-*` từ Google Gemini về client và console server để theo dõi hạn ngạch thực tế.
 - [x] **Bảng điều khiển Thống kê Quản trị (Admin Analytics Dashboard):** Trang `/admin` nội bộ bảo vệ đa tầng bằng **Zero-Knowledge (PBKDF2 100k + AES-256-GCM)**, thống kê phiên chat, like/dislike, AI engine status, và 383 bài viết.
 - [x] **Cảnh báo lỗi tự động qua Telegram Webhook:** Tự động gửi cảnh báo HTML tức thì về điện thoại qua Telegram Bot (`src/lib/telegram.ts`) khi có IP spam rate limit, Gemini failover, góp ý Dislike, hoặc lỗi HTTP 500.
-- [x] **Giám sát Sức khỏe & Hạn ngạch Từng API Key (`/api/admin/health-check`):** Kiểm tra ping thực tế tới từng Key Gemini, OpenRouter Pool, Redis, Telegram, Supabase kèm nút bấm On-Demand và cơ chế tự động quét định kỳ mỗi 10 phút.
+- [x] **Giám sát Sức khỏe & Hạn ngạch Từng API Key (`/api/admin/health-check`):** Kiểm tra ping thực tế tới từng Key Gemini, OpenRouter Pool, Redis, Telegram, Supabase kèm nút bấm On-Demand [🔄 Check lại] cho từng key/dịch vụ riêng biệt, hỗ trợ tất cả tên biến môi trường Gemini trên Vercel và cơ chế tự động quét định kỳ mỗi 10 phút.
 
 ---
 

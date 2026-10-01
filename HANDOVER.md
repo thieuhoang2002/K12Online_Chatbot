@@ -85,9 +85,16 @@
 ### 2.10. Hệ thống Kiểm thử Tự động Toàn diện (Full-Suite Automation Testing)
 - **Mã nguồn:** Thư mục `tests/`, `tests/run_all_tests.js` và lệnh `npm test`.
 - **Thành quả bàn giao:**
-  - 100% bao phủ 8 phân hệ cốt lõi với **39/39 Test Cases đạt PASS (100.0% Success Rate)**.
+  - 100% bao phủ 9 phân hệ cốt lõi với **40/40 Test Cases đạt PASS (100.0% Success Rate)**.
   - Kế hoạch kiểm thử chuẩn IEEE 829 & ISTQB (`tests/test_plan.md`).
   - Báo cáo kết quả kiểm thử tự động chi tiết với latency benchmarks (`tests/test_report.md`).
+
+### 2.11. Nhập Liệu Giọng Nói Tiếng Việt (Web Speech API) & Responsive Header
+- **Mã nguồn:** `src/app/page.tsx`
+- **Tính năng:**
+  - Nút Micro thu âm tiếng Việt trực tiếp ngay cạnh nút gửi tin nhắn, xử lý 100% Client-Side qua chuẩn Web Speech API của trình duyệt (tiêu tốn đúng 0đ, 0 token, không cần API key).
+  - Tự động rút gọn tiêu đề `K12Online` trên điện thoại (<640px) và khóa `shrink-0` cụm nút, loại bỏ xung đột va chạm với nút 'Đoạn chat mới'.
+  - Tab **Giám Sát API** trong Admin Dashboard hỗ trợ kiểm tra ping On-Demand `[🔄 Check lại]` riêng lẻ cho từng Key Gemini, OpenRouter, Redis, Telegram, Supabase.
   - Chạy độc lập siêu tốc (<35s) trên Node.js Native Web Crypto mà không phụ thuộc thư viện nặng.
 
 ---

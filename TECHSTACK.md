@@ -60,6 +60,8 @@ flowchart TD
 - **Thẻ Gợi Ý Ngữ Cảnh (Contextual Follow-up Cards):** Gợi ý 2–3 câu hỏi tiếp theo dựa trên nội dung câu trả lời, thiết kế dạng thẻ độc lập có đệm đáy chống che khuất nút gửi.
 - **Đánh giá Hài lòng (Like / Dislike):** Nút Like/Dislike trực tiếp dưới mỗi bong bóng tin nhắn AI kèm modal thu thập lý do chuyên sâu và bình luận cải tiến.
 - **Xuất Lịch sử Trò chuyện (Export Chat Modal):** Tùy chọn xuất ra Markdown (`.md`), Plain Text (`.txt`) và In trực tiếp / Lưu PDF chuẩn in ấn (`@media print`).
+- **Nhập liệu Giọng nói Tiếng Việt 1-Chạm (Voice Input - Web Speech API):** Tích hợp nút Micro thu âm câu hỏi bằng tiếng Việt ngay cạnh ô nhập liệu, xử lý 100% Client-Side qua Web Speech API (0đ, 0 token, không tốn thêm API), hiển thị trạng thái đèn đỏ nhấp nháy trực quan.
+- **Tối ưu hóa Responsive Mobile Header:** Tự động điều chỉnh rút gọn tiêu đề `K12Online` trên màn hình điện thoại (<640px) và khóa `shrink-0` cụm nút điều khiển, đảm bảo không gian thoáng đãng và không bao giờ bị đè nút 'Đoạn chat mới'.
 - **Tailwind CSS & Dark Mode:** Thiết kế giao diện hiện đại, chuẩn chỉnh cho cả Mobile và Desktop với Dark Mode thân thiện cho mắt giáo viên.
 - **React Markdown & Remark GFM:** Kết xuất đầy đủ bảng biểu Markdown, danh sách số, code block và đường link trích dẫn `.html` dẫn thẳng tới cổng Viettel.
 

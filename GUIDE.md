@@ -22,6 +22,7 @@ Tạo file `.env.local` tại thư mục gốc của dự án (`C:\Users\thhoang
    ```env
    GEMINI_API_KEYS=AIzaSyA...Key1,AIzaSyB...Key2
    ```
+   *(Hệ thống hỗ trợ tự động các alias biến môi trường trên Vercel: `GEMINI_API_KEYS`, `GEMINI_API_KEY`, `GOOGLE_API_KEY`)*.
 
 ### 2.2. Cấu hình OpenRouter (Động cơ AI dự phòng)
 1. Đăng ký tài khoản tại [openrouter.ai](https://openrouter.ai).
@@ -163,6 +164,6 @@ npm test
 node tests/run_all_tests.js
 ```
 
-- Hệ thống sẽ tự động thực thi **39 Test Cases** bao phủ từ RAG, Mật mã Zero-Knowledge, Rate Limiting, API Routes, nhúng Widget đến Webhook Telegram.
+- Hệ thống sẽ tự động thực thi **40 Test Cases** bao phủ từ RAG, Mật mã Zero-Knowledge, Rate Limiting, API Routes, nhúng Widget đến Webhook Telegram.
 - Báo cáo kết quả kiểm thử chuẩn Markdown với đầy đủ thông số đo lường độ trễ (latency benchmarks) sẽ tự động được cập nhật tại [tests/test_report.md](file:///C:/Users/thhoang/Desktop/K12Online_Chatbot/tests/test_report.md).
 

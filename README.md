@@ -44,6 +44,10 @@
     - Bot Telegram giám sát 24/7, gửi thông báo HTML tức thì về điện thoại khi có IP spam rate limit, khi AI Engine tự failover, khi người dùng gửi góp ý Dislike, hoặc khi server gặp mã lỗi 500.
 13. **Trải nghiệm cuộn thông minh & Chống giật lag (Smart Scroll-Intent):**
     - Tự động nhận diện khi người dùng cuộn lên xem nội dung để tạm dừng auto-scroll và hiển thị nút nổi *"Xuống mới nhất ↓"*; cơ chế khóa state chống xung đột khi chuyển tab.
+14. **Nhập liệu bằng Giọng nói Tiếng Việt 1-Chạm (Voice Input - Web Speech API):**
+    - Hỗ trợ thầy cô giáo lớn tuổi hoặc người ngại gõ phím trên màn hình điện thoại bấm nút Micro nói trực tiếp tiếng Việt. Tự động chuyển thành văn bản tức thì theo thời gian thực (100% Client-side qua Web Speech API chuẩn, 0đ, 0 token, không tốn thêm API).
+15. **Bảng điều khiển Giám sát Sức khỏe API & Kiểm tra On-Demand (`/admin`):**
+    - Kiểm tra ping, số dư, hạn ngạch (quota) của từng API Key Gemini, OpenRouter Pool, Upstash Redis, Telegram Webhook, Supabase Database. Hỗ trợ nút `[ 🔄 Check lại ]` riêng từng key và cơ chế tự động quét định kỳ 10 phút.
 
 ---
 
