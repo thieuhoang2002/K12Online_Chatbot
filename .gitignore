@@ -24,9 +24,10 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# Environment files (QUAN TRỌNG: Không commit key cá nhân)
-.env*.local
+# Environment files (QUAN TRỌNG: Tuyệt đối không commit key cá nhân lên GitHub)
 .env
+.env.*
+.env*.local
 !.env.example
 
 # Vercel
