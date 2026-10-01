@@ -8,7 +8,8 @@
     "build:data": "node scripts/build_knowledge_json.js",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "node tests/run_all_tests.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.46.1",
