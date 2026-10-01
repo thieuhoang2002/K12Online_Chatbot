@@ -81,9 +81,9 @@ export function loadKnowledgeBase(): ArticleDoc[] {
         const fullPath = path.join(articlesDir, file);
         const text = fs.readFileSync(fullPath, "utf-8");
 
-        const titleMatch = text.match(/### BÀI VIẾT.*?:\s*(.*?)\n/);
-        const catMatch = text.match(/- Chuyên mục:\s*(.*?)\n/);
-        const linkMatch = text.match(/- Link gốc:\s*(.*?)\n/);
+        const titleMatch = text.match(/### BÀI VIẾT.*?:\s*(.*?)\r?\n/);
+        const catMatch = text.match(/- Chuyên mục:\s*(.*?)\r?\n/);
+        const linkMatch = text.match(/Link gốc:\s*(https?:\/\/[^\s\r\n]+)/i);
 
         const title = titleMatch ? titleMatch[1].trim() : file.replace(".txt", "").replace(/^\d+_\s*/, "");
         const category = catMatch ? catMatch[1].trim() : "Chung";
@@ -110,9 +110,9 @@ export function loadKnowledgeBase(): ArticleDoc[] {
     cachedArticles = sections
       .filter((s) => s.trim().length > 50)
       .map((sec) => {
-        const titleMatch = sec.match(/### BÀI VIẾT.*?:\s*(.*?)\n/);
-        const catMatch = sec.match(/- Chuyên mục:\s*(.*?)\n/);
-        const linkMatch = sec.match(/- Link gốc:\s*(.*?)\n/);
+        const titleMatch = sec.match(/### BÀI VIẾT.*?:\s*(.*?)\r?\n/);
+        const catMatch = sec.match(/- Chuyên mục:\s*(.*?)\r?\n/);
+        const linkMatch = sec.match(/Link gốc:\s*(https?:\/\/[^\s\r\n]+)/i);
 
         const title = titleMatch ? titleMatch[1].trim() : "Bài viết K12Online";
         return {
