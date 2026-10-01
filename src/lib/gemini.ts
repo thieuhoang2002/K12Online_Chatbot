@@ -106,6 +106,7 @@ class GeminiRotator {
               contents: contents,
               generationConfig: {
                 temperature: 0.3,
+                maxOutputTokens: 8192,
               },
             }),
           });

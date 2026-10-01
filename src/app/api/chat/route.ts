@@ -399,7 +399,14 @@ export async function POST(req: NextRequest) {
     // 6. Tìm kiếm dữ liệu liên quan từ kho tri thức K12Online (kèm Từ điển đồng nghĩa)
     const relevantDocs = searchKnowledge(message, 3);
     const contextText = relevantDocs
-      .map((d, i) => `[TÀI LIỆU ${i + 1} - ${d.title} (Nguồn: ${d.sourceUrl})]\n${d.content}`)
+      .map((d, i) => {
+        // Giới hạn 15.000 ký tự cho mỗi tài liệu để tránh tràn token prompt
+        const contentSnippet =
+          d.content.length > 15000
+            ? d.content.slice(0, 15000) + "\n\n...(Còn tiếp trong bài viết gốc)"
+            : d.content;
+        return `[TÀI LIỆU ${i + 1} - ${d.title} (Nguồn: ${d.sourceUrl})]\n${contentSnippet}`;
+      })
       .join("\n\n---\n\n");
 
     const sources = relevantDocs.map((d) => ({
@@ -414,7 +421,10 @@ export async function POST(req: NextRequest) {
     const systemPrompt = `Bạn là Trợ lý AI Hỗ trợ Kỹ thuật K12Online - Một dự án phi lợi nhuận phục vụ cộng đồng.
 QUY TẮC PHỤC VỤ:
 1. Xưng hô thân thiện, lịch sự: gọi người dùng là "bạn", xưng là "mình" hoặc "Trợ lý K12".
-2. Trả lời dựa trên CƠ SỞ TRI THỨC K12ONLINE được cung cấp dưới đây. Hướng dẫn chi tiết, rõ ràng theo từng bước (Bước 1: ..., Bước 2: ...) để người dùng dễ dàng thao tác theo.
+2. Trả lời dựa trên CƠ SỞ TRI THỨC K12ONLINE được cung cấp dưới đây:
+   - Với câu hỏi về một nghiệp vụ thao tác cụ thể: Hướng dẫn chi tiết, rõ ràng theo từng bước (Bước 1: ..., Bước 2: ...) để người dùng dễ dàng thao tác theo.
+   - Với câu hỏi bao quát về một hệ sinh thái lớn gồm nhiều phân hệ (như hệ thống Thư viện số, Quản lý trường học...): Hãy tóm tắt các tính năng cốt lõi một cách mạch lạc, súc tích, trình bày rõ ràng từng nhóm nghiệp vụ chính.
+   - ĐẶC BIỆT QUAN TRỌNG: LUÔN LUÔN kết thúc câu trả lời hoàn chỉnh, trọn vẹn ý tứ, TUYỆT ĐỐI KHÔNG dừng cụt lủn hay đứt gãy giữa chừng.
 3. Ở cuối câu trả lời, LUÔN LUÔN đính kèm đường link bài viết gốc để bạn có thể bấm vào xem chi tiết nếu tài liệu có đường dẫn.
 4. Nếu trong tài liệu hoàn toàn không có thông tin và không thể giải đáp, hãy thành thật trả lời: "Hiện tại trong tài liệu hướng dẫn chưa có thông tin chi tiết về vấn đề này. Bạn vui lòng liên hệ bộ phận hỗ trợ kỹ thuật hoặc tổng đài 18008000 (nhánh 2) để được hỗ trợ trực tiếp nhé."
 5. QUAN TRỌNG: TUYỆT ĐỐI KHÔNG xuất các đoạn suy nghĩ nội tâm (reasoning/thought), không giải thích bằng tiếng Anh hay viết "The user is asking...". Chỉ trả lời trực tiếp nội dung bằng tiếng Việt chuẩn mực cho người dùng.

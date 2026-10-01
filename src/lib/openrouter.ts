@@ -92,6 +92,7 @@ class KeyRotator {
               model: modelToUse,
               messages: messages,
               temperature: 0.3,
+              max_tokens: 4096,
             }),
           });
 
@@ -220,6 +221,7 @@ class KeyRotator {
               model: modelToUse,
               messages: messages,
               temperature: 0.3,
+              max_tokens: 4096,
               stream: true,
             }),
           });
