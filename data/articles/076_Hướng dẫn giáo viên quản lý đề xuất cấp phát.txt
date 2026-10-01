@@ -1,0 +1,130 @@
+### BÀI VIẾT [76]: Hướng dẫn giáo viên quản lý đề xuất cấp phát
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Cơ sở vật chất > Giáo viên
+- Link gốc: https://hotro.k12online.vn/giao-vien4/huong-dan-giao-vien-quan-ly-de-xuat-cap-phat2.html
+
+**Nội dung:**
+1. Danh sách phiếu đề xuất cấp phát
+
+ Bước 1: Menu Quản lý đề xuất > Chọn tab Đề xuất cấp phát
+
+ Bước 2: Hiển thị danh sách đề xuất cấp phát
+
+ Click Sắp xếp theo > Chọn kiểu sắp xếp > Hiển thị danh sách theo trạng thái sắp xếp.
+ Click icon chỉnh sửa để thực hiện chỉnh sửa phiếu đề xuất
+ Click icon xem chi tiết để thực hiện xem chi tiết phiếu đề xuất
+ Click icon xóa để thực hiện xóa phiếu đề xuất
+ Click icon gửi để thực hiện gửi phiếu đề xuất
+ Click icon thu hồi để thực hiện thu hồi phiếu đề xuất
+ Click icon cập nhật để thực hiện cập nhật lại trạng thái phiếu đề xuất
+ Click icon sao chép để thực hiện sao chép phiếu đề xuất ở trạng thái phiếu đã duyệt, không duyệt
+ Tải lại
+ Trên danh sách > click button Tải lại > Thực hiện tải lại danh sách.
+
+ Sắp xếp
+ Trên danh sách > click button Sắp xếp theo > Chọn kiểu sắp xếp> Hiển thị danh sách theo trạng thái sắp xếp.
+
+ Phân trang
+
+ Trên màn hình: hiển thị phân trang ở phía dưới bên phải màn khi danh sách có > 20 bản ghi
+ + Click icon << (>>) để chuyển đến trang trước đó (trang tiếp theo)
+
+ + Click icon << << (>> >>) để chuyển đến trang đầu tiên (trang cuối cùng)
+
+ 2. Thêm mới phiếu đề xuất cấp phát
+
+ Bước 1: Trên danh sách > Click button Thêm mới> Click thêm mới phiếu đề xuất
+
+ Bước 2: Hiển thị màn hình thêm mới phiếu đề xuất. Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Bước 3: Click Lưu để hoàn thành việc thêm mới phiếu đề xuất thành công
+ Lưu ý:
+
+ Các trường có dấu (*) bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Tên phiếu đề xuất: Nhập tên phiếu đề xuất
+ Lý do đề xuất: Hiển thị các lý do đề xuất cấp phát
+ Nội dung: Nhập nội dung cho phiếu đề xuất
+ Thông tin thiết bị đề xuất:
+ Phân loại: Hiển thị tất cả các phân loại thiết bị
+ Tên thiết bị: Hiển thị các thiết bị theo phân loại thiết bị đã chọn
+ Đơn vị tính: Hiển thị dữ liệu theo tên thiết bị đã chọn
+ Số lượng đề xuất: Nhập số lượng là số nguyên dương lớn hơn 0
+ Ghi chú: Nhập ghi chú tối đa 225 ký tự
+ Thêm nhanh thiết bị
+ Bước 1: Trên danh sách thông tin thiết bị đề xuất > Click button để thêm nhanh thiết bị
+ Bước 2: Hiển thị màn hình thêm nhanh thiết bị. Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Bước 3: Click Thêm để hoàn thành việc thêm nhanh thiết bị thành công
+
+ ​​​​​​​ 3. Chỉnh sửa phiếu đề xuất cấp phát
+
+ Bước 1: Trên danh sách > Click icon chỉnh sửa phiếu đề xuất
+
+ Bước 2: Hiển thị màn hình chỉnh sửa phiếu đề xuất. Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Bước 3: Click Lưu để hoàn thành việc chỉnh sửa phiếu đề xuất thành công
+
+ ​​​​​​​4. Gửi phiếu đề xuất cấp phát
+
+ Bước 1: Trên màn hình danh sách > Click icon gửi phiếu đề xuất
+
+ Bước 2: Hệ thống thực hiện gửi phiếu đề xuất, trạng thái phiếu chuyển thành trạng thái chờ duyệt
+
+ ​​​​​​​5. Thu hồi phiếu đề xuất cấp phát
+
+ Bước 1: Trên màn hình danh sách > Click icon thu hồi phiếu đề xuất
+
+ Bước 2: Hệ thống thực hiện thu hồi phiếu đề xuất, trạng thái phiếu chuyển thành trạng thái thu hồi
+
+ ​​​​​​​6. Cập nhật phiếu đề xuất cấp phát
+
+ Bước 1: Trên màn hình danh sách > Click icon cập nhật phiếu đề xuất
+
+ Bước 2: Hệ thống thực hiện cập nhật phiếu đề xuất, trạng thái phiếu chuyển thành trạng thái mới
+
+ ​​​​​​​7. Xem chi tiết phiếu đề xuất cấp phát
+
+ Bước 1: Trên màn hình danh sách > Click icon xem chi tiết phiếu đề xuất
+
+ Bước 2: Màn hình hiển thị chi tiết phiếu đề xuất
+ Chi tiết phiếu đề xuất chưa  cấp phát
+
+ Chi tiết phiếu đề xuất đã cấp phát
+
+ ​​​​​​​ 8. Sao chép đề xuất cấp phát
+
+ Bước 1: Trên màn hình danh sách > Click icon Sao chép phiếu đề xuất
+ Lưu ý: Chỉ được sao chép các bản ghi ở trạng thái duyệt/không duyệt
+
+ Bước 2: Hệ thống thực hiện sao chép phiếu đề xuất, trạng thái của phiếu sao chép là trạng thái mới
+
+ ​​​​​​​9. Xóa phiếu đề xuất cấp phát
+
+ Xóa 1 phiếu đề xuất
+ Bước 1: Trên màn hình danh sách > Click icon xóa (Chỉ có bản ghi ở trạng thái Đã duyệt/Không duyệt)
+
+ Bước 2: Hệ thống hiển thị popup xác nhận
+ + Click Xóa để xác nhận xóa phiếu đề xuất
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ ​​​​​​​​​​​​​​ Xóa nhiều phiếu đề xuất ​​​​​​​
+ Bước 1: Trên màn hình danh sách > Tích chọn checkbox > Click button Xóa
+
+ Bước 2: Hệ thống hiển thị popup xác nhận
+ + Click Xóa để xác nhận xóa phiếu đề xuất
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ ​​​​​​​10. Tìm kiếm phiếu đề xuất cấp phát
+
+ Bước 1: Tại vùng tìm kiếm: nhập/ chọn tiêu chí tìm kiếm > Click button Tìm kiếm/ nhấn Enter để thực hiện tìm kiếm phiếu đề xuất
+
+ ​​​​​​​11. Xuất excel phiếu đề xuất cấp phát
+
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel > Thực hiện xuất excel thành công > Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+ Bước 2: Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+==================================================
+

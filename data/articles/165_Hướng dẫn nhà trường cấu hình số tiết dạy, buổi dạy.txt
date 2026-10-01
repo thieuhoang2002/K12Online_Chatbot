@@ -1,0 +1,32 @@
+### BÀI VIẾT [165]: Hướng dẫn nhà trường cấu hình số tiết dạy, buổi dạy
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Thời khóa biểu > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong2/huong-dan-nha-truong-cau-hinh-so-tiet-day-buoi-day2.html
+
+**Nội dung:**
+1. Cấu hình trực tiếp
+
+ Bước 1: Vào menu Thời khóa biểu > Click cấu hình tiết dạy, buổi dạy > Danh sách hiển thị các giáo viên đã được phân công giảng dạy bên ứng dụng K12online
+ Bước 2: Click icon chỉnh sửa để cấu hình tiết dạy từng ngày theo môn cho giáo viên
+
+ Bước 3: Nhập số tiết dạy trong từng ngày. Số tiết trong 1 ngày tối thiểu là 1 và tối đa là 2
+
+ Bước 4: Lưu. Sau khi lưu hệ thống cập nhật lại số tiết dạy trong tuần của thầy/cô theo môn học
+ Lưu ý:
+ Click vào button Thêm để thêm ô nhập số tiết cho các ngày tiếp theo
+ Số tiết trong 1 ngày trong khoảng từ 1 đến 4, nhập ngoài giá trị này hệ thống sẽ báo lỗi
+ Tổng số tiết học các môn của 1 lớp không quá 50 tiết
+ Tổng số tiết dạy các môn của 1 giáo viên không quá 50 tiết.
+ 2. Nhập excel
+
+ Bước 1: Trong danh sách cấu hình buổi dạy, tiết dạy click vào phần nhập excel > Tải xuống file mẫu.
+ Bước 2: Mở file mẫu
+ Hệ thống xuất ra danh sách phân công của giáo viên, thầy/cô chỉ cần nhập số tiết trong tuần. Không sửa cột giáo viên, lớp học, môn học
+ Số tiết trong tuần chỉ được nhập từ 1 đến 20, ngoài khoảng này hệ thống sẽ báo lỗi
+ Bước 3: Nhập thông tin vào file mẫu > Lưu lại
+
+ Bước 4: Up file đã nhập thông tin > Click Nhập excel. Hệ thống update lại cấu hình tiết dạy, ngày dạy cho giáo viên.
+ Ví dụ nhập giáo viên A dạy môn toán 10 tiết trong tuần thì khi import lên hệ thống sẽ tự động chia vào các ngày trong tuần, mỗi ngày 2 tiết. Hoặc 9 tiết trong tuần thì hệ thống tự chia 4 ngày mỗi ngày 2 tiết, 1 ngày 1 tiết.
+ Click icon chỉnh sửa lại nếu cần
+
+==================================================
+

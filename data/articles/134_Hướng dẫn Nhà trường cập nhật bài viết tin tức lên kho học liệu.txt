@@ -1,0 +1,21 @@
+### BÀI VIẾT [134]: Hướng dẫn Nhà trường cập nhật bài viết tin tức lên kho học liệu
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Kho học liệu số > Nhà trường
+- Link gốc: https://hotro.k12online.vn/kho-hoc-lieu/huong-dan-nha-truong-cap-nhat-bai-viet-tin-tuc-len-kho-hoc-lieu.html
+
+**Nội dung:**
+Tính năng Tin tức của kho học liệu sẽ giúp nhà trường cập nhật các tin tức liên quan đến kho học liệu nhà trường hoặc hoạt động liên quan đến học tập.
+
+ 1. Thêm mới bài viết
+
+ - Vào Kho học liệu => Chọn Quản lý bài viết => Chọn Thêm mới
+
+ - Nhập các thông tin của bài viết
+
+ - Nhấn Lưu lại .
+
+ 2. Sửa bài viết
+
+ 3. Xóa bài viết
+
+==================================================
+

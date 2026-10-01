@@ -1,0 +1,55 @@
+### BÀI VIẾT [359]: Hướng dẫn nhà trường khai báo đợt khám
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Y tế > Nhà trường
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/y-te/nha-truong/huong-dan-nha-truong-khai-bao-dot-kham.html
+
+**Nội dung:**
+1. Xem danh sách đợt khám
+
+ Bước 1: Đăng nhập tài khoản quản lý trường /Cán bộ y tế học đường
+
+ Bước 2: Click menu Kế hoạch y tế > click đợt khám
+
+ Bước 3 : Hiển thị danh sách đợt khám
+
+ 2. Thêm mới đợt khám
+
+ Bước 1: Trên màn hình danh sách > click button Thêm mới
+
+ Bước 2: Bước 3: Nhâp/chọn hợp lệ, đầy đủ các trường bắt buộc > click Lưu để thêm mới  (Ô có dấu (*) là biểu thị cho việc bắt buộc phải nhập)
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường thời gian hoàn thành không nhỏ hơn thời gian thực hiện
+ Trường thời gian thực hiện và thời gian hoàn thành phải nằm trong học kì đang chọn
+ Click Lưu bản ghi hiển thị bên ngoài danh sách
+ 3. Chỉnh sửa đợt khám
+
+ Bước 1: Trên màn hình danh sách > click icon chỉnh sửa
+
+ Bước 2: Bước 3: Nhâp/chọn hợp lệ, đầy đủ các trường bắt buộc > click Lưu để chỉnh sửa  (Ô có dấu (*) là biểu thị cho việc bắt buộc phải nhập)
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường thời gian hoàn thành không nhỏ hơn thời gian thực hiện
+ Trường thời gian thực hiện và thời gian hoàn thành phải nằm trong học kì đang chọn
+ Click Lưu bản ghi hiển thị bên ngoài danh sách
+ ​​​​​​​4. Tìm kiếm đợt khám
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo điều kiện tìm kiếm
+ ​​​​​​​5. Xem chi tiết đợt khám
+
+ Bước 1: Click xem chi tiết trên màn hình danh sách đợt khám
+
+ Bước 2 : Hiển thị chi tiết đợt khám
+
+==================================================
+

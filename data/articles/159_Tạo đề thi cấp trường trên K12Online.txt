@@ -1,0 +1,137 @@
+### BÀI VIẾT [159]: Tạo đề thi cấp trường trên K12Online
+- Chuyên mục: Trang chủ
+- Link gốc: https://hotro.k12online.vn/nha-truong/tao-de-thi-cap-truong.html
+
+**Nội dung:**
+Nhà trường vào kỳ thi cần tạo đề thi => Chọn menu Đề thi => Chọn Thêm mới . Nhà trường có thể lựa chọn 1 trong 3 dạng đề thi trên hệ thống đang hỗ trợ.
+
+ I. Các dạng đề thi và hình thức làm bài
+
+ 1.1. Các dạng đề thi hiện có trên K12Online
+
+ - Nhập tay: nhà trường vào nhập câu hỏi trực tiếp;
+
+ - PDF: nhà trường đưa file đề thi dạng .pdf lên
+
+ - Ma trận: nhà trường tạo bài kiểm tra từ NHCH đã có sẵn.
+
+ 1.2. Các hình thức thi
+
+ - Tập trung: học sinh làm trong thời gian mà nhà trường cho phép
+
+ - Phân tán: học sinh làm trong khoảng thời gian mà nhà trường cho phép.
+
+ II. Hướng dẫn thao tác
+
+ 2.1. Hướng dẫn tạo bài đề thi dạng nhập tay
+
+ Bước 1: Nhập thông tin cơ bản của đề thi
+
+ - Nhà trường chọn tab Nhập tay => Nhập thông tin cơ bản của đề thi.
+
+ Bước 2: Đưa câu hỏi lên đề thi
+
+ Lưu ý: Một số lưu ý khi nhập câu hỏi vào đề thi:
+
+ - Kiểm tra lại nội dung câu hỏi đảm bảo chính xác trước khi lưu và giao cho học sinh làm bài.
+
+ - Kiểm tra cấu hình điểm cho từng câu hỏi. Đặc biệt là với các câu hỏi tự luận và câu hỏi gồm nhiều ý nhỏ/câu hỏi nhỏ như câu phức, câu đọc hiểu... Mặc định, nếu nhà trường không chọn điểm cho từng câu hỏi thì hệ thống sẽ chia đều điểm cho tổng số câu hỏi có trong đề thi.
+
+ Nhà trường đưa câu hỏi cho đề thi bằng 1 trong 3 cách sau:
+
+ Cách 1: Thêm trực tiếp câu hỏi vào đề thi
+
+ Nhà trường nhập chi tiết từng câu hỏi lên hệ thống. Xem chi tiết từng dạng câu hỏi tại đây: https://hotro.k12online.vn/cau-hoi-thuong-gap/huong-dan-nhap-lieu-cac-dang-cau-hoi-tren-k12online.html
+
+ Cách 2: Nhập câu hỏi từ Word (dạng ABCD)
+
+ Xem hướng dẫn chi tiết tại đây: https://hotro.k12online.vn/cau-hoi-thuong-gap/huong-dan-nhap-cau-hoi-tu-word-dang-abcd.html
+
+ Cách 3: Sao chép câu hỏi từ Word (dạng đầy đủ)
+
+ Xem hướng dẫn chi tiết tại đây: https://hotro.k12online.vn/cau-hoi-thuong-gap/nhap-lieu-cau-hoi-dang-sao-chep-nhap-tu-word-dang-day-du.html
+
+ Cách 4: Nhập câu hỏi từ Excel.
+
+ Nhà trường tải file mẫu về và làm theo hướng dẫn. Lưu ý: Dạng nhập câu hỏi từ Excel chỉ áp dụng với loại câu hỏi trắc nghiệm chọn 1 hoặc nhiều đáp án.
+
+ Bước 3: Nhà trường có thể cấu hình thêm các tùy chọn nâng cao khác trong phần Cấu hình nâng cao của bài kiểm tra. Một số câu hình nâng cao hay sử dụng:
+
+ - Nếu muốn cố định vị trí câu hỏi như lúc đưa lên thì bỏ chọn Đảo thứ tự câu hỏi trong phần Cấu hình nâng cao .
+
+ - Nếu muốn cấu hình cho học sinh khi nào được xem lại bài làm/lời giải/đáp án.
+
+ Bước 4: Tạo bộ đề mẫu cho đề thi (nếu muốn)
+
+ Lưu ý: Nếu có bất kỳ thay đổi gì về nội dung đề thi, nhà trường phải tạo lại bộ đề mẫu để hệ thống cập nhật lại câu hỏi mới. Nhiều trường hợp đề thi đã sửa nội dung nhưng không tạo lại bộ đề mẫu, dẫn tới khi học sinh làm bài chỉ nhìn thấy bộ đề mẫu cũ trước đây tạo chứ không phải bộ đề mẫu mới nhất sau khi nhà trường cập nhật.
+
+ Bước 5: Nhấn Lưu lại để hoàn tất đề thi và tạo đề mẫu (nếu muốn).
+
+ 2.2. Hướng dẫn tạo đề thi dạng PDF
+
+ Bước 1: Nhà trường chọn Đề thi dạng PDF => Nhập thông tin cơ bản của đề thi.
+
+ Bước 2: Tải file đề thi và đáp án lên hệ thống
+
+ - Tải file đề thi dạng PDF lên và nhập mã đề cho đề thi (nếu cần).
+
+ - Nhập số lượng câu hỏi có trong đề và chọn đáp án cho đề thi.
+
+ Lưu ý:
+
+ - Đề thi PDF chỉ hỗ trợ dạng câu hỏi trắc nghiệm chọn 1 hoặc nhiều đáp án; các câu hỏi tối đa 4 phương án lựa chọn.
+
+ - Đề thi PDF hiện tại chưa hỗ trợ đảo câu hỏi.
+
+ Bước 3: Nhà trường có thể cấu hình thêm các tùy chọn nâng cao khác trong phần Cấu hình nâng cao của đề thi, tương tự như đề thi dạng nhập tay.
+
+ Bước 4: Nhấn Lưu lại để hoàn tất tạo đề thi.
+
+ 2.3. Hướng dẫn tạo đề thi dạng ma trận
+
+ Bước 1: Nhà trường chọn tab Ma trận => Nhập thông tin cơ bản của đề thi.
+
+ Bước 2: Nhà trường chọn ngân hàng câu hỏi cần sử dụng và ma trận câu hỏi mong muốn.
+
+ - Chọn NHCH sử dụng cho đề thi
+
+ - Tại phần Ma trận câu hỏi, chọn số lượng câu hỏi cần lấy ở từng chủ đề và mức độ khó trong NHCH đã chọn để hệ thống tự động lấy ra tạo đề thi. Khi tạo ma trận đề thi, nhà trường có thể lựa chọn ma trận sử dụng chính xác cho đề thi với nhiều cấu hình như:
+
+ + Khối
+
+ + Chủ đề
+
+ + Số câu
+
+ + Mức độ khó
+
+ + Loại câu hỏi (trắc nghiệm/tự luận)
+
+ + Cách chọn: Tự động (Hệ thống tự động lấy số câu hỏi thuộc chủ đề lựa chọn trong NHCH đã có sẵn); Thủ công (Nhà trường có thể chọn chính xác câu nào dùng trong đề thi);
+
+ + Cấu hình điểm: lưu ý với những câu hỏi dạng tự luận, dạng phức hoặc câu hỏi có nhiều ý nhỏ...
+
+ + Thời gian tạo câu hỏi.
+
+ Lưu ý:
+
+ - Thông tin Số câu trong ma trận là số câu hỏi lớn, không phải các câu hỏi nhỏ sẽ lấy ra từ NHCH của nhà trường.
+
+ - Thông tin Điểm của từng lựa chọn trong ma trận là tổng điểm dành cho lựa chọn đó chia đều cho số câu hỏi lớn đã được chọn.
+
+ Bước 3: Nhà trường có thể cấu hình thêm các tùy chọn nâng cao khác trong phần Cấu hình nâng cao của đề thi, tương tự như đề thi dạng nhập tay.
+
+ Bước 4: Tạo bộ đề mẫu cho đề thi (nếu muốn)
+
+ Lưu ý: Nếu có bất kỳ thay đổi gì về nội dung đề thi, nhà trường phải tạo lại bộ đề mẫu để hệ thống cập nhật lại câu hỏi mới. Nhiều trường hợp nhà trường đã sửa nội dung nhưng không tạo lại bộ đề mẫu, dẫn tới khi học sinh làm bài chỉ nhìn thấy bộ đề mẫu cũ trước đây tạo chứ không phải bộ đề mẫu mới nhất sau khi nhà trường cập nhật.
+
+ Bước 5: Nhấn Lưu lại để hoàn tất tạo bài kiểm tra.
+
+ Lưu ý:
+
+ -    Để tạo đề thi dạng ma trận, nhà trường phải tạo câu hỏi và các câu hỏi đó đã được duyệt  trước đó.
+
+ -    Nhà trường nên tạo bộ các mã đề cho đề thi để hệ thống sinh ra các bộ đề này.
+
+==================================================
+

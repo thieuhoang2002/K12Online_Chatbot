@@ -1,0 +1,31 @@
+### BÀI VIẾT [161]: Hướng dẫn Nhà trường tạo kỳ thi Offline (Thi và chấm thi ngoài hệ thống)
+- Chuyên mục: Trang chủ
+- Link gốc: https://hotro.k12online.vn/nha-truong/tao-ky-thi-offline-thi-va-cham-thi-ngoai-he-thong.html
+
+**Nội dung:**
+Bước 1: Tạo mới kỳ thi
+
+ Vào Khảo thí => Chọn Quản lý Kỳ thi => Chọn Thêm mới để thực hiện thêm mới một kỳ thi
+
+ Bước 2: Nhập các thông tin của kỳ thi
+
+ Trong đó:
+
+ - Tên kỳ thi
+
+ - Khối
+
+ - Môn
+
+ - Loại kỳ thi
+
+ - Hình thức: Offline (Thi và chấm thi ngoài hệ thống)
+
+ - Xếp phòng (Chọn có tick).
+
+ Bước 3: Tạo đề thi
+
+ - Nhà trường nhấn Tạo đề thi tự động , hệ thống sẽ tự động sinh ra các đề cho kỳ thi dựa vào khối và môn học đã khai báo.
+
+==================================================
+

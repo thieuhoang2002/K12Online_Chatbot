@@ -1,0 +1,29 @@
+### BÀI VIẾT [387]: Hướng dẫn phụ huynh học sinh quản lý sức khỏe hàng ngày
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Y tế > Phụ huynh HS
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/y-te/phu-huynh-hoc-sinh/huong-dan-phu-huynh-quan-ly-suc-khoe-hang-ngay-cua-hoc-sinh.html
+
+**Nội dung:**
+1. Xem danh sách sức khỏe hàng ngày
+
+ Bước 1: Đăng nhập tài khoản phụ huynh
+
+ Bước 2: Click menu Quản lý sức khỏe ngày> Hiển thị màn hình danh sách
+
+ ​​​​​​​2. Tìm kiếm sức khỏe hàng ngày
+
+ Trên màn hình > Bộ lọc: Nhập / chọn dữ liệu > Click icon Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý :
+
+ +  Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+
+ + Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo điều kiện tìm kiếm
+
+ ​​​​​​​​​​​​​​3. Xem chi tiết sức khỏe hàng ngày
+
+ Bước 1: Trên màn hình danh sách > click icon xem chi tiết
+
+ Bước 2: Hiển thị màn chi tiết sức khỏe ngày
+
+==================================================
+

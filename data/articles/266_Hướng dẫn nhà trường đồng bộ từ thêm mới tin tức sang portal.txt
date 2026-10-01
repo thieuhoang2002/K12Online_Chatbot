@@ -1,0 +1,21 @@
+### BÀI VIẾT [266]: Hướng dẫn nhà trường đồng bộ từ thêm mới tin tức sang portal
+- Chuyên mục: Trang chủ > Tính năng khác > Tin tức > Nhà trường
+- Link gốc: https://hotro.k12online.vn/tin-tuc/huong-dan-nha-truong-dong-bo-tu-them-moi-tin-tuc-sang-portal.html
+
+**Nội dung:**
+Bước 1: Trên màn hình danh sách > nhấn nút Thêm mới
+
+ Bước 2: Tại màn hình thêm mới > tích chọn checkbox Đồng bộ tin tức , các trường khác nhập đầy đủ, hợp lệ > Nhấn Lưu để đồng bộ tin tức sang trang portal Sở tương ứng
+
+ Chú ý:
+
+ Chỉ thực hiện đồng bộ khi đã xuất bản thành công tin tức
+ Trường hợp thay đổi luồng tin tức về trạng thái sau khi xuất bản thì khi trang lấy tin đồng bộ cũng cập nhật trạng thái tương ứng với hệ thống đồng bộ
+ Với tin tức chỉnh sửa có tích “Đồng bộ tin tức ” thì trang lấy tin đồng bộ cũng sẽ cập nhật các nội dung mà trang tạo tin đã chỉnh sửa
+ Danh mục tin tức sau khi đồng bộ nếu trang lấy tin đồng bộ chưa có  thì tự động sinh ra dữ liệu vào menu Cây danh mục trong quản lý khai báo , trường hợp đã có thì không tạo danh mục
+ Trường hợp không tìm thấy site Trường đồng bộ sang, khi click nút lưu thì sẽ đưa ra thông báo: “Thêm mới thành công tin tức. Không tim thấy trang đề đồng bộ”
+ Khi xóa tin tức: Với các tin tức có tích “Đồng bộ tin tức” hiển thị popup " Tin tức đã được đồng bộ sang Portal. Bạn có chắc chắn muốn xóa (tên tin tức) " và thực hiện xóa tin tức ở cả trang tạo tin đồng bộ và trang lấy tin đồng bộ
+ Nếu trang portal tương ứng khi thêm tin có tích chọn “Đồng bộ tin tức” thì sẽ đồng bộ tin về trang Sở
+
+==================================================
+

@@ -1,0 +1,33 @@
+### BÀI VIẾT [166]: Hướng dẫn nhà trường khai báo ràng buộc giáo viên
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Thời khóa biểu > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong2/huong-dan-nha-truong-khai-bao-rang-buoc-giao-vien.html
+
+**Nội dung:**
+Ý nghĩa : Ràng buộc này dùng để cấu hình buổi vào tiết dạy của giáo viên trong tuần
+ Bước 1: Click vào ràng buộc giáo viên
+ Bước 2: Click Thêm mới
+
+ Bước 3: Nhập thông tin cấu hình. Có thể nhập 1 số hoặc nhập tất cả cấu hình
+ Giáo viên: Cho phép chọn 1 hoặc chọn nhiều
+ Môn: List theo lớp đã chọn, cho chọn 1
+ Giáo viên: List giáo viên được phân công theo lớp và môn đã chọn, cho chọn 1
+ Số buổi sáng tối thiểu: Nhập trong khoảng từ 1 đến 5. Nhập ô này thì khi xếp lịch giáo viên sẽ có số buổi sáng bằng hoặc lớn hơn giá trị nhập
+ Số buổi chiều tối thiểu: Nhập trong khoảng từ 1 đến 5. Nhập ô này thì khi xếp lịch giáo viên sẽ có số buổi chiều bằng hoặc lớn hơn giá trị nhập
+ Số buổi sáng tối đa: Nhập trong khoảng từ 1 đến 5. Nhập ô này thì khi xếp lịch giáo viên sẽ có số buổi sáng nhỏ hơn hoặc bằng giá trị nhập
+ Số buổi chiều tối đa: Nhập trong khoảng từ 1 đến 5. Nhập ô này thì khi xếp lịch giáo viên sẽ có số buổi chiều nhỏ hơn hoặc bằng giá trị nhập
+ Số tiết dạy liên tục tối đa: Nhập trong khoảng từ 2 đến 5. Nhập ô này thì khi xếp lịch giáo viên sẽ có số tiết dạy liên tục tối đa trong 1 buổi nhỏ hơn hoặc bằng với giá trị nhập
+ Số tiết dạy tối đa mỗi ngày: Nhập trong khoảng từ 2 đến 10. Nhập ô này thì khi xếp lịch giáo viên sẽ có số tiết dạy tối đa 1 ngày là nhỏ hơn hoặc bằng với giá trị nhập
+ Số tiết dạy tối đa mỗi buổi: Nhập trong khoảng từ 2 đến 5. Nhập ô này thì khi xếp lịch giáo viên sẽ có số tiết dạy tối đa 1 buổi là nhỏ hơn hoặc bằng với giá trị nhập
+ Số tiết dạy tối thiểu mỗi buổi: Nhập trong khoảng từ 2 đến 5. Nhập ô này thì khi xếp lịch giáo viên sẽ có số tiết tối thiểu 1 buổi là bằng hoặc lớn hơn giá trị nhập
+ Số tiết dạy tối thiểu mỗi ngày: Nhập trong khoảng từ 2 đến 10. Nhập ô này thì khi xếp lịch giáo viên sẽ có số tiết tối thiểu 1 buổi là bằng hoặc lớn hơn giá trị nhập
+ Số tiết dạy tối thiểu mỗi buổi sáng: Nhập trong khoảng từ 2 đến 5. Nhập ô này thì khi xếp lịch giáo viên sẽ có số tiết tối thiểu mỗi buổi sáng là bằng hoặc lớn hơn giá trị nhập
+ Số tiết dạy tối thiểu mỗi buổi chiều: Nhập trong khoảng từ 2 đến 5. Nhập ô này thì khi xếp lịch giáo viên sẽ có số tiết tối thiểu mỗi buổi sáng là bằng hoặc lớn hơn giá trị nhập
+
+ Bước 4: Click lưu lại. Sau khi lưu thành công bản ghi ở trạng thái Hoạt động, khi xếp lịch hệ thống sẽ xét đến ràng buộc của giáo viên
+ Lưu ý :
+ Phải cấu hình tiết dạy, buổi dạy cho giáo viên trước rồi mới tạo ràng buộc này
+ Khi thêm mới mà chọn giáo viên đã tồn tại thì khi lưu hệ thống update lại thông tin cho giáo viên đó
+ Nếu không muốn xét ràng buộc của giáo viên nào khi xếp lịch thì off bản ghi của giáo viên đó.
+
+==================================================
+

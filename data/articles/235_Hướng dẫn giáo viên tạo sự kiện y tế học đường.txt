@@ -1,0 +1,19 @@
+### BÀI VIẾT [235]: Hướng dẫn giáo viên tạo sự kiện y tế học đường
+- Chuyên mục: Trang chủ > Tính năng khác > Sự kiện
+- Link gốc: https://hotro.k12online.vn/su-kien/huong-dan-giao-vien-tao-su-kien-y-te-hoc-duong.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản phân quyền cán bộ y tế học đường
+
+ Bước 2: Trang chủ  > Click vào module Y tế học đường > Vào menu Kế hoạch y tế
+
+ Bước 3: Tab Kế hoạch hoạt động y tế học đường > Click button Thêm mới
+
+ Bước 4: Hiển thị form thêm mới > Nhập đầy đủ thông tin: Tích chọn checkbox Sự kiện > Click Lưu thực hiện thêm mới thành công
+
+ Bước 5: Khi thêm mới xong > Ở trạng thái đã duyệt thì  hiển thị 1 sự kiện ở menu Lịch sự kiện ngoài trang chủ
+
+ Lưu ý: Những tài khoản nhà trường/ giáo viên/phụ huynh  xem được sự kiện hoạt động y tế học đường.
+
+==================================================
+

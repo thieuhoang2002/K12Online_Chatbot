@@ -1,0 +1,76 @@
+### BÀI VIẾT [308]: Hướng dẫn phụ huynh học sinh đăng ký hủy bus
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Bus > Phụ huynh HS
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/bus/phu-huynh-hs/huong-dan-phu-huynh-hoc-sinh-dang-ky-huy-bus.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản có quyền phụ huynh học sinh
+
+ Bước 2: Tại Trang chủ: chọn module Bus
+
+ Bước 3: Hiển thị màn hình các menu thuộc module Bus như hình
+
+ Trên thanh menu: Click menu Đăng ký hủy bus
+
+ 1. Thêm mới đơn đăng ký
+
+ Bước 1: Danh sách > Click button Thêm mới
+
+ Bước 2: Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công, bản ghi ở trạng thái Chờ duyệt đăng ký
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường Tên người đón tối đa 255 ký tự
+ Trường Họ tên học sinh mặc định theo con đang chọn
+
+ 2. Chỉnh sửa đơn đăng ký
+
+ Bước 1: Danh sách > Click button Sửa đăng ký
+
+ Bước 2: Nhập đầy đủ thông tin vào form > Click Lưu lại thực hiện cập nhật đăng ký thành công
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường Tên người đón tối đa 255 ký tự
+ Trường Họ tên học sinh mặc định theo con đang chọn
+ Chỉ hiển thị button khi bản ghi chưa duyệt
+ 3. Chi tiết đơn đăng ký
+
+ Bước 1: Danh sách > Click tên học sinh để xem chi tiết đơn đăng ký
+
+ Bước 2: Hiển thị màn hình xem chi tiết bao gồm các thông tin học sinh, Thông tin đăng ký hủy bus, Thông tin tuyến đi
+
+ 4. Xóa đơn đăng ký
+
+ Bước 1: Danh sách > Click button Xóa đăng ký
+
+ Bước 2: Hiển thị form xác nhận
+
+ Click “Xóa” thực hiện xóa bản ghi thành công
+ Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ Lưu ý:
+
+ Thực hiện xóa thành công bản ghi không hiển thị ở danh sách
+ Chỉ hiển thị button khi bản ghi chưa được duyệt
+
+ 5. Tìm kiếm đơn đăng ký
+
+ Bước 1: Danh sách > Nhập / chọn dữ liệu muốn tìm kiếm > Hệ thống trả về kết quả tìm kiếm theo tiêu chí đã nhập
+
+ Lưu ý:
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo dữ liệu tìm kiếm và theo giá trị sắp xếp đã chọn
+
+ 6. Xem lý do từ chối
+
+ Bước 1: Danh sách > Click Xem lý do từ chối
+
+ Bước 2: Xem chi tiết lý do từ chối duyệt đơn đăng ký
+
+==================================================
+

@@ -1,0 +1,224 @@
+### BÀI VIẾT [224]: Hướng dẫn cán bộ quản lý CSVC quản lý phiếu thanh lý
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Cơ sở vật chất > Cán bộ quản lý CSVC
+- Link gốc: https://hotro.k12online.vn/phu-huynh-hs3/huong-dan-can-bo-quan-ly-csvc-quan-ly-phieu-thanh-ly.html
+
+**Nội dung:**
+1. Danh sách phiếu thanh lý
+
+ Bước 1: Đăng nhập thành công vào hệ thống
+
+ Bước 2: Click Ứng dụng Cơ sở vật chất
+
+ Bước 3: Click menu Phiếu thanh lý
+
+ Bước 4: Hiển thị danh sách phiếu thanh lý
+
+ Click Sắp xếp theo > Chọn kiểu sắp xếp > Hiển thị danh sách theo trạng thái sắp xếp.
+ Click icon chỉnh sửa để thực hiện chỉnh sửa phiếu thanh lý
+ Click icon xem chi tiết để thực hiện xem chi tiết phiếu thanh lý
+ Click icon gửi để thực hiện gửi yêu cầu phê duyệt phiếu thanh lý
+ Click icon nhắc nhở phê duyệt để thực hiện nhắc nhở phê duyệt phiếu thanh lý
+ Click icon thu hồi để thực hiện thu hồi yêu cầu phê duyệt phiếu thanh lý
+ Click icon duyệt để thực hiện duyệt phiếu thanh lý
+ Click icon không duyệt để thực hiện không duyệt phiếu thanh lý
+ Click icon xem lý do không duyệt để xem lý do không duyệt phiếu thanh lý
+ Tải lại
+ Trên danh sách > click button Tải lại > Thực hiện tải lại danh sách.
+
+ Sắp xếp
+ Trên danh sách > click button Sắp xếp theo > Chọn kiểu sắp xếp> Hiển thị danh sách theo trạng thái sắp xếp.
+
+ Tổng số bản ghi
+ Bước 1: Trên màn hình danh sách > Xem tổng số bản ghi.
+
+ 2. Thêm mới phiếu thanh lý
+
+ Bước 1: Trên màn hình danh sách > Click Thêm mới
+
+ Bước 2: Hiển thị màn hình thêm mới > Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ + Số phiếu: Bắt buộc nhập, tối đa 50 ký tự, chỉ gồm chữ cái, số và dấu _ viết liền không dấu và không nhập trùng số phiếu đã tồn tại trên hệ thống
+
+ Bước 3:
+
+ + Click Lưu để hoàn thành việc thêm mới, bản ghi hiển thị ngoài danh sách ở trạng thái Mới.
+
+ + Click Hủy bỏ để quay về danh sách.
+
+ 2.1. Tab Thông tin chi tiết
+
+ Bước 1: Trên màn hình Thêm mới phiếu thanh lý > tab Thông tin chi tiết > Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập
+
+ Thêm thiết bị
+
+ Danh sách thiết bị
+ Bước 1: Trên màn hình Thêm mới phiếu thanh lý > tab Thông tin chi tiết > click Thêm thiết bị
+
+ Bước 2: Màn hình hiển thị danh sách thêm thiết bị thanh lý
+
+ Phân trang
+ Trên màn hình: hiển thị phân trang ở phía dưới bên phải màn khi danh sách có > 20 bản ghi
+
+ + Click icon << (>>) để chuyển đến trang trước đó (trang tiếp theo)
+
+ + Click icon  << << (>> >>) để chuyển đến trang đầu tiên (trang cuối cùng)
+
+ Thêm thiết bị thanh lý
+
+ Bước 1: Trên màn hình danh sách Thêm thiết bị thanh lý > tích chọn các thiết bị thanh lý
+
+ + Click Chọn thiết bị để thêm thiết bị vào phiếu thanh lý, các thiết bị được thêm sẽ hiển thị ở ngoài màn hình Thêm mới phiếu thanh lý tab Thông tin chi tiết.
+
+ + Click Đóng để quay lại màn hình Thêm mới phiếu thanh lý.
+
+ Tìm kiếm thiết bị thanh lý
+
+ Bước 1: Trên màn hình danh sách Thêm thiết bị thanh lý > Tại vùng tìm kiếm: nhập tiêu chí tìm kiếm > Click button Tìm kiếm để thực hiện tìm kiếm thiết bị
+
+ Danh sách thiết bị thanh lý
+ Bước 1: Trên màn hình thêm mới phiếu thanh lý > tab Thông tin chi tiết > thực hiện thêm thiết bị. Danh sách thiết bị thanh lý hiển thị ở màn hình:
+
+ Click icon xóa để xóa thiết bị khỏi danh sách
+ Nhập ghi chú để thêm ghi chú cho từng thiết bị
+
+ 2.2. Tab Hội đồng thanh lý
+
+ Bước 1: Trên màn hình Thêm mới phiếu thanh lý > tab Hội đồng thanh lý > Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập
+
+ Thêm thành viên
+
+ Danh sách thành viên
+ Bước 1: Trên màn hình Thêm mới phiếu thanh lý > tab Hội đồng thanh lý > click Thêm thành viên
+
+ Bước 2: Màn hình hiển thị danh sách thêm thành viên
+
+ Phân trang
+ Trên màn hình: hiển thị phân trang ở phía dưới bên phải màn khi danh sách có > 20 bản ghi
+
+ + Click icon << (>>) để chuyển đến trang trước đó (trang tiếp theo)
+
+ + Click icon  << << (>> >>) để chuyển đến trang đầu tiên (trang cuối cùng)
+
+ Thêm thành viên
+ Bước 1: Trên màn hình danh sách Thêm thành viên> tích chọn các thành viên của hội đồng thanh lý
+
+ + Click Chọn hội đồng để thêm thành viên vào hội đồng thanh lý, các thành viên được thêm sẽ hiển thị ở ngoài màn hình Thêm mới phiếu thanh lý tab Hội đồng thanh lý
+
+ + Click Đóng để quay lại màn hình Thêm mới phiếu thanh lý.
+
+ Tìm kiếm thành viên
+ Bước 1: Trên màn hình danh sách Thêm thành viên > Tại vùng tìm kiếm: nhập tiêu chí tìm kiếm > Click button Tìm kiếm để thực hiện tìm kiếm thành viên
+
+ Danh sách hội đồng thanh lý
+
+ Bước 1: Trên màn hình thêm mới phiếu thanh lý > tab Hội đồng thanh lý> thực hiện thêm thành viên. Danh sách hội đồng thanh lý hiển thị ở màn hình:
+
+ Click icon xóa để xóa thành viên khỏi danh sách
+ Click check box trưởng hội đồng để chọn 1 thành viên làm trưởng hội đồng
+
+ 3. Chỉnh sửa phiếu thanh lý
+
+ Bước 1: Trên màn hình danh sách> Click icon chỉnh sửa một bản ghi muốn chỉnh sửa
+
+ Bước 2: Hiển thị màn hình chỉnh sửa > Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Bước 3:
+
+ + Click Lưu để hoàn thành việc chỉnh sửa.
+
+ + Click Hủy bỏ để quay về danh sách.
+
+ 4. Gửi yêu cầu phê duyệt
+
+ Bước 1: Trên màn hình danh sách> Click icon gửi yêu cầu phê duyệt một bản ghi > Hệ thống hiển thị popup xác nhận gửi yêu cầu phê duyệt
+
+ Bước 2:
+
+ + Click Gửi để xác nhận gửi yêu cầu phê duyệt tới trưởng hội đồng và thông báo cho các thành viên trong hội đồng, bản ghi sẽ chuyển sang trạng thái chờ duyệt
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ 5. Nhắc nhở phê duyệt
+
+ Bước 1: Trên màn hình danh sách> Click icon nhắc nhở phê duyệt một bản ghi > Hệ thống hiển thị popup xác nhận nhắc nhở phê duyệt
+
+ Bước 2:
+
+ + Click gửi để xác nhận nhắc nhở phê duyệt tới trưởng hội đồng
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ 6. Thu hồi phiếu phê duyệt
+
+ Bước 1: Trên màn hình danh sách> Click icon thu hồi yêu cầu phê duyệt một bản ghi > Hệ thống hiển thị popup xác nhận thu hồi yêu cầu phê duyệt
+
+ Bước 2:
+
+ + Click Thu hồi để xác nhận thu hồi yêu cầu phê duyệt, bản ghi sẽ chuyển sang trạng thái thu hồi
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ 7. Đồng ý phê duyệt phiếu thanh lý
+
+ Bước 1: Trên màn hình danh sách> Click icon đồng ý phê duyệt một bản ghi > Hệ thống hiển thị popup xác nhận đồng ý phê duyệt
+
+ Bước 2:
+
+ + Click Phê duyệt để xác nhận phê duyệt phiếu thanh lý, bản ghi sẽ chuyển sang trạng thái đã duyệt
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ 8. Không phê duyệt phiếu thanh lý
+
+ Bước 1: Trên màn hình danh sách> Click icon không duyệt một bản ghi > Hệ thống hiển thị form Không duyệt phiếu thanh lý
+
+ Bước 2: Nhập lý do không duyệt: bắt buộc nhập, tối đa 500 ký tự
+
+ Bước 3:
+
+ + Click Lưu để xác nhận không duyệt phiếu thanh lý, bản ghi sẽ chuyển sang trạng thái không duyệt
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ 9. Xem lý do không duyệt
+
+ Bước 1: Trên màn hình danh sách> Click icon lý do không duyệt của một bản ghi > Hệ thống hiển thị form Lý do không duyệt
+
+ Bước 2: Click Đóng để quay lại danh sách
+
+ 10. Xem chi tiết phiếu thanh lý
+
+ Bước 1: Trên màn hình danh sách> Click icon xem chi tiết một bản ghi muốn xem chi tiết
+
+ Bước 2: Hiển thị màn hình xem chi tiết
+
+ Bước 3:
+
+ + Click các button để thực hiện các hành động tương ứng
+
+ + Click icon quay lại để quay về danh sách.
+
+ 10.1. In
+
+ Bước 1: Trên màn hình danh sách> Click icon xem chi tiết một bản ghi ở trạng thái đã duyệt
+
+ Bước 2: Hiển thị màn hình xem chi tiết > click button In
+
+ Bước 3: Hiển thị màn hình biên bản > click In:
+
+ + Chọn In trực tiếp để chuyển sang màn hình cài đặt in
+
+ + Chọn Xuất word: biên bản được tải về máy dưới dạng word
+
+ 11. Tìm kiếm phiếu thanh lý
+
+ Bước 1: Trên màn hình danh sách> Tại vùng tìm kiếm: nhập tiêu chí tìm kiếm > Click button Tìm kiếm để thực hiện tìm kiếm phiếu thanh lý
+
+ 12. Xuất excel phiếu thanh lý ​​​​​​​
+
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel > Thực hiện xuất excel thành công
+
+ Bước 2: Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+==================================================
+

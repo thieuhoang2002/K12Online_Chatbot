@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Trợ Lý K12Online - AI Hỗ Trợ Nghiệp Vụ Giáo Dục (Phi Lợi Nhuận)",
-  description: "Công cụ hỏi đáp thông minh hỗ trợ tra cứu nghiệp vụ K12Online nhanh chóng, chính xác.",
+  title: "K12Online AI Assistant - Trợ Lý Hỗ Trợ Nghiệp Vụ Giáo Dục (Phi Lợi Nhuận)",
+  description: "Trợ lý AI thông minh hỗ trợ tra cứu nghiệp vụ K12Online chính xác và nhanh chóng.",
 };
 
 export default function RootLayout({

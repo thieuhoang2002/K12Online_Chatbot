@@ -1,0 +1,159 @@
+### BÀI VIẾT [247]: Quy chế tổ chức, quản lý dạy học trực tuyến trên K12Online (tham khảo)
+- Chuyên mục: Trang chủ
+- Link gốc: https://hotro.k12online.vn/tai-lieu/quy-che-to-chuc-quan-ly-day-hoc-truc-tuyen-tren-k12online.html
+
+**Nội dung:**
+PHẦN I: MỤC ĐÍCH CỦA DẠY HỌC TRỰC TUYẾN
+
+ 1. Duy trì việc dạy học của nhà trường trong trường hợp không thể đến trường.
+
+ 2. Kết hợp với dạy học trực tiếp để nâng cao chất lượng dạy và học của nhà trường.
+
+ 3. Nâng cao khả năng ứng dụng CNTT của toàn thể đối tượng trong nhà trường, đẩy nhanh quá trình chuyển đổi số các hoạt động giáo dục của nhà trường.
+
+ PHẦN II: ĐIỀU KIỆN ĐẢM BẢO TRIỂN KHAI DẠY HỌC TRỰC TUYẾN
+
+ 1. Phương tiện
+
+ - Đối với giáo viên: Sử dụng máy vi tính (để khai thác hiệu quả tiết dạy trực tuyến), kết hợp sử dụng Smartphone, máy tính bảng (gọi chung là thiết bị di động) khi cần thiết.
+
+ - Đối với học sinh: Sử dụng máy vi tính hoặc thiết bị di động; nếu sử dụng máy tính bàn không có Webcam, phải có xác nhận của phụ huynh.
+
+ - Giáo viên, học sinh không thể khắc phục được điều kiện cơ sở vật chất, đường truyền để học tại nhà thì báo cáo nhà trường để có phương án khắc phục. (Nhà trường bố trí sẵn phòng máy tính có internet, tai nghe, micro đảm bảo về khoảng cách)
+
+ 2. Phần mềm sử dụng
+
+ - Sử dụng Hệ thống Quản lý học và thi trực tuyến K12Online của Tập đoàn Công nghiệp -  Viễn thông Quân đội Viettel cung cấp.
+
+ - Có 02 hình thức truy cập sử dụng:
+
+ + Cách 1: Đăng nhập trên trình duyệt Google Chrome theo địa chỉ http://www.k12online.vn hoặc link trực tiếp của nhà trường.
+
+ + Cách 2: Tải ứng dụng K12Online cài đặt trên máy tính hoặc thiết bị di động
+
+ Lưu ý: Đối với giáo viên dạy lớp học ảo, nên  cài đặt ứng dụng K12Online trên máy tính để sử dụng ổn định và đầy đủ tính năng nhất.
+
+ 3. Tài khoản
+
+ - Tài khoản quản trị nhà trường, tài khoản giáo viên: Sử dụng tài khoản do Viettel cung cấp (Với những đơn vị đã sử dụng hệ thống tập huấn chương trình GDPT mới 2018 thì sử dụng chung tài khoản của hệ thống này);
+
+ - Tài khoản học sinh: Sử dụng tài khoản do Viettel phối hợp với nhà trường cung cấp.
+
+ 4. Tạo lớp và phân quyền
+
+ - CBGV được giao quyền quản trị thực hiện rà soát thông tin lớp học sau khi đồng bộ từ SMAS sang.
+
+ - Thực hiện phân công giảng dạy, phần quyền chủ nhiệm cho CBGV theo thực tế, cập nhật kịp thời khi có thay đổi.
+
+ 5. Thời khóa biểu
+
+ - GVBM có trách nhiệm xây dựng thời khóa biểu online trên hệ thống K12Online trước ngày chủ nhật của tuần trước để học sinh nắm được lịch học.
+
+ - GVCN, CBGV được giao quyền quản trị có trách nhiệm rà soát, báo cáo lại Ban giám hiệu kết quả thực hiện xây dựng thời khóa biểu online của lớp.
+
+ PHẦN III: TỔ CHỨC HOẠT ĐỘNG DẠY HỌC TRỰC TUYẾN
+
+ 1. Tham gia, kết thúc giờ dạy
+
+ - GVBM có trách nhiệm tham gia và kết thúc giờ dạy theo kế hoạch đã được thống nhất từ trước.
+
+ 2. Điểm danh học sinh
+
+ - K12Online có tính năng tự động điểm danh học sinh tham gia đúng giờ hay tham gia muộn hay không tham gia tại mỗi tiết học (lớp học ảo).
+
+ - GVBM sử dụng linh hoạt để thực hiện điểm danh học sinh.
+
+ 3. Ghi sổ đầu bài và chế độ báo cáo
+
+ - Theo quy định của nhà trường.
+
+ 4. Xây dựng các bài giảng trực tuyến
+
+ - Giáo viên vận dụng sáng tạo, linh hoạt tính năng bài giảng để xây dựng các nội dung trực tuyến để cho học sinh tự học, tự nghiên cứu ở nhà.
+
+ - Nên xây dựng các video bài giảng cho mỗi tiết học trực tuyến có độ dài và nội dung vừa phải để giúp học sinh tự học một cách tập trung hơn: độ dài video không nên quá 20 phút; tài liệu không quá 3-4 trang/bài giảng…
+
+ - Kết hợp với hình ảnh mình hoạ, biểu đồ, bản đồ để nội dung thêm sinh động, hứng thú khi học sinh tự học.
+
+ 5. Kiểm tra, đánh giá
+
+ - Giáo viên vận dụng sáng tạo, linh hoạt tính năng bài giảng, bài kiểm tra trên hệ thống để giao bài tập, kiểm tra, đánh giá học sinh.
+
+ - Nội dung kiểm tra, đánh giá nằm trong chương trình, bám sát các nội dung cốt lõi của môn học.
+
+ PHẦN V: PHÂN CÔNG NHIỆM VỤ
+
+ 1. Ban giám hiệu, Tổ quản lý dạy học trực tuyến
+
+ a) Thành lập Tổ tư vấn và triển khai dạy học trực tuyến
+
+ - Ban giám hiệu nhà trường thành lập Tổ tư vấn và triển khai dạy học trực tuyến để tham mưu cho Nhà trường triển khai hiệu quả.
+
+ - Thành viên của Tổ tư vấn có thể bao gồm:
+
+ + Ban giám hiệu nhà trường;
+
+ + Thầy/cô phụ trách CNTT của nhà trường;
+
+ + Các thầy/cô tổ trưởng chuyên môn;
+
+ + Các thầy/cô có nhiều kinh nghiệm ứng dụng CNTT, dạy học trực tuyến;
+
+ + Chuyên viên, chuyên gia của Viettel hoặc các thầy/cô của trường khác mà có kinh nghiệm triển khai dạy học trực tuyến.
+
+ b) Xây dựng kế hoạch dạy học trực tuyến
+
+ - Ban chuyên môn xây dựng kế hoạch giảng dạy trực tuyến trong đó có các nội dung về chương trình, số tiết, thời gian, phương tiện dạy học, ...
+
+ b. Phân công nhiệm vụ
+
+ - Ngoài nhiệm vụ năm học được phân công cho từng cán bộ giáo viên, trong giai đoạn giảng dạy trực tuyến, nhà trường phân công một số giáo viên có trình độ tin học sử dụng thành thạo phần mềm, sẵn sàng hỗ trợ giáo viên.
+
+ c. Chỉ đạo thực hiện
+
+ - Xây dựng các quy trình thực hiện, yêu cầu cho từng bộ phận: giáo viên chủ nhiệm, giáo viên bộ môn, học sinh.
+
+ - Chỉ đạo, điều hành, hướng dẫn các hoạt động của giáo viên, học sinh và trao đổi phụ huynh thông ngay trên phần mềm K12Online, kết hợp sử dụng các kênh truyền thông khác như mạng xã hội, nhóm nội bộ của trường/lớp, sổ liên lạc điện tử…
+
+ d. Kiểm tra, dự giờ
+
+ - Ban giám hiệu và các giáo viên phụ trách kỹ thuật phụ rà soát lịch học, phát hiện và yêu cầu khắc phục với các giáo viên đăng ký giảng dạy thiếu hoặc nhầm giờ; kiểm tra việc thực hiện giờ dạy của giáo viên trong mỗi tiết dạy, đưa ra giải pháp hỗ trợ, khắc phục.
+
+ - Ban giám hiệu có thể dự giờ bất kỳ lớp nào mà không cần báo trước.
+
+ 2. Học sinh
+
+ - Thường xuyên đăng nhập hàng ngày vào K12Online để theo dõi thời khoá biểu và lịch học trên hệ thống.
+
+ - Nắm đầy đủ lịch học trực tuyến của từng môn theo thời khóa biểu trực tuyến.
+
+ - Chuẩn bị bài học, hoàn thành nhiệm vụ học tập dưới sự hướng dẫn của giáo viên.
+
+ - Tham gia tiết học đúng giờ theo đúng quy trình được hướng dẫn, chủ động bật camera, tắt tiếng (tắt micro).
+
+ - Tích cực chủ động trong học bài, khi được hỏi thì bật micro để trả lời; khi cần phát biểu chủ động nhấn biểu tượng “Giơ tay” và phát biểu khi thầy cô cho phép.
+
+ - Không tự ý sử dụng tính năng nhắn tin trong lớp học ảo khi giáo viên chưa yêu cầu, để tránh ảnh hưởng tới lớp học.
+
+ - Thực hiện các nhiệm vụ và các yêu cầu khác do giáo viên yêu cầu.
+
+ 3. Giáo viên
+
+ - Xây dựng kế hoạch bài dạy, kịch bản dạy học phù hợp hình thức dạy trực tuyến.
+
+ - Sử dụng và kết hợp linh hoạt, sáng tạo việc thuyết trình, sử dụng “bảng trắng”, trình chiếu slide và các hình thức khác (như sử dụng hình ảnh, video, thí nghiệm ảo, hoặc kết hợp cùng các hệ thống khác...)
+
+ - Khai thác các kỹ thuật dạy học trực tuyến như chia màn hình vừa trình chiếu vừa quan sát học sinh, sử dụng form để thống kê thu nhận thông tin phản hồi từ học sinh và đánh giá học sinh...
+
+ - GVBM có trách nhiệm lấy báo cáo điểm danh, nhắc nhở đối với học sinh tham gia muộn hoặc không tham gia và thực hiện ghi sổ đầu bài cuối giờ.
+
+ 4. Phụ huynh học sinh
+
+ - Trang bị máy tính, điện thoại thông minh, đảm bảo hạ tầng mạng cho học sinh tham gia học tập trực tuyến.
+
+ - Có trách nhiệm giám sát, hỗ trợ học sinh trong quá trình tham gia học tập trực tuyến.
+
+ - Phối hợp với GVCN, GVBM để quản lý học sinh trong thời gian học trực tuyến tại nhà.
+
+==================================================
+

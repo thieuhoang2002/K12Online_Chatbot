@@ -1,0 +1,41 @@
+### BÀI VIẾT [71]: Hướng dẫn sử dụng Lớp học ảo của K12Online trên ứng dụng Zoom
+- Chuyên mục: Trang chủ
+- Link gốc: https://hotro.k12online.vn/giao-vien/su-dung-tinh-nang-lop-hoc-ao-qua-zoom.html
+
+**Nội dung:**
+Ngoài việc học ứng dụng K12Online trên máy tính; trên các ứng dụng trên điện thoại, tablet và trực tiếp trên trình duyệt web, K12Online vừa mới bổ sung thêm tính năng cho phép giáo viên, học sinh có thể mở ngay ứng dụng Zoom đã cài đặt trên máy tính để sử dụng. Dưới đây là hướng dẫn chi tiết.
+
+ I. Điều kiện trước khi sử dụng
+
+ - Giáo viên, học sinh cần cài đặt ứng dụng Zoom nếu muốn sử dụng theo cách thức này.
+
+ Lưu ý: Tính năng này chỉ áp dụng với các lớp học ảo được tạo từ sau 13h20, ngày 06/09/2021 . Các lớp học ảo đã tạo trước đó muốn sử dụng phương án này vui lòng xóa đi tạo lại.
+
+ II. Hướng dẫn dành cho Giáo viên
+
+ Bước 1: Giáo viên tải ứng dụng Zoom về tại địa chỉ: https://zoom.us/download và cài đặt trên máy tính (nếu máy tính chưa cài đặt ứng dụng Zoom)
+
+ Bước 2: Giáo viên đăng nhập vào K12Online và đặt lịch học trên Thời khóa biểu
+
+ Bước 3: Khi đến giờ diễn ra của tiết học:
+
+ - Giáo viên vào Thời khóa biểu
+
+ - Tìm tiết học muốn tham gia => Nhấn vào tiết học đó
+
+ - Hệ thống sẽ hiển thị thông tin chi tiết của tiết học => Click Mở Zoom
+
+ - Giáo viên mở ứng dụng Zoom ra để bắt đầu tiết học.
+
+ - Trình duyệt yêu cầu giáo viên mở ứng dụng Zoom ra để dạy, giáo viên click vào biểu tượng Mở Zoom Meetings
+
+ Lưu ý: Ngoài cách này ra, giáo viên vẫn có thể dạy học qua ứng dụng K12Online được cài đặt trên máy tính hoặc điện thoại di động/máy tính bảng hoặc trên trình duyệt web.
+
+ >> Xem thêm:
+
+ Hướng dẫn học sinh tham gia lớp học ảo trên K12Online qua ứng dụng Zoom
+
+ Một số lỗi thường gặp khi dùng qua ứng dụng Zoom
+
+==================================================
+

@@ -1,0 +1,15 @@
+### BÀI VIẾT [127]: Hướng dẫn Sở/Phòng GD&amp;ĐT thực hiện đánh giá ngoài
+- Chuyên mục: Trang chủ > Tính năng khác > Hướng dẫn sử dụng DTI HCM EDU
+- Link gốc: https://hotro.k12online.vn/huong-dan-su-dung/huong-dan-su-dung-he-thong-danh-gia-muc-do-chuyen-doi-so/huong-dan-so-phong-gd-dt-thuc-hien-danh-gia-ngoai.html
+
+**Nội dung:**
+Bước 1: Vào menu Phiếu đánh giá => Chọn Đánh giá
+
+ Bước 2: Sở/Phòng GD&ĐT dựa trên thông tin tự đánh giá của các trường, thực hiện đánh giá ngoài cho các trường.
+
+ Trong quá trình đánh giá, có thể ghi chú ở từng tiêu chí.
+
+ Sở/Phòng GD&ĐT cũng có thể sử dụng tính năng Sao chép để tiết kiệm thời gian đánh giá.
+
+==================================================
+

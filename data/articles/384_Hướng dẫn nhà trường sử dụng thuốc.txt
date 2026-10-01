@@ -1,0 +1,59 @@
+### BÀI VIẾT [384]: Hướng dẫn nhà trường sử dụng thuốc
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Y tế > Nhà trường
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/y-te/nha-truong/huong-dan-nha-truong-su-dung-thuoc.html
+
+**Nội dung:**
+1. Thêm mới phiếu đề nghị sử dụng thuốc
+
+ Bước 1: Trên màn hình danh sách > Click button sử dụng  hoặc click sử dụng ở tab sử dụng thuốc
+
+ Bước 2: Nhập đầy đủ các trường dữ liệu bắt buộc để thêm mới phiếu đề nghị sử dụng thuốc
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Click Lưu bản ghi hiển thị bên ngoài danh sách
+
+ 2. Chỉnh sửa phiếu đề nghị sử dụng thuốc
+
+ Bước 1 :Trên màn hình danh sách > click icon chỉnh sửa
+
+ Bước 2: Nhập đầy đủ các trường dữ liệu bắt buộc để chỉnh sửa
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Click Lưu bản ghi hiển thị bên ngoài danh sách
+
+ ​​​​​​​​​​​​​​3. Tìm kiếm phiếu đề nghị sử dụng thuốc
+
+ Nhập / chọn dữ liệu muốn tìm kiếm > Click button Tìm kiếm > Hệ thống trả về kết quả tìm kiếm theo tiêu chí đã nhập
+
+ Lưu ý :
+
+ +  Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+
+ + Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo điều kiện tìm kiếm
+
+ ​​​​​​​​​​​​​​4. Xóa phiếu đề nghị sử dụng thuốc
+
+ Bước 1: Trên màn hình danh sách click icon xóa hoặc click checkbox đầu bản ghi > click button xóa
+
+ Bước 2 : Hiển thi popup xác nhận xóa
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy thao tác xóa
+
+ ​​​​​​​5. Xuất excel
+
+ Trên màn hình danh sách > click button Xuất excel
+
+ Lưu ý :
+
+ Thực hiện xuất excel > File tải về hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với danh sách
+
+==================================================
+

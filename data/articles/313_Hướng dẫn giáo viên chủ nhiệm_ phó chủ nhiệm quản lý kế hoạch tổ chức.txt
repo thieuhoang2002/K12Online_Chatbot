@@ -1,0 +1,69 @@
+### BÀI VIẾT [313]: Hướng dẫn giáo viên chủ nhiệm/ phó chủ nhiệm quản lý kế hoạch tổ chức
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Câu lạc bộ > Giáo viên
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/clb/giao-vien/huong-dan-giao-vien-chu-nhiem-pho-chu-nhiem-quan-ly-ke-hoach-to-chuc.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản chủ nhiệm / phó chủ nhiệm câu lạc bộ
+
+ Bước 2: Trang chủ  > Click vào module Câu lạc bộ > Vào menu Kế hoạch tổ chức
+
+ 1. Thêm mới kế hoạch tổ chức
+
+ Bước 1: Danh sách > Click button thêm mới
+
+ Bước 2: Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường  Loại kế hoạch list dữ liệu trạng thái hoạt động từ menu khai báo Loại kế hoạch tổ chức
+ Trường ngày bắt đầu là ngày hiện tại và tương lai
+ Trường ngày kết thúc phải lớn hơn ngày bắt đầu
+
+ 2. Chỉnh sửa/ xem chi tiết kế hoạch tổ chức
+
+ Click icon chỉnh sửa thực hiện chỉnh sửa bản ghi
+
+ Click icon xem chi tiết xem chi tiết bản ghi
+
+ ​​​​​​​3. Xóa kế hoạch tổ chức
+
+ C1: Xóa 1 bản ghi
+
+ Bước 1: Danh sách > Click icon xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa bản ghi  thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ C2: Xóa nhiều bản ghi
+
+ Bước 1: Danh sách > Click checkbox all > chọn button xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ 4. Tìm kiếm kế hoạch tổ chức
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý:
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+ ​​​​​​​​​​​​​​5. Thay đổi trạng thái
+
+ Bước 1: Danh sách > Cột trạng thái > Click chọn trạng thái muốn thay đổi
+
+ ​​​​​​​
+
+ Bước 2: Click xác nhận thực hiện đổi trạng thái thành công . Bản ghi mang trạng thái đã chọn
+
+==================================================
+

@@ -1,0 +1,84 @@
+### BÀI VIẾT [219]: Hướng dẫn cán bộ quản lý CSVC khai báo phân phối chương trình
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Cơ sở vật chất > Cán bộ quản lý CSVC
+- Link gốc: https://hotro.k12online.vn/phu-huynh-hs3/huong-dan-can-bo-quan-ly-csvc-khai-bao-phan-phoi-chuong-trinh.html
+
+**Nội dung:**
+1. Danh sách phân phối chương trình
+
+ Bước 1: Đăng nhập thành công vào hệ thống
+
+ Bước 2: Click Ứng dụng Cơ sở vật chất
+
+ Bước 3: Click menu Quản lý khai báo > Click Phân phối chương trình
+
+ Bước 4: Hiển thị danh sách phân phối chương trình
+
+ Click Sắp xếp theo > Chọn kiểu sắp xếp > Hiển thị danh sách theo trạng thái sắp xếp.
+ Click icon chỉnh sửa để thực hiện chỉnh sửa phân phối chương trình
+ Click icon xóa/tạm xóa để thực hiện xóa/tạm xóa phân phối chương trình
+ Click icon khôi phục để thực hiện khôi phục phân phối chương trình
+ Tải lại
+ Trên danh sách > click button Tải lại > Thực hiện tải lại danh sách.
+
+ Sắp xếp
+ Trên danh sách > click button Sắp xếp theo > Chọn kiểu sắp xếp> Hiển thị danh sách theo trạng thái sắp xếp.
+
+ Tổng số bản ghi
+ Bước 1: Trên màn hình danh sách > Xem tổng số bản ghi.
+
+ 2. Thêm mới phân phối chương trình
+
+ Bước 1: Trên màn hình danh sách> Click Thêm mới
+
+ Bước 2: Hiển thị màn hình thêm mới > Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Bước 3:
+
+ + Click Lưu để hoàn thành việc thêm mới, bản ghi hiển thị ngoài danh sách.
+
+ + Click Hủy bỏ để quay về danh sách.
+
+ 3. Chỉnh sửa phân phối chương trình
+
+ Bước 1: Trên màn hình danh sách> Click icon chỉnh sửa một bản ghi muốn chỉnh sửa
+
+ Bước 2: Hiển thị màn hình chỉnh sửa > Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Bước 3:
+
+ + Click Lưu để hoàn thành việc chỉnh sửa.
+
+ + Click Hủy bỏ để quay về danh sách.
+
+ 4. Xóa phân phối chương trình
+
+ Xóa 1 bản ghi
+ Bước 1: Trên màn hình danh sách > Click icon xóa một bản ghi > Hệ thống hiển thị popup xác nhận xóa
+
+ Bước 2:
+
+ + Click Xóa để xác nhận xóa bản ghi, bản ghi sẽ bị xóa khỏi danh sách
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ Xóa nhiều bản ghi
+ Bước 1: Trên màn hình danh sách > tích chọn checkbox các bản ghi muốn xóa > click Xóa > Hệ thống hiển thị popup xác nhận xóa
+
+ Bước 2:
+
+ + Click Xóa để xác nhận xóa các bản ghi, các bản ghi sẽ bị xóa khỏi danh sách
+
+ + Click Hủy bỏ để quay lại danh sách.
+
+ 5. Tìm kiếm phân phối chương trình
+
+ Bước 1: Trên màn hình danh sách> Tại vùng tìm kiếm: nhập tiêu chí tìm kiếm > Click button Tìm kiếm để thực hiện tìm kiếm phân phối chương trình
+
+ 6. Xuất excel
+
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel > Thực hiện xuất excel thành công
+
+ Bước 2: Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+==================================================
+

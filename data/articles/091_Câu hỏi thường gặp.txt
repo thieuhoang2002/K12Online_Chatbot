@@ -1,0 +1,302 @@
+### BÀI VIẾT [91]: Câu hỏi thường gặp
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến
+- Link gốc: https://hotro.k12online.vn/hoc-thi-truc-tuyen/cau-hoi-thuong-gap.html
+
+**Nội dung:**
+1. CÂU HỎI CHUNG VÀ PHÂN LUỒNG HỖ TRỢ
+
+ 1.1. Nhà trường muốn sử dụng hệ thống K12Online thì cần làm gì?
+
+ Nhà trường liên hệ trực tiếp chuyên viên Viettel tỉnh/thành phố để được tư vấn và hỗ trợ triển khai.
+ Trường hợp chưa có thông tin liên hệ chuyên viên, nhà trường gọi Hotline 18008000, nhánh số 2 và cung cấp các thông tin: Tên trường, Mã trường, Tỉnh/thành phố, Họ tên người liên hệ, Chức vụ, Số điện thoại.
+
+ 1.2. K12Online có ứng dụng cho điện thoại và máy tính bảng không?
+
+ Có. Ứng dụng K12Online chính thức có mặt trên cả hai nền tảng:
+
+ iOS: tìm kiếm "K12Online" trên App Store và tải về.
+ Android: tìm kiếm "K12Online" trên CH Play (Google Play) và tải về.
+
+ 1.3. Làm thế nào để kiểm tra ứng dụng K12Online đã là phiên bản mới nhất?
+
+ Có 2 cách kiểm tra:
+
+ Cách 1: Mở App Store hoặc CH Play, tìm ứng dụng K12Online. Nếu hiển thị nút "Cập nhật" (Update) thay vì "Mở" (Open), nhấn cập nhật ngay.
+ Cách 2: Gỡ ứng dụng và cài đặt lại từ đầu trên App Store hoặc CH Play để đảm bảo có phiên bản mới nhất.
+
+ 1.4. Khi gặp vấn đề với K12Online cần liên hệ hỗ trợ ở đâu?
+
+ Ưu tiên theo thứ tự sau:
+
+ Bước 1 – Tự tra cứu: Tìm tài liệu hướng dẫn và câu hỏi thường gặp tại https://hotro.k12online.vn . Trao đổi với đồng nghiệp để tham khảo cách xử lý.
+ Bước 2 – Liên hệ Viettel địa phương: Liên hệ chuyên viên Viettel tỉnh/thành phố để được hỗ trợ trực tiếp.
+ Bước 3 – Gọi Hotline: Hotline 18008000, nhánh số 2, miễn phí, hỗ trợ từ 7:00 đến 22:00 tất cả các ngày.
+
+ 1.5. Các vấn đề liên quan đến tài khoản (tạo mới, sai thông tin, mở quyền)?
+
+ Những vấn đề liên quan đến tạo tài khoản, sửa thông tin hoặc mở quyền sử dụng đều do Viettel tỉnh/thành phố xử lý, vì liên quan đến triển khai kinh doanh địa phương và đồng bộ dữ liệu nhiều hệ thống. Nhà trường liên hệ chuyên viên Viettel để được hỗ trợ.
+
+ 1.6. Không biết hoặc quên tài khoản/mật khẩu đăng nhập?
+
+ Đối tượng
+
+ Cách xử lý
+
+ Học sinh
+
+ Liên hệ Giáo viên chủ nhiệm (GVCN) hoặc nhà trường để được cấp lại mật khẩu.
+
+ Giáo viên
+
+ Liên hệ nhà trường (admin trường) để được hỗ trợ.
+
+ Admin Trường / Sở
+
+ Liên hệ chuyên viên Viettel tỉnh/thành phố để được kiểm tra và hỗ trợ.
+
+ 1.7. Học sinh báo không đăng nhập được?
+
+ Khi học sinh phản ánh không đăng nhập được, giáo viên xử lý theo trình tự:
+
+ Kiểm tra xem nhiều học sinh khác có cùng gặp vấn đề không. Nếu chỉ một em, nguyên nhân thường là quên mật khẩu, lỗi thiết bị hoặc thao tác sai.
+ Giáo viên thử đăng nhập bằng tài khoản của học sinh để xác định vấn đề. Nếu đăng nhập được, hướng dẫn lại thao tác cho học sinh. Nếu không đăng nhập được, yêu cầu nhà trường hoặc GVCN reset mật khẩu.
+ Nếu đã thử tất cả các bước trên mà vẫn không được, liên hệ Viettel để được kiểm tra hệ thống.
+
+ 1.8. Nhà trường phân lớp giảng dạy cho giáo viên nhưng không hiện ra lớp?
+
+ Các nguyên nhân phổ biến cần kiểm tra:
+
+ Nhà trường chưa đồng bộ tài khoản học sinh.
+ Nhà trường chưa đồng bộ kế hoạch đào tạo.
+ Giáo viên đó chưa được phân công môn giảng dạy.
+ Môn học của khối đó đã được phân công hết cho giáo viên khác, không còn lớp trống.
+
+ 2. NGHIỆP VỤ DẠY HỌC (BÀI GIẢNG, LỚP HỌC ẢO)
+
+ 2.1. Có những dạng bài giảng nào trên K12Online?
+
+ K12Online hỗ trợ 2 dạng bài giảng:
+
+ Bài giảng gán thời khóa biểu (mặc định): Học sinh chỉ có thể vào học đúng vào tiết học đã được gán trên thời khóa biểu (TKB). Không thể xem trước khi chưa đến tiết.
+ Bài giảng tự do: Học sinh có thể học vào bất kỳ thời gian nào, không bị ràng buộc bởi TKB.
+
+ 2.2. Bài giảng hỗ trợ những định dạng học liệu nào?
+
+ K12Online hỗ trợ hầu hết các định dạng phổ biến:
+
+ Video (mp4) và video từ YouTube.
+ Nội dung dạng văn bản (text).
+ Chuẩn SCORM.
+ Nhúng link từ các hệ thống khác: Canva, Prezi, Wordwall, Heyzine...
+ Bài tập trắc nghiệm.
+ Tài liệu: PDF (khuyến nghị) hoặc Word.
+
+ 💡 Gợi ý: Hệ thống sẽ tự chuyển đổi tài liệu PDF thành ảnh để ghi nhận tiến độ học tập của học sinh. Các định dạng khác (PowerPoint, Excel...) cần nhiều thời gian xử lý hơn và dễ gặp lỗi. Nên chuyển sang PDF trước khi tải lên để đảm bảo hiển thị đúng và nhanh chóng.
+
+ Tài liệu đính kèm thêm vào bài giảng hỗ trợ: PDF, Word, PowerPoint, RAR, ZIP.
+
+ 2.3. Tại sao khi xuất bản bài giảng lại báo "không có nội dung"?
+
+ Giáo viên kiểm tra lại: bài giảng phải có ít nhất một học liệu (video, text, SCORM...). Nếu chỉ mới có tài liệu đính kèm mà chưa có học liệu chính, hệ thống sẽ báo lỗi này khi xuất bản.
+
+ 2.4. Tại sao nhà trường không duyệt được bài giảng giáo viên đã tạo?
+
+ Kiểm tra trạng thái bài giảng: phải là Chờ duyệt (không phải Đang biên tập). Nếu vẫn là Đang biên tập, giáo viên cần xuất bản trước.
+ Nếu trường cấu hình Tổ trưởng kiểm duyệt trước, nhà trường chỉ duyệt được sau khi Tổ trưởng đã duyệt xong.
+
+ 2.5. Tại sao học sinh không nhìn thấy bài giảng?
+
+ Giáo viên kiểm tra các nguyên nhân sau:
+
+ Bài giảng đã được duyệt chưa.
+ Bài giảng đã được gán vào TKB chưa (nếu là bài giảng theo TKB).
+ Nhà trường đã cập nhật kế hoạch đào tạo lại sau khi tạo tài khoản học sinh chưa.
+
+ 2.6. Học sinh học xong nhưng vẫn báo chưa hoàn thành?
+
+ Nguyên nhân thường gặp: giáo viên đã cấu hình yêu cầu học sinh phải hoàn thành trong đúng tiết học được gán. Nếu học sinh không hoàn thành trong khoảng thời gian quy định, hệ thống sẽ không ghi nhận là đã hoàn thành. Học sinh liên hệ giáo viên để được kiểm tra lại cấu hình.
+
+ 2.7. Giáo viên có thể sửa/xóa bài giảng hoặc bài kiểm tra sau khi đã giao cho học sinh không?
+
+ Nội dung chưa diễn ra: giáo viên có thể sửa/xóa bình thường.
+ Nội dung đang trong thời gian học hoặc học sinh đã học: không thể sửa/xóa, nhằm bảo toàn tính chính xác của báo cáo và lịch sử học tập học sinh.
+
+ 💡 Gợi ý: Viette l đang phát triển thêm tính năng cho phép chỉnh sửa nội dung đã diễn ra. Tính năng này đang được kiểm tra kỹ để đảm bảo không ảnh hưởng đến dữ liệu báo cáo.
+
+ 2.8. Tài liệu Word/PowerPoint/Excel tải lên bài giảng hiển thị chậm hoặc không xem được?
+
+ Hệ thống cần thời gian để chuyển đổi các định dạng không phải PDF sang định dạng ảnh. File có nhiều hình ảnh hoặc cấu trúc phức tạp sẽ mất nhiều thời gian hơn và dễ gặp lỗi.
+
+ 💡 Gợi ý: Hãy chuyển tất cả tài liệu sang định dạng PDF trước khi tải lên K12Online. Điều này giúp hệ thống hiển thị nhanh hơn, chính xác hơn và hạn chế tối đa lỗi chuyển đổi.
+
+ 3. NGHIỆP VỤ KIỂM TRA, ĐÁNH GIÁ (BÀI KIỂM TRA, ĐỀ THI)
+
+ 3.1. Những lưu ý trước khi vào làm bài kiểm tra/đề thi trực tuyến?
+
+ Học sinh cần chuẩn bị kỹ trước khi bắt đầu bài kiểm tra:
+
+ Kiểm tra hạ tầng: nguồn điện, cáp mạng hoặc kết nối Internet ổn định, pin thiết bị đủ dùng trong suốt thời gian làm bài.
+ Trên điện thoại/máy tính bảng: dùng ứng dụng K12Online chính thức (không dùng trình duyệt web). Đảm bảo ứng dụng đang là phiên bản mới nhất.
+ Trên máy tính: dùng trình duyệt Google Chrome, cho phép JavaScript, không bật chế độ Dark Mode và hạn chế tiện ích mở rộng (extension).
+ Nếu dùng Wi-Fi: bật chế độ máy bay để tránh bị ảnh hưởng bởi cuộc gọi đến.
+ Tắt các ứng dụng không cần thiết để tối ưu hiệu năng thiết bị.
+ Kiểm tra thông tin cá nhân của tài khoản trước khi thi. Đổi mật khẩu mặc định và giữ bí mật mật khẩu.
+
+ 3.2. Những lưu ý trong quá trình làm bài kiểm tra/đề thi?
+
+ Đọc kỹ yêu cầu và hướng dẫn đề thi trước khi bắt đầu.
+ Không ẩn màn hình bài thi trên máy tính hoặc thoát ứng dụng trên điện thoại trong khi làm bài. Hệ thống sẽ cảnh báo và lưu lại hành vi vi phạm; vượt quá số lần tối đa sẽ tự động nộp bài.
+ Không sử dụng tài liệu, không nhờ người khác làm bài hộ hoặc gợi ý trong khi thi.
+ Chọn không gian yên tĩnh để làm bài, tránh bị phân tâm.
+
+ 3.3. Các lỗi thường gặp khi làm bài trên điện thoại/máy tính bảng?
+
+ Câu hỏi
+
+ Giải đáp
+
+ Tình huống
+
+ Cách xử lý
+
+ Dùng trình duyệt web trên điện thoại thay vì ứng dụng K12Online
+
+ Cài ứng dụng K12Online chính thức từ App Store hoặc CH Play. Không sử dụng trình duyệt web trên điện thoại để làm bài kiểm tra.
+
+ Đang dùng phiên bản ứng dụng cũ, chưa cập nhật
+
+ Cập nhật ứng dụng K12Online lên phiên bản mới nhất trước khi vào làm bài.
+
+ Ứng dụng không được cấp quyền camera hoặc bộ nhớ khi cài đặt
+
+ Gỡ ứng dụng và cài lại. Khi cài, cấp đầy đủ tất cả các quyền mà ứng dụng yêu cầu (camera, bộ nhớ...). Đây là các quyền bắt buộc để ứng dụng hoạt động đúng.
+
+ Bật chế độ hiển thị ban đêm (Dark Mode)
+
+ Tắt Dark Mode trước khi làm bài. Chế độ này làm khó đọc nội dung đề, đặc biệt các câu hỏi có công thức toán học dạng ảnh sẽ không nhìn thấy được.
+
+ 3.4. Các lỗi thường gặp khi làm bài trên trình duyệt web máy tính?
+
+ Tình huống
+
+ Cách xử lý
+
+ Bật chế độ Dark Mode trên trình duyệt
+
+ Tắt Dark Mode. Chế độ này làm khó đọc câu hỏi, đặc biệt là công thức toán học dạng ảnh.
+
+ Trình duyệt chặn JavaScript – không chọn được đáp án
+
+ Vào Cài đặt Chrome → tìm "JavaScript" → chọn "Các trang web có thể sử dụng JavaScript". Thao tác này cần thực hiện trước khi vào làm bài.
+
+ Cài quá nhiều tiện ích mở rộng (extension) làm chậm trình duyệt
+
+ Gỡ bỏ các extension không cần thiết khỏi trình duyệt trước khi thi.
+
+ Dùng trình duyệt có quảng cáo tự hiển thị (ví dụ: Cốc Cốc)
+
+ Chuyển sang Google Chrome. Đây là trình duyệt được khuyến nghị sử dụng khi làm bài trên K12Online.
+
+ Mở quá nhiều ứng dụng hoặc tab cùng lúc
+
+ Đóng các ứng dụng và tab không cần thiết để đảm bảo hiệu năng tốt nhất trong khi làm bài.
+
+ 3.5. Các lỗi liên quan đến câu hỏi tự luận?
+
+ Tình huống
+
+ Cách xử lý
+
+ Học sinh gõ trực tiếp bài tự luận dài vào hệ thống – rủi ro mất bài khi mạng gặp sự cố
+
+ Với bài tự luận dài hoặc có công thức toán, nhà trường nên hướng dẫn học sinh làm bài trên giấy rồi chụp ảnh nộp. Quy định thống nhất mẫu giấy thi để giáo viên dễ chấm bài.
+
+ Học sinh để sát giờ mới chụp ảnh nộp bài tự luận, dẫn đến thiếu thời gian hoặc mạng gặp sự cố
+
+ Học sinh cần theo dõi thời gian còn lại và nộp bài trước khi hết giờ ít nhất vài phút để tránh các rủi ro khách quan.
+
+ Camera thiết bị mờ, hỏng hoặc chụp ảnh ở điều kiện thiếu sáng
+
+ Nhà trường yêu cầu học sinh chuẩn bị thiết bị có camera hoạt động tốt. Chụp ảnh ở nơi đủ ánh sáng, đảm bảo bài làm rõ nét và đầy đủ.
+
+ 3.6. Các lỗi cần lưu ý khi nộp bài?
+
+ Hệ thống báo "Bạn đã nộp bài": có người khác đã dùng tài khoản này nộp bài trước. Học sinh cần đổi mật khẩu mặc định và bảo mật tài khoản.
+ Không nộp được bài: kiểm tra lại kết nối mạng và thiết bị. Không nên nộp bài quá sớm hoặc sát giờ kết thúc – cân đối thời gian hợp lý.
+
+ 3.7. Tại sao học sinh không nhìn thấy bài kiểm tra?
+
+ Bài kiểm tra dạng tập trung: giáo viên phải gán TKB thì học sinh mới nhìn thấy bài.
+ Kiểm tra nhà trường đã cập nhật kế hoạch đào tạo lại sau lần tạo tài khoản học sinh gần nhất chưa.
+
+ 3.8. Giáo viên nhập câu hỏi lên hệ thống nhưng bị báo lỗi?
+
+ Giáo viên kiểm tra theo các bước sau:
+
+ Đối chiếu lại file câu hỏi với mẫu định dạng mà hệ thống hướng dẫn để đảm bảo đúng chuẩn.
+ Với câu hỏi chứa bảng, biểu đồ hoặc nhiều ký tự đặc biệt: chuyển nội dung thành ảnh chụp màn hình để hệ thống nhận dạng dễ hơn.
+ Thử sao chép nội dung sang file Word mới (để loại bỏ định dạng ẩn) rồi tải lên lại.
+
+ 4. NGHIỆP VỤ KHO HỌC LIỆU
+
+ 4.1. Chia sẻ lên kho học liệu nhưng hệ thống báo chưa có danh mục để chọn?
+
+ Nguyên nhân: nhà trường chưa khai báo danh mục chia sẻ trong hệ thống. Giáo viên báo nhà trường kiểm tra và thiết lập danh mục chia sẻ trước khi giáo viên có thể chia sẻ học liệu lên kho.
+
+ 4.2. Đã chia sẻ lên kho học liệu nhưng người khác vẫn chưa thấy?
+
+ Nguyên nhân: nhà trường chưa duyệt học liệu do giáo viên chia sẻ. Học liệu chỉ hiển thị cho người khác sau khi nhà trường phê duyệt. Giáo viên báo nhà trường kiểm tra và duyệt nội dung.
+
+ 5. NGHIỆP VỤ QUẢN LÝ ĐÀO TẠO
+
+ 5.1. Giáo viên muốn tạo nhóm học gồm học sinh từ nhiều lớp khác nhau?
+
+ Thực hiện theo các bước sau:
+
+ Bước 1: Vào menu Quản lý đào tạo.
+ Bước 2: Chọn Nhóm học.
+ Bước 3: Chọn Thêm mới nhóm học.
+ Bước 4: Thêm học sinh từ các lớp khác nhau vào nhóm.
+
+ 5.2. Giáo viên dạy ở nhiều trường – cách thêm vào trường thứ hai như thế nào?
+
+ Trên K12Online, mỗi giáo viên được định danh bằng một tài khoản duy nhất và chỉ được biên chế vào một trường chính. Khi giáo viên cần dạy thêm ở trường khác (thỉnh giảng/trợ giảng), Admin trường đó thực hiện thêm như sau:
+
+ Bước 1: Vào menu Quản lý đào tạo → chọn GV ngoài biên chế.
+ Bước 2: Thực hiện Thêm GV và nhập thông tin giáo viên cần thêm.
+ Bước 3: Sau khi thêm thành công, phân công giảng dạy cho GV ngoài biên chế như GV thông thường.
+
+ ⚠️ Lưu ý: Giáo viên ngoài biên chế muốn đăng nhập vào trường ngoài biên chế phải truy cập trực tiếp vào link đăng nhập của trường đó (không dùng link của trường chính).
+
+ 5.3. Giáo viên chủ nhiệm khác với giáo viên bộ môn như thế nào?
+
+ Giáo viên chủ nhiệm (GVCN) có một số quyền đặc biệt trong lớp được chủ nhiệm, không phụ thuộc vào việc có được phân công dạy bộ môn hay không:
+
+ Phân nhóm học trong lớp (các giáo viên bộ môn có thể sử dụng nhóm do GVCN tạo khi lập TKB).
+ Đặt lại (reset) mật khẩu của học sinh trong lớp.
+ Xem thời khóa biểu của cả lớp, kể cả các môn GVCN không trực tiếp giảng dạy.
+
+ 6. THÔNG TIN LIÊN HỆ HỖ TRỢ
+
+ Trong trường hợp không thể tự xử lý theo hướng dẫn trên, người dùng có thể liên hệ qua các kênh dưới đây:
+
+ Chủ động tra cứu tài liệu, hướng dẫn sử dụng và câu hỏi thường gặp tại: https://hotro.k12online.vn
+ Liên hệ chuyên viên Viettel tại tỉnh/thành phố của đơn vị.
+ Hotline hỗ trợ khách hàng: 18008000, nhánh số 2, hỗ trợ từ 8:00 đến 22:00 tất cả các ngày trong tuần.
+
+ 💡 Lưu ý khi liên hệ hotline hoặc nhân viên Viettel hỗ trợ: Để được kiểm tra và hỗ trợ nhanh nhất, khi liên hệ cần chuẩn bị và cung cấp sẵn các thông tin sau:
+
+ - Tỉnh/thành phố:
+
+ - Tên trường:
+
+ - Đơn vị trực thuộc: xã/phường/đặc khu/Sở GD&ĐT
+
+ - Tài khoản/mật khẩu:
+
+ - Vấn đề gặp phải (mô tả càng chi tiết càng tốt):
+
+ - Ảnh chụp màn hình (nếu có):
+
+==================================================
+

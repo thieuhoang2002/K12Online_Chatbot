@@ -1,0 +1,29 @@
+### BÀI VIẾT [167]: Hướng dẫn nhà trường khai báo ràng buộc lớp học
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Thời khóa biểu > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong2/huong-dan-nha-truong-khai-bao-rang-buoc-lop-hoc.html
+
+**Nội dung:**
+Ý nghĩa : Ràng buộc này dùng để cấu hình ngày, buổi dạy và tiết dạy cho lớp trong tuần
+ Bước 1: Click vào ràng buộc cho lớp
+ Bước 2: Click Thêm mới
+
+ Bước 3: Nhập thông tin cấu hình. Có thể nhập 1 số hoặc nhập tất cả cấu hình
+ Lớp: Cho phép chọn 1 hoặc chọn nhiều
+ Số ngày tối đa mỗi tuần: Nhập trong khoảng từ 1 đến 5. Nhập ô này thì khi xếp lịch lớp sẽ có số ngày xếp lịch là bằng hoặc nhỏ hơn giá trị nhập
+ Số buổi tối đa mỗi tuần: Nhập trong khoảng từ 1 đến 10. Nhập ô này thì khi xếp lịch lớp sẽ có số buổi xếp lịch là bằng hoặc nhỏ hơn giá trị nhập
+ Số buổi sáng tối đa mỗi tuần: Nhập trong khoảng từ 1 đến 5. Nhập ô này thì khi xếp lịch lớp sẽ có số buổi sáng xếp lịch là bằng hoặc nhỏ hơn giá trị nhập
+ Số buổi chiều tối đa mỗi tuần: Nhập trong khoảng từ 1 đến 5. Nhập ô này thì khi xếp lịch lớp sẽ có số buổi chiều xếp lịch là bằng hoặc nhỏ hơn giá trị nhập
+ Số tiết tối đa 1 ngày: Nhập trong khoảng từ 2 đến 10. Nhập ô này thì khi xếp lịch lớp sẽ có số tiết 1 ngày là bằng hoặc nhỏ hơn giá trị nhập
+ Số tiết tối thiểu 1 ngày: Nhập trong khoảng từ 1 đến 10. Nhập ô này thì khi xếp lịch lớp sẽ có số tiết 1 ngày là bằng hoặc lớn hơn giá trị nhập
+ Số tiết buổi sáng tối thiểu: Nhập trong khoảng từ 1 đến 5. Nhập ô này thì khi xếp lịch lớp sẽ có số tiết 1 buổi sáng là bằng hoặc lớn hơn giá trị nhập
+ Số tiết buổi chiều tối thiểu: Nhập trong khoảng từ 1 đến 5. Nhập ô này thì khi xếp lịch lớp sẽ có số tiết 1 buổi chiều là bằng hoặc lớn hơn giá trị nhập
+ Số tiết giảng liên tục tối đa: Nhập trong khoảng từ 1 đến 5. Nhập ô này thì khi xếp lịch lớp sẽ có số tiết liên tục trong 1 buổi là bằng hoặc nhỏ hơn giá trị nhập
+
+ Bước 4: Click lưu lại. Sau khi lưu thành công bản ghi ở trạng thái Hoạt động, khi xếp lịch hệ thống sẽ xét đến ràng buộc của lớp
+ Lưu ý :
+ Phải cấu hình tiết dạy, buổi dạy cho giáo viên trước rồi mới tạo ràng buộc này
+ Khi thêm mới mà chọn lớp đã tồn tại thì khi lưu hệ thống update lại thông tin cho lớp đó
+ Nếu không muốn xét ràng buộc của lớp nào khi xếp lịch thì off bản ghi của lớp đó.
+
+==================================================
+

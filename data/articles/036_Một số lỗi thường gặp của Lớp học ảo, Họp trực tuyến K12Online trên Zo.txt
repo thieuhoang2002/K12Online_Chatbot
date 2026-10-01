@@ -1,0 +1,29 @@
+### BÀI VIẾT [36]: Một số lỗi thường gặp của Lớp học ảo, Họp trực tuyến K12Online trên Zoom
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Câu hỏi thường gặp
+- Link gốc: https://hotro.k12online.vn/cau-hoi-thuong-gap/mot-so-loi-thuong-gap-khi-su-dung-zoom.html
+
+**Nội dung:**
+Dưới đây là một số những lỗi thường gặp ở Zoom khi người dùng sử dụng tính năng Lớp học ảo, Họp trực tuyến trên K12Online.
+
+ 1. Lỗi khi mở Zoom hiện ID cuộc họp không hợp lệ
+
+ Trả lời:
+
+ Vui lòng thử các cách sau:
+
+ Cách 1: Xoá cache của Zoom
+
+ Cách 2: Đăng xuất khởi tài khoản Zoom đã đăng nhập trước đó trên máy. Sau đó khởi động lại máy.
+
+ Cách 3: Vào lớp học ảo bằng ứng dụng K12Online trên điện thoại di động ra sau đó vào lại bằng máy tính sau.
+
+ Cách 4: Gỡ ứng dụng Zoom ra => Bấm nút Tải về để tải bộ cài Zoom về. Sau đó tiến hành mở file đã tải về để cài đặt lại Zoom
+
+ Cách 5: Gỡ ứng dụng Zoom ra => Vào bằng trình duyệt web từ link Zoom do K12Online trỏ về.
+
+ Cách 6: Tạo user mới trên máy tính để sử dụng. Xem video hướng dẫn tại đây
+
+ 2. Lỗi yêu cầu đăng nhập để bắt đầu
+
+==================================================
+

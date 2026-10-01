@@ -1,0 +1,56 @@
+### BÀI VIẾT [173]: Ví dụ về xếp lịch học cho nhà trường (Tiểu học)
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Thời khóa biểu > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong2/vi-du-ve-xep-lich-hoc-cho-nha-truong-tieu-hoc-.html
+
+**Nội dung:**
+1. Đầu bài trường tiểu học Bình Trị 1
+
+ 2. Cách xếp
+
+ (Xếp cho khối 1, khối khác tương tự)
+
+ 2.1. Cấu hình tiết dạy, buổi dạy
+
+ Bước 1: Vào menu Cấu hình tiết dạy, buổi dạy
+ Bước 2: Click Nhập excel > Tải file mẫu
+ Bước 3: Nhập số tiết trong tuần vào file mẫu > lưu lại
+ Bước 4: Upfile mẫu đã nhập thông tin > Import
+ 2.2. Tạo RB tiết nghỉ cho lớp
+
+ Cấu hình cho lớp bán trú :
+
+ Bước 1: Vào Quản lý khai báo > Ràng buộc thường dùng > Tiết nghỉ của lớp
+ Bước 2: Click thêm mới
+ Bước 3: Chọn các lớp có cùng tiết nghỉ, ví dụ 1.1 – 1.7 học 10 buổi và có 25 tiết chính
+ Bước 4: Nhập X vào các ô nghỉ. Để được thời khóa biểu đẹp thì lớp có bao nhiêu tiết thì để bằng đó ô trống. Ví dụ lớp có 25 tiết chính thì để 25 ô trống như hình
+
+ Bước 5: Lưu lại
+ Cấu hình cho lớp trái buổi :
+
+ Bước 1: Thực hiện 2 bước đầu như trên
+ Bước 2: Chọn các lớp có cùng tiết nghỉ, ví dụ 1.8 – 1.14 học 6 buổi và có 25 tiết chính
+ Bước 4: Nhập X vào các ô nghỉ. Để được thời khóa biểu đẹp thì lớp có bao nhiêu tiết thì để bằng đó ô trống. Ví dụ lớp có 25 tiết chính thì để 25 ô trống như hình
+
+ Bước 5: Lưu lại
+ 2.3. Tạo lịch và duyệt
+
+ Bước 1: Vào menu Xếp lịch > tạo lịch
+ Bước 2: Kiểm duyệt lịch sau khi xếp thành công
+ 2.4. Xếp thủ công
+
+ Bước 1: Vào menu Thời khóa biểu
+ Bước 2: Click vào Xếp thủ công để xếp các môn tự chọn (môn trung tâm)
+ Bước 3: Ví dụ xếp môn Chào cờ vào tiết 1 thứ 2 thì chọn tất cả lớp và nhập như hình
+
+ Bước 4: Lưu lại
+ Bước 5: Lặp lại các bước thực hiện để xếp cho các môn học khác
+ 2.5. Kéo thả tiết
+
+ Sau khi xếp thủ công thầy/cô có thể lọc theo từng lớp để xem lịch đã đúng theo mong muốn chưa, nếu chưa thì có thể kéo thả tiết để xếp được như mong muốn.
+ Lưu ý
+ Chỉ kéo thả trong 1 lớp, kéo sang lớp khác sẽ báo lỗi
+ Kéo thả từ vị trí A sang B, nếu vị trí B trống và cùng tiết đó giáo viên không dạy lớp nào khác thì đổi tiết thành công. Nếu vị trí B trống nhưng tiết đó giáo viên đã dạy lớp khác thì hệ thống sẽ thông báo lỗi và không đổi tiết được
+ Kéo thả từ vị trí A sang B, nếu vị trí B đã có tiết và cùng tiết đó giáo viên không dạy lớp nào khác thì hoán đổi tiết giữa các giáo viên thành công. Ngược lại hoán đổi mà bị trùng tiết với lớp khác thì hệ thống báo lỗi.
+
+==================================================
+

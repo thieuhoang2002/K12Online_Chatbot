@@ -1,0 +1,39 @@
+### BÀI VIẾT [162]: Hướng dẫn Nhà trường tạo kỳ thi tự do trên K12Online
+- Chuyên mục: Trang chủ
+- Link gốc: https://hotro.k12online.vn/nha-truong/tao-ky-thi-tu-do-tren-k12online.html
+
+**Nội dung:**
+I. Hướng dẫn thao tác
+
+ 1. Tạo kỳ thi
+
+ Vào Khảo thí => Chọn Tổ chức kỳ thi => Chọn Thêm mới => Nhập các thông tin cơ bản cùa kỳ thi như:
+
+ - Tên kỳ thi;
+
+ - Loại kỳ thi;
+
+ - Hình thức tổ chức: Kỳ thi tự do
+
+ - Thời gian bắt đầu;
+
+ - Khối lớp;
+
+ - Môn học;
+
+ 2. Tạo đề thi
+
+ Xem hướng dẫn chi tiết tại đây: https://hotro.k12online.vn/nha-truong/tao-de-thi-cap-truong.html
+
+ 3. Theo dõi, báo cáo kỳ thi
+
+ Nhà trường chủ động theo dõi báo cáo kết quả của kỳ thi, đề thi qua tính năng báo cáo của từng đề thi.
+
+ II. Một số lưu ý
+
+ 1. Bất kỳ học sinh nào trong trường thuộc khối của kỳ thi tự do đều nhìn thấy đề thi tự do đó và có thể vào tham gia thi được.
+
+ 2. Với những đề thi trong kỳ thi tự do thì phần báo cáo đề thi không có mục Danh sách học sinh .
+
+==================================================
+

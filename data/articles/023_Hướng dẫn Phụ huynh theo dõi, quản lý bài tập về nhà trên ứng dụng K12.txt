@@ -1,0 +1,69 @@
+### BÀI VIẾT [23]: Hướng dẫn Phụ huynh theo dõi, quản lý bài tập về nhà trên ứng dụng K12Connect
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Bài tập về nhà > Phụ huynh HS
+- Link gốc: https://hotro.k12online.vn/article/news/huong-dan-phu-huynh-theo-doi-quan-ly-bai-tap-ve-nha-tren-ung-dung-k12connect.html
+
+**Nội dung:**
+HƯỚNG DẪN SỬ DỤNG CÁC CHỨC NĂNG PHẦN MỀM APP DÀNH CHO ĐỐI TƯỢNG PHỤ HUYNH
+
+ 1.  Đăng nhập
+
+ Bước 1: Truy cập vào app
+
+ Bước 2: Nhập tên đăng nhập và mật khẩu với  account / mật khẩu
+
+ Bước 3: Click button Đăng nhập: Thực hiện đăng nhập  thành công vào hệ thống
+
+ 2. Bài tập về nhà
+
+ Bước 1: Trang chủ > Click tính năng > Click bài tập về nhà > Click Bài tập offline
+
+ 3. Kết quả bài tập
+
+ Bước 1: Danh sách > Click Kết quả bài tập
+
+ Bước 2 : Hiển thị form > Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công
+
+ Lưu ý :
+
+ Click lưu thì chỉ cập nhật  kết quả bài tập  và bài tập chưa được gửi
+ Sau khi click vào lưu thì sẽ hiển thị thêm hành động gửi
+ Các trường có dấu * là các trường bắt buộc nhập
+
+ 4. Gửi kết quả bài tập
+
+ Bước 1: Danh sách > Click icon gửi kết quả bài tập
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Gửi” thực hiện gửi thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác gửi
+
+ Sau khi gửi kết quả bài tập thành công thì sẽ hiển thị kết quả bài tập ở tài khoản giáo viên , bài tập chuyển sang trạng thái đã nộp
+
+ 5. Thu hồi bài tập
+
+ Bước 1: Danh sách > Click icon thu hồi bài tập
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Thu hồi” thực hiện thu hồi bài tập  thành công
+
+ + Click “Hủy” hủy bỏ thao tác
+
+ Sau khi thu hồi thì kết quả bài tập không hiển thị ở tài khoản giáo viên
+ Chỉ các bài tập ở trạng thái đã nộp mới được thu hồi
+ Nếu giáo viên tắt cho phép nộp bài thì phụ huynh không được thu hồi bài tập
+
+ 6. X em chi tiết
+
+ Bước 1: Danh sách > Click vào 1 bài tập
+
+ Bước 2 :  Xem chi tiết nội dung bài tập thành công
+
+ 7. Tìm kiếm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+==================================================
+

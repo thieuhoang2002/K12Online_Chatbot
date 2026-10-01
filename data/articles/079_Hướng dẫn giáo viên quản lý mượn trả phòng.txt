@@ -1,0 +1,42 @@
+### BÀI VIẾT [79]: Hướng dẫn giáo viên quản lý mượn trả phòng
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Cơ sở vật chất > Giáo viên
+- Link gốc: https://hotro.k12online.vn/giao-vien4/huong-dan-giao-vien-quan-ly-muon-tra-phong.html
+
+**Nội dung:**
+​​​​​​​ 1. Danh sách quản lý lịch mượn trả phòng
+
+ Bước 1: Menu Phiếu mượn tài sản> Chọn tab Quản lý lịch mượn trả phòng
+
+ Bước 2: Hiển thị danh sách lịch mượn trả phòng
+
+ Click Sắp xếp theo > Chọn kiểu sắp xếp > Hiển thị danh sách theo trạng thái sắp xếp.
+
+ Tải lại
+ Bước 1: Trên danh sách > click button Tải lại > Thực hiện tải lại danh sách.
+
+ Sắp xếp
+ Trên danh sách > click button Sắp xếp theo > Chọn kiểu sắp xếp> Hiển thị danh sách theo trạng thái sắp xếp.
+
+ Tổng số bản ghi
+
+ Bước 1: Trên màn hình danh sách> Xem tổng số bản ghi
+
+ Phân trang
+ Trên màn hình: hiển thị phân trang ở phía dưới bên phải màn khi danh sách có > 20 bản ghi
+
+ + Click icon << (>>) để chuyển đến trang trước đó (trang tiếp theo)
+
+ + Click icon  << << (>> >>) để chuyển đến trang đầu tiên (trang cuối cùng)
+
+ 2. Tìm kiếm lịch mượn trả phòng
+
+ Bước 1: Tại vùng tìm kiếm: nhập/ chọn tiêu chí tìm kiếm > Click button Tìm kiếm/ nhấn Enter để thực hiện tìm kiếm lịch mượn trả phòng
+
+ ​​​​​​​​​​​​​​3. Xuất excel
+
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel > Thực hiện xuất excel thành công > Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+ Bước 3: >Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+==================================================
+

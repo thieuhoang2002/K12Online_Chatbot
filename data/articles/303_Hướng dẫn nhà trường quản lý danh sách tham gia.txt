@@ -1,0 +1,59 @@
+### BÀI VIẾT [303]: Hướng dẫn nhà trường quản lý danh sách tham gia
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Bus > Nhà trường
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/bus/nha-truong/huong-dan-nha-truong-quan-ly-danh-sach-tham-gia.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản quản lý trường
+
+ Bước 2: Tại Trang chủ: chọn module Bus
+
+ Bước 3: Hiển thị màn hình các menu thuộc module Bus như hình
+
+ 1. Xem danh sách
+
+ Bước 1: Trên thanh menu > Chọn menu Danh sách tham gia
+
+ Tại đây, hiển thị danh sách học sinh đăng ký bus và đã được duyệt
+
+ Lưu ý:
+
+ Trường hợp 1: Đăng ký trong thời gian cho phép đăng ký
+ Thời gian bắt đầu lấy theo thời gian bắt đầu của học kỳ đăng ký
+ Thời gian kết thúc lấy theo thời gian kết thúc của học kỳ đăng ký
+ Trường hợp 2: Đăng ký khi đã hết thời gian đăng ký và được phép đăng ký bổ sung
+ Thời gian bắt đầu lấy theo thời gian mong muốn trong đơn đăng ký và cập nhật khi trường duyệt chọn thời gian tham gia thực tế
+ Thời gian kết thúc lấy theo thời gian kết thúc của học kỳ đăng ký và cập nhật khi trường duyệt chọn ngày hủy thực tế
+ Bước 3: Click icon xem chi tiết tham gia, màn hình hiển thị như sau
+
+ Lưu ý: Chỉ hiển thị danh sách khi học sinh đã được tạo lịch đưa đón
+
+ Trên thanh menu: Chọn dữ liệu muốn tìm kiếm > Hệ thống trả về kết quả tìm kiếm theo tiêu chí đã nhập
+
+ ​​​​​​​2. Chỉnh sửa tuyến đường
+
+ Bước 1: Danh sách: Click button Chỉnh sửa tuyến đường
+
+ Bước 2: Nhập đầy đủ thông tin > Click Lưu thực hiện chỉnh sửa thành công
+
+ Trường hợp 1: Ngày hiện tại chưa thực hiện chỉnh sửa tuyến đường cho học sinh (Ví dụ Học sinh A) thì sau khi khi lưu thành công sẽ hiển thị thêm 1 bản ghi mới cho Học sinh A với:
+
+ Bản ghi cũ có thời gian bắt đầu giữ nguyên, thời gian kết thúc là ngày hiện tại, thông tin tuyến đường điểm đón giữ nguyên
+ Bản ghi mới có thời gian bắt đầu là ngày mai, thời gian kết thúc giữ nguyên như bản ghi trước khi chỉnh sửa tuyến đường, thông tin tuyến đường điểm đón thay đổi theo giá trị đã chọn
+ Trường hợp 2: Ngày hiện tại đã thực hiện chỉnh sửa tuyến đường cho Học sinh A thì sau khi lưu thành công sẽ cập nhật vào bản ghi được cập nhật trước đấy các thông tin tuyến đường và điểm đón
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường Học sinh list dữ liệu theo chiều di chuyển và tuyến đường hiện tại đã chọn, hiển thị học sinh có khoảng thời gian tham gia là khoảng thời gian được cập nhật tuyến đường gần nhất. Trường hợp học sinh đã hủy đăng ký bus và đăng ký lại sẽ list 1 giá trị có khoảng thời gian được cập nhật gần nhất và 1 giá trị là khoảng thời gian tham gia sau khi đăng ký lại
+ 3. Tìm kiếm
+
+ Danh sách: Nhập / chọn dữ liệu muốn tìm kiếm > Click button Tìm kiếm > Hệ thống trả về kết quả tìm kiếm theo tiêu chí đã nhập
+
+ Lưu ý:
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo dữ liệu tìm kiếm và theo giá trị sắp xếp đã chọn
+
+==================================================
+

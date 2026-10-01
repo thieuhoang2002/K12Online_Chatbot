@@ -1,0 +1,9 @@
+### BÀI VIẾT [163]: Hướng dẫn tính năng thời khóa biểu cấp trường
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong/thoi-khoa-bieu.html
+
+**Nội dung:**
+Nhà trường có thể theo dõi thời khoá biểu dạy học trực tuyến của các lớp bằng tính Thời khoá biểu. Tại đây, nhà trường có thể tìm, lọc theo các điều kiện: lớp, giáo viên.
+
+==================================================
+

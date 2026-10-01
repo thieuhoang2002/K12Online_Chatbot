@@ -1,0 +1,76 @@
+### BÀI VIẾT [109]: Hướng dẫn nhà trường khai báo thông tin công việc bán trú
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Bán trú > Nhà trường
+- Link gốc: https://hotro.k12online.vn/huong-dan-nha-truong-khai-bao-thong-tin-cong-viec-ban-tru.html
+
+**Nội dung:**
+Trên thanh menu > Click Menu Quản lý khai báo > Chọn Danh mục bán trú > Click Công việc bán trú
+
+ 1. Thêm mới / chỉnh sửa
+
+ Thêm mới:
+
+ Bước 1: Danh sách > click button Thêm mới
+
+ Bước 2: Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công . Khi thêm mới xong bản ghi trạng thái
+
+ Lưu ý
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Chỉnh sửa : Click icon chỉnh sửa thực hiện chỉnh sửa bản ghi
+
+ 2. Nhập excel
+
+ Bước 1 : Danh sách > Click button Nhập excel
+
+ Bước 2 : Hiển thị form > Nhập đầy đủ thông tin > Click button Nhập excel thực hiện thành công
+
+ Lưu ý :
+
+ Tải file không đúng định dạng ,Tải file quá dung lượng tối đa , Tải file không đúng file mẫu lên hệ thống đưa ra thông báo lỗi
+ Bỏ trống các trường bắt buộc upload file lên  hệ thống trả về 1 file kết quả và thông báo lỗi
+ + Tải file với ngày lớn hơn thời gian hiện tại hệ thống báo lỗi và trả về file kết quả
+
+ 3. Xuất excel
+
+ Danh sách  Click button Xuất excel > File excel được tải về
+
+ Lưu ý :
+
+ Thực hiện xuất excel > File tải về hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với danh sách
+ Thực hiện tìm kiếm dữ liệu > sau click button Xuất excel > Thì hệ thống trả về file kết quả hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với trên danh sách
+ Thực hiện chọn kiểu sắp xếp danh sách> sau click button Xuất excel > Thì hệ thống trả về file kết quả hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với trên danh sách
+
+ 4. ​​​​​​​ Xóa
+
+ C1: Xóa 1 bản ghi
+
+ Bước 1: Danh sách > Click icon xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa bản ghi  thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ C2: Xóa nhiều bản ghi
+
+ Bước 1: Danh sách > Click checkbox all >  chọn button
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ ​​​​​​​​​​​​​​5. Tìm kiếm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+
+==================================================
+

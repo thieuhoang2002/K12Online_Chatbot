@@ -1,0 +1,11 @@
+### BÀI VIẾT [271]: Các tính năng dành cho Giáo viên chủ nhiệm khi tổ chức học, thi trực tuyến
+- Chuyên mục: Trang chủ > Cấu hình chung > Tài khoản
+- Link gốc: https://hotro.k12online.vn/tinh-nang-danh-cho-giao-vien-chu-nhiem-khi-to-chuc-hoc-thi-truc-tuyen.html
+
+**Nội dung:**
+1. Xem thời khoá biểu của lớp mình chủ nhiệm
+
+ Bước 1: Giáo viên chủ nhiệm có thể xem thời khoá biểu của lớp mình chủ nhiệm và điểm danh của từng tiết học của lớp đó.
+
+==================================================
+

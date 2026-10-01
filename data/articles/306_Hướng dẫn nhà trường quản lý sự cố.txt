@@ -1,0 +1,45 @@
+### BÀI VIẾT [306]: Hướng dẫn nhà trường quản lý sự cố
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Bus > Nhà trường
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/bus/nha-truong/huong-dan-nha-truong-quan-ly-su-co.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản quản lý trường
+
+ Bước 2: Tại Trang chủ: chọn module Bus
+
+ Bước 3: Hiển thị màn hình các menu thuộc module Bus như hình
+
+ 1. Xem danh sách sự cố
+
+ Bước 1: Trên thanh menu > Click menu Quản lý sự cố
+
+ 2. Xuất excel
+
+ Danh sách > Click button Xuất excel > File excel được tải về
+
+ Lưu ý:
+
+ Thực hiện xuất excel > File tải về hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với danh sách
+ Thực hiện tìm kiếm > Click button Xuất excel > Hệ thống trả về file kết quả hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với trên danh sách
+ Thực hiện chọn kiểu sắp xếp danh sách> sau click button Xuất excel > Thì hệ thống trả về file kết quả hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với trên danh sách
+
+ 3. Tìm kiếm
+
+ Danh sách > Nhập / chọn dữ liệu muốn tìm kiếm > Click button Tìm kiếm > Hệ thống trả về kết quả tìm kiếm theo tiêu chí đã nhập
+
+ Lưu ý:
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo dữ liệu tìm kiếm và theo giá trị sắp xếp đã chọn
+
+ 4. Xóa bản ghi
+
+ Bước 1: Danh sách > Tích checkbox all đầu danh sách > Click button Xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ Click “Xóa” thực hiện xóa bản ghi thành công
+ Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+==================================================
+

@@ -1,0 +1,76 @@
+### BÀI VIẾT [186]: Hướng dẫn nhà trường quản lý đề xuất mua mới
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Cơ sở vật chất > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong4/huong-dan-nha-truong-quan-ly-de-xuat-mua-moi.html
+
+**Nội dung:**
+1. Danh sách phiếu đề xuất mua mới
+
+ Bước 1: Menu Quản lý đề xuất > Chọn tab Đề xuất mua mới
+
+ Bước 2: Hiển thị danh sách đề xuất sửa mua mới
+
+ Click Sắp xếp theo > Chọn kiểu sắp xếp > Hiển thị danh sách theo trạng thái sắp xếp.
+ Click icon xem chi tiết để thực hiện xem chi tiết phiếu đề xuất
+ Click icon duyệt để thực hiện duyệt phiếu đề xuất
+ Click icon không duyệt để thực hiện không duyệt phiếu đề xuất
+ Tải lại
+ Trên danh sách > click button Tải lại > Thực hiện tải lại danh sách.
+
+ Sắp xếp
+ Trên danh sách > click button Sắp xếp theo > Chọn kiểu sắp xếp> Hiển thị danh sách theo trạng thái sắp xếp.
+
+ Phân trang
+ Trên màn hình: hiển thị phân trang ở phía dưới bên phải màn khi danh sách có > 20 bản ghi
+ + Click icon << (>>) để chuyển đến trang trước đó (trang tiếp theo)
+
+ + Click icon << << (>> >>) để chuyển đến trang đầu tiên (trang cuối cùng)
+
+ Tổng số bản ghi
+ Bước 1: Trên màn hình danh sách > Xem tổng số bản ghi.
+
+ 2. Thêm mới phiếu đề xuất mua mới
+
+ Bước 1: Trên danh sách > Click button Thêm mới > Click thêm mới phiếu đề xuất
+
+ Bước 2: Hiển thị màn hình thêm mới phiếu đề xuất. Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Bước 3: Click Lưu để hoàn thành việc thêm mới phiếu đề xuất thành công, bản ghi ở trạng thái đã duyệt
+ Lưu ý:
+
+ Các trường có dấu (*) bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Tên phiếu đề xuất: Nhập tên phiếu đề xuất
+ Lý do đề xuất: Hiển thị các lý do đề xuất cấp phát
+ Nội dung: Nhập nội dung cho phiếu đề xuất
+ Thông tin thiết bị đề xuất:
+ Phân loại: Hiển thị tất cả các phân loại thiết bị
+ Tên thiết bị: Hiển thị các thiết bị theo phân loại thiết bị đã chọn
+ Đơn vị tính: Hiển thị dữ liệu theo tên thiết bị đã chọn
+ Số lượng đề xuất: Nhập số lượng là số nguyên dương lớn hơn 0 và nhỏ hơn 1000
+ Ghi chú: Nhập ghi chú tối đa 225 ký tự
+ Thêm nhanh thiết bị
+ Bước 1: Trên danh sách thông tin thiết bị đề xuất > Click button để thêm nhanh thiết bị
+ Bước 2: Hiển thị màn hình thêm nhanh thiết bị. Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Bước 3: Click Thêm để hoàn thành việc thêm nhanh thiết bị thành công
+ 3. Xem chi tiết phiếu đề xuất mua mới
+
+ Bước 1: Trên màn hình danh sách > Click icon xem chi tiết phiếu đề xuất
+
+ Bước 2: Màn hình hiển thị chi tiết phiếu đề xuất
+ Chi tiết phiếu đề xuất chưa mua mới
+
+ Chi tiết phiếu đề xuất đã mua mới
+
+ ​​​​​​​4. Tìm kiếm phiếu đề xuất mua mới
+
+ Bước 1: Tại vùng tìm kiếm: nhập/ chọn tiêu chí tìm kiếm > Click button Tìm kiếm/ nhấn Enter để thực hiện tìm kiếm phiếu đề xuất
+
+ 5. Xuất excel phiếu đề xuất mua mới
+
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel > Thực hiện xuất excel thành công > Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+ Bước 2: Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+==================================================
+

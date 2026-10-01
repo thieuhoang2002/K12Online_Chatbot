@@ -1,0 +1,13 @@
+### BÀI VIẾT [66]: Điểm danh học sinh trong Lớp học ảo
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Giáo viên
+- Link gốc: https://hotro.k12online.vn/giao-vien/diem-danh-hoc-sinh-trong-lop-hoc-ao.html
+
+**Nội dung:**
+Tính năng điểm danh lớp học ảo là tính năng giúp giáo viên quản lý, theo dõi ghi nhận thời gian học sinh vào tham gia lớp học ảo do giáo viên tạo. Đây là một tính năng khá hữu ích để giúp giáo viên tiết kiệm thời gian điểm danh đầu giờ và quản lý việc điểm danh học sinh trong tiết học.
+
+ 1. Theo dõi điểm danh lớp học ảo
+
+ Bước 1: Giáo viên vào Thời khóa biểu => Chọn tiết học có lớp học ảo cần xem điểm danh
+
+==================================================
+

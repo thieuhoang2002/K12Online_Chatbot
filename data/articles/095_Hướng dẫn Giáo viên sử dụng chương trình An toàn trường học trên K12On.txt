@@ -1,0 +1,29 @@
+### BÀI VIẾT [95]: Hướng dẫn Giáo viên sử dụng chương trình An toàn trường học trên K12Online
+- Chuyên mục: Trang chủ > Nội dung tham khảo > Chương trình Giáo dục an toàn trường học
+- Link gốc: https://hotro.k12online.vn/huong-dan-giao-vien-su-dung-chuong-trinh-an-toan-truong-hoc-tren-k12online.html
+
+**Nội dung:**
+1. Hướng dẫn đăng nhập
+
+ -    Bước 1: Truy cập địa chỉ: k12online.vn
+ -    Bước 2: Đăng nhập bằng tài khoản và mật khẩu được cấp.
+
+ 2. Xem, trình chiếu nội dung học liệu
+
+ -    Vào Học tập => Chọn Chương trình học => Chọn tab Quản lý lớp học => Tìm chương trình học “An toàn trong trường học – Khối 1”
+
+ -    Vào menu Nội dung chương trình để xem danh sách các nội dung của chương trình hiện có.
+ -    Giáo viên muốn xem nội dung nào thì click vào tiêu đề của nội dung đó.
+
+ 3. Gán lịch học cho học sinh
+
+ -    Bước 1: Tại menu Nội dung chương trình => Giáo viên chọn nội dung muốn gán cho học sinh => Click vào biểu tượng gán lịch học.
+
+ -    Bước 2: Gán vào thời gian, lớp mong muốn.
+
+ 4. Xem báo cáo kết quả chương trình
+
+ Tại menu Báo cáo => Giáo viên vào xem chi tiết báo cáo của chương trình học.
+
+==================================================
+

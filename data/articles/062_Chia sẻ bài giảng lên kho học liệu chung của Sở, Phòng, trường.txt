@@ -1,0 +1,30 @@
+### BÀI VIẾT [62]: Chia sẻ bài giảng lên kho học liệu chung của Sở, Phòng, trường
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Kho học liệu số > Giáo viên
+- Link gốc: https://hotro.k12online.vn/giao-vien-chia-se-bai-giang-len-kho-hoc-lieu-chung-cua-don-vi.html
+
+**Nội dung:**
+Các bài giảng trực tuyến mà giáo viên đã soạn, ngoài việc sử dụng để dạy cho các học sinh của lớp mình còn có thể chia sẻ lên kho học liệu chung của Sở, Phòng và trường để các giáo viên và học sinh khác vào tham khảo. Để làm được việc này, giáo viên sử dụng tính năng chia sẻ bài giảng lên kho học liệu của K12Online.
+
+ 1. Điều kiện trước khi chia sẻ
+
+ - Bài giảng trực tuyến của giáo viên ở trạng thái "Đã duyệt" rồi.
+
+ - Kho học liệu của Sở, Phòng, trường đã tạo danh mục trên Kho học liệu để cho phép giáo viên chia sẻ lên.
+
+ 2. Hướng dẫn dành cho giáo viên
+
+ Bước 1: Giáo viên soạn bài giảng trực tuyến trên hệ thống K12Online và đảm bảo bài giảng đó đã ở trạng thái "Đã duyệt" rồi.
+
+ Bước 2: Tại menu Học tập => Chọn Bài giảng => Giáo viên nhấn vào biểu tượng Chia sẻ tại cột Chia sẻ để thực hiện chia sẻ bài giảng đó lên kho học liệu mong muốn:
+
+ Bước 3: Giáo viên chọn Kho học liệu và Danh mục cần chia sẻ lên.
+
+ Giáo viên chọn Kho học liệu muốn chia sẻ
+ Chọn danh mục trong kho học liệu đó
+ Nếu giáo viên không muốn các giáo viên khác sử dụng/copy bài giảng của mình để sử dụng thì click vào Không cho phép giáo viên khác sử dụng
+ Nhấn Lưu lại để hoàn thành chia sẻ.
+
+ Lưu ý: Sau khi giáo viên chia sẻ xong, đơn vị cần vào Kho học liệu của đơn vị thực hiện kiểm duyệt rồi mới hiển thị trên kho học liệu chung chung. Đơn vị có thể cấu hình có cần kiểm duyệt không hoặc tự động duyệt luôn.
+
+==================================================
+

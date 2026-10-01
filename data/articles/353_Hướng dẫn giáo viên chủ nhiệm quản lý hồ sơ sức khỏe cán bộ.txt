@@ -1,0 +1,69 @@
+### BÀI VIẾT [353]: Hướng dẫn giáo viên chủ nhiệm quản lý hồ sơ sức khỏe cán bộ
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Y tế > Giáo viên CN
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/y-te/giao-vien-chu-nhiem/huong-dan-giao-vien-chu-nhiem-quan-ly-ho-so-suc-khoe-can-bo.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản phân quyền giáo viên chủ nhiệm
+
+ Bước 2: Click menu Hồ sơ sức khỏe > click menu Hồ sơ sức khỏe cán bộ
+
+ 1. Xem chi tiết hồ sơ sức khỏe cán bộ
+
+ Bước 1: Click menu Hồ sơ sức khỏe > Click tab Hồ sơ sức khỏe cán bộ
+
+ Bước 2: Trên màn hình danh sách > click icon xem chi tiết
+
+ Bước 3: Hiển thị màn hình chi tiết hồ sơ sức khỏe
+
+ Click Thông tin chung : Thực hiện xem thông tin thành công
+
+ Click Thông tin bảo hiểm y tế: Thực hiện xem thông tin thành công
+
+ Click Thông tin tiêm chủng: Thực hiện xem thông tin thành công
+
+ 2. Cập nhật/chỉnh sửa thông tin tiêm chủng cán bộ
+
+ Click nút Cập nhật hoặc click icon Chỉnh sửa thông tin tiêm chủng > Nhập thông tin cập nhật > Click Lưu để lưu thông tin > Các thông tin cập nhật hiển thị tại danh sách
+
+ Click Thông tin bệnh : Thực hiện xem thông tin thành công
+ 3. Thêm mới/ Chỉnh sửa thông tin bệnh
+
+ Click vào nút Thêm mới/ Chỉnh sửa: Nhập đầy đủ thông tin hợp lệ > Click Lưu
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo và  focus vào trường lỗi cụ thể
+ Nhập thời điểm phát hiện bệnh không lớn hơn thời gian hiện tại, Thời gian khám không nhỏ hơn thời điểm phát hiện bệnh
+ 4. Xóa thông tin bệnh
+
+ Click icon Xóa/ checkbox bản ghi và click nút Xóa > Hiển thị popup xác nhận xóa > Xác nhận Xóa:
+
+ + Click “Xóa” thực hiện xóa chiến dịch khảo sát thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ Lưu ý: Thực hiện xóa thành công bản ghi không hiển thị ở danh sách
+
+ 5. Tìm kiếm thông tin bệnh
+
+ Trên vùng tìm kiếm của loại bệnh tương ứng >  Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn
+
+ Click Kết quả khám : Thực hiện xem thông tin thành công
+
+ 6. Tìm kiếm kết quả khám
+
+ Trên vùng tìm kiếm>  Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn
+
+ Lưu ý: Click nút In hồ sơ sức khỏe hệ thống tải xuống file .docx thông tin hồ sơ sức khỏe cán bộ
+
+ Tìm kiếm hồ sơ sức khỏe cán bộ
+ Bước 1: Click menu Hồ sơ sức khỏe > Click tab Hồ sơ sức khỏe cán bộ > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tiêu chí tìm kiếm
+
+==================================================
+

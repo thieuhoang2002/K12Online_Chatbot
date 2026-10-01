@@ -1,0 +1,39 @@
+### BÀI VIẾT [154]: Ngân hàng câu hỏi cấp trường
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong/ngan-hang-cau-hoi.html
+
+**Nội dung:**
+NHCH cấp trường là tính năng giúp nhà trường quản lý NHCH do nhà trường quản lý. Các câu hỏi của NHCH cấp trường trên K12Online là do nhà trường đưa lên hoặc yêu cầu GV đồng bộ lên và có sự kiểm duyệt của nhà trường.
+
+ I. Hướng dẫn thao tác
+
+ 1.1. Quản lý NHCH
+
+ Vào Khảo thí => Chọn Ngân hàng câu hỏi => Hệ thống sẽ hiển thị thông tin ngân hàng câu hỏi của nhà trường để admin xem.
+
+ Nhà trường có thể tạo thêm ngân hàng câu hỏi, ngoài ngân hàng câu hỏi mặc định của hệ thống.
+
+ Lưu ý: Không tên tạo quá nhiều NHCH, việc này sẽ dẫn tới gây cho nhà trường khó quản lý và dễ bị rối. Mỗi một năm học, học kỳ chỉ nên tạo tối đa 4-5 NHCH là phù hợp.
+
+ 1.2. Duyệt câu hỏi
+
+ Vào Khảo thí => Chọn Duyệt câu hỏi => Nhà trường vào để kiểm duyệt câu hỏi từ GV đưa lên và chọn Ngân hàng câu hỏi sẽ chứa câu hỏi đó.
+
+ Lưu ý: Chọn đúng ngân hàng câu hỏi muốn kiểm duyệt vào.
+
+ 1.3. Danh sách câu hỏi
+
+ Vào Khảo thí => Chọn Danh sách câu hỏi => Nhà trường vào xem danh sách câu hỏi đã được duyệt trong NHCH.
+
+ II. Một số câu hỏi thường gặp
+
+ 1. Nhà trường có thể tạo câu hỏi được không?
+
+ - Có. Tương tự như giáo viên.
+
+ 2. Nhà trường duyệt câu hỏi vào nhầm NHCH thì làm như thế nào?
+
+ - Nhà trường vào sửa lại câu hỏi đó để câu hỏi chuyển thành trạng thái Chờ duyệt => Sau đó sang phần Duyệt câu hỏi và chọn lại ngân hàng câu hỏi để duyệt là được.
+
+==================================================
+

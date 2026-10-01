@@ -1,0 +1,60 @@
+### BÀI VIẾT [377]: Hướng dẫn nhà trường quản lý sổ sức khỏe
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Y tế > Nhà trường
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/y-te/nha-truong/huong-dan-nha-truong-quan-ly-so-suc-khoe2.html
+
+**Nội dung:**
+1. Loại khám
+
+ Bước 1: Đăng nhập tài khoản quản lý trường /Cán bộ y tế học đường
+
+ Bước 2: click menu Quản lý sổ sức khỏe
+
+ Bước 3: Hiển thị loại khám
+
+ 2. Tìm kiếm theo đợt khám
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn
+
+ 3. Xem sổ sức khỏe
+
+ Click loại khám > click chọn đợt khám > Hiển thị danh sách sổ sức khỏe
+
+ 4. Tìm kiếm kết quả sức khỏe
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn
+
+ 5. Cập nhật sổ khám sức khỏe
+
+ Bước 1 : Click button Nhập kết quả khám
+
+ Bước 2: Nhập/chọn đầy đủ hợp lệ các trường dữ liệu > click lưu để nhập kết quả khám
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường thời gian khám bệnh thuộc thời gian đợt khám và không lớn hơn thời gian hiện tại
+ Click Lưu bản ghi hiển thị bên ngoài danh sách
+ 6. Xuất excel kết quả khám
+
+ Trên màn hình chi tiết kết quả khám > click button Xuất excel > File xuất excel được tải về
+
+ Lưu ý :
+
+ Thực hiện xuất excel > File tải về hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với danh sách
+ 7. Nhập excel kết quả khám
+
+ Bước 1 : Danh sách > Click button Nhập excel
+
+ Bước 2 : Hiển thị form > Nhập đầy đủ thông tin > Click button Nhập excel thực hiện thành công
+
+ Lưu ý :
+
+ Tải file không đúng định dạng ,Tải file quá dung lượng tối đa , Tải file đúng file mẫu lên hệ thống đưa ra thông báo lỗi
+ Bỏ trống các trường bắt buộc upload file lên  hệ thống trả về 1 file kết quả và thông báo lỗi
+ + Tải file với trường thời gian khám không thuộc đợt khám hệ thống báo lỗi và trả về file kết quả
+
+ + Tải file với trường thời gian khám lớn hơn thời gian hiện tại hệ thống báo lỗi và trả về file kết quả
+
+==================================================
+

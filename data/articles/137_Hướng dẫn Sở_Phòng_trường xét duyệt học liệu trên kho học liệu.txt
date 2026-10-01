@@ -1,0 +1,15 @@
+### BÀI VIẾT [137]: Hướng dẫn Sở/Phòng/trường xét duyệt học liệu trên kho học liệu
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Kho học liệu số > Nhà trường
+- Link gốc: https://hotro.k12online.vn/kho-hoc-lieu/huong-dan-so-phong-truong-xet-duyet-hoc-lieu-tren-kho-hoc-lieu.html
+
+**Nội dung:**
+Bước 1: Đăng nhập hệ thống K12Online bằng tài khoản được cấp
+
+ Bước 2: Vào menu Kho học liệu => Chọn Quản lý nội dung
+
+ Bước 3: Xem nội dung cần kiểm duyệt bằng cách nhấn vào tiêu đề của học liệu đó
+
+ Bước 4: Nhấn vào hình mũi tên tại cột Trạng thái để thực hiện Xét duyệt hoặc Từ chối xét duyệt.
+
+==================================================
+

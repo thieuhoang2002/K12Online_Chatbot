@@ -1,0 +1,218 @@
+### BÀI VIẾT [75]: Hướng dẫn giáo viên quản lý danh sách phiếu mượn tài sản
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Cơ sở vật chất > Giáo viên
+- Link gốc: https://hotro.k12online.vn/giao-vien4/huong-dan-giao-vien-quan-ly-danh-sach-phieu-muon-tai-san.html
+
+**Nội dung:**
+Bước 1: Đăng nhập thành công vào hệ thống
+
+ Bước 2: Cơ sở vật chất > Phiếu mượn tài sản
+
+ 1. Danh sách phiếu mượn
+
+ Bước 1: Menu Phiếu mượn tài sản> Chọn tab Danh sách phiếu mượn
+
+ Bước 2: Hiển thị danh sách phiếu mượn tài sản
+
+ Click Sắp xếp theo > Chọn kiểu sắp xếp > Hiển thị danh sách theo trạng thái sắp xếp.
+ Click icon chỉnh sửa để thực hiện chỉnh sửa phiếu mượn
+ Click icon xem chi tiết để thực hiện xem chi tiết phiếu mượn
+ Click icon xóa để thực hiện xóa phiếu mượn
+ Click icon hủy phiếu mượn để thực hiện hủy phiếu mượn
+
+ Tải lại
+ Bước 1: Trên danh sách > click button Tải lại > Thực hiện tải lại danh sách.
+
+ Sắp xếp
+ Trên danh sách > click button Sắp xếp theo > Chọn kiểu sắp xếp> Hiển thị danh sách theo trạng thái sắp xếp.
+
+ Tổng số bản ghi
+
+ Bước 1: Trên màn hình danh sách> Xem tổng số bản ghi
+
+ Phân trang
+ Trên màn hình: hiển thị phân trang ở phía dưới bên phải màn khi danh sách có > 20 bản ghi
+
+ + Click icon << (>>) để chuyển đến trang trước đó (trang tiếp theo)
+
+ + Click icon  << << (>> >>) để chuyển đến trang đầu tiên (trang cuối cùng)
+
+ Thêm mới phiếu mượn
+
+ Bước 1: Trên danh sách> Click button thêm mới
+
+ 2.1. Thêm mới phiếu mượn thường
+
+ Bước 1: Trên danh sách > Click button Thêm mới> Click thêm mới phiếu mượn
+
+ Bước 2: Hiển thị màn hình them mới phiếu mượn thường. Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Bước 3: Click Lưu để hoàn thành việc them mới phiếu mượn thành công
+
+ Lưu ý:
+
+ Các trường có dấu (*) bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Ngày mượn: Nhập ngày mượn lớn hơn thời gian hiện tại
+ Ngày trả: Nhập ngày trả lớn hơn ngày mượn
+ Ghi chú: Nhập ghi chú cho phiếu mượn
+ Danh sách thiết bị
+ Tên thiết bị: Hiển thị các thiết bị ở trạng thái sẵn sàng mượn, chọn 1 thiết bị
+ Mã thiết bị: Hiển thị dữ liệu theo tên thiết bị đã chọn
+ Danh mục thiết bị: Hiển thị dữ liệu theo tên thiết bị đã chọn
+ Môn học: Hiển thị giá trị theo tên thiết bị đã chọn
+ Số lượng mượn: Nhập số lượng là số nguyên dương lớn hơn 0
+ Mục đích mượn: Nhập mục đích mượn tối đa 225 ký tự
+
+ Danh sách phòng:
+ Tên phòng: Hiển thị các phòng đang hoạt động ở trạng thái sẵn sàng mượn, chọn 1 phòng
+ Mã phòng: Hiển thị gia theo tên phòng đã chọn
+ Khu vực: Hiển thị giá trị theo tên phòng đã chọn
+ Khối phòng: Hiển thị giá trị theo tên phòng đã chọn
+ Mục đích mượn: Nhập mục đích mượn tối đa 225 ký tự
+
+ 2.2. Thêm mới phiếu mượn theo PPCT
+
+ Bước 1: Trên danh sách > Click button Thêm mới> Click thêm mới phiếu mượn theo PPCT
+
+ Bước 2: Hiển thị màn hình them mới phiếu mượn thường. Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Bước 3: Click Lưu để hoàn thành việc them mới phiếu mượn thành công
+
+ Lưu ý:
+
+ Các trường có dấu (*) bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Tuần mượn: List các giá trị theo tuần học của năm học. Chọn 1 Sau khi chọn hệ thống list ra các ngày học mà GV có tiết giảng dạy với bài học
+ Ghi chú: Nhập ghi chú cho phiếu mượn
+ Danh sách thiết bị
+ Tiết mượn: Chọn tiết mà giáo viên dạy của ngày học đó  ( list giá trị từ danh mục PPCT)
+ Lớp học: Hiển thị giá trị theo Tiết mượn
+ Môn học: Hiển thị giá trị theo Tiết mượn
+ Tên bài học: Hiển thị giá trị theo tiết mượn
+ Tên thiết bị: Hiển thị các thiết bị ở trạng thái sẵn sàng mượn, chọn 1 thiết bị
+ Đơn vị tính: Hiển thị giá trị theo tên thiết bị
+ Số lượng mượn: Nhập số lượng là số nguyên dương lớn hơn 0
+ Mục đích mượn: Nhập mục đích mượn tối đa 225 ký tự
+
+ Danh sách phòng:
+ Tiết mượn: Chọn tiết mà giáo viên dạy của ngày học đó  ( list giá trị từ danh mục PPCT)
+ Tên phòng: Hiển thị các phòng đang hoạt động ở trạng thái sẵn sàng mượn, chọn 1 phòng
+ Mục đích mượn: Nhập mục đích mượn tối đa 225 ký tự
+
+ Chỉnh sửa phiếu mượn
+
+ Trên danh sách> Click icon chỉnh sửa
+
+ 3.1. Chỉnh sửa phiếu mượn thường
+
+ Bước 1: Trên danh sách > Click icon chỉnh sửa (của phiếu mượn có loại mượn là thường)
+
+ Bước 2: Hiển thị màn hình chỉnh sửa phiếu mượn. Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Bước 3: Click Lưu để hoàn thành việc chỉnh sửa phiếu mượn thành công
+
+ Lưu ý:
+
+ Các trường có dấu (*) bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Ngày mượn: Nhập ngày mượn lớn hơn thời gian hiện tại
+ Ngày trả: Nhập ngày trả lớn hơn ngày mượn
+ Ghi chú: Nhập ghi chú cho phiếu mượn
+ Danh sách thiết bị
+ Tên thiết bị: Hiển thị các thiết bị ở trạng thái sẵn sàng mượn, chọn 1 thiết bị
+ Mã thiết bị: Hiển thị dữ liệu theo tên thiết bị đã chọn
+ Danh mục thiết bị: Hiển thị dữ liệu theo tên thiết bị đã chọn
+ Môn học: Hiển thị giá trị theo tên thiết bị đã chọn
+ Số lượng mượn: Nhập số lượng là số nguyên dương lớn hơn 0
+ Mục đích mượn: Nhập mục đích mượn tối đa 225 ký tự
+
+ Danh sách phòng:
+ Tên phòng: Hiển thị các phòng đang hoạt động ở trạng thái sẵn sàng mượn, chọn 1 phòng
+ Mã phòng: Hiển thị gia theo tên phòng đã chọn
+ Khu vực: Hiển thị giá trị theo tên phòng đã chọn
+ Khối phòng: Hiển thị giá trị theo tên phòng đã chọn
+ Mục đích mượn: Nhập mục đích mượn tối đa 225 ký tự
+
+ 3.2. Chỉnh sửa phiếu mượn theo PPCT
+
+ Bước 1: Trên danh sách > Click icon chỉnh sửa (của phiếu mượn có loại mượn là PPCT)
+
+ Bước 2: Hiển thị màn hình chỉnh sửa phiếu mượn. Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ Bước 3: Click Lưu để hoàn thành việc chỉnh phiếu mượn thành công
+
+ Lưu ý:
+
+ Các trường có dấu (*) bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Tuần mượn: List các giá trị theo tuần học của năm học. Chọn 1 Sau khi chọn hệ thống list ra các ngày học mà GV có tiết giảng dạy với bài học
+ Ghi chú: Nhập ghi chú cho phiếu mượn
+ Danh sách thiết bị( Chỉ hiển thị khi tồn tại thứ)
+ Tiết mượn: Chọn tiết mà giáo viên dạy của ngày học đó  ( list giá trị từ danh mục PPCT)
+ Lớp học: Hiển thị giá trị theo Tiết mượn
+ Môn học: Hiển thị giá trị theo Tiết mượn
+ Tên bài học: Hiển thị giá trị theo tiết mượn
+ Tên thiết bị: Hiển thị các thiết bị ở trạng thái sẵn sàng mượn, chọn 1 thiết bị
+ Đơn vị tính: Hiển thị giá trị theo tên thiết bị
+ Số lượng mượn: Nhập số lượng là số nguyên dương lớn hơn 0
+ Mục đích mượn: Nhập mục đích mượn tối đa 225 ký tự
+
+ Danh sách phòng( Chỉ hiển thị khi tồn tại thứ)
+ Tiết mượn: Chọn tiết mà giáo viên dạy của ngày học đó  ( list giá trị từ danh mục PPCT)
+ Tên phòng: Hiển thị các phòng đang hoạt động ở trạng thái sẵn sàng mượn, chọn 1 phòng
+ Mục đích mượn: Nhập mục đích mượn tối đa 225 ký tự
+
+ Hủy phiếu mượn
+
+ Bước 1: Trên màn hình danh sách > Click icon Hủy mượn
+
+ Bước 2: Hệ thống hiển thị popup xác nhận
+
+ + Click Hủy mượn để xác nhận hủy phiếu mượn
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ Xóa phiếu mượn
+
+ 5.1.Xóa 1 phiếu mượn
+
+ Bước 1: Trên màn hình danh sách > Click icon xóa
+
+ Bước 2: Hệ thống hiển thị popup xác nhận
+
+ + Click Xóa để xác nhận xóa phiếu mượn
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ 5.2. Xóa nhiều phiếu mượn
+
+ Bước 1: Trên màn hình danh sách > Tích chọn checkbox > Click button Xóa
+
+ Bước 2: Hệ thống hiển thị popup xác nhận
+
+ + Click Xóa để xác nhận xóa phiếu mượn
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ Tìm kiếm phiếu mượn tài sản
+
+ Bước 1: Tại vùng tìm kiếm: nhập/ chọn tiêu chí tìm kiếm > Click button Tìm kiếm/ nhấn Enter để thực hiện tìm kiếm phiếu mượn tài sản
+
+ Xuất excel
+
+ Bước 1: Trên màn hình danh sách > Click button Xuất excel > Thực hiện xuất excel thành công
+
+ Bước 2: Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+ Xem chi tiết phiếu mượn
+
+ Bước 1: Trên màn hình danh sách > Click icon xem chi tiết phiếu mượn
+
+ Bước 2: Màn hình hiển thị chi tiết phiếu mượn
+
+ Bước 1: Đăng nhập thành công vào hệ thống
+
+ Bước 2: Cơ sở vật chất > Phiếu mượn tài sản
+
+==================================================
+

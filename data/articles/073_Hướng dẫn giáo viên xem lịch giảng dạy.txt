@@ -1,0 +1,13 @@
+### BÀI VIẾT [73]: Hướng dẫn giáo viên xem lịch giảng dạy
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Thời khóa biểu > Giáo viên
+- Link gốc: https://hotro.k12online.vn/giao-vien2/huong-dan-giao-vien-xem-lich-giang-day.html
+
+**Nội dung:**
+Sau khi nhà trường duyệt lịch là giáo viên có thể xem được lịch dạy của mình
+ Bước 1: Đăng nhập tài khoản giáo viên nằm trong list Cấu hình tiết dạy, buổi dạy
+ Bước 2: Chọn ứng dụng Xếp thời khóa biểu
+
+ Bước 3: Chọn menu Lịch giảng dạy để xem lịch của giáo viên
+
+==================================================
+

@@ -24,7 +24,6 @@ import {
   PanelLeftClose,
   PanelLeft,
   PenSquare,
-  ChevronDown,
 } from "lucide-react";
 import CloudflareTurnstile from "@/components/CloudflareTurnstile";
 import AuthModal from "@/components/AuthModal";
@@ -71,27 +70,44 @@ const QUICK_PROMPTS = [
 // Bộ nhớ đệm Client-side lưu câu trả lời ngay trên trình duyệt (phản hồi 0.01 giây khi hỏi lại)
 const clientCache = new Map<string, { reply: string; sources: any; followUps?: string[] }>();
 
-const AVAILABLE_MODELS = [
-  { id: "qwen/qwen3.8-27b:free", name: "Qwen 3.8 27B", badge: "Siêu tốc ~1.9s", desc: "Mô hình khuyên dùng" },
-  { id: "nvidia/nemotron-3-ultra-550b-a55b:free", name: "Nemotron 3 550B", badge: "Chi tiết", desc: "Mô hình chuyên sâu" },
-  { id: "google/gemma-4-31b-it:free", name: "Google Gemma 4", badge: "Dự phòng", desc: "Open-weight Gemini" },
-];
+// Model mặc định chạy ngầm (hệ thống tự động xoay key và dự phòng, không cần hiển thị gây rối người dùng)
+const DEFAULT_MODEL = "qwen/qwen3.8-27b:free";
 
-// Biểu tượng ngôi sao 4 cánh đa sắc chuẩn phong cách Google Gemini
-function GeminiStar({ className = "w-6 h-6" }: { className?: string }) {
+// Biểu tượng nhận diện thương hiệu riêng biệt cho K12Online AI Assistant (Mũ cử nhân số hóa + Tia sáng tri thức AI)
+function K12Icon({ className = "w-6 h-6" }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 24 24" fill="none">
+    <svg className={className} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        <linearGradient id="gemini-star-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#4285f4" />
-          <stop offset="35%" stopColor="#9b72cb" />
-          <stop offset="70%" stopColor="#d96570" />
-          <stop offset="100%" stopColor="#13b5ea" />
+        <linearGradient id="k12-bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#0284c7" />
+          <stop offset="50%" stopColor="#2563eb" />
+          <stop offset="100%" stopColor="#4f46e5" />
+        </linearGradient>
+        <linearGradient id="k12-spark-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#38bdf8" />
+          <stop offset="100%" stopColor="#ffffff" />
         </linearGradient>
       </defs>
+      {/* Nền bo góc mềm mại */}
+      <rect width="32" height="32" rx="9" fill="url(#k12-bg-grad)" />
+      {/* Mũ cử nhân / Cuốn sách thông minh */}
       <path
-        d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z"
-        fill="url(#gemini-star-grad)"
+        d="M16 6.8L6.5 11.8L16 16.8L25.5 11.8L16 6.8Z"
+        fill="white"
+        fillOpacity="0.95"
+      />
+      <path
+        d="M9 13.8V18.8C9 21.5 12.1 23.8 16 23.8C19.9 23.8 23 21.5 23 18.8V13.8L16 17.5L9 13.8Z"
+        fill="white"
+        fillOpacity="0.85"
+      />
+      {/* Tia sáng tri thức AI */}
+      <circle cx="24.5" cy="8.5" r="2.2" fill="url(#k12-spark-grad)" />
+      <path
+        d="M24.5 4.5V6.5M24.5 10.5V12.5M20.5 8.5H22.5M26.5 8.5H28.5"
+        stroke="#38bdf8"
+        strokeWidth="1.2"
+        strokeLinecap="round"
       />
     </svg>
   );
@@ -102,8 +118,6 @@ export default function Home() {
   const [currentSessionId, setCurrentSessionId] = useState<string>("");
   const [inputMessage, setInputMessage] = useState("");
   const [loading, setLoading] = useState(false);
-  const [selectedModel, setSelectedModel] = useState(AVAILABLE_MODELS[0].id);
-  const [isModelDropdownOpen, setIsModelDropdownOpen] = useState(false);
 
   // Theme & Layout state
   const [theme, setTheme] = useState<"dark" | "light">("dark");
@@ -444,7 +458,7 @@ export default function Home() {
         body: JSON.stringify({
           message: query,
           history: updatedMessages.slice(0, -1).map((m) => ({ role: m.role, content: m.content })),
-          model: selectedModel,
+          model: DEFAULT_MODEL,
           turnstileToken: turnstileToken,
         }),
       });
@@ -581,7 +595,6 @@ export default function Home() {
 
   const isDarkMode = theme === "dark";
   const isNewChat = messages.length === 0;
-  const activeModelObj = AVAILABLE_MODELS.find((m) => m.id === selectedModel) || AVAILABLE_MODELS[0];
 
   return (
     <div
@@ -597,7 +610,7 @@ export default function Home() {
         />
       )}
 
-      {/* 2. SIDEBAR (Phong cách Gemini: Thu gọn / Mở rộng, Tối giản, Chứa nút Đăng nhập & Đổi theme) */}
+      {/* 2. SIDEBAR (Tối giản: Chứa Đoạn chat mới, Đăng nhập lưu hoạt động, Đổi theme sáng/tối) */}
       <aside
         className={`fixed inset-y-0 left-0 z-50 lg:static lg:z-auto flex flex-col shrink-0 transition-all duration-300 ease-in-out border-r ${
           isDarkMode
@@ -612,13 +625,13 @@ export default function Home() {
         {/* Header Sidebar */}
         <div className="h-14 px-4 flex items-center justify-between shrink-0">
           <div className="flex items-center gap-2.5">
-            <GeminiStar className="w-5 h-5 shrink-0" />
+            <K12Icon className="w-6 h-6 shrink-0 shadow-sm" />
             <span
-              className={`font-semibold text-base tracking-tight ${
+              className={`font-semibold text-base tracking-tight truncate ${
                 isDarkMode ? "text-white" : "text-[#1f1f1f]"
               }`}
             >
-              K12Online AI
+              K12Online AI Assistant
             </span>
           </div>
           <button
@@ -795,7 +808,7 @@ export default function Home() {
           }`}
         >
           {/* Cụm bên trái: Nút mở sidebar & Tên ứng dụng */}
-          <div className="flex items-center gap-3 min-w-0">
+          <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
             {/* Trên Mobile/Tablet: Nút Menu Hamburger mở Drawer */}
             <button
               onClick={() => setIsSidebarOpen(true)}
@@ -820,78 +833,26 @@ export default function Home() {
               </button>
             )}
 
-            {/* Tên ứng dụng phong cách Gemini */}
+            {/* Tên ứng dụng K12Online AI Assistant */}
             <div className="flex items-center gap-2 select-none">
-              <GeminiStar className="w-5 h-5 hidden sm:block" />
+              <K12Icon className="w-6 h-6 shrink-0 shadow-sm" />
               <span
-                className={`font-semibold text-base sm:text-lg tracking-tight ${
+                className={`font-semibold text-sm sm:text-base tracking-tight truncate ${
                   isDarkMode ? "text-white" : "text-[#1f1f1f]"
                 }`}
               >
-                K12Online
+                K12Online AI Assistant
               </span>
             </div>
           </div>
 
-          {/* Cụm ở giữa: Dropdown chọn Model (Phong cách Gemini: Flash Mở rộng ▾) */}
-          <div className="relative">
-            <button
-              onClick={() => setIsModelDropdownOpen(!isModelDropdownOpen)}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium transition border ${
-                isDarkMode
-                  ? "bg-[#1e1f20] hover:bg-[#282a2c] text-slate-200 border-[#2d2f31]"
-                  : "bg-slate-100 hover:bg-slate-200 text-slate-800 border-[#e3e3e3]"
-              }`}
-            >
-              <span className="w-2 h-2 rounded-full bg-sky-500 animate-pulse"></span>
-              <span className="font-medium">{activeModelObj.name}</span>
-              <ChevronDown className="w-3.5 h-3.5 opacity-70" />
-            </button>
-
-            {/* Dropdown Menu Model */}
-            {isModelDropdownOpen && (
-              <div
-                className={`absolute top-full mt-1.5 left-1/2 -translate-x-1/2 w-64 rounded-2xl shadow-xl border p-1.5 z-50 ${
-                  isDarkMode ? "bg-[#1e1f20] border-[#2d2f31]" : "bg-white border-[#e3e3e3]"
-                }`}
-              >
-                {AVAILABLE_MODELS.map((m) => (
-                  <button
-                    key={m.id}
-                    onClick={() => {
-                      setSelectedModel(m.id);
-                      setIsModelDropdownOpen(false);
-                    }}
-                    className={`w-full p-2.5 rounded-xl text-left text-xs transition flex items-start justify-between ${
-                      m.id === selectedModel
-                        ? isDarkMode
-                          ? "bg-[#282a2c] text-sky-400"
-                          : "bg-slate-100 text-sky-700"
-                        : isDarkMode
-                        ? "text-slate-300 hover:bg-[#282a2c]/60"
-                        : "text-slate-700 hover:bg-slate-50"
-                    }`}
-                  >
-                    <div>
-                      <div className="font-semibold">{m.name}</div>
-                      <div className="text-[10px] text-slate-400">{m.desc}</div>
-                    </div>
-                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-sky-500/10 text-sky-500 font-medium">
-                      {m.badge}
-                    </span>
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-
-          {/* Cụm bên phải: Nút Đoạn chat mới (Mobile), Nút Đăng nhập Gemini Pill */}
-          <div className="flex items-center gap-2">
-            {/* Nút Tạo đoạn chat mới dạng icon cây bút trên Mobile (Ảnh 2) */}
+          {/* Cụm bên phải: Nút Đoạn chat mới (Mobile), Nút Đổi Theme, Nút Đăng nhập */}
+          <div className="flex items-center gap-1.5 sm:gap-2">
+            {/* Nút Tạo đoạn chat mới nhanh */}
             <button
               onClick={createNewChat}
               disabled={loading}
-              className={`p-2 rounded-full transition lg:hidden ${
+              className={`p-2 rounded-full transition ${
                 isDarkMode ? "hover:bg-[#1e1f20] text-slate-300" : "hover:bg-slate-100 text-slate-700"
               }`}
               title="Cuộc trò chuyện mới"
@@ -899,21 +860,34 @@ export default function Home() {
               <PenSquare className="w-5 h-5 text-sky-500" />
             </button>
 
+            {/* Nút bật tắt Chế độ Sáng / Tối tiện lợi trên Topbar */}
+            <button
+              onClick={toggleTheme}
+              className={`p-2 rounded-full transition ${
+                isDarkMode
+                  ? "hover:bg-[#1e1f20] text-amber-300"
+                  : "hover:bg-slate-100 text-indigo-600"
+              }`}
+              title={isDarkMode ? "Chuyển sang giao diện Sáng" : "Chuyển sang giao diện Tối"}
+            >
+              {isDarkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+            </button>
+
             {/* Cloudflare Turnstile vô hình */}
             <CloudflareTurnstile onVerify={handleTurnstileVerify} />
 
-            {/* Nút Đăng nhập dạng Pill màu xanh chuẩn Gemini (Desktop Hình 1) */}
+            {/* Nút Đăng nhập dạng Pill màu xanh */}
             {!userEmail ? (
               <button
                 onClick={() => setIsAuthOpen(true)}
-                className={`hidden sm:flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-semibold transition shadow-xs ${
+                className={`flex items-center gap-1.5 px-3 sm:px-4 py-1.5 rounded-full text-xs font-semibold transition shadow-xs ${
                   isDarkMode
                     ? "bg-[#c2e7ff] hover:bg-[#a6d5f7] text-[#001d35]"
                     : "bg-[#0b57d0] hover:bg-[#0842a0] text-white"
                 }`}
               >
                 <LogIn className="w-3.5 h-3.5" />
-                <span>Đăng nhập</span>
+                <span className="hidden xs:inline">Đăng nhập</span>
               </button>
             ) : (
               <div className="w-8 h-8 rounded-full bg-sky-600 flex items-center justify-center font-bold text-white text-xs shadow-xs">
@@ -928,27 +902,27 @@ export default function Home() {
           ref={chatScrollRef}
           className="flex-1 overflow-y-auto px-4 md:px-6 py-6 flex flex-col justify-between"
         >
-          {/* TRƯỜNG HỢP 1: CUỘC HỘI THOẠI MỚI (Trang chào đón chuẩn Gemini Desktop & Mobile) */}
+          {/* TRƯỜNG HỢP 1: CUỘC HỘI THOẠI MỚI (Trang chào đón) */}
           {isNewChat ? (
             <div className="flex-1 flex flex-col items-center justify-center max-w-2xl mx-auto w-full my-auto text-center px-4 animate-fade-in">
-              {/* Ngôi sao 4 cánh Gemini gradient rực rỡ ở chính giữa (Ảnh 2) */}
-              <div className="mb-6">
-                <GeminiStar className="w-14 h-14 sm:w-16 sm:h-16 drop-shadow-md" />
+              {/* Logo nhận diện thương hiệu K12Online AI ở chính giữa */}
+              <div className="mb-5">
+                <K12Icon className="w-14 h-14 sm:w-16 sm:h-16 shadow-lg shadow-sky-500/20" />
               </div>
 
-              {/* Tiêu đề chào đón theo đúng ảnh người dùng gửi */}
+              {/* Tiêu đề chào đón */}
               <h1
-                className={`text-2xl sm:text-4xl font-normal tracking-tight mb-3 ${
+                className={`text-xl sm:text-3xl font-medium tracking-tight mb-2.5 ${
                   isDarkMode ? "text-white" : "text-[#1f1f1f]"
                 }`}
               >
                 {userEmail
                   ? `Tôi có thể giúp gì cho bạn, ${userEmail.split("@")[0]}?`
-                  : "Chúng ta nên bắt đầu từ đâu nhỉ?"}
+                  : "K12Online AI Assistant có thể giúp gì cho bạn hôm nay?"}
               </h1>
 
-              <p className="text-sm sm:text-base text-slate-400 mb-8 max-w-md">
-                Trợ lý AI hỗ trợ nghiệp vụ K12Online chính xác và nhanh chóng.
+              <p className="text-xs sm:text-sm text-slate-400 mb-8 max-w-md">
+                Trợ lý thông minh hỗ trợ tra cứu nghiệp vụ giáo viên, nhà trường và học sinh.
               </p>
 
               {/* Lưới các gợi ý câu hỏi thường gặp (Quick Prompt Cards) */}
@@ -986,7 +960,7 @@ export default function Home() {
                 >
                   {m.role === "assistant" && (
                     <div className="w-8 h-8 rounded-full flex items-center justify-center shrink-0 mt-0.5">
-                      <GeminiStar className="w-6 h-6" />
+                      <K12Icon className="w-7 h-7" />
                     </div>
                   )}
 
@@ -1149,7 +1123,7 @@ export default function Home() {
           )}
         </div>
 
-        {/* 4. KHUNG NHẬP LIỆU FLOATING CAPSULE CHUẨN GEMINI (Hình 1 & Hình 2) */}
+        {/* 4. KHUNG NHẬP LIỆU FLOATING CAPSULE */}
         <div className="shrink-0 px-3 md:px-6 pb-3 pt-1">
           <div className="max-w-3xl w-full mx-auto">
             {/* Thanh Capsule bo tròn floating */}
@@ -1227,31 +1201,34 @@ export default function Home() {
               </button>
             </div>
 
-            {/* Dòng chữ bản quyền & liên kết tinh gọn thay thế footer cũ (Phong cách Gemini) */}
-            <div className="mt-2 text-center text-[11px] text-slate-400 dark:text-slate-500 flex items-center justify-center gap-1.5 flex-wrap">
-              <span>Dự án cộng đồng độc lập (phi lợi nhuận)</span>
+            {/* Dòng chữ gộp tham chiếu dữ liệu uy tín & link trang hỗ trợ K12Online */}
+            <div className="mt-2 text-center text-[11px] sm:text-xs text-slate-400 dark:text-slate-500 flex items-center justify-center gap-1.5 flex-wrap">
+              <span>Dự án cộng đồng (phi lợi nhuận)</span>
               <span>•</span>
-              <a
-                href="https://hotro.k12online.vn"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:underline hover:text-sky-500 transition-colors inline-flex items-center gap-0.5"
-              >
-                <span>Trang hỗ trợ K12Online</span>
-                <ExternalLink className="w-2.5 h-2.5" />
-              </a>
+              <span>
+                Dữ liệu được tham chiếu trực tiếp từ{" "}
+                <a
+                  href="https://hotro.k12online.vn"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sky-500 hover:text-sky-400 font-medium hover:underline inline-flex items-center gap-0.5"
+                  title="Cổng thông tin Trợ giúp K12Online chính thức (Viettel)"
+                >
+                  <span>Trang hỗ trợ K12Online</span>
+                  <ExternalLink className="w-2.5 h-2.5" />
+                </a>
+              </span>
               <span>•</span>
               <a
                 href="https://github.com/thieuhoang2002/K12Online_Chatbot"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:underline hover:text-sky-500 transition-colors inline-flex items-center gap-0.5"
+                className="hover:text-slate-300 transition-colors inline-flex items-center gap-0.5"
+                title="Mã nguồn mở trên GitHub"
               >
                 <span>GitHub</span>
                 <Github className="w-2.5 h-2.5" />
               </a>
-              <span>•</span>
-              <span>Trợ lý AI có thể mắc sai sót.</span>
             </div>
           </div>
         </div>

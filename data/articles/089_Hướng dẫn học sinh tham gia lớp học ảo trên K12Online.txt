@@ -1,0 +1,33 @@
+### BÀI VIẾT [89]: Hướng dẫn học sinh tham gia lớp học ảo trên K12Online
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Học sinh
+- Link gốc: https://hotro.k12online.vn/hoc-sinh/lop-hoc-ao.html
+
+**Nội dung:**
+Để tham gia vào lớp học ảo do giáo viên tổ chức, học sinh thực hiện theo hướng dẫn dưới đây:
+
+ Trường hợp 1: Sử dụng máy tính
+
+ Bước 1: Học sinh truy cập vào trình duyệt Google Chrome
+
+ Bước 2: Đăng nhập vào hệ thống K12Online với tài khoản đã được cấp
+
+ Cách 1: Vào Thời khóa biểu => Click vào lớp học ảo muốn tham gia => Chọn Vào học để tham gia vào lớp học.
+
+ Cách 2: Vào Lớp học ảo => Tìm tên lớp học ảo muốn tham gia => Tại cột Hành động , nhấn nút Tham gia/Vào học .
+
+ Trường hợp 2: Sử dụng các thiết bị di động (như tablet, smartphone...)
+
+ Bước 1: Học sinh mở ứng dụng K12Online trên máy tính bảng/điện thoại di động (Lưu ý: Không sử dụng trình duyệt web trên điện thoại để tham gia lớp học ảo).
+
+ Bước 2: Đăng nhập vào hệ thống K12Online với tài khoản đã được cấp
+
+ Bước 3: Tham gia lớp học ảo
+
+ Cách 1: Chọn menu Thời khóa biểu => Click vào tiết học, ngày học mà có lớp học ảo muốn tham gia => Click vào tiêu đề tiết học đó => Nhấn Tham gia/Vào học
+
+ Cách 2: Chọn menu Tài khoản => Chọn Lớp học ảo => Tìm tên lớp học ảo muốn tham gia => Vuốt sang trái để tham gia Vào học .
+
+ Lưu ý: Trong lần cài đặt và đăng nhập đầu tiên, học sinh phải cho phép K12Online có quyền được sử dụng máy ảnh, micro thì mới có thể tương tác được trong lớp học ảo.
+
+==================================================
+

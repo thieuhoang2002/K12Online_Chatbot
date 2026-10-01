@@ -1,0 +1,27 @@
+### BÀI VIẾT [67]: Tổ chức kiểm tra và giám sát học sinh thi trực tuyến
+- Chuyên mục: Trang chủ
+- Link gốc: https://hotro.k12online.vn/giao-vien/giam-sat-thi-truc-tuyen.html
+
+**Nội dung:**
+I. Hướng dẫn giáo viên khởi tạo
+
+ 1.1. Giáo viên tạo bài kiểm tra
+
+ - Giáo viên tạo bài kiểm tra dạng phân tán trên hệ thống.
+
+ - Thời gian của bài kiểm tra sao cho phù hợp với mong muốn của GV.
+
+ - Có thể đặt mật khẩu bài thi khi cần.
+
+ 1.2. Tạo lớp học ảo
+
+ - Giáo viên tạo lớp học ảo trước khi bài kiểm tra diễn ra khoảng 15-30 phút.
+
+ II. Hướng dẫn tổ chức giám sát thi
+
+ 2.1. Hình thức áp dụng
+
+ - Áp dụng khi học sinh thi trên máy tính có kết nối với webcam và micro hoạt động tốt.
+
+==================================================
+

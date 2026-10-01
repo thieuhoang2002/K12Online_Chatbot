@@ -1,0 +1,33 @@
+### BÀI VIẾT [330]: Hướng dẫn giáo viên quản lý thu học sinh
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Học phí > Giáo viên
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/hoc-phi/nha-truong-ke-toan/huong-dan-giao-vien-quan-ly-thu-hoc-sinh.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản Giáo viên chủ nhiệm
+
+ Bước 2: Trang chủ  > Click vào module Học phí > Vào menu Quản lý thu  > Click Thu học sinh
+
+ 1. Tìm kiếm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ 2. Xuất excel
+
+ Danh sách > Click button Xuất excel > File excel được tải về
+
+ 3. Xem chi tiết công nợ của học sinh
+
+ Bước 1: Danh sách > Click icon xem chi tiết
+
+ Bước 2: Hiển thị màn hình xem chi tiết
+
+ 3.1. Tìm kiếm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ 3.2. Xuất excel
+
+ Danh sách > Click button Xuất excel > File excel được tải về
+
+==================================================
+

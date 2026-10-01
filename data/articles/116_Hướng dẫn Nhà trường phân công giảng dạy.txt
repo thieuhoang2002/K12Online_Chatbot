@@ -1,0 +1,61 @@
+### BÀI VIẾT [116]: Hướng dẫn Nhà trường phân công giảng dạy
+- Chuyên mục: Trang chủ > Cấu hình chung > Quản lý đào tạo
+- Link gốc: https://hotro.k12online.vn/huong-dan-nha-truong-phan-cong-giang-day.html
+
+**Nội dung:**
+Quy trình thực hiện phân công giảng dạy sẽ bao gồm các bước sau:
+
+ Cập nhật kế hoạch đào tạo
+
+ Thêm giáo viên ngoài biên chế (nếu có)
+
+ Phân công giảng dạy (phân môn, phân lớp, phân tổ chuyên môn)
+
+ Phân công chủ nhiệm.
+
+ Lưu ý: Để thực hiện phân công giảng dạy cho giáo viên, trước tiên nhà trường cần phải đồng bộ tài khoản học sinh trên K12Online đã được thực hiện trước. Nếu không có tài khoản học sinh thì không phân công giảng dạy cho giáo viên được.
+
+ Bước 1: Cập nhật kế hoạch đào tạo
+
+ Vào Quản lý đào tạo => Chọn Kế hoạch đào tạo => Chọn Cập nhật kế hoạch để hệ thống danh mục kế hoạch đào tạo của từng khối, từng học kỳ, năm học.
+
+ Lưu ý: Phải thực hiện Cập nhật kế hoạch đào tạo trước khi sang phân lớp.
+
+ Bước 2: Thêm giáo viên ngoài biên chế (nếu có)
+
+ Tính năng này sử dụng với những trường mà có giáo viên của trường khác, đã có sẵn tài khoản tài khoản trên hệ thống K12Online nhưng cũng thực hiện công việc giảng dạy thêm tại trường mình. Do vậy, nhà trường cần thực hiện khai báo giáo viên đó để hệ thống cho phép GV đó có thể sử dụng hệ thống K12Online cho cả 2 trường.
+
+ - Vào Quản lý đào tạo => Chọn GV ngoài biên chế => Chọn Thêm mới => Nhập tài khoản của GV đã được cấp trên K12Online để thêm vào.
+
+ Bước 3: Phân công giảng dạy
+
+ Để GV có thể sử dụng K12Online vào việc dạy học trực tuyến trên hệ thống, trước tiên nhà trường cần phải thực hiện phân công giảng dạy cho GV trên hệ thống.
+
+ - Vào Quản lý đào tạo => Chọn Phân công giảng dạy và thực hiện các nghiệp vụ phân công:
+
+ 3.1. Phân môn giảng dạy
+
+ - Cách 1 (Phân môn bằng cách thủ công): Nhà trường chọn môn học và GV phụ trách môn học đó.
+
+ - Cách 2 (Phân môn bằng nhập từ file Excel): Nhà trường chọn Nhập từ Excel => Tải file mẫu về => Hoàn thiện vào file mẫu => Tải file mẫu lên.
+
+ 3.2. Phân lớp giảng dạy
+
+ - Cách 1 (Phân lớp bằng cách thủ công): Nhà trường chọn môn học và GV phụ trách môn học đó
+
+ - Cách 2 (Phân lớp bằng nhập từ file Excel): Nhà trường chọn Nhập từ Excel => Chọn cách nhập file mẫu => Tải file mẫu về => Hoàn thiện vào file mẫu => Tải file mẫu lên.
+
+ Lưu ý: Có 2 cách để nhập dữ liệu phân lớp từ Excel. Muốn sử dụng cách nào thì chọn cách đó rồi sau nó mới tải file mẫu Excel về. Mỗi cách sẽ có một file mẫu riêng của riêng cách đó.
+
+ Bước 4: Phân tổ chuyên môn
+
+ - Vào Quản lý đào tạo => Chọn Tổ chuyên môn => Nhấn Thêm mới để tạo mới tổ chuyên môn
+
+ - Nhập tên tổ chuyên môn; các môn học phụ trách và gán tổ trưởng, tổ phó (nếu có) và các thành viên trong tổ.
+
+ Bước 5: Phân công chủ nhiệm
+
+ - Vào Quản lý đào tạo => Chọn Quản lý lớp học => Nhấn vào biểu tượng chỉnh sửa để phân công GV chủ nhiệm cho các lớp.
+
+==================================================
+

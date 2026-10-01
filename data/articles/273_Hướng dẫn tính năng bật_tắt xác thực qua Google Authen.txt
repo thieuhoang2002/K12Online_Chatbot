@@ -1,0 +1,83 @@
+### BÀI VIẾT [273]: Hướng dẫn tính năng bật/tắt xác thực qua Google Authen
+- Chuyên mục: Trang chủ > Cấu hình chung > Tài khoản > Câu hỏi thường gặp
+- Link gốc: https://hotro.k12online.vn/xac-thuc-google-authenticator-tren-k12online.html
+
+**Nội dung:**
+1. Tính năng xác thực qua Google Authenticator là gì?
+
+ Tính năng xác thực qua Google Authenticator trên K12Online là tính năng bảo mật giúp nhà trường tăng cường bảo vệ tài khoản người dùng khi đăng nhập vào hệ thống.
+
+ Khi bật tính năng này, ngoài việc nhập tên đăng nhập và mật khẩu, người dùng trong trường cần nhập thêm mã xác thực 6 số được tạo trên ứng dụng Google Authenticator để hoàn tất quá trình đăng nhập.
+
+ Mã xác thực này sẽ thay đổi liên tục sau một khoảng thời gian ngắn, giúp giảm nguy cơ người khác đăng nhập trái phép ngay cả khi biết được mật khẩu của người dùng.
+
+ Lưu ý: Tính năng bật/tắt xác thực qua Google Authenticator được áp dụng cho toàn bộ trường. Sau khi bật, tất cả tài khoản thuộc trường sẽ cần thực hiện xác thực bổ sung khi đăng nhập theo quy định của hệ thống.
+
+ 2. Tại sao cần xác thực qua Google Authenticator?
+
+ Tài khoản trên K12Online có thể chứa nhiều thông tin quan trọng như thông tin học sinh, giáo viên, lớp học, bài giảng, bài kiểm tra, kết quả học tập và các dữ liệu quản lý của nhà trường.
+
+ Trong trường hợp mật khẩu bị lộ, bị đoán được hoặc người dùng vô tình chia sẻ mật khẩu, tài khoản có thể bị truy cập trái phép. Việc bật xác thực qua Google Authenticator giúp bổ sung thêm một lớp bảo vệ, yêu cầu người đăng nhập phải có mã xác thực từ ứng dụng trên thiết bị cá nhân.
+
+ 3. Việc sử dụng xác thực qua Google Authenticator giúp:
+
+ Tăng cường bảo mật cho tài khoản người dùng trong trường.
+ Giảm nguy cơ bị truy cập trái phép.
+ Hạn chế rủi ro bị đánh cắp dữ liệu hoặc thay đổi thông tin tài khoản.
+ Bảo vệ dữ liệu quản lý, dạy học và học tập trên hệ thống K12Online.
+
+ 4. Khi nào nên bật tính năng này?
+
+ Nhà trường nên bật tính năng xác thực qua Google Authenticator trong các trường hợp sau:
+
+ Nhà trường muốn tăng cường bảo mật cho toàn bộ tài khoản trên hệ thống K12Online.
+ Trường có nhiều tài khoản quản trị, giáo viên, học sinh đang sử dụng thường xuyên.
+ Nhà trường có yêu cầu bảo vệ dữ liệu người dùng, dữ liệu học tập, bài kiểm tra, kết quả đánh giá.
+ Trường muốn hạn chế nguy cơ tài khoản bị truy cập trái phép do mật khẩu yếu, mật khẩu bị lộ hoặc bị chia sẻ.
+ Nhà trường đã sẵn sàng hướng dẫn người dùng cài đặt và sử dụng ứng dụng Google Authenticator khi đăng nhập.
+
+ 5. Cách bật xác thực qua Google Authenticator
+
+ Để bật tính năng xác thực qua Google Authenticator, tài khoản quản trị thực hiện như sau:
+
+ Bước 1: Đăng nhập vào hệ thống K12Online bằng tài khoản quản trị của trường.
+
+ Bước 2: Truy cập khu vực Cài đặt hoặc Thiết lập bảo mật của nhà trường.
+
+ Bước 3: Tìm mục Xác thực MFA hoặc Xác thực qua Google Authenticator.
+
+ Bước 4: Chọn trạng thái Bật tính năng xác thực qua Google Authenticator.
+
+ Bước 5: Hệ thống hiển thị thông báo xác nhận bật MFA cho toàn trường. Quản trị viên đọc kỹ nội dung thông báo, sau đó chọn Xác nhận bật để hoàn tất.
+
+ Sau khi bật thành công, người dùng trong trường khi đăng nhập vào K12Online sẽ cần thực hiện thêm bước xác thực bằng mã được tạo trên ứng dụng Google Authenticator.
+
+ 6. Lưu ý sau khi bật tính năng
+
+ Sau khi bật MFA, tất cả tài khoản trong trường sẽ được bảo vệ hai lớp. Điều này làm giảm nguy cơ bị truy cập trái phép, đánh cắp dữ liệu hoặc thay đổi thông tin tài khoản nếu mật khẩu bị lộ hoặc bị đoán được.
+
+ Nhà trường cần lưu ý một số nội dung sau:
+
+ Cần thông báo trước cho giáo viên, học sinh và các tài khoản liên quan về việc bật xác thực qua Google Authenticator.
+ Người dùng cần cài đặt ứng dụng Google Authenticator trên điện thoại hoặc thiết bị cá nhân để lấy mã xác thực khi đăng nhập.
+ Người dùng cần bảo quản thiết bị đã cài Google Authenticator để tránh mất quyền truy cập tài khoản.
+ Trường hợp người dùng đổi điện thoại, mất điện thoại hoặc không lấy được mã xác thực, cần liên hệ quản trị viên nhà trường hoặc bộ phận hỗ trợ K12Online để được hỗ trợ.
+ Quản trị viên cần cân nhắc kỹ trước khi tắt tính năng MFA, vì sau khi tắt, tài khoản trong trường sẽ chỉ còn được bảo vệ bằng mật khẩu.
+ 7. Cách tắt xác thực qua Google Authenticator
+
+ Trong trường hợp nhà trường không còn nhu cầu sử dụng tính năng này, tài khoản quản trị có thể thực hiện tắt xác thực qua Google Authenticator.
+
+ Bước 1: Đăng nhập vào hệ thống K12Online bằng tài khoản quản trị của trường.
+
+ Bước 2: Truy cập khu vực Cài đặt hoặc Thiết lập bảo mật.
+
+ Bước 3: Tìm mục Xác thực MFA hoặc Xác thực qua Google Authenticator.
+
+ Bước 4: Chọn trạng thái Tắt tính năng xác thực qua Google Authenticator.
+
+ Bước 5: Hệ thống hiển thị thông báo xác nhận tắt MFA cho toàn trường. Quản trị viên đọc kỹ nội dung cảnh báo, sau đó chọn Xác nhận tắt để hoàn tất.
+
+ Lưu ý: Sau khi tắt MFA, tất cả tài khoản trong trường sẽ chỉ còn được bảo vệ bằng mật khẩu. Điều này có thể làm tăng nguy cơ bị truy cập trái phép, đánh cắp dữ liệu hoặc thay đổi thông tin tài khoản nếu mật khẩu bị lộ hoặc bị đoán được.
+
+==================================================
+

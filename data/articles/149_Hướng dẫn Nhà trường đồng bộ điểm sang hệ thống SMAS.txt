@@ -1,0 +1,49 @@
+### BÀI VIẾT [149]: Hướng dẫn Nhà trường đồng bộ điểm sang hệ thống SMAS
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong/dong-bo-diem-sang-he-thong-smas.html
+
+**Nội dung:**
+1. Đối tượng áp dụng
+
+ - Hiện tại tính năng đồng bộ điểm chỉ áp dụng với các cấp THCS, THPT
+
+ - Áp dụng với các kỳ thi cấp trường, được tổ chức theo loại kỳ thi chính quy (chưa áp dụng với các kỳ thi theo hình thức tự do) ;
+
+ - Chỉ áp dụng với mới những đơn vị đã được đồng bộ tài khoản từ nguồn SMAS.
+
+ - Chỉ áp dụng với những đơn vị đã đăng ký sử dụng dịch vụ K12Online.
+
+ 2. Lưu ý trước khi thực hiện
+
+ 2.1. Lưu ý điều kiện đảm bảo bên SMAS
+
+ Trước khi đồng bộ điểm từ K12Online sang SMAS, nhà trường lưu ý phải đảm bảo đã thực hiện các thao tác Nộp CSDLN lên cấp Sở trên SMAS để đồng bộ dữ liệu sang K12Online:
+
+ - Nộp thông tin cán bộ
+
+ - Nộp thông tin lớp học
+
+ - Nộp thông tin học sinh (để đảm bảo có csdlnCode của học sinh đó, nếu không đồng bộ điểm từ K12Online sang SMAS được).
+
+ - Lớp có học sinh cần đồng bộ điểm đã được khai báo số cột điểm trên SMAS.
+
+ 2.2. Lưu ý điều kiện đảm bảo bên K12Online
+
+ - Trước khi thực hiện đồng bộ điểm từ K12Online sang SMAS sau khi tất cả đề thi đã kết thúc và nhà trường đã kiểm tra, chốt điểm chính xác bên K12Online rồi. Do bảng điểm cuối cùng trên K12Online sẽ được đồng bộ hoàn toàn sang bên SMAS.
+
+ - Sau khi đã đồng bộ điểm sang SMAS, nhà trường sẽ không được sửa/xóa/tác động vào đề thi đó trên K12Online.
+
+ - K12Online chỉ đồng bộ sang cột điểm mà toàn bộ học sinh chưa có điểm trong cột điểm đó. Nếu bên SMAS có học sinh đã được nhập điểm rồi, thì K12Online sẽ không thực hiện đồng bộ điểm sang được.
+
+ - Để không xảy ra hiện tượng sai lệch dữ liệu, thao tác đồng bộ điểm từ K12Online sang SMAS chỉ được thực hiện 1 lần duy nhất trên mỗi đề thi. Nhà trường đã đồng bộ điểm đề thi đó sang SMAS rồi thì không được phép đồng bộ lại lần nữa.
+
+ 3. Hướng dẫn thực hiện
+
+ Bước 1: Nhà trường vào chi tiết kỳ thi trên K12Online mà cần đồng bộ điểm sang SMAS
+
+ - Vào menu Khảo thí => Chọn Quản lý kỳ thi => Vào chi tiết kỳ thi đã tổ chức trên K12Online mà cần đồng bộ sang SMAS
+
+ Bước 2: Vào menu Bảng điểm => Nhấn nút Đồng bộ điểm SMAS
+
+==================================================
+

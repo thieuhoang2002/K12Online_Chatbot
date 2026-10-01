@@ -1,0 +1,41 @@
+### BÀI VIẾT [70]: Ngân hàng câu hỏi của giáo viên
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Giáo viên
+- Link gốc: https://hotro.k12online.vn/giao-vien/ngan-hang-cau-hoi-cua-giao-vien.html
+
+**Nội dung:**
+Ngân hàng câu hỏi là tính năng giúp cho giáo viên lưu trữ các câu hỏi theo từng môn, khối của mình để sử dụng tạo bài kiểm tra dạng ma trận.
+
+ 1. Tạo mới ngân hàng câu hỏi
+
+ Vào Kiểm tra, đánh giá => Chọn Ngân hàng câu hỏi => Chọn Thêm mới => Nhập các thông tin cơ bản của ngân hàng câu hỏi cần tạo
+
+ - Tên ngân hàng câu hỏi
+
+ - Khối
+
+ - Môn học
+
+ - Chia sẻ cho giáo viên: chọn giáo viên mà muốn chia sẻ NHCH này cùng.
+
+ 2. Thêm câu hỏi vào ngân hàng câu hỏi
+
+ Có nhiều cách để thêm câu hỏi và ngân hàng câu hỏi vừa tạo. Tùy vào loại câu hỏi mà giáo viên có thể lựa chọn hình thức thêm câu hỏi vào ngân hàng câu hỏi.
+
+ Cách 1: Nhập tay
+
+ - Hỗ trợ tất cả các dạng câu hỏi mà hệ thống hỗ trợ.
+
+ - Xem hướng dẫn chi tiết tại đây: https://hotro.k12online.vn/giao-vien/cac-dang-cau-hoi-tren-k12online.html
+
+ Cách 2: Nhập từ Word (dạng ABCD)
+
+ - Chỉ hỗ trợ câu hỏi dạng trắc nghiệm chọn 1 đáp án, trong đó có 4 phương án là A, B, C, D
+
+ - Xem hướng dẫn chi tiết tại đây: https://hotro.k12online.vn/cau-hoi-thuong-gap/huong-dan-nhap-cau-hoi-tu-word-dang-abcd.html
+
+ Cách 3: Sao chép từ Word (dạng ABCD)
+
+ - Chỉ hỗ trợ câu hỏi dạng trắc nghiệm chọn 1 đáp án, trong đó có 4 phương án là A, B, C, D
+
+==================================================
+

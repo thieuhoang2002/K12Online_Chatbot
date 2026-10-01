@@ -1,0 +1,19 @@
+### BÀI VIẾT [248]: Một số công cụ chuyển Text-To-Speech
+- Chuyên mục: Trang chủ
+- Link gốc: https://hotro.k12online.vn/tai-nguyen/mot-so-cong-cu-chuyen-text-to-speech.html
+
+**Nội dung:**
+Dưới đây là một số công cụ chuyển từ Text to Speech miễn phí để các thầy/cô tham khảo:
+
+ 1. https://ttsmp3.com
+
+ - Hỗ trợ chuyển từ Text to Speech miễn phí
+
+ - Chỉ hỗ trợ tiếng Anh và một số ngôn ngữ khác, không có tiếng Việt
+
+ - Cho phép convert và download file .mp3
+
+ - Phù hợp với các thầy/cô muốn tạo các câu, đoạn văn phục vụ làm học liệu môn tiếng Anh.
+
+==================================================
+

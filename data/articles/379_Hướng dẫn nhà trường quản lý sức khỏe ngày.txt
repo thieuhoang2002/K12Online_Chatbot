@@ -1,0 +1,82 @@
+### BÀI VIẾT [379]: Hướng dẫn nhà trường quản lý sức khỏe ngày
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Y tế > Nhà trường
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/y-te/nha-truong/huong-dan-nha-truong-quan-ly-suc-khoe-ngay.html
+
+**Nội dung:**
+1. Xem danh sách sức khỏe ngày
+
+ Bước 1: Đăng nhập tài khoản quản lý trường /Cán bộ y tế học đường  >Click menu quản lý sức khỏe ngày
+
+ 2. Tìm kiếm sức khỏe ngày
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý :
+
+ +  Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+
+ + Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo điều kiện tìm kiếm
+
+ 3. Thêm mới sức khỏe ngày
+
+ Bước 1: Trên màn hình danh sách > click button Thêm mới
+
+ Bước 2: Nhập/Chọn hợp lệ , đầy đủ các trường dữ liệu bắt buộc > click lưu để thêm mới sức khỏe ngày
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường thời điểm phát hiện bệnh nhỏ hơn hoặc bằng thời gian khám
+ Click checkbox danh sách sử dụng thuốc để thêm danh sách sử dụng thuốc
+ Click Lưu bản ghi hiển thị bên ngoài danh sách
+ 4. Chỉnh sửa sức khỏe ngày
+
+ Bước 1: Trên màn hình danh sách > click icon chỉnh sửa
+
+ Bước 2: Nhập/Chọn hợp lệ , đầy đủ các trường dữ liệu bắt buộc > click lưu để chỉnh sửa sức khỏe ngày
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường thời điểm phát hiện bệnh nhỏ hơn hoặc bằng thời gian khám
+ Click checkbox danh sách sử dụng thuốc để thêm danh sách sử dụng thuốc
+ Click Lưu bản ghi hiển thị bên ngoài danh sách
+ 5. Xem chi tiết sức khỏe ngày
+
+ Bước 1: Trên màn hình danh sách > Click icon xem chi tiết
+
+ Bước 2: Hiển thị màn hình chi tiết sức khỏe ngày
+
+ 6. Xóa sức khỏe ngày
+
+ Bước 1: Danh sách > click icon xóa hoặc click checkbox all > chọn button xóa
+
+ Bước 2: Hiển thị pupop xác nhận xóa
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy thao tác xóa
+
+ 7. Xuất excel
+
+ Bước 1: Trên màn hình > click button Xuất excel
+
+ Lưu ý :
+
+ Thực hiện xuất excel > File tải về hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với danh sách
+ 8. Nhập excel
+
+ Bước 1 : Danh sách > Click button Nhập excel
+
+ Bước 2 : Hiển thị form > Nhập đầy đủ thông tin > Click button Nhập excel thực hiện thành công
+
+ Lưu ý :
+
+ Tải file không đúng định dạng ,Tải file quá dung lượng tối đa , Tải file đúng file mẫu lên hệ thống đưa ra thông báo lỗi
+ Bỏ trống các trường bắt buộc upload file lên  hệ thống trả về 1 file kết quả và thông báo lỗi
+ + Tải file với ngày lớn hơn thời gian hiện tại hệ thống báo lỗi và trả về file kết quả
+
+==================================================
+

@@ -1,0 +1,148 @@
+### BÀI VIẾT [388]: Hướng dẫn phụ huynh học sinh quản lý hồ sơ sức khỏe
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Y tế > Phụ huynh HS
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/y-te/phu-huynh-hoc-sinh/huong-dan-phu-huynh-xem-chi-tiet-ho-so-suc-khoe-hoc-sinh.html
+
+**Nội dung:**
+1. Hồ sơ sức khỏe học sinh
+
+ Bước 1 : Đăng nhập tài khoản phụ huynh
+
+ Bước 2: Trang chủ > click ứng dụng Y tế học đường
+
+ Bước 2: Hồ sơ sức khỏe > Click Hồ sơ sức khỏe học sinh
+
+ Bước 1 : Trên màn hình danh sách > click icon xem chi tiết
+
+ Bước 2 : Hiển thị thông tin chung
+
+ 2. Thông tin bảo hiểm y tế
+
+ Click xem chi tiết hồ sơ sức khỏe học sinh > click tab thông tin BHYT
+
+ 3. Thông tin tiêm chủng
+
+ Click xem chi tiết hồ sơ sức khỏe học sinh > click tab thông tin tiêm chủng
+
+ Chỉnh sửa thông tin tiêm chủng
+ Bước 1:Trên màn hình danh sách > click icon chỉnh sửa
+
+ Bước 2: Nhập/chọn đầy đủ , hợp lệ các trường bắt buộc > click Lưu
+
+ Lưu ý
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Chọn loại vắc xin , mũi tiêm , trạng thái “ đã tiêm” để hiển thị các trường dữ liệu về thông tin tiêm chủng
+ Trường ngày giờ tiêm không lớn hơn thời gian hiện tại
+ Phụ huynh chỉ được cập nhật thông tin mà tài khoản trường và cán bộ y tế chưa cập nhật
+ 4. Thông tin bệnh
+
+ Click xem chi tiết hồ sơ sức khỏe học sinh > click tab thông bệnh
+
+ 4.1. Bệnh mãn tính
+
+ 4.1.1. Thêm mới bệnh mãn tính
+
+ Bước 1: Click icon xem chi tiết > Click tab Thông tin bệnh
+
+ Bước 2: Click button Thêm mới để thêm mới bệnh mãn tính
+
+ Bước 3: Nhâp/chọn hợp lệ, đầy đủ các trường bắt buộc > click Lưu để thêm mới bệnh mãn tính (Ô có dấu (*) là biểu thị cho việc bắt buộc phải nhập)
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường thời điểm phát hiện bệnh nhỏ hơn hoặc bằng thời gian khám
+ Trường ngày ra viện nhỏ hơn hoặc bằng ngày ra viện
+ Click Lưu bản ghi hiển thị bên ngoài danh sách
+ Tài khoản trường và cán bộ y tế thêm mới bệnh mãn tính => hiển thị bản ghi thêm mới đến phụ huynh (phụ huynh không được chỉnh sửa bản ghi do tài khoản trường và cán bộ y tế thêm)
+ 4.1.2. Chỉnh sửa bệnh mãn tính
+
+ Bước 1: Trên màn hình danh sách > click icon chỉnh sửa để chỉnh sửa bệnh mãn tính
+
+ Bước 2: Nhâp/chọn hợp lệ, đầy đủ các trường bắt buộc > click Lưu để chỉnh sửa bệnh mãn tính (Ô có dấu (*) là biểu thị cho việc bắt buộc phải nhập)
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường thời điểm phát hiện bệnh nhỏ hơn hoặc bằng thời gian khám
+ Trường ngày ra viện nhỏ hơn hoặc bằng ngày ra viện
+ Phụ huynh chỉ được chỉnh sửa thông tin bệnh do chính phụ huynh tạo
+ 4.1.3. Tìm kiếm bệnh mãn tính
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+ 4.1.4. Xóa bệnh mãn tính
+ Bước 1: Trên màn hình danh sách > Click icon xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy thao tác xóa
+
+ Lưu ý : Phụ huynh chỉ được xóa thông tin bệnh do chính phụ huynh tạo
+
+ 4.2. Bệnh truyền nhiễm
+
+ 4.2.1. Thêm mới bệnh truyền nhiễm
+
+ Bước 1: Click icon xem chi tiết > Click tab Thông tin bệnh
+
+ Bước 2: Click button Thêm mới để thêm mới bệnh truyền nhiễm
+
+ Bước 3: Nhâp/chọn hợp lệ, đầy đủ các trường bắt buộc > click Lưu để thêm mới bệnh truyền nhiễm  (Ô có dấu (*) là biểu thị cho việc bắt buộc phải nhập)
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường thời điểm phát hiện bệnh nhỏ hơn hoặc bằng thời gian khám
+ Trường ngày ra viện nhỏ hơn hoặc bằng ngày ra viện
+ Click Lưu bản ghi hiển thị bên ngoài danh sách
+ Tài khoản trường và cán bộ y tế thêm mới bệnh truyền nhiễm=> hiển thị bản ghi thêm mới đến phụ huynh (phụ huynh không được chỉnh sửa bản ghi do tài khoản trường và cán bộ y tế thêm)
+ 4.2.2. Chỉnh sửa bệnh truyền nhiễm
+
+ Bước 1: Trên màn hình danh sách > click icon chỉnh sửa để chỉnh sửa bệnh truyền nhiễm
+
+ Bước 2: Nhâp/chọn hợp lệ, đầy đủ các trường bắt buộc > click Lưu để chỉnh sửa bệnh truyền nhiễm  (Ô có dấu (*) là biểu thị cho việc bắt buộc phải nhập)
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Trường thời điểm phát hiện bệnh nhỏ hơn hoặc bằng thời gian khám
+ Trường ngày ra viện nhỏ hơn hoặc bằng ngày ra viện
+ Phụ huynh chỉ được chỉnh sửa thông tin bệnh do chính phụ huynh tạo
+ 4.2.3. Tìm kiếm bệnh truyền nhiễm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đâ
+ 4.2.4. Xóa bệnh truyền nhiễm
+
+ Bước 1: Trên màn hình danh sách > Click icon xóa
+
+ Bước 2: Hiển thị popup xác nhận xóa
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy thao tác xóa
+
+ Lưu ý : Phụ huynh chỉ được xóa thông tin bệnh do chính phụ huynh tạo
+
+ ​​​​​​​5. Kết quả khám
+
+ Click xem chi tiết hồ sơ sức khỏe học sinh > click tab kết quả khám
+
+==================================================
+

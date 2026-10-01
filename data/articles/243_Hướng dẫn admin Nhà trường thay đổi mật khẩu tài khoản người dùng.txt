@@ -1,0 +1,13 @@
+### BÀI VIẾT [243]: Hướng dẫn admin Nhà trường thay đổi mật khẩu tài khoản người dùng
+- Chuyên mục: Trang chủ > Cấu hình chung > Tài khoản > Nhà trường
+- Link gốc: https://hotro.k12online.vn/tai-khoan/huong-dan-admin-nha-truong-thay-doi-mat-khau-tai-khoan-nguoi-dung.html
+
+**Nội dung:**
+Nhà trường có thể thay đổi mật khẩu các tài khoản người dùng. Thao tác như sau:
+
+ Bước 1: Đăng nhập vào tài khoản admin nhà trường
+
+ Bước 2: Chọn module Tài khoản
+
+==================================================
+

@@ -1,0 +1,90 @@
+### BÀI VIẾT [289]: Hướng dẫn giáo viên quản lý hủy bus
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Bus > Giáo viên
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/bus/giao-vien/huong-dan-giao-vien.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản được phân quyền giáo viên chủ nhiệm
+
+ Bước 2: Trang chủ > Click module Bus
+
+ Hiển thị màn hình Bus học đường
+
+ Bước 3: Trên thanh menu > Click  menu Quản lý hủy BUS
+
+ 1. Thêm mới
+
+ Bước 1: Danh sách > Click button Thêm mới
+
+ Bước 2: Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công, bản ghi ở trạng thái Chờ duyệt đăng ký
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Phải chọn mục Thông tin học sinh thì mới hiển thị mục Thông tin đăng ký
+ Giáo viên chủ nhiệm chỉ có thể đăng ký hủy bus cho học sinh thuộc lớp mình chủ nhiệm
+
+ 2. Chỉnh sửa
+
+ Bước 1: Danh sách > Click button Chỉnh sửa
+
+ Bước 2: Nhập đầy đủ thông tin > Click Lưu thực hiện chỉnh sửa thành công bản ghi cập nhật dữ liệu đã chỉnh sửa
+
+ Lưu ý:
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Phải chọn mục Thông tin học sinh thì mới hiển thị mục Thông tin đăng ký
+
+ 3. Xóa bản ghi
+
+ Bước 1: Danh sách > Click icon xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ Click “Xóa” thực hiện xóa bản ghi thành công
+ Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ Lưu ý:
+
+ Thực hiện xóa thành công bản ghi không hiển thị ở danh sách
+
+ 4. Tìm kiếm
+
+ Danh sách > Nhập / chọn dữ liệu muốn tìm kiếm > Click button Tìm kiếm > Hệ thống trả về kết quả tìm kiếm theo tiêu chí đã nhập
+
+ Lưu ý:
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+
+ 5. Nhập excel
+
+ Bước 1: Danh sách > Click button Nhập excel
+
+ Bước 2: Hiển thị form > Nhập đầy đủ thông tin > Click button Nhập excel thực hiện thành công bản ghi hiển thị ở danh sách đúng thứ tự ở trong file excel đã nhập
+
+ Lưu ý:
+
+ Tải file không đúng định dạng , Tải file đúng file mẫu lên hệ thống đưa ra thông báo lỗi
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc upload file lên  hệ thống trả về 1 file kết quả và thông báo lỗi
+
+ 6. Xuất excel
+
+ Danh sách > Click button Xuất excel > File excel được tải về
+
+ Lưu ý:
+
+ Thực hiện xuất excel > File tải về hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với danh sách
+ Thực hiện tìm kiếm > Click button Xuất excel > Hệ thống trả về file kết quả hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với trên danh sách
+ Thực hiện chọn kiểu sắp xếp danh sách> sau click button Xuất excel > Thì hệ thống trả về file kết quả hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với trên danh sách
+
+ 7. Xem chi tiết đơn đăng kí
+
+ Bước 1: Tại danh sách: Click icon xem chi tiết đơn đăng ký
+
+ Hiển thị màn hình xem chi tiết
+
+==================================================
+

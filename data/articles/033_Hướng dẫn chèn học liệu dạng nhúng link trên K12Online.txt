@@ -1,0 +1,13 @@
+### BÀI VIẾT [33]: Hướng dẫn chèn học liệu dạng nhúng link trên K12Online
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Câu hỏi thường gặp
+- Link gốc: https://hotro.k12online.vn/cau-hoi-thuong-gap/huong-dan-chen-hoc-lieu-dang-nhung-link-tren-k12online.html
+
+**Nội dung:**
+Dưới đây là một số hướng dẫn chèn học liệu dạng nhúng link trên K12Online:
+
+ 1. Dạng Canva
+
+ - Nhập link học liệu Canva vào hệ thống. Ví dụ:
+
+==================================================
+

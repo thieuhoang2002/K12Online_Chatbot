@@ -1,0 +1,129 @@
+### BÀI VIẾT [27]: Câu hỏi thường gặp dành cho Giáo viên
+- Chuyên mục: Trang chủ > Câu hỏi thường gặp > Dành cho Giáo viên
+- Link gốc: https://hotro.k12online.vn/cau-hoi-thuong-gap/cau-hoi-thuong-gap-danh-cho-giao-vien.html
+
+**Nội dung:**
+I. TÍNH NĂNG BÀI GIẢNG
+
+ Câu 1: Có những dạng bài giảng nào trên K12Online?
+
+ Trả lời:
+
+ Bài giảng được gán vào TKB là loại bài giảng mà yêu cầu HS học đúng vào thời gian trên TKB đó mà GV gán. Nếu đúng giờ đó HS không học thì không được ghi nhận.
+
+ Câu 2: Bài giảng trên K12Online hỗ trợ những định dạng nào?
+
+ Trả lời:
+
+ Bài giảng trên K12Online hỗ trợ hầu hết tất cả định dạng học liệu mà giáo viên cần dùng:
+
+ - Bài học dạng video (mp4); video từ Youtube;
+
+ - Bài học dạng text;
+
+ - Bài học dạng chuẩn scorm;
+
+ - Bài tập (các câu hỏi trắc nghiệm);
+
+ - Tài liệu: PDF, Word, Excel, Powerpoint;
+
+ - Tài liệu đính kèm: PDF, Word, Excel, Powerpoint; RAR, ZIP...
+
+ Câu 3: Tại sao HS đã học hết nội dung trong bài giảng trên TKB rồi mà hệ thống vẫn lại báo hoàn thành 0%?
+
+ Trả lời:
+
+ Bài giảng được gán vào TKB là loại bài giảng mà yêu cầu HS học đúng vào thời gian trên TKB đó mà GV gán. Nếu đúng giờ đó HS không học thì không được ghi nhận.
+
+ Ví dụ: Bài giảng GV gán vào Tiết 1 nhưng đến Tiết 2 HS mới vào học thì không được ghi nhận do vào muộn, không tuân thủ quy định và yêu cầu học đúng giờ của GV.
+
+ => Trong trường hợp GV muốn tạo những bài giảng mà HS có thể học tự do, bất kỳ thời gian nào khi HS rảnh thì bật tính năng Bài giảng học tự do ở khi tạo bài giảng.
+
+ - Những bài giảng dạng học tự do này thì GV không cần thực hiện thao tác gán TKB, HS sẽ có thể học bất kỳ thời gian nào cũng được, hệ thống sẽ ghi nhận sau khi HS hoàn thành.
+
+ - HS muốn vào học các bài giảng dạng học tự do thì vào trực tiếp tính năng Bài giảng để xem:
+
+ + Trên trình duyệt của máy tính:  Chọn menu Bài giảng => Chọn tab Bài giảng học tự do
+
+ + Trên ứng dụng K12Online trên điện thoại: Chọn tính năng Bài giảng (Bài học) => Chọn tab Bài giảng học tự do
+
+ Câu 4: GV có thể sửa/xoá các nội dung như bài giảng, bài kiểm tra, lớp học ảo nếu đã đưa lên cho HS học không?
+
+ Trả lời:
+
+ - Các nội dung mà chưa diễn ra thì GV vẫn xoá bình thường.
+
+ - GV đã đưa nội dung lên, nếu đang ở thời gian HS học hoặc HS đã học rồi thì không thể sửa/xoá được. Việc không sửa/xoá như vậy là để không ảnh hưởng đến báo cáo, lịch sử học tập của HS.
+
+ => Viettel đang check lại và bổ sung tính năng cho phép GV sửa/xoá nội dung đã diễn ra và có người học. Tuy nhiên, việc này cần check kỹ vì đã học rồi sẽ ảnh hưởng đến các báo cáo, lịch sử học tập của HS, dẫn đến không chính xác.
+
+ Câu 5: Tài liệu file Word/Powerpoint/Excel tải lên bài giảng không xem được/đợi lâu?
+
+ Trả lời:
+
+ Tài liệu không phải định dạng PDF lên hệ thống, hệ thống sẽ mất 1 khoảng thời gian để convert file đó thành PDF. GV nên chuyển các định dạng khác thành PDF trước khi đưa lên hệ thống để hiển thị được chính xác và nhanh hơn.
+
+ II. BÀI KIỂM TRA
+
+ Câu 1: Làm thế nào để tạo bài kiểm tra trên K12Online?
+
+ Trả lời:
+
+ Xem hướng dẫn tại: https://hotro.k12online.vn/giao-vien/bai-kiem-tra.html
+
+ Câu 2: Có những dạng bài kiểm tra nào trên K12Online?
+
+ Trả lời:
+
+ Theo cách tạo đề:
+
+ Nhập tay
+ PDF
+ Ma trận
+ Phân theo hình thức làm bài:
+
+ Tập trung
+ Phân tán
+
+ V. QUẢN LÝ ĐÀO TẠO
+
+ Câu 1: Giáo viên muốn tạo nhóm học gồm các học sinh từ các lớp khác nhau thì làm như thế nào?
+
+ Trả lời:
+
+ GV vào Quản lý đào tạo => Chọn Nhóm học => Chọn Thêm mới nhóm học => Thực hiện thêm các HS của các lớp vào nhóm.
+
+ Câu 2: Giáo viên A được biên chế (dạy chính) ở một trường A và đã có tài khoản K12Online của trường A, nhưng cũng dạy thỉnh giảng/trợ giảng (ngoài biên chế) ở một trường B khác thì thêm tài khoản giáo viên A vào trường B như thế nào?
+
+ Trả lời:
+
+ Trên hệ thống K12Online, Mỗi GV sẽ được định danh bằng 1 tài khoản và gắn vào 1 trường duy nhất (hay còn gọi chỉ được biên chế 1 trường). Những trường khác, nếu GV được phép dạy thì sẽ được gọi là GV ngoài biên chế của trường đó.
+
+ Các trường muốn thêm 1 GV đã được biên chế ở trường khác vào dạy trường mình thì admin trường cần thêm GV ngoài biên đó vào hệ thống K12Online. Thao tác thực hiện như sau:
+
+ - Admin vào menu Quản lý đào tạo => Chọn GV ngoài biên chế
+
+ - Thực hiện Thêm giáo viên ,
+
+ => Sau đó nhà trường phân công giảng dạy giáo viên ngoài biên chế như GV bình thường.
+
+ Lưu ý: Giáo viên ngoài biên chế muốn đăng nhập vào trường ngoài biên chế thì phải truy cập vào link trực tiếp của trường đó thì mới đăng nhập được.
+
+ Câu 3: Giáo viên chủ nhiệm khác với giáo viên bộ môn như thế nào?
+
+ Trả lời:
+
+ Giáo viên chủ nhiệm không cần phải được phân công giảng dạy bộ môn cũng có thể quản lý thông tin lớp học được chủ nhiệm:
+
+ - Được phân nhóm học trong lớp, các giáo viên bộ môn của lớp đó khi tạo thời khóa biểu có thể sử dụng các nhóm mà GVCN đã tạo
+
+ - Được đổi mật khẩu của học sinh trong lớp
+
+ - Được xem thời khóa biểu của cả lớp mà không cần phải được phân công giảng dạy các bộ môn tương ứng.
+
+ Câu 4: Chức năng của tổ chuyên môn trong đơn vị?
+
+ Trả lời:
+
+==================================================
+

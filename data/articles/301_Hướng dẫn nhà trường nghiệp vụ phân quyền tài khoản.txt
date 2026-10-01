@@ -1,0 +1,84 @@
+### BÀI VIẾT [301]: Hướng dẫn nhà trường nghiệp vụ phân quyền tài khoản
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Bus > Nhà trường
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/bus/nha-truong/huong-dan-nha-truong-nghiep-vu-phan-quyen-tai-khoan.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản quản lý trường
+
+ Bước 2: Tại Trang chủ: chọn module Bus
+
+ Bước 3: Hiển thị màn hình các menu thuộc module Bus như hình
+
+ 1. Phân quyền
+
+ Bước 1: Trên thanh menu: chọn menu Phân quyền
+
+ 2. Thêm mới
+
+ Bước 1: Danh sách > Click button Thêm mới
+
+ Bước 2: Nhập đầy đủ thông tin > Click Lưu lại thực hiện thêm mới thành công
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Nhập sai email / tài khoản không tồn tại hệ thống thông báo lỗi
+ Ở đây chỉ list vai trò tương ứng với module bus
+
+ 3. Chỉnh sửa
+
+ Bước 1: Danh sách > Click icon chỉnh sửa
+
+ Bước 2: Nhập đầy đủ thông tin > Click Lưu lại thực hiện chỉnh sửa thành công
+
+ Lưu ý :
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Nhập sai email / tài khoản không tồn tại hệ thống thông báo lỗi
+ Ở đây chỉ list vai trò tương ứng với module bus
+
+ 4. Tìm kiếm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo dữ liệu tìm kiếm và theo giá trị sắp xếp đã chọn
+
+ 5. Xuất excel
+
+ Danh sách > Click button Xuất excel > Thực hiện xuất excel thành công > Hệ thống trả về 1 file kết quả đầy đủ dữ liệu ở danh sách
+
+ Thực hiện xuất excel > File tải về hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với danh sách
+ Thực hiện Tìm kiếm đợt thu > sau click button Xuất excel > Thì hệ thống trả về file kết quả hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với trên danh sách
+ Thực hiện chọn kiểu sắp xếp danh sách > sau click button Xuất excel > Thì hệ thống trả về file kết quả hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với trên danh sách
+
+ 6. Xóa phân quyền
+
+ C1: Xóa 1 tài khoản
+
+ Bước 1: Danh sách > Click icon xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ Click “Xóa” thực hiện xóa phân quyền thành công
+ Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ C2: Xóa nhiều phân quyền
+
+ Bước 1: Danh sách > Click checkbox all > chọn button xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ Click “Xóa” thực hiện xóa phân quyền thành công
+ Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ Lưu ý :
+
+ Thực hiện xóa thành công bản ghi không hiển thị ở danh sách đồng thời tài khoản không có quyền quản lý vai trò đó nữa
+
+==================================================
+

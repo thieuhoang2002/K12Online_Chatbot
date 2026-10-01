@@ -1,0 +1,45 @@
+### BÀI VIẾT [30]: Một số giải pháp để hạn chế gian lận khi tổ chức thi trực tuyến
+- Chuyên mục: Trang chủ > Câu hỏi thường gặp > Dành cho Sở/Phòng
+- Link gốc: https://hotro.k12online.vn/cau-hoi-thuong-gap/giai-phap-de-han-che-gian-lan-khi-to-chuc-thi-truc-tuyen.html
+
+**Nội dung:**
+1. Các tính năng hệ thống có sẵn để hạn chế việc gian lận của học sinh
+
+ - Hệ thống tự động ghi nhận vi phạm của HS trong quá trình làm bài, nếu thực hiện 1 trong những hành vi sau:
+
+ Ra khỏi màn hình làm bài;
+
+ Mở ra 1 tab mới (khi thi trên web);
+
+ Mở ra 1 ứng dụng khác (thi trên ứng dụng trên điện thoại);
+
+ Các hành vi khác nếu ảnh hưởng đến giao diện làm bài thi của học sinh đó.
+
+ - Hệ thống ghi nhận từng lần vi phạm và có lưu lại thời gian vi phạm. Nhà trường có thể xem lịch sử các vi phạm này trên hệ thống.
+
+ - Để cho đảm bảo khách quan và công bằng, K12Online quy định mặc định là 10 lần học sinh vi phạm thì hệ thống tự động nộp bài.
+
+ - Mỗi bài thi được ghi nhận địa chỉ IP mà học sinh sử dụng.
+
+ - Nếu làm bài trên mobile app, hệ thống đã chặn tính năng không cho chụp màn hình.
+
+ 2. Sử dụng linh hoạt các dạng bài trên hệ thống
+
+ - Hiện tại hệ thống có 3 dạng bài để cho Nhà trường/Giáo viên tổ chức: Nhập tay, PDF, Ma trận. Tùy vào mục đích và khả năng của từng Nhà trường/Giáo viên có thể vận dụng dạng phù hợp.
+
+ - Với những bài yêu cầu hạn chế gian lận, khi thiết lập đề, nhà trường nên sử dụng loại đề thi dạng ma trận và dạng nhập tay để có nhiều cấu hình hỗ trợ cho đề thi. Với dạng đề ma trận, hệ thống hỗ trợ nhà trường có thể tạo ra ngẫu nhiên các mã đề khác nhau để hạn chế khả năng học sinh trùng câu hỏi.
+
+ 3. Cấu hình đề thi và xem kết quả
+
+ - Để bảo mật đáp án của đề thi, nhà trường có thể quyết định học sinh có được xem đáp án và lời giải hay không, và khi nào xem khi thiết lập đề thi trên hệ thống K12Online.
+
+ 4. Chặn truy cập trên nhiều thiết bị
+
+ - Hệ thống có tính năng chặn truy cập tại nhiều thiết bị để hạn chế học sinh đăng nhập tại nhiều thiết bị khác nhau.
+
+ 5. Kết hợp với thi tập trung trên phòng máy/lớp học
+
+ - Nhà trường/Giáo viên có thể kết hợp với việc tổ chức thi tập trung tại phòng máy/lớp học để giáo viên giám sát quá trình thi và làm bài của học sinh được tốt hơn.
+
+==================================================
+

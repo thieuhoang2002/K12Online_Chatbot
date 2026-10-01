@@ -1,0 +1,41 @@
+### BÀI VIẾT [113]: Hướng dẫn nhà trường khai báo thông tin thực phẩm
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Bán trú > Nhà trường
+- Link gốc: https://hotro.k12online.vn/huong-dan-nha-truong-khai-bao-thong-tin-thuc-pham.html
+
+**Nội dung:**
+Trên thanh menu > Click Menu Quản lý khai báo > Chọn danh mục bán trú > Click Thực phẩm
+
+ 1. Thêm mới thực phẩm
+
+ Bước 1: Danh sách > Click button Thêm mới
+
+ ​
+
+ Bước 2: Hiển thị màn hình thêm mới thực phẩm. Thực hiện nhập các trường thông tin, trong đó các trường có dấu (*) là bắt buộc nhập.
+
+ + Chọn loại thực phẩm > hiển thị loại thuộc tính và thuộc tính thực phẩm để tính năng lượng thực phẩm
+
+ ​
+
+ ​
+
+ Bước 3: Click Lưu lại để hoàn thành việc thêm mới. Bản ghi hiển thị ngoài danh sách
+
+ Lưu ý :
+
+ + Nhập/chọn đầy đủ các trường bắt buộc ,là các trường có dấu *
+
+ + Nhập Quy đổi ra/ml là số nguyên dương
+
+ + Nhập đơn giá là số nguyên dương
+
+ + Không nhập trùng nhà cung cấp
+
+ + Nhập tỷ lệ thải bỏ trong khoảng 0< tỷ lệ thải bỏ < 100
+
+ + Năng lượng = SUM(thuộc tính thực phẩm * hệ số chuyển đổi Kcal) *(100% - tỉ lệ thải bỏ%)
+
+ + Thuộc tính nào tính năng lượng sẽ bắt buộc nhập
+
+==================================================
+

@@ -1,0 +1,39 @@
+### BÀI VIẾT [94]: Hướng dẫn Giáo viên nhập câu hỏi dạng 2025 vào NHCH bằng file Word
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Thi TN THPT từ năm 2025 > Giáo viên
+- Link gốc: https://hotro.k12online.vn/huong-dan-giao-vien-nhap-cau-hoi-dang-2025-vao-nhch-bang-file-word.html
+
+**Nội dung:**
+Dưới đây là hướng dẫn và một số lưu ý khi nhập câu hỏi dạng 2025 vào NHCH bằng file Word.
+
+ Hướng dẫn chung
+
+ 1. Bắt đầu mỗi câu hỏi là Câu 1:
+
+ 2. Các câu hỏi trong file đưa lên đánh số tăng dần từ 1 đến hết
+
+ 3. Sau mỗi câu hỏi là mức độ của câu hỏi đó. Kí hiệu như sau:
+
+ - [NB]: Nhận biết
+
+ - [TH]: Thông hiểu
+
+ - [VDT]: Vận dụng thấp
+
+ - [VDC]: Vận dụng cao
+
+ Lưu ý: Nếu không có ký hiệu độ khó, hệ thống sẽ mặc định là độ khó Nhận biết.
+
+ Ví dụ:
+
+ 4. Cuối phần câu hỏi ghi --- HẾT ---
+
+ 5. Bắt đầu phần đáp án, ghi ĐÁP ÁN. Đáp án kẻ thành dạng bảng gồm 5 cột, mỗi câu hỏi 1 ô.
+
+ 6. Bắt đầu phần lời giải chi tiết, ghi LỜI GIẢI CHI TIẾT
+
+ I. Hướng dẫn nhập câu hỏi Phần I
+
+ 1. Câu hỏi phần I là câu hỏi dạng trắc nghiệm có 4 phương án được đánh thứ tự là A, B, C, D. Trong đó chỉ chọn duy nhất 1 đáp án đúng.
+
+==================================================
+

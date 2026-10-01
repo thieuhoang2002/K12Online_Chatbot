@@ -1,0 +1,41 @@
+### BÀI VIẾT [59]: Hướng dẫn giám thị/giáo viên phân công giám thị
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Quản lý vi phạm > Giám thị/Giáo viên
+- Link gốc: https://hotro.k12online.vn/giam-thi-giao-vien/huong-dan-giam-thi-giao-vien-phan-cong-giam-thi.html
+
+**Nội dung:**
+Bước 1: Đăng nhập bằng tài khoản giám thị, giáo viên
+
+ Bước 2: Hệ thống link vào trang chủ  > Danh sách ứng dụng > Click module Quản lý học sinh
+
+ Bước 3: Menu Quản lý học sinh > Chọn Phân công giám thị
+
+ 1. Thêm mới phân công giám thị
+
+ Bước 1: Danh sách > Click button Thêm mới
+
+ Bước 2 : Hiển thị form > Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công
+
+ 2. Chỉnh sửa phân công giám thị
+
+ Bước 1: Danh sách > click icon chỉnh sửa
+
+ Bước 2 : Hiển thị form > Nhập đầy đủ thông tin > Click Lưu thực hiện chỉnh sửa thành công
+
+ 3. Xóa phân công giám thị
+
+ Bước 1: Danh sách > Click icon xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ 4. Tìm kiếm phân công giám thị
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ ​
+
+==================================================
+

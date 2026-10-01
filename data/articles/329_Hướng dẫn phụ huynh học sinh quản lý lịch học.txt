@@ -1,0 +1,28 @@
+### BÀI VIẾT [329]: Hướng dẫn phụ huynh học sinh quản lý lịch học
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Câu lạc bộ > Phụ huynh HS
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/clb/phu-huynh-hs/huong-dan-phu-huynh-hoc-sinh-quan-ly-lich-hoc.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản phụ huynh
+
+ Bước 2: Trang chủ  > Click vào module Câu lạc bộ > Vào menu Quản lý lịch học
+
+ Xem tất cả lịch học lớp câu lạc bộ
+
+ 1. Đăng ký nghỉ học
+
+ Bước 1: Click icon Đăng ký nghỉ học thực hiện đăng ký nghỉ học
+
+ Bước 2: Hiển thị form đăng ký nghỉ học > Nhập đầy đủ thông tin > Click Lưu thực hiện đăng ký nghỉ thành công
+
+ 2. Tìm kiếm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý:
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo: Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+
+==================================================
+

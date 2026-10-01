@@ -1,0 +1,49 @@
+### BÀI VIẾT [357]: Hướng dẫn giáo viên chủ nhiệm quản lý tiêm chủng, bảo hiểm
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Y tế > Giáo viên CN
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/y-te/giao-vien-chu-nhiem/huong-dan-giao-vien-chu-nhiem-quan-ly-tiem-chung-bao-hiem2.html
+
+**Nội dung:**
+1. Quản lý bảo hiểm y tế
+
+ 1.1 Danh sách bảo hiểm y tế
+
+ Bước 1: Click menu tiêm chủng, bảo hiểm > click tab quản lý bảo hiểm y tế
+
+ Bước 2 : Hiển thị màn hình danh sách bảo hiểm y tế
+
+ 1.2 Xuất excel
+
+ Bước 1: Click menu tiêm chủng, bảo hiểm > tab Quản lý bảo hiểm y tế> Xuất excel
+
+ Bước 2: File thống kê được tải hiển thị dữ liệu khớp với hệ thống
+
+ ​​​​​​​1.3 Tìm kiếm bảo hiểm y tế
+
+ Bước 1: Click menu tiêm chủng, bảo hiểm > click tab quản lý bảo hiểm y tế
+
+ Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ ​​​​​​​​​​​​​​2. Quản lý tiêm chủng
+
+ Bước 1: Đăng nhập tài khoản phân quyền giáo viên chủ nhiệm
+
+ Bước 2: Click menu tiêm chủng, bảo hiểm > click tab quản lý tiêm chủng
+
+ Bước 3: Hiển thị màn hình danh sách quản lý tiêm chủng
+
+ ​​​​​​​​​​​​​​2.1 Xem chi tiết tiêm chủng
+
+ Bước 1: Click menu tiêm chủng, bảo hiểm > Click tab Quản lý tiêm chủng
+
+ Bước 2: Click icon xem chi tiết
+
+ Bước 3: Hiển thị màn hình xem chi tiết
+
+ ​​​​​​​2.2 Tìm kiếm tiêm chủng
+
+ Bước 1: Click menu tiêm chủng, bảo hiểm > click tab quản lý tiêm chủng
+
+ Bước 2: Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+==================================================
+

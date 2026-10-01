@@ -1,0 +1,133 @@
+### BÀI VIẾT [158]: Giới thiệu Quy trình nghiệp vụ K12Online cấp Trường
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Nhà trường
+- Link gốc: https://hotro.k12online.vn/nha-truong/quy-trinh-nghiep-vu-cap-truong.html
+
+**Nội dung:**
+Sơ đồ dưới đây mô tả tổng quan nghiệp vụ cấp trường.
+
+ I. Khởi tạo hệ thống (*)
+
+ Các đơn vị có nhu cầu sử dụng K12Online để triển khai dạy học trực tuyến cho toàn trường, vui lòng liên hệ Viettel tỉnh/thành phố để được tư vấn và hỗ trợ.
+
+ II. Tài khoản (*)
+
+ Nhà trường đăng nhập vào link k12online.vn bằng tài khoản của admin trường (Tài khoản và mật khẩu giống trên trang taphuan.csdl.edu.vn)
+
+ Lưu ý: Nếu chưa đăng nhập được, vui lòng đổi mật khẩu bên hệ thống taphuan.csdl.edu.vn và đăng nhập lại.
+
+ 2.1. Đồng bộ tài khoản giáo viên (*)
+
+ Bước 1: Nhà trường vào Quản lý tài khoản => Chọn Danh sách tài khoản => Chọn Đồng bộ tài khoản để thực hiện loại tài khoản theo mong muốn.
+
+ Bước 2: Đợi hệ thống đồng bộ hoàn thành. Sau đó tải lại trang và nhấn Kết quả đồng bộ để xem kết quả chi tiết kết quả (nếu thấy chưa đủ hoặc sai thông tin tài khoản).
+
+ Ghi chú: Trong trường hợp nhà trường cần tạo thêm tài khoản cho giáo viên, làm theo hướng dẫn ở mục 2.2
+
+ 2.2. Đồng bộ tài khoản học sinh (*)
+
+ Bước 1: Điền thông tin học sinh vào form theo mẫu dưới đây:
+
+ https://hotro.k12online.vn/nha-truong/bieu-mau-tao-tai-khoan.html
+
+ Bước 2: Gửi file Excel thông tin học sinh cho đầu mối Viettel tỉnh/tp để được khởi tạo tài khoản
+
+ Bước 3: Sau khi Viettel khởi tạo tài khoản xong. Nhà trường vào Quản lý đào tạo => Chọn Quản lý lớp học => Chọn Đồng bộ lớp học về
+
+ Bước 4: Vào Quản lý tài khoản => Chọn Danh sách tài khoản => Chọn Đồng bộ tài khoản để thực hiện loại tài khoản theo mong muốn
+
+ Bước 5: Đợi hệ thống đồng bộ hoàn thành. Sau đó tải lại trang và nhấn Kết quả đồng bộ để xem kết quả đồng bộ chi tiết.
+
+ 2.3. Đổi mật khẩu tài khoản cho giáo viên, học sinh
+
+ Cách 1: Nhà trường có thể đổi mật khẩu cho tài khoản GV, HS trong trường bằng cách: Vào Quản lý tài khoản => Chọn Danh sách tài khoản => Tìm tài khoản cần đổi mật khẩu và click vào biểu tượng đổi mật khẩu.
+
+ Cách 2: Nếu muốn đổi mật khẩu hàng loạt hoặc theo theo danh sách, nhà trường vào Quản lý tài khoản => Chọn Danh sách tài khoản => Chọn Đặt lại mật khẩu .
+
+ 2.4. Xuất danh sách tài khoản cho giáo viên, học sinh
+
+ Bước 1: Vào Quản lý tài khoản => Chọn Danh sách tài khoản
+
+ Bước 2: Lọc loại tài khoản cần xuất danh sách => Nhấn Xuất Excel
+
+ III. Cập nhật kế hoạch đào tạo (*)
+
+ Vào Quản lý đào tạo => Chọn Kế hoạch đào tạo => Chọn Cập nhật kế hoạch để hệ thống danh mục kế hoạch đào tạo của từng khối, từng học kỳ, năm học.
+
+ Lưu ý: Phải thực hiện thao tác này trước khi phân công giảng dạy cho giáo viên.
+
+ IV. Phân công giảng dạy (*)
+
+ Để giáo viên có thể sử dụng K12Online vào việc dạy học trực tuyến trên hệ thống, trước tiên nhà trường cần phải thực hiện phân công giảng dạy cho giáo viên trên hệ thống.
+
+ 4.1. Thêm giáo viên ngoài biên chế từ trường khác (nếu có)
+
+ - Vào Quản lý đào tạo => Chọn Giáo viên ngoài biên chế => Chọn Thêm mới => Nhập tài khoản của GV cần thêm.
+
+ Lưu ý: Nghiệp vụ này chỉ dành cho trường hợp giáo viên đã có sắn tài khoản K12Online ở một trường khác và dạy tăng cường/bổ sung ở trường hiện tại. Nếu chưa rõ, liên hệ Viettel để được hỗ trợ trước khi thực hiện.
+
+ 4.2. Phân công giảng dạy (*)
+
+ Vào Quản lý đào tạo => Chọn Phân công giảng dạy và thực hiện các nghiệp vụ phân công:
+
+ Bước 1: Phân môn giảng dạy
+ -    Cách 1 (Phân môn bằng cách thủ công): Nhà trường chọn môn học và GV phụ trách môn học đó.
+ -    Cách 2 (Phân môn bằng nhập từ file Excel): Nhà trường chọn Nhập từ Excel => Tải file mẫu về => Hoàn thiện vào file mẫu => Tải file mẫu lên.
+
+ Bước 2: Phân lớp giảng dạy
+
+ -    Cách 1 (Phân lớp bằng cách thủ công): Nhà trường chọn môn học và GV phụ trách môn học đó.
+ -    Cách 2 (Phân lớp bằng nhập từ file Excel): Nhà trường chọn Nhập từ Excel => Chọn cách nhập file mẫu => Tải file mẫu về => Hoàn thiện vào file mẫu => Tải file mẫu lên.
+
+ 4.3. Phân tổ chuyên môn (*)
+
+ Bước 1: Vào Quản lý đào tạo => Chọn Tổ chuyên môn
+ Bước 2: Nhà trường nhấn Thêm mới để tạo mới tổ chuyên môn. Sau đó, nhập tên tổ chuyên môn; các môn học phụ trách và gán tổ trưởng, tổ phó (nếu có) và các thành viên trong tổ.
+
+ 4.4. Phân công chủ nhiệm (*)
+
+ Vào Quản lý đào tạo => Chọn Quản lý lớp học => Nhấn vào biểu tượng Cập nhật thông tin lớp học để phân công giáo viên chủ nhiệm.
+
+ V. Cấu hình hệ thống
+
+ Nhà trường cần thiết lập một số thông tin chung của hệ thống trước khi triển khai cho toàn trường.
+
+ 5.1. Cấu hình giao diện (nếu muốn thay đổi logo hệ thống)
+
+ Vào Cấu hình hệ thống => Chọn Cấu hình giao diện => Thay logo của nhà trường
+
+ 5.2. Thiết lập khung giờ học chung cho toàn trường (*)
+
+ Vào Cấu hình hệ thống => Chọn Khung giờ học => Điều chỉnh lại khung thời gian cho từng tiết học để áp dụng toàn trường.
+
+ 5.3. Cấu hình kiểm duyệt bài giảng
+
+ Vào Cấu hình hệ thống => Chọn Cấu hình nâng cao => Bật/tắt tính năng Kiểm duyệt nội dung để kích hoạt tính năng kiểm duyệt bài giảng của giáo viên.
+
+ 5.4. Cấu hình cho phép giáo viên tạo bài kiểm tra định kỳ
+
+ Vào Cấu hình hệ thống => Chọn Cấu hình nâng cao => Bật/tắt tính năng Cho phép giáo viên tạo bài kiểm tra định kỳ để kích hoạt tính năng cho phép giáo viên được tạo bài kiểm tra định kỳ cho học sinh.
+
+ 5.5. Cho phép giáo viên chủ nhiệm reset mật khẩu cho học sinh
+
+ Vào Cấu hình hệ thống => Chọn Cấu hình nâng cao => Bật tính năng Cho phép giáo viên reset mật khẩu học sinh
+
+ VI. Kiểm duyệt nội dung
+
+ Hệ thống K12Online có đầy đủ tính năng kiểm duyệt nội dung để giúp nhà trường có thể thực hiện được nghiệp vụ kiểm duyệt nội dung của giáo viên trước khi giao bài cho học sinh.
+
+ 6.1. Kiểm duyệt bài giảng
+
+ - Vào Kiểm duyệt nội dung => Chọn Bài giảng => Chọn bài giảng cần kiểm duyệt => Click Duyệt/Từ chối.
+
+ 6.2. Kiểm duyệt kế hoạch bài dạy (giáo án)
+
+ Vào Kiểm duyệt nội dung => Chọn Kế hoạch bài dạy => Chọn kế hoạch bài dạy cần kiểm duyệt => Click Duyệt/Từ chối .
+
+ VII. Báo cáo thống kê
+
+ 1. K12Online cung cấp nhiều mẫu báo cáo, thống kê cho nhà trường có số liệu thống kê, báo cáo, phục vụ cho việc nắm bắt tính hinh và điều hành việc dạy học trực tuyến của nhà trường.
+
+ 2. Để xem các mẫu báo cáo sẵn có trên hệ thống, vào Báo cáo thống kê .
+
+==================================================
+

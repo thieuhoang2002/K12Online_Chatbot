@@ -1,0 +1,32 @@
+### BÀI VIẾT [355]: Hướng dẫn giáo viên chủ nhiệm quản lý kế hoạch hoạt động y tế
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Y tế > Giáo viên CN
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/y-te/giao-vien-chu-nhiem/huong-dan-giao-vien-chu-nhiem-quan-ly-ke-hoach-hoat-dong-y-te.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản phân quyền giáo viên chủ nhiệm
+
+ Bước 2:  Click chọn Kế hoạch y tế
+
+ Bước 3:Hiển thị màn hình kế hoạch hoạt động y tế
+
+ 1. Xem chi tiết kế hoạch hoạt động y tế
+
+ Bước 1 :  Click Y tế học đường > menu Kế hoạch y tế
+
+ Bước 2 :Trên màn hình danh sách > Click vào icon xem chi tiết
+
+ Bước 4 : Hiển thị màn hình chi tiết kế hoạch hoạt động y tế
+
+ ​​​​​​​2. Tìm kiếm kế hoạch hoạt động y tế
+
+ Bước 1: Click Y tế học đường > menu Kế hoạch y tế
+
+ Bước 2 :Trên màn hình danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tiêu chí tìm kiếm
+
+==================================================
+

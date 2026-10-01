@@ -1,0 +1,71 @@
+### BÀI VIẾT [105]: Hướng dẫn Nhà trường tham gia chương trình Kỳ thi mô phỏng bài thi TN THPT 2025
+- Chuyên mục: Trang chủ > Nội dung tham khảo > Kỳ thi mô phỏng bài thi tốt nghiệp THPT 2025
+- Link gốc: https://hotro.k12online.vn/huong-dan-nha-truong-chuong-trinh-ky-thi-mo-phong-bai-thi-tn-thpt-quoc-gia-2025.html
+
+**Nội dung:**
+1. Đăng ký triển khai
+
+ Các trường có nhu cầu thi thử, đăng ký với Viettel tỉnh/tp để được hỗ trợ.
+
+ 2. Khởi tạo tài khoản
+
+ Nhà trường phối hợp với Viettel tỉnh/tp để khởi tạo tài khoản.
+
+ Lưu ý: Với những trường đã triển khai K12Online mà dữ liệu tài khoản đầy đủ rồi thì có bỏ qua bước này.
+
+ Cách 1: Với những trường sử dụng hệ thống SMAS
+
+ Liên hệ chuyên viên tư vấn của Viettel tỉnh/tp để được hỗ trợ hướng dẫn đồng bộ tài khoản từ SMAS sang K12Online.
+
+ Cách 2: Với những trường không sử dụng SMAS
+
+ Bước 1: Vào k12online.vn => Đăng nhập với tài khoản admin trường được cấp
+
+ Bước 2: Vào module Quản lý đào tạ o => Chọn Quản lý lớp học => Thực hiện tạo danh mục lớp học
+
+ Bước 3: Vào module Tài khoản => Chọn Danh sách tài khoản => Chọn Nhập Excel để tải lên file Excel danh sách học sinh cần tạo tài khoản.
+
+ Bước 4: Nhà trường reset mật khẩu mặc định cho học sinh sau khi đồng bộ tài khoản
+
+ Bước 5: Nhà trường xuất danh sách tài khoản và mật khẩu để bàn giao cho học sinh, báo học sinh vào đăng nhập.
+
+ 3. Đăng ký thi thử
+
+ Nhà trường liên hệ Viettel tỉnh/tp để đăng ký chương trình thi thử.
+
+ 4. Tiếp nhận chương trình và gán học sinh được phép sử dụng
+
+ Sau khi đăng ký và được chia sẻ thành công, nhà trường vào tiếp nhận chương trình và gán học sinh được phép vào sử dụng.
+
+ Bước 1: Đăng nhập bằng tài khoản admin trường => Tìm module Quản lý chương trình học
+
+ Bước 2: Chọn Chương trình học => Hệ thống hiển thị các chương trình được chia sẻ => Chọn chương trình Kỳ thi mô phỏng TN THPT Quốc gia 2025 => Nhấn vào hành động Tiếp nhận .
+
+ Lưu ý: Nếu trước 1 ngày diễn ra bài thi nhà trường chưa thấy chương trình này thì báo lại Nhân viên Viettel tỉnh/tp để được kiểm tra và hỗ trợ.
+
+ Bước 3: Nhà trường chọn học sinh cần gán để được phép sử dụng nội dung chương trình => Sau đó nhấn Gán sử dụng .
+
+ Lưu ý: Nhà trường sử dụng bộ lọc khối, lớp hoặc chọn phân trang hiển thị nhiều hơn để có thể chọn nhiều học sinh cần gán.
+
+ 5. Nhà trường báo học sinh vào kiểm tra
+
+ - Sau khi đã gán xong, nhà trường báo học sinh đăng nhập bằng tài khoản của học sinh để kiểm tra thấy chương trình đó chưa.
+
+ - Nếu học sinh chưa thấy chương trình, nhà trường kiểm tra lại thao tác gán có thiếu/sai sót gì không và điều chỉnh (Xem lại hướng dẫn ở Bước 3, Mục 4).
+
+ Lưu ý: Trong quá trình triển khai, nhà trường có thể reset mật khẩu học sinh bằng cách:
+
+ - Reset từng học sinh: Tìm học sinh cần reset mật khẩu => Nhấn vào biểu tượng hình chìa khóa để đổi mật khẩu cho học sinh đó.
+
+ - Reset nhiều người cùng lúc: Chọn tính năng Đặt lại mật khẩu.
+
+ 6. Xem báo cáo kết quả chương trình
+
+ Bước 1: Sau khi kết thúc chương trình, nhà trường vào module Chương trình học => Chọn chương trình Kỳ thi mô phỏng bài thi TN THPT 2025 môn Toán.
+
+ Bước 2: Tại tab Nội dung chương trình => Chọn vào báo cáo của Đề muốn xem:
+
+ Bước 3: Chọn Bảng điểm hoặc Phổ điểm để xem:
+
+==================================================
+

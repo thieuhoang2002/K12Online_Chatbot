@@ -1,0 +1,53 @@
+### BÀI VIẾT [52]: Quy trình sử dụng K12Online khi phân phối nội dung
+- Chuyên mục: Trang chủ > Hướng dẫn sử dụng > Dành cho đối tác nội dung
+- Link gốc: https://hotro.k12online.vn/doi-tac-noi-dung/quy-trinh-su-dung-k12online-khi-phan-phoi-noi-dung.html
+
+**Nội dung:**
+Dưới đây là quy trình phân phối nội dung khi đăng tải và phân phối nội dung dành cho các đơn vị đối tác nội dung (ĐTND) trên K12Online
+
+ Bước 1: Khởi tạo hệ thống
+
+ K12Online phối hợp với các đơn vị ĐTND để khởi tạo hệ thống quản trị nội dung trên K12Online.
+
+ Bước 2: Tạo bài giảng
+
+ ĐTND tiến hành tạo bài giảng trên K12Online. Thao tác thực hiện như sau:
+
+ - Vào menu Bài giảng => Chọn Thêm mới => Nhập các thông tin cơ bản của bài giảng
+
+ - ĐTND thêm các chuyên đề, bài học theo mong muốn.
+
+ Bước 3: Kiểm duyệt bài giảng
+
+ ĐTND kiểm duyệt nội dung trước khi cung cấp cho người dùng sử dụng. Thao tác thực hiện như sau:
+
+ - ĐTND (hoặc người có quyền Quản lý nội dung) vào menu Bài giảng
+
+ - Xem bài giảng => Nhấn Kiểm duyệt để tiến hành duyệt bài giảng.
+
+ Bước 4: Tạo chương trình học
+
+ ĐTND tạo chương trình học trên K12Online. Mỗi chương trình học gồm nhiều bài giảng, sắp xếp theo thứ tự mà ĐTND mong muốn. Thao tác thực hiện như sau:
+
+ - Vào menu Chương trình học => Chọn Thêm mới để thêm mới chương trình học => Nhập các thông tin cơ bản của chương trình học
+
+ - Vào chi tiết chương trình học => Gán các bài giảng vào chương trình học đó.
+
+ Bước 5: Chia sẻ chương trình học
+
+ Quy trình chia sẻ chương trình học gồm 2 bước:
+
+ Bước 1: ĐTND chia sẻ chương trình học cho các cơ sở giáo dục đăng ký. Có 2 cách chia sẻ chương trình học:
+
+ - Chia sẻ thủ công:
+
+ - Chia sẻ theo file Excel.
+
+ Bước 2: Các cơ sở giáo dục (các trường học) tiếp nhận và phân phối tới người dùng cuối (giáo viên, học sinh).
+
+ Bước 6: Gán sử dụng chương trình học, bài giảng
+
+ Sau khi được đối tác chia sẻ, nhà trường thực hiện gán sử dụng cho giáo viên và học sinh trong trường.
+
+==================================================
+

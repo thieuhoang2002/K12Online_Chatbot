@@ -1,0 +1,41 @@
+### BÀI VIẾT [101]: Hướng dẫn giáo viên tạo kế hoạch bài dạy
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Kế hoạch giáo dục > Kế hoạch bài dạy
+- Link gốc: https://hotro.k12online.vn/huong-dan-giao-vien-tao-ke-hoach-bai-day.html
+
+**Nội dung:**
+Kế hoạch bài dạy (hay còn gọi là "Giáo án") là tính năng giúp giáo viên và nhà trường quản lý và kiểm duyệt các kế hoạch bài dạy trên môi trường trực tuyến. Giáo viên có thể đưa các kế hoạch bài dạy của mình lên hệ thống để lưu trữ hoặc gửi yêu cầu cho Tổ trưởng chuyên môn, Nhà trường duyệt. Giúp làm giảm thời gian kiểm duyệt, chi phí in ấn như cách truyền thống.
+
+ 1. Điều kiện để giáo viên được sử dụng tính năng kế hoạch bài dạy
+
+ - Giáo viên đã được phân công giảng dạy trên K12Online
+
+ - Nhà trường đã tạo các tổ chuyên môn, phân công giáo viên vào tổ chuyên môn đó.
+
+ 2. Hướng dẫn thao tác
+
+ Bước 1: Giáo viên vào module Kế hoạch giáo dục
+
+ Bước 2: Chọn Kế hoạch bài dạy trên K12Online => Chọn Thêm mới
+
+ Bước 3: Nhập các thông tin của kế hoạch bài dạy lên:
+
+ - Tên kế hoạch bài dạy
+
+ - Môn
+
+ - Khối
+
+ - Tiết, tuần (Theo PPCT)
+
+ - File kế hoạch bài dạy cần kiểm duyệt (định dạng .pdf)
+
+ - File đính kèm (nếu có)
+
+ => Sau đó nhấn Lưu lại .
+
+ Bước 4: Tại danh sách kế hoạch bài dạy đã tạo, giáo viên tìm kế hoạch bài dạy cần được kiểm duyệt, nhấn Xuất bản kế hoạch bài dạy để gửi yêu cầu kiểm duyệt cho Tổ trưởng chuyên môn và Nhà trường.
+
+ Sau khi Tổ trưởng chuyên môn và Nhà trường duyệt sẽ nhìn thấy kết quả như sau.
+
+==================================================
+

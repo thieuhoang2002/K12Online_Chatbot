@@ -1,0 +1,45 @@
+### BÀI VIẾT [97]: Hướng dẫn bài kiểm tra dạng nhập tay, có câu tự luận
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Giáo viên
+- Link gốc: https://hotro.k12online.vn/huong-dan-giao-vien-tao-bai-kiem-tra-dang-nhap-tay-tu-luan.html
+
+**Nội dung:**
+I. HƯỚNG DẪN GIÁO VIÊN TẠO BÀI KIỂM TRA
+
+ Bước 1: Vào menu Bài kiểm tra => Chọn Thêm mới => Chọn dạng Nhập tay để thực hiện thêm mới câu hỏi dạng nhập tay
+
+ Bước 2: Nhập các thông tin cơ bản của đề thi
+
+ Bước 3: Vào phần Thêm câu hỏi => Chọn Câu hỏi dạng tự luận để thêm mới câu hỏi dạng tự luận.
+
+ Bước 4: Nhập tiêu đề câu hỏi và cho điểm cho câu hỏi đấy. Giáo viên cũng có thể cho Lời giải .
+
+ Bước 5: Giáo viên nhấn Lưu lại để kết thúc đề thi.
+
+ II. HƯỚNG DẪN HỌC SINH LÀM BÀI, NỘP BÀI TỰ LUẬN
+
+ Cách 1: Nộp bài qua ứng dụng K12Online trên điện thoại
+
+ Bước 1: Học sinh đăng nhập vào ứng dụng K12Online
+
+ Bước 2: Click vào menu Bài kiểm tra
+
+ Bước 3: Chọn Bài kiểm tra cần làm và thực hiện làm bài
+
+ Bước 4: Tại câu hỏi, học sinh có thể click vào nút Thêm ảnh để thực hiện chụp ảnh bài làm rồi đưa lên hệ thống.
+
+ Cách 2: Nộp bài qua ứng dụng K12Online trên máy tính
+
+ - Tương tự như làm các dạng câu hỏi khác.
+
+ III. HƯỚNG DẪN GIÁO VIÊN CHẤM BÀI
+
+ Bước 1: Vào menu Học liệu => Chọn Bài kiểm tra
+
+ Bước 2: Tìm bài kiểm tra cần chấm => Click vào biểu tượng Báo cáo
+
+ Bước 3: Vào tab Bài thi => Để xem các bài làm mà học sinh đã nộp => Click vào hình con mắt (Xem bài thi) để vào chấm.
+
+ Bước 4: Giáo viên vào xem bài của học sinh, cho điểm và nhận xét bài làm. Sau khi chấm xong, nhấn Hoàn thành chấm để hệ thống ghi nhận.
+
+==================================================
+

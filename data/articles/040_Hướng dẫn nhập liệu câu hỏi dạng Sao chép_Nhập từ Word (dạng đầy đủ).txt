@@ -1,0 +1,63 @@
+### BÀI VIẾT [40]: Hướng dẫn nhập liệu câu hỏi dạng Sao chép/Nhập từ Word (dạng đầy đủ)
+- Chuyên mục: Trang chủ > Câu hỏi thường gặp > Dành cho Giáo viên
+- Link gốc: https://hotro.k12online.vn/cau-hoi-thuong-gap/nhap-lieu-cau-hoi-dang-sao-chep-nhap-tu-word-dang-day-du.html
+
+**Nội dung:**
+I. Hướng dẫn biên soạn câu hỏi
+
+ 1. Cấu trúc chuẩn
+
+ a) Các mức độ của câu hỏi:
+
+ - Nhận biết (Hoặc mức 1 đối với cấp tiểu học): <NB>
+
+ - Thông hiểu (Hoặc mức 2 đối với cấp tiểu học): <TH>
+
+ - Vận dụng thấp (Hoặc mức 3 đối với cấp tiểu học): <VDT>
+
+ - Vận dụng cao (Chưa áp dụng cho cấp tiểu học): <VDC>
+
+ b) Bắt đầu các câu hỏi
+
+ Bắt đầu mỗi câu sẽ là dạng câu hỏi:
+
+ - Câu chọn 1 đáp án: <NB-COA>
+
+ - Câu chọn nhiều đáp án: <NB-CMA>
+
+ - Câu chọn đúng sai: <NB-TF>
+
+ - Câu điền từ vào chỗ trống: <NB-TB>
+
+ - Câu tự luận: <NB-W>
+
+ - Câu dạng gạch chân: <NB-CAUL>
+
+ - Câu dạng nối chéo: <NB-DQA>
+
+ - Câu dạng đọc hiểu: <NB-RAAQ>
+
+ c) Kết thúc câu hỏi
+
+ - Kết thúc mỗi câu là <END>
+
+ - Nếu câu hỏi có lời giải thì bắt đầu lời giải là <LG>
+
+ d) Trọng số
+
+ - Ngoại trừ dạng câu hỏi 1 đáp án và nhiều đáp án đúng, thì các dạng khác có trọng số tính điểm tùy độ khó của các câu hỏi, trọng số là số từ 1 đến hết, trọng số càng cao thể hiện câu hỏi càng khó. <WE>
+
+ - Đối với câu hỏi tự luận, điểm tối đa của câu hỏi là <SM>
+
+ 2. Quy tắc nhận diện đáp án đúng
+
+ -    Bắt đầu mỗi đáp án sai là  <$>
+
+ -    Đối với đáp án đúng sẽ bắt đầu bằng <#>
+
+ 3. Các công thức toán học
+
+ - Các công thức được gõ bằng phần mềm MathType.
+
+==================================================
+

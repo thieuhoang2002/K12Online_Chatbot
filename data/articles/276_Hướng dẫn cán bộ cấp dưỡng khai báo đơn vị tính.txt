@@ -1,0 +1,78 @@
+### BÀI VIẾT [276]: Hướng dẫn cán bộ cấp dưỡng khai báo đơn vị tính
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Bán trú > Cán bộ cấp dưỡng
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/ban-tru/phu-huynh/huong-dan-can-bo-cap-duong-khai-bao-don-vi-tinh.html
+
+**Nội dung:**
+Đăng nhập vào tài khoản cán bộ cấp dưỡng >  click module Bán trú
+
+ Trên thanh menu > Click Menu Quản lý khai báo > Click Đơn vị tính
+
+ 1. Thêm mới đơn vị tính
+
+ Bước 1: Danh sách > click button Thêm mới
+
+ Bước 2: Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công
+
+ Lưu ý
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ 2. Chỉnh sửa đơn vị tính
+
+ Bước 1: Click icon chỉnh sửa thực hiện chỉnh sửa bản ghi
+
+ 3. Nhập excel
+
+ Bước 1 : Danh sách > Click button Nhập excel
+
+ Bước 2 : Hiển thị form > Nhập đầy đủ thông tin > Click button Nhập excel thực hiện thành công
+
+ Lưu ý :
+
+ Tải file không đúng định dạng ,Tải file quá dung lượng tối đa , Tải file đúng file mẫu lên hệ thống đưa ra thông báo lỗi
+ Bỏ trống các trường bắt buộc upload file lên  hệ thống trả về 1 file kết quả và thông báo lỗi
+ + Tải file với ngày lớn hơn thời gian hiện tại hệ thống báo lỗi và trả về file kết quả
+
+ 4. Xuất excel
+
+ Danh sách  Click button Xuất excel > File excel được tải về
+
+ Lưu ý :
+
+ Thực hiện xuất excel > File tải về hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với danh sách
+ Thực hiện tìm kiếm dữ liệu > sau click button Xuất excel > Thì hệ thống trả về file kết quả hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với trên danh sách
+ Thực hiện chọn kiểu sắp xếp danh sách> sau click button Xuất excel > Thì hệ thống trả về file kết quả hiển thị đầy đủ thông tin, thứ tự bản ghi khớp với trên danh sách
+
+ 5. Xóa đơn vị tính
+
+ C1: Xóa 1 bản ghi
+
+ Bước 1: Danh sách > Click icon xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa bản ghi  thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ C2: Xóa nhiều bản ghi
+
+ Bước 1: Danh sách > Click checkbox all >  chọn button xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ 6. Tìm kiếm đơn vị tính
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+
+==================================================
+

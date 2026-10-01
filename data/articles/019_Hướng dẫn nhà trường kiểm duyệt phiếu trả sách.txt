@@ -1,0 +1,21 @@
+### BÀI VIẾT [19]: Hướng dẫn nhà trường kiểm duyệt phiếu trả sách
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Thư viện số > Nhà trường
+- Link gốc: https://hotro.k12online.vn/article/news/huong-dan-nha-truong-kiem-duyet-phieu-tra-sach.html
+
+**Nội dung:**
+Hướng dẫn nhà trường kiểm duyệt phiếu trả sách
+
+ Bước 1: Tại ứng dụng Quản lý thư viện số > chọn menu Quản lý mượn, trả > Chọn menu Trả sách
+
+ Bước 2: Tới phiếu trả cần kiểm duyệt > Click icon để xem thông tin phiếu trả có đủ chính xác thông tin
+
+ Bước 3: Chọn icon để từ chối phiếu hoặc chọn icon để duyệt phiếu trả sách
+
+ Bước 4: Click nút Từ chối hoặc Duyệt trên cửa sổ xác nhận để hoàn thành thao tác
+
+ Phiếu trả bị từ chối có trạng thái Từ chối
+
+ Phiếu trả được duyệt có trạng thái Đã duyệt - Sách được trả thành công về thư viện
+
+==================================================
+

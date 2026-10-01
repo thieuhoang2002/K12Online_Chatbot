@@ -1,0 +1,63 @@
+### BÀI VIẾT [31]: Cách chuyển đổi PPT sang PDF
+- Chuyên mục: Trang chủ > Câu hỏi thường gặp > Dành cho Giáo viên
+- Link gốc: https://hotro.k12online.vn/cau-hoi-thuong-gap/giao-vien/cach-chuyen-doi-ppt-sang-pdf.html
+
+**Nội dung:**
+Cách chuyển đổi PPT sang PDF bằng chính phần mềm Powerpoint
+
+ 1. Cách chuyển đổi PPT sang PDF bằng Powerpoint 2019, 2016, 2013
+
+ Giả sử có một file Powerpoint như dưới hình.
+
+ Bước 1: Vào File => Export =>Nhấp vào Create PDF/XPS Document => Create PDF/XPS .
+
+ Bước 2:
+
+ - Trong cửa sổ mở, chọn một vị trí để lưu file.
+
+ - Để sửa đổi tên, nhập tên cần sửa vào File name .
+
+ Nhìn xuống phần Optimize for :
+
+ Theo mặc định, Standard (publicshing online and printing) sẽ được chọn để phù hợp với việc in ấn. Muốn làm cho file đầu ra nhỏ hơn thì lựa chọn Minium size (publishing online) .
+
+ Kết quả sau khi chuyển đổi file Powerpoint sang pdf.
+
+ 2. Cách chuyển đổi PPT sang PDF bằng Powerpoint 2010, 2007
+
+ Bước 1: Vào File => Save & Send => Create PDF/XPS Document => Create PDF/XPS .
+
+ Bước 2:
+
+ - Trong cửa sổ mở, chọn một vị trí để lưu file.
+
+ - Để sửa đổi tên, nhập tên cần sửa vào File name .
+
+ Sau đó nhấn Publish để chuyển File Powerpoint sang PDF.
+
+ II. Cách chuyển đổi PPT sang PDF bằng trình chuyển đổi PDF
+
+ 1. Máy in PDF (novaPDF)
+
+ NovaPDF được cài đặt như một máy in ảo cho phép bạn có thể tạo file PDF chỉ bằng cách in nó thay vì máy in thông thường. Để chuyển đổi bài thuyết trình Powerpoint sang PDF thực hiện như sau.
+
+ Bước 1: Truy cập trang NovaPDF tại đây để tải Novapdf về máy, cài đặt như bình thường.
+
+ Bước 2: Sau khi cài đặt xong, mở file Powerpoint muốn chuyển sang pdf => chuyển đến File => Print (hoặc nhấn tổ hợp phím Ctrl + P ) => Nhìn sang phần Printer => chọn tên máy là novaPDF .
+
+ 2. Cách chuyển đổi PowerPoint sang PDF online trực tuyến
+
+ Một số trình chuyển đổi trực tuyến phổ biến là Smallpdf , IlovePDF và Zamzar .
+
+ Tôi sẽ thực hiện chuyển đổi file Powerpoint sang PDF bằng trình chuyển đổi trực tuyến online IlovePDF .
+
+ Bước 1: Bạn truy cập vào đường link sau: https://www.ilovepdf.com/powerpoint_to_pdf .
+
+ Bước 2: Nhấn vào Select POWERPOINT files để lựa chọn file PPT muốn chuyển đổi sang PDF.
+
+ Bước 3: Sau khi cửa sổ Open hiện ra bạn chọn tên file PPT muốn chuyển đổi thành PDF => Open .
+
+ Bước 4: Thực hiện chuyển đổi file bằng cách nhấn vào Convert to PDF .
+
+==================================================
+

@@ -1,0 +1,41 @@
+### BÀI VIẾT [58]: Hướng dẫn giám thị/giáo viên khai báo vi phạm
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Quản lý vi phạm > Giám thị/Giáo viên
+- Link gốc: https://hotro.k12online.vn/giam-thi-giao-vien/huong-dan-giam-thi-giao-vien-khai-bao-vi-pham.html
+
+**Nội dung:**
+​ Bước 1: Đăng nhập bằng tài khoản giám thị, giáo viên
+
+ Bước 2: Hệ thống link vào trang chủ  > Danh sách ứng dụng > Click module Quản lý học sinh
+
+ Bước 3: Menu Quản lý khai báo > Click menu Vi phạm
+
+ 1. Thêm mới vi phạm
+
+ Bước 1: Click button Thêm mới
+
+ Bước 2: Nhập đầy đủ thông tin vào form > Click Lưu thực hiện thêm mới thành công
+
+ 2. Chỉnh sửa vi phạm
+
+ Bước 1: Danh sách > Click icon chỉnh sửa
+
+ Bước 2: Nhập đầy đủ thông tin vào form > Click Lưu thực hiện thành công
+
+ 3. Xóa vi phạm
+
+ Bước 1: Danh sách > Click icon xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ 4. Tìm kiếm vi phạm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ ​
+
+==================================================
+

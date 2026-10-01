@@ -1,0 +1,45 @@
+### BÀI VIẾT [74]: Hướng dẫn giáo viên điểm danh học sinh
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Điểm danh > Giáo viên
+- Link gốc: https://hotro.k12online.vn/giao-vien3/huong-dan-giao-vien-diem-danh-hoc-sinh.html
+
+**Nội dung:**
+1. Danh sách điểm danh
+
+ Bước 1: Truy cập menu Điểm danh học sinh
+ Bước 2: Click vào tiêu đề lớp học để xem chi tiết danh sách điểm danh học sinh lớp học
+
+ Bước 3: Hiển thị danh sách điểm danh học sinh của lớp học
+
+ Tải lại
+ Trên danh sách > click button Tải lại > Thực hiện tải lại danh sách.
+
+ 2. Điểm danh học sinh
+
+ 2.1. Điểm danh 1 học sinh
+
+ Bước 1: Trên màn hình danh sách > Click checkbox > Chọn trạng thái điểm danh
+
+ Bước 2: Hệ thống hiển thị popup xác nhận
+ + Click Đồng ý để xác nhận chuyển trạng thái điểm danh
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ 2.2. Điểm danh nhiều học sinh
+
+ Bước 1: Trên màn hình danh sách > Tích chọn checkbox all > Chọn trạng thái điểm danh
+
+ Bước 2: Hệ thống hiển thị popup xác nhận
+ + Click Đồng ý để xác nhận chuyển trạng thái điểm danh
+
+ + Click Hủy bỏ để quay lại danh sách
+
+ 3. Gửi thông báo
+
+ Bước 1: Tại danh sách > Click button Gửi thông báo để gửi thông báo cho phụ huynh có học sinh đã được điểm danh
+
+ 4. Tìm kiếm học sinh điểm danh
+
+ Bước 1: Tại vùng tìm kiếm: nhập/ chọn tiêu chí tìm kiếm > Click button Tìm kiếm/ nhấn Enter để thực hiện tìm kiếm học sinh điểm danh
+
+==================================================
+

@@ -1,0 +1,35 @@
+### BÀI VIẾT [90]: Hướng dẫn học sinh xem thời khóa biểu
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Học sinh
+- Link gốc: https://hotro.k12online.vn/hoc-sinh/thoi-khoa-bieu.html
+
+**Nội dung:**
+Mỗi học sinh có một thời khóa biểu của riêng mình. Tại đây, học sinh có thể xem được lịch học/kiểm tra nếu giáo viên gán vào thời khóa biểu.
+
+ Có 3 dạng học liệu chính mà giáo viên có thể đưa lên thời khóa biểu cho học sinh học:
+
+ Bài giảng trực tuyến (màu xa trời)
+
+ Bài kiểm tra (màu đỏ)
+
+ Lớp học ảo (màu xanh lá cây)
+
+ Trường hợp 1: Sử dụng trên máy tính
+
+ Để vào tính năng Thời khóa biểu, học sinh vào menu Thời khóa biểu ở ngay trên hệ thống. Hệ thống sẽ hiện thị ra thời khóa biểu của học sinh.
+
+ Click vào nội dung cần học/xem lại. Sau đó:
+
+ Nhấn nút Vào học (nếu muốn vào học bài giảng hoặc vào tham gia lớp học ảo);
+
+ Nhấn nút Vào thi (nếu muốn vào làm bài kiểm tra)
+
+ Nhấn nút Xem lại (nếu muốn xem lại bài giảng, lớp học ảo).
+
+ Trường hợp 2: Sử dụng trên thiết bị di động (tablet, smartphone...)
+
+ Để vào tính năng Thời khóa biểu, học sinh vào menu Thời khóa biểu ở ngay giao diện của ứng dụng K12Online. Hệ thống sẽ hiện thị ra thời khóa biểu của học sinh.
+
+ Click vào nội dung cần vào học/xem lại.
+
+==================================================
+

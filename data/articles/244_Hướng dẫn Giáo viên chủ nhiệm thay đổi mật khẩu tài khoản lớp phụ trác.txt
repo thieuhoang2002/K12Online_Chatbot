@@ -1,0 +1,13 @@
+### BÀI VIẾT [244]: Hướng dẫn Giáo viên chủ nhiệm thay đổi mật khẩu tài khoản lớp phụ trách
+- Chuyên mục: Trang chủ > Cấu hình chung > Tài khoản > Giáo viên
+- Link gốc: https://hotro.k12online.vn/tai-khoan/huong-dan-giao-vien-thay-doi-mat-khau-tai-khoan.html
+
+**Nội dung:**
+Giáo viên chủ nhiệm có thể thay đổi mật khẩu trên hệ thống. Thao tác như sau:
+
+ Bước 1: Đăng nhập vào tài khoản giáo viên
+
+ Bước 2: Giáo viên chọn quyền giáo viên > Chọn module Quản lý đào tạo
+
+==================================================
+

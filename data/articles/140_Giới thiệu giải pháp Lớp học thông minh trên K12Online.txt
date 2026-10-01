@@ -1,0 +1,27 @@
+### BÀI VIẾT [140]: Giới thiệu giải pháp Lớp học thông minh trên K12Online
+- Chuyên mục: Trang chủ > Tính năng khác > Giải pháp Lớp học thông minh
+- Link gốc: https://hotro.k12online.vn/lop-hoc-thong-minh/giai-phap-lop-hoc-thong-minh-tren-k12online.html
+
+**Nội dung:**
+Lớp học thông minh là tính năng nâng cao, dành riêng cho các cơ sở giáo dục được trang bị phòng học thông minh với các thiết bị và các phần mềm giáo dục tiên tiến, hiện đại vào giảng dạy, nhằm tăng tính tương tác giữa người học và người học, người học và người dạy.
+
+ Lớp học thông minh của K12Online sẽ có các tính năng để giúp kết nối thiết bị của giáo viên tới toàn bộ thiết bị học tập của học sinh trong phòng học thông minh để tổ chức một tiết học trực tiếp sinh động, hấp dẫn với học sinh hơn nhờ ứng dụng các tiện ích của công nghệ như:
+
+ - Điểm danh
+
+ - Trình chiếu bảng trắng
+
+ - Trình chiếu bài giảng theo thời gian thực
+
+ - Trình chiếu tệp tin theo thời gian thực
+
+ - Trình chiếu, gửi yêu cầu làm bài kiểm tra
+
+ - Gửi thông báo
+
+ - Khóa màn hình
+
+ - Các trò chơi tương tác...
+
+==================================================
+

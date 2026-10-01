@@ -1,0 +1,113 @@
+### BÀI VIẾT [103]: Hướng dẫn Học sinh sử dụng chương trình "Nhật ký ngày hè vui"
+- Chuyên mục: Trang chủ > Nội dung tham khảo > Nhật ký Ngày hè vui
+- Link gốc: https://hotro.k12online.vn/huong-dan-hoc-sinh-su-dung-chuong-trinh-nhat-ky-ngay-he-vui.html
+
+**Nội dung:**
+I. Đăng nhập hệ thống
+
+ Bước 1:
+
+ Truy cập vào địa chỉ https://k12online.vn
+
+ ** Lưu ý: Khuyến nghị sử dụng trình duyệt Google Chrome trên máy tính
+
+ Bước 2:
+
+ Đăng nhập bằng tài khoản được cấp
+
+ Bước 3:
+
+ Sau khi đăng nhập, màn hình sẽ hiển thị màn hình Trang chủ với “Chương trình học” được chia sẻ. Hãy lựa chọn chương trình học bạn cần truy cập:
+
+ Bước 4:
+
+ Sau đó, màn hình sẽ hiển thị chương trình lựa chọn như sau, bạn vui lòng vào nút “Bắt đầu”:
+
+ Bước 5:
+
+ Sau khi chọn vào nút “Bắt đầu”, màn hình sẽ hiển thị ra toàn bộ lịch trình học trong vòng 60 ngày, màu sắc ngày và màu sắc của ngôi sao (tương ứng với 3 môn học Toán - Tiếng Việt - Tiếng Anh) phụ thuộc vào tình trạng làm bài của học sinh, cụ thể:
+
+ Màu cam: tình trạng chưa làm bài hoặc đang làm bài
+
+ Màu xanh: tình trạng đã làm xong bài
+
+ Tại tiêu đề sẽ thể hiện tình trạng số ngày đã có bài được làm, được tính bằng cách:
+
+ Số ngày đã có bài được làm = Số ngày đang làm bài + Số ngày đã làm xong bài
+
+ Ví dụ như hình ảnh dưới đây thể hiện số ngày đã có bài được làm là 5/60.
+
+ Bước 6:
+
+ Tiếp theo, học sinh lựa chọn vào 1 ngày bất kì trong lịch trình học tập để thực hiện làm bài, màn hình sẽ hiển thị 3 môn học để học sinh lựa chọn học tập.
+
+ Trường hợp 1: Học sinh chưa từng thực hiện môn nào của ngày đó, các môn học sẽ đều được hiển thị chưa làm như hình ảnh dưới đây. Học sinh cần chọn vào 1 môn học bất kì và click “Làm bài” để bắt đầu làm bài tập.
+
+ Trường hợp 2: Học sinh đã từng thực hiện làm bài tập của 1 môn học bất kì, màn hình sẽ hiển thị tương ứng tình trạng làm bài kèm số lượng bài tập đã hoàn thành trên tổng số bài tập cần hoàn thành, cụ thể như hình ảnh dưới đây. Học sinh cần chọn vào 1 môn học bất kì và click “Làm bài” để bắt đầu làm bài tập.
+
+ Bước 7:
+
+ Sau khi chọn “Làm bài”, màn hình sẽ hiển thị nội dung bài tập học sinh cần thực hiện như màn hình dưới đây:
+
+ Tại màn hình này, học sinh có thể theo dõi được các thông tin sau:
+
+ Phía bên trái màn hình thể hiện môn học đang được làm bài kèm với số lượng câu đã hoàn thành và 2 môn còn lại để thay đổi lựa chọn thực hiện làm bài (Môn được chọn thể hiện bằng màu vàng và có hình mũi em tên).
+
+ Phía trên cùng màn hình là thanh tiến trình làm bài tập của môn học đang được thực hiện, với màu sắc thể hiện tương ứng tình trạng làm bài và kết quả làm bài như sau:
+
+ Màu xanh: đã làm đúng
+
+ Màu đỏ: đã làm chưa đúng
+
+ Màu vàng: đang thực hiện làm bài tại câu này
+
+ Màu xám: chưa thực hiện làm bài tại câu này
+
+ Phía bên phải màn hình thể hiện tỉ lệ số câu làm đúng trên tổng số câu cần làm và thời gian làm bài đã trôi qua.
+
+ Sau khi hoàn thành câu bài tập, học sinh chọn “Trả lời” để gửi đáp án đến hệ thống.
+
+ Bước 8:
+
+ Sau khi hệ thống nhận đáp án học sinh, màn hình sẽ hiển thị thông báo về kết quả làm bài của học sinh như màn hình dưới đây:
+
+ Trường hợp 1: Học sinh làm đúng, hệ thống thông báo “Chính xác” kèm “Hướng dẫn làm bài”.
+
+ Trường hợp 2: Học sinh làm sai, hệ thống sẽ thông báo “Chưa đúng” kèm theo câu trả lời đúng và “Hướng dẫn làm bài”
+
+ Bước 9:
+
+ Học sinh lựa chọn “Tiếp tục” để thực hiện làm bài ở các câu bài tập tiếp theo đến khi hoàn thành hết các câu trong nội dung bài học của môn học đó và chọn “Hoàn thành” để nhận kết quả làm bài.
+
+ Bước 10:
+
+ Sau đó, màn hình sẽ hiển thị thông báo kết quả làm bài như hình ảnh dưới đây:
+
+ Tại màn hình này, học sinh có thể theo dõi được các thông tin sau:
+
+ Môn học đã hoàn thành được thể hiện trên đoàn tàu
+
+ Tỉ lệ số câu đúng trên tổng số câu thực hiện
+
+ Thời gian làm bài
+
+ Sau đó, học sinh có thể tùy chọn thực hiện các hoạt động tiếp theo như “Làm nhiệm vụ khác”, “Xem lại” nội dung đã làm hoặc “Luyện tập tiếp”.
+
+ Bước 11:
+
+ Tương ứng với mỗi lựa chọn của học sinh, màn hình sẽ điều hướng học sinh đến nội dung tương ứng:
+
+ Với lựa chọn “Làm nhiệm vụ khác”, hệ thống sẽ chuyển về màn hình lịch trình 60 ngày học.
+
+ Với lựa chọn “Xem lại”, hệ thống sẽ cho phép học sinh được xem lại toàn bộ kết quả làm bài kèm theo đáp án chi đúng và hướng dẫn làm bài, học sinh có thể lựa chọn “Làm lại”.
+
+ Với lựa chọn “Luyện tập tiếp”, hệ thống sẽ chuyển về màn hình đoàn tàu có 3 môn học để học sinh thực hiện làm bài với các môn học còn lại.
+
+ Bước 12:
+
+ Để xem báo cáo kết quả học tập, tại màn hình 60 ngày, click chọn biểu tượng báo cáo
+
+ Bảo cáo được hiển thị như màn hình bên dưới.
+
+==================================================
+

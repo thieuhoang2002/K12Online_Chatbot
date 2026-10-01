@@ -1,0 +1,69 @@
+### BÀI VIẾT [334]: Hướng dẫn Nhà trường - Kế toán quản lý danh sách chờ đối soát
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Học phí > Nhà trường - Kế toán
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/hoc-phi/nha-truong-ke-toan/huong-dan-nha-truong-ke-toan-nghiep-vu-danh-sach-cho-doi-soat.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản Nhà trường / Kế toán
+
+ Bước 2: Trang chủ  > Click vào module Học phí > Click Thu học sinh > Click Danh sách chờ đối soát
+
+ 1. Nhập excel
+
+ Bước 1 : Danh sách > Click button Nhập excel
+
+ Bước 2 : Hiển thị form > Nhập đầy đủ thông tin > Click button Nhập excel thực hiện thành công
+
+ Lưu ý :
+
+ Sau khi đối soát thành công thì hiển thị trạng thái đã đối soát, cập nhật công nợ ở tab danh sách công nợ và hiển thi phiếu thu ở tab danh sách phiếu thu
+ Sau khi đối soát thành công thì hiển thị thông báo đến tài khoản phụ huynh và hiển thị khoản thu ở trạng thái thành công ở tab đã thanh toán dưới app
+ Tải file không đúng định dạng , Tải file đúng file mẫu lên hệ thống đưa ra thông báo lỗi
+ Bỏ trống các trường bắt buộc upload file lên  hệ thống trả về 1 file kết quả và thông báo lỗi
+ Tải file nhập tổng tiền đã nộp > tổng tiền phải nộp vẫn thực hiện thành công, cập nhật công nợ âm
+ Tải file nhập tổng tiền đã nộp < tổng tiền phải nộp vẫn thực hiện thành công, cập nhật công nợ ở tab danh sách công nợ, hiển thị số tiền còn lại cần đóng của khoản thu ở dưới app
+ Nhập ngày ngân hàng < ngày giao dịch thì hệ thống trả về file kết quả import lỗi
+ Kiểm tra đối soát 1 mã giao dịch 2 lần vẫn thực hiện thành công, cập nhật tổng nhận ở tab danh sách đối soát, công nợ ở tab danh sách công nợ và hiển thị phiếu thu ở tab danh sách phiếu thu
+ 2. Tìm kiếm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > Click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ 3. Xóa
+
+ Bước 1 : Danh sách > Tick check box > Click button Xóa
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Xóa” thực hiện xóa thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác xóa
+
+ 4. Duyệt
+
+ Bước 1 : Danh sách > Click icon Duyệt
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Duyệt” thực hiện duyệt thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác duyệt
+
+ Lưu ý:
+
+ Sau khi duyệt đối soát thì sẽ hiển thị thông báo ở tài khoản phụ huynh, cập nhật công nợ ở tab danh sách công nợ, hiển thị phiếu thu ở tab danh sách phiếu thu, hiển thị giao dịch thành công ở tab đã thanh toán dưới app phụ huynh
+ 5. Từ chối
+
+ Bước 1 : Danh sách > Click icon Từ chối
+
+ Bước 2: Hiển thị form xác nhận
+
+ + Click “Duyệt” thực hiện Từ chối thành công
+
+ + Click “Hủy bỏ” hủy bỏ thao tác Từ chối
+
+ Lưu ý:
+
+ Sau khi từ chối đối soát thì sẽ hiển thị thông báo ở tài khoản phụ huynh, công nợ giữ nguyên không bị thay đổi , hiển thị giao dịch thất bại ở tab đã thanh toán dưới app phụ huynh
+ 6. Xem chi tiết
+
+==================================================
+

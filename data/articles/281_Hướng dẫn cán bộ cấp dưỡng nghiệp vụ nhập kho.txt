@@ -1,0 +1,45 @@
+### BÀI VIẾT [281]: Hướng dẫn cán bộ cấp dưỡng nghiệp vụ nhập kho
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Bán trú > Cán bộ cấp dưỡng
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/ban-tru/phu-huynh/huong-dan-can-bo-cap-duong-nghiep-vu-nhap-kho.html
+
+**Nội dung:**
+Đăng nhập vào tài khoản cán bộ cấp dưỡng >  click module Bán trú
+
+ Bước 1 : Trên màn hình > click menu Nhập kho
+
+ Click icon chỉnh sửa thực hiện chỉnh sửa bản ghi
+ Click icon xóa thực hiện xóa bản ghi
+ Click icon xem chi tiết thực hiện xem chi tiết phiếu nhập kho
+
+ 1. Thêm mới
+
+ Bước 1 : Danh sách > Click button Thêm mới
+
+ Bước 2 : Hiển thị form > Nhập đầy đủ thông tin > Click Lưu thực hiện thêm mới thành công
+
+ Lưu ý
+
+ Các trường có dấu * bắt buộc phải nhập và không được bỏ trống
+ Bỏ trống các trường bắt buộc khi click button Lưu hệ thống đưa ra thông báo + focus vào trường lỗi cụ thể
+ Nhà cung cấp list dữ liệu có trạng thái hoạt động từ menu khai báo Nhà cung cấp
+ Người nhận hàng list dữ liệu từ menu Tài khoản có loại tài khoản là Giáo viên
+ Loại thực phẩm list dữ liệu có trạng thái hoạt động từ menu khai báo Loại thực phẩm
+ Thực phẩm list dữ liệu theo menu khai báo Thực phẩm và giá trị Loại thực phẩm đã chọn
+
+ 2. Xem chi tiết
+
+ Danh sách > Click icon xem chi tiết
+
+ Màn hình hiển thị chi tiết của bản ghi
+
+ 3. Tìm kiếm
+
+ Trên thanh tìm kiếm > Nhập/chọn thông tin cần tìm > Nhấn enter
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+
+==================================================
+

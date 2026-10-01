@@ -1,0 +1,40 @@
+### BÀI VIẾT [145]: Một số câu hỏi thường gặp về tài khoản Sở GD&amp;ĐT TP.HCM
+- Chuyên mục: Trang chủ > Cấu hình chung > Tài khoản > Khác
+- Link gốc: https://hotro.k12online.vn/mot-so-cau-hoi-thuong-gap-ve-tai-khoan-so-giao-duc-thanh-pho-ho-chi-minh.html
+
+**Nội dung:**
+1. Nhà trường muốn xuất danh sách tài khoản SSO HCM thì làm như thế nào?
+
+ Trả lời:
+
+ Bước 1: Nhà trường đăng nhập vào hệ thống truong.hcm.edu.vn => Chọn module Quản lý học và thi trực tuyến
+
+ Bước 2: Chọn 1. Hệ thống => Chọn 1.2. Quản lý tài khoản thí sinh
+
+ 2. Nhà trường muốn reset mật khẩu học sinh trên tài khoản SSO HCM thì làm như thế nào?
+
+ Trả lời:
+
+ Nhà trường lên trên trang truong.hcm.edu.vn để thực hiện.
+
+ 3. GVCN có hỗ trợ reset mật khẩu tài khoản học sinh SSO HCM không?
+
+ Trả lời:
+
+ Tùy thuộc theo phân quyền của nhà trường trên trang truong.hcm.edu.vn .
+
+ 4. Thông tin tài khoản SSO HCM sai thì nhà trường xử lý như thế nào?
+
+ Trả lời:
+ - Nhà trường lên trang truong.hcm.edu.vn để kiểm tra lại.
+
+ 5. Kênh hỗ trợ về vấn đề tài khoản SSO HCM dành cho nhà trường là gì? Đầu mối và cách thức liên hệ.
+
+ Trả lời:
+
+ Nhà trường vui lòng liên hệ Đ/c Tùng – Sở GD&ĐT Thành phố Hồ Chí Minh để được hỗ trợ và giải đáp.
+
+ Lưu ý: Cung cấp thông tin chi tiết để được hỗ trợ nhanh nhất.
+
+==================================================
+

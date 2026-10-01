@@ -1,0 +1,67 @@
+### BÀI VIẾT [118]: Hướng dẫn Nhập câu hỏi từ Word
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ dạy, học > Học, thi trực tuyến > Câu hỏi thường gặp
+- Link gốc: https://hotro.k12online.vn/huong-dan-nhap-cau-hoi-tu-word.html
+
+**Nội dung:**
+1. Nguyên tắc chung
+
+ - Nhập theo đúng hướng dẫn/mẫu trong từng file mẫu.
+
+ - Lưu ý nhập đúng/đủ các từ khóa để hệ thống nhận dạng được. Ví dụ:
+
+ + Bắt đầu phần câu hỏi;
+
+ + Bắt đầu các câu;
+
+ + Bắt đầu các đáp án;
+
+ + Ký hiệu loại câu hỏi;
+
+ + Ký hiệu mức độ khó.
+
+ + Bắt đầu phần đáp án
+
+ + Bắt đầu phần lời giải...
+
+ - Nội dung câu hỏi không được chứa các từ khóa trùng với ký hiệu đáp án như A. B. C. D
+
+ 2. Một số ký hiệu cần nắm:
+
+ 2.1. Ký hiệu loại câu hỏi
+
+ - SCQ: Single Choice Question = Câu hỏi chọn 1 đáp án đúng
+
+ - MCQ: Multi Choice Question = Câu hỏi chọn nhiều đáp án đúng
+
+ - TF4: True False 4 = Câu hỏi đúng sai 4 ý
+
+ - SAQ: Short Answer Question = Câu hỏi trả lời ngắn
+
+ - GQ: Group Question = Câu hỏi dạng phức/nhóm/chùm
+
+ - EQ: Essay Question = Câu tự luận
+
+ 2.2. Ký hiệu mức độ khó
+
+ - NB: Nhận biết
+
+ - TH: Thông hiểu
+
+ - VDT: Vận dụng thấp
+
+ - VDC: Vận dụng cao.
+
+ 3. Lưu ý khi nhập câu hỏi có chứa công thức Toán học
+
+ - Nên soạn bằng Mathtype hoặc Equation có sẵn trên file Word.
+
+ - Trong trường hợp công thức lấy từ nguồn khác, giáo viên nên chụp màn hình lại công thức đó và paste với dạng ảnh. Không copy nguyên ảnh trên mạng hoặc từ file đó để tránh sai link đường dẫn ảnh hoặc dễ lỗi.
+
+ - Không copy nguyên ảnh công thức từ trên mạng hoặc từ nguồn khác vì dễ bị lỗi đính dạng/link ảnh bị xóa… dẫn tới import sẽ không lên được.
+
+ 4. Một số lỗi thường gặp
+
+ - Xem tại: https://docs.google.com/document/d/12pPbbRRvFaGC1UiNP8NRuP_8kBUzLAWGGIRGzSOAs6A/edit?usp=sharing
+
+==================================================
+

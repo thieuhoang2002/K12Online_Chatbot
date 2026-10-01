@@ -1,0 +1,50 @@
+### BÀI VIẾT [314]: Hướng dẫn giáo viên chủ nhiệm/ phó chủ nhiệm quản lý lịch học
+- Chuyên mục: Trang chủ > Công cụ hỗ trợ quản trị > Câu lạc bộ > Giáo viên
+- Link gốc: https://hotro.k12online.vn/xem-theo-tinh-nang/clb/giao-vien/huong-dan-giao-vien-chu-nhiem-pho-chu-nhiem-quan-ly-lich-hoc.html
+
+**Nội dung:**
+Bước 1: Đăng nhập tài khoản chủ nhiệm / phó chủ nhiệm câu lạc bộ
+
+ Bước 2: Trang chủ  > Click vào module Câu lạc bộ > Vào menu Quản lý lịch học
+
+ 1. Quản lý lịch học
+
+ 1.1. Xem lịch học
+
+ Xem lịch học tất cả lớp câu lạc bộ
+
+ 1.2. Sửa/ xóa lịch học
+
+ Click icon chỉnh sửa thực hiện chỉnh sửa lịch học đối với lịch học chưa diễn ra
+
+ Click icon xóa thực hiện xóa lịch học đối với lịch học chưa diễn ra
+
+ ​​​​​​​1.3. Tìm kiếm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+ ​​​​​​​2. Lịch sử đăng ký nghỉ
+
+ 2.1. Xem danh sách
+
+ Xem danh sách đăng ký nghỉ học sinh
+
+ ​​​​​​​2.2. Xem chi tiết
+
+ Click icon xem chi tiết xem chi tiết đơn xin nghỉ học
+
+ ​​​​​​​2.3. Tìm kiếm
+
+ Danh sách > Bộ lọc: Nhập / chọn dữ liệu > click button Tìm kiếm > Danh sách trả về kết quả theo tiêu chí đã nhập /chọn.
+
+ Lưu ý :
+
+ Thực hiện tìm kiếm không có dữ liệu hệ thống trả về kết quả thông báo : Không tìm thấy kết quả tìm kiếm
+ Thực hiện tìm kiếm có dữ liệu danh sách trả về kết quả theo tìm kiếm theo sắp xếp theo ngày tạo gần đây
+
+==================================================
+
