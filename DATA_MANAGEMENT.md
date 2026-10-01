@@ -98,14 +98,65 @@ Nếu một bài viết mới có nội dung quá dài (>15.000 ký tự) hoặc
 
 ---
 
-## 5. Đẩy dữ liệu mới lên Production (Vercel)
+## 5. Quản lý Cơ sở Dữ liệu Supabase (Database Management)
+
+Hệ thống sử dụng Supabase PostgreSQL với file định nghĩa lược đồ tại `supabase/schema.sql`:
+
+### 5.1. Bảng `chat_feedback` (Lưu trữ đánh giá người dùng)
+Mỗi khi Thầy/Cô bấm Like hoặc Dislike, dữ liệu được ghi vào bảng này:
+| Cột | Kiểu | Mô tả |
+| :--- | :--- | :--- |
+| `id` | `UUID` | Khóa chính tự sinh |
+| `session_id` | `TEXT` | ID phiên hội thoại |
+| `message_id` | `TEXT` | ID tin nhắn AI được đánh giá |
+| `rating` | `TEXT` | Giá trị `'like'` hoặc `'dislike'` |
+| `reason` | `TEXT` | Lý do không hài lòng (`wrong_content`, `missing_steps`, `broken_link`, `confusing`, `other`) |
+| `comment` | `TEXT` | Lời nhắn góp ý chi tiết của người dùng |
+| `user_email` | `TEXT` | Email người dùng (nếu đã đăng nhập, ngược lại ghi `guest`) |
+| `created_at` | `TIMESTAMPTZ`| Thời điểm gửi đánh giá |
+
+### 5.2. Bảng `admin_vault` (Kho lưu trữ xác thực Zero-Knowledge)
+Bảng bảo mật cao cấp phục vụ trang `/admin`:
+| Cột | Kiểu | Mô tả |
+| :--- | :--- | :--- |
+| `id` | `UUID` | Khóa chính |
+| `email` | `TEXT UNIQUE` | Email quản trị viên trong Whitelist |
+| `ciphertext` | `TEXT` | Chuỗi mã hóa AES-256-GCM (Hex) |
+| `salt` | `TEXT` | Muối ngẫu nhiên 16 bytes phục vụ PBKDF2 (Hex) |
+| `iv` | `TEXT` | Initialization Vector 12 bytes của AES-GCM (Hex) |
+| `hint` | `TEXT` | Gợi ý mật mã công khai để quản trị viên tự nhớ |
+| `updated_at` | `TIMESTAMPTZ`| Thời điểm cập nhật mật khẩu lần cuối |
+
+> **Lưu ý bảo mật:** Bảng này tuyệt đối KHÔNG lưu trữ mật khẩu dạng rõ (plaintext). Kể cả database bị rò rỉ, kẻ tấn công cũng không thể suy ngược lại Master Password nếu không có sức mạnh tính toán vượt trội hàng chục năm.
+
+---
+
+## 6. Quy trình Cải tiến Tri thức từ Báo cáo Telegram & Dislike
+
+Khi nhận được thông báo phản hồi tiêu cực qua Telegram Webhook:
+1. Đọc nội dung câu hỏi và lý do giáo viên phản hồi (ví dụ: *"Thiếu bước thực hiện"* hoặc *"Link gốc bị hỏng"*).
+2. Mở trang quản trị `/admin` (hoặc mở trực tiếp `data/articles/`) để kiểm tra bài viết liên quan.
+3. Chỉnh sửa bổ sung bước thao tác hoặc cập nhật link mới nhất từ Viettel.
+4. Chạy `node scripts/build_knowledge_json.js` để cập nhật `data/k12_knowledge.json`.
+5. Đẩy lên Git để Vercel tự động build và deploy.
+
+---
+
+## 7. Đẩy dữ liệu mới lên Production (Vercel)
 
 Sau khi hoàn tất cập nhật trên máy tính, bạn chỉ cần mở Terminal và chạy lệnh Git:
 
 ```powershell
+# 1. Đẩy lên nhánh dev
 git add .
-git commit -m "feat(data): cap nhat tri thuc va prebaked answers K12Online"
+git commit -m "feat(data): cập nhật tri thức và prebaked answers K12Online"
 git push origin dev
+
+# 2. Đồng bộ sang nhánh main (cho Vercel Production)
+git checkout main
+git merge dev
+git push origin main
+git checkout dev
 ```
 
 Nền tảng **Vercel** sẽ phát hiện thay đổi trên Git, tự động chạy lệnh `prebuild` để biên dịch tri thức mới và triển khai bản cập nhật chỉ trong khoảng **40 - 60 giây**.

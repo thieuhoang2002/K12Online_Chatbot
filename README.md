@@ -31,6 +31,19 @@
    - **Rate Limiting theo IP:** Tối đa 20 câu hỏi / phút / IP qua Upstash Redis (chặn 429 Too Many Requests).
    - **Giới hạn Payload:** Tối đa 1.500 ký tự / câu hỏi, ngăn chặn hành vi flood token.
 8. **Đồng bộ đám mây (Supabase BaaS):** Hỗ trợ đăng nhập và đồng bộ lịch sử hội thoại khi người dùng có nhu cầu.
+9. **Trang Dashboard Quản Trị Bảo Mật Zero-Knowledge (`/admin`):**
+   - **Bảo vệ 2 lớp:** Whitelist tài khoản quản trị (`thieuhoangent@gmail.com`, `thieuviethoang7b@gmail.com`) kết hợp với Master Password mã hóa Client-Side.
+   - **Chuẩn mã hóa Web Crypto cấp quân sự:** PBKDF2 (100.000 vòng lặp SHA-256) cố ý làm chậm chống tấn công brute-force + AES-256-GCM với Authentication Tag chống can thiệp ciphertext. Server chỉ lưu `{ ciphertext, salt, iv, hint }`, kể cả database bị xâm nhập cũng không bao giờ lộ mật khẩu gốc.
+   - **Báo cáo & Thống kê Thời gian thực:** Theo dõi KPI hội thoại, đánh giá Like/Dislike, tra cứu kho 383 bài viết, sao chép mã nhúng widget và kiểm tra cảnh báo Telegram.
+10. **Đánh giá Chất lượng (Like / Dislike Feedback) & Xuất Dữ liệu (Export Chat):**
+    - Thầy/Cô có thể Like hoặc Dislike từng câu trả lời kèm lý do và góp ý chi tiết.
+    - Hỗ trợ xuất toàn bộ phiên trò chuyện ra các định dạng: Markdown (`.md`), Văn bản thuần (`.txt`) và In trực tiếp / Lưu PDF chuẩn in ấn (`@media print`).
+11. **Widget nhúng Website Trường học (Embeddable Widget):**
+    - Cung cấp script độc lập `public/widget.js` và route `/embed` cho phép mọi website trường học tích hợp Trợ lý K12 vào góc màn hình chỉ bằng 1 dòng thẻ `<script>`.
+12. **Cảnh báo Lỗi & Giám sát Tự động qua Telegram Webhook:**
+    - Bot Telegram giám sát 24/7, gửi thông báo HTML tức thì về điện thoại khi có IP spam rate limit, khi AI Engine tự failover, khi người dùng gửi góp ý Dislike, hoặc khi server gặp mã lỗi 500.
+13. **Trải nghiệm cuộn thông minh & Chống giật lag (Smart Scroll-Intent):**
+    - Tự động nhận diện khi người dùng cuộn lên xem nội dung để tạm dừng auto-scroll và hiển thị nút nổi *"Xuống mới nhất ↓"*; cơ chế khóa state chống xung đột khi chuyển tab.
 
 ---
 
@@ -55,6 +68,14 @@
    # Cloudflare Turnstile
    NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY=0x4AAAAAA...
    CLOUDFLARE_TURNSTILE_SECRET_KEY=0x4AAAAAA...
+
+   # Supabase BaaS & Auth
+   NEXT_PUBLIC_SUPABASE_URL=https://...supabase.co
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=...
+
+   # Telegram Bot Alerts & Observability (Cảnh báo lỗi tự động)
+   TELEGRAM_BOT_TOKEN=123456789:ABCdefGHIjklMNOpqrSTUvwxYZ
+   TELEGRAM_CHAT_ID=-100xxxxxxxxxx (hoặc Chat ID cá nhân)
    ```
 3. Chạy môi trường phát triển:
    ```bash

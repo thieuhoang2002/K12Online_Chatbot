@@ -47,9 +47,44 @@
   2. **Rate Limiting:** Giới hạn 20 câu hỏi / phút cho mỗi địa chỉ IP thông qua Upstash Redis (trả về 429 Too Many Requests).
   3. **Payload Limit:** Khống chế độ dài tối đa 1.500 ký tự / câu hỏi (trả về 400 Bad Request).
 
+### 2.6. Bảng điều khiển Quản trị Bảo mật Zero-Knowledge (Admin Dashboard)
+- **Mã nguồn:** `src/app/admin/page.tsx`, `src/lib/zeroKnowledge.ts`, `src/components/AdminPassModal.tsx`, `src/app/api/admin/*`
+- **Kiến trúc bảo mật:**
+  - Whitelist email kiểm soát quyền truy cập (`thieuhoangent@gmail.com`, `thieuviethoang7b@gmail.com`).
+  - Web Crypto API: PBKDF2 (100.000 iterations, SHA-256) + AES-256-GCM (128-bit Authentication Tag).
+  - Server chỉ lưu trữ `{ ciphertext, salt, iv, hint }` tại bảng `admin_vault` trên Supabase. Mật mã plaintext tuyệt đối không bao giờ được gửi qua mạng hay lưu ở server/database.
+- **Tính năng bàn giao:**
+  - Báo cáo thời gian thực KPIs (tổng phiên, tin nhắn, phản hồi, tỷ lệ tích cực).
+  - Quản lý và duyệt ý kiến góp ý của người dùng (Feedback Explorer).
+  - Tra cứu trực tiếp kho 383 bài viết nghiệp vụ và link gốc Viettel.
+  - Công cụ tạo mã nhúng Widget website trường học.
+  - Nút thử nghiệm bắn cảnh báo Telegram trực tiếp.
+
+### 2.7. Hệ thống Giám sát & Cảnh báo Tự động qua Telegram Webhook
+- **Mã nguồn:** `src/lib/telegram.ts`
+- **Cơ chế:** Gửi tin ngầm bất đồng bộ (non-blocking async background) với timeout 4s qua Telegram Bot API, không làm nghẽn luồng xử lý người dùng.
+- **Sự kiện giám sát tự động:**
+  - ⚠️ Cảnh báo Spam Rate Limit khi IP bị chặn 429.
+  - 🔄 Cảnh báo Failover khi Gemini gặp lỗi và hệ thống tự động chuyển sang OpenRouter.
+  - 👎 Cảnh báo Phản hồi Không hài lòng (Dislike) kèm lý do và câu hỏi cụ thể của người dùng.
+  - 🚨 Cảnh báo Lỗi Hệ thống 500 nghiêm trọng.
+
+### 2.8. Hệ thống Widget nhúng Website Trường học (Embeddable Widget)
+- **Mã nguồn:** `public/widget.js`, `src/app/embed/page.tsx`, `next.config.mjs`
+- **Tính năng:**
+  - Cho phép các trường học tích hợp Chatbot K12Online vào cổng thông tin chỉ bằng 1 dòng `<script>`.
+  - Nút bấm tròn nổi và popup chat iframe tối giản, chuẩn responsive trên cả Desktop và Mobile.
+  - Cấu hình CSP `frame-ancestors *` cho phép nhúng an toàn từ mọi domain.
+
+### 2.9. Hệ thống Đánh giá (Feedback) & Xuất Lịch sử Trò chuyện (Export)
+- **Mã nguồn:** `src/components/FeedbackModal.tsx`, `src/components/ExportModal.tsx`, `src/app/api/feedback/route.ts`
+- **Tính năng:**
+  - Cho phép giáo viên đánh giá Thích / Không thích câu trả lời và đóng góp lý do chi tiết (lưu vào bảng `chat_feedback`).
+  - Cho phép xuất lịch sử hội thoại ra Markdown (`.md`), Plain Text (`.txt`) và In / Xuất PDF trực tiếp.
+
 ---
 
-## 3. Danh sách Biến Môi trường Cần thiết (.env.local)
+## 3. Danh sách Biến Môi trường Cần thiết (.env.local & Vercel)
 
 ```env
 # Google Gemini API Keys (Động cơ chính, cách nhau dấu phẩy)
@@ -69,6 +104,10 @@ CLOUDFLARE_TURNSTILE_SECRET_KEY=0x4AAAAAA...
 # Supabase Auth & BaaS
 NEXT_PUBLIC_SUPABASE_URL=https://...supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=...
+
+# Telegram Bot Alerts & Observability (Cảnh báo lỗi tự động)
+TELEGRAM_BOT_TOKEN=123456789:ABCdefGHIjklMNOpqrSTUvwxYZ
+TELEGRAM_CHAT_ID=-100xxxxxxxxxx (hoặc Chat ID cá nhân)
 ```
 
 ---
@@ -85,3 +124,8 @@ Khi có bài viết nghiệp vụ mới dài trên 15.000 ký tự:
 1. Mở `data/prebaked_answers.json`.
 2. Khai báo các từ khóa trigger và nội dung Markdown hoàn chỉnh.
 3. Hệ thống sẽ tự động so khớp và phản hồi ngay cho người dùng.
+
+### 4.3. Theo dõi và Xử lý Góp ý của Người dùng
+1. Khi có thông báo Dislike gửi về nhóm Telegram, đọc câu hỏi và lý do giáo viên báo lỗi.
+2. Truy cập `/admin` > mục **Phản hồi Người dùng** để xem toàn bộ bối cảnh cuộc trò chuyện.
+3. Nếu bài viết trên K12Online có thay đổi thao tác, tiến hành cập nhật lại file bài viết tương ứng trong `data/articles/`.
