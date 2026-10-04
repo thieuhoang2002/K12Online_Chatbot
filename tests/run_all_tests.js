@@ -39,6 +39,8 @@ async function main() {
     { name: "Phân hệ 9: Cảnh Báo Telegram Webhook", file: "./integration/test_telegram_alerts.js" }
   ];
 
+  const baseUrl = process.env.TEST_BASE_URL || "https://k12onlinechatbot.thhoang.io.vn";
+
   for (const suite of suites) {
     console.log(`\n${colors.yellow}${colors.bright}▶ Đang kiểm thử: ${suite.name}${colors.reset}`);
     const suiteStart = Date.now();
@@ -46,7 +48,7 @@ async function main() {
     try {
       const modulePath = path.join(__dirname, suite.file);
       const testModule = require(modulePath);
-      const results = await testModule.run();
+      const results = await testModule.run(baseUrl);
       const suiteDuration = Date.now() - suiteStart;
 
       for (const res of results) {
