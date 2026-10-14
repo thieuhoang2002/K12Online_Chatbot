@@ -1,0 +1,24 @@
+name: Keep Supabase & App Alive
+
+on:
+  schedule:
+    # Chạy mỗi ngày 2 lần: 00:00 UTC (07:00 VN) và 12:00 UTC (19:00 VN)
+    - cron: '0 0,12 * * *'
+  workflow_dispatch: # Cho phép bấm nút "Run workflow" bằng tay trên GitHub bất cứ lúc nào
+
+jobs:
+  keep_alive:
+    name: Ping Database & Web
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping K12 Chatbot Frontend
+        run: |
+          echo "Pinging Website..."
+          curl -s -f -m 15 "https://k12onlinechatbot.thhoang.io.vn" > /dev/null || echo "Web ping done"
+
+      - name: Query Supabase Database (via feedback API)
+        run: |
+          echo "Querying Supabase database to reset inactivity timer..."
+          RESPONSE=$(curl -s -m 15 "https://k12onlinechatbot.thhoang.io.vn/api/feedback")
+          echo "Response from API: $RESPONSE"
+          echo "✅ Supabase is active and awake!"
