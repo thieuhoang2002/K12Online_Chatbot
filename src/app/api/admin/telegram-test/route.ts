@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { isAdminEmail } from "@/lib/zeroKnowledge";
+import { verifyAdminRequest } from "@/lib/adminAuth";
 import { sendTelegramAlert } from "@/lib/telegram";
 
 export async function POST(req: NextRequest) {
@@ -7,11 +7,9 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const { email } = body;
 
-    if (!email || !isAdminEmail(email)) {
-      return NextResponse.json(
-        { error: "Yêu cầu quyền Quản trị viên để thực hiện thử nghiệm" },
-        { status: 403 }
-      );
+    const auth = await verifyAdminRequest(req, email);
+    if (!auth.authorized) {
+      return auth.errorResponse!;
     }
 
     const hasBotToken = Boolean(process.env.TELEGRAM_BOT_TOKEN);

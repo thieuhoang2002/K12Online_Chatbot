@@ -9,14 +9,27 @@
  *    Nếu bất kỳ ai chỉnh sửa dù chỉ 1 bit trong ciphertext -> Tag mismatch -> Decrypt văng lỗi ngay lập tức.
  */
 
-export const ADMIN_WHITELIST = [
-  "thieuhoangent@gmail.com",
-  "thieuviethoang7b@gmail.com",
-];
+// Danh sách email admin được tải động từ biến môi trường ADMIN_EMAILS (hoặc NEXT_PUBLIC_ADMIN_EMAILS)
+// Bảo vệ quyền riêng tư: Tuyệt đối không hardcode email cá nhân trong mã nguồn công khai.
+const configuredAdminEmails =
+  process.env.ADMIN_EMAILS ||
+  process.env.NEXT_PUBLIC_ADMIN_EMAILS ||
+  "";
+
+export const ADMIN_WHITELIST: string[] = configuredAdminEmails
+  ? configuredAdminEmails
+      .split(",")
+      .map((e) => e.trim().toLowerCase())
+      .filter(Boolean)
+  : [];
 
 export function isAdminEmail(email?: string | null): boolean {
   if (!email) return false;
-  return ADMIN_WHITELIST.includes(email.trim().toLowerCase());
+  const normalized = email.trim().toLowerCase();
+  if (ADMIN_WHITELIST.length > 0) {
+    return ADMIN_WHITELIST.includes(normalized);
+  }
+  return false;
 }
 
 export interface AdminVaultRecord {
@@ -171,7 +184,6 @@ export async function verifyAdminPassword(
       aesKey,
       ciphertext as any
     );
-
 
     const decoder = new TextDecoder();
     const plaintext = decoder.decode(decryptedBuffer);

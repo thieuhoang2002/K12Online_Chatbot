@@ -76,7 +76,13 @@ export default function AdminPassModal({
         }
 
         // 2. Gọi API tra cứu từ server / Supabase
-        const res = await fetch(`/api/admin/vault?email=${encodeURIComponent(userEmail)}`);
+        const savedToken = typeof window !== "undefined" ? (sessionStorage.getItem("k12_admin_token") || localStorage.getItem("k12_admin_token") || "") : "";
+        const authHeaders: Record<string, string> = {};
+        if (savedToken) {
+          authHeaders["x-admin-token"] = savedToken;
+          authHeaders["Authorization"] = `Bearer ${savedToken}`;
+        }
+        const res = await fetch(`/api/admin/vault?email=${encodeURIComponent(userEmail)}`, { headers: authHeaders });
         const json = await res.json();
 
         if (json.success && json.vault) {
@@ -134,7 +140,11 @@ export default function AdminPassModal({
       // 3. Đồng bộ lên Server/Supabase
       await fetch("/api/admin/vault", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "x-admin-token": password,
+          Authorization: `Bearer ${password}`,
+        },
         body: JSON.stringify(vaultRecord),
       });
 

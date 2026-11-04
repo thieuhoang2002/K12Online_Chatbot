@@ -16,19 +16,11 @@ export default function CloudflareTurnstile({ onVerify }: TurnstileProps) {
   const isRenderedRef = React.useRef(false);
 
   useEffect(() => {
-    // Luôn có timeout an toàn tối đa 2.5s để không bao giờ bị treo "Đang xác minh..."
-    const safetyTimer = setTimeout(() => {
-      setVerified((prev) => {
-        if (!prev) {
-          if (onVerifyRef.current) onVerifyRef.current("cf-safety-verified-token");
-          return true;
-        }
-        return prev;
-      });
-    }, 2500);
-
+    // Nếu không cấu hình siteKey (môi trường dev local), tự động xác nhận cho dev
     if (!siteKey || siteKey.trim() === "") {
-      return () => clearTimeout(safetyTimer);
+      setVerified(true);
+      if (onVerifyRef.current) onVerifyRef.current("dev-local-turnstile-token");
+      return;
     }
 
     const renderWidget = () => {
@@ -43,13 +35,11 @@ export default function CloudflareTurnstile({ onVerify }: TurnstileProps) {
             theme: "auto",
             size: "flexible",
             callback: (token: string) => {
-              clearTimeout(safetyTimer);
               setVerified(true);
               if (onVerifyRef.current) onVerifyRef.current(token);
             },
             "error-callback": () => {
-              // Khi gặp lỗi domain/localhost, tự động bypass an toàn
-              clearTimeout(safetyTimer);
+              // Khi gặp lỗi kết nối hoặc domain, ghi nhận trạng thái
               setVerified(true);
             },
             "expired-callback": () => {
@@ -98,7 +88,6 @@ export default function CloudflareTurnstile({ onVerify }: TurnstileProps) {
     }
 
     return () => {
-      clearTimeout(safetyTimer);
       if (typeof window !== "undefined") {
         window.removeEventListener("cf-turnstile-refresh", handleRefresh);
       }

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { isAdminEmail } from "@/lib/zeroKnowledge";
+import { verifyAdminRequest } from "@/lib/adminAuth";
 import { supabase } from "@/lib/supabase";
 
 export const dynamic = "force-dynamic";
@@ -330,11 +330,9 @@ export async function GET(req: NextRequest) {
     const indexParam = searchParams.get("index");
     const targetIndex = indexParam ? parseInt(indexParam, 10) : undefined;
 
-    if (!email || !isAdminEmail(email)) {
-      return NextResponse.json(
-        { error: "Truy cập bị từ chối: Yêu cầu quyền Quản trị viên" },
-        { status: 403 }
-      );
+    const auth = await verifyAdminRequest(req, email);
+    if (!auth.authorized) {
+      return auth.errorResponse!;
     }
 
     // 1. Phân giải danh sách Gemini Keys với tất cả các tên biến môi trường có thể có

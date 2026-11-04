@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { supabase } from "@/lib/supabase";
-import { isAdminEmail, AdminVaultRecord } from "@/lib/zeroKnowledge";
+import { AdminVaultRecord } from "@/lib/zeroKnowledge";
+import { verifyAdminRequest } from "@/lib/adminAuth";
 
 // Bộ nhớ dự phòng server nếu Supabase chưa chạy script migration
 const memoryVaults = new Map<string, AdminVaultRecord>();
@@ -10,11 +11,10 @@ export async function GET(req: NextRequest) {
     const { searchParams } = new URL(req.url);
     const email = searchParams.get("email")?.toLowerCase().trim();
 
-    if (!email || !isAdminEmail(email)) {
-      return NextResponse.json(
-        { error: "Tài khoản không nằm trong danh sách Quản trị viên được cấp phép" },
-        { status: 403 }
-      );
+    // Xác thực quyền Admin nghiêm ngặt qua Header và Email Whitelist
+    const auth = await verifyAdminRequest(req, email);
+    if (!auth.authorized) {
+      return auth.errorResponse!;
     }
 
     // 1. Thử lấy từ Supabase
@@ -23,7 +23,7 @@ export async function GET(req: NextRequest) {
         const { data, error } = await supabase
           .from("admin_vault")
           .select("email, ciphertext, salt, iv, hint, updated_at")
-          .eq("email", email)
+          .eq("email", email!)
           .maybeSingle();
 
         if (!error && data) {
@@ -33,7 +33,7 @@ export async function GET(req: NextRequest) {
     }
 
     // 2. Thử lấy từ memory cache
-    const mem = memoryVaults.get(email);
+    const mem = memoryVaults.get(email!);
     return NextResponse.json({ success: true, vault: mem || null });
   } catch (err: any) {
     return NextResponse.json(
@@ -49,11 +49,11 @@ export async function POST(req: NextRequest) {
     const { email, ciphertext, salt, iv, hint } = body;
 
     const normalizedEmail = (email || "").toLowerCase().trim();
-    if (!normalizedEmail || !isAdminEmail(normalizedEmail)) {
-      return NextResponse.json(
-        { error: "Tài khoản không được cấp phép khởi tạo Vault Quản trị" },
-        { status: 403 }
-      );
+
+    // Xác thực quyền Admin nghiêm ngặt: chống ghi đè/phá hoại Vault
+    const auth = await verifyAdminRequest(req, normalizedEmail);
+    if (!auth.authorized) {
+      return auth.errorResponse!;
     }
 
     if (!ciphertext || !salt || !iv) {

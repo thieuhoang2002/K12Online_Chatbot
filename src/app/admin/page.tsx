@@ -131,6 +131,21 @@ export default function AdminPage() {
     setIsPassModalOpen(true);
   }
 
+  function getAdminAuthHeaders(): Record<string, string> {
+    const headers: Record<string, string> = {};
+    if (typeof window !== "undefined") {
+      const token =
+        sessionStorage.getItem("k12_admin_token") ||
+        localStorage.getItem("k12_admin_token") ||
+        "";
+      if (token) {
+        headers["x-admin-token"] = token;
+        headers["Authorization"] = `Bearer ${token}`;
+      }
+    }
+    return headers;
+  }
+
   // 2. Tải số liệu thống kê từ API
   async function loadDashboardStats(emailToUse?: string) {
     const email = emailToUse || userEmail;
@@ -138,7 +153,7 @@ export default function AdminPage() {
 
     setLoadingStats(true);
     try {
-      const res = await fetch(`/api/admin/stats?email=${encodeURIComponent(email)}`);
+      const res = await fetch(`/api/admin/stats?email=${encodeURIComponent(email)}`, { headers: getAdminAuthHeaders() });
       const json = await res.json();
       if (json.success) {
         setStats(json);
@@ -160,7 +175,7 @@ export default function AdminPage() {
 
     setCheckingHealth(true);
     try {
-      const res = await fetch(`/api/admin/health-check?email=${encodeURIComponent(email)}`);
+      const res = await fetch(`/api/admin/health-check?email=${encodeURIComponent(email)}`, { headers: getAdminAuthHeaders() });
       const data = await res.json();
       if (data.success) {
         setHealthData(data);
@@ -188,7 +203,7 @@ export default function AdminPage() {
       if (index !== undefined) {
         url += `&index=${index}`;
       }
-      const res = await fetch(url);
+      const res = await fetch(url, { headers: getAdminAuthHeaders() });
       const data = await res.json();
       if (data.success) {
         setHealthData((prev: any) => {
@@ -274,7 +289,7 @@ export default function AdminPage() {
     try {
       const res = await fetch("/api/admin/telegram-test", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...getAdminAuthHeaders() },
         body: JSON.stringify({ email: userEmail }),
       });
       const data = await res.json();

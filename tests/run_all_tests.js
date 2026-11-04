@@ -25,6 +25,13 @@ async function main() {
   console.log("==========================================================================");
   console.log(`${colors.reset}`);
 
+  if (!process.env.ADMIN_EMAILS) {
+    process.env.ADMIN_EMAILS = "thieuhoangent@gmail.com,thieuviethoang7b@gmail.com";
+  }
+  if (!process.env.ADMIN_SECRET_KEY) {
+    process.env.ADMIN_SECRET_KEY = "k12-admin-secret-key-test";
+  }
+
   const startTime = Date.now();
   const allResults = [];
   const suites = [

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { supabase } from "@/lib/supabase";
-import { isAdminEmail } from "@/lib/zeroKnowledge";
+import { verifyAdminRequest } from "@/lib/adminAuth";
 import fs from "fs";
 import path from "path";
 
@@ -9,11 +9,10 @@ export async function GET(req: NextRequest) {
     const { searchParams } = new URL(req.url);
     const email = searchParams.get("email")?.toLowerCase().trim();
 
-    if (!email || !isAdminEmail(email)) {
-      return NextResponse.json(
-        { error: "Truy cập bị từ chối: Yêu cầu quyền Quản trị viên" },
-        { status: 403 }
-      );
+    // Xác thực quyền Admin nghiêm ngặt qua Header và Email Whitelist
+    const auth = await verifyAdminRequest(req, email);
+    if (!auth.authorized) {
+      return auth.errorResponse!;
     }
 
     // 1. Thống kê Cơ sở tri thức (Knowledge Base)
